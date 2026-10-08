@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "6281cbbfee48a2f8353376a6198056c330156c5a7ce7bb4b272d5aa673fd7e62",
-  "shapeCount": 165,
+  "sourceSvgSha256": "a1c7d3c17bc2328ae9f484645e2ea9b86c65312a31f24e55831c2020fcc0dadd",
+  "shapeCount": 168,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -928,6 +928,18 @@
       "diamondExtent": 1.319761,
       "visiblePixels": 580500
     },
+    "nemetrix-slamworm": {
+      "scale": 0.6874,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.265472,
+      "visiblePixels": 451087
+    },
+    "nemetrix-ultimate-panuncian": {
+      "scale": 0.6744,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.28986,
+      "visiblePixels": 623940
+    },
     "eatle-ov": {
       "scale": 0.6212,
       "method": "native-png-alpha-diamond-envelope",
@@ -1029,6 +1041,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.454014,
       "visiblePixels": 476451
+    },
+    "dynamite-grey-matter": {
+      "scale": 0.5855,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.485677,
+      "visiblePixels": 435873
     },
     "ghostfreak-ov": {
       "scale": 0.8628,

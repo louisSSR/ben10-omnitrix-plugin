@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "6281cbbfee48a2f8353376a6198056c330156c5a7ce7bb4b272d5aa673fd7e62",
+  "svgSha256": "a1c7d3c17bc2328ae9f484645e2ea9b86c65312a31f24e55831c2020fcc0dadd",
   "coverage": {
     "total": 224,
-    "reviewed": 165,
-    "missing": 59
+    "reviewed": 168,
+    "missing": 56
   },
   "assets": [
     {
@@ -1436,6 +1436,36 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "5b2bebfa286df24aa2b8b988c959efe70c7b7908fa76542779a807dc879cc763",
       "maskSha256": "6a0f7fb626fe9275b425ade4abf5e39afe45d5154a4b4ff34fb3215a0b7b1ff0",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-slamworm",
+      "url": "https://images.squarespace-cdn.com/content/v1/52fd313ee4b0b3c32132e9de/1392337424664-J1FU3T4NALA4KW5SDF1V/SlamwormABP.jpg",
+      "pageUrl": "https://www.artbully.co/ben-10-characters",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "ee0391ee3120107c11a481cab54e1f97cc7d010a39ad5f11602ce9f2ca102067",
+      "maskSha256": "2e61793f9d4d4c1e82a94b8e793882499c3c0d528b0e4b72b3d8cd0c070dc851",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-grey-matter",
+      "url": "https://2001.dynamite.com/previews/C72513036343502011/BEN1002XXHACKVIRG.jpg",
+      "pageUrl": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e6e238cc1f2f107bafed65181fafae9a0e3665eab48bcbe1bb642422b53680b7",
+      "maskSha256": "80d7f5f858b3395fd460955043918930f114576d18ef09e86684973eed2d4de8",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-ultimate-panuncian",
+      "url": "https://www.pinclipart.com/picdir/big/97-978989_ultimate-panuncian-ben-10-wiki-fandom-powered-by.png",
+      "pageUrl": "https://www.pinclipart.com/maxpin/TTiibT/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "f7f0b903851cd69714f09cc59ad5ec819a5f8b6a3e69acfa6d50d906c62c816a",
+      "maskSha256": "c9bcf02fce5a01826383b26b6f21d28eab1c92bef14e2f660159a181a137b761",
       "contentType": "image/png"
     }
   ],

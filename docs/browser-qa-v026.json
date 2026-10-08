@@ -1,0 +1,150 @@
+{
+  "version": "0.2.6",
+  "checkedAt": "2026-10-08T22:29:31.236050+00:00",
+  "previewSha256": "a2a79cd6fc6f6090f6bb058a6e1e455ae40f5f4abc869ca683f60b21ea510718",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 168,
+    "missing": 56
+  },
+  "viewports": [
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Grey Matter",
+      "scrollWidth": 375,
+      "selected": "#alien-dynamite-grey-matter",
+      "watch": "original",
+      "width": 390,
+      "expected": "dynamite-grey-matter",
+      "fullOutlineViewed": true
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Slamworm",
+      "scrollWidth": 375,
+      "selected": "#alien-nemetrix-slamworm",
+      "watch": "original",
+      "width": 390,
+      "expected": "nemetrix-slamworm",
+      "fullOutlineViewed": true
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Ultimate Panuncian",
+      "scrollWidth": 375,
+      "selected": "#alien-nemetrix-ultimate-panuncian",
+      "watch": "original",
+      "width": 390,
+      "expected": "nemetrix-ultimate-panuncian",
+      "fullOutlineViewed": true
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "projection",
+      "name": "Ultimate Panuncian",
+      "scrollWidth": 375,
+      "selected": "#alien-nemetrix-ultimate-panuncian",
+      "watch": "omniverse",
+      "width": 390,
+      "expected": "nemetrix-ultimate-panuncian"
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "mode": "carousel",
+      "name": "Ultimate Panuncian",
+      "scrollWidth": 305,
+      "selected": "#alien-nemetrix-ultimate-panuncian",
+      "watch": "omniverse",
+      "width": 320,
+      "expected": null
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "mode": "carousel",
+      "name": "Mucilator",
+      "scrollWidth": 305,
+      "selected": "#alien-nemetrix-mucilator",
+      "watch": "omniverse",
+      "width": 320,
+      "expected": null
+    },
+    {
+      "clientWidth": 1265,
+      "height": 900,
+      "horizontalOverflow": false,
+      "mode": "projection",
+      "name": "Slamworm",
+      "scrollWidth": 1265,
+      "selected": "#alien-nemetrix-slamworm",
+      "watch": "recalibrated",
+      "width": 1280,
+      "expected": "nemetrix-slamworm"
+    }
+  ],
+  "screenshots": [
+    "screenshots/v026-390-grey-matter-dial.png",
+    "screenshots/v026-390-slamworm-dial.png",
+    "screenshots/v026-390-panuncian-dial.png",
+    "screenshots/v026-390-panuncian-projection.png",
+    "screenshots/v026-320-carousel-before.png",
+    "screenshots/v026-320-carousel-after.png",
+    "screenshots/v026-1280-slamworm-projection.png"
+  ],
+  "ringBefore": [
+    {
+      "label": "选择 Slamworm",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, -77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Ultimate Panuncian",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 2.2024e-14, 90, 80, 1)"
+    },
+    {
+      "label": "选择 Mucilator",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, 77.873, -45, -40, 1)"
+    }
+  ],
+  "ringAfter": [
+    {
+      "label": "选择 Slamworm",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, 77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Ultimate Panuncian",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, -77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Mucilator",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 1.01889e-13, 90, 80, 1)"
+    }
+  ],
+  "logs": [],
+  "viewportOverrideReset": true,
+  "realHostVerified": false,
+  "phoneVerified": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

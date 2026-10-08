@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 165,
-    "missing": 59
+    "reviewed": 168,
+    "missing": 56
   },
   "forms": [
     {
@@ -4284,12 +4284,23 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-slamworm",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.artbully.co/ben-10-characters"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "dialFit": {
+        "scale": 0.6874,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.265472,
+        "visiblePixels": 451087
+      }
     },
     {
       "id": "nemetrix-terroranchula",
@@ -4342,12 +4353,23 @@
       "group": "nemetrix-ultimate",
       "appearance": "For a Few Brains More: the Nemetrix evolves Khyber's Panuncian.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-ultimate-panuncian",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/For_a_Few_Brains_More",
         "https://ben10.fandom.com/wiki/Ultimate_Panuncian",
         "https://ben10.fandom.com/wiki/Khyber%27s_Panuncian"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.pinclipart.com/maxpin/TTiibT/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.6744,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.28986,
+        "visiblePixels": 623940
+      }
     },
     {
       "id": "alpha-arms",
@@ -4942,10 +4964,21 @@
       "group": "extra",
       "appearance": "Ben 10 #5: publisher description identifies its comic debut.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-dynamite-grey-matter",
       "sourceUrls": [
         "https://dynamite.com/ben-10-5/"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "dialFit": {
+        "scale": 0.5855,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.485677,
+        "visiblePixels": 435873
+      }
     },
     {
       "id": "ghostfreak-ov",

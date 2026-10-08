@@ -1675,6 +1675,95 @@
         "transparentBackground": true,
         "prompt": "STEP 1\nEdit only the background of the attached Ben 10 Reboot Bloxx reference image. Isolate the one existing red, yellow and blue-violet block-built gorilla alien on a fully transparent background. Preserve the exact existing crouching pose, head, face, chest symbol, shoulder blocks, the two large forearms and closed fists, and the visible bent legs and feet behind the arms. Remove the green radial graphic background, every ray/line/text of that background, and the thin black rectangular image frame. Keep all existing black character outlines and the original flat colors. The left fist bottom has a complete closing black contour; keep that entire fist. The partially overlapped legs must stay overlapped as drawn. Do not invent, reconstruct, extend, or expose any hidden limb or body surface. Do not crop the body, change its proportions or pose, add any character, add a shadow or halo, or redesign it. Leave a small transparent margin around the complete visible body contour. This is a reference-based background-removal edit, not a new character illustration."
       }
+    },
+    {
+      "formId": "nemetrix-slamworm",
+      "sourceFile": "assets/source-art/nemetrix-slamworm-original.jpg",
+      "sourceSha256": "ee0391ee3120107c11a481cab54e1f97cc7d010a39ad5f11602ce9f2ca102067",
+      "maskFile": "assets/source-art/nemetrix-slamworm-reference-edit.png",
+      "maskSha256": "2e61793f9d4d4c1e82a94b8e793882499c3c0d528b0e4b72b3d8cd0c070dc851",
+      "pageUrl": "https://www.artbully.co/ben-10-characters",
+      "url": "https://images.squarespace-cdn.com/content/v1/52fd313ee4b0b3c32132e9de/1392337424664-J1FU3T4NALA4KW5SDF1V/SlamwormABP.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Art Bully Productions game portfolio sheet labelled Slamworm, Ben 10 Omniverse, Vicious Cycle Software. Game adaptation reference, not a TV animation model sheet.",
+      "observations": "Large left/front view only. Complete bent segmented body, jaws, purple spines, small side appendages and horizontal tail remain. Separate rear view, logos and grey background removed. Belly is round and complete but close to lower edge. Fine textures/contours change. Independent second review found no added major anatomy.",
+      "adoptionBasis": "Root viewed original, output and current 390x960 original-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Game adaptation does not establish exact television-model equivalence.",
+        "AI redraw changes fine contours, lighting and texture.",
+        "Very faint disconnected alpha pixels reach canvas edges; all positive alpha pixels are included in dial fitting."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nEdit this actual Ben 10 Omniverse game production reference sheet. Extract ONLY the large left/front view of Slamworm, preserving its complete existing bent segmented worm body from the purple jaws/head spikes at upper left through the horizontal right tail tip, all visible purple spines and side appendages, beige belly and gold-purple back. Keep the exact existing pose, proportions, silhouette and game model surface. Remove the separate smaller right/rear view, the entire grey rectangular background, all words/logos and all unrelated marks. A single isolated worm only. True clear transparent alpha with NO grey backing, smoke, gradient halo, glow, ground shadow or outline haze. Fit the complete existing character inside the canvas with generous fully transparent margin on all sides; no anatomical extrapolation, new legs or extra tail. Preserve all naturally overlapping anatomy as originally visible."
+      }
+    },
+    {
+      "formId": "dynamite-grey-matter",
+      "sourceFile": "assets/source-art/dynamite-grey-matter-original.jpg",
+      "sourceSha256": "e6e238cc1f2f107bafed65181fafae9a0e3665eab48bcbe1bb642422b53680b7",
+      "maskFile": "assets/source-art/dynamite-grey-matter-reference-edit.png",
+      "maskSha256": "80d7f5f858b3395fd460955043918930f114576d18ef09e86684973eed2d4de8",
+      "pageUrl": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
+      "url": "https://2001.dynamite.com/previews/C72513036343502011/BEN1002XXHACKVIRG.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Publisher Ben 10 #2 Robert Hack virgin variant cover. Comic Grey Matter is shown full-body holding a pencil; the catalog separately records the later story debut.",
+      "observations": "Leaning standing figure, two arms/hands and two legs/feet retained together with the full held pencil. The pencil is a visible prop in the original, not an added body part. Books, floor and cover background removed. Second edit addresses transparency/margins. RGB haze outside the outline is transparent at inspected samples; faint alpha noise remains. Fingers, face and toe details are interpreted, not exact comic ink.",
+      "adoptionBasis": "Root viewed original, output and current 390x960 original-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "A cover-art depiction with a retained pencil prop, not an animation model sheet.",
+        "AI edits reinterpret linework and proportions; original and outputs are not pixel-identical.",
+        "Faint disconnected alpha pixels remain; all positive alpha pixels are included in dial fitting."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nEdit the supplied publisher cover art into a clean transparent-background character asset. Keep ONLY the complete small grey alien Grey Matter and the yellow pencil he is visibly holding, in exactly this leaning standing pose, with both existing arms, hands, legs and feet, head outline, suit and proportions. The pencil is an intentional retained prop: keep its full visible ends and natural overlap, do not invent hidden body behind it. Remove the book stack, floor, cast shadows, dark painted background and every unrelated mark/text. Keep the full figure and pencil inset with generous transparent margin on all four sides, with no cropped feet or pencil tip. Preserve the source's comic painting appearance and colors as closely as possible; no redesign, new limbs, extra accessories, glow, fog or decorative backdrop. Output true transparent alpha, a single isolated figure, not a collage.\n\nSTEP 2\nClean up this already isolated character asset. Preserve the exact alien and the held yellow pencil, all visible anatomy, existing pose, painting and full ends. Make everything outside the solid character and pencil completely transparent, INCLUDING all soft dark/brown haze, yellow glow around the pencil, pale head halo, floor shadows and peripheral speckles. Keep the natural holes between limbs and pencil transparent too. Do not change the character design or crop any part. Center the intact figure with at least 8 percent completely empty transparent margin on every side. No glow, mist, gradient, backdrop, shadow or extra marks whatsoever. True clean transparent PNG alpha."
+      }
+    },
+    {
+      "formId": "nemetrix-ultimate-panuncian",
+      "sourceFile": "assets/source-art/nemetrix-ultimate-panuncian-original.png",
+      "sourceSha256": "f7f0b903851cd69714f09cc59ad5ec819a5f8b6a3e69acfa6d50d906c62c816a",
+      "maskFile": "assets/source-art/nemetrix-ultimate-panuncian-reference-edit.png",
+      "maskSha256": "c9bcf02fce5a01826383b26b6f21d28eab1c92bef14e2f660159a181a137b761",
+      "pageUrl": "https://www.pinclipart.com/maxpin/TTiibT/",
+      "url": "https://www.pinclipart.com/picdir/big/97-978989_ultimate-panuncian-ben-10-wiki-fandom-powered-by.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Community repost caption: Ultimate Panuncian Ben 10 Wiki Fandom Powered By Wikia - Ben 10: Omniverse Clipart (698x447), Png Download. Root viewed the horned, maned red-black quadruped with long fangs and curled hooked tail. Official original publishing chain unverified.",
+      "observations": "Original has an isolated blue square; the edit removes it while preserving the main four-legged pose, head horns, back horns, fangs, mane and tail. Source tightly framed pointed tips have no broad flat body cut, but their upstream completeness is unknown. AI details and pointed contours vary. Main body is inset with narrow margins and faint alpha residue beyond it.",
+      "adoptionBasis": "Root viewed original, output and current 390x960 original-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Community repost with Wiki-labelled caption; official original publishing chain unverified.",
+        "Copyright/license unknown; not claimed official transparent original.",
+        "Original tightly framed horn/tail tip completeness remains unknown; margin edit does not establish missing source pixels.",
+        "AI reference edit changes fine detail and is not pixel-exact extraction.",
+        "Faint isolated alpha residue and very narrow margin remain; root subsequently viewed the output and current dial; faint residue remains."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nEdit this single existing character reference only. Produce a transparent-background PNG cutout of exactly the visible red-and-black armored four-legged Ultimate Panuncian creature in the reference. Remove the clearly disconnected pale blue rectangular artifact near the upper left, behind and to the left of the tall mane horn. That blue square is not part of the creature. Preserve the existing visible creature's entire outline, pose, head armor, every visible horn, black mane, long curved teeth, four legs and claws, and long curling tail hook. Do not redesign, repaint style, add limbs, or infer any unseen anatomy. The current source is tightly framed around several horn or tail tips. Preserve the supplied visible endpoints as they are; do not extend or invent missing tip portions. Place this same complete visible creature comfortably inside a larger transparent canvas with at least a 10 percent transparent margin on all sides. Remove any non-character isolated artifacts and all background. Keep only the one creature. No text, logos, glow, ground shadow, other characters, or decorations. Maintain the source color and line art as closely as possible. This is a reference edit of a community repost, not newly claimed official artwork."
+      }
     }
   ],
   "mergedForms": [
