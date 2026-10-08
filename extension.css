@@ -1,0 +1,15 @@
+#ben10-omnitrix-settings { padding: 12px; margin-block: 8px; border: 1px solid var(--SmartThemeBorderColor, #45513c); border-radius: 8px; }
+#ben10-omnitrix-settings h4 { margin: 0 0 8px; }
+#ben10-omnitrix-settings small { display: block; opacity: .75; margin-block-start: 6px; }
+#ben10-omnitrix-settings button { min-height: 44px; }
+#ben10-omnitrix-dialog { width: min(1360px, 96vw); height: min(960px, 94vh); height: min(960px, 94dvh); max-width: 100vw; max-height: 100dvh; padding: 0; border: 1px solid #758d42; border-radius: 14px; background: #080d09; color: #ebf4df; overflow: hidden; }
+#ben10-omnitrix-dialog[open] { display: flex; flex-direction: column; }
+#ben10-omnitrix-dialog::backdrop { background: #020602d9; }
+#ben10-omnitrix-dialog .ben10-omnitrix-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex: 0 0 auto; padding: 7px 12px; border-bottom: 1px solid #34412b; }
+#ben10-omnitrix-dialog .ben10-omnitrix-toolbar strong { font-size: 14px; letter-spacing: .15em; }
+#ben10-omnitrix-dialog button { min-width: 60px; min-height: 44px; cursor: pointer; }
+#ben10-omnitrix-dialog iframe { width: 100%; min-height: 0; flex: 1 1 auto; border: 0; background: #080d09; }
+@media (max-width: 600px) {
+  #ben10-omnitrix-dialog { width: 100vw; height: 100vh; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; padding-bottom: env(safe-area-inset-bottom); }
+  #ben10-omnitrix-dialog .ben10-omnitrix-toolbar { padding-top: max(7px, env(safe-area-inset-top)); }
+}

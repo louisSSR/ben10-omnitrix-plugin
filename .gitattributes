@@ -1,0 +1,3 @@
+# Preserve exact bytes for distributed artifacts and their recorded hashes.
+preview.html -text
+assets/silhouettes.svg -text

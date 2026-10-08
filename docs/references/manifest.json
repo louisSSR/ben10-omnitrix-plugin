@@ -1,0 +1,38 @@
+[
+  {
+    "file": "hologram.webp",
+    "bytes": 16538,
+    "sha256": "65494f4509edb9eb590d148d775b270510e44016ccb0d2abb4e4c24b90d1fc15",
+    "source": "user provided reference; original bytes preserved"
+  },
+  {
+    "file": "original-watch.jpg",
+    "bytes": 302206,
+    "sha256": "ef7583d1d341978e1265ada3f52dcb22188d5ddbf34003d43adc8ed8dfc4c711",
+    "source": "user provided reference; original bytes preserved"
+  },
+  {
+    "file": "projected-wheel.jpg",
+    "bytes": 160081,
+    "sha256": "2a136558d778e131a205be05c1ad91003b24e77bfedb2e6fad9fd057cf4b8abc",
+    "source": "user provided reference; original bytes preserved"
+  },
+  {
+    "file": "wheel-face.jpg",
+    "bytes": 84061,
+    "sha256": "31c97e4f722356d38eea915455431d608631839397506adf9f393a464841102c",
+    "source": "user provided reference; original bytes preserved"
+  },
+  {
+    "file": "original-green-watch.jpg",
+    "bytes": 532410,
+    "sha256": "7fe1f7bedb5649c10eee7fff73224c35c16816220e640170bcc580754f08e86b",
+    "source": "user provided reference; original bytes preserved"
+  },
+  {
+    "file": "classic-silhouette-dial.jpg",
+    "bytes": 46180,
+    "sha256": "c6fff7231863931753dffd3d82461a59e04bb7b45e32fcb1f3d66bc2991eed2d",
+    "source": "user provided reference; original bytes preserved"
+  }
+]

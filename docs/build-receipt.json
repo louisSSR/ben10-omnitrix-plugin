@@ -1,0 +1,13 @@
+{
+  "builtAt": "2026-10-08T17:13:21.138Z",
+  "sha256": "ba8ba05d2271fd9977a60c84f1a11fda762709fe7930317b2ee954da0661ad84",
+  "bytes": 1087204,
+  "coverage": {
+    "total": 225,
+    "reviewed": 98,
+    "missing": 127
+  },
+  "standalone": true,
+  "browserVerified": false,
+  "realHostVerified": false
+}

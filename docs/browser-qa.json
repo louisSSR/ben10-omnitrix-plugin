@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-09",
+  "previewSha256": "ba8ba05d2271fd9977a60c84f1a11fda762709fe7930317b2ee954da0661ad84",
+  "browser": "Codex in-app browser",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "standaloneBrowserVerified": true,
+  "realSillyTavernVerified": false,
+  "driverAccepted": false,
+  "coverage": {"records": 225, "reviewedArt": 98, "missingArt": 127},
+  "checks": [
+    "Four watch shells visually inspected across the preview session; shared selection retained across shell and mode changes.",
+    "Projection, carousel, diamond silhouette dial and archive rendered; carousel and archive selection updated the selected form.",
+    "390x844 archive: clientWidth 324 equals scrollWidth 324 after removing the long-grid rotation and unused perspective backdrop.",
+    "320x844 carousel: document width 305 <= viewport 320; all eight card bounds lie within the 281px stage (leftmost 21, rightmost 261).",
+    "Empty search shows no matching form and disables previous, next and confirmation; clearing search restores the list.",
+    "Showing all records and selecting Buzzshock displays the missing-art notice; it does not reuse a different alien image.",
+    "Keyboard Enter on a watch option leaves focus on the rebuilt option with matching action and value.",
+    "Manual reduced motion yields computed hologram animation-name none. Restored to normal afterwards.",
+    "About dialog displays 225/98/127 coverage; Escape closes it and restores focus to its opener.",
+    "Reload retained watch/mode/selection during the earlier build session; confirmation visibly locked Heatblast.",
+    "Final preview console inspection returned no captured error or warning entries.",
+    "Viewport override reset; final desktop viewport 1280x720 has document width 1265. Preview tab retained for the user."
+  ],
+  "screenshotsFromFinalBuild": [
+    "screenshots/mobile-record-wall.jpg",
+    "screenshots/mobile-dial.jpg",
+    "screenshots/desktop-projection.jpg"
+  ],
+  "earlierSessionScreenshots": [
+    "screenshots/desktop-carousel.jpg",
+    "screenshots/mobile-carousel.jpg"
+  ],
+  "limitations": [
+    "This verifies standalone browser behavior; real ST 1.18/1.19 installation, settings persistence and draft input integration remain untested.",
+    "Native finger touch was not available; actual hardware swipe behavior is not accepted by these checks.",
+    "Static screenshots do not verify full animation timing. Automated motion-policy checks and visible selection states are separate evidence.",
+    "Human design acceptance remains pending. Build receipt records only build-time evidence, so its browserVerified field remains false."
+  ]
+}

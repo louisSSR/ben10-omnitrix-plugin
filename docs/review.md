@@ -1,0 +1,17 @@
+# Independent implementation checks
+
+Scope: core.js, app.js, build.mjs, the responsive and motion rules in styles.css, and the compiled preview.html. Changes from this reviewer are limited to the two test files and this report. Browser, real SillyTavern, Git, installation, packaging, publishing, and driver acceptance are separate gates.
+
+Goal: verify reliable selection and an offline preview containing four watch generations, three summon interfaces, the supplementary archive, and all 98 reviewed silhouettes. Missing bodies must remain labeled. System and manual reduced motion must suppress animation. No production roster or source-art registration is part of this check.
+
+The code-quality-workflow library route loaded ST-A0 from snapshot 2026-08-18. Its acceptance boundary is automated evidence only; browserVerified and driverAccepted are not set by these tests.
+
+Automated checks cover dirty preferences, Chinese/English and normalized searches, readiness/group composition, empty results, selection wrapping, distinct ring slots, embedded catalog/symbol bindings, standalone resources, runtime syntax, actual missing-art rendering, and actual animation policy. The small DOM stub executes those source functions; it is not browser layout evidence.
+
+Validation result: the final `npm test` passed 17/17 checks with zero failures, cancellations, or skips (exit 0, output chunk f80ad1). This run verified the compiled HTML SHA-256 ba8ba05d2271fd9977a60c84f1a11fda762709fe7930317b2ee954da0661ad84, 1,087,204 bytes, and coverage 225/98/127. The two regression checks execute the repaired focus restoration and archive card identity behavior.
+
+Source finding sent to the implementation owner: watch/mode controls were rebuilt by renderControls after activation, removing the current focused button. The owner repaired this by retaining action/value and focusing the matching replacement. The regression check executes that function. The owner also found horizontal overflow in the mobile archive: rotating the entire long grid expanded its bounding box. Current CSS overrides the grid rotation with transform:none, tilts individual cards, and gives the stage vertical scrolling. A final owner DOM inspection isolated the remaining excess width to the decorative stage-grid; the final build hides that grid in archive mode and resets stage-bottom left/right. Visible mobile results remain the owner's browser evidence.
+
+Positive boundaries: dynamic content uses textContent; art references require a local alien-* symbol ID; host messages require the parent source and same origin; writing a draft requires an explicit trusted click; selection does not send a chat message; lifecycle cleanup cancels motion and removes listeners. Responsive breakpoints and focus styles are present, but their visible result remains the owner's browser check.
+
+Publication-content audit: independently scanned 27 text files and 11 binary image files inside this project, excluding .git, node_modules, dist, and .local. No machine absolute paths or credential patterns were found in text. Six short drive-prefix byte matches in JPEGs were checked individually: all occur after the compressed-image scan start, and the printable runs are only three or four bytes, so they do not represent stored path strings. No credential patterns were found in binary files. This is a bounded pattern scan, not a guarantee of detecting every possible secret; no external directory or Git state was read or changed.

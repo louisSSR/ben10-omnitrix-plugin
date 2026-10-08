@@ -1,0 +1,17 @@
+{
+  "display_name": "Ben 10 · Omnitrix",
+  "loading_order": 100,
+  "js": "extension.js",
+  "css": "extension.css",
+  "author": "Louis SSR",
+  "version": "0.1.0",
+  "minimum_client_version": "1.18.0",
+  "auto_update": false,
+  "hooks": {
+    "activate": "activate",
+    "enable": "enable",
+    "disable": "disable",
+    "delete": "destroy",
+    "clean": "clean"
+  }
+}

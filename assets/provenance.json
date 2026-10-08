@@ -1,0 +1,777 @@
+{
+  "source": "Reviewed Ben10 cosmic-selector archive snapshot",
+  "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
+  "svgSha256": "7dac204c6ec81c99316a9e7d170fe75259927eb1f8891e2f34f5a2176e168c3d",
+  "coverage": {
+    "total": 225,
+    "reviewed": 98,
+    "missing": 127
+  },
+  "assets": [
+    {
+      "formId": "heatblast",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/b502e0c769594c4a914e7ed5d73244b3/00.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "four-arms",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/e967efe49ae748b895aa98940e386788/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%A0%E3%82%B9%E3%82%99.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "wildmutt",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/26e388a84c47448ebb33c3b0ccb9185c/03.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "diamondhead",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/5de741f9130f4df682c5f5844f6d229e/04.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "xlr8",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/da54616a67bf4065b081a839cfdfd311/05.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "upgrade",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/3b0ee6b44578423a979555674a394283/06.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "ripjaws",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/f11c0b78173348829ee44ad1edfb8102/08.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "stinkfly",
+      "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/425d9dcfe00548f6918e7a5bcf7fc581/07.jpg?w=699&fm=avif",
+      "contentType": "image/avif"
+    },
+    {
+      "formId": "ghostfreak",
+      "url": "https://bogleech.com/cartoons/ben10-ghostfreak.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "wildvine",
+      "url": "https://bogleech.com/cartoons/ben10-wildvine.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "spitter",
+      "url": "https://bogleech.com/cartoons/ben10-spitter.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "snare-oh",
+      "url": "https://bogleech.com/cartoons/ben10-snareoh.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "eye-guy",
+      "url": "https://bogleech.com/cartoons/ben10-eyeguy.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "upchuck-perk",
+      "url": "https://bogleech.com/cartoons/ben10-upchuck.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Third-party repost of Ben 10 character art; local fan prototype, no claim of an open license or official publication.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "swampfire",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/09/swampfire_uaf_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/swampfire/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "echo-echo",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/echo_echo-1.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/echo-echo/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "humungousaur",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/humungousaur_uaf_render.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/humungousaur/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "jetray",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/jetray.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/jetray/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "big-chill",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/big_chill_render.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/big-chill/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "chromastone",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "brainstorm",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/11/brainstorm.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/brainstorm/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "spidermonkey",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/11/spidermonkey.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/spidermonkey/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "goop",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/11/goop.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/goop/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "alien-x",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/12/alienx.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/alien-x/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "lodestar",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/12/lodestar_af_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/lodestar/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "rath",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/12/rath_af.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/rath/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "waterhazard",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/waterguy.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/",
+      "rights": "Community reproduction; rights-holder redistribution permission/original publication unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ampfibian",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/ampfibian_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/",
+      "rights": "Rights-holder redistribution permission and original official publication have not been established. Ben10Hero is a community host; no explicit image license established. Filename official is a host label, not production-origin proof.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "armodrillo",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/armodrillo_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/",
+      "rights": "Rights-holder redistribution permission and original official publication have not been established. Ben10Hero is a community host; no explicit image license established. Filename official is a host label, not production-origin proof.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "terraspin",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/terraspin_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/terraspin/",
+      "rights": "Rights-holder redistribution permission and original official publication have not been established. Ben10Hero is a community host; no explicit image license established. Filename official is a host label, not production-origin proof.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "nrg",
+      "url": "https://www.pngaaa.com/api-download/6057003",
+      "pageUrl": "https://www.pngaaa.com/detail/6057003",
+      "rights": "Host page labels Non-commercial Use. Original rights-holder redistribution permission and actual production publication unconfirmed; community hosting does not establish rights.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "fasttrack",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/fasttrack_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/",
+      "rights": "Rights-holder redistribution permission and original official publication have not been established. Ben10Hero is a community host; no explicit image license established. Filename official is a host label, not production-origin proof.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "grey-matter",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/grey_matter_profile.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "cannonbolt",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/cannonbolt.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "frankenstrike",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/frankenstrike_os.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ditto",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/08/ditto_os_render.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/ditto/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "way-big",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/09/way_big_render.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/way-big/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "feedback",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/05/feedback_art_ov.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/feedback/",
+      "rights": "Original rights-holder publication and permission to redistribute the artwork have not been established. These pages are community hosts; character labels and image filenames are not proof of official production authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "bloxx",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/06/bloxx.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/",
+      "rights": "Original rights-holder publication and permission to redistribute the artwork have not been established. These pages are community hosts; character labels and image filenames are not proof of official production authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "gravattack",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/06/gravattack_pose.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+      "rights": "Original rights-holder publication and permission to redistribute the artwork have not been established. These pages are community hosts; character labels and image filenames are not proof of official production authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "gutrot",
+      "url": "https://bogleech.com/cartoons/ben10-gutrot.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Original rights-holder publication and permission to redistribute the artwork have not been established. These pages are community hosts; character labels and image filenames are not proof of official production authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "toepick",
+      "url": "https://bogleech.com/cartoons/ben10-toepick.png",
+      "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+      "rights": "Original rights-holder publication and permission to redistribute the artwork have not been established. These pages are community hosts; character labels and image filenames are not proof of official production authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "clockwork",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/03/clockwork_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "chamalien",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/03/chamalien_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "eatle",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/eatle_ua.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "juryrigg",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/jury_rigg.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. Ben10Hero is a community host; no explicit image license was established. Filename words such as official/render are host labels, not proof of production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ball-weevil",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/06/ball_weevil_omniverse_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/ball-weevil/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "walkatrout",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/08/ben_10_omniverse-_walkatrout.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/walkatrout/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "pesky-dust",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/08/peskydust.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "mole-stache",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/08/mole-stache_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/mole-stache/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "the-worst",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/09/omniversetheworst.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/the-worst/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "kickin-hawk",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/07/kicken_hawk_omniverse_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/kickin-hawk/",
+      "rights": "Original rights-holder publication and redistribution permission are unknown. Ben10Hero is a community reproduction host; a filename containing official does not establish official artwork authorship.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-echo-echo",
+      "url": "https://cdn.fufu.gg/uploads/mgunu8c9w8yua.png",
+      "pageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+      "rights": "No artwork-specific permission established; public quiz hosting is not proof of rights-holder redistribution authorization. Original creator and official publication chain remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-swampfire",
+      "url": "https://cdn.fufu.gg/uploads/mgunu8c24yei1.png",
+      "pageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+      "rights": "No artwork-specific permission established; public quiz hosting is not proof of rights-holder redistribution authorization. Original creator and official publication chain remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-big-chill",
+      "url": "https://www.pngkey.com/png/full/198-1984709_ultimate-big-chill-ben-10-aliens-big-chill.png",
+      "pageUrl": "https://www.pngkey.com/maxpic/u2w7w7r5r5a9w7r5/",
+      "rights": "Actual PNGkey source page says not for commercial use. This community-site wording is not verified rights-holder permission; original creator and official publication chain remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-spidermonkey",
+      "url": "https://www.pngitem.com/pimgs/b/411-4114680_spider-monkey-png.png",
+      "pageUrl": "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/",
+      "rights": "Host labels this image Personal Use Only. This is a community-site claim, not verified rights-holder permission. Original creator and official publication chain remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-cannonbolt",
+      "url": "https://www.pngaaa.com/api-download/7832317",
+      "pageUrl": "https://www.pngaaa.com/detail/7832317",
+      "rights": "Host labels this image Non-commercial Use. This is a community-site claim, not verified rights-holder permission. Original creator and official publication chain remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "astrodactyl",
+      "url": "https://ben10hero.com/wp-content/uploads/2018/03/astrodactyl_omniverse.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. This PNG is a community reproduction; original official publication and explicit image license are unconfirmed. Filename words and community page titles are not proof of official hosting or production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "bullfrag",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/12/bullfrag_ov_4.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bullfrag/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. This PNG is a community reproduction; original official publication and explicit image license are unconfirmed. Filename words and community page titles are not proof of official hosting or production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "atomix",
+      "url": "https://ben10hero.com/wp-content/uploads/2018/02/omniverseatomix.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/atomix/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. This PNG is a community reproduction; original official publication and explicit image license are unconfirmed. Filename words and community page titles are not proof of official hosting or production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "whampire",
+      "url": "https://ben10hero.com/wp-content/uploads/2018/07/whampire_facebook_profilet.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. This PNG is a community reproduction; original official publication and explicit image license are unconfirmed. Filename words and community page titles are not proof of official hosting or production origin.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "crashhopper",
+      "url": "https://www.pinclipart.com/picdir/big/558-5580741_grasshopper-clipart-black-and-white.png",
+      "pageUrl": "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/",
+      "rights": "Rights-holder permission to redistribute this artwork has not been established. This PNG is a community reproduction; original official publication and explicit image license are unconfirmed. Filename words and community page titles are not proof of official hosting or production origin. PinClipart labels PersonalUse, but uploader authority over the underlying Ben10 artwork is not established.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "upchuck-murk",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/08/upchuck.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+      "rights": "No artwork-specific rights-holder permission or original publication established on the inspected community page.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-diamondhead",
+      "url": "https://www.pngaaa.com/api-download/3127545",
+      "pageUrl": "https://www.pngaaa.com/detail/3127545",
+      "rights": "Community image reproduction/aggregation only. Original official publication and rights-holder redistribution permission have not been established; web words free/transparent/presskit are not proof of authorized publication or actual alpha.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-grey-matter",
+      "url": "https://www.pngaaa.com/api-download/3127521",
+      "pageUrl": "https://www.pngaaa.com/detail/3127521",
+      "rights": "Community image reproduction/aggregation only. Original official publication and rights-holder redistribution permission have not been established; web words free/transparent/presskit are not proof of authorized publication or actual alpha.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-xlr8",
+      "url": "https://www.pngaaa.com/api-download/3127476",
+      "pageUrl": "https://www.pngaaa.com/detail/3127476",
+      "rights": "Community image reproduction/aggregation only. Original official publication and rights-holder redistribution permission have not been established; web words free/transparent/presskit are not proof of authorized publication or actual alpha.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-overflow",
+      "url": "https://www.pngaaa.com/api-download/3127540",
+      "pageUrl": "https://www.pngaaa.com/detail/3127540",
+      "rights": "Community image reproduction/aggregation only. Original official publication and rights-holder redistribution permission have not been established; web words free/transparent/presskit are not proof of authorized publication or actual alpha.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-four-arms",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZOwzNpDmiqX0HV6LtWQpICjYuTE1Wa4zsRr9K0abmouYOCD0Sd4Pky_GJjXBTPO00kgMUcoADTBPn-lHqdUoO9aguH3OAeoxxpQtNql2zNHukbjTG7Ki-rwpexS3sjKPSkS4AACHNd6bu/s1600/Four_arms_re.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+      "rights": "Community news blog reproduces Ben10Reboot artwork and calls it official. Original publisher chain and rights-holder redistribution permission remain unconfirmed; no licensing conclusion is inferred from the title.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-stinkfly",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6yyEzI7DCfgfrBPVpvWRQm1pBnuC95x-CgFL0bqy-n5gKFyJi8C3_und8mK-dQ49faIdM5gwGG3N-QcUFivkNaZ8Ygldy3SWyShDCSvOFF6_3ngEU40Tr19peONaYwLkrgMfMvI7Kt1Oq/s1600/Stinkfly_Ben+10+Reboot+Art.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+      "rights": "Community news blog reproduces Ben10 images and calls some artwork official. Exact original publisher chain and rights-holder redistribution permission remain unconfirmed. Source-page attribution, pixel identity assessment and licensing conclusion are kept separate.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-wildvine",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDT3l8jLS05Ak0mqiO7IQrfDKoVo9k0kj9-Fro62A3aj_mYbVboHlOGOlNj_PgC0AtYZLTAlCGXDV2QOG4OFlOR5r4HetEVkrToyE7KDmoT1N_Hn_-6cDkFEQF6irCnuUcSZEqO32kgQIF/s1600/Wildvine_Ben+10+Reboot+Art.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+      "rights": "Community news blog reproduces Ben10 images and calls some artwork official. Exact original publisher chain and rights-holder redistribution permission remain unconfirmed. Source-page attribution, pixel identity assessment and licensing conclusion are kept separate.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-upgrade",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVv-uMiAkVvJmfOM5WoVumnQ5_Dra-gjqLR6O-8EmdghM6t8USheyiEMEoHn7St0Ztda60pOooD_f79KZhdKwIc96O7QEpNHsAYkE1_oMQJnlGjtSrGyOTFh-3bNMCRATirGVz3fIsndd5/s1600/Upgrade_Ben+10+Reboot+Art.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+      "rights": "Community news blog reproduces Ben10 images and calls some artwork official. Exact original publisher chain and rights-holder redistribution permission remain unconfirmed. Source-page attribution, pixel identity assessment and licensing conclusion are kept separate.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-cannonbolt",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAlAww0JMrh2i46r1AnTruXtqawfgcbIuOvQ_-KwAH6Oa7W88sz_PLViokoiMMfGAErNzsbeX6bCwKuq15niSOcDycwlWDkBSRmWuedm0tUiF0IMeF4oajIV9XtUylOzujbPGbS1hhEEL9/s1600/Cannonbolt_re.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+      "rights": "Community news blog reproduces Ben10 images and calls some artwork official. Exact original publisher chain and rights-holder redistribution permission remain unconfirmed. Source-page attribution, pixel identity assessment and licensing conclusion are kept separate.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-albedo",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-albedo-official_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Community reproduction host with no verified original production publication,creator attribution or artwork-specific redistribution permission. Site download/license statements and filenames official are not rights-holder provenance.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-arctiguana",
+      "url": "https://www.realclipart.com/png/full/342-3427488_ben-10-omniverse-ultimate-articguana-albedo-ben-10-omniverse-albedo-articguana.png",
+      "pageUrl": "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/",
+      "rights": "Community reproduction host with no verified original production publication,creator attribution or artwork-specific redistribution permission. Site download/license statements and filenames official are not rights-holder provenance.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-rath",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-rath-ov_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Community reproduction host with no verified original production publication,creator attribution or artwork-specific redistribution permission. Site download/license statements and filenames official are not rights-holder provenance.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "blitzwolfer",
+      "url": "https://www.pngitem.com/pimgs/b/522-5225325_ovni-png.png",
+      "pageUrl": "https://www.pngitem.com/middle/hmhJTRo_ben-10-ultimate-alien-benwolf-hd-png-download/",
+      "rights": "Host labels Personal Use Only; rights-holder authorization unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ultimate-wildmutt",
+      "url": "https://ami.animecharactersdatabase.com/images%20of/Ultimate%20Wildmutt/from/Ben%2010%20Ultimate%20Alien/uploads/chars/38889-1175029872.png",
+      "pageUrl": "https://www.animecharactersdatabase.com/characters.php?id=140133",
+      "rights": "Redistribution/commercial-use rights not established",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-rath",
+      "url": "https://www.nicepng.com/png/full/860-8605537_ben-10-png.png",
+      "pageUrl": "https://www.nicepng.com/ourpic/u2t4u2t4r5q8w7e6_ben-10-reboot-humungousaur/",
+      "rights": "Public community aggregation/reproduction only; original publisher chain and rights-holder redistribution permission unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-humungousaur",
+      "url": "https://www.pngitem.com/pimgs/b/374-3746468_omnitrix-png.png",
+      "pageUrl": "https://www.pngitem.com/middle/hhhoiho_ben-10-png-ben-ten-reboot-humungousaur-transparent/",
+      "rights": "Public community aggregation/reproduction only; original publisher chain and rights-holder redistribution permission unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-shock-rock",
+      "url": "https://ben10hero.com/wp-content/uploads/2022/02/image.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/shock-rock/",
+      "rights": "Public community aggregation/reproduction only; original publisher chain and rights-holder redistribution permission unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "shocksquatch-ov",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/05/shocksquatch_omniverse_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+      "rights": "Community reproduction; no artwork-specific rights-holder permission or original publication established.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "uprigg",
+      "url": "https://www.pinclipart.com/picdir/big/98-985535_jury-clip-art.png",
+      "pageUrl": "https://www.pinclipart.com/downpngs/TTTTmT_uprigg-is-the-combination-of-upgrades-and-jury/",
+      "rights": "PinClipart community redistribution. Original production publisher/artist and authoritative reuse permission are unconfirmed; page label is not an official publication receipt.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-gax",
+      "url": "https://www.pngaaa.com/api-download/3127648",
+      "pageUrl": "https://www.pngaaa.com/download/3127648",
+      "rights": "PNGAAA page labels Non-commercial Use. This is the community-host claim; original official publisher/artist and rights-holder permission remain unconfirmed.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-omni-enhanced-xlr8",
+      "url": "https://www.pngitem.com/pimgs/b/209-2095415_ben-10-png.png",
+      "pageUrl": "https://www.pngitem.com/middle/iTTmJmx_image-ben-10-omni-enhanced-xlr8-hd-png/",
+      "rights": "Original rights unknown; PNGitem page/search surface labels Personal Use Only. No applicable source-owner redistribution or production-use licence verified.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-omni-enhanced-overflow",
+      "url": "http://ben10hero.com/wp-content/uploads/2019/04/enhanced_overflow_art.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/omni-enhanced-overflow/",
+      "rights": "unknown original rights; no source-owner licence or applicable production-use permission verified",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "juryrigg-ov",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/jury_rigg_ov_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+      "rights": "Community reproduction; original artwork publication and rights-holder permission unknown.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "reboot-slapback",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/slapback-sheet1.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "Cartoon Network official public game asset; no open licence or redistribution permission established.",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-bootleg",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/bootleg-sheet1.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-hot-shot",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/hotshot-sheet1.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-undertow",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/undertow-sheet3.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-wreckingbolt",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/wreckingbolt-sheet2.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-crystalfist",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/crystalfist-sheet3.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "reboot-heatblast",
+      "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/heatblast-sheet0.png",
+      "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+      "rights": "unknown; public official game asset is not an open redistribution licence",
+      "contentType": "image/png",
+      "renderMode": "official-game-frame-alpha"
+    },
+    {
+      "formId": "gwen10-wildvine",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/gwen_10s_wildvine_art_sheet.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/wildvine/",
+      "rights": "Original creator, official publication and rights-holder permission to redistribute are unconfirmed; no claim of open license.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "gwen10-diamondhead",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/gwen_10_diamondhead_ov.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/diamondhead/",
+      "rights": "Original creator, official publication and rights-holder permission to redistribute are unconfirmed; no claim of open license.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "bad-ghostfreak",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/627px-049-ghostfreak_with_tentacles.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/",
+      "rights": "Original creator, rights-holder publication and redistribution permission are unconfirmed; no open-license claim.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "ghostfreak-ov",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/ghostfreak_ov_official.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/",
+      "rights": "Original creator, rights-holder publication and redistribution permission are unconfirmed; no open-license claim.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    },
+    {
+      "formId": "nanomech-ua",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/nanomech_ultimate_alien.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/",
+      "rights": "Original creator, official first publication and redistribution permission unconfirmed; no open-license claim.",
+      "contentType": "image/png",
+      "renderMode": "source-alpha"
+    }
+  ],
+  "notes": [
+    "Community-reposted images are not publisher-hosted originals.",
+    "Artwork remains copyrighted by its respective owners. No open artwork license is asserted.",
+    "Missing artwork stays missing. Silhouettes use the previously verified native display cache."
+  ]
+}

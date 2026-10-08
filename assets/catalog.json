@@ -1,0 +1,3644 @@
+{
+  "schemaVersion": 1,
+  "groups": {
+    "os": "初代经典",
+    "af": "Alien Force",
+    "ua": "Ultimate Alien",
+    "ov": "Omniverse",
+    "ultimate": "终极形态",
+    "reboot": "重启版",
+    "enhanced": "Omni-Enhanced",
+    "kix": "Omni-Kix 装甲",
+    "naut": "Omni-Naut 太空",
+    "fusion": "融合形态",
+    "antitrix": "Antitrix",
+    "alternate": "平行版本",
+    "body-variant": "身体状态",
+    "extra": "电影与其他媒体",
+    "nemetrix": "Nemetrix 天敌",
+    "nemetrix-ultimate": "终极天敌",
+    "alpha-evo": "Alpha EVO",
+    "edition-variant": "作品版本"
+  },
+  "coverage": {
+    "total": 225,
+    "reviewed": 98,
+    "missing": 127
+  },
+  "forms": [
+    {
+      "id": "heatblast",
+      "name": "火焰人",
+      "en": "Heatblast",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Heatblast — Original Series",
+        "heatblast-os",
+        "火焰人"
+      ],
+      "asset": "alien-heatblast",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "wildmutt",
+      "name": "超能兽",
+      "en": "Wildmutt",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-wildmutt",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "diamondhead",
+      "name": "钻石战神",
+      "en": "Diamondhead",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-diamondhead",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "xlr8",
+      "name": "快闪之星",
+      "en": "XLR8",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Speedyquick (Ben 23)",
+        "Speedyquick",
+        "ben23-speedyquick"
+      ],
+      "asset": "alien-xlr8",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "grey-matter",
+      "name": "小奇兵",
+      "en": "Grey Matter",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Brainfrog (Ben 23)",
+        "Brainfrog",
+        "ben23-brainfrog"
+      ],
+      "asset": "alien-grey-matter",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "four-arms",
+      "name": "四手霸王",
+      "en": "Four Arms",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Handyman (Ben 23)",
+        "Handyman",
+        "ben23-handyman"
+      ],
+      "asset": "alien-four-arms",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "stinkfly",
+      "name": "滑翔金刚",
+      "en": "Stinkfly",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Big Bug (Ben 23)",
+        "Big Bug",
+        "ben23-big-bug"
+      ],
+      "asset": "alien-stinkfly",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "ripjaws",
+      "name": "大钢牙",
+      "en": "Ripjaws",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Ripjaws — Original Series",
+        "ripjaws-os",
+        "大钢牙"
+      ],
+      "asset": "alien-ripjaws",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "upgrade",
+      "name": "变形怪",
+      "en": "Upgrade",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Techno-Bubble (Ben 23)",
+        "Techno-Bubble",
+        "ben23-techno-bubble"
+      ],
+      "asset": "alien-upgrade",
+      "sourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
+      ],
+      "artSourceLabel": "WBD / Cartoon Network 角色原图",
+      "artProvenance": "official-publisher"
+    },
+    {
+      "id": "ghostfreak",
+      "name": "鬼影",
+      "en": "Ghostfreak",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-ghostfreak",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "cannonbolt",
+      "name": null,
+      "en": "Cannonbolt",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Rollaway (Ben 23)",
+        "Rollaway",
+        "ben23-rollaway"
+      ],
+      "asset": "alien-cannonbolt",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "wildvine",
+      "name": null,
+      "en": "Wildvine",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-wildvine",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "spitter",
+      "name": null,
+      "en": "Spitter",
+      "group": "os",
+      "appearance": "Ben 10,000; Ken 10",
+      "aliases": [],
+      "asset": "alien-spitter",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Spitter"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "buzzshock",
+      "name": null,
+      "en": "Buzzshock",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ]
+    },
+    {
+      "id": "arctiguana",
+      "name": null,
+      "en": "Arctiguana",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Freeze Lizard (Ben 23)",
+        "Freeze Lizard",
+        "ben23-freezelizard"
+      ],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ]
+    },
+    {
+      "id": "blitzwolfer",
+      "name": null,
+      "en": "Blitzwolfer",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Benwolf"
+      ],
+      "asset": "alien-blitzwolfer",
+      "sourceUrls": [
+        "https://www.pngitem.com/middle/hmhJTRo_ben-10-ultimate-alien-benwolf-hd-png-download/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngitem.com/middle/hmhJTRo_ben-10-ultimate-alien-benwolf-hd-png-download/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "upchuck-perk",
+      "name": null,
+      "en": "Perk Upchuck",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Upchuck (Perk)",
+        "Vomit Man (Ben 23)",
+        "Vomit Man",
+        "ben23-vomit-man"
+      ],
+      "asset": "alien-upchuck-perk",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "snare-oh",
+      "name": null,
+      "en": "Snare-Oh",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Benmummy"
+      ],
+      "asset": "alien-snare-oh",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "frankenstrike",
+      "name": null,
+      "en": "Frankenstrike",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Benvicktor",
+        "Lightning Volt (Ben 23)",
+        "Lightning Volt",
+        "ben23-lightning-volt"
+      ],
+      "asset": "alien-frankenstrike",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ditto",
+      "name": null,
+      "en": "Ditto",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-ditto",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/ditto/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/ditto/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "eye-guy",
+      "name": null,
+      "en": "Eye Guy",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [
+        "Eye Guy (Ben 23)",
+        "Eye Guy",
+        "ben23-eye-guy"
+      ],
+      "asset": "alien-eye-guy",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "way-big",
+      "name": null,
+      "en": "Way Big",
+      "group": "os",
+      "appearance": "Ben 10 (2005) era",
+      "aliases": [],
+      "asset": "alien-way-big",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/way-big/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/way-big/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "swampfire",
+      "name": null,
+      "en": "Swampfire",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-swampfire",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/swampfire/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/swampfire/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "echo-echo",
+      "name": null,
+      "en": "Echo Echo",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-echo-echo",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/echo-echo/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/echo-echo/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "humungousaur",
+      "name": null,
+      "en": "Humungousaur",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [
+        "Dyno Mighty (Ben 23)",
+        "Dyno Mighty",
+        "ben23-dyno-mighty"
+      ],
+      "asset": "alien-humungousaur",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/humungousaur/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/humungousaur/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "jetray",
+      "name": null,
+      "en": "Jetray",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-jetray",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/jetray/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/jetray/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "big-chill",
+      "name": null,
+      "en": "Big Chill",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [
+        "Freeze-Ghost (Ben 23)",
+        "Freeze-Ghost",
+        "ben23-freeze-ghost",
+        "Big Chill — UAF",
+        "big-chill-uaf"
+      ],
+      "asset": "alien-big-chill",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/big-chill/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/big-chill/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "chromastone",
+      "name": null,
+      "en": "Chromastone",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [
+        "Chromastone — UAF",
+        "chromastone-uaf"
+      ],
+      "asset": "alien-chromastone",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/chromastone/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/chromastone/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "brainstorm",
+      "name": null,
+      "en": "Brainstorm",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-brainstorm",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/brainstorm/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/brainstorm/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "spidermonkey",
+      "name": null,
+      "en": "Spidermonkey",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [
+        "Mr. Monkey (Ben 23)",
+        "Mr. Monkey",
+        "ben23-mr-monkey"
+      ],
+      "asset": "alien-spidermonkey",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/spidermonkey/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/spidermonkey/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "goop",
+      "name": null,
+      "en": "Goop",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-goop",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/goop/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/goop/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "alien-x",
+      "name": null,
+      "en": "Alien X",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-alien-x",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/alien-x/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/alien-x/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "upchuck-murk",
+      "name": null,
+      "en": "Murk Upchuck",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [
+        "Upchuck (Murk)"
+      ],
+      "asset": "alien-upchuck-murk",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "lodestar",
+      "name": null,
+      "en": "Lodestar",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-lodestar",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/lodestar/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/lodestar/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "nanomech",
+      "name": null,
+      "en": "Nanomech",
+      "group": "af",
+      "appearance": "Ben 10: Alien Swarm",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Nanomech",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ]
+    },
+    {
+      "id": "rath",
+      "name": null,
+      "en": "Rath",
+      "group": "af",
+      "appearance": "Ben 10: Alien Force era",
+      "aliases": [],
+      "asset": "alien-rath",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/rath/",
+        "https://ben10.fandom.com/wiki/Category:Transformations",
+        "https://ben10.fandom.com/wiki/XLR8_(Classic)/Gallery"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/rath/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "waterhazard",
+      "name": null,
+      "en": "Waterhazard",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-waterhazard",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ampfibian",
+      "name": null,
+      "en": "Ampfibian",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-ampfibian",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "armodrillo",
+      "name": null,
+      "en": "Armodrillo",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [
+        "Toolboxx (Ben 23)",
+        "Toolboxx",
+        "ben23-toolboxx"
+      ],
+      "asset": "alien-armodrillo",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "terraspin",
+      "name": null,
+      "en": "Terraspin",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-terraspin",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/terraspin/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/terraspin/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "nrg",
+      "name": null,
+      "en": "NRG",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-nrg",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/6057003",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/6057003"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "fasttrack",
+      "name": null,
+      "en": "Fasttrack",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-fasttrack",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "clockwork",
+      "name": null,
+      "en": "Clockwork",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [
+        "Clockwork — Ultimate Alien",
+        "clockwork-ua"
+      ],
+      "asset": "alien-clockwork",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "chamalien",
+      "name": null,
+      "en": "Chamalien",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [],
+      "asset": "alien-chamalien",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "eatle",
+      "name": null,
+      "en": "Eatle",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [
+        "Eatle — Ultimate Alien",
+        "eatle-ua"
+      ],
+      "asset": "alien-eatle",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "juryrigg",
+      "name": null,
+      "en": "Juryrigg",
+      "group": "ua",
+      "appearance": "Ben 10: Ultimate Alien era",
+      "aliases": [
+        "Juryrigg — Ultimate Alien",
+        "juryrigg-ua"
+      ],
+      "asset": "alien-juryrigg",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "shocksquatch",
+      "name": null,
+      "en": "Shocksquatch",
+      "group": "ua",
+      "appearance": "Ben 10/Generator Rex: Heroes United",
+      "aliases": [
+        "Electricyeti (Ben 23)",
+        "Electricyeti",
+        "ben23-electricyeti"
+      ],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Shocksquatch",
+        "https://ben10.fandom.com/wiki/Shocksquatch/Gallery"
+      ]
+    },
+    {
+      "id": "feedback",
+      "name": null,
+      "en": "Feedback",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-feedback",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/feedback/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/feedback/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "bloxx",
+      "name": null,
+      "en": "Bloxx",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [
+        "Build-A-Guy (Ben 23)",
+        "Build-A-Guy",
+        "ben23-build-a-guy"
+      ],
+      "asset": "alien-bloxx",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "gravattack",
+      "name": null,
+      "en": "Gravattack",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-gravattack",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "crashhopper",
+      "name": null,
+      "en": "Crashhopper",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-crashhopper",
+      "sourceUrls": [
+        "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ball-weevil",
+      "name": null,
+      "en": "Ball Weevil",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-ball-weevil",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/ball-weevil/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/ball-weevil/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "walkatrout",
+      "name": null,
+      "en": "Walkatrout",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-walkatrout",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/walkatrout/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/walkatrout/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "pesky-dust",
+      "name": null,
+      "en": "Pesky Dust",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [
+        "Nighty Knight (Ben 23)",
+        "Nighty Knight",
+        "ben23-nighty-knight"
+      ],
+      "asset": "alien-pesky-dust",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "mole-stache",
+      "name": null,
+      "en": "Mole-Stache",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-mole-stache",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/mole-stache/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/mole-stache/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "the-worst",
+      "name": null,
+      "en": "The Worst",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-the-worst",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/the-worst/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/the-worst/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "kickin-hawk",
+      "name": null,
+      "en": "Kickin' Hawk",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-kickin-hawk",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/kickin-hawk/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/kickin-hawk/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "toepick",
+      "name": null,
+      "en": "Toepick",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-toepick",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "astrodactyl",
+      "name": null,
+      "en": "Astrodactyl",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-astrodactyl",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "bullfrag",
+      "name": null,
+      "en": "Bullfrag",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-bullfrag",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bullfrag/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bullfrag/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "atomix",
+      "name": null,
+      "en": "Atomix",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-atomix",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/atomix/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/atomix/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "gutrot",
+      "name": null,
+      "en": "Gutrot",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-gutrot",
+      "sourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://bogleech.com/halloween/hall20-ben10"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "whampire",
+      "name": null,
+      "en": "Whampire",
+      "group": "ov",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-whampire",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/",
+        "https://ben10.fandom.com/wiki/Whampire/Gallery",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-humungousaur",
+      "name": null,
+      "en": "Ultimate Humungousaur",
+      "group": "ultimate",
+      "appearance": "The Final Battle: Part 1",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-swampfire",
+      "name": null,
+      "en": "Ultimate Swampfire",
+      "group": "ultimate",
+      "appearance": "The Final Battle: Part 2",
+      "aliases": [],
+      "asset": "alien-ultimate-swampfire",
+      "sourceUrls": [
+        "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-spidermonkey",
+      "name": null,
+      "en": "Ultimate Spidermonkey",
+      "group": "ultimate",
+      "appearance": "Fame",
+      "aliases": [
+        "Ultimate Spidermonkey — Ultimate Alien",
+        "ultimate-spidermonkey-ua"
+      ],
+      "asset": "alien-ultimate-spidermonkey",
+      "sourceUrls": [
+        "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-big-chill",
+      "name": null,
+      "en": "Ultimate Big Chill",
+      "group": "ultimate",
+      "appearance": "Hit 'Em Where They Live",
+      "aliases": [],
+      "asset": "alien-ultimate-big-chill",
+      "sourceUrls": [
+        "https://www.pngkey.com/maxpic/u2w7w7r5r5a9w7r5/",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngkey.com/maxpic/u2w7w7r5r5a9w7r5/"
+      ],
+      "artSourceLabel": "Community reproduction: Ultimate Big Chill action pose",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-cannonbolt",
+      "name": null,
+      "en": "Ultimate Cannonbolt",
+      "group": "ultimate",
+      "appearance": "Too Hot to Handle",
+      "aliases": [],
+      "asset": "alien-ultimate-cannonbolt",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/7832317",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/7832317"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-echo-echo",
+      "name": null,
+      "en": "Ultimate Echo Echo",
+      "group": "ultimate",
+      "appearance": "Map of Infinity",
+      "aliases": [
+        "Ultimate Echo Echo — Ultimate Alien",
+        "ultimate-echo-echo-ua"
+      ],
+      "asset": "alien-ultimate-echo-echo",
+      "sourceUrls": [
+        "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-wildmutt",
+      "name": null,
+      "en": "Ultimate Wildmutt",
+      "group": "ultimate",
+      "appearance": "Prisoner Number 775 is Missing",
+      "aliases": [],
+      "asset": "alien-ultimate-wildmutt",
+      "sourceUrls": [
+        "https://www.animecharactersdatabase.com/characters.php?id=140133",
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ],
+      "visualSourceUrls": [
+        "https://www.animecharactersdatabase.com/characters.php?id=140133"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-way-big",
+      "name": null,
+      "en": "Ultimate Way Big",
+      "group": "ultimate",
+      "appearance": "The Ultimate Enemy: Part 2",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
+      ]
+    },
+    {
+      "id": "ultimate-albedo",
+      "name": null,
+      "en": "Ultimate Albedo",
+      "group": "ultimate",
+      "appearance": "The Ultimate Heist",
+      "aliases": [
+        "Ultimate Grey Matter"
+      ],
+      "asset": "alien-ultimate-albedo",
+      "sourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html",
+        "https://ben10.fandom.com/wiki/Ultimate_Albedo"
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-arctiguana",
+      "name": null,
+      "en": "Ultimate Arctiguana",
+      "group": "ultimate",
+      "appearance": "For a Few Brains More",
+      "aliases": [],
+      "asset": "alien-ultimate-arctiguana",
+      "sourceUrls": [
+        "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/",
+        "https://ben10.fandom.com/wiki/Ultimate_Arctiguana"
+      ],
+      "visualSourceUrls": [
+        "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-gravattack",
+      "name": null,
+      "en": "Ultimate Gravattack",
+      "group": "ultimate",
+      "appearance": "For a Few Brains More",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html",
+        "https://ben10.fandom.com/wiki/For_a_Few_Brains_More"
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-rath",
+      "name": null,
+      "en": "Ultimate Rath",
+      "group": "ultimate",
+      "appearance": "Malgax Attacks",
+      "aliases": [],
+      "asset": "alien-ultimate-rath",
+      "sourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html",
+        "https://ben10.fandom.com/wiki/Ultimate_Rath"
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "stink-arms",
+      "name": null,
+      "en": "Stink Arms",
+      "group": "fusion",
+      "appearance": "Dr. Animo and the Mutant Ray",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
+      ]
+    },
+    {
+      "id": "diamond-matter",
+      "name": null,
+      "en": "Diamond Matter",
+      "group": "fusion",
+      "appearance": "Dr. Animo and the Mutant Ray",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
+      ]
+    },
+    {
+      "id": "heat-jaws",
+      "name": null,
+      "en": "Heat Jaws",
+      "group": "fusion",
+      "appearance": "Dr. Animo and the Mutant Ray",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
+      ]
+    },
+    {
+      "id": "fourmungousaur",
+      "name": null,
+      "en": "Fourmungousaur",
+      "group": "fusion",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Combinations_(Classic)"
+      ]
+    },
+    {
+      "id": "atomic-x",
+      "name": null,
+      "en": "Atomic-X",
+      "group": "fusion",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Combinations_(Classic)"
+      ]
+    },
+    {
+      "id": "crashocker",
+      "name": null,
+      "en": "Crashocker",
+      "group": "fusion",
+      "appearance": "Let's Do the Time War Again",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Let's_Do_the_Time_War_Again"
+      ]
+    },
+    {
+      "id": "uprigg",
+      "name": null,
+      "en": "Uprigg",
+      "group": "fusion",
+      "appearance": "Let's Do the Time War Again",
+      "aliases": [],
+      "asset": "alien-uprigg",
+      "sourceUrls": [
+        "https://www.pinclipart.com/downpngs/TTTTmT_uprigg-is-the-combination-of-upgrades-and-jury/",
+        "https://ben10.fandom.com/wiki/Let's_Do_the_Time_War_Again"
+      ],
+      "visualSourceUrls": [
+        "https://www.pinclipart.com/downpngs/TTTTmT_uprigg-is-the-combination-of-upgrades-and-jury/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "big-chuck",
+      "name": null,
+      "en": "Big Chuck",
+      "group": "fusion",
+      "appearance": "Let's Do the Time War Again",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Let's_Do_the_Time_War_Again"
+      ]
+    },
+    {
+      "id": "humungoopsaur",
+      "name": null,
+      "en": "Humungoopsaur",
+      "group": "fusion",
+      "appearance": "The End of an Era",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Humungoopsaur"
+      ]
+    },
+    {
+      "id": "eon-rat",
+      "name": null,
+      "en": "Eon",
+      "group": "extra",
+      "appearance": "Ben 10: Race Against Time",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Eon_(Transformation)"
+      ]
+    },
+    {
+      "id": "bad-ghostfreak",
+      "name": null,
+      "en": "Bad Ghostfreak",
+      "group": "alternate",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": "alien-bad-ghostfreak",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/",
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
+      ],
+      "artSourceLabel": "Community reproduction: Bad Ben as Ghostfreak",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "bad-gravattack",
+      "name": null,
+      "en": "Bad Gravattack",
+      "group": "alternate",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "bad-buzzshock",
+      "name": null,
+      "en": "Bad Buzzshock",
+      "group": "alternate",
+      "appearance": "And Then There Was Ben",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "benzarro-frankenstrike",
+      "name": null,
+      "en": "Benzarro Frankenstrike",
+      "group": "alternate",
+      "appearance": "And Then There Were None; And Then There Was Ben",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "benzarro-snare-oh",
+      "name": null,
+      "en": "Benzarro Snare-Oh",
+      "group": "alternate",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "nega-gutrot",
+      "name": null,
+      "en": "Nega Gutrot",
+      "group": "alternate",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "gwen10-wildvine",
+      "name": null,
+      "en": "Gwen 10 Wildvine",
+      "group": "alternate",
+      "appearance": "And Then There Were None; And Then There Was Ben",
+      "aliases": [],
+      "asset": "alien-gwen10-wildvine",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/wildvine/",
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/wildvine/"
+      ],
+      "artSourceLabel": "Community reproduction: Gwen 10 Wildvine",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "gwen10-xlr8",
+      "name": null,
+      "en": "Gwen 10 XLR8",
+      "group": "alternate",
+      "appearance": "And Then There Was Ben",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "gwen10-diamondhead",
+      "name": null,
+      "en": "Gwen 10 Diamondhead",
+      "group": "alternate",
+      "appearance": "And Then There Was Ben",
+      "aliases": [],
+      "asset": "alien-gwen10-diamondhead",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/diamondhead/",
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/diamondhead/"
+      ],
+      "artSourceLabel": "Community reproduction: Gwen 10 Diamondhead",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "gwen10-cannonbolt",
+      "name": null,
+      "en": "Gwen 10 Cannonbolt",
+      "group": "alternate",
+      "appearance": "And Then There Was Ben",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
+        "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
+      ]
+    },
+    {
+      "id": "nrg-unsuited",
+      "name": null,
+      "en": "NRG (Unsuited)",
+      "group": "body-variant",
+      "appearance": "Hot Stretch",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/NRG"
+      ]
+    },
+    {
+      "id": "ripjaws-aquatic",
+      "name": null,
+      "en": "Ripjaws (Aquatic Tail)",
+      "group": "body-variant",
+      "appearance": "Ben 10 (2005); ability state documented",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
+      ]
+    },
+    {
+      "id": "humungousaur-grown",
+      "name": null,
+      "en": "Humungousaur (Grown)",
+      "group": "body-variant",
+      "appearance": "Alien Force; grown anatomy documented",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Humungousaur_(Classic)"
+      ]
+    },
+    {
+      "id": "swampfire-blossomed",
+      "name": null,
+      "en": "Swampfire (Blossomed)",
+      "group": "body-variant",
+      "appearance": "Omniverse; blossomed maturation documented",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Swampfire"
+      ]
+    },
+    {
+      "id": "whampire-bat",
+      "name": null,
+      "en": "Whampire (Bat)",
+      "group": "body-variant",
+      "appearance": "Omniverse; bat ability documented",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Whampire"
+      ]
+    },
+    {
+      "id": "shocksquatch-hu",
+      "name": null,
+      "en": "Shocksquatch (Heroes United)",
+      "group": "body-variant",
+      "appearance": "Ben 10/Generator Rex: Heroes United",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Shocksquatch"
+      ]
+    },
+    {
+      "id": "shocksquatch-ov",
+      "name": null,
+      "en": "Shocksquatch (Omniverse)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-shocksquatch-ov",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+        "https://ben10.fandom.com/wiki/Shocksquatch"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ghostfreak-true-af",
+      "name": null,
+      "en": "Ghostfreak (True Form, Alien Force)",
+      "group": "body-variant",
+      "appearance": "Ghost Town",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Zs'Skayr"
+      ]
+    },
+    {
+      "id": "reboot-cannonbolt",
+      "name": null,
+      "en": "Cannonbolt",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-cannonbolt",
+      "sourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-diamondhead",
+      "name": null,
+      "en": "Diamondhead",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-diamondhead",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/3127545",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/3127545"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-four-arms",
+      "name": null,
+      "en": "Four Arms",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-four-arms",
+      "sourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-gax",
+      "name": null,
+      "en": "Gax",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-gax",
+      "sourceUrls": [
+        "https://www.pngaaa.com/download/3127648",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/download/3127648"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-grey-matter",
+      "name": null,
+      "en": "Grey Matter",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-grey-matter",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/3127521",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/3127521"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-heatblast",
+      "name": null,
+      "en": "Heatblast",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-heatblast",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · Heatblast 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-overflow",
+      "name": null,
+      "en": "Overflow",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-overflow",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/3127540",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/3127540"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-stinkfly",
+      "name": null,
+      "en": "Stinkfly",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-stinkfly",
+      "sourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-upgrade",
+      "name": null,
+      "en": "Upgrade",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-upgrade",
+      "sourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-wildvine",
+      "name": null,
+      "en": "Wildvine",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-wildvine",
+      "sourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-xlr8",
+      "name": null,
+      "en": "XLR8",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 1. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-xlr8",
+      "sourceUrls": [
+        "https://www.pngaaa.com/detail/3127476",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngaaa.com/detail/3127476"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-rath",
+      "name": null,
+      "en": "Rath",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 2. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-rath",
+      "sourceUrls": [
+        "https://www.nicepng.com/ourpic/u2t4u2t4r5q8w7e6_ben-10-reboot-humungousaur/",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.nicepng.com/ourpic/u2t4u2t4r5q8w7e6_ben-10-reboot-humungousaur/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-shock-rock",
+      "name": null,
+      "en": "Shock Rock",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 2. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-shock-rock",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/shock-rock/",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/shock-rock/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-humungousaur",
+      "name": null,
+      "en": "Humungousaur",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 3. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-humungousaur",
+      "sourceUrls": [
+        "https://www.pngitem.com/middle/hhhoiho_ben-10-png-ben-ten-reboot-humungousaur-transparent/",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngitem.com/middle/hhhoiho_ben-10-png-ben-ten-reboot-humungousaur-transparent/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-slapback",
+      "name": null,
+      "en": "Slapback",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 3. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": "alien-reboot-slapback",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · Slapback 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-goop",
+      "name": null,
+      "en": "Goop",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-jetray",
+      "name": null,
+      "en": "Jetray",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-way-big",
+      "name": null,
+      "en": "Way Big",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-surge",
+      "name": null,
+      "en": "Surge",
+      "group": "reboot",
+      "appearance": "Animated reboot/current Ben; introduced in season 5. This is a roster candidate, not a visually verified redesign.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-alien-x",
+      "name": null,
+      "en": "Alien X",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-ampfibian",
+      "name": null,
+      "en": "Ampfibian",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-big-chill",
+      "name": null,
+      "en": "Big Chill",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-bloxx",
+      "name": null,
+      "en": "Bloxx",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-buzzshock",
+      "name": null,
+      "en": "Buzzshock",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-chromastone",
+      "name": null,
+      "en": "Chromastone",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-ripjaws",
+      "name": null,
+      "en": "Ripjaws",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-spidermonkey",
+      "name": null,
+      "en": "Spidermonkey",
+      "group": "reboot",
+      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-cannonbolt",
+      "name": null,
+      "en": "Omni-Enhanced Cannonbolt",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-diamondhead",
+      "name": null,
+      "en": "Omni-Enhanced Diamondhead",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-four-arms",
+      "name": null,
+      "en": "Omni-Enhanced Four Arms",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-grey-matter",
+      "name": null,
+      "en": "Omni-Enhanced Grey Matter",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-heatblast",
+      "name": null,
+      "en": "Omni-Enhanced Heatblast",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-overflow",
+      "name": null,
+      "en": "Omni-Enhanced Overflow",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": "alien-reboot-omni-enhanced-overflow",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/omni-enhanced-overflow/",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/omni-enhanced-overflow/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-omni-enhanced-stinkfly",
+      "name": null,
+      "en": "Omni-Enhanced Stinkfly",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-wildvine",
+      "name": null,
+      "en": "Omni-Enhanced Wildvine",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ]
+    },
+    {
+      "id": "reboot-omni-enhanced-xlr8",
+      "name": null,
+      "en": "Omni-Enhanced XLR8",
+      "group": "enhanced",
+      "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
+      "aliases": [],
+      "asset": "alien-reboot-omni-enhanced-xlr8",
+      "sourceUrls": [
+        "https://www.pngitem.com/middle/iTTmJmx_image-ben-10-omni-enhanced-xlr8-hd-png/",
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
+        "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
+      ],
+      "visualSourceUrls": [
+        "https://www.pngitem.com/middle/iTTmJmx_image-ben-10-omni-enhanced-xlr8-hd-png/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "reboot-omni-kix-cannonbolt",
+      "name": null,
+      "en": "Omni-Kix Cannonbolt",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in The Greatest Lake.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-diamondhead",
+      "name": null,
+      "en": "Omni-Kix Diamondhead",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Mud on the Run.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-four-arms",
+      "name": null,
+      "en": "Omni-Kix Four Arms",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Summer Breakers.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-heatblast",
+      "name": null,
+      "en": "Omni-Kix Heatblast",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Bon Voyage.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-humungousaur",
+      "name": null,
+      "en": "Omni-Kix Humungousaur",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in The Monsters in Your Head.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-jetray",
+      "name": null,
+      "en": "Omni-Kix Jetray",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Ben 10 Versus the Universe: The Movie.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-rath",
+      "name": null,
+      "en": "Omni-Kix Rath",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Falls, Falls, Falls.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-shock-rock",
+      "name": null,
+      "en": "Omni-Kix Shock Rock",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Tokyo Fun, Part 2: Slamming It Up.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-slapback",
+      "name": null,
+      "en": "Omni-Kix Slapback",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Bottomless Ben.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-kix-xlr8",
+      "name": null,
+      "en": "Omni-Kix XLR8",
+      "group": "kix",
+      "appearance": "Animated reboot; first used in Queen of Bees.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
+        "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-naut-heatblast",
+      "name": null,
+      "en": "Omni-Naut Heatblast",
+      "group": "naut",
+      "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-naut-humungousaur",
+      "name": null,
+      "en": "Omni-Naut Humungousaur",
+      "group": "naut",
+      "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-naut-jetray",
+      "name": null,
+      "en": "Omni-Naut Jetray",
+      "group": "naut",
+      "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-omni-naut-shock-rock",
+      "name": null,
+      "en": "Omni-Naut Shock Rock",
+      "group": "naut",
+      "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
+        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
+        "https://www.youtube.com/watch?v=zE6afSCF5sA"
+      ]
+    },
+    {
+      "id": "reboot-grey-arms",
+      "name": null,
+      "en": "Grey Arms",
+      "group": "fusion",
+      "appearance": "Riding the Storm Out. Name used in the episode.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Grey_Arms"
+      ]
+    },
+    {
+      "id": "reboot-amalgam-ben",
+      "name": null,
+      "en": "Amalgam Ben",
+      "group": "fusion",
+      "appearance": "Riding the Storm Out. Descriptive community title, not a confirmed official alien name.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Amalgam_Ben"
+      ]
+    },
+    {
+      "id": "reboot-xlrarmblastdiamondheat",
+      "name": null,
+      "en": "XLRArmBlastDiamondHeat",
+      "group": "fusion",
+      "appearance": "Innervasion Part 5: High Override. Name recorded in the community article; four-alien DNA-pod combination.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/XLRArmBlastDiamondHeat"
+      ]
+    },
+    {
+      "id": "reboot-bashmouth",
+      "name": null,
+      "en": "Bashmouth",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Introducing Kevin 11.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-bootleg",
+      "name": null,
+      "en": "Bootleg",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Franken-Fight.",
+      "aliases": [],
+      "asset": "alien-reboot-bootleg",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · Bootleg 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-crystalfist",
+      "name": null,
+      "en": "Crystalfist",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; appeared in the series; exact debut not independently checked in this task.",
+      "aliases": [],
+      "asset": "alien-reboot-crystalfist",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · CrystalFist 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-dark-matter",
+      "name": null,
+      "en": "Dark Matter",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in King of the Castle.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-hot-shot",
+      "name": null,
+      "en": "Hot Shot",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Which Watch.",
+      "aliases": [],
+      "asset": "alien-reboot-hot-shot",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · HotShot 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-humungoraptor",
+      "name": null,
+      "en": "Humungoraptor",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Ben 10,010 (alternate future Kevin).",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix",
+        "https://ben10.fandom.com/wiki/Humungoraptor"
+      ]
+    },
+    {
+      "id": "reboot-quad-smack",
+      "name": null,
+      "en": "Quad Smack",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Which Watch.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-rush",
+      "name": null,
+      "en": "Rush",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in Introducing Kevin 11.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-skunkmoth",
+      "name": null,
+      "en": "Skunkmoth",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; appeared in the series; exact debut not independently checked in this task.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-thornblade",
+      "name": null,
+      "en": "Thornblade",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in King of the Castle.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ]
+    },
+    {
+      "id": "reboot-undertow",
+      "name": null,
+      "en": "Undertow",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in King of the Castle.",
+      "aliases": [],
+      "asset": "alien-reboot-undertow",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · Undertow 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-wreckingbolt",
+      "name": null,
+      "en": "Wreckingbolt",
+      "group": "antitrix",
+      "appearance": "Animated reboot/Antitrix transformation; first used in This One Goes to 11.",
+      "aliases": [],
+      "asset": "alien-reboot-wreckingbolt",
+      "sourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "https://ben10.fandom.com/wiki/Antitrix"
+      ],
+      "visualSourceUrls": [
+        "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
+      ],
+      "artSourceLabel": "Cartoon Network 官方游戏 · Wreckingbolt 站姿",
+      "artProvenance": "official-game-adaptation"
+    },
+    {
+      "id": "reboot-monster-kevin-which-watch",
+      "name": null,
+      "en": "Monster Kevin (Which Watch)",
+      "group": "fusion",
+      "appearance": "Which Watch; Antitrix amalgamation. Descriptive title, not a confirmed official alien name.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix",
+        "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-monster-kevin-tales",
+      "name": null,
+      "en": "Monster Kevin (Tales from the Omnitrix)",
+      "group": "fusion",
+      "appearance": "Tales from the Omnitrix; STORY/IMAGINATION version, not established as an actual in-world transformation. Descriptive title.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix",
+        "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-anti-vilgax",
+      "name": null,
+      "en": "AntiVilgax",
+      "group": "fusion",
+      "appearance": "Ben 10 Versus the Universe: The Movie; Vilgax Antitrix amalgamation.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix",
+        "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
+      ]
+    },
+    {
+      "id": "reboot-alien-v",
+      "name": null,
+      "en": "Alien V",
+      "group": "fusion",
+      "appearance": "Ben 10 Versus the Universe: The Movie; Vilgax plus Celestialsapien Antitrix combination.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antitrix",
+        "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
+      ]
+    },
+    {
+      "id": "game-portaler",
+      "name": null,
+      "en": "Portaler",
+      "group": "extra",
+      "appearance": "Fuel Run; actual official online-game transformation, non-canon to the classic TV continuity. Later commissioned Omniverse-style redraw is not the game source.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Portaler"
+      ]
+    },
+    {
+      "id": "game-rath-arms",
+      "name": null,
+      "en": "Rath Arms",
+      "group": "extra",
+      "appearance": "Ben 10 Heroes and toy line; actual mobile-game Omni-Glitch fusion of Four Arms/Rath, non-canon to TV.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Rath_Arms",
+        "https://ben10.fandom.com/wiki/Heroes"
+      ]
+    },
+    {
+      "id": "game-shock-blast",
+      "name": null,
+      "en": "Shock Blast",
+      "group": "extra",
+      "appearance": "Ben 10 Heroes and toy line; actual mobile-game Omni-Glitch fusion of Heatblast/Shock Rock, non-canon to TV.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Shock_Blast",
+        "https://ben10.fandom.com/wiki/Heroes"
+      ]
+    },
+    {
+      "id": "game-omnitrix-glitch-combination",
+      "name": null,
+      "en": "Omnitrix Glitch Combination",
+      "group": "extra",
+      "appearance": "DNA Decode in Omnitrix Glitch; actual game-opening unnamed seven-alien transformation. Descriptive community title; non-canon to TV.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Omnitrix_Glitch_Combination",
+        "https://ben10.fandom.com/wiki/Omnitrix_Glitch"
+      ]
+    },
+    {
+      "id": "stage-rocks",
+      "name": null,
+      "en": "Rocks",
+      "group": "extra",
+      "appearance": "Ben 10 Live: Power of the Omnitrix / The Rise of VilEon. Official stage alien; TV-canon status disputed among crew, not an animated-series appearance.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Rocks",
+        "https://www.prlog.org/10720300-cartoon-networks-ben-10-live-power-of-the-omnitrix-touring-australia-septemberoctober-2010.pdf"
+      ]
+    },
+    {
+      "id": "stage-squidstrictor",
+      "name": null,
+      "en": "Squidstrictor",
+      "group": "extra",
+      "appearance": "Ben 10 Live: Power of the Omnitrix. Official stage alien; TV-canon status disputed among crew, not an animated-series appearance.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Squidstrictor",
+        "https://www.prlog.org/10720300-cartoon-networks-ben-10-live-power-of-the-omnitrix-touring-australia-septemberoctober-2010.pdf"
+      ]
+    },
+    {
+      "id": "promo-bob-the-blob",
+      "name": null,
+      "en": "Bob the Blob",
+      "group": "extra",
+      "appearance": "Ben 10: Ultimate Access Commercial 1; actual official promo transformation, non-canon to TV. Later crew commission is a distinct non-production redesign.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Bob_the_Blob",
+        "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access",
+        "https://vimeo.com/188743096"
+      ]
+    },
+    {
+      "id": "promo-antigravitesla",
+      "name": null,
+      "en": "Antigravitesla",
+      "group": "extra",
+      "appearance": "Ben 10: Ultimate Access Commercial 2; actual official promo transformation, non-canon to TV.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Antigravitesla",
+        "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access_Commercial_2"
+      ]
+    },
+    {
+      "id": "promo-plantapocalypse",
+      "name": null,
+      "en": "Plantapocalypse",
+      "group": "extra",
+      "appearance": "Ben 10: Ultimate Access Commercial 3; actual official promo transformation, non-canon to TV.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Plantapocalypse",
+        "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access",
+        "https://vimeo.com/188743097"
+      ]
+    },
+    {
+      "id": "nemetrix-buglizard",
+      "name": null,
+      "en": "Buglizard",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix"
+      ]
+    },
+    {
+      "id": "nemetrix-crabdozer",
+      "name": null,
+      "en": "Crabdozer",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix"
+      ]
+    },
+    {
+      "id": "nemetrix-hypnotick",
+      "name": null,
+      "en": "Hypnotick",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix"
+      ]
+    },
+    {
+      "id": "nemetrix-mucilator",
+      "name": null,
+      "en": "Mucilator",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix",
+        "https://ben10.fandom.com/wiki/Mucilator_(Transformation)"
+      ]
+    },
+    {
+      "id": "nemetrix-omnivoracious",
+      "name": null,
+      "en": "Omnivoracious",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)"
+      ]
+    },
+    {
+      "id": "nemetrix-slamworm",
+      "name": null,
+      "en": "Slamworm",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix"
+      ]
+    },
+    {
+      "id": "nemetrix-terroranchula",
+      "name": null,
+      "en": "Terroranchula",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix"
+      ]
+    },
+    {
+      "id": "nemetrix-tyrannopede",
+      "name": null,
+      "en": "Tyrannopede",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix",
+        "https://ben10.fandom.com/wiki/Tyrannopede"
+      ]
+    },
+    {
+      "id": "nemetrix-vicetopus",
+      "name": null,
+      "en": "Vicetopus",
+      "group": "nemetrix",
+      "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
+        "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
+        "https://ben10.fandom.com/wiki/Nemetrix",
+        "https://ben10.fandom.com/wiki/Vicetopus_(Transformation)"
+      ]
+    },
+    {
+      "id": "nemetrix-ultimate-panuncian",
+      "name": null,
+      "en": "Ultimate Panuncian",
+      "group": "nemetrix-ultimate",
+      "appearance": "For a Few Brains More: the Nemetrix evolves Khyber's Panuncian.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/For_a_Few_Brains_More",
+        "https://ben10.fandom.com/wiki/Ultimate_Panuncian",
+        "https://ben10.fandom.com/wiki/Khyber%27s_Panuncian"
+      ]
+    },
+    {
+      "id": "alpha-arms",
+      "name": null,
+      "en": "Alpha-Arms",
+      "group": "alpha-evo",
+      "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
+        "https://ben10.fandom.com/wiki/Alpha-Arms",
+        "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
+      ]
+    },
+    {
+      "id": "alpha-heatblast",
+      "name": null,
+      "en": "Heatblast (Alpha)",
+      "group": "alpha-evo",
+      "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
+        "https://ben10.fandom.com/wiki/Heatblast_(Alpha)",
+        "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
+      ]
+    },
+    {
+      "id": "alpha-humungousaur",
+      "name": null,
+      "en": "Humungousaur (Alpha)",
+      "group": "alpha-evo",
+      "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
+        "https://ben10.fandom.com/wiki/Humungousaur_(Alpha)",
+        "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
+      ]
+    },
+    {
+      "id": "eatle-ov",
+      "name": null,
+      "en": "Eatle — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Omniverse",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Eatle"
+      ]
+    },
+    {
+      "id": "chromastone-ov1",
+      "name": null,
+      "en": "Chromastone — Omniverse first design",
+      "group": "edition-variant",
+      "appearance": "Trouble Helix",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Chromastone_(Classic)"
+      ]
+    },
+    {
+      "id": "chromastone-ov2",
+      "name": null,
+      "en": "Chromastone — A New Dawn design",
+      "group": "edition-variant",
+      "appearance": "A New Dawn",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Chromastone_(Classic)"
+      ]
+    },
+    {
+      "id": "big-chill-ov",
+      "name": null,
+      "en": "Big Chill — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Omniverse",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Big_Chill_(Classic)"
+      ]
+    },
+    {
+      "id": "juryrigg-ov",
+      "name": null,
+      "en": "Juryrigg — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Have I Got a Deal for You / Omniverse",
+      "aliases": [],
+      "asset": "alien-juryrigg-ov",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+        "https://ben10.fandom.com/wiki/Juryrigg"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/"
+      ],
+      "artSourceLabel": "社区转载角色图（原始发布待核对）",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "ultimate-spidermonkey-ov",
+      "name": null,
+      "en": "Ultimate Spidermonkey — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Omniverse: Albedo",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimate_Spidermonkey"
+      ]
+    },
+    {
+      "id": "ultimate-echo-echo-ov",
+      "name": null,
+      "en": "Ultimate Echo Echo — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Omniverse: Albedo",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ultimate_Echo_Echo"
+      ]
+    },
+    {
+      "id": "ripjaws-ua",
+      "name": null,
+      "en": "Ripjaws — Ultimate Alien",
+      "group": "edition-variant",
+      "appearance": "Perplexahedron / Ultimate Alien",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
+      ]
+    },
+    {
+      "id": "ripjaws-ov",
+      "name": null,
+      "en": "Ripjaws — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Gone Fishin' / Omniverse",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
+      ]
+    },
+    {
+      "id": "heatblast-ua",
+      "name": null,
+      "en": "Heatblast — Ultimate Alien",
+      "group": "edition-variant",
+      "appearance": "Ultimate Alien",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
+      ]
+    },
+    {
+      "id": "heatblast-ov",
+      "name": null,
+      "en": "Heatblast — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Omniverse",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
+      ]
+    },
+    {
+      "id": "clockwork-ov16",
+      "name": null,
+      "en": "Clockwork — Omniverse age 16",
+      "group": "edition-variant",
+      "appearance": "Omniverse",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Clockwork"
+      ]
+    },
+    {
+      "id": "clockwork-ov11",
+      "name": null,
+      "en": "Clockwork — Omniverse age 11",
+      "group": "edition-variant",
+      "appearance": "Ben Again",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Clockwork"
+      ]
+    },
+    {
+      "id": "heatblast-age4",
+      "name": null,
+      "en": "Heatblast — age 4",
+      "group": "body-variant",
+      "appearance": "Don't Drink the Water",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Heatblast_(Classic)",
+        "https://ben10.fandom.com/wiki/Don%27t_Drink_the_Water"
+      ]
+    },
+    {
+      "id": "heatblast-original-future",
+      "name": null,
+      "en": "Heatblast — original Ben 10,000",
+      "group": "body-variant",
+      "appearance": "Ben 10,000; Ken 10",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Heatblast_(Classic)",
+        "https://ben10.fandom.com/wiki/Ben_10,000",
+        "https://ben10.fandom.com/wiki/Ken_10"
+      ]
+    },
+    {
+      "id": "mad-rath",
+      "name": null,
+      "en": "Mad Rath",
+      "group": "alternate",
+      "appearance": "And Then There Were None",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Rath_(Classic)",
+        "https://ben10.fandom.com/wiki/Power_Watch",
+        "https://ben10.fandom.com/wiki/Mad_Ben",
+        "https://ben10.fandom.com/wiki/And_Then_There_Were_None"
+      ]
+    },
+    {
+      "id": "mad-diamondhead",
+      "name": null,
+      "en": "Mad Diamondhead",
+      "group": "alternate",
+      "appearance": "It's a Mad, Mad, Mad Ben World: Part 1",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://ben10.fandom.com/wiki/Power_Watch",
+        "https://ben10.fandom.com/wiki/Mad_Ben",
+        "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_1"
+      ]
+    },
+    {
+      "id": "mad-upchuck-perk",
+      "name": null,
+      "en": "Mad Perk Upchuck",
+      "group": "alternate",
+      "appearance": "It's a Mad, Mad, Mad Ben World: Part 1",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Upchuck",
+        "https://ben10.fandom.com/wiki/Power_Watch",
+        "https://ben10.fandom.com/wiki/Mad_Ben",
+        "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_1"
+      ]
+    },
+    {
+      "id": "mad-nrg",
+      "name": null,
+      "en": "Mad NRG",
+      "group": "alternate",
+      "appearance": "It's a Mad, Mad, Mad Ben World: Part 2",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/NRG",
+        "https://ben10.fandom.com/wiki/Power_Watch",
+        "https://ben10.fandom.com/wiki/Mad_Ben",
+        "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_2"
+      ]
+    },
+    {
+      "id": "mad-way-big",
+      "name": null,
+      "en": "Mad Way Big",
+      "group": "alternate",
+      "appearance": "It's a Mad, Mad, Mad Ben World: Part 2",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Way_Big_(Classic)",
+        "https://ben10.fandom.com/wiki/Power_Watch",
+        "https://ben10.fandom.com/wiki/Mad_Ben",
+        "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_2"
+      ]
+    },
+    {
+      "id": "gwen10-os-heatblast",
+      "name": null,
+      "en": "Gwen 10 OS — Heatblast",
+      "group": "alternate",
+      "appearance": "Gwen 10 (2005 what-if episode)",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29",
+        "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
+      ]
+    },
+    {
+      "id": "gwen10-os-grey-matter",
+      "name": null,
+      "en": "Gwen 10 OS — Grey Matter",
+      "group": "alternate",
+      "appearance": "Gwen 10 (2005 what-if episode)",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
+      ]
+    },
+    {
+      "id": "gwen10-os-diamondhead",
+      "name": null,
+      "en": "Gwen 10 OS — Diamondhead",
+      "group": "alternate",
+      "appearance": "Gwen 10 (2005 what-if episode)",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
+      ]
+    },
+    {
+      "id": "gwen10-os-four-arms",
+      "name": null,
+      "en": "Gwen 10 OS — Four Arms",
+      "group": "alternate",
+      "appearance": "Gwen 10 (2005 what-if episode)",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
+      ]
+    },
+    {
+      "id": "max10-os-upgrade",
+      "name": null,
+      "en": "Max OS — Upgrade",
+      "group": "alternate",
+      "appearance": "Gwen 10 (2005 what-if episode)",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29",
+        "https://ben10.fandom.com/wiki/Upgrade_(Classic)"
+      ]
+    },
+    {
+      "id": "dynamite-diamondhead",
+      "name": null,
+      "en": "Diamondhead",
+      "group": "extra",
+      "appearance": "Ben 10 #3: publisher description identifies its comic debut.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://dynamite.com/ben-10-3/"
+      ]
+    },
+    {
+      "id": "dynamite-xlr8",
+      "name": null,
+      "en": "XLR8",
+      "group": "extra",
+      "appearance": "Ben 10 #4: publisher description identifies its comic debut.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343504011"
+      ]
+    },
+    {
+      "id": "dynamite-stinkfly",
+      "name": null,
+      "en": "Stinkfly",
+      "group": "extra",
+      "appearance": "Ben 10 #4: publisher description identifies its comic debut.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343504011"
+      ]
+    },
+    {
+      "id": "dynamite-grey-matter",
+      "name": null,
+      "en": "Grey Matter",
+      "group": "extra",
+      "appearance": "Ben 10 #5: publisher description identifies its comic debut.",
+      "aliases": [],
+      "asset": null,
+      "sourceUrls": [
+        "https://dynamite.com/ben-10-5/"
+      ]
+    },
+    {
+      "id": "ghostfreak-ov",
+      "name": null,
+      "en": "Ghostfreak — Omniverse",
+      "group": "edition-variant",
+      "appearance": "Ben 10: Omniverse",
+      "aliases": [],
+      "asset": "alien-ghostfreak-ov",
+      "sourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
+      ],
+      "artSourceLabel": "Community reproduction: Ghostfreak OV",
+      "artProvenance": "community-reproduction-of-character-art"
+    },
+    {
+      "id": "nanomech-ua",
+      "name": null,
+      "en": "Nanomech — Ultimate Alien",
+      "group": "edition-variant",
+      "appearance": "Ben 10: Ultimate Alien",
+      "aliases": [],
+      "asset": "alien-nanomech-ua",
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/"
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/"
+      ],
+      "artSourceLabel": "Community reproduction: Nanomech (Ultimate Alien)",
+      "artProvenance": "community-reproduction-of-character-art"
+    }
+  ]
+}
