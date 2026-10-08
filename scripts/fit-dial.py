@@ -85,13 +85,16 @@ for form in catalog['forms']:
     if image:
         raw=base64.b64decode(image[1])
         with Image.open(io.BytesIO(raw)) as pic:
-            assert pic.size==(200,240),form['id']
+            width,height=pic.size
             alpha=pic.convert('RGBA').getchannel('A')
-            points=[(index%200,index//200) for index,value in enumerate(alpha.tobytes()) if value>0]
+            points=[(index%width,index//width) for index,value in enumerate(alpha.tobytes()) if value>0]
         assert points,form['id']
         # SVG meet in a square dial: source width 200 is centered in 240.
         # Include each opaque pixel's full square, not just its center.
-        extent=max((abs(x+.5-100)+abs(y+.5-120)+1)/120 for x,y in points)
+        ratio=min(200/width,240/height)
+        origin_x=(200-width*ratio)/2
+        origin_y=(240-height*ratio)/2
+        extent=max((abs(origin_x+(x+.5)*ratio-100)+abs(origin_y+(y+.5)*ratio-120)+ratio)/120 for x,y in points)
         pixels=len(points)
         method='native-png-alpha-diamond-envelope'
     else:

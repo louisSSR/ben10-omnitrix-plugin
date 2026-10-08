@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "baseReviewedCount": 98,
+  "assets": [
+    {
+      "formId": "big-chill-ov",
+      "sourceFile": "assets/source-art/big-chill-ov-original.png",
+      "sourceSha256": "1a58f1fb9ea122a65ef0f8278aad0d9bbd1253d36eb60c1214aa31b01bd23d4e",
+      "maskFile": "assets/source-art/big-chill-ov-mask.png",
+      "maskSha256": "94f373151d44a85c27486b934b0a6d0c2d4266da1c6d3107ce393493c11a87d5",
+      "pageUrl": "https://www.pinclipart.com/maxpin/bTxxo/",
+      "url": "https://www.pinclipart.com/picdir/big/9-90901_ben-10-clip-art-ben-10-omniverse-big.png",
+      "renderMode": "source-alpha",
+      "artProvenance": "community-reproduction-of-character-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Ben 10 character artwork remains copyrighted by its owners. Community repost; no open license asserted.",
+      "observations": "Broad chest, four wings, forward claw, green waist emblem and full legs distinguish this Omniverse design from the slim UAF source. The 200x240 native mask preserves the viewed full outline. The outer right claw touches the source edge without an observed flat cut; upstream crop history remains unknown.",
+      "adoptionBasis": "The previous hold concerned readability in a removed 130x84 record-wall card. Reassess in the current watch UI; preserve that historical hold without changing it. Existing native alpha mask copied unchanged, no new bitmap editing."
+    },
+    {
+      "formId": "nanomech",
+      "sourceFile": "assets/source-art/nanomech-original.png",
+      "sourceSha256": "60edd213d2b68df5cd3f59d65ea522e28448d73c34819d1b5b19e0946fc46eeb",
+      "maskFile": "assets/source-art/nanomech-reference-edit.png",
+      "maskSha256": "221dc95616c44c6b8dfe6a74505636454d8ab44b67c1b4b878866d5930b8f648",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/nanomech_alien_swam.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Generated reference edit, not official transparent art.",
+      "observations": "Retained page image alt explicitly labels Nanomech (Alien Swarm), separately from Ultimate Alien and Omniverse. Actual image viewed: metallic live-action body, ribbed crown, single green eye, pointed shoulder armor, asymmetric arms and long pointed feet.",
+      "adoptionBasis": "Full visible metallic film body, hands and feet retained; no UA cartoon replacement, ground or platform visible. Generated sharpness and small mechanical details differ from low-resolution source: classify as imagegen reference edit, not an official original or pixel-identical cutout.",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Edit target: the supplied 413x462 image of Nanomech in the live-action Ben 10: Alien Swarm film. Remove ONLY the textured brown ground and the ground/contact shadows. Extract the single entire metallic insectoid character onto a genuinely transparent background. Preserve the exact visible pose, perspective, proportions, asymmetrical arm positions, full hands and feet, pointed shoulder armor, ribbed crown/head, single luminous green eye, chest Omnitrix detail, black/silver/bronze mechanical surfaces, original lighting and all visible thin appendages. Keep the source design and contour; do not replace it with the Ultimate Alien or Omniverse cartoon design. Do not invent hidden wings, change body shape, straighten the stance, symmetrize the limbs, add fingers, add antennae, add glow clouds, add a platform, or redraw as a cartoon. Keep both feet and hands fully within the output with a small transparent margin on all sides. Do not retain any ground, shadows, scene debris, solid background, checkerboard, frame, lettering, or watermark. This is a faithful cutout of the visible existing character, not a new character illustration."
+      }
+    },
+    {
+      "formId": "shocksquatch",
+      "sourceFile": "assets/source-art/shocksquatch-original.png",
+      "sourceSha256": "c9ac0d35b9713fda3f6c94255c1a18abcedde7825466861af6934c9d6fab5785",
+      "maskFile": "assets/source-art/shocksquatch-reference-edit.png",
+      "maskSha256": "3baaa5f017f441b67bb2c392c3d7b54d238ab998b72385e1cf038e77a7be0493",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/05/hu_997.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Generated reference edit, not official transparent art.",
+      "observations": "Retained page image alt Shocksquatch UA (HU) and separate Heroes United vs Omniverse description headings. Actual source viewed: broad white/gray/black fur, red-pink face, raised hands with circular bolts and chest emblem; not yellow/black Omniverse body.",
+      "adoptionBasis": "Full crouched stance and both raised hands retained, gray/white/black design distinct from OV, background removed. Upsampled fur/hand/face lines include generated detail and slight contour interpretation: reference edit, not official transparent art.",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Edit target: the provided 640x360 frame showing Shocksquatch from Ben 10/Generator Rex: Heroes United. Remove ONLY the surrounding concrete courtyard, plants, buildings, ground and all ground/contact shadows. Isolate the single entire gray/white/black furry character on a genuinely transparent background. Preserve the EXACT visible character design, existing pose, proportions, face, outlined 2D animation shapes, fingers, pointed fur tufts, feet, chest green Ultimatrix symbol, color regions and silhouette. Keep both raised hands and all toes fully present, with transparent gaps between legs and around arms/fingers. No redesign, no Omniverse yellow fur, no new details, no extra limbs, no glow, no decorative effects, no text, no border, no background color or fake checkerboard. Retain the source's perspective and full-body pose; do not straighten the legs or symmetrize the hands. Center the full intact cutout with a small transparent margin on every side. This is an extraction of the visible source, not a new illustration."
+      }
+    }
+  ],
+  "mergedForms": [
+    {
+      "from": "shocksquatch-hu",
+      "into": "shocksquatch",
+      "reason": "Both existing rows name the same Heroes United design and appearance; the separately retained shocksquatch-ov row is the different Omniverse design."
+    }
+  ]
+}

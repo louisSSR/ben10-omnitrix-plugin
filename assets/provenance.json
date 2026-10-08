@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "7dac204c6ec81c99316a9e7d170fe75259927eb1f8891e2f34f5a2176e168c3d",
+  "svgSha256": "b5a57d6590343a06efaf3304d6d3fd02e134070c80c80aba7892d4157b366832",
   "coverage": {
-    "total": 225,
-    "reviewed": 98,
-    "missing": 127
+    "total": 224,
+    "reviewed": 101,
+    "missing": 123
   },
   "assets": [
     {
@@ -767,11 +767,42 @@
       "rights": "Original creator, official first publication and redistribution permission unconfirmed; no open-license claim.",
       "contentType": "image/png",
       "renderMode": "source-alpha"
+    },
+    {
+      "formId": "big-chill-ov",
+      "url": "https://www.pinclipart.com/picdir/big/9-90901_ben-10-clip-art-ben-10-omniverse-big.png",
+      "pageUrl": "https://www.pinclipart.com/maxpin/bTxxo/",
+      "rights": "Ben 10 character artwork remains copyrighted by its owners. Community repost; no open license asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "1a58f1fb9ea122a65ef0f8278aad0d9bbd1253d36eb60c1214aa31b01bd23d4e",
+      "maskSha256": "94f373151d44a85c27486b934b0a6d0c2d4266da1c6d3107ce393493c11a87d5",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nanomech",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/01/nanomech_alien_swam.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "60edd213d2b68df5cd3f59d65ea522e28448d73c34819d1b5b19e0946fc46eeb",
+      "maskSha256": "221dc95616c44c6b8dfe6a74505636454d8ab44b67c1b4b878866d5930b8f648",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "shocksquatch",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/05/hu_997.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "c9ac0d35b9713fda3f6c94255c1a18abcedde7825466861af6934c9d6fab5785",
+      "maskSha256": "3baaa5f017f441b67bb2c392c3d7b54d238ab998b72385e1cf038e77a7be0493",
+      "contentType": "image/png"
     }
   ],
   "notes": [
     "Community-reposted images are not publisher-hosted originals.",
     "Artwork remains copyrighted by its respective owners. No open artwork license is asserted.",
     "Missing artwork stays missing. Silhouettes use the previously verified native display cache."
-  ]
+  ],
+  "supplementalRegistry": "assets/extra-art.json"
 }

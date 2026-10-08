@@ -1,0 +1,36 @@
+{
+  "version": "0.2.1",
+  "checkedAt": "2026-10-09T03:54:00+08:00",
+  "previewSha256": "2faed3bc6b750792683ec5a5791806d1228d8d602480cce010afd7986f0acc38",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "coverage": {"total": 224, "reviewed": 101, "missing": 123},
+  "viewports": [
+    {"width": 390, "height": 960, "documentWidth": 375, "mode": "dial", "watch": "original", "selected": "nanomech", "fullOutlineViewed": true, "horizontalOverflow": false},
+    {"width": 390, "height": 960, "documentWidth": 375, "mode": "dial", "watch": "original", "selected": "big-chill-ov", "fullOutlineViewed": true, "horizontalOverflow": false},
+    {"width": 390, "height": 960, "documentWidth": 375, "mode": "projection", "watch": "original", "selected": "shocksquatch", "fullOutlineViewed": true, "horizontalOverflow": false},
+    {"width": 320, "height": 920, "documentWidth": 305, "mode": "carousel", "watch": "original", "selected": "shocksquatch-ov", "horizontalOverflow": false, "rearScale": 0.48, "frontScale": 1.16},
+    {"width": 1280, "height": 720, "documentWidth": 1265, "mode": "projection", "watch": "recalibrated", "selected": "shocksquatch", "horizontalOverflow": false}
+  ],
+  "interactionEvidence": {
+    "oldAliasSearch": {"query": "shocksquatch-hu", "matches": 1, "selected": "shocksquatch"},
+    "mobileNameLayout": "Confirm button occupies its own full-width row; Nanomech and Shocksquatch remain whole at 390px. The longer Omniverse label wraps by words at 320px.",
+    "carouselSelection": "ArrowRight changed HU Shocksquatch to the separate OV design. During the transition the new front scale was 1.15634 and old rear 0.483655; settled front/rear are 1.16/0.48.",
+    "previewErrorLogs": [],
+    "temporaryViewportOverrideReset": true
+  },
+  "screenshots": [
+    "screenshots/v021-nanomech-dial-390.png",
+    "screenshots/v021-big-chill-ov-dial-390.png",
+    "screenshots/v021-shocksquatch-projection-390.png",
+    "screenshots/v021-carousel-320.png",
+    "screenshots/v021-desktop-projection.png"
+  ],
+  "boundaries": {
+    "realPhoneVerified": false,
+    "realSillyTavernVerified": false,
+    "driverAccepted": false,
+    "allSilhouettesComplete": false,
+    "newArt": "Big Chill OV uses the existing native mask of community-reposted artwork. Film Nanomech and HU Shocksquatch use AI reference edits with generated detail differences; none is claimed as publisher-hosted transparent original artwork."
+  }
+}

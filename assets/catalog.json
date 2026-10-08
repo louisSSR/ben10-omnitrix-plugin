@@ -21,9 +21,9 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 225,
-    "reviewed": 98,
-    "missing": 127
+    "total": 224,
+    "reviewed": 101,
+    "missing": 123
   },
   "forms": [
     {
@@ -979,11 +979,22 @@
       "group": "af",
       "appearance": "Ben 10: Alien Swarm",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nanomech",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Nanomech",
         "https://ben10.fandom.com/wiki/Omnitrix_(Omniverse)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "dialFit": {
+        "scale": 0.5498,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.58235,
+        "visiblePixels": 538059
+      }
     },
     {
       "id": "rath",
@@ -1282,13 +1293,26 @@
       "aliases": [
         "Electricyeti (Ben 23)",
         "Electricyeti",
-        "ben23-electricyeti"
+        "ben23-electricyeti",
+        "shocksquatch-hu",
+        "Shocksquatch (Heroes United)"
       ],
-      "asset": null,
+      "asset": "alien-shocksquatch",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Shocksquatch",
         "https://ben10.fandom.com/wiki/Shocksquatch/Gallery"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "dialFit": {
+        "scale": 0.6558,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.32646,
+        "visiblePixels": 593120
+      }
     },
     {
       "id": "feedback",
@@ -2326,18 +2350,6 @@
       "asset": null,
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Whampire"
-      ]
-    },
-    {
-      "id": "shocksquatch-hu",
-      "name": null,
-      "en": "Shocksquatch (Heroes United)",
-      "group": "body-variant",
-      "appearance": "Ben 10/Generator Rex: Heroes United",
-      "aliases": [],
-      "asset": null,
-      "sourceUrls": [
-        "https://ben10.fandom.com/wiki/Shocksquatch"
       ]
     },
     {
@@ -3893,10 +3905,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-big-chill-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Big_Chill_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.pinclipart.com/maxpin/bTxxo/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5494,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.583333,
+        "visiblePixels": 11784
+      }
     },
     {
       "id": "juryrigg-ov",

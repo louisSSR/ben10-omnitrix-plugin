@@ -47,6 +47,13 @@ test('valid preferences survive, extra fields are dropped, input remains untouch
   }
 });
 
+test('merged form IDs restore the canonical selection while a current ID takes priority', () => {
+  const merged = [{ id: 'other', aliases: [] }, { id: 'shocksquatch', aliases: ['shocksquatch-hu'] }];
+  assert.equal(normalizePreferences({ selectedId: 'shocksquatch-hu' }, merged).selectedId, 'shocksquatch');
+  assert.equal(normalizePreferences({ selectedId: 'shocksquatch-hu' }, [...merged, { id: 'shocksquatch-hu' }]).selectedId, 'shocksquatch-hu');
+  assert.deepEqual(ids(filterForms(merged, { query: 'shocksquatch-hu', readyOnly: false })), ['shocksquatch']);
+});
+
 test('search matches Chinese names, aliases, English case, IDs and normalized full-width input', () => {
   for (const query of ['火焰人', '烈焰人', 'HEATBLAST', 'pyronite', '  ＨＥＡＴＢＬＡＳＴ  ']) {
     assert.deepEqual(ids(filterForms(forms, { query })), ['heatblast']);

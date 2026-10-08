@@ -15,24 +15,27 @@ const html = read('preview.html');
 const css = read('styles.css');
 const app = read('app.js');
 const sourceCatalog = JSON.parse(read('assets/catalog.json'));
+const extraArt = JSON.parse(read('assets/extra-art.json'));
+const expectedReviewed = 98 + extraArt.assets.length;
+const expectedTotal = 225 - (extraArt.mergedForms || []).length;
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
 const catalogScripts = scripts.filter(match => /\bid=["']catalog-data["']/i.test(match[1]));
 assert.equal(catalogScripts.length, 1, 'exactly one embedded catalog');
 const catalog = JSON.parse(catalogScripts[0][2]);
 const runtimeScripts = scripts.filter(match => !/\btype=["']application\/json["']/i.test(match[1]));
 
-test('standalone build keeps all records and exactly 98 reviewed silhouettes', () => {
+test('standalone build keeps the baseline and every individually reviewed addition', () => {
   assert.deepEqual(catalog, sourceCatalog);
-  assert.deepEqual(catalog.coverage, { total: 225, reviewed: 98, missing: 127 });
-  assert.equal(catalog.forms.length, 225);
-  assert.equal(new Set(catalog.forms.map(form => form.id)).size, 225);
+  assert.deepEqual(catalog.coverage, { total: expectedTotal, reviewed: expectedReviewed, missing: expectedTotal - expectedReviewed });
+  assert.equal(catalog.forms.length, expectedTotal);
+  assert.equal(new Set(catalog.forms.map(form => form.id)).size, expectedTotal);
   const ready = catalog.forms.filter(form => form.asset);
   const missing = catalog.forms.filter(form => !form.asset);
-  assert.equal(ready.length, 98);
-  assert.equal(missing.length, 127);
+  assert.equal(ready.length, expectedReviewed);
+  assert.equal(missing.length, expectedTotal - expectedReviewed);
   const symbolIds = [...html.matchAll(/<symbol\b[^>]*\bid=["']([^"']+)["']/gi)].map(match => match[1]);
-  assert.equal(symbolIds.length, 98);
-  assert.equal(new Set(symbolIds).size, 98);
+  assert.equal(symbolIds.length, expectedReviewed);
+  assert.equal(new Set(symbolIds).size, expectedReviewed);
   for (const form of ready) {
     assert.match(form.asset, /^alien-[a-z0-9-]+$/);
     assert.equal(symbolIds.filter(id => id === form.asset).length, 1, `${form.id} resolves to one embedded body`);
@@ -42,17 +45,19 @@ test('standalone build keeps all records and exactly 98 reviewed silhouettes', (
 
 function rgbaPixels(png) {
   assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
-  assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20), png[24], png[25], png[28]], [200, 240, 8, 6, 0], 'native bodies use non-interlaced 200×240 RGBA PNG');
+  const width = png.readUInt32BE(16), height = png.readUInt32BE(20);
+  assert.ok(width > 0 && width <= 8192 && height > 0 && height <= 8192);
+  assert.deepEqual([png[24], png[25], png[28]], [8, 6, 0], 'bodies use non-interlaced RGBA PNG');
   const blocks = [];
   for (let offset = 8; offset < png.length;) {
     const length = png.readUInt32BE(offset), type = png.toString('ascii', offset + 4, offset + 8);
     if (type === 'IDAT') blocks.push(png.subarray(offset + 8, offset + 8 + length));
     offset += length + 12;
   }
-  const raw = inflateSync(Buffer.concat(blocks)), stride = 800, pixels = Buffer.alloc(stride * 240);
-  assert.equal(raw.length, (stride + 1) * 240);
+  const raw = inflateSync(Buffer.concat(blocks)), stride = width * 4, pixels = Buffer.alloc(stride * height);
+  assert.equal(raw.length, (stride + 1) * height);
   const paeth = (a, b, c) => { const p = a + b - c, distances = [Math.abs(p - a), Math.abs(p - b), Math.abs(p - c)]; return distances[0] <= distances[1] && distances[0] <= distances[2] ? a : distances[1] <= distances[2] ? b : c; };
-  for (let y = 0; y < 240; y++) {
+  for (let y = 0; y < height; y++) {
     const filter = raw[y * (stride + 1)]; assert.ok(filter <= 4);
     for (let x = 0; x < stride; x++) {
       const index = y * stride + x, left = x >= 4 ? pixels[index - 4] : 0, up = y ? pixels[index - stride] : 0, diagonal = y && x >= 4 ? pixels[index - stride - 4] : 0;
@@ -60,7 +65,7 @@ function rgbaPixels(png) {
       pixels[index] = (raw[y * (stride + 1) + 1 + x] + prediction) & 255;
     }
   }
-  return pixels;
+  return { pixels, width, height };
 }
 
 // Pillow only decodes the original AVIF bytes. Filter and envelope verification
@@ -81,10 +86,10 @@ print(json.dumps(result))`;
   return JSON.parse(execFileSync(process.env.PYTHON || 'python', ['-c', decoder, path.join(root, 'assets/silhouettes.svg')], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 }));
 }
 
-test('all 98 dial fits keep every visible pixel corner inside the safe diamond without changing body bytes', () => {
+test('all dial fits keep every visible pixel corner inside the safe diamond without changing body bytes', () => {
   const fitReport = JSON.parse(read('assets/dial-fit.json')), svg = read('assets/silhouettes.svg');
   assert.equal(fitReport.sourceSvgSha256, createHash('sha256').update(svg).digest('hex'));
-  assert.equal(fitReport.shapeCount, 98); assert.equal(fitReport.bitmapEdits, 0); assert.equal(fitReport.safeDiamondRadius, .87);
+  assert.equal(fitReport.shapeCount, expectedReviewed); assert.equal(fitReport.bitmapEdits, 0); assert.equal(fitReport.safeDiamondRadius, .87);
   // Source geometry can be tested before preview.html is rebuilt. A separate
   // build-freshness test above still requires its catalog to match this source.
   const ready = sourceCatalog.forms.filter(form => form.asset), legacy = legacyRgbPixels();
@@ -104,10 +109,11 @@ test('all 98 dial fits keep every visible pixel corner inside the safe diamond w
     };
     if (encoded) {
       nativeCount++; assert.equal(fit.method, 'native-png-alpha-diamond-envelope');
-      const pixels = rgbaPixels(Buffer.from(encoded, 'base64'));
-      for (let y = 0; y < 240; y++) for (let x = 0; x < 200; x++) if (pixels[(y * 200 + x) * 4 + 3] > 0) {
+      const { pixels, width, height } = rgbaPixels(Buffer.from(encoded, 'base64'));
+      const ratio = Math.min(200 / width, 240 / height), ox = (200 - width * ratio) / 2, oy = (240 - height * ratio) / 2;
+      for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) if (pixels[(y * width + x) * 4 + 3] > 0) {
         visiblePixels++;
-        for (const dx of [0, 1]) for (const dy of [0, 1]) checkCorner(x + dx, y + dy);
+        for (const dx of [0, 1]) for (const dy of [0, 1]) checkCorner(ox + (x + dx) * ratio, oy + (y + dy) * ratio);
       }
       assert.equal(visiblePixels, fit.visiblePixels, form.id);
     } else {
@@ -157,7 +163,7 @@ test('all 98 dial fits keep every visible pixel corner inside the safe diamond w
     }
     assert.ok(Math.abs(extent - fit.diamondExtent) < 1e-6, `${form.id} fit records the measured envelope`);
   }
-  assert.deepEqual([nativeCount, legacyCount], [90, 8]);
+  assert.deepEqual([nativeCount, legacyCount], [90 + extraArt.assets.length, 8]);
   assert.ok(fitReport.fits.heatblast.scale > .8, 'Heatblast remains legible instead of retaining the old half-size fit');
   for (const form of sourceCatalog.forms.filter(form => !form.asset)) assert.equal(form.dialFit, undefined, `${form.id} remains missing`);
 });

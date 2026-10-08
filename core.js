@@ -11,11 +11,12 @@ export const MODES = Object.freeze([
 ]);
 export function normalizePreferences(value, forms = []) {
   const v = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+  const selected = forms.find(x => x.id === v.selectedId) || forms.find(x => typeof v.selectedId === 'string' && x.aliases?.includes(v.selectedId));
   return {
     watch: WATCHES.some(x => x.id === v.watch) ? v.watch : 'original',
     mode: MODES.some(x => x.id === v.mode) ? v.mode : 'projection',
     reducedMotion: v.reducedMotion === true,
-    selectedId: forms.some(x => x.id === v.selectedId) ? v.selectedId : (forms[0]?.id || ''),
+    selectedId: selected?.id || forms[0]?.id || '',
   };
 }
 export function filterForms(forms, { query = '', group = 'all', readyOnly = true } = {}) {

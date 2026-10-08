@@ -6,9 +6,9 @@ SillyTavern 外星人选择插件，同时提供可双击打开的独立 `previe
 
 - 四款可切换表壳：初代 Omnitrix、Alien Force 重校准版、Ultimatrix、Omniverse 完成版。0.2.0 换用透明背景的细节重绘，图像生成记录见 `assets/watches-v3/`。
 - 三种召唤界面：分层全息投影、带远近缩放的环形转盘、带交叉挡片的菱形表盘。每种都有选择与锁定动画；宇宙记录墙已移除，旧偏好自动回到投影。
-- 菱形表盘按每个剪影的实际透明像素单独计算比例，让翅膀、手臂等轮廓完整落在菱形内。98 个已接入素材均有适配记录。
+- 菱形表盘按每个剪影的实际透明像素单独计算比例，让翅膀、手臂等轮廓完整落在菱形内。101 个已接入素材均有适配记录。
 - 电脑与手机共用一套页面；支持点击、左右滑动、方向键和 Enter。遵循系统减少动态设置。
-- 一份共享档案：225 条记录，98 条已核对剪影，127 条素材待补。记录含作品版本、融合和身体状态，不等于独立物种数量。
+- 一份共享档案：224 条记录，101 条已接入剪影，123 条素材待补。0.2.1 新增 OV 极冻魔、电影版 Nanomech 和 HU 电力雪怪，合并重复的 HU 电力雪怪记录并兼容旧选择。后两张是参考原画的 AI 去背景编辑稿，非官方透明原图；来源与差异见 `assets/extra-art.json`。记录含作品版本、融合和身体状态，不等于独立物种数量。
 - 可搜索中文/英文名称和筛选作品。缺图会明确显示“素材待补”。
 
 ## 预览
@@ -25,9 +25,9 @@ npm run dev
 
 ## 安装到 SillyTavern
 
-当前是 0.2.0 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
+当前是 0.2.1 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
 
-1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.2.0` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
+1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.2.1` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
 2. 重载酒馆，在扩展设置里打开 **Omnitrix**。
 3. 选择手表和召唤界面，选择外星人并点击“锁定形态”。
 4. 需要使用时点击“写入酒馆输入框”。原有草稿保留，插件不会自动发送或调用模型。
@@ -56,6 +56,6 @@ npm run package
 
 零运行时第三方依赖。维护 `core.js`、`app.js`、`styles.css` 和 `preview.shell.html`，构建生成单文件页面。`host-adapter.js` 隔离 SillyTavern 能力；同一 Core/UI 用于独立预览和宿主 iframe。
 
-ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.2.0 验证记录](docs/review-v2.md)。
+ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.2.1 验证记录](docs/review-v021.md)。
 
 所有截图参考、动画角色及剪影的权利归各原权利人。请阅读 [NOTICE.md](NOTICE.md)。
