@@ -1,3 +1,3 @@
 # Preserve exact bytes for distributed artifacts and their recorded hashes.
-preview.html -text
-assets/silhouettes.svg -text
+preview.html -text whitespace=cr-at-eol
+assets/silhouettes.svg -text whitespace=cr-at-eol
