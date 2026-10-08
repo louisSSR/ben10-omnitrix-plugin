@@ -52,7 +52,7 @@ function fixture(t) {
     rmSync(dir, { recursive: true, force: true });
   });
   for (const folder of ['scripts', 'assets/source-art', 'snapshot']) mkdirSync(path.join(dir, folder), { recursive: true });
-  for (const file of ['extra_art.py', 'import-catalog.py', 'fit-dial.py']) copyFileSync(path.join(root, 'scripts', file), path.join(dir, 'scripts', file));
+  for (const file of ['extra_art.py', 'import-catalog.py', 'fit-dial.py', 'art_files.py']) copyFileSync(path.join(root, 'scripts', file), path.join(dir, 'scripts', file));
   const png = fixturePng();
   writeFileSync(path.join(dir, 'assets/source-art/source.png'), png);
   writeFileSync(path.join(dir, 'assets/source-art/mask.png'), png);

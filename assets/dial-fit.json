@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "a1c7d3c17bc2328ae9f484645e2ea9b86c65312a31f24e55831c2020fcc0dadd",
-  "shapeCount": 168,
+  "sourceSvgSha256": "a523f83ee9984e4a9722a41b64673fa350482712fa516f4860a396bbcba15f8b",
+  "shapeCount": 170,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -490,6 +490,12 @@
       "diamondExtent": 1.633333,
       "visiblePixels": 20901
     },
+    "stink-arms": {
+      "scale": 0.7114,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.222873,
+      "visiblePixels": 360984
+    },
     "fourmungousaur": {
       "scale": 0.6755,
       "method": "native-png-alpha-diamond-envelope",
@@ -687,6 +693,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.158602,
       "visiblePixels": 48377
+    },
+    "reboot-big-chill": {
+      "scale": 0.7521,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.156684,
+      "visiblePixels": 177149
     },
     "reboot-bloxx": {
       "scale": 0.5913,

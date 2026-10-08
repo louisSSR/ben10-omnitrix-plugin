@@ -14,6 +14,12 @@ const read = file => readFileSync(path.join(root, file), 'utf8');
 const html = read('preview.html');
 const css = read('styles.css');
 const app = read('app.js');
+const sourceSvg = read('assets/silhouettes.svg');
+const inlineSvg = sourceSvg.replace(/href="runtime\/([a-f0-9]{64})\.(png|avif)"/g, (_all, sha, type) => {
+  const raw = readFileSync(path.join(root, 'assets/runtime', `${sha}.${type}`));
+  assert.equal(createHash('sha256').update(raw).digest('hex'), sha);
+  return `href="data:image/${type};base64,${raw.toString('base64')}"`;
+});
 const sourceCatalog = JSON.parse(read('assets/catalog.json'));
 const extraArt = JSON.parse(read('assets/extra-art.json'));
 const expectedReviewed = 98 + extraArt.assets.length;
@@ -24,7 +30,7 @@ assert.equal(catalogScripts.length, 1, 'exactly one embedded catalog');
 const catalog = JSON.parse(catalogScripts[0][2]);
 const runtimeScripts = scripts.filter(match => !/\btype=["']application\/json["']/i.test(match[1]));
 
-test('standalone build keeps the baseline and every individually reviewed addition', () => {
+test('offline directory build keeps the baseline and every individually reviewed addition', () => {
   assert.deepEqual(catalog, sourceCatalog);
   assert.deepEqual(catalog.coverage, { total: expectedTotal, reviewed: expectedReviewed, missing: expectedTotal - expectedReviewed });
   assert.equal(catalog.forms.length, expectedTotal);
@@ -85,14 +91,15 @@ function rgbaPixels(png) {
 // below runs independently in JS; it does not import or execute the fit builder.
 function legacyRgbPixels() {
   const decoder = `import base64,io,json,sys,zlib,xml.etree.ElementTree as ET
+from pathlib import Path
 from PIL import Image
 ns='{http://www.w3.org/2000/svg}'
 result={}
 for symbol in ET.parse(sys.argv[1]).iter(ns+'symbol'):
     image=symbol.find(ns+'image')
     uri=image.attrib['href']
-    if not uri.startswith('data:image/avif;base64,'): continue
-    with Image.open(io.BytesIO(base64.b64decode(uri.split(',',1)[1]))) as pic:
+    if not uri.endswith('.avif'): continue
+    with Image.open(io.BytesIO((Path(sys.argv[1]).parent/uri).read_bytes())) as pic:
         assert pic.format=='AVIF' and pic.mode=='RGB'
         result[symbol.attrib['id']]={'width':pic.width,'height':pic.height,'rgb':base64.b64encode(zlib.compress(pic.tobytes())).decode('ascii')}
 print(json.dumps(result))`;
@@ -100,8 +107,8 @@ print(json.dumps(result))`;
 }
 
 test('all dial fits keep every visible pixel corner inside the safe diamond without changing body bytes', () => {
-  const fitReport = JSON.parse(read('assets/dial-fit.json')), svg = read('assets/silhouettes.svg');
-  assert.equal(fitReport.sourceSvgSha256, createHash('sha256').update(svg).digest('hex'));
+  const fitReport = JSON.parse(read('assets/dial-fit.json')), svg = inlineSvg;
+  assert.equal(fitReport.sourceSvgSha256, createHash('sha256').update(sourceSvg).digest('hex'));
   assert.equal(fitReport.shapeCount, expectedReviewed); assert.equal(fitReport.bitmapEdits, 0); assert.equal(fitReport.safeDiamondRadius, .87);
   // Source geometry can be tested before preview.html is rebuilt. A separate
   // build-freshness test above still requires its catalog to match this source.
@@ -112,7 +119,9 @@ test('all dial fits keep every visible pixel corner inside the safe diamond with
     const fit = fitReport.fits[form.id]; assert.deepEqual(form.dialFit, fit);
     assert.ok(Number.isFinite(fit.scale) && fit.scale > 0 && fit.scale < 1, form.id);
     const symbol = svg.match(new RegExp(`<symbol\\b[^>]*id="${form.asset}"[^>]*>[\\s\\S]*?<\\/symbol>`))?.[0];
-    assert.ok(symbol, form.id); assert.ok(html.includes(symbol), `${form.id} body bytes remain embedded unchanged`);
+    assert.ok(symbol, form.id);
+    const storedSymbol = sourceSvg.match(new RegExp(`<symbol\\b[^>]*id="${form.asset}"[^>]*>[\\s\\S]*?<\\/symbol>`))?.[0];
+    assert.ok(storedSymbol && html.includes(storedSymbol.replace(/href="runtime\//g, 'href="./assets/runtime/')), `${form.id} keeps the same local body reference and geometry`);
     const encoded = symbol.match(/data:image\/png;base64,([A-Za-z0-9+/=]+)/)?.[1];
     let extent = 0, visiblePixels = 0;
     const checkCorner = (x, y, margin = 0) => {
@@ -186,7 +195,7 @@ test('built preview has no runtime remote resource or unresolved build marker', 
   for (const [, tag, attributes] of resourceTags) {
     for (const match of attributes.matchAll(/\b(?:src|href|xlink:href|srcset)\s*=\s*(["'])(.*?)\1/gi)) {
       const value = match[2].trim();
-      assert.ok(value.startsWith('#') || value.startsWith('data:'), `${tag} requires external resource: ${value.slice(0, 100)}`);
+      assert.ok(value.startsWith('#') || /^\.\/assets\/runtime\/[a-f0-9]{64}\.(png|avif)$/.test(value), `${tag} requires an undeclared resource: ${value.slice(0, 100)}`);
     }
   }
   assert.doesNotMatch(css, /@import\b|url\(\s*["']?\s*(?:https?:|\/\/)/i);
@@ -209,7 +218,7 @@ test('build receipt binds the actual delivered HTML bytes and coverage', () => {
   assert.equal(receipt.standalone, true);
 });
 
-test('all four watch images are embedded unchanged and bound by the build receipt', () => {
+test('all four watch images are stored unchanged and bound by the build receipt', () => {
   const receipt = JSON.parse(read('docs/build-receipt.json'));
   const provenance = JSON.parse(read('assets/watches-v3/provenance.json'));
   const decoder = `import json,sys
@@ -247,7 +256,9 @@ print(json.dumps(result))`;
     assert.ok(actual.transparentPixels > 0 && actual.transparentPixels < item.width * item.height, item.id);
     assert.deepEqual(metadata.alphaExtrema, actual.alphaExtrema, `${item.id} provenance alpha range`);
     assert.equal(metadata.transparentPixels, actual.transparentPixels, `${item.id} provenance transparency count`);
-    assert.ok(html.includes(`data:image/png;base64,${bytes.toString('base64')}`), `${item.id} is available offline without bitmap edits`);
+    const relative = `./assets/runtime/${item.sha256}.png`;
+    assert.ok(html.includes(relative), `${item.id} has an offline file reference`);
+    assert.deepEqual(readFileSync(path.join(root, relative)), bytes, `${item.id} original bytes are preserved`);
   }
 });
 

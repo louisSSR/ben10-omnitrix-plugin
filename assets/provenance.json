@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "a1c7d3c17bc2328ae9f484645e2ea9b86c65312a31f24e55831c2020fcc0dadd",
+  "svgSha256": "a523f83ee9984e4a9722a41b64673fa350482712fa516f4860a396bbcba15f8b",
   "coverage": {
     "total": 224,
-    "reviewed": 168,
-    "missing": 56
+    "reviewed": 170,
+    "missing": 54
   },
   "assets": [
     {
@@ -1466,6 +1466,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "f7f0b903851cd69714f09cc59ad5ec819a5f8b6a3e69acfa6d50d906c62c816a",
       "maskSha256": "c9bcf02fce5a01826383b26b6f21d28eab1c92bef14e2f660159a181a137b761",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-big-chill",
+      "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+      "pageUrl": "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Community GIF reference with AI background extraction; not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "7895219cff36fb8fc8f4fb2385d63109d14498914002f7cb7af5620c469bd228",
+      "maskSha256": "06a0f02ab6cd8f2941ea48d74cf312f110e6678ead54892cf73b5006c0a577ee",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "stink-arms",
+      "url": "https://www.youtube.com/watch?v=g2stvpcjeaE",
+      "pageUrl": "https://www.youtube.com/watch?v=g2stvpcjeaE",
+      "rights": "Artwork remains copyrighted by respective owners; license unknown, no open license asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "b54ade2970f3612e6b0190401c94521f3f507b6bdd431fda42702d82e2b9eeb2",
+      "maskSha256": "c328d4092e48324237c4b3ef01ef33c2a3918a72302d0ee96f1c111dfb444b67",
       "contentType": "image/png"
     }
   ],

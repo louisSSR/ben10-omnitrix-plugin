@@ -1,0 +1,384 @@
+{
+  "version": "0.3.0",
+  "checkedAt": "2026-10-08T23:06:53.931Z",
+  "previewSha256": "0334c280f0ec9a4f1ded0e8bfed5592f7df234fceb1882c2c3d393a741fa19e3",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 170,
+    "missing": 54
+  },
+  "viewports": [
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Stink Arms",
+      "scrollWidth": 375,
+      "selected": "#alien-stink-arms",
+      "watch": "original",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Big Chill",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-big-chill",
+      "watch": "original",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "projection",
+      "name": "Big Chill",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-big-chill",
+      "watch": "recalibrated",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "Stink Arms",
+      "scrollWidth": 375,
+      "selected": "#alien-stink-arms",
+      "watch": "ultimatrix",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 390
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "mode": "carousel",
+      "name": "Stink Arms",
+      "scrollWidth": 305,
+      "selected": "#alien-stink-arms",
+      "watch": "omniverse",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 320
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "mode": "carousel",
+      "name": "Fourmungousaur",
+      "scrollWidth": 305,
+      "selected": "#alien-fourmungousaur",
+      "watch": "omniverse",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 320
+    },
+    {
+      "clientWidth": 1265,
+      "height": 900,
+      "horizontalOverflow": false,
+      "mode": "projection",
+      "name": "Stink Arms",
+      "scrollWidth": 1265,
+      "selected": "#alien-stink-arms",
+      "watch": "recalibrated",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 1280
+    },
+    {
+      "clientWidth": 1265,
+      "height": 900,
+      "horizontalOverflow": false,
+      "mode": "dial",
+      "name": "火焰人",
+      "scrollWidth": 1265,
+      "selected": "#alien-heatblast",
+      "watch": "original",
+      "watchImages": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "width": 1280
+    }
+  ],
+  "screenshots": [
+    "screenshots/v030-390-stink-arms-dial.png",
+    "screenshots/v030-390-big-chill-dial.png",
+    "screenshots/v030-390-big-chill-projection.png",
+    "screenshots/v030-390-ultimatrix-stink-arms.png",
+    "screenshots/v030-320-carousel-before.png",
+    "screenshots/v030-320-carousel-after.png",
+    "screenshots/v030-1280-stink-arms-projection.png",
+    "screenshots/v030-1280-heatblast-avif.png"
+  ],
+  "ringBefore": [
+    {
+      "label": "选择 Ultimate Albedo",
+      "selected": "false",
+      "transform": "matrix3d(0.48, 0, 0, 0, 0, 0.48, 0, 0, 0, 0, 1, 0, -3.30361e-14, -90, -80, 1)"
+    },
+    {
+      "label": "选择 Ultimate Arctiguana",
+      "selected": "false",
+      "transform": "matrix3d(0.579584, 0, 0, 0, 0, 0.579584, 0, 0, 0, 0, 1, 0, -63.583, -63.6396, -56.5685, 1)"
+    },
+    {
+      "label": "选择 Ultimate Gravattack",
+      "selected": "false",
+      "transform": "matrix3d(0.82, 0, 0, 0, 0, 0.82, 0, 0, 0, 0, 1, 0, -89.92, 2.75546e-14, 2.44929e-14, 1)"
+    },
+    {
+      "label": "选择 Ultimate Rath",
+      "selected": "false",
+      "transform": "matrix3d(1.06042, 0, 0, 0, 0, 1.06042, 0, 0, 0, 0, 1, 0, -63.583, 63.6396, 56.5685, 1)"
+    },
+    {
+      "label": "选择 Stink Arms",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 2.2024e-14, 90, 80, 1)"
+    },
+    {
+      "label": "选择 Fourmungousaur",
+      "selected": "false",
+      "transform": "matrix3d(1.06042, 0, 0, 0, 0, 1.06042, 0, 0, 0, 0, 1, 0, 63.583, 63.6396, 56.5685, 1)"
+    },
+    {
+      "label": "选择 Atomic-X",
+      "selected": "false",
+      "transform": "matrix3d(0.82, 0, 0, 0, 0, 0.82, 0, 0, 0, 0, 1, 0, 89.92, -1.65327e-14, -1.46958e-14, 1)"
+    },
+    {
+      "label": "选择 Uprigg",
+      "selected": "false",
+      "transform": "matrix3d(0.579584, 0, 0, 0, 0, 0.579584, 0, 0, 0, 0, 1, 0, 63.583, -63.6396, -56.5685, 1)"
+    }
+  ],
+  "ringAfter": [
+    {
+      "label": "选择 Humungoopsaur",
+      "selected": "false",
+      "transform": "matrix3d(0.579584, 0, 0, 0, 0, 0.579584, 0, 0, 0, 0, 1, 0, 63.583, -63.6396, -56.5685, 1)"
+    },
+    {
+      "label": "选择 Ultimate Arctiguana",
+      "selected": "false",
+      "transform": "matrix3d(0.48, 0, 0, 0, 0, 0.48, 0, 0, 0, 0, 1, 0, -3.30361e-14, -90, -80, 1)"
+    },
+    {
+      "label": "选择 Ultimate Gravattack",
+      "selected": "false",
+      "transform": "matrix3d(0.579584, 0, 0, 0, 0, 0.579584, 0, 0, 0, 0, 1, 0, -63.583, -63.6396, -56.5685, 1)"
+    },
+    {
+      "label": "选择 Ultimate Rath",
+      "selected": "false",
+      "transform": "matrix3d(0.82, 0, 0, 0, 0, 0.82, 0, 0, 0, 0, 1, 0, -89.92, -5.23815e-14, -4.65613e-14, 1)"
+    },
+    {
+      "label": "选择 Stink Arms",
+      "selected": "false",
+      "transform": "matrix3d(1.06042, 0, 0, 0, 0, 1.06042, 0, 0, 0, 0, 1, 0, -63.583, 63.6396, 56.5685, 1)"
+    },
+    {
+      "label": "选择 Fourmungousaur",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, -5.7841e-14, 90, 80, 1)"
+    },
+    {
+      "label": "选择 Atomic-X",
+      "selected": "false",
+      "transform": "matrix3d(1.06042, 0, 0, 0, 0, 1.06042, 0, 0, 0, 0, 1, 0, 63.583, 63.6396, 56.5685, 1)"
+    },
+    {
+      "label": "选择 Uprigg",
+      "selected": "false",
+      "transform": "matrix3d(0.82, 0, 0, 0, 0, 0.82, 0, 0, 0, 0, 1, 0, 89.92, 6.34033e-14, 5.63585e-14, 1)"
+    }
+  ],
+  "logs": [],
+  "viewportOverrideReset": true,
+  "resetViewport": {
+    "height": 764,
+    "width": 714
+  },
+  "fileProtocolVerified": false,
+  "fileProtocolBoundary": "Browser permits HTTP/HTTPS only; blocked file URL was not retried or bypassed.",
+  "realHostVerified": false,
+  "phoneVerified": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

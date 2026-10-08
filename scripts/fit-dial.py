@@ -3,6 +3,7 @@ from pathlib import Path
 import json,re,base64,io,hashlib
 import xml.etree.ElementTree as ET
 from PIL import Image
+from art_files import hydrate_svg
 
 SVG='{http://www.w3.org/2000/svg}'
 SAFE_RADIUS=.87
@@ -67,7 +68,7 @@ def legacy_envelope(symbol, filters):
 
 root=Path(__file__).resolve().parents[1]
 svg_bytes=(root/'assets/silhouettes.svg').read_bytes()
-svg=svg_bytes.decode('utf-8')
+svg=hydrate_svg(svg_bytes,root/'assets').decode('utf-8')
 svg_tree=ET.fromstring(svg)
 symbols={node.attrib['id']:node for node in svg_tree.iter(SVG+'symbol')}
 filters={node.attrib['id']:node for node in svg_tree.iter(SVG+'filter')}

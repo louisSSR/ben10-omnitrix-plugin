@@ -2,6 +2,7 @@
 from pathlib import Path
 import base64, hashlib, io, json, re, struct, subprocess, sys
 from PIL import Image
+from art_files import hydrate_svg, externalize_svg
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -10,6 +11,7 @@ def require(condition, message):
         raise ValueError(message)
 
 def merge_extra_art(catalog, svg_bytes, provenance):
+    svg_bytes = hydrate_svg(svg_bytes, ROOT / 'assets')
     registry = ROOT / 'assets/extra-art.json'
     if not registry.exists():
         return catalog, svg_bytes, provenance
@@ -87,6 +89,8 @@ if __name__ == '__main__':
     provenance_path = ROOT / 'assets/provenance.json'
     values = merge_extra_art(json.loads(catalog_path.read_text(encoding='utf-8')), svg_path.read_bytes(), json.loads(provenance_path.read_text(encoding='utf-8')))
     catalog, svg, provenance = values
+    svg = externalize_svg(svg, ROOT / 'assets')
+    provenance['svgSha256'] = hashlib.sha256(svg).hexdigest()
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2), encoding='utf-8')
     svg_path.write_bytes(svg)
     provenance_path.write_text(json.dumps(provenance, ensure_ascii=False, indent=2), encoding='utf-8')

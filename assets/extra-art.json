@@ -1764,6 +1764,143 @@
         "transparentBackground": true,
         "prompt": "STEP 1\nEdit this single existing character reference only. Produce a transparent-background PNG cutout of exactly the visible red-and-black armored four-legged Ultimate Panuncian creature in the reference. Remove the clearly disconnected pale blue rectangular artifact near the upper left, behind and to the left of the tall mane horn. That blue square is not part of the creature. Preserve the existing visible creature's entire outline, pose, head armor, every visible horn, black mane, long curved teeth, four legs and claws, and long curling tail hook. Do not redesign, repaint style, add limbs, or infer any unseen anatomy. The current source is tightly framed around several horn or tail tips. Preserve the supplied visible endpoints as they are; do not extend or invent missing tip portions. Place this same complete visible creature comfortably inside a larger transparent canvas with at least a 10 percent transparent margin on all sides. Remove any non-character isolated artifacts and all background. Keep only the one creature. No text, logos, glow, ground shadow, other characters, or decorations. Maintain the source color and line art as closely as possible. This is a reference edit of a community repost, not newly claimed official artwork."
       }
+    },
+    {
+      "formId": "reboot-big-chill",
+      "sourceFile": "assets/source-art/reboot-big-chill-source-frame145.png",
+      "sourceSha256": "7895219cff36fb8fc8f4fb2385d63109d14498914002f7cb7af5620c469bd228",
+      "maskFile": "assets/source-art/reboot-big-chill-reference-edit.png",
+      "maskSha256": "06a0f02ab6cd8f2941ea48d74cf312f110e6678ead54892cf73b5006c0a577ee",
+      "pageUrl": "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802",
+      "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-losslessly-decoded-community-reposted-animation-gif-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Community GIF reference with AI background extraction; not official transparent art.",
+      "observations": "Actually inspected GIF frame 145 (320x179; GIF-relative 9670 ms): the small blue/black hovering figure is wholly inside the frame above ice. Long upward-sweeping wings, shorter lateral appendages, a narrow body and hanging/tucked lower limbs form one visible outline. Other inspected frames provide head/body context. The community page explicitly identifies the clip as Ben 10 Reboot Alien X vs Big Chill. The generated output preserves the gross flying pose, but enlarges and redraws internal colour blocks, small appendages and edges.",
+      "limitations": [
+        "Community GIF reproduction and title/context, not an authenticated official upload or original transparent artwork. Production artist, upstream upload and rights chain remain unknown.",
+        "The source character occupies roughly 80x75 pixels in a low-resolution dithered frame. Fine fingers, feet, face, chest insignia and internal anatomy are unresolved; generated detail is not authoritative.",
+        "Two reference-guided edits removed the environment and attempted alpha cleanup. Output is not a pixel-identical cutout; fine appendages, colour blocks and edges were redrawn.",
+        "Faint nonzero alpha residues remain across a broad bounding box. Exterior probes with alpha zero do not establish globally clean alpha. Root must inspect the final black UI silhouette.",
+        "Flying/tucked pose is intentional. No source-clipped limb was requested to be completed, and no claim is made about hidden anatomy.",
+        "9670 ms is relative to this GIF container, not a verified timestamp in the episode/movie. Only selected still frames were viewed; no full video playback or official scene timestamp is claimed."
+      ],
+      "adoptionBasis": "Whole visible flying outline is suitable for the current large watch/projection selection display. Root reports source/output viewing and an independent material recommendation to adopt. Final black UI review is still pending; no driver acceptance is asserted. Root viewed the final black silhouette in a 390px emulated mobile dial and its projection; major visible tips stay within the diamond. This is preview evidence, not driver or real-phone acceptance.",
+      "sourceFrame": {
+        "containerFormat": "GIF",
+        "containerSha256": "c426416b71b396f8a8064ffedad50d9f2b8dfc26ef0efe76ed2290eaf3d7c310",
+        "containerUrl": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+        "frameIndex": 145,
+        "gifRelativeTimestampMS": 9670,
+        "frameSize": [
+          320,
+          179
+        ],
+        "decodedRGBAsha256": "5ef6ff4ff537733e032b18bcf9da139ba1b4848de7329df95470ce5a404a20ba",
+        "operation": "Lossless decoded-frame PNG export only; no crop, resize, mask or pixel edit.",
+        "sourcePageSha256": "d9beea962621a4792521c0a12f3c618e08aeb61bf50594d56b32736715386bdb",
+        "sourcePageHTTPStatus": 200,
+        "containerFile": "assets/source-art/reboot-big-chill-source-original.gif"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STAGE 1\nUse case: background-extraction\nAsset type: transparent character reference for a Ben 10 selector silhouette.\nInput image: the actually inspected lossless decoded GIF frame145; edit target, not a style guide. The input is low resolution and dithered.\nPrimary request: extract ONLY the small hovering blue-and-black moth-like character at the upper centre of the image, around x170/y52, from above the foreground ice. Remove all ice crystals, city/night background, logos, other figures, glow effects and environmental fragments. Return a real transparent background.\nComposition: show this same complete hovering pose centred with comfortable clear transparent padding on all sides. The character is already wholly inside the supplied frame. Keep its original orientation and proportions.\nInvariants: preserve exactly the visible gross outline and appendage placement of this specific captured pose: its tiny central head and slim torso, long upward sweeping blue-outlined appendages, short lateral appendages, and hanging/tucked lower limbs. Preserve visible source colours and the simple dark/blue areas. Do not change it into a standing pose, broaden the body, add a cloak, or replace it with a stock classic Big Chill model.\nFidelity limits: source fingers and internal details are unresolved. Keep those shapes simple and unresolved; do not invent individual fingers, feet, extra wings, hidden limbs, a detailed badge, facial detail, muscles or armour. Do not complete or redesign any part. Do not reconstruct a character from memory. Output only what is visibly present in the reference, with clean antialiased edges, no exterior haze, no ground/shadow and no text.\n\nSTAGE 2\nUse case: background-extraction correction.\nImage1 is the existing extracted character edit target. Image2 is its original decoded animation frame for gross-outline reference.\nChange only the transparency outside the character: remove every exterior translucent black/blue glow or haze pixel, including the soft regions under and beside the upper wings. The outside area must be fully transparent, with alpha zero right outside the character. The solid body and visible wings/limbs should be opaque, with only a narrow antialiased edge.\nKeep the complete same small captured flying-pose character, its proportions and appendage topology from image1 consistent with image2. Keep its slightly pixelated/simple low-detail appearance and existing colour blocks. No smooth ambient halo, shadow, luminous mist or surrounding dark plate. Do not make a stock standing Big Chill, do not add wings, fingers, feet, symbols or hidden anatomy, and do not enhance invented fine detail.\nUse a real transparent background and generous empty margins; preserve the existing character orientation and full visible perimeter.\n",
+        "stages": [
+          {
+            "stage": 1,
+            "inputSourceSha256": "7895219cff36fb8fc8f4fb2385d63109d14498914002f7cb7af5620c469bd228",
+            "outputSha256": "5a5a54ab74ec0165e988b957153a7aa500a9374de3e6619cfd434622f0203902",
+            "prompt": "Use case: background-extraction\nAsset type: transparent character reference for a Ben 10 selector silhouette.\nInput image: the actually inspected lossless decoded GIF frame145; edit target, not a style guide. The input is low resolution and dithered.\nPrimary request: extract ONLY the small hovering blue-and-black moth-like character at the upper centre of the image, around x170/y52, from above the foreground ice. Remove all ice crystals, city/night background, logos, other figures, glow effects and environmental fragments. Return a real transparent background.\nComposition: show this same complete hovering pose centred with comfortable clear transparent padding on all sides. The character is already wholly inside the supplied frame. Keep its original orientation and proportions.\nInvariants: preserve exactly the visible gross outline and appendage placement of this specific captured pose: its tiny central head and slim torso, long upward sweeping blue-outlined appendages, short lateral appendages, and hanging/tucked lower limbs. Preserve visible source colours and the simple dark/blue areas. Do not change it into a standing pose, broaden the body, add a cloak, or replace it with a stock classic Big Chill model.\nFidelity limits: source fingers and internal details are unresolved. Keep those shapes simple and unresolved; do not invent individual fingers, feet, extra wings, hidden limbs, a detailed badge, facial detail, muscles or armour. Do not complete or redesign any part. Do not reconstruct a character from memory. Output only what is visibly present in the reference, with clean antialiased edges, no exterior haze, no ground/shadow and no text.\n",
+            "transparentBackground": true
+          },
+          {
+            "stage": 2,
+            "inputSourceSha256": "7895219cff36fb8fc8f4fb2385d63109d14498914002f7cb7af5620c469bd228",
+            "inputIntermediateSha256": "5a5a54ab74ec0165e988b957153a7aa500a9374de3e6619cfd434622f0203902",
+            "outputSha256": "06a0f02ab6cd8f2941ea48d74cf312f110e6678ead54892cf73b5006c0a577ee",
+            "prompt": "Use case: background-extraction correction.\nImage1 is the existing extracted character edit target. Image2 is its original decoded animation frame for gross-outline reference.\nChange only the transparency outside the character: remove every exterior translucent black/blue glow or haze pixel, including the soft regions under and beside the upper wings. The outside area must be fully transparent, with alpha zero right outside the character. The solid body and visible wings/limbs should be opaque, with only a narrow antialiased edge.\nKeep the complete same small captured flying-pose character, its proportions and appendage topology from image1 consistent with image2. Keep its slightly pixelated/simple low-detail appearance and existing colour blocks. No smooth ambient halo, shadow, luminous mist or surrounding dark plate. Do not make a stock standing Big Chill, do not add wings, fingers, feet, symbols or hidden anatomy, and do not enhance invented fine detail.\nUse a real transparent background and generous empty margins; preserve the existing character orientation and full visible perimeter.\n",
+            "transparentBackground": true
+          }
+        ],
+        "finalOutputBytesUnchanged": true,
+        "sourcePixelEditingOutsideImageGen": false
+      },
+      "currentUIEvidence": "docs/browser-qa-v030.json"
+    },
+    {
+      "formId": "stink-arms",
+      "sourceFile": "assets/source-art/stink-arms-official-cn-frame-original.png",
+      "sourceSha256": "b54ade2970f3612e6b0190401c94521f3f507b6bdd431fda42702d82e2b9eeb2",
+      "maskFile": "assets/source-art/stink-arms-official-cn-frame-reference-edit.png",
+      "maskSha256": "c328d4092e48324237c4b3ef01ef33c2a3918a72302d0ee96f1c111dfb444b67",
+      "pageUrl": "https://www.youtube.com/watch?v=g2stvpcjeaE",
+      "url": "https://www.youtube.com/watch?v=g2stvpcjeaE",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Official Cartoon Network animation viewed in browser; screenshot-based AI reference edit, not official transparent original or pixel-exact cutout.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Artwork remains copyrighted by respective owners; license unknown, no open license asserted.",
+      "observations": [
+        "Full seated alien source observed: insect eye-stalk head, two pale wings with visible pointed ends, black/white torso, four-arm configuration with some self-occlusion, two bent long legs and both red feet. All major visible tips remain in-frame.",
+        "Both edits actually viewed. Selected second edit preserves seated direction/overlap, two ground-supporting hands, raised visible hand, partially hidden fourth arm region, two feet and both wings. No obvious new major limb or standing pose.",
+        "First edit body was close to upper/bottom canvas edges. Second edit keeps the same major body while increasing ordinary margin; it does not meet the prompt numeric 12% on every side at alpha128 and retains faint-alpha particles, so no clean-margin success is claimed."
+      ],
+      "limitations": [
+        "AI reference edit of a screen-captured official animation frame, not a publisher-provided transparent original and not pixel-exact background removal.",
+        "The 817×459 screenshot bounds the source detail; the visible body occupies only part of this video frame. Output face details, wing veins, clothes folds, finger/toe edge lines and shading are smoothed/redrawn; output resolution does not make these official high-resolution details.",
+        "Original seated pose and self-occluded arm portions are preserved; no standing pose or reconstruction of hidden parts is accepted.",
+        "The frame screenshot does not show a playback clock; 7:45 is only the UI time witnessed and reported by root. No frame-index/millisecond precision is asserted.",
+        "The supplied context screenshot contains YouTube header and the enlarged video region, but does not itself display the channel/title/verification/time controls; official identity comes from previously retrieved oEmbed plus root actual viewing.",
+        "The selected output has alpha 0–254, including 17,589 alpha1–31 pixels extending beyond the main body. Its whole positive-alpha bbox reaches x=0. No broad main-body cut is visible; major-body bbox at alpha>=128 is [223,99,1291,928]. Root must inspect the all-alpha pure-black rendering; do not threshold/edit bitmap pixels.",
+        "Sampled broad red/yellow background RGB is alpha0; invisible RGB color does not establish an opaque background. Extremely faint residual alpha is still disclosed.",
+        "License/reuse permission unknown; no open artwork license asserted."
+      ],
+      "adoptionBasis": "Exact OS fusion body is visible in official video screenshot; candidate retains the source seated pose and visible self-occlusion. Final UI/render acceptance remains with root. Root viewed the final black silhouette in a 390px emulated mobile dial and its projection; major visible tips stay within the diamond. This is preview evidence, not driver or real-phone acceptance.",
+      "sourceFrame": {
+        "sourcePage": "https://www.youtube.com/watch?v=g2stvpcjeaE",
+        "pageTitle": "Wildest Omnitrix Malfunctions💥 | Ben 10 | Cartoon Network",
+        "authorName": "Cartoon Network",
+        "authorUrl": "https://www.youtube.com/@cartoonnetwork",
+        "sourceScreenshotMethod": "Root CUA screenshot of the video display region; no external video download, pixel edit, frame stitching or reconstruction.",
+        "sourceScreenshotSize": [
+          817,
+          459
+        ],
+        "reportedUITime": "7:45",
+        "timeEvidence": "root actual-view witness; not visible in the frame/context files inspected by this reviewer",
+        "preciseFrameOrMilliseconds": null,
+        "officialOEmbedSha256": "c45b14835d64cc1b88da09c5a2d8103dd28f5866dd74265d8ad6372093bbb8e3"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "passes": [
+          {
+            "inputSha256": "b54ade2970f3612e6b0190401c94521f3f507b6bdd431fda42702d82e2b9eeb2",
+            "promptSha256": "dfc0e638b3b6a6648f080869726966e3b8fa7531192270573b173b6f2f327f4b",
+            "outputSha256": "bfd5b758d3197f7263d8a52fdc23e9db757fa3f52133b21e42d61bf427614cb2",
+            "nativeOutputCopyByteExact": true,
+            "prompt": "Use case: background-extraction.\nAsset type: transparent PNG character cutout for a Ben 10 alien-selection interface.\nEdit target: the provided single screenshot, showing Stink Arms seated on the ground in the lower-right part of an official cartoon frame.\nPrimary request: remove only the background and isolate this exact existing seated character, preserving the visible original pose and outline. Keep the red skin, black-and-white suit, black outlines, insect-like eye stalks, and the two pale-yellow wings with every visible pointed tip. Preserve the original four-arm configuration exactly as shown: supporting hands, the bent raised hand, and the arm portions partially hidden by the torso or legs stay in their original overlap. Keep both long bent legs and the two visible red feet in the same directions and relative proportions.\nComposition: center the complete seated cutout on a genuinely transparent canvas, with at least 12% transparent padding around the furthest wing, hand, and foot tips. You may reposition the unchanged cutout to create padding; do not alter the camera angle or pose.\nConstraints: change only the background. Remove the ground, cast ground shadow, plants, stones, building, CN/Ben 10 corner logo, and any other non-character content. No standing pose, no unfolded limbs, no new hands/fingers/feet/wings, no invented hidden anatomy, no other character, no platform, no glow, no new shadow. Do not redraw or upgrade internal details from imagination: retain the screenshot's existing design and detail level. Preserve all visible self-occlusion rather than reconstructing parts behind other limbs. Output full-color original-style body with its black outlines and a true alpha-transparent background; not a black silhouette, not a checkerboard image, not a white/black solid backdrop."
+          },
+          {
+            "inputSha256": "bfd5b758d3197f7263d8a52fdc23e9db757fa3f52133b21e42d61bf427614cb2",
+            "promptSha256": "33ec59c19361adcb4f6416f37af14dea03c578fc6f7b5253d41d0f1eea78a1fb",
+            "outputSha256": "c328d4092e48324237c4b3ef01ef33c2a3918a72302d0ee96f1c111dfb444b67",
+            "nativeOutputCopyByteExact": true,
+            "prompt": "Use case: background-extraction.\nEdit target: the supplied first transparent reference-edit of the seated Stink Arms character.\nPrimary request: make exactly two corrections only: remove every soft colored halo/background/shadow outside the actual character outline, and place the unchanged entire character smaller and centered on a genuinely transparent canvas so the complete silhouette has at least 12% blank transparent padding on ALL four sides, including both wing tips and both foot tips.\nKeep the exact seated pose, visible four-arm overlap, two bent legs, two red feet, black-and-white costume, insect eye-stalk head, and two pale-yellow wings already present in this edit. Keep body colors, visible anatomy, contours, relative proportions and internal marks unchanged. Do not make a standing pose, unfold hidden parts, add or remove any hand/foot/wing, sharpen anatomy from imagination, or add any new object. Do not add glow, soft red/yellow/gray shadows, cast shadow, colored mist, black background, white background, checkerboard pixels, or text. The empty margin must be true alpha zero. The actual existing black body outlines remain part of the character, not part of the removable background. Output one complete full-color seated character cutout, with visibly generous transparent padding and no background effects."
+          }
+        ],
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: transparent PNG character cutout for a Ben 10 alien-selection interface.\nEdit target: the provided single screenshot, showing Stink Arms seated on the ground in the lower-right part of an official cartoon frame.\nPrimary request: remove only the background and isolate this exact existing seated character, preserving the visible original pose and outline. Keep the red skin, black-and-white suit, black outlines, insect-like eye stalks, and the two pale-yellow wings with every visible pointed tip. Preserve the original four-arm configuration exactly as shown: supporting hands, the bent raised hand, and the arm portions partially hidden by the torso or legs stay in their original overlap. Keep both long bent legs and the two visible red feet in the same directions and relative proportions.\nComposition: center the complete seated cutout on a genuinely transparent canvas, with at least 12% transparent padding around the furthest wing, hand, and foot tips. You may reposition the unchanged cutout to create padding; do not alter the camera angle or pose.\nConstraints: change only the background. Remove the ground, cast ground shadow, plants, stones, building, CN/Ben 10 corner logo, and any other non-character content. No standing pose, no unfolded limbs, no new hands/fingers/feet/wings, no invented hidden anatomy, no other character, no platform, no glow, no new shadow. Do not redraw or upgrade internal details from imagination: retain the screenshot's existing design and detail level. Preserve all visible self-occlusion rather than reconstructing parts behind other limbs. Output full-color original-style body with its black outlines and a true alpha-transparent background; not a black silhouette, not a checkerboard image, not a white/black solid backdrop.\n\nFOLLOW-UP EDIT\n\nUse case: background-extraction.\nEdit target: the supplied first transparent reference-edit of the seated Stink Arms character.\nPrimary request: make exactly two corrections only: remove every soft colored halo/background/shadow outside the actual character outline, and place the unchanged entire character smaller and centered on a genuinely transparent canvas so the complete silhouette has at least 12% blank transparent padding on ALL four sides, including both wing tips and both foot tips.\nKeep the exact seated pose, visible four-arm overlap, two bent legs, two red feet, black-and-white costume, insect eye-stalk head, and two pale-yellow wings already present in this edit. Keep body colors, visible anatomy, contours, relative proportions and internal marks unchanged. Do not make a standing pose, unfold hidden parts, add or remove any hand/foot/wing, sharpen anatomy from imagination, or add any new object. Do not add glow, soft red/yellow/gray shadows, cast shadow, colored mist, black background, white background, checkerboard pixels, or text. The empty margin must be true alpha zero. The actual existing black body outlines remain part of the character, not part of the removable background. Output one complete full-color seated character cutout, with visibly generous transparent padding and no background effects.",
+        "finalOutputBytesUnchanged": true
+      },
+      "currentUIEvidence": "docs/browser-qa-v030.json"
     }
   ],
   "mergedForms": [

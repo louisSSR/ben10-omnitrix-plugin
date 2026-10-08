@@ -1,6 +1,7 @@
 """Import a verified catalogue snapshot; never promote missing or unreviewed artwork."""
 from pathlib import Path
 from extra_art import merge_extra_art, require
+from art_files import externalize_svg
 import sys,json,re,hashlib,shutil,subprocess
 source=Path(sys.argv[1]).resolve()
 root=Path(__file__).resolve().parents[1]
@@ -25,6 +26,8 @@ active={form['id'] for form in forms if form['asset']}
 assets=[{key:entry[key] for key in ['formId','url','pageUrl','rights','contentType','renderMode'] if key in entry} for entry in manifest['assets'] if entry['formId'] in active]
 provenance={'source':'Reviewed Ben10 cosmic-selector archive snapshot','catalogSha256':hashlib.sha256((source/'catalog.json').read_bytes()).hexdigest(),'svgSha256':hashlib.sha256(svg).hexdigest(),'coverage':catalog['coverage'],'assets':assets,'notes':['Community-reposted images are not publisher-hosted originals.','Artwork remains copyrighted by its respective owners. No open artwork license is asserted.','Missing artwork stays missing. Silhouettes use the previously verified native display cache.']}
 catalog,svg,provenance=merge_extra_art(catalog,svg,provenance)
+svg=externalize_svg(svg,out)
+provenance['svgSha256']=hashlib.sha256(svg).hexdigest()
 (out/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
 (out/'silhouettes.svg').write_bytes(svg)
 (out/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2),encoding='utf-8')

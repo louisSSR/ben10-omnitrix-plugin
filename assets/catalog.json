@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 168,
-    "missing": 56
+    "reviewed": 170,
+    "missing": 54
   },
   "forms": [
     {
@@ -2024,10 +2024,21 @@
       "group": "fusion",
       "appearance": "Dr. Animo and the Mutant Ray",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-stink-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=g2stvpcjeaE"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Official Cartoon Network animation viewed in browser; screenshot-based AI reference edit, not official transparent original or pixel-exact cutout.",
+      "dialFit": {
+        "scale": 0.7114,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.222873,
+        "visiblePixels": 360984
+      }
     },
     {
       "id": "diamond-matter",
@@ -3014,11 +3025,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-big-chill",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-losslessly-decoded-community-reposted-animation-gif-frame",
+      "dialFit": {
+        "scale": 0.7521,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.156684,
+        "visiblePixels": 177149
+      }
     },
     {
       "id": "reboot-bloxx",

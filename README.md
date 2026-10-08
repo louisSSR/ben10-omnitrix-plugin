@@ -1,19 +1,19 @@
 # Omnitrix · 变身档案
 
-SillyTavern 外星人选择插件，同时提供可双击打开的独立 `preview.html`。
+SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材组成的独立预览目录。
 
 ## 可用界面
 
 - 四款可切换表壳：初代 Omnitrix、Alien Force 重校准版、Ultimatrix、Omniverse 完成版。0.2.0 换用透明背景的细节重绘，图像生成记录见 `assets/watches-v3/`。
 - 三种召唤界面：分层全息投影、带远近缩放的环形转盘、带交叉挡片的菱形表盘。每种都有选择与锁定动画；宇宙记录墙已移除，旧偏好自动回到投影。
-- 菱形表盘按每个剪影的实际透明像素单独计算比例，让翅膀、手臂等轮廓完整落在菱形内。168 个已接入素材均有适配记录。
+- 菱形表盘按每个剪影的实际透明像素单独计算比例，让翅膀、手臂等轮廓完整落在菱形内。170 个已接入素材均有适配记录。
 - 电脑与手机共用一套页面；支持点击、左右滑动、方向键和 Enter。遵循系统减少动态设置。
-- 一份共享档案：224 条记录，168 条已接入剪影，56 条素材待补。0.2.6 新增漫画版小奇兵（保留原封面铅笔道具）、游戏参考 Slamworm 和终极 Panuncian。3 张均为 AI 参考编辑，非官方透明原图；来源、原始字节、完整提示词和差异见 `assets/extra-art.json`。记录含作品版本、融合和身体状态，不等于独立物种数量。
+- 一份共享档案：224 条记录，170 条已接入剪影，54 条素材待补。0.3.0 新增官方动画坐姿参考的 Stink Arms 和社区动画 GIF 飞行参考的重启版 Big Chill。两张均为 AI 参考编辑，非官方透明原图；后者源身体约 80×75 像素，细节不能当作官方高清设定。来源、原始字节、完整提示词和差异见 `assets/extra-art.json`。记录含作品版本、融合和身体状态，不等于独立物种数量。
 - 可搜索中文/英文名称和筛选作品。缺图会明确显示“素材待补”。
 
 ## 预览
 
-直接打开仓库根目录的 **preview.html**。文件内嵌了样式、脚本和素材，不需要联网。
+下载完整目录后打开根目录的 **preview.html**。样式和脚本仍在 HTML 内，图片位于同目录的 **assets/runtime/**；必须一起保留，不要只复制 HTML。运行资源均为本地文件，不依赖远程图片。当前自动浏览器只允许 HTTP/HTTPS，本版实际验证使用本地服务；`file://` 直接打开未在该浏览器中验收。
 
 也可以用 Node.js 运行：
 
@@ -25,9 +25,9 @@ npm run dev
 
 ## 安装到 SillyTavern
 
-当前是 0.2.6 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
+当前是 0.3.0 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
 
-1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.2.6` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
+1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.3.0` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
 2. 重载酒馆，在扩展设置里打开 **Omnitrix**。
 3. 选择手表和召唤界面，选择外星人并点击“锁定形态”。
 4. 需要使用时点击“写入酒馆输入框”。原有草稿保留，插件不会自动发送或调用模型。
@@ -38,7 +38,7 @@ npm run dev
 
 这表示目标目录已存在，安装器没有进入本次克隆；不能据此断定插件已装完整或代码有运行错误。
 
-**SillyDroid 手机用户直接使用[手机安装／覆盖修复／更新入口](docs/mobile-install.md)。** 在 SillyDroid 原生设置的“终端”执行文档中的一条命令，首次安装、修复残留和以后更新都用它。工具会先完整下载、校验、备份，再覆盖同名目录的五个运行文件，保留其他内容；不需要找目录或删除旧插件。
+**SillyDroid 手机用户直接使用[手机安装／覆盖修复／更新入口](docs/mobile-install.md)。** 在 SillyDroid 原生设置的“终端”执行文档中的一条命令，首次安装、修复残留和以后更新都用它。工具先把完整运行包下载到临时目录、校验、备份，再覆盖同名目录中的入口和素材，保留其他内容；不需要找目录或删除旧插件。已校验相同的本地图片可直接复用。
 
 这个入口不依赖插件已经出现在管理列表里。默认运行只预检，文档中的 `--apply` 表示执行覆盖。没有原生“终端”的旧版 SillyDroid 尚未验证这条路径。
 
@@ -54,8 +54,8 @@ npm test
 npm run package
 ```
 
-零运行时第三方依赖。维护 `core.js`、`app.js`、`styles.css` 和 `preview.shell.html`，构建生成单文件页面。`host-adapter.js` 隔离 SillyTavern 能力；同一 Core/UI 用于独立预览和宿主 iframe。
+零运行时第三方依赖。维护 `core.js`、`app.js`、`styles.css` 和 `preview.shell.html`，构建生成 HTML 与本地图片目录，以及记录字节数和 SHA-256 的 `runtime-manifest.json`。`host-adapter.js` 隔离 SillyTavern 能力；同一 Core/UI 用于独立预览和宿主 iframe。素材迁移不压缩或重绘原图。
 
-ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.2.6 验证记录](docs/review-v026.md)。
+ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.3.0 验证记录](docs/review-v030.md)。
 
 所有截图参考、动画角色及剪影的权利归各原权利人。请阅读 [NOTICE.md](NOTICE.md)。

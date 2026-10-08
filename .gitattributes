@@ -1,3 +1,9 @@
 # Preserve exact bytes for distributed artifacts and their recorded hashes.
 preview.html -text whitespace=cr-at-eol
 assets/silhouettes.svg -text whitespace=cr-at-eol
+extension.js -text
+host-adapter.js -text
+extension.css -text
+manifest.json -text whitespace=cr-at-eol
+runtime-manifest.json -text whitespace=cr-at-eol
+assets/runtime/* -text
