@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "2b1d7ef9493de7fe8d7ba0492380512455f9c4bfb4f67f9c5dfb746214534af5",
+  "svgSha256": "6281cbbfee48a2f8353376a6198056c330156c5a7ce7bb4b272d5aa673fd7e62",
   "coverage": {
     "total": 224,
-    "reviewed": 156,
-    "missing": 68
+    "reviewed": 165,
+    "missing": 59
   },
   "assets": [
     {
@@ -1346,6 +1346,96 @@
       "renderMode": "source-alpha",
       "sourceSha256": "efc1febe632b6400589a7b46a5202a88f98dde42dc3c1ca68247978674bac853",
       "maskSha256": "efc1febe632b6400589a7b46a5202a88f98dde42dc3c1ca68247978674bac853",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "stage-rocks",
+      "url": "https://corporate.teroasia.com/archived/images/ben10/051009/Rocks.jpg",
+      "pageUrl": "https://corporate.teroasia.com/archived/press_release/ben10_news-051009_eng.php",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "593807ccbc4bcd4323c0af8ae4bdd107102cc4530939c60eef1078f8972c59df",
+      "maskSha256": "1bc27ecd08650f904df015aff4abbeee0fdb1676e513d1f4d7b751d3448646c3",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-mucilator",
+      "url": "https://images.squarespace-cdn.com/content/v1/52fd313ee4b0b3c32132e9de/1392337424457-7QKXKLIIZCWB6MF25X57/MucillatorABP.jpg",
+      "pageUrl": "https://www.artbully.co/ben-10-characters",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "ef0a954fbf59807e9a9b72511797c71e5c65a5984ee91221b1c3f4d6e7d4543c",
+      "maskSha256": "ecbded4208513f5367b7725367a85868670c4a3a1f2ed5380e3a383f652791af",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-diamondhead",
+      "url": "https://2001.dynamite.com/previews/C72513036343503011/BEN1003CNGUYEN.jpg",
+      "pageUrl": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343503011",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "fface3d7eb23e40c84e6844de8ce8a954b96977a2e3d55204d2878e1d56e747b",
+      "maskSha256": "5dc062b1e6f4359747aafcc2f1a5b5cc3fbb01f20a91409f09d95578ac9e079d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ripjaws-aquatic",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/ripjaws_2.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ripjaws/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "adacc3674fd70b1100bfc1de1cf8a69d08ac6816852db41122e27c30c23600f7",
+      "maskSha256": "f8cb73ce43ad59dada58e71a76f655adcf8e2c2b3f1148c9ff406da533918360",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "bad-gravattack",
+      "url": "http://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "87f0094ccf53f41f1b5b2743d756ba59bcb89dca95a8a5a759d938defd17b47c",
+      "maskSha256": "10c33a59b3d04c0257e3f6c00c0a7e3fe00018a2e13083b1557175e21a1b5393",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "bad-buzzshock",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/08/bad_ben_buzzshock.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/buzzshock/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "139312fa9ef34a845e894c8afed10b104bc4bcb2cef8f7135e1a9cdd0792def2",
+      "maskSha256": "85052297aa26747c29361ff831d1773e9b6516def4803e295f2e626158034fea",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "mad-upchuck-perk",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/08/madupchuck2.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Community repost preserved byte-for-byte.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "4f843ca828504783ea9706d9d459d08d60fe4fe46fc6da450484ea3492061609",
+      "maskSha256": "4f843ca828504783ea9706d9d459d08d60fe4fe46fc6da450484ea3492061609",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-grey-arms",
+      "url": "https://i.kym-cdn.com/photos/images/newsfeed/001/181/474/b9f.jpg",
+      "pageUrl": "https://knowyourmeme.com/photos/1181474-ben-10",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "c7e699b304f4c2b51b424bae40a6f2f1f730ca1f260a606d03607c762b6af2ea",
+      "maskSha256": "730d9dd1c3bf8893b52dbf539cd34facecd91c5667df6bfcc41712d2311d4afc",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-bloxx",
+      "url": "https://tiermaker.com/images/chart/chart/ben-10-reboot-aliens-15767/zz1618870884bloxxpng.png",
+      "pageUrl": "https://spinwheelmaker.com/wheel/3465",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "5b2bebfa286df24aa2b8b988c959efe70c7b7908fa76542779a807dc879cc763",
+      "maskSha256": "6a0f7fb626fe9275b425ade4abf5e39afe45d5154a4b4ff34fb3215a0b7b1ff0",
       "contentType": "image/png"
     }
   ],

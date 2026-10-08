@@ -1396,6 +1396,285 @@
         "Reuse license unknown."
       ],
       "versionEvidence": null
+    },
+    {
+      "formId": "stage-rocks",
+      "sourceFile": "assets/source-art/stage-rocks-original.jpg",
+      "sourceSha256": "593807ccbc4bcd4323c0af8ae4bdd107102cc4530939c60eef1078f8972c59df",
+      "maskFile": "assets/source-art/stage-rocks-reference-edit.png",
+      "maskSha256": "1bc27ecd08650f904df015aff4abbeee0fdb1676e513d1f4d7b751d3448646c3",
+      "pageUrl": "https://corporate.teroasia.com/archived/press_release/ben10_news-051009_eng.php",
+      "url": "https://corporate.teroasia.com/archived/images/ben10/051009/Rocks.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Stage promoter promotional artwork, Rocks; 2009 Power of the Omnitrix press release.",
+      "observations": "Full block head, left fist, foreshortened three-point right hand and both bent stone legs/feet. Source left fist lightly touches edge without a broad flat truncation. Output retains the pose, removes the circular background and redraws fine lines. Original is only 300x300; generated details are not recovered production detail.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "AI edits reinterpret fine contours, not pixel-exact extraction. Original and output bytes preserved."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nUse case: background-extraction. Edit only this supplied stage-show promotional artwork of Rocks. Extract the single full-body yellow-green rock alien onto a genuinely transparent background. Preserve this exact source pose and body design: the angular blocky head, clenched fist reaching left, large foreshortened three-point stone hand reaching right, black-and-green circular chest symbol, bent knees, and both stone feet. Preserve all visible contour points and the original flat colors and thin outline; do not invent anatomy or redesign. Remove only the black/green circular disc and surrounding white rectangle. Center the entire character at about 75 percent of canvas width and height with generous transparent margins around both hands and feet, especially the far-left fist. No circle, scene, platform, ground, text, glow or shadow. This is a reference-guided extraction of the supplied official stage artwork, not a new concept or a different cartoon edition.\n"
+      }
+    },
+    {
+      "formId": "nemetrix-mucilator",
+      "sourceFile": "assets/source-art/nemetrix-mucilator-original.jpg",
+      "sourceSha256": "ef0a954fbf59807e9a9b72511797c71e5c65a5984ee91221b1c3f4d6e7d4543c",
+      "maskFile": "assets/source-art/nemetrix-mucilator-reference-edit.png",
+      "maskSha256": "ecbded4208513f5367b7725367a85868670c4a3a1f2ed5380e3a383f652791af",
+      "pageUrl": "https://www.artbully.co/ben-10-characters",
+      "url": "https://images.squarespace-cdn.com/content/v1/52fd313ee4b0b3c32132e9de/1392337424457-7QKXKLIIZCWB6MF25X57/MucillatorABP.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Art Bully Productions portfolio model sheet labelled Mucilator / Ben 10 Omniverse / Vicious Cycle Software. GAME adaptation reference, not an animation model sheet.",
+      "observations": "Main front three-quarter game model retains broad seated body, two visible arm ends, existing visible foot, red collar, head spikes and purple sacs. Smaller rear view and grey plate removed. A second edit adds transparent margin; lighting, texture and fine details change. Naturally obscured feet remain obscured. This game model does not establish exact TV-model equivalence.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "AI edits reinterpret fine contours, not pixel-exact extraction. Original and output bytes preserved."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nUse case: background-extraction. Edit target: the supplied Art Bully Productions Mucilator game-character model sheet. Extract ONLY the large front three-quarter Mucilator at upper left onto a genuinely transparent background, centered with clear transparent margins. Keep the exact visible body shape, low broad seated pose, grey-blue textured skin, purple organic sacs, head spikes, red spiked collar, both visible arm ends and all visible feet/claws as in that large view. Preserve the source's 3D model rendering and proportions; do not turn it into a TV drawing or invent obscured legs. Remove only the flat grey background, all typography/logos and the separate smaller rear-view character. Do not include shadows, floor, glow, panels or extra objects. Preserve the complete visible silhouette including the far left fingertips and rightmost purple sac.\n\nSTEP 2\nEdit this transparent Mucilator character image for framing ONLY. Preserve exactly the same existing character, colors, pose, outline and visible anatomy. Put the entire character at 75 percent of the current relative size inside a wider transparent canvas so every extremity has at least 10 percent transparent margin, including the leftmost fingertips, right forearm and bottom purple sacs. The entire existing body must be visible. Do not crop any part, redesign it, add any anatomy, background, cast shadow, text or effects. Keep genuine transparency. This is a framing correction for a watch-selection silhouette asset.\n"
+      }
+    },
+    {
+      "formId": "dynamite-diamondhead",
+      "sourceFile": "assets/source-art/dynamite-diamondhead-original.jpg",
+      "sourceSha256": "fface3d7eb23e40c84e6844de8ce8a954b96977a2e3d55204d2878e1d56e747b",
+      "maskFile": "assets/source-art/dynamite-diamondhead-reference-edit.png",
+      "maskSha256": "5dc062b1e6f4359747aafcc2f1a5b5cc3fbb01f20a91409f09d95578ac9e079d",
+      "pageUrl": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343503011",
+      "url": "https://2001.dynamite.com/previews/C72513036343503011/BEN1003CNGUYEN.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Publisher Ben 10 #3 cover C by Dustin Nguyen. Publisher identifies Diamondhead debut in this issue.",
+      "observations": "Complete crouched aqua crystal body, twin back spikes, both fists and two jagged feet. Source natural arm/leg overlaps retained. AI removes cover/background/shadow and then adds margin; facet lines and proportions are interpreted, not pixel-identical comic ink. Final full body is inset, with faint alpha specks remaining beyond the main figure.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "AI edits reinterpret fine contours, not pixel-exact extraction. Original and output bytes preserved."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nUse case: background-extraction. Edit target is this publisher's Ben 10 #3 Dustin Nguyen cover. Extract only the entire pale aqua crystalline Diamondhead character onto a truly transparent background, preserving the exact full crouched pose, its two tall back spikes, small angled head, huge foreshortened left fist, right fist, both jagged lower legs and complete feet, black trousers with white markings, crystal facets and painted shading. The whole visible character is already in the picture; keep all visible contours and overlaps. Remove only the black/pink cover background, cast ground shadow, all titles/logos, credits, issue strip and signature. Do not add hidden anatomy, alter pose, substitute the original cartoon body, simplify the rocky outline or add effects. Fit the complete character centrally with at least 5 percent genuinely transparent margin on all sides. Keep the existing official comic cover style; this is a source-reference extraction, not a new pose.\n\n\nSTEP 2\nFraming correction only, using this existing transparent Diamondhead extraction as the edit target. Keep the same entire aqua crystal character, same crouched pose, both tall back spikes, head, both fists and both jagged feet. Reduce the character to 70 percent of the canvas height inside a spacious square transparent image, leaving at least 12 percent clear transparent margin on left and right and at least 10 percent top and bottom. Every tip of the right foot and right fist must be fully inside the canvas with surrounding transparency. Preserve visible anatomy, colors, facets, original pose and natural overlaps. Do not crop, create a background or shadow, add parts or change to another design. Return the same character at a smaller relative scale with generous transparent space.\n"
+      }
+    },
+    {
+      "formId": "ripjaws-aquatic",
+      "sourceFile": "assets/source-art/ripjaws-aquatic-original.png",
+      "sourceSha256": "adacc3674fd70b1100bfc1de1cf8a69d08ac6816852db41122e27c30c23600f7",
+      "maskFile": "assets/source-art/ripjaws-aquatic-reference-edit.png",
+      "maskSha256": "f8cb73ce43ad59dada58e71a76f655adcf8e2c2b3f1148c9ff406da533918360",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ripjaws/",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/ripjaws_2.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": "Community page powers section depicts original-series Ripjaws with aquatic tail, separately from UA and OV images.",
+      "observations": "Full slender body, antenna, two lowered clawed arms, striped black/light tail and split long green tail fin. This body state has no legs; none added. Source is only153x479; generated linework, teeth, claw shapes and shading vary. Faint peripheral alpha specks remain; no major visible anatomy touches the canvas edge.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "AI edits reinterpret fine contours, not pixel-exact extraction. Original and output bytes preserved."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nUse case: background-extraction. Edit only the supplied full-body Ripjaws aquatic-form reference image. Remove the white background and preserve exactly the same slender standing/swimming vertical body, gray-green head with toothed mouth and antenna light, two lowered clawed arms, black-and-pale-yellow segmented fish-tail body and the two long green tail fins at bottom. Preserve the original side-on head and front body orientation, fin shapes, chest shoulder emblem, contours and linework. This is the original-series aquatic tail form, with NO LEGS OR FEET: do not add legs, split the tail into legs, or switch to a later series costume. Keep both long fin tips and antenna fully inside the frame. Fit the entire body to no more than 75 percent canvas height in a portrait transparent canvas, with ample empty margin all around. Genuine transparent background; no floor, shadow, scene, text, extra limbs or new pose. Reproduce only visible source anatomy; do not invent detail.\n"
+      }
+    },
+    {
+      "formId": "bad-gravattack",
+      "sourceFile": "assets/source-art/bad-gravattack-original.png",
+      "sourceSha256": "87f0094ccf53f41f1b5b2743d756ba59bcb89dca95a8a5a759d938defd17b47c",
+      "maskFile": "assets/source-art/bad-gravattack-reference-edit.png",
+      "maskSha256": "10c33a59b3d04c0257e3f6c00c0a7e3fe00018a2e13083b1557175e21a1b5393",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+      "url": "http://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": {
+        "pageImageAlt": [
+          {
+            "class": "aligncenter wp-image-4699 size-full",
+            "src": "http://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack.png",
+            "alt": "Bad Ben as Gravattack",
+            "width": "640",
+            "height": "463",
+            "srcset": "https://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack.png 640w, https://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack-300x217.png 300w",
+            "sizes": "(max-width: 640px) 100vw, 640px"
+          }
+        ],
+        "note": "Community attribution and actually viewed design; official episode production chain not established."
+      },
+      "observations": "Actual complete dark gray/purple rocky Bad Gravattack with green forehead emblem/eyes, broad block teeth, purple abdomen vortex, teal joint belts, raised five-digit stone palm, lowered rocky hand and paired broad feet. Existing source pose and overlapping fingers retained. Corrected output removes real-alpha fog around raised hand.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Source is640x463 community-reposted scene, not official production alpha.",
+        "Two-stage imagegen edit changes fine cracks, shading and hand contours; no pixel-identical extraction claim.",
+        "Attempt1 retained unwanted real-alpha purple cloud (observed outside-palm samples A49..136); corrected attempt2 replaces it with transparency. Intermediate original retained.",
+        "No new limb reconstruction; body and digits existed in source. Only exterior fog/background removed."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nSTEP 1\nEdit the supplied source screenshot to extract only the already complete visible Bad Ben Gravattack character onto a true transparent RGBA background. Preserve this specific dark gray-purple rock body, dark green joint lines, green forehead Omnitrix, green eyes and broad yellowish block teeth, visible purple swirling core on abdomen, both rocky arms with the exact displayed fingers (image-right palm raised toward the camera, image-left hand lowered), teal waist/thigh bands, short bent rocky legs and both broad split feet. The whole main character is already visible in this image: preserve its existing pose, perspective, asymmetry, anatomy, contour and natural overlapping fingers. Remove the blue night street, building, stars, floor debris, floor shadow and only the free-floating purple fog around the raised hand; keep the purple tint/light inside the existing hand and abdomen core. Do not invent unseen body parts, add digits, symmetrize pose, substitute regular brown/orange Gravattack, recolor clothing, add floating rocks or a new aura. Retain animation linework and scene colors as closely as possible. Give the entire existing character a small transparent margin on every side, with no tip cropped. No background, ground, text, checkerboard or second character. This is a reference-guided edit of a complete community-reposted frame, not official production art or recovered high-resolution detail.\n\n\nSTEP 2\nEdit ONLY the transparency outside the raised image-right stone hand in this supplied transparent character image. The purple fog/cloud surrounding that hand is unwanted background/effect and must be entirely removed from alpha, including its wide rounded cloud BELOW the palm and all mist beyond the stone fingers, wrist and palm silhouette. Keep the raised hand itself, all its black outline, finger shapes and purple surface coloring unchanged. Do not make the purple cloud into a colored solid shape or preserve an aura. No pixel with visible fog should remain outside the actual stone-hand contour. Leave the complete rock-headed Bad Gravattack body, green eyes/forehead badge, yellow teeth, abdomen vortex, lower arm/hand, teal belts, both legs and feet, pose, proportions, outlines and colors exactly as in this image. Do not redesign, add parts, change hands, simplify contours, crop any body tip or generate a new pose. Return the same single complete figure on genuinely transparent background with a small empty margin. No scene, ground, text, shadow, glow cloud or checkerboard. This is a corrective background-alpha edit to the prior reference-guided extraction, not new artwork.\n"
+      }
+    },
+    {
+      "formId": "bad-buzzshock",
+      "sourceFile": "assets/source-art/bad-buzzshock-original.png",
+      "sourceSha256": "139312fa9ef34a845e894c8afed10b104bc4bcb2cef8f7135e1a9cdd0792def2",
+      "maskFile": "assets/source-art/bad-buzzshock-reference-edit.png",
+      "maskSha256": "85052297aa26747c29361ff831d1773e9b6516def4803e295f2e626158034fea",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/buzzshock/",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/08/bad_ben_buzzshock.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": {
+        "pageImageAlt": [],
+        "note": "Community attribution and actually viewed design; official episode production chain not established."
+      },
+      "observations": "Actual310x248 Bad Buzzshock airborne electrical pose: dark teal cylindrical crown with green emblem, black face/green eyes, two tiny side arms and curved tapering body connected to a complete lower-left green lightning trail. Source has no standing feet in this pose; none were invented. Output preserves broad electrical pose after removing stars/sky.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Community page literal alt labels Bad Ben as buzzshock; actual official episode capture chain/artist unknown.",
+        "This is an electrical airborne pose, not a verified standard standing whole-body model. Source hands/fingers are indistinct at310x248 and generated contours/arm ends are reinterpreted; require root independent visual review.",
+        "Generated head proportions, emblem, light/shading and fine tail/arm contours differ from low-resolution source; not pixel-exact original.",
+        "Existing connected lightning tail retained; no fabricated feet or independent extra character."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nExtract only the already visible Bad Ben Buzzshock from the supplied complete animation frame onto a genuinely transparent background, preserving this exact airborne electrical pose. Keep the dark teal cylindrical battery-like head with its green Omnitrix badge on top, black face with green eyes and narrow grin, the two small outstretched arms/hands exactly as visible, and the curved tapering green/black body trailing into the single existing green lightning tail that extends toward the lower-left and ends inside the source canvas. Do not invent standing legs or feet, new hands/fingers, a full humanoid body, or a different pose; retain the source's electrical-motion taper and natural overlap. Remove the blue starry sky and all separate stars. Keep the visible connected lightning tail as part of the depicted pose, while removing diffuse free-floating glow outside its defined contour. Preserve the original colors, outline and asymmetry as closely as possible. Fit the whole existing head, arms and complete connected tail inside a transparent canvas with clear margins. No other characters, ground, background, text, frame, watermark, checkerboard or new electric effects. This is a faithful reference-guided extraction from a low-resolution community-reposted frame, not an official original or recovered source detail.\n"
+      }
+    },
+    {
+      "formId": "mad-upchuck-perk",
+      "sourceFile": "assets/source-art/mad-upchuck-perk-original.png",
+      "sourceSha256": "4f843ca828504783ea9706d9d459d08d60fe4fe46fc6da450484ea3492061609",
+      "maskFile": "assets/source-art/mad-upchuck-perk-original.png",
+      "maskSha256": "4f843ca828504783ea9706d9d459d08d60fe4fe46fc6da450484ea3492061609",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/08/madupchuck2.png",
+      "renderMode": "source-alpha",
+      "artProvenance": "community-reproduction-of-character-art",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Community repost preserved byte-for-byte.",
+      "versionEvidence": {
+        "pageImageAlt": [],
+        "note": "Community attribution and actually viewed design; official episode production chain not established."
+      },
+      "observations": "Actual complete Mad Upchuck with olive/yellow round body, black spiked helmet, orange goggles, spiked grey shoulder armour, orange forearm wraps/chest badge, three long curled green tongues, small tail and both clawed feet. This Mad costume is distinct from the regular unclothed/suit Upchuck source; all visible extremities remain within the PNG.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Community Ben10Hero page calls this Mad Upchuck. The target roster's Perk classification is preserved, not claimed newly proven from an official episode.",
+        "Original artist, upstream production alpha and reuse license unknown.",
+        "Raw alpha may contain small antialias fringe; source bytes untouched. Current application display not tested by this reviewer."
+      ]
+    },
+    {
+      "formId": "reboot-grey-arms",
+      "sourceFile": "assets/source-art/reboot-grey-arms-original.jpg",
+      "sourceSha256": "c7e699b304f4c2b51b424bae40a6f2f1f730ca1f260a606d03607c762b6af2ea",
+      "maskFile": "assets/source-art/reboot-grey-arms-reference-edit.png",
+      "maskSha256": "730d9dd1c3bf8893b52dbf539cd34facecd91c5667df6bfcc41712d2311d4afc",
+      "pageUrl": "https://knowyourmeme.com/photos/1181474-ben-10",
+      "url": "https://i.kym-cdn.com/photos/images/newsfeed/001/181/474/b9f.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": {
+        "continuity": "Reboot",
+        "catalogAppearance": "Riding the Storm Out",
+        "observed": "Asymmetric Galvan/Tetramand fusion: one large red arm and three thin grey arms, three unequal eyes and unequal grey/red feet. Screenshot contains CN corner logo; exact episode is catalog/community attribution, not fresh episode playback."
+      },
+      "observations": "Complete head, four arm/fist ends and two feet visible in original. Body does not touch the screenshot edges. Reference edit retains the asymmetric limbs, head, chest emblem, pose and mismatched feet; forest, log, sky and corner logo removed. The edit cleans/redraws outline and brightens some colors; it is not a pixel-exact official transparent artwork.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Source is a 680x364 community repost, not a full resolution production drawing.",
+        "Parent must independently view output before production acceptance.",
+        "16,908 pixels have alpha 1..7; alpha>=8 body bounds are safely inset. Original generated bytes preserved, no alpha cleanup."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nEdit only the attached animation screenshot. Extract the single full-body Grey Arms character in the center onto a genuinely transparent background. Preserve his exact pose, proportions, original flat animation colors and black outlines: asymmetric grey head with one large yellow eye on viewer right and two small green eyes on viewer left; one large red arm and fist on viewer left, three thin grey arms with their small fists on viewer right; white and black chest with circular emblem; mismatched grey foot on viewer left and red foot on viewer right. Keep every visible finger, limb, shoe/foot and the exact body outline. Remove only the entire forest, ground, sky, log and the CN corner logo. Do not invent hidden anatomy, do not add a fourth small arm, do not symmetrize, do not redesign, do not add effects or a background or shadow. Center this same full body with a small transparent margin on all sides. This is a source-preserving reference edit, not new character concept art."
+      }
+    },
+    {
+      "formId": "reboot-bloxx",
+      "sourceFile": "assets/source-art/reboot-bloxx-original.png",
+      "sourceSha256": "5b2bebfa286df24aa2b8b988c959efe70c7b7908fa76542779a807dc879cc763",
+      "maskFile": "assets/source-art/reboot-bloxx-reference-edit.png",
+      "maskSha256": "6a0f7fb626fe9275b425ade4abf5e39afe45d5154a4b4ff34fb3215a0b7b1ff0",
+      "pageUrl": "https://spinwheelmaker.com/wheel/3465",
+      "url": "https://tiermaker.com/images/chart/chart/ben-10-reboot-aliens-15767/zz1618870884bloxxpng.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners; no open reuse license asserted. Generated reference edit, not official transparent art.",
+      "versionEvidence": {
+        "pageTitle": "Ben 10 Reboot Aliens",
+        "actualPageLabel": "Zz1618870884bloxxpng — Ben 10 Reboot Aliens option 66",
+        "comparisonObservation": "Same named block-built gorilla family, but this reboot-labelled pose has rounder face/chest and bent leg volumes with different band contours. Source is a community repost, not a verified original production model. Edition/body representation only; no new species claim."
+      },
+      "observations": "Actually viewed 257x255 source and 1254x1254 transparent output. One block-built gorilla alien: head/face, both shoulder masses, two large closed fists and the existing bent visible leg/foot sections are retained. Source left fist bottom is closed by a black outline with green margin; leg overlap is the pose, not a demonstrated missing leg. Output removes green graphic and frame with no extra person or detached body part; all major visible outer contours are closed.",
+      "adoptionBasis": "Root actually viewed original, output and current 390x960 initial-watch dial; visible contours fit without additional dial clipping. This is not phone or human acceptance.",
+      "limitations": [
+        "Source resolution only 257x255; unknown primary artist and possible community redraw.",
+        "AI output is a reference edit and changes fine line geometry/colour rather than reproducing every source pixel.",
+        "Bent legs stay partly overlapped by the fists; hidden surfaces were not verified or reconstructed.",
+        "Most output body alpha is 254; extremely faint alpha reaches canvas sides while major visible contours remain inside.",
+        "No UI render, SillyTavern host test or human acceptance performed."
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STEP 1\nEdit only the background of the attached Ben 10 Reboot Bloxx reference image. Isolate the one existing red, yellow and blue-violet block-built gorilla alien on a fully transparent background. Preserve the exact existing crouching pose, head, face, chest symbol, shoulder blocks, the two large forearms and closed fists, and the visible bent legs and feet behind the arms. Remove the green radial graphic background, every ray/line/text of that background, and the thin black rectangular image frame. Keep all existing black character outlines and the original flat colors. The left fist bottom has a complete closing black contour; keep that entire fist. The partially overlapped legs must stay overlapped as drawn. Do not invent, reconstruct, extend, or expose any hidden limb or body surface. Do not crop the body, change its proportions or pose, add any character, add a shadow or halo, or redesign it. Leave a small transparent margin around the complete visible body contour. This is a reference-based background-removal edit, not a new character illustration."
+      }
     }
   ],
   "mergedForms": [

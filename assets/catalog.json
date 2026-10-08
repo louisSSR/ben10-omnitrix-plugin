@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 156,
-    "missing": 68
+    "reviewed": 165,
+    "missing": 59
   },
   "forms": [
     {
@@ -2214,11 +2214,22 @@
       "group": "alternate",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-bad-gravattack",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.6945,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.252542,
+        "visiblePixels": 707291
+      }
     },
     {
       "id": "bad-buzzshock",
@@ -2227,11 +2238,22 @@
       "group": "alternate",
       "appearance": "And Then There Was Ben",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-bad-buzzshock",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/buzzshock/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.6223,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.398003,
+        "visiblePixels": 505622
+      }
     },
     {
       "id": "benzarro-frankenstrike",
@@ -2378,10 +2400,21 @@
       "group": "body-variant",
       "appearance": "Ben 10 (2005); ability state documented",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ripjaws-aquatic",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ripjaws/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.5467,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.59116,
+        "visiblePixels": 186467
+      }
     },
     {
       "id": "humungousaur-grown",
@@ -2994,11 +3027,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-bloxx",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://spinwheelmaker.com/wheel/3465"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.5913,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.471292,
+        "visiblePixels": 848971
+      }
     },
     {
       "id": "reboot-buzzshock",
@@ -3658,10 +3702,21 @@
       "group": "fusion",
       "appearance": "Riding the Storm Out. Name used in the episode.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-grey-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Grey_Arms"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://knowyourmeme.com/photos/1181474-ben-10"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reproduction",
+      "dialFit": {
+        "scale": 0.6402,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.358919,
+        "visiblePixels": 561817
+      }
     },
     {
       "id": "reboot-amalgam-ben",
@@ -4068,11 +4123,22 @@
       "group": "extra",
       "appearance": "Ben 10 Live: Power of the Omnitrix / The Rise of VilEon. Official stage alien; TV-canon status disputed among crew, not an animated-series appearance.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-stage-rocks",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Rocks",
         "https://www.prlog.org/10720300-cartoon-networks-ben-10-live-power-of-the-omnitrix-touring-australia-septemberoctober-2010.pdf"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://corporate.teroasia.com/archived/press_release/ben10_news-051009_eng.php"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "dialFit": {
+        "scale": 0.6349,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.370282,
+        "visiblePixels": 556595
+      }
     },
     {
       "id": "stage-squidstrictor",
@@ -4177,13 +4243,24 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-mucilator",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix",
         "https://ben10.fandom.com/wiki/Mucilator_(Transformation)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.artbully.co/ben-10-characters"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "dialFit": {
+        "scale": 0.6592,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.319761,
+        "visiblePixels": 580500
+      }
     },
     {
       "id": "nemetrix-omnivoracious",
@@ -4689,13 +4766,24 @@
       "group": "alternate",
       "appearance": "It's a Mad, Mad, Mad Ben World: Part 1",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-mad-upchuck-perk",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Upchuck",
         "https://ben10.fandom.com/wiki/Power_Watch",
         "https://ben10.fandom.com/wiki/Mad_Ben",
         "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_1"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6077,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.431624,
+        "visiblePixels": 76091
+      }
     },
     {
       "id": "mad-nrg",
@@ -4807,10 +4895,21 @@
       "group": "extra",
       "appearance": "Ben 10 #3: publisher description identifies its comic debut.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-dynamite-diamondhead",
       "sourceUrls": [
         "https://dynamite.com/ben-10-3/"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343503011"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-primary-source-art",
+      "dialFit": {
+        "scale": 0.5983,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.454014,
+        "visiblePixels": 476451
+      }
     },
     {
       "id": "dynamite-xlr8",

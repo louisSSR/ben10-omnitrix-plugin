@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "2b1d7ef9493de7fe8d7ba0492380512455f9c4bfb4f67f9c5dfb746214534af5",
-  "shapeCount": 156,
+  "sourceSvgSha256": "6281cbbfee48a2f8353376a6198056c330156c5a7ce7bb4b272d5aa673fd7e62",
+  "shapeCount": 165,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -520,6 +520,18 @@
       "diamondExtent": 0.983333,
       "visiblePixels": 7056
     },
+    "bad-gravattack": {
+      "scale": 0.6945,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.252542,
+      "visiblePixels": 707291
+    },
+    "bad-buzzshock": {
+      "scale": 0.6223,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.398003,
+      "visiblePixels": 505622
+    },
     "gwen10-wildvine": {
       "scale": 0.6214,
       "method": "native-png-alpha-diamond-envelope",
@@ -537,6 +549,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.289189,
       "visiblePixels": 26713
+    },
+    "ripjaws-aquatic": {
+      "scale": 0.5467,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.59116,
+      "visiblePixels": 186467
     },
     "swampfire-blossomed": {
       "scale": 0.6352,
@@ -669,6 +687,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.158602,
       "visiblePixels": 48377
+    },
+    "reboot-bloxx": {
+      "scale": 0.5913,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.471292,
+      "visiblePixels": 848971
     },
     "reboot-buzzshock": {
       "scale": 0.6166,
@@ -820,6 +844,12 @@
       "diamondExtent": 1.327715,
       "visiblePixels": 81399
     },
+    "reboot-grey-arms": {
+      "scale": 0.6402,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.358919,
+      "visiblePixels": 561817
+    },
     "reboot-bashmouth": {
       "scale": 0.8056,
       "method": "native-png-alpha-diamond-envelope",
@@ -885,6 +915,18 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.025,
       "visiblePixels": 15408
+    },
+    "stage-rocks": {
+      "scale": 0.6349,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.370282,
+      "visiblePixels": 556595
+    },
+    "nemetrix-mucilator": {
+      "scale": 0.6592,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.319761,
+      "visiblePixels": 580500
     },
     "eatle-ov": {
       "scale": 0.6212,
@@ -970,11 +1012,23 @@
       "diamondExtent": 1.4375,
       "visiblePixels": 72247
     },
+    "mad-upchuck-perk": {
+      "scale": 0.6077,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.431624,
+      "visiblePixels": 76091
+    },
     "mad-nrg": {
       "scale": 0.6329,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.374592,
       "visiblePixels": 110452
+    },
+    "dynamite-diamondhead": {
+      "scale": 0.5983,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.454014,
+      "visiblePixels": 476451
     },
     "ghostfreak-ov": {
       "scale": 0.8628,

@@ -1,0 +1,240 @@
+{
+  "version": "0.2.5",
+  "checkedAt": "2026-10-08T22:03:55.230341+00:00",
+  "previewSha256": "c4f4681c186e828d53300a3182c3beab3a5f3b89b8557ad0ced5992b77c906e4",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 165,
+    "missing": 59
+  },
+  "viewports": [
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Rocks",
+      "scrollWidth": 375,
+      "selected": "#alien-stage-rocks",
+      "watch": "original",
+      "width": 390,
+      "expected": "stage-rocks",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Mucilator",
+      "scrollWidth": 375,
+      "selected": "#alien-nemetrix-mucilator",
+      "watch": "original",
+      "width": 390,
+      "expected": "nemetrix-mucilator",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Diamondhead",
+      "scrollWidth": 375,
+      "selected": "#alien-dynamite-diamondhead",
+      "watch": "original",
+      "width": 390,
+      "expected": "dynamite-diamondhead",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Ripjaws (Aquatic Tail)",
+      "scrollWidth": 375,
+      "selected": "#alien-ripjaws-aquatic",
+      "watch": "original",
+      "width": 390,
+      "expected": "ripjaws-aquatic",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Bad Gravattack",
+      "scrollWidth": 375,
+      "selected": "#alien-bad-gravattack",
+      "watch": "original",
+      "width": 390,
+      "expected": "bad-gravattack",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Bad Buzzshock",
+      "scrollWidth": 375,
+      "selected": "#alien-bad-buzzshock",
+      "watch": "original",
+      "width": 390,
+      "expected": "bad-buzzshock",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Mad Perk Upchuck",
+      "scrollWidth": 375,
+      "selected": "#alien-mad-upchuck-perk",
+      "watch": "original",
+      "width": 390,
+      "expected": "mad-upchuck-perk",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Grey Arms",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-grey-arms",
+      "watch": "original",
+      "width": 390,
+      "expected": "reboot-grey-arms",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Bloxx",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-bloxx",
+      "watch": "original",
+      "width": 390,
+      "expected": "reboot-bloxx",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "projection",
+      "name": "Diamondhead",
+      "scrollWidth": 375,
+      "selected": "#alien-dynamite-diamondhead",
+      "watch": "omniverse",
+      "width": 390,
+      "expected": "dynamite-diamondhead",
+      "horizontalOverflow": false
+    },
+    {
+      "documentWidth": 305,
+      "height": 920,
+      "mode": "carousel",
+      "name": "Bad Ghostfreak",
+      "scrollWidth": 305,
+      "watch": "ultimatrix",
+      "width": 320,
+      "horizontalOverflow": false
+    },
+    {
+      "documentWidth": 305,
+      "height": 920,
+      "mode": "carousel",
+      "name": "Bad Gravattack",
+      "scrollWidth": 305,
+      "watch": "ultimatrix",
+      "width": 320,
+      "horizontalOverflow": false
+    },
+    {
+      "documentWidth": 1265,
+      "height": 720,
+      "mode": "projection",
+      "name": "Rocks",
+      "scrollWidth": 1265,
+      "watch": "recalibrated",
+      "width": 1280,
+      "horizontalOverflow": false
+    },
+    {
+      "documentWidth": 1265,
+      "height": 960,
+      "mode": "projection",
+      "name": "Rocks",
+      "scrollWidth": 1265,
+      "watch": "recalibrated",
+      "width": 1280,
+      "horizontalOverflow": false
+    }
+  ],
+  "screenshots": [
+    "screenshots/v025-stage-rocks-dial-390.png",
+    "screenshots/v025-nemetrix-mucilator-dial-390.png",
+    "screenshots/v025-dynamite-diamondhead-dial-390.png",
+    "screenshots/v025-ripjaws-aquatic-dial-390.png",
+    "screenshots/v025-bad-gravattack-dial-390.png",
+    "screenshots/v025-bad-buzzshock-dial-390.png",
+    "screenshots/v025-mad-upchuck-perk-dial-390.png",
+    "screenshots/v025-reboot-grey-arms-dial-390.png",
+    "screenshots/v025-reboot-bloxx-dial-390.png",
+    "screenshots/v025-dynamite-diamondhead-projection-390.png",
+    "screenshots/v025-carousel-before-320.png",
+    "screenshots/v025-carousel-after-320.png",
+    "screenshots/v025-rocks-projection-1280.png",
+    "screenshots/v025-rocks-projection-1280-tall.png"
+  ],
+  "ringBefore": [
+    {
+      "label": "选择 Bad Buzzshock",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, -77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Bad Ghostfreak",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 2.2024e-14, 90, 80, 1)"
+    },
+    {
+      "label": "选择 Bad Gravattack",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, 77.873, -45, -40, 1)"
+    }
+  ],
+  "ringAfter": [
+    {
+      "label": "选择 Bad Buzzshock",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, 77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Bad Ghostfreak",
+      "selected": "false",
+      "transform": "matrix3d(0.65, 0, 0, 0, 0, 0.65, 0, 0, 0, 0, 1, 0, -77.873, -45, -40, 1)"
+    },
+    {
+      "label": "选择 Bad Gravattack",
+      "selected": "true",
+      "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 1.01889e-13, 90, 80, 1)"
+    }
+  ],
+  "logs": [],
+  "aboutGameCaveatViewed": true,
+  "viewportOverrideReset": true,
+  "realHostVerified": false,
+  "phoneVerified": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}
