@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "b5a57d6590343a06efaf3304d6d3fd02e134070c80c80aba7892d4157b366832",
+  "svgSha256": "3c61eb2b79d4333549b535aec028e76bb74a055d9b6c3c69d5d2065fa3d8c2ea",
   "coverage": {
     "total": 224,
-    "reviewed": 101,
-    "missing": 123
+    "reviewed": 106,
+    "missing": 118
   },
   "assets": [
     {
@@ -796,6 +796,56 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "c9ac0d35b9713fda3f6c94255c1a18abcedde7825466861af6934c9d6fab5785",
       "maskSha256": "3baaa5f017f441b67bb2c392c3d7b54d238ab998b72385e1cf038e77a7be0493",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "atomic-x",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-wfm6Danl5OXjVbleUroFptKIxCZmw2sgMAOqa37fH_caPBGz4u0VovoxtW9VdcAKXrQFe03QOO5f0yH_cpFTYivOOQgPHBl3-f695m35IJ1Psz28WxgrUHgtpUe9AuEI0bUQw/s1600/000_B10_51_AtomicX-Fourmungousaur+Sheet.jpg",
+      "pageUrl": "https://thomasperkins.blogspot.com/2014/10/portfolio-work-atomic-x-and.html",
+      "rights": "Ben 10 artwork belongs to its rightsholders. Artist-published production reference; no open artwork license asserted. Display image is an AI reference edit, not the original production drawing.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "07c161c656e8196240a40b4d3cc573b41d2dfb10bbd22be6f6f1609fe1cc33cd",
+      "maskSha256": "f7831b241f26ba9b4e7a17d5463d058202d36539cc02df24a3edf8527461de02",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "fourmungousaur",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr-wfm6Danl5OXjVbleUroFptKIxCZmw2sgMAOqa37fH_caPBGz4u0VovoxtW9VdcAKXrQFe03QOO5f0yH_cpFTYivOOQgPHBl3-f695m35IJ1Psz28WxgrUHgtpUe9AuEI0bUQw/s1600/000_B10_51_AtomicX-Fourmungousaur+Sheet.jpg",
+      "pageUrl": "https://thomasperkins.blogspot.com/2014/10/portfolio-work-atomic-x-and.html",
+      "rights": "Ben 10 artwork belongs to its rightsholders. Artist-published production reference; no open artwork license asserted. Display image is an AI reference edit, not the original production drawing.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "07c161c656e8196240a40b4d3cc573b41d2dfb10bbd22be6f6f1609fe1cc33cd",
+      "maskSha256": "f41c6934b26613541bea669469b174519d3cbf3081d958090bd4e3ef8e3d9eba",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-humungousaur",
+      "url": "https://ben10hero.com/wp-content/uploads/2024/05/uhua.png",
+      "pageUrl": "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "ce52d0664d165a0107a37f9a89c23f2106356fbc109ff562ce05dc07d110d51c",
+      "maskSha256": "ce52d0664d165a0107a37f9a89c23f2106356fbc109ff562ce05dc07d110d51c",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-gravattack",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-gravattack-art-png_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "b6b133542488adf7032461106775174a68bd1e50e1c8cb27497093278f74899c",
+      "maskSha256": "b6b133542488adf7032461106775174a68bd1e50e1c8cb27497093278f74899c",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-omni-kix-xlr8",
+      "url": "https://rlv.zcache.com/going_hero_omni_kix_xlr8_poster-r5f06b64b63d34cf582819bd851ce11ee_w2q_8byvr_644.jpg",
+      "pageUrl": "https://www.zazzle.com/going_hero_omni_kix_xlr8_poster-228995890155624054",
+      "rights": "Underlying Ben 10 artwork remains copyrighted by its owners. No open license or redistribution permission is asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "fe5ff9885f52f3e46fb0d66470eaeb0f6ba9630f6d57ebdbc7b0c94c3205ac0f",
+      "maskSha256": "c6b21cab38cf1963d6379d575ebb3bd2a413ba6bcc54320a49def05e0819f206",
       "contentType": "image/png"
     }
   ],

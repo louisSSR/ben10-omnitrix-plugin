@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 101,
-    "missing": 123
+    "reviewed": 106,
+    "missing": 118
   },
   "forms": [
     {
@@ -1729,7 +1729,7 @@
       "group": "ultimate",
       "appearance": "The Final Battle: Part 1",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ultimate-humungousaur",
       "sourceUrls": [
         "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
         "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
@@ -1737,8 +1737,14 @@
       "visualSourceUrls": [
         "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/"
       ],
-      "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.557,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.561707,
+        "visiblePixels": 2133486
+      }
     },
     {
       "id": "ultimate-swampfire",
@@ -1959,7 +1965,7 @@
       "group": "ultimate",
       "appearance": "For a Few Brains More",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ultimate-gravattack",
       "sourceUrls": [
         "https://ben10db.weebly.com/omniverse.html",
         "https://ben10.fandom.com/wiki/For_a_Few_Brains_More"
@@ -1967,8 +1973,14 @@
       "visualSourceUrls": [
         "https://ben10db.weebly.com/omniverse.html"
       ],
-      "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6646,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.308901,
+        "visiblePixels": 104769
+      }
     },
     {
       "id": "ultimate-rath",
@@ -2037,10 +2049,21 @@
       "group": "fusion",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-fourmungousaur",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Combinations_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://thomasperkins.blogspot.com/2014/10/portfolio-work-atomic-x-and.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-artist-published-production-sheet",
+      "dialFit": {
+        "scale": 0.6755,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.287775,
+        "visiblePixels": 890212
+      }
     },
     {
       "id": "atomic-x",
@@ -2049,10 +2072,21 @@
       "group": "fusion",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-atomic-x",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Combinations_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://thomasperkins.blogspot.com/2014/10/portfolio-work-atomic-x-and.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-artist-published-production-sheet",
+      "dialFit": {
+        "scale": 0.5671,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.533854,
+        "visiblePixels": 751770
+      }
     },
     {
       "id": "crashocker",
@@ -3202,12 +3236,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Queen of Bees.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-xlr8",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.zazzle.com/going_hero_omni_kix_xlr8_poster-228995890155624054"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-licensed-product-preview",
+      "dialFit": {
+        "scale": 0.5491,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.584264,
+        "visiblePixels": 457506
+      }
     },
     {
       "id": "reboot-omni-naut-heatblast",

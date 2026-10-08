@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "b5a57d6590343a06efaf3304d6d3fd02e134070c80c80aba7892d4157b366832",
-  "shapeCount": 101,
+  "sourceSvgSha256": "3c61eb2b79d4333549b535aec028e76bb74a055d9b6c3c69d5d2065fa3d8c2ea",
+  "shapeCount": 106,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -418,6 +418,12 @@
       "diamondExtent": 1.166667,
       "visiblePixels": 6954
     },
+    "ultimate-humungousaur": {
+      "scale": 0.557,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.561707,
+      "visiblePixels": 2133486
+    },
     "ultimate-swampfire": {
       "scale": 0.7352,
       "method": "native-png-alpha-diamond-envelope",
@@ -466,11 +472,29 @@
       "diamondExtent": 1.541667,
       "visiblePixels": 15472
     },
+    "ultimate-gravattack": {
+      "scale": 0.6646,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.308901,
+      "visiblePixels": 104769
+    },
     "ultimate-rath": {
       "scale": 0.5326,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.633333,
       "visiblePixels": 20901
+    },
+    "fourmungousaur": {
+      "scale": 0.6755,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.287775,
+      "visiblePixels": 890212
+    },
+    "atomic-x": {
+      "scale": 0.5671,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.533854,
+      "visiblePixels": 751770
     },
     "uprigg": {
       "scale": 0.5612,
@@ -603,6 +627,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.275,
       "visiblePixels": 9903
+    },
+    "reboot-omni-kix-xlr8": {
+      "scale": 0.5491,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.584264,
+      "visiblePixels": 457506
     },
     "reboot-bootleg": {
       "scale": 0.6177,

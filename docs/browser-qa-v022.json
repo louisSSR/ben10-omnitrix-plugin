@@ -1,0 +1,126 @@
+{
+  "version": "0.2.2",
+  "checkedAt": "2026-10-08T20:23:58.728Z",
+  "previewSha256": "5f75ad689d5e58a02fe648ad8f48147a5ce9958bbb6f6170e05f52383d8a2192",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 106,
+    "missing": 118
+  },
+  "viewports": [
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "dial",
+      "watch": "original",
+      "selected": "atomic-x",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "dial",
+      "watch": "original",
+      "selected": "fourmungousaur",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "dial",
+      "watch": "original",
+      "selected": "ultimate-humungousaur",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "dial",
+      "watch": "original",
+      "selected": "ultimate-gravattack",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "dial",
+      "watch": "original",
+      "selected": "reboot-omni-kix-xlr8",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 960,
+      "documentWidth": 375,
+      "mode": "projection",
+      "watch": "original",
+      "selected": "reboot-omni-kix-xlr8",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 320,
+      "height": 920,
+      "documentWidth": 305,
+      "mode": "carousel",
+      "watch": "original",
+      "selected": "xlr8",
+      "horizontalOverflow": false,
+      "rearScale": 0.48,
+      "frontScale": 1.16
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "documentWidth": 1265,
+      "mode": "projection",
+      "watch": "ultimatrix",
+      "selected": "ultimate-gravattack",
+      "fullOutlineViewed": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "interactionEvidence": {
+    "carouselSelection": "Search xlr8 returned four distinct designs. ArrowRight changed Omni-Kix XLR8 to classic XLR8: incoming scale 1.15863, outgoing scale 0.850511 during motion; settled front/rear are 1.16/0.48.",
+    "newShapeDetails": "Atomic-X crown and hands, Fourmungousaur four arms and tail, both ultimate bodies and Gravattack three planetoids, and Omni-Kix XLR8 tail/arms/feet were viewed inside the diamond.",
+    "previewErrorLogs": [],
+    "temporaryViewportOverrideReset": true
+  },
+  "screenshots": [
+    "screenshots/v022-atomic-x-dial-390.png",
+    "screenshots/v022-fourmungousaur-dial-390.png",
+    "screenshots/v022-ultimate-humungousaur-dial-390.png",
+    "screenshots/v022-ultimate-gravattack-dial-390.png",
+    "screenshots/v022-omni-kix-xlr8-dial-390.png",
+    "screenshots/v022-omni-kix-xlr8-projection-390.png",
+    "screenshots/v022-xlrs-carousel-320.png",
+    "screenshots/v022-desktop-projection.png"
+  ],
+  "automatedTests": {
+    "command": "npm test",
+    "passed": 58,
+    "failed": 0,
+    "skipped": 0
+  },
+  "boundaries": {
+    "realPhoneVerified": false,
+    "realSillyTavernVerified": false,
+    "driverAccepted": false,
+    "allSilhouettesComplete": false,
+    "newArt": "Atomic-X and Fourmungousaur use AI reference edits of the artist-published final production sheet. Omni-Kix XLR8 uses an AI reference edit of a retained merchandise poster. The two ultimate forms preserve community PNG bytes. Generated edits are not official transparent originals.",
+    "watchShellsChanged": false,
+    "mobileInstallerChanged": false
+  }
+}
