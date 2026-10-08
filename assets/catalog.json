@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 106,
-    "missing": 118
+    "reviewed": 121,
+    "missing": 103
   },
   "forms": [
     {
@@ -437,11 +437,22 @@
       "group": "os",
       "appearance": "Ben 10 (2005) era",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-buzzshock",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/buzzshock/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.652,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.334154,
+        "visiblePixels": 426185
+      }
     },
     {
       "id": "arctiguana",
@@ -2333,10 +2344,21 @@
       "group": "body-variant",
       "appearance": "Hot Stretch",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nrg-unsuited",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/NRG"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6748,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.289189,
+        "visiblePixels": 26713
+      }
     },
     {
       "id": "ripjaws-aquatic",
@@ -2369,10 +2391,21 @@
       "group": "body-variant",
       "appearance": "Omniverse; blossomed maturation documented",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-swampfire-blossomed",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Swampfire"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/swampfire/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6352,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.36952,
+        "visiblePixels": 57921
+      }
     },
     {
       "id": "whampire-bat",
@@ -2417,10 +2450,21 @@
       "group": "body-variant",
       "appearance": "Ghost Town",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ghostfreak-true-af",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Zs'Skayr"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "dialFit": {
+        "scale": 0.6629,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.312379,
+        "visiblePixels": 409684
+      }
     },
     {
       "id": "reboot-cannonbolt",
@@ -2804,11 +2848,22 @@
       "group": "reboot",
       "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-goop",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2020/10/goop-ben-10-reboot.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-scene",
+      "dialFit": {
+        "scale": 0.526,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.653873,
+        "visiblePixels": 396312
+      }
     },
     {
       "id": "reboot-jetray",
@@ -3016,12 +3071,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-heatblast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.pngkey.com/detail/u2r5e6u2u2u2y3y3_heatblast-ben-10-omni-enhanced-heatblast/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5857,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.485156,
+        "visiblePixels": 614683
+      }
     },
     {
       "id": "reboot-omni-enhanced-overflow",
@@ -3056,12 +3122,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-stinkfly",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.vhv.rs/viewpic/hJxhhJx_transparent-ben-10-png-ben-10-omni-enhanced/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5336,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.630403,
+        "visiblePixels": 510402
+      }
     },
     {
       "id": "reboot-omni-enhanced-wildvine",
@@ -3914,10 +3991,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-eatle-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Eatle"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6212,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.400442,
+        "visiblePixels": 59231
+      }
     },
     {
       "id": "chromastone-ov1",
@@ -3938,10 +4026,21 @@
       "group": "edition-variant",
       "appearance": "A New Dawn",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-chromastone-ov2",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Chromastone_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/chromastone/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.6505,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.33724,
+        "visiblePixels": 286187
+      }
     },
     {
       "id": "big-chill-ov",
@@ -3997,10 +4096,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse: Albedo",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ultimate-spidermonkey-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimate_Spidermonkey"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6743,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.290134,
+        "visiblePixels": 101668
+      }
     },
     {
       "id": "ultimate-echo-echo-ov",
@@ -4009,10 +4119,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse: Albedo",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ultimate-echo-echo-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimate_Echo_Echo"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6651,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.307927,
+        "visiblePixels": 30036
+      }
     },
     {
       "id": "ripjaws-ua",
@@ -4033,10 +4154,21 @@
       "group": "edition-variant",
       "appearance": "Gone Fishin' / Omniverse",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ripjaws-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5004,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.738516,
+        "visiblePixels": 97883
+      }
     },
     {
       "id": "heatblast-ua",
@@ -4045,10 +4177,21 @@
       "group": "edition-variant",
       "appearance": "Ultimate Alien",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-heatblast-ua",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.492,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.768116,
+        "visiblePixels": 30564
+      }
     },
     {
       "id": "heatblast-ov",
@@ -4057,10 +4200,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-heatblast-ov",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6135,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.417939,
+        "visiblePixels": 465295
+      }
     },
     {
       "id": "clockwork-ov16",
@@ -4165,13 +4319,24 @@
       "group": "alternate",
       "appearance": "It's a Mad, Mad, Mad Ben World: Part 2",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-mad-nrg",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/NRG",
         "https://ben10.fandom.com/wiki/Power_Watch",
         "https://ben10.fandom.com/wiki/Mad_Ben",
         "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_2"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nrg/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6329,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.374592,
+        "visiblePixels": 110452
+      }
     },
     {
       "id": "mad-way-big",

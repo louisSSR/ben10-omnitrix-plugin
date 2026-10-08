@@ -1,0 +1,310 @@
+{
+  "version": "0.2.3",
+  "checkedAt": "2026-10-08T20:49:18.655432+00:00",
+  "previewSha256": "f459538278dd68a17f3e1bf3c3b36b6fafee6420b9e2580822fce566e7700312",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 121,
+    "missing": 103
+  },
+  "viewports": [
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Swampfire (Blossomed)",
+      "scrollWidth": 375,
+      "selected": "#alien-swampfire-blossomed",
+      "watch": "original",
+      "width": 390,
+      "expected": "swampfire-blossomed",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Mad NRG",
+      "scrollWidth": 375,
+      "selected": "#alien-mad-nrg",
+      "watch": "original",
+      "width": 390,
+      "expected": "mad-nrg",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "NRG (Unsuited)",
+      "scrollWidth": 375,
+      "selected": "#alien-nrg-unsuited",
+      "watch": "original",
+      "width": 390,
+      "expected": "nrg-unsuited",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Ghostfreak (True Form, Alien Force)",
+      "scrollWidth": 375,
+      "selected": "#alien-ghostfreak-true-af",
+      "watch": "original",
+      "width": 390,
+      "expected": "ghostfreak-true-af",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Eatle — Omniverse",
+      "scrollWidth": 375,
+      "selected": "#alien-eatle-ov",
+      "watch": "original",
+      "width": 390,
+      "expected": "eatle-ov",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Goop",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-goop",
+      "watch": "original",
+      "width": 390,
+      "expected": "reboot-goop",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Ultimate Spidermonkey — Omniverse",
+      "scrollWidth": 375,
+      "selected": "#alien-ultimate-spidermonkey-ov",
+      "watch": "original",
+      "width": 390,
+      "expected": "ultimate-spidermonkey-ov",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Ultimate Echo Echo — Omniverse",
+      "scrollWidth": 375,
+      "selected": "#alien-ultimate-echo-echo-ov",
+      "watch": "original",
+      "width": 390,
+      "expected": "ultimate-echo-echo-ov",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Ripjaws — Omniverse",
+      "scrollWidth": 375,
+      "selected": "#alien-ripjaws-ov",
+      "watch": "original",
+      "width": 390,
+      "expected": "ripjaws-ov",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Heatblast — Omniverse",
+      "scrollWidth": 375,
+      "selected": "#alien-heatblast-ov",
+      "watch": "original",
+      "width": 390,
+      "expected": "heatblast-ov",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Heatblast — Ultimate Alien",
+      "scrollWidth": 375,
+      "selected": "#alien-heatblast-ua",
+      "watch": "original",
+      "width": 390,
+      "expected": "heatblast-ua",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Omni-Enhanced Stinkfly",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-omni-enhanced-stinkfly",
+      "watch": "original",
+      "width": 390,
+      "expected": "reboot-omni-enhanced-stinkfly",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Omni-Enhanced Heatblast",
+      "scrollWidth": 375,
+      "selected": "#alien-reboot-omni-enhanced-heatblast",
+      "watch": "original",
+      "width": 390,
+      "expected": "reboot-omni-enhanced-heatblast",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Buzzshock",
+      "scrollWidth": 375,
+      "selected": "#alien-buzzshock",
+      "watch": "original",
+      "width": 390,
+      "expected": "buzzshock",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "dial",
+      "name": "Chromastone — A New Dawn design",
+      "scrollWidth": 375,
+      "selected": "#alien-chromastone-ov2",
+      "watch": "original",
+      "width": 390,
+      "expected": "chromastone-ov2",
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 375,
+      "height": 960,
+      "mode": "projection",
+      "name": "Chromastone — A New Dawn design",
+      "scrollWidth": 375,
+      "watch": "omniverse",
+      "width": 390,
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 305,
+      "height": 920,
+      "mode": "carousel",
+      "name": "Heatblast",
+      "scrollWidth": 305,
+      "watch": "omniverse",
+      "width": 320,
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    },
+    {
+      "documentWidth": 1265,
+      "height": 720,
+      "mode": "projection",
+      "name": "Omni-Enhanced Stinkfly",
+      "scrollWidth": 1265,
+      "watch": "recalibrated",
+      "width": 1280,
+      "horizontalOverflow": false,
+      "fullOutlineViewed": true
+    }
+  ],
+  "interactionEvidence": {
+    "carouselSelection": "Search heatblast displayed five distinct designs. ArrowRight moved selection from classic to reboot Heatblast. Immediately sampled incoming scale 0.948832 and outgoing scale 1.15906; settled selected scale 1.16 and far rear scale 0.544934. Screenshot and labels confirm switched selection.",
+    "carouselSettled": [
+      {
+        "label": "选择 Heatblast — Ultimate Alien",
+        "selected": "false",
+        "transform": "matrix3d(0.544934, 0, 0, 0, 0, 0.544934, 0, 0, 0, 0, 1, 0, 52.8536, -72.8115, -64.7214, 1)"
+      },
+      {
+        "label": "选择 Heatblast — Omniverse",
+        "selected": "false",
+        "transform": "matrix3d(0.544934, 0, 0, 0, 0, 0.544934, 0, 0, 0, 0, 1, 0, -52.8536, -72.8115, -64.7214, 1)"
+      },
+      {
+        "label": "选择 火焰人",
+        "selected": "false",
+        "transform": "matrix3d(0.925066, 0, 0, 0, 0, 0.925066, 0, 0, 0, 0, 1, 0, -85.519, 27.8115, 24.7214, 1)"
+      },
+      {
+        "label": "选择 Heatblast",
+        "selected": "true",
+        "transform": "matrix3d(1.16, 0, 0, 0, 0, 1.16, 0, 0, 0, 0, 1, 0, 2.2024e-14, 90, 80, 1)"
+      },
+      {
+        "label": "选择 Omni-Enhanced Heatblast",
+        "selected": "false",
+        "transform": "matrix3d(0.925066, 0, 0, 0, 0, 0.925066, 0, 0, 0, 0, 1, 0, 85.519, 27.8115, 24.7214, 1)"
+      }
+    ],
+    "newShapeDetails": "All fifteen newly added shapes viewed in the original watch diamond at 390x960. Horns, wings, outstretched hands, Ghostfreak tail and Goop saucer remain inside the diamond. Separate projection views confirm no visible opaque source background for Chromastone OV2 and Omni-Enhanced Stinkfly.",
+    "previewErrorLogs": [],
+    "temporaryViewportOverrideReset": true
+  },
+  "screenshots": [
+    "screenshots/v023-swampfire-blossomed-dial-390.png",
+    "screenshots/v023-mad-nrg-dial-390.png",
+    "screenshots/v023-nrg-unsuited-dial-390.png",
+    "screenshots/v023-ghostfreak-true-af-dial-390.png",
+    "screenshots/v023-eatle-ov-dial-390.png",
+    "screenshots/v023-reboot-goop-dial-390.png",
+    "screenshots/v023-ultimate-spidermonkey-ov-dial-390.png",
+    "screenshots/v023-ultimate-echo-echo-ov-dial-390.png",
+    "screenshots/v023-ripjaws-ov-dial-390.png",
+    "screenshots/v023-heatblast-ov-dial-390.png",
+    "screenshots/v023-heatblast-ua-dial-390.png",
+    "screenshots/v023-reboot-omni-enhanced-stinkfly-dial-390.png",
+    "screenshots/v023-reboot-omni-enhanced-heatblast-dial-390.png",
+    "screenshots/v023-buzzshock-dial-390.png",
+    "screenshots/v023-chromastone-ov2-dial-390.png",
+    "screenshots/v023-chromastone-ov2-projection-390.png",
+    "screenshots/v023-heatblasts-carousel-320.png",
+    "screenshots/v023-desktop-projection.png"
+  ],
+  "automatedTests": {
+    "command": "npm test",
+    "passed": 58,
+    "failed": 0,
+    "skipped": 0
+  },
+  "boundaries": {
+    "realPhoneVerified": false,
+    "realSillyTavernVerified": false,
+    "driverAccepted": false,
+    "allSilhouettesComplete": false,
+    "watchShellsChanged": false,
+    "mobileInstallerChanged": false,
+    "newArt": "Ten unchanged community alpha PNGs and five AI reference edits. Not newly verified official animation originals."
+  }
+}

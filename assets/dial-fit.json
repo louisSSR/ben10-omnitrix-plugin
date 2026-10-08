@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "3c61eb2b79d4333549b535aec028e76bb74a055d9b6c3c69d5d2065fa3d8c2ea",
-  "shapeCount": 106,
+  "sourceSvgSha256": "654d37f4672202fc8240f1c5cfbac85945046021bcd37c1bcad9333181697c49",
+  "shapeCount": 121,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -129,6 +129,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.325,
       "visiblePixels": 20561
+    },
+    "buzzshock": {
+      "scale": 0.652,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.334154,
+      "visiblePixels": 426185
     },
     "blitzwolfer": {
       "scale": 0.6607,
@@ -520,11 +526,29 @@
       "diamondExtent": 1.158333,
       "visiblePixels": 9282
     },
+    "nrg-unsuited": {
+      "scale": 0.6748,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.289189,
+      "visiblePixels": 26713
+    },
+    "swampfire-blossomed": {
+      "scale": 0.6352,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.36952,
+      "visiblePixels": 57921
+    },
     "shocksquatch-ov": {
       "scale": 0.6404,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.358333,
       "visiblePixels": 18629
+    },
+    "ghostfreak-true-af": {
+      "scale": 0.6629,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.312379,
+      "visiblePixels": 409684
     },
     "reboot-cannonbolt": {
       "scale": 0.6365,
@@ -616,11 +640,29 @@
       "diamondExtent": 1.241667,
       "visiblePixels": 19708
     },
+    "reboot-goop": {
+      "scale": 0.526,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.653873,
+      "visiblePixels": 396312
+    },
+    "reboot-omni-enhanced-heatblast": {
+      "scale": 0.5857,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.485156,
+      "visiblePixels": 614683
+    },
     "reboot-omni-enhanced-overflow": {
       "scale": 0.6289,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.383333,
       "visiblePixels": 18200
+    },
+    "reboot-omni-enhanced-stinkfly": {
+      "scale": 0.5336,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.630403,
+      "visiblePixels": 510402
     },
     "reboot-omni-enhanced-xlr8": {
       "scale": 0.6823,
@@ -664,6 +706,18 @@
       "diamondExtent": 1.025,
       "visiblePixels": 15408
     },
+    "eatle-ov": {
+      "scale": 0.6212,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.400442,
+      "visiblePixels": 59231
+    },
+    "chromastone-ov2": {
+      "scale": 0.6505,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.33724,
+      "visiblePixels": 286187
+    },
     "big-chill-ov": {
       "scale": 0.5494,
       "method": "native-png-alpha-diamond-envelope",
@@ -675,6 +729,42 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.433333,
       "visiblePixels": 11249
+    },
+    "ultimate-spidermonkey-ov": {
+      "scale": 0.6743,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.290134,
+      "visiblePixels": 101668
+    },
+    "ultimate-echo-echo-ov": {
+      "scale": 0.6651,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.307927,
+      "visiblePixels": 30036
+    },
+    "ripjaws-ov": {
+      "scale": 0.5004,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.738516,
+      "visiblePixels": 97883
+    },
+    "heatblast-ua": {
+      "scale": 0.492,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.768116,
+      "visiblePixels": 30564
+    },
+    "heatblast-ov": {
+      "scale": 0.6135,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.417939,
+      "visiblePixels": 465295
+    },
+    "mad-nrg": {
+      "scale": 0.6329,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.374592,
+      "visiblePixels": 110452
     },
     "ghostfreak-ov": {
       "scale": 0.8628,

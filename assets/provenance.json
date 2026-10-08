@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "3c61eb2b79d4333549b535aec028e76bb74a055d9b6c3c69d5d2065fa3d8c2ea",
+  "svgSha256": "654d37f4672202fc8240f1c5cfbac85945046021bcd37c1bcad9333181697c49",
   "coverage": {
     "total": 224,
-    "reviewed": 106,
-    "missing": 118
+    "reviewed": 121,
+    "missing": 103
   },
   "assets": [
     {
@@ -846,6 +846,156 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "fe5ff9885f52f3e46fb0d66470eaeb0f6ba9630f6d57ebdbc7b0c94c3205ac0f",
       "maskSha256": "c6b21cab38cf1963d6379d575ebb3bd2a413ba6bcc54320a49def05e0819f206",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "swampfire-blossomed",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/09/swampfire_ov2.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/swampfire/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "acd86d9455f446fa3bd6a82bd99a223ca64cfe666c5c68aaa809fba2f3c064b0",
+      "maskSha256": "acd86d9455f446fa3bd6a82bd99a223ca64cfe666c5c68aaa809fba2f3c064b0",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "mad-nrg",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/02/mad_nrg_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nrg/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "79302dd490994647b27a790f9a6958ae0824f49d0d43fb0f9013b39a35401ecf",
+      "maskSha256": "79302dd490994647b27a790f9a6958ae0824f49d0d43fb0f9013b39a35401ecf",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nrg-unsuited",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/published/nrg-true-form.png?1609804234",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "64e9844d125f88283306a2f2e3947c05fc4aef90db2bae6c74e8ffcceccd2e19",
+      "maskSha256": "64e9844d125f88283306a2f2e3947c05fc4aef90db2bae6c74e8ffcceccd2e19",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ghostfreak-true-af",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/ghostfreak_alien_force.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community repost; no open artwork license or original publisher provenance asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "efe14eb9a77a2b0121eae13f0fa1ab8e6319f759c5ca8cd8ad5ba0fc7f22aa21",
+      "maskSha256": "d084694028d9819964f9c0e7b81f746e54e6109813f868532c12361cc4313b8a",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "eatle-ov",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/eatle_omniverse.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "4fdde9b551bc9dcb2da78dd334ad51a41bb19a6b4b8a780202c92c9d66e7a4d9",
+      "maskSha256": "4fdde9b551bc9dcb2da78dd334ad51a41bb19a6b4b8a780202c92c9d66e7a4d9",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-goop",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjULbS1NY120c7e0zHOYzTV9E4g_yJnElg9gVmn5dwjTYfvjkhG5hDOcYfY-SJBFhuuvzEljShnT1phkimFLikXnr0EZ62EB8qZCjD4Vc50wSQoP5K-i0zeUS7o_nCiwtm246v4j2kAsud0/s592/Goop+Ben+10+reboot+movie+universe.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2020/10/goop-ben-10-reboot.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "7d0dcfd90fe314773efe6d3aaada1611f3391bc605a9f09b2a5c0ddcca4807d4",
+      "maskSha256": "ad61bb32dac8a8b1e864df92bcded98b27a8506c76f892d2a37f4bc021ea379b",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-spidermonkey-ov",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/negative-ultimate-spidermonkey-official_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "0122937cfebd06399c6249e466dd70249a6b44b1a00dd4d78912f3c0dd477952",
+      "maskSha256": "0122937cfebd06399c6249e466dd70249a6b44b1a00dd4d78912f3c0dd477952",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-echo-echo-ov",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/published/ultimate-echo-echo-omniverse-official.png?1614002934=",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "03112b42669c15e38f763c9e11e55ef849c0ae8ac0ee05bc27354aad6eea8317",
+      "maskSha256": "03112b42669c15e38f763c9e11e55ef849c0ae8ac0ee05bc27354aad6eea8317",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ripjaws-ov",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ripjaws-ov-official_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "6df416f404908b6448a4aa6172be08af4806800c59fd5098272e4cb1d489e51c",
+      "maskSha256": "6df416f404908b6448a4aa6172be08af4806800c59fd5098272e4cb1d489e51c",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "heatblast-ov",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/heatblast-omniverse-official_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "2350c535f36bfc1ad6c71aaa2c643de28f524f1c269d219742561a38e936eed2",
+      "maskSha256": "2350c535f36bfc1ad6c71aaa2c643de28f524f1c269d219742561a38e936eed2",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "heatblast-ua",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/heatblast_ua.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/",
+      "rights": "Underlying Ben 10 artwork belongs to its rightsholders. Community source, no open artwork license or original publisher provenance asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "140c462ecf1fdda9c7144349f047a4d96750f7c6c2dd5515a4e2510fd3e0c627",
+      "maskSha256": "140c462ecf1fdda9c7144349f047a4d96750f7c6c2dd5515a4e2510fd3e0c627",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-omni-enhanced-stinkfly",
+      "url": "https://www.vhv.rs/dpng/d/488-4888493_transparent-ben-10-png-ben-10-omni-enhanced.png",
+      "pageUrl": "https://www.vhv.rs/viewpic/hJxhhJx_transparent-ben-10-png-ben-10-omni-enhanced/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open artwork license asserted. Generated reference edit, not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "15632bf59984b0682279e18ae9d9d1500e0e60ce89875da58a015ac1936fdf97",
+      "maskSha256": "e35d816f141423dfb670f6e47f83f7f778ff8ad373bbeb03ff3b3ec7bcdfee4e",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-omni-enhanced-heatblast",
+      "url": "https://www.pngkey.com/png/full/577-5776884_heatblast-ben-10-omni-enhanced-heatblast.png",
+      "pageUrl": "https://www.pngkey.com/detail/u2r5e6u2u2u2y3y3_heatblast-ben-10-omni-enhanced-heatblast/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open artwork license asserted. Community repost used unchanged.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "a8db6a0a8a5665542bff0b1b7dd6d950f16e164b98758b0f1b02f336a809b70e",
+      "maskSha256": "a8db6a0a8a5665542bff0b1b7dd6d950f16e164b98758b0f1b02f336a809b70e",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "buzzshock",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/08/ken_10_as_buzzshock_004.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/buzzshock/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open artwork license asserted. Generated reference edit, not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "902b48aa4c79917c4e87e9fec4b17dc667452374272d5849fbafa4a3295e7aa2",
+      "maskSha256": "c6fe79963b629f951c51fef56de8d39ccc8eb1892a39bae8efdc2f9d6363aac6",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "chromastone-ov2",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone_ov_official.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open artwork license asserted. Generated reference edit, not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "135d67151ae35d1d64983d1c4a351cb8ae73cd0bb42cd56f1aa40e40e0d6c8c9",
+      "maskSha256": "6efcd0f9fdd84d703b8c545e12eb9ba693a8c02e82c5d70d8505045ff6d40bea",
       "contentType": "image/png"
     }
   ],
