@@ -1,4 +1,4 @@
-import { mkdirSync, copyFileSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, copyFileSync, existsSync, readFileSync, writeFileSync, lstatSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -33,6 +33,21 @@ for (const asset of supplemental.assets.filter(asset => asset.sourceFrame?.conta
   const { containerFile, containerSha256 } = asset.sourceFrame;
   if (!/^assets\/source-art\/[a-z0-9-]+\.gif$/.test(containerFile) || createHash('sha256').update(readFileSync(path.join(root,containerFile))).digest('hex') !== containerSha256) throw new Error('Invalid retained source container');
   if (!files.includes(containerFile)) files.push(containerFile);
+}
+for (const asset of supplemental.assets) {
+  if (asset.supportingSources === undefined) continue;
+  if (!Array.isArray(asset.supportingSources)) throw new Error('Invalid supporting sources');
+  for (const source of asset.supportingSources) {
+    if (!source || typeof source.file !== 'string' || !/^assets\/source-art\/[a-z0-9-]+\.(?:png|jpe?g|webp)$/.test(source.file)) throw new Error('Unsafe supporting source path');
+    if (typeof source.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(source.sha256)) throw new Error(`Invalid supporting source SHA: ${source.file}`);
+    let resolved = root;
+    for (const part of source.file.split('/')) {
+      resolved = path.join(resolved, part);
+      if (lstatSync(resolved).isSymbolicLink()) throw new Error(`Unsafe supporting source link: ${source.file}`);
+    }
+    if (!lstatSync(resolved).isFile() || createHash('sha256').update(readFileSync(resolved)).digest('hex') !== source.sha256) throw new Error(`Invalid supporting source hash: ${source.file}`);
+    if (!files.includes(source.file)) files.push(source.file);
+  }
 }
 for (const file of files) {
   if (!existsSync(path.join(root,file))) throw new Error(`Missing ${file}`);

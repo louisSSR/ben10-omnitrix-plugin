@@ -1,0 +1,390 @@
+{
+  "version": "0.3.1",
+  "checkedAt": "2026-10-08T23:36:55.272Z",
+  "previewSha256": "e3802b16ce97f977176761f2e7464f6248d3993023c1773c85c2de643aae91f8",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 174,
+    "missing": 50
+  },
+  "viewports": [
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "dial",
+      "name": "Terroranchula",
+      "scrollWidth": 375,
+      "selected": "nemetrix-terroranchula",
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "dial",
+      "name": "Omnivoracious",
+      "scrollWidth": 375,
+      "selected": "nemetrix-omnivoracious",
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "dial",
+      "name": "Heat Jaws",
+      "scrollWidth": 375,
+      "selected": "heat-jaws",
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "dial",
+      "name": "Alien X",
+      "scrollWidth": 375,
+      "selected": "reboot-alien-x",
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "projection",
+      "name": "Alien X",
+      "scrollWidth": 375,
+      "selected": "reboot-alien-x",
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "carousel",
+      "name": "Alien X",
+      "scrollWidth": 305,
+      "selected": "reboot-alien-x",
+      "transition": "omni-app",
+      "watch": "omniverse",
+      "width": 320
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "carousel",
+      "name": "Big Chill",
+      "scrollWidth": 305,
+      "selected": "reboot-big-chill",
+      "transition": "omni-app",
+      "watch": "omniverse",
+      "width": 320
+    },
+    {
+      "clientWidth": 1265,
+      "height": 900,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "projection",
+      "name": "Heat Jaws",
+      "scrollWidth": 1265,
+      "selected": "heat-jaws",
+      "transition": "omni-app",
+      "watch": "recalibrated",
+      "width": 1280
+    }
+  ],
+  "screenshots": [
+    "screenshots/v031-terroranchula-mobile-dial.png",
+    "screenshots/v031-omnivoracious-mobile-dial.png",
+    "screenshots/v031-heat-jaws-mobile-dial.png",
+    "screenshots/v031-reboot-alien-x-mobile-dial.png",
+    "screenshots/v031-reboot-alien-x-mobile-projection.png",
+    "screenshots/v031-carousel-mobile.png",
+    "screenshots/v031-carousel-mobile-next.png",
+    "screenshots/v031-heat-jaws-desktop-projection.png"
+  ],
+  "realHostVerified": false,
+  "driverAccepted": false,
+  "carouselBefore": [
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Goop",
+      "style": "transform: translate3d(-7.70842e-14px, -90px, -80px) scale(0.48); opacity: 0.28; z-index: 20; --ring-depth: 0;"
+    },
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Jetray",
+      "style": "transform: translate3d(-63.583px, -63.6396px, -56.5685px) scale(0.579584); opacity: 0.385442; z-index: 32; --ring-depth: 0.14644660940672682;"
+    },
+    {
+      "class": "ring-item",
+      "label": "选择 Way Big",
+      "style": "transform: translate3d(-89.92px, -8.82303e-14px, -7.84269e-14px) scale(0.82); opacity: 0.64; z-index: 60; --ring-depth: 0.4999999999999995;"
+    },
+    {
+      "class": "ring-item is-front",
+      "label": "选择 Surge",
+      "style": "transform: translate3d(-63.583px, 63.6396px, 56.5685px) scale(1.06042); opacity: 0.894558; z-index: 88; --ring-depth: 0.8535533905932737;"
+    },
+    {
+      "class": "ring-item is-selected is-front",
+      "label": "选择 Alien X",
+      "style": "transform: translate3d(6.60721e-14px, 90px, 80px) scale(1.16); opacity: 1; z-index: 100; --ring-depth: 1;"
+    },
+    {
+      "class": "ring-item is-front",
+      "label": "选择 Big Chill",
+      "style": "transform: translate3d(63.583px, 63.6396px, 56.5685px) scale(1.06042); opacity: 0.894558; z-index: 88; --ring-depth: 0.8535533905932732;"
+    },
+    {
+      "class": "ring-item",
+      "label": "选择 Bloxx",
+      "style": "transform: translate3d(89.92px, -2.20492e-13px, -1.95993e-13px) scale(0.82); opacity: 0.64; z-index: 60; --ring-depth: 0.4999999999999988;"
+    },
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Buzzshock",
+      "style": "transform: translate3d(63.583px, -63.6396px, -56.5685px) scale(0.579584); opacity: 0.385442; z-index: 32; --ring-depth: 0.14644660940672632;"
+    }
+  ],
+  "carouselAfter": [
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Spidermonkey",
+      "style": "transform: translate3d(63.583px, -63.6396px, -56.5685px) scale(0.579584); opacity: 0.385442; z-index: 32; --ring-depth: 0.1464466094067262;"
+    },
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Jetray",
+      "style": "transform: translate3d(-7.70842e-14px, -90px, -80px) scale(0.48); opacity: 0.28; z-index: 20; --ring-depth: 0;"
+    },
+    {
+      "class": "ring-item is-back",
+      "label": "选择 Way Big",
+      "style": "transform: translate3d(-63.583px, -63.6396px, -56.5685px) scale(0.579584); opacity: 0.385442; z-index: 32; --ring-depth: 0.14644660940672682;"
+    },
+    {
+      "class": "ring-item",
+      "label": "选择 Surge",
+      "style": "transform: translate3d(-89.92px, -8.82303e-14px, -7.84269e-14px) scale(0.82); opacity: 0.64; z-index: 60; --ring-depth: 0.4999999999999995;"
+    },
+    {
+      "class": "ring-item is-front",
+      "label": "选择 Alien X",
+      "style": "transform: translate3d(-63.583px, 63.6396px, 56.5685px) scale(1.06042); opacity: 0.894558; z-index: 88; --ring-depth: 0.8535533905932737;"
+    },
+    {
+      "class": "ring-item is-front is-selected",
+      "label": "选择 Big Chill",
+      "style": "transform: translate3d(6.60721e-14px, 90px, 80px) scale(1.16); opacity: 1; z-index: 100; --ring-depth: 1;"
+    },
+    {
+      "class": "ring-item is-front",
+      "label": "选择 Bloxx",
+      "style": "transform: translate3d(63.583px, 63.6396px, 56.5685px) scale(1.06042); opacity: 0.894558; z-index: 88; --ring-depth: 0.8535533905932744;"
+    },
+    {
+      "class": "ring-item",
+      "label": "选择 Buzzshock",
+      "style": "transform: translate3d(89.92px, 9.92521e-14px, 8.82241e-14px) scale(0.82); opacity: 0.64; z-index: 60; --ring-depth: 0.5000000000000006;"
+    }
+  ],
+  "console": [],
+  "notes": [
+    "4 new silhouettes viewed in a 390px dial after selection-transition ended. Major visible contours remain inside diamond.",
+    "Reboot Alien X full-body source is roughly 20x50px; pixelated limbs remain visible in enlarged projection and are not high-definition official anatomy.",
+    "Carousel on 320px viewport was advanced once; front selection changed from reboot-alien-x to reboot-big-chill and relative scale/z-order changed.",
+    "All four local watch bitmaps decoded; no real phone, real SillyTavern install or user visual acceptance claimed."
+  ],
+  "viewportReset": true
+}

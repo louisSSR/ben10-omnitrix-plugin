@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "a523f83ee9984e4a9722a41b64673fa350482712fa516f4860a396bbcba15f8b",
+  "svgSha256": "73d28c3bd0d61cb61677fa15fcaf7638c0d19b5bfe6e0bbc15fce81df2156465",
   "coverage": {
     "total": 224,
-    "reviewed": 170,
-    "missing": 54
+    "reviewed": 174,
+    "missing": 50
   },
   "assets": [
     {
@@ -1486,6 +1486,46 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "b54ade2970f3612e6b0190401c94521f3f507b6bdd431fda42702d82e2b9eeb2",
       "maskSha256": "c328d4092e48324237c4b3ef01ef33c2a3918a72302d0ee96f1c111dfb444b67",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-alien-x",
+      "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+      "pageUrl": "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Community GIF references with AI extraction/correction; not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e2a0b2200a18936f092b3a82d3f671f55400bf1e7ada0cd8fa5ebd43662863ac",
+      "maskSha256": "f36b0802c4da91e861dd622300104c8f8dd9ed5c209abc1775a83912eb237b0f",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "heat-jaws",
+      "url": "https://www.youtube.com/watch?v=IYyEC6r71pA",
+      "pageUrl": "https://www.youtube.com/watch?v=IYyEC6r71pA",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community video reference, original panel artist unknown. No open licence asserted. Generated extraction is not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "8711dbacb6a4b2effb654f4a75fca5306816bbf0e30952ce2c473ba2f000545f",
+      "maskSha256": "184577f5c632c5df9120a706882633bf5877a384cc48a20516ded43e2406803a",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-terroranchula",
+      "url": "https://www.newton.com.tw/img/b/a30/nBnaukzMxYGOwMGNxATOhlTO0ImNxQWOhZmN4gzM4IDOwcDMmJTZ5Y2N2IzLtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg",
+      "pageUrl": "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community scene repost with generated reference edit. No open licence or official transparent-art status asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "6f8e2b64371bcb17113cf754d623be2d12f8715a850f3486a765aabf8cf2de31",
+      "maskSha256": "946bd32c90adc46fca3d16ce5c95282a36815da4a69a6b433ad5364eb447d6b6",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-omnivoracious",
+      "url": "https://www.newton.com.tw/img/c/4f1/nBnauIDZ2MGZzATNhZGOwMWZjFGZiFmZwUmM0ADZyYzNyMjNzETY4MWZ4E2LtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg",
+      "pageUrl": "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community scene repost with generated reference edit. No open licence or official transparent-art status asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "79a41261a6bb2f5153b410ced1154e6ed111cd6f6d0266d07a46940eade732af",
+      "maskSha256": "a636887eaa571226c922163ba15af8cb8124cc433136acde4be6ce2344851407",
       "contentType": "image/png"
     }
   ],

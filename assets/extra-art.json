@@ -1901,6 +1901,277 @@
         "finalOutputBytesUnchanged": true
       },
       "currentUIEvidence": "docs/browser-qa-v030.json"
+    },
+    {
+      "formId": "reboot-alien-x",
+      "sourceFile": "assets/source-art/reboot-alien-x-source-frame070.png",
+      "sourceSha256": "e2a0b2200a18936f092b3a82d3f671f55400bf1e7ada0cd8fa5ebd43662863ac",
+      "maskFile": "assets/source-art/reboot-alien-x-reference-edit.png",
+      "maskSha256": "f36b0802c4da91e861dd622300104c8f8dd9ed5c209abc1775a83912eb237b0f",
+      "pageUrl": "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802",
+      "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-multi-reference-edit-of-decoded-community-reposted-animation-gif-frames",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. No open license asserted. Community GIF references with AI extraction/correction; not official transparent art.",
+      "observations": "Actually viewed frame70 of the retained community Alien X vs Big Chill GIF: the whole standing figure is inside the doorway with visible arm and separated foot placement, approximately 20x50 source pixels. Frame110 from the same GIF shows the black face, long central spike, two upward-curved side spikes and green eyes. First extraction collapsed the head to one prong; a second reference-guided edit corrected it using frame110. The full pose is anchored in frame70, while the head is guided by the separately visible close-up. Body blocks, fist shapes and edges are enlarged/redrawn and not pixel-identical.",
+      "limitations": [
+        "Community GIF is labelled Ben 10 Reboot Alien X vs Big Chill. The animation context and actually inspected character support the proposed reboot identity, but the official upstream publication and exact episode/movie timestamp are unverified.",
+        "Extremely small whole-body reference, roughly 20x50 pixels, with dithering. Fine body markings, stars, emblems, fingers and anatomy are unresolved; generated internal detail is not canonical evidence.",
+        "Second stage intentionally reconstructs the visible head outline from a separate close-up of the same character. This is a multi-reference AI edit, not a single-frame pixel cutout.",
+        "Body, fists, fine head/limb edges and light regions are pixel-style redrawn. No cropped or hidden body part was requested to be completed, but exact model fidelity is not established.",
+        "Faint low-alpha residue persists outside the main figure. Final black UI appearance requires actual root review.",
+        "The image is not an official transparent asset, model sheet or licence grant. Artist, uploader-to-production chain and rights provenance remain unknown.",
+        "GIF-relative timestamps apply only to this retained container. No video playback or verified official scene timestamp is claimed."
+      ],
+      "adoptionBasis": "Root independently viewed the source and final transparent output. Complete source-visible major contours and the distinctive captured pose are retained; enlarged internal details, small extremities and edges are redrawn. Adopted as a clearly labelled AI reference edit, not an official model sheet. Root viewed the settled black silhouette in the 390px mobile dial; major contours fit within the diamond. This is preview evidence, not real-phone or driver acceptance.",
+      "sourceFrames": [
+        {
+          "role": "full-body pose",
+          "frameIndex": 70,
+          "gifRelativeTimestampMS": 4670,
+          "file": "assets/source-art/reboot-alien-x-source-frame070.png",
+          "sha256": "e2a0b2200a18936f092b3a82d3f671f55400bf1e7ada0cd8fa5ebd43662863ac",
+          "decodedRGBAsha256": "ca215e69fab8462ec5fd5f849ba745db493e523bf058ee7b0774937f6eaaa952",
+          "dimensions": [
+            320,
+            179
+          ]
+        },
+        {
+          "role": "head close-up only",
+          "frameIndex": 110,
+          "gifRelativeTimestampMS": 7330,
+          "file": "assets/source-art/reboot-alien-x-head-reference-frame110.png",
+          "sha256": "aa64ba98e7bf54935c4b633a54595e2a844ff335e0ba2329e941c7f8734878cc",
+          "decodedRGBAsha256": "79c672b11d1be835531cb8e67656c32e44f3a1a20ce863bf5846528f48cee84c",
+          "dimensions": [
+            320,
+            179
+          ]
+        }
+      ],
+      "sourceContainer": {
+        "format": "GIF",
+        "sha256": "c426416b71b396f8a8064ffedad50d9f2b8dfc26ef0efe76ed2290eaf3d7c310",
+        "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+        "sourcePageSha256": "d9beea962621a4792521c0a12f3c618e08aeb61bf50594d56b32736715386bdb",
+        "retainedPageHTTPStatus": 200,
+        "operation": "Read-only decoded-frame PNG exports; no source crop, resize, masking or pixel edit.",
+        "file": "assets/source-art/reboot-big-chill-source-original.gif"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STAGE 1\nUse case: background-extraction.\nAsset type: a transparent character reference for a large watch-selector silhouette.\nInput image: this actually viewed decoded animation GIF frame is the edit target, not a style guide.\nPrimary request: extract only the small complete standing black-and-white humanoid at the centre of the dark doorway, approximately x190/y104. Remove the doorway, building, stairs, environment, scene logo and every other object. Produce a real transparent background.\nComposition: retain the exact visible standing pose and orientation, centred with generous clear transparent margins. The source figure is wholly inside the supplied canvas. Its gross body silhouette is only about 20 by 50 source pixels.\nInvariants: preserve the source's narrow spiked head, visible shoulder and arm placement, slim dark torso, white edge accents and the visible separated lower-leg and foot shapes. Preserve the original width-to-height proportions and stance. Do not turn this captured reboot-scene figure into a stock classic muscular Alien X model. Do not change the pose or add a different costume.\nFidelity limits: this is a low-resolution dithered frame. Keep its shape simple and slightly pixelated. Tiny fingers, facial details, stars, insignia and other fine internal features are unresolved; do not invent them, add new emblems or reconstruct anatomy from character memory. Do not complete hidden limbs or enlarge muscles. Keep only the gross visible perimeter and simple visible dark/light areas from the source.\nTransparency: the character must have opaque dark/light body regions with a narrow antialiased edge. Everything outside it must be fully transparent, without exterior haze, glow, shadow or a dark background plate. Output one figure only, no text.\n\nSTAGE 2\nUse case: background-extraction correction.\nInput image1 is the existing extracted standing figure to edit. Image2 is the original full-body GIF frame70. Image3 is actually viewed frame110 from the same animation GIF, used only as an explicit visible head-outline reference for the same character.\nChange only the head-outline error in image1: it has collapsed the visible spiked head into a single square vertical prong. Match the head structure actually visible in image3: one long straight central spike and two thinner upward-curved lateral spikes, a narrow black face below them, with simple light edge accents and small green eye shapes. Do not use character memory or any stock model. Keep details simple and low-resolution rather than adding fine facial anatomy.\nKeep image1's standing pose, full body width-to-height proportion, arm placement, separated lower limbs and feet as anchored in image2. Do not widen shoulders, enlarge muscles, add hands, individual fingers, extra emblems, stars, hidden anatomy or a different costume. Do not change any body pose. No body completion is needed because the whole source figure is inside image2.\nRetain the simple dark/light pixel-style regions. The outside must be true transparent alpha zero, with no haze, shadow or background plate. Preserve full visible perimeter and generous transparent padding. One character only; no text.",
+        "stages": [
+          {
+            "stage": 1,
+            "prompt": "Use case: background-extraction.\nAsset type: a transparent character reference for a large watch-selector silhouette.\nInput image: this actually viewed decoded animation GIF frame is the edit target, not a style guide.\nPrimary request: extract only the small complete standing black-and-white humanoid at the centre of the dark doorway, approximately x190/y104. Remove the doorway, building, stairs, environment, scene logo and every other object. Produce a real transparent background.\nComposition: retain the exact visible standing pose and orientation, centred with generous clear transparent margins. The source figure is wholly inside the supplied canvas. Its gross body silhouette is only about 20 by 50 source pixels.\nInvariants: preserve the source's narrow spiked head, visible shoulder and arm placement, slim dark torso, white edge accents and the visible separated lower-leg and foot shapes. Preserve the original width-to-height proportions and stance. Do not turn this captured reboot-scene figure into a stock classic muscular Alien X model. Do not change the pose or add a different costume.\nFidelity limits: this is a low-resolution dithered frame. Keep its shape simple and slightly pixelated. Tiny fingers, facial details, stars, insignia and other fine internal features are unresolved; do not invent them, add new emblems or reconstruct anatomy from character memory. Do not complete hidden limbs or enlarge muscles. Keep only the gross visible perimeter and simple visible dark/light areas from the source.\nTransparency: the character must have opaque dark/light body regions with a narrow antialiased edge. Everything outside it must be fully transparent, without exterior haze, glow, shadow or a dark background plate. Output one figure only, no text.",
+            "inputReferences": [
+              {
+                "file": "assets/source-art/reboot-alien-x-source-frame070.png",
+                "sha256": "e2a0b2200a18936f092b3a82d3f671f55400bf1e7ada0cd8fa5ebd43662863ac",
+                "role": "full-body edit target"
+              }
+            ],
+            "outputSha256": "c9f6957950b2a875e6e8984c514c2fe36edf0d3488aa02d01849793acb8d439e",
+            "transparentBackground": true
+          },
+          {
+            "stage": 2,
+            "prompt": "Use case: background-extraction correction.\nInput image1 is the existing extracted standing figure to edit. Image2 is the original full-body GIF frame70. Image3 is actually viewed frame110 from the same animation GIF, used only as an explicit visible head-outline reference for the same character.\nChange only the head-outline error in image1: it has collapsed the visible spiked head into a single square vertical prong. Match the head structure actually visible in image3: one long straight central spike and two thinner upward-curved lateral spikes, a narrow black face below them, with simple light edge accents and small green eye shapes. Do not use character memory or any stock model. Keep details simple and low-resolution rather than adding fine facial anatomy.\nKeep image1's standing pose, full body width-to-height proportion, arm placement, separated lower limbs and feet as anchored in image2. Do not widen shoulders, enlarge muscles, add hands, individual fingers, extra emblems, stars, hidden anatomy or a different costume. Do not change any body pose. No body completion is needed because the whole source figure is inside image2.\nRetain the simple dark/light pixel-style regions. The outside must be true transparent alpha zero, with no haze, shadow or background plate. Preserve full visible perimeter and generous transparent padding. One character only; no text.",
+            "inputIntermediateSha256": "c9f6957950b2a875e6e8984c514c2fe36edf0d3488aa02d01849793acb8d439e",
+            "inputReferences": [
+              {
+                "file": "assets/source-art/reboot-alien-x-source-frame070.png",
+                "sha256": "e2a0b2200a18936f092b3a82d3f671f55400bf1e7ada0cd8fa5ebd43662863ac",
+                "role": "full-body pose reference"
+              },
+              {
+                "file": "assets/source-art/reboot-alien-x-head-reference-frame110.png",
+                "sha256": "aa64ba98e7bf54935c4b633a54595e2a844ff335e0ba2329e941c7f8734878cc",
+                "role": "same-container actual head close-up reference"
+              }
+            ],
+            "outputSha256": "f36b0802c4da91e861dd622300104c8f8dd9ed5c209abc1775a83912eb237b0f",
+            "transparentBackground": true
+          }
+        ],
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-alien-x-head-reference-frame110.png",
+          "sha256": "aa64ba98e7bf54935c4b633a54595e2a844ff335e0ba2329e941c7f8734878cc",
+          "url": "https://media1.tenor.com/m/wcgCxO2pthIAAAAd/ben-10-reboot-alien-x-vs-big-chill.gif",
+          "role": "Same GIF frame110 head close-up: actual three-spike/green-eye reference only; not a complete-body source."
+        }
+      ],
+      "sourceFrame": {
+        "containerFile": "assets/source-art/reboot-big-chill-source-original.gif",
+        "containerSha256": "c426416b71b396f8a8064ffedad50d9f2b8dfc26ef0efe76ed2290eaf3d7c310"
+      },
+      "currentUIEvidence": "docs/browser-qa-v031.json"
+    },
+    {
+      "formId": "heat-jaws",
+      "sourceFile": "assets/source-art/heat-jaws-source-profile-0015.png",
+      "sourceSha256": "8711dbacb6a4b2effb654f4a75fca5306816bbf0e30952ce2c473ba2f000545f",
+      "maskFile": "assets/source-art/heat-jaws-reference-edit.png",
+      "maskSha256": "184577f5c632c5df9120a706882633bf5877a384cc48a20516ded43e2406803a",
+      "pageUrl": "https://www.youtube.com/watch?v=IYyEC6r71pA",
+      "url": "https://www.youtube.com/watch?v=IYyEC6r71pA",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-profile-video-centre-panel-capture",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community video reference, original panel artist unknown. No open licence asserted. Generated extraction is not official transparent artwork.",
+      "observations": "Actually inspected the 817x459 source screenshot. The narrow centre panel contains one whole Heat Jaws-labelled figure, around x340..459/y185..355: raised flame hands, head flame, grey fish-like head/torso, red/dark molten limb areas, a black fin/tail extending left, one bent/tucked leg and one downward leg. No selected body appendage reaches the screenshot canvas edge. The output isolates that same asymmetric pose; right-panel scene, text and top portrait were removed. Its gross pose remains recognisable, while mouth/teeth, fin markings, flame tips, hands/feet and fine edges were redrawn.",
+      "limitations": [
+        "The source is a community profile video by uploader ABSTRACT SHNITZEL. The screenshot label and actual fusion design support Heat Jaws identity; the centre-panel original artist and upstream publication are unknown.",
+        "This is not an official animation publisher page or official transparent original. No open licence is asserted and no claim of an authenticated original model sheet is made.",
+        "The source centre figure is small and low-resolution. AI enlarged/reinterpreted colour blocks, face/teeth, fin veins/edges, hand and foot flame forks, and the small emblem area. These details are not exact official evidence or a high-definition recreation.",
+        "Black tail/fin shape and flame endpoints were redrawn; final independent material comparison must decide whether gross-outline differences are acceptable.",
+        "No clipped or hidden body part was requested to be completed, and the bent/tucked leg pose was retained instead of being changed to a standing pose.",
+        "Faint alpha residue and detached specks remain around the output. Exterior alpha-zero samples are local evidence, not proof of globally clean transparency; final pure-black UI inspection is pending.",
+        "15 seconds is root-reported playback UI time for this source capture. The reviewer actually viewed the local still, not the remote video playback, and did not authenticate an original episode timestamp."
+      ],
+      "adoptionBasis": "Root independently viewed the source and final transparent output. Complete source-visible major contours and the distinctive captured pose are retained; enlarged internal details, small extremities and edges are redrawn. Adopted as a clearly labelled AI reference edit, not an official model sheet. Root viewed the settled black silhouette in the 390px mobile dial; major contours fit within the diamond. This is preview evidence, not real-phone or driver acceptance.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=IYyEC6r71pA",
+        "rootReportedPlaybackUISeconds": 15,
+        "sourceSize": [
+          817,
+          459
+        ],
+        "selectionRegionApprox": [
+          340,
+          185,
+          459,
+          355
+        ],
+        "operation": "Root-provided browser frame capture, bytes retained unchanged; centre-panel extraction performed only by built-in imagegen.",
+        "uploader": "ABSTRACT SHNITZEL",
+        "videoTitle": "Ben 10 Classic - Heat Jaws Transformation (Profile)",
+        "oembedSha256": "d4b9bdf486621094df51347630370c884ebd69b5c8837d34f9771e648191890e",
+        "originalPanelArtist": null,
+        "officialAnimationSourceAuthenticated": false
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: transparent fusion-character reference for a watch selector silhouette.\nInput image: this actual community-video screenshot is the edit target, not a style guide.\nPrimary request: extract ONLY the complete small figure in the narrow centre panel, approximately x340..459 and y185..355. Remove the green panel, all text, UI frames, logos, tiny head portrait above it, the entire right-side fire scene and the left black text panel. Return one isolated figure on a real transparent background.\nComposition: retain the exact original dynamic pose, proportions and orientation. Centre the figure with generous empty transparent padding. Both raised flame hands, the small flame on the head, the grey fish-like head/torso, red-and-dark arm/leg patches, the black tail fin extending toward image-left, the tucked/bent leg and the other downward-extending leg must remain where visibly present in this same centre-panel source.\nInvariants: preserve the asymmetry and bent legs. Do not change into a standing pose or mirror/symmetrize the body. Do not replace the figure with regular Heatblast, regular Ripjaws, a new fusion design or a stock model. Keep visible flame shapes attached to the character, but do not import the large fire effects from the right panel. Preserve the narrow black tail's visible outline rather than adding a broad new tail.\nFidelity limits: the centre figure is low-resolution. Keep the simple original colour areas and only visible internal marks. Do not invent individual fingers, toes, mouth/teeth detail, muscle structure, extra limbs, emblems or hidden anatomy. Do not complete an occluded part from memory. Slight edge cleanup is allowed, but the captured pose and gross outline must stay anchored to the source.\nTransparency: outside the visible character and its attached flames must have alpha zero. No green background, exterior glow, smoke, shadows, floor, detached fragments, text or logo. Keep full figure perimeter clear of canvas edges.",
+        "inputReferences": [
+          {
+            "file": "assets/source-art/heat-jaws-source-profile-0015.png",
+            "sha256": "8711dbacb6a4b2effb654f4a75fca5306816bbf0e30952ce2c473ba2f000545f",
+            "role": "Actual-viewed complete centre-panel edit target from source video capture"
+          }
+        ],
+        "outputSha256": "184577f5c632c5df9120a706882633bf5877a384cc48a20516ded43e2406803a",
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false
+      },
+      "currentUIEvidence": "docs/browser-qa-v031.json"
+    },
+    {
+      "formId": "nemetrix-terroranchula",
+      "sourceFile": "assets/source-art/nemetrix-terroranchula-newton-original.jpg",
+      "sourceSha256": "6f8e2b64371bcb17113cf754d623be2d12f8715a850f3486a765aabf8cf2de31",
+      "maskFile": "assets/source-art/nemetrix-terroranchula-reference-edit.png",
+      "maskSha256": "946bd32c90adc46fca3d16ce5c95282a36815da4a69a6b433ad5364eb447d6b6",
+      "pageUrl": "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96",
+      "url": "https://www.newton.com.tw/img/b/a30/nBnaukzMxYGOwMGNxATOhlTO0ImNxQWOhZmN4gzM4IDOwcDMmJTZ5Y2N2IzLtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation-scene",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community scene repost with generated reference edit. No open licence or official transparent-art status asserted.",
+      "observations": "Actually viewed a 194x169 animation scene: pale segmented elongated rear body, four large jointed tan-furred walking legs with pointed feet, small mouth appendages and red eyes. All four principal foot tips and the rear body lie within the source frame. The final edit retains this downward-facing three-quarter pose and visible limb overlaps, with no street, rubble or floor retained. This is the quadrupedal predator, not the upright human Phil hybrid.",
+      "limitations": [
+        "Community encyclopedia repost of an animation screenshot. Official upstream image, exact episode/frame timestamp and publishing chain are not verified.",
+        "The 194x169 source is low resolution. The edit enlarges and redraws fine edges, joints, mouth and collar detail; it is not a pixel-identical cutout or official transparent artwork.",
+        "Faint alpha1-4 residue reaches the right/bottom canvas boundaries. The visible alpha>=128 body is within [33,24,1338,1151] of 1343x1171; no substantial limb cut observed."
+      ],
+      "adoptionBasis": "Root independently viewed the source and final transparent output. Complete source-visible major contours and the distinctive captured pose are retained; enlarged internal details, small extremities and edges are redrawn. Adopted as a clearly labelled AI reference edit, not an official model sheet. Root viewed the settled black silhouette in the 390px mobile dial; major contours fit within the diamond. This is preview evidence, not real-phone or driver acceptance.",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STAGE 1\nUse case: background-extraction.\nInput image: the supplied 194-by-169-pixel animation frame is the exact edit target. It depicts Terroranchula from Ben 10 Omniverse, the pale four-legged Nemetrix predator, in a ruined street.\nPrimary request: isolate ONLY the single Terroranchula creature on a genuinely transparent background. Remove the street, rubble, ground shadow and all background objects. Preserve the exact existing full-body pose, orientation, proportions, flat animation colors and contour. Preserve all four long jointed walking legs and their sharp pointed foot tips, the small visible mouth appendages, the narrow segmented pale rear body, the red eyes, and the tan fur regions visible in the source. Keep the source's natural limb overlaps. Do not create extra legs or invent hidden anatomy. Do not replace it with the upright human Phil hybrid.\nComposition: center the unchanged creature with a little transparent padding on all sides, keeping every source-visible extremity fully inside the output. The source is low resolution: faithful clean contour is more important than invented texture. Do not add highlights, gradients, cinematic shading, floor, glow, text, logo, border or checkerboard pixels. Actual alpha transparency is required. This is a reference edit of the supplied frame, not a redesign.",
+        "stages": [
+          {
+            "stage": 1,
+            "prompt": "Use case: background-extraction.\nInput image: the supplied 194-by-169-pixel animation frame is the exact edit target. It depicts Terroranchula from Ben 10 Omniverse, the pale four-legged Nemetrix predator, in a ruined street.\nPrimary request: isolate ONLY the single Terroranchula creature on a genuinely transparent background. Remove the street, rubble, ground shadow and all background objects. Preserve the exact existing full-body pose, orientation, proportions, flat animation colors and contour. Preserve all four long jointed walking legs and their sharp pointed foot tips, the small visible mouth appendages, the narrow segmented pale rear body, the red eyes, and the tan fur regions visible in the source. Keep the source's natural limb overlaps. Do not create extra legs or invent hidden anatomy. Do not replace it with the upright human Phil hybrid.\nComposition: center the unchanged creature with a little transparent padding on all sides, keeping every source-visible extremity fully inside the output. The source is low resolution: faithful clean contour is more important than invented texture. Do not add highlights, gradients, cinematic shading, floor, glow, text, logo, border or checkerboard pixels. Actual alpha transparency is required. This is a reference edit of the supplied frame, not a redesign.",
+            "sourceReferenceFile": "assets/source-art/nemetrix-terroranchula-newton-original.jpg",
+            "sourceReferenceSha256": "6f8e2b64371bcb17113cf754d623be2d12f8715a850f3486a765aabf8cf2de31",
+            "outputSha256": "946bd32c90adc46fca3d16ce5c95282a36815da4a69a6b433ad5364eb447d6b6",
+            "transparentBackground": true
+          }
+        ],
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false
+      },
+      "currentUIEvidence": "docs/browser-qa-v031.json"
+    },
+    {
+      "formId": "nemetrix-omnivoracious",
+      "sourceFile": "assets/source-art/nemetrix-omnivoracious-newton-original.jpg",
+      "sourceSha256": "79a41261a6bb2f5153b410ced1154e6ed111cd6f6d0266d07a46940eade732af",
+      "maskFile": "assets/source-art/nemetrix-omnivoracious-reference-edit.png",
+      "maskSha256": "a636887eaa571226c922163ba15af8cb8124cc433136acde4be6ce2344851407",
+      "pageUrl": "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96",
+      "url": "https://www.newton.com.tw/img/c/4f1/nBnauIDZ2MGZzATNhZGOwMWZjFGZiFmZwUmM0ADZyYzNyMjNzETY4MWZ4E2LtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation-scene",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community scene repost with generated reference edit. No open licence or official transparent-art status asserted.",
+      "observations": "Actually viewed a 247x176 animation scene: purple feathered bird predator, very long serrated beak facing left, two spread wings with hooked upper tips, red collar, narrow birdlike legs and visible talons. Wings and source-visible extremities fit within the source, while thin chamber grid lines and foreground devices partly overlap the lower scene. The final edit preserves the broad outline and stance and removes the laboratory. Natural source overlaps remain; narrow occluding lines were reconstructed locally.",
+      "limitations": [
+        "Community encyclopedia repost of an animation screenshot. Official upstream image, exact episode/frame timestamp and publishing chain are not verified.",
+        "The 247x176 source is low resolution. Wing feather edges, claws, legs and internal markings are enlarged/redrawn, and thin line occlusions are locally continued; it is not a pixel-identical cutout.",
+        "Attempt1 invented a clear Omnitrix hourglass on the collar. Stage2 removes it and uses an indistinct dark-red circle because the source does not resolve the real emblem. That simplified patch is not evidence of the official Nemetrix icon.",
+        "The candidate is suitable only as a source-guided silhouette/display proposal pending root material and actual watch UI review; detailed model-sheet fidelity is not established."
+      ],
+      "adoptionBasis": "Root independently viewed the source and final transparent output. Complete source-visible major contours and the distinctive captured pose are retained; enlarged internal details, small extremities and edges are redrawn. Adopted as a clearly labelled AI reference edit, not an official model sheet. Root viewed the settled black silhouette in the 390px mobile dial; major contours fit within the diamond. This is preview evidence, not real-phone or driver acceptance.",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "STAGE 1\nUse case: background-extraction.\nInput image: the supplied 247-by-176-pixel animation frame is the exact edit target. It depicts Omnivoracious, the purple feathered Nemetrix predator from Ben 10 Omniverse, with its long serrated beak pointing left and both wings spread in a containment room.\nPrimary request: isolate only this single purple birdlike creature on a genuinely transparent background. Remove the laboratory floor, glass chamber, green grid lines, blue foreground devices, and background. Preserve the exact source pose, orientation, silhouette, relative proportions, flat animation colors, head feather crest, long beak, red Nemetrix collar, both wings and all source-visible feather tips, the thin birdlike legs and hooked toes. Keep the source's natural anatomical overlaps. Where narrow background grid lines cross the visible body, remove just those thin lines and continue the immediately adjacent existing contour. Do not create hidden extra toes, extend wings, add a tail, invent new major body parts, or redesign the character.\nComposition: center the unchanged full source-visible creature with transparent padding on all four sides. Preserve all extremities that appear in the source. The source is low resolution, so faithful shape matters more than invented texture; do not add photorealistic details, new feather layers, lighting effects, floor shadow, glow, text, logo, border, or checkerboard pixels. Actual alpha transparency required. This is a transparent reference edit, not official new animation artwork.\n\n\nSTAGE 2\nUse case: precise-object-edit.\nImage 1 is the edit target: the transparent Omnivoracious cutout. Image 2 is the original low-resolution animation-frame reference.\nMake exactly one small correction to image 1: the tiny round badge at the bottom of its red neck collar currently contains a clearly invented red hourglass/Omnitrix icon. Remove that hourglass and restore the low-detail, indistinct dark reddish collar patch supported by image 2. Do not replace it with any new recognizable logo or infer a detailed emblem that the reference does not resolve. A muted, indistinct dark-red badge is appropriate; no hourglass.\nEverything else must stay unchanged: full creature silhouette, pose, wings, beak, crest, legs, toes, colors, framing, transparent alpha and dimensions. Do not redraw, add anatomy, enlarge the bird, change feather tips, add glow, add background or add any other design. Preserve genuine transparent background.\n",
+        "stages": [
+          {
+            "stage": 1,
+            "prompt": "Use case: background-extraction.\nInput image: the supplied 247-by-176-pixel animation frame is the exact edit target. It depicts Omnivoracious, the purple feathered Nemetrix predator from Ben 10 Omniverse, with its long serrated beak pointing left and both wings spread in a containment room.\nPrimary request: isolate only this single purple birdlike creature on a genuinely transparent background. Remove the laboratory floor, glass chamber, green grid lines, blue foreground devices, and background. Preserve the exact source pose, orientation, silhouette, relative proportions, flat animation colors, head feather crest, long beak, red Nemetrix collar, both wings and all source-visible feather tips, the thin birdlike legs and hooked toes. Keep the source's natural anatomical overlaps. Where narrow background grid lines cross the visible body, remove just those thin lines and continue the immediately adjacent existing contour. Do not create hidden extra toes, extend wings, add a tail, invent new major body parts, or redesign the character.\nComposition: center the unchanged full source-visible creature with transparent padding on all four sides. Preserve all extremities that appear in the source. The source is low resolution, so faithful shape matters more than invented texture; do not add photorealistic details, new feather layers, lighting effects, floor shadow, glow, text, logo, border, or checkerboard pixels. Actual alpha transparency required. This is a transparent reference edit, not official new animation artwork.\n",
+            "sourceReferenceFile": "assets/source-art/nemetrix-omnivoracious-newton-original.jpg",
+            "sourceReferenceSha256": "79a41261a6bb2f5153b410ced1154e6ed111cd6f6d0266d07a46940eade732af",
+            "outputSha256": "6e8d638ec65abec669e5ba0adeb3cca0e16e7e13801915d0c774f84bfc548a18",
+            "transparentBackground": true
+          },
+          {
+            "stage": 2,
+            "prompt": "Use case: precise-object-edit.\nImage 1 is the edit target: the transparent Omnivoracious cutout. Image 2 is the original low-resolution animation-frame reference.\nMake exactly one small correction to image 1: the tiny round badge at the bottom of its red neck collar currently contains a clearly invented red hourglass/Omnitrix icon. Remove that hourglass and restore the low-detail, indistinct dark reddish collar patch supported by image 2. Do not replace it with any new recognizable logo or infer a detailed emblem that the reference does not resolve. A muted, indistinct dark-red badge is appropriate; no hourglass.\nEverything else must stay unchanged: full creature silhouette, pose, wings, beak, crest, legs, toes, colors, framing, transparent alpha and dimensions. Do not redraw, add anatomy, enlarge the bird, change feather tips, add glow, add background or add any other design. Preserve genuine transparent background.\n",
+            "sourceReferenceFile": "assets/source-art/nemetrix-omnivoracious-newton-original.jpg",
+            "sourceReferenceSha256": "79a41261a6bb2f5153b410ced1154e6ed111cd6f6d0266d07a46940eade732af",
+            "outputSha256": "a636887eaa571226c922163ba15af8cb8124cc433136acde4be6ce2344851407",
+            "transparentBackground": true,
+            "inputIntermediateSha256": "6e8d638ec65abec669e5ba0adeb3cca0e16e7e13801915d0c774f84bfc548a18"
+          }
+        ],
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false
+      },
+      "currentUIEvidence": "docs/browser-qa-v031.json"
     }
   ],
   "mergedForms": [

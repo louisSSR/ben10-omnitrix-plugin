@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 170,
-    "missing": 54
+    "reviewed": 174,
+    "missing": 50
   },
   "forms": [
     {
@@ -2059,10 +2059,21 @@
       "group": "fusion",
       "appearance": "Dr. Animo and the Mutant Ray",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-heat-jaws",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=IYyEC6r71pA"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-profile-video-centre-panel-capture",
+      "dialFit": {
+        "scale": 0.5407,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.608844,
+        "visiblePixels": 226834
+      }
     },
     {
       "id": "fourmungousaur",
@@ -2999,11 +3010,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-alien-x",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/ben-10-reboot-alien-x-vs-big-chill-gif-13963413689486390802"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-multi-reference-edit-of-decoded-community-reposted-animation-gif-frames",
+      "dialFit": {
+        "scale": 0.7869,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.105542,
+        "visiblePixels": 127256
+      }
     },
     {
       "id": "reboot-ampfibian",
@@ -4291,13 +4313,24 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-omnivoracious",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation-scene",
+      "dialFit": {
+        "scale": 0.6431,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.352624,
+        "visiblePixels": 580813
+      }
     },
     {
       "id": "nemetrix-slamworm",
@@ -4331,12 +4364,23 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-terroranchula",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.newton.com.tw/wiki/Ben10%E5%85%A8%E9%9D%A2%E9%80%B2%E5%8C%96"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation-scene",
+      "dialFit": {
+        "scale": 0.5808,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.49789,
+        "visiblePixels": 526087
+      }
     },
     {
       "id": "nemetrix-tyrannopede",
