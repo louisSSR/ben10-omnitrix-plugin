@@ -1,4 +1,4 @@
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems } from './core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement } from './core.js';
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
@@ -17,7 +17,13 @@ let visible = filterForms(forms, { query, group, readyOnly });
 let host = null;
 let toastTimer, lastConfirm = 0, motionHandles = [];
 let pointerStart = null;
-let archiveSignature = '';
+let displayedId = preferences.selectedId;
+let motionRevision = 0, ringFrame = 0, ringRotation = 0, ringTarget = 0, suppressClickUntil = 0;
+let projectionFrame = 0, projectionUntil = 0;
+const motionTimers = new Set();
+const ringNodes = [], ringEntries = [];
+const turn = Math.PI * 2;
+const modulo = (n, length) => ((n % length) + length) % length;
 
 function textElement(tag, text, className = '') {
   const node = document.createElement(tag);
@@ -38,6 +44,8 @@ function figure(form, className = '') {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('viewBox', '0 0 200 240');
   svg.setAttribute('aria-hidden', 'true');
+  // Applied by dial-only CSS to both old/new figures; projection and orbit retain their own scale.
+  svg.style.setProperty('--dial-scale', String(form.dialFit?.scale || .55));
   if (className) svg.setAttribute('class', className);
   const use = document.createElementNS(svg.namespaceURI, 'use');
   use.setAttribute('href', `#${form.asset}`); svg.append(use);
@@ -64,25 +72,111 @@ function notice(text) {
   toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 2700);
 }
 function reduced() { return preferences.reducedMotion || systemMotion.matches; }
-function stopMotion() { motionHandles.forEach(handle => handle.cancel()); motionHandles = []; }
+function alignProjection() {
+  const screen = $('watch-screen'), hologram = $('hologram');
+  if (preferences.mode !== 'projection' || !screen || !hologram) return false;
+  const stage = $('stage').getBoundingClientRect(), face = screen.getBoundingClientRect();
+  if (!Number.isFinite(face.width) || !face.width || !stage.height) return false;
+  // The gauntlet and sliding-cover watches put the emitter in different places.
+  // Anchor the light to the rendered face, including its perspective transform.
+  const x = face.left + face.width / 2 - stage.left;
+  const y = face.top + face.height / 2 - stage.top;
+  const top = Math.max(72, y - 300), height = Math.max(100, y - top + 7);
+  hologram.style.left = `${x}px`; hologram.style.top = `${top}px`;
+  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(200, height * .62)}px`;
+  return true;
+}
+function trackProjection(transition = false) {
+  cancelAnimationFrame(projectionFrame); projectionFrame = 0;
+  if (!alignProjection() || reduced()) { projectionUntil = 0; return; }
+  if (transition) projectionUntil = performance.now() + 900;
+  if (performance.now() >= projectionUntil) return;
+  const follow = now => {
+    projectionFrame = 0;
+    if (lifetime.signal.aborted || !alignProjection()) return;
+    if (now < projectionUntil) projectionFrame = requestAnimationFrame(follow);
+  };
+  projectionFrame = requestAnimationFrame(follow);
+}
+function setFigures(form) {
+  $('holo-shape').replaceChildren(figure(form));
+  $('dial-shape').replaceChildren(figure(form));
+  $('dial-shape').style.visibility = '';
+  displayedId = form?.id || '';
+  if ($('holo-light')) $('holo-light').hidden = preferences.mode !== 'projection' || !form?.asset;
+}
+function stopMotion(settle = true) {
+  motionRevision++;
+  motionTimers.forEach(timer => clearTimeout(timer)); motionTimers.clear();
+  cancelAnimationFrame(ringFrame); ringFrame = 0;
+  cancelAnimationFrame(projectionFrame); projectionFrame = 0;
+  motionHandles.forEach(handle => handle.cancel()); motionHandles = [];
+  app.classList.remove('selection-transition', 'dial-transition', 'holo-transition', 'ring-transition');
+  for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
+  // CSS supplies complementary diagonal polygons above both dial figures, with pointer-events:none.
+  if ($('dial-shutter-a')) $('dial-shutter-a').style.transform = 'translate(-105%,-105%)';
+  if ($('dial-shutter-b')) $('dial-shutter-b').style.transform = 'translate(105%,105%)';
+  const form = visible.length ? byId.get(settle ? preferences.selectedId : displayedId) : null;
+  setFigures(form);
+  if (settle) { ringRotation = ringTarget; positionRing(ringRotation); }
+}
+function after(delay, callback) {
+  const revision = motionRevision;
+  const timer = setTimeout(() => {
+    motionTimers.delete(timer);
+    if (revision === motionRevision && !lifetime.signal.aborted) callback();
+  }, delay);
+  motionTimers.add(timer);
+}
 function animate(node, frames, options) {
-  if (reduced() || typeof node.animate !== 'function') return;
+  if (!node || reduced() || typeof node.animate !== 'function') return;
   const handle = node.animate(frames, options); motionHandles.push(handle);
   handle.finished.then(() => { motionHandles = motionHandles.filter(item => item !== handle); }).catch(() => {});
+  return handle;
 }
-function selectionMotion(direction = 1) {
-  stopMotion();
+function selectionMotion(direction = 1, previousForm = null) {
+  if (reduced()) return;
+  app.classList.add('selection-transition');
   if (preferences.mode === 'projection') {
+    app.classList.add('holo-transition');
     animate($('holo-shape'), [
-      { opacity: 0, transform: `translate(${direction * 12}px,32px) scale(.65)`, filter: 'blur(8px)' },
-      { opacity: 1, transform: 'translate(0,-5px) scale(1.04)', filter: 'blur(0px)', offset: .75 },
-      { opacity: 1, transform: 'translate(0,0) scale(1)', filter: 'blur(0px)' },
-    ], { duration: 570, easing: 'cubic-bezier(.2,.8,.2,1)' });
-  } else if (preferences.mode === 'carousel') {
-    animate($('carousel'), [{ transform: `rotate(${direction * 38}deg) scale(.92)`, opacity: .5 }, { transform: 'rotate(0) scale(1)', opacity: 1 }], { duration: 500, easing: 'cubic-bezier(.2,.8,.2,1)' });
+      { opacity: .15, transform: `translate(${direction * 10}px,55px) scale(.76,.3)`, clipPath: 'inset(100% 0 0 0)', filter: 'blur(6px)' },
+      { opacity: .8, transform: 'translate(0,12px) scale(1.02,.92)', clipPath: 'inset(35% 0 0 0)', filter: 'blur(2px)', offset: .4 },
+      { opacity: 1, transform: 'translate(0,-7px) scale(1.03)', clipPath: 'inset(0% 0 0 0)', filter: 'blur(0px)', offset: .78 },
+      { opacity: 1, transform: 'translate(0,0) scale(1)', clipPath: 'inset(0% 0 0 0)', filter: 'blur(0px)' },
+    ], { duration: 720, easing: 'cubic-bezier(.2,.7,.2,1)' });
+    // CSS: echo shares the shape's bounds; scan is a luminous horizontal band, light is the cone beneath it.
+    if ($('holo-echo')) {
+      $('holo-echo').replaceChildren(figure(previousForm)); $('holo-echo').hidden = false;
+      animate($('holo-echo'), [{ opacity: .5, transform: 'translate(0,0) scale(1)' }, { opacity: 0, transform: `translate(${direction * -18}px,-28px) scale(1.12)`, filter: 'blur(5px)' }], { duration: 390, easing: 'ease-out' });
+    }
+    for (const id of ['holo-scan', 'holo-light']) if ($(id)) $(id).hidden = !byId.get(preferences.selectedId)?.asset;
+    animate($('holo-scan'), [{ opacity: 0, transform: 'translateY(125px)' }, { opacity: 1, offset: .16 }, { opacity: .8, offset: .74 }, { opacity: 0, transform: 'translateY(-125px)' }], { duration: 660, easing: 'linear' });
+    animate($('holo-light'), [{ opacity: .1, transform: 'scaleX(.65)' }, { opacity: .85, transform: 'scaleX(1.12)', offset: .48 }, { opacity: .55, transform: 'scaleX(1)' }], { duration: 760 });
   } else if (preferences.mode === 'dial') {
-    animate($('dial-shape'), [{ opacity: 0, transform: `rotateY(${direction * 90}deg)` }, { opacity: 1, transform: 'rotateY(0)' }], { duration: 390, easing: 'ease-out' });
+    const a = $('dial-shutter-a'), b = $('dial-shutter-b'), previous = $('dial-previous');
+    if (!a || !b || !previous || typeof a.animate !== 'function' || typeof b.animate !== 'function') {
+      app.classList.remove('selection-transition'); return;
+    }
+    app.classList.add('dial-transition');
+    previous.replaceChildren(figure(previousForm)); previous.hidden = false;
+    $('dial-shape').style.visibility = 'hidden'; displayedId = previousForm?.id || '';
+    // Old stays visible until BOTH diagonal leaves cover the diamond; only then reveal the new figure.
+    for (const [leaf, sign] of [[a, -1], [b, 1]]) {
+      animate(leaf, [
+        { transform: `translate(${sign * 105}%,${sign * 105}%)` },
+        { transform: 'translate(0,0)', offset: .36 },
+        { transform: 'translate(0,0)', offset: .55 },
+        { transform: `translate(${sign * -105}%,${sign * -105}%)` },
+      ], { duration: 760, easing: 'cubic-bezier(.55,0,.25,1)' });
+    }
+    after(325, () => { previous.hidden = true; $('dial-shape').style.visibility = ''; displayedId = preferences.selectedId; });
   }
+  after(780, () => {
+    for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
+    if ($('holo-light')) $('holo-light').hidden = preferences.mode !== 'projection' || !byId.get(preferences.selectedId)?.asset;
+    app.classList.remove('selection-transition', 'dial-transition', 'holo-transition');
+  });
 }
 function renderControls() {
   const focusAction = document.activeElement?.dataset?.action;
@@ -108,58 +202,85 @@ function renderControls() {
     [...container.children].find(node => node.dataset.value === focusValue)?.focus({ preventScroll: true });
   }
 }
-function renderRing() {
-  const items = ringItems(visible, preferences.selectedId, 8);
+function positionRing(rotation) {
+  const count = ringEntries.length;
   const width = $('stage').clientWidth || 400;
-  const mobile = width < 600;
-  const radiusX = Math.min(mobile ? 133 : 198, width * .34);
-  const radiusY = mobile ? 119 : 144;
-  $('carousel').replaceChildren(...items.map((form, n) => {
-    const angle = (n / items.length * Math.PI * 2) - Math.PI / 2;
-    const node = button('', 'ring-item', 'select', form.id);
-    node.style.transform = `translate(${Math.cos(angle) * radiusX}px,${Math.sin(angle) * radiusY}px)`;
+  ringNodes.forEach((node, index) => {
+    if (index >= count) return;
+    const pose = ringPlacement(index / count * turn + rotation, width);
+    node.style.transform = `translate3d(${pose.x}px,${pose.y}px,${pose.z}px) scale(${pose.scale})`;
+    node.style.opacity = String(pose.opacity); node.style.zIndex = String(pose.zIndex);
+    node.style.setProperty('--ring-depth', String(pose.depth));
+    node.classList.toggle('is-front', pose.depth > .7); node.classList.toggle('is-back', pose.depth < .3);
+  });
+}
+function renderRing(withMotion = false) {
+  const items = ringItems(visible, preferences.selectedId, 8);
+  // CSS contract: #carousel is a perspective stage; children are centered at its origin.
+  // Never rotate its whole plane or apply CSS transform transitions to these eight persistent nodes.
+  while (ringNodes.length < 8) {
+    const node = button('', 'ring-item', 'select'); node.id = `ring-slot-${ringNodes.length}`;
+    ringNodes.push(node); $('carousel').append(node);
+  }
+  const oldCount = ringEntries.length;
+  const anchor = items.findIndex(form => ringEntries.some(item => item.id === form.id));
+  const offset = anchor >= 0 && oldCount === items.length ? ringEntries.findIndex(form => form.id === items[anchor].id) - anchor : 0;
+  const entries = Array(items.length);
+  items.forEach((form, index) => { entries[modulo(index + offset, items.length)] = form; });
+  ringEntries.splice(0, ringEntries.length, ...entries);
+  ringNodes.forEach((node, index) => {
+    const form = ringEntries[index]; node.hidden = !form;
+    if (!form) { node.dataset.value = ''; return; }
+    if (node.dataset.value !== form.id) {
+      node.dataset.value = form.id;
+      node.replaceChildren(figure(form), textElement('span', form.name || form.en));
+    }
     node.setAttribute('aria-pressed', String(form.id === preferences.selectedId));
     node.setAttribute('aria-label', `选择 ${form.name || form.en}`);
-    node.append(figure(form), textElement('span', form.name || form.en)); return node;
-  }));
-}
-function renderArchive() {
-  const signature = visible.map(form => form.id).join('|');
-  if (archiveSignature === signature && $('archive-grid').children.length) {
-    for (const card of $('archive-grid').children) card.setAttribute('aria-pressed', String(card.dataset.value === preferences.selectedId));
-    return;
+    node.classList.toggle('is-selected', form.id === preferences.selectedId);
+  });
+  cancelAnimationFrame(ringFrame); ringFrame = 0;
+  app.classList.remove('ring-transition');
+  if (!items.length) return;
+  const base = -ringEntries.findIndex(form => form.id === preferences.selectedId) / items.length * turn;
+  const delta = modulo(base - ringRotation + Math.PI, turn) - Math.PI;
+  ringTarget = ringRotation + delta;
+  if (!withMotion || reduced() || anchor < 0 || oldCount !== items.length) {
+    ringRotation = ringTarget; positionRing(ringRotation); return;
   }
-  archiveSignature = signature;
-  $('archive-grid').replaceChildren(...visible.map((form, n) => {
-    const node = button('', 'archive-card', 'select', form.id);
-    node.style.setProperty('--phase', `${-(n % 7)}s`);
-    node.setAttribute('aria-pressed', String(form.id === preferences.selectedId));
-    node.setAttribute('aria-label', `翻转并选择 ${form.name || form.en}`);
-    const front = textElement('span', '', 'archive-front');
-    front.append(figure(form), textElement('span', form.name || form.en));
-    const back = textElement('span', '', 'archive-back');
-    back.append(textElement('strong', form.name || form.en), textElement('small', form.en || ''), textElement('small', '已选择 · 等待锁定'));
-    node.append(front, back); return node;
-  }));
+  const from = ringRotation, start = performance.now(), revision = motionRevision;
+  app.classList.add('ring-transition');
+  const frame = now => {
+    if (revision !== motionRevision || lifetime.signal.aborted) return;
+    const t = Math.min(1, Math.max(0, (now - start) / 640));
+    const eased = 1 - (1 - t) ** 3;
+    ringRotation = from + (ringTarget - from) * eased;
+    positionRing(ringRotation);
+    if (t < 1) ringFrame = requestAnimationFrame(frame);
+    else { ringFrame = 0; app.classList.remove('ring-transition'); }
+  };
+  ringFrame = requestAnimationFrame(frame);
 }
-function renderStage() {
+function renderStage(withMotion = false, previousForm = null, direction = 1) {
   const form = visible.length ? byId.get(preferences.selectedId) : null;
   const mode = MODES.find(item => item.id === preferences.mode);
   const watch = WATCHES.find(item => item.id === preferences.watch);
+  const layoutChanged = app.dataset.mode !== preferences.mode || app.dataset.watch !== preferences.watch;
   app.dataset.mode = preferences.mode; app.dataset.watch = preferences.watch;
   $('mode-name').textContent = mode.name; $('mode-code').textContent = `SELECTION / ${mode.code}`;
   $('watch-chip').textContent = watch.name; $('stage-hint').textContent = mode.hint;
   $('selected-en').textContent = form?.en || ''; $('selected-name').textContent = form?.name || form?.en || '没有可选形态';
   $('selected-group').textContent = form ? (data.groups[form.group] || '') : '';
   $('sequence-id').textContent = form ? String(forms.indexOf(form) + 1).padStart(3, '0') : '---';
-  $('holo-shape').replaceChildren(figure(form)); $('dial-shape').replaceChildren(figure(form));
+  setFigures(form);
   $('stage-notice').textContent = !visible.length ? '当前筛选没有形态，请调整搜索或分类' : '这个形态的素材还在整理中';
   $('stage-notice').hidden = !!form?.asset;
   $('watch-device').setAttribute('aria-label', `锁定 ${form?.name || form?.en || '形态'}`);
   const disabled = !visible.length;
   for (const id of ['previous', 'next', 'confirm', 'watch-device']) $(id).disabled = disabled;
-  renderRing();
-  if (preferences.mode === 'archive') renderArchive(); else { $('archive-grid').replaceChildren(); archiveSignature = ''; }
+  renderRing(withMotion && preferences.mode === 'carousel');
+  trackProjection(layoutChanged);
+  if (withMotion) selectionMotion(direction, previousForm);
 }
 function renderCatalog() {
   $('result-count').textContent = `${visible.length} / ${forms.length}`;
@@ -181,6 +302,7 @@ function renderFilters() {
   }));
 }
 function refreshFilter() {
+  stopMotion();
   visible = filterForms(forms, { query, group, readyOnly });
   if (visible.length && !visible.some(form => form.id === preferences.selectedId)) {
     preferences.selectedId = visible[0].id; save();
@@ -189,14 +311,16 @@ function refreshFilter() {
   renderFilters(); renderCatalog(); renderStage();
 }
 function select(id, direction = 1) {
-  if (!byId.has(id)) return;
+  if (!byId.has(id) || !visible.some(form => form.id === id)) return;
+  const previousForm = byId.get(displayedId);
+  stopMotion(false);
   preferences.selectedId = id;
   $('confirmation').hidden = true;
   const focused = document.activeElement?.dataset?.action === 'select' ? document.activeElement.dataset.value : null;
-  renderStage();
+  renderStage(true, previousForm, direction);
   for (const node of $('catalog-grid').querySelectorAll('.alien-card')) node.setAttribute('aria-pressed', String(node.dataset.value === id));
-  if (focused && ['archive', 'carousel'].includes(preferences.mode)) $(preferences.mode === 'archive' ? 'archive-grid' : 'carousel').querySelector(`[data-value="${id}"]`)?.focus({ preventScroll: true });
-  save(); post('select', { formId: id, name: byId.get(id).name || byId.get(id).en }); selectionMotion(direction);
+  if (focused && preferences.mode === 'carousel') $('carousel').querySelector(`[data-value="${id}"]`)?.focus({ preventScroll: true });
+  save(); post('select', { formId: id, name: byId.get(id).name || byId.get(id).en });
 }
 function step(delta) {
   const next = stepSelection(visible, preferences.selectedId, delta);
@@ -207,6 +331,7 @@ function confirm() {
   if (!form || !visible.length) return;
   const now = Date.now(); if (now - lastConfirm < 650) return; lastConfirm = now;
   stopMotion();
+  trackProjection();
   animate(document.querySelector('.summon-flash'), [{ opacity: 0 }, { opacity: .75, offset: .23 }, { opacity: 0 }], { duration: 800 });
   animate(document.querySelector('.summon-ring'), [{ opacity: 1, transform: 'scale(.4)' }, { opacity: 0, transform: 'scale(4)' }], { duration: 800, easing: 'ease-out' });
   $('confirmation-label').textContent = `${form.name || form.en} · 形态已锁定${form.asset ? '' : '（剪影素材待补）'}`;
@@ -216,12 +341,17 @@ function confirm() {
 }
 listen(app, 'click', event => {
   const control = event.target.closest('[data-action]'); if (!control) return;
+  if (Date.now() < suppressClickUntil) { event.preventDefault(); return; }
   const { action, value } = control.dataset;
   if (action === 'select') select(value);
   else if (action === 'watch' && WATCHES.some(watch => watch.id === value)) {
-    preferences.watch = value; renderControls(); renderStage(); selectionMotion(); save();
+    stopMotion();
+    const previousForm = byId.get(displayedId);
+    preferences.watch = value; renderControls(); renderStage(true, previousForm); save();
   } else if (action === 'mode' && MODES.some(mode => mode.id === value)) {
-    preferences.mode = value; renderControls(); renderStage(); selectionMotion(); save();
+    stopMotion();
+    const previousForm = byId.get(displayedId);
+    preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
   } else if (action === 'group') { group = value; refreshFilter(); }
 });
 listen($('previous'), 'click', () => step(-1)); listen($('next'), 'click', () => step(1));
@@ -230,21 +360,24 @@ listen($('search'), 'input', event => { query = event.target.value; refreshFilte
 listen($('ready-only'), 'change', event => { readyOnly = event.target.checked; refreshFilter(); });
 listen($('motion-toggle'), 'click', () => {
   if (systemMotion.matches) { notice('已遵循系统的“减少动态”设置'); return; }
-  preferences.reducedMotion = !preferences.reducedMotion; stopMotion(); renderControls(); save();
+  preferences.reducedMotion = !preferences.reducedMotion; stopMotion(); renderControls(); trackProjection(); save();
 });
-listen(systemMotion, 'change', () => { stopMotion(); renderControls(); });
+listen(systemMotion, 'change', () => { stopMotion(); renderControls(); trackProjection(); });
 listen($('stage'), 'keydown', event => {
-  if (event.target.closest('button')) return;
+  if (event.target.closest('input,textarea,select,[contenteditable="true"]')) return;
   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); step(event.key === 'ArrowLeft' ? -1 : 1); }
-  else if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); confirm(); }
+  else if ((event.key === 'Enter' || event.key === ' ') && !event.target.closest('button')) { event.preventDefault(); confirm(); }
 });
 listen($('stage'), 'pointerdown', event => {
-  if (preferences.mode !== 'archive') pointerStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
+  if (event.isPrimary === false || (event.pointerType === 'mouse' && event.button !== 0)) return;
+  pointerStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
 });
 listen($('stage'), 'pointerup', event => {
   if (!pointerStart || pointerStart.id !== event.pointerId) return;
   const dx = event.clientX - pointerStart.x, dy = event.clientY - pointerStart.y; pointerStart = null;
-  if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.4) { step(dx > 0 ? -1 : 1); lastConfirm = Date.now(); }
+  if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+    step(dx > 0 ? -1 : 1); lastConfirm = Date.now(); suppressClickUntil = Date.now() + 350;
+  }
 });
 listen($('stage'), 'pointercancel', () => { pointerStart = null; });
 listen($('sources-button'), 'click', () => $('about-dialog').showModal());
@@ -265,6 +398,7 @@ listen(window, 'message', event => {
   const message = event.data;
   if (!message || message.namespace !== 'ben10-omnitrix' || typeof message.payload !== 'object' || message.payload === null) return;
   if (message.type === 'init') {
+    stopMotion();
     host = message.payload;
     preferences = normalizePreferences(host.preferences, forms);
     readyOnly = !!byId.get(preferences.selectedId)?.asset;
@@ -276,7 +410,7 @@ listen(window, 'message', event => {
     $('draft-button').textContent = host.capabilities.draftInput ? '写入酒馆输入框' : '复制形态名称';
   } else if (message.type === 'draft-result') notice(message.payload.ok ? '已写入酒馆输入框，等待你手动发送' : message.payload.reason || '暂时无法写入输入框');
 });
-const resize = new ResizeObserver(() => { if (preferences.mode === 'carousel') renderRing(); });
+const resize = new ResizeObserver(() => { if (preferences.mode === 'carousel') renderRing(); trackProjection(true); });
 resize.observe($('stage'));
 listen(window, 'pagehide', () => { stopMotion(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
 $('material-summary').textContent = `${data.coverage.reviewed} 个剪影已接入 / ${data.coverage.total} 条形态记录`;

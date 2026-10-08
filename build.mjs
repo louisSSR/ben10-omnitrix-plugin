@@ -22,9 +22,20 @@ for (const [key, value] of Object.entries(replacements)) {
   if (html.split(key).length !== 2) throw new Error(`Template marker missing/duplicate: ${key}`);
   html = html.replace(key, () => value);
 }
+const watchArt = [];
+for (const watch of ['original', 'recalibrated', 'ultimatrix', 'omniverse']) {
+  const relative = `./assets/watches-v3/${watch}.png`;
+  const bytes = readFileSync(path.join(root, relative));
+  if (bytes.length < 33 || !bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10])) || bytes.toString('ascii', 12, 16) !== 'IHDR') throw new Error(`Invalid watch PNG: ${watch}`);
+  const width = bytes.readUInt32BE(16), height = bytes.readUInt32BE(20);
+  if (!width || !height) throw new Error(`Invalid watch dimensions: ${watch}`);
+  if (html.split(relative).length !== 2) throw new Error(`Missing watch artwork marker: ${watch}`);
+  html = html.replace(relative, `data:image/png;base64,${bytes.toString('base64')}`);
+  watchArt.push({ id: watch, width, height, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex') });
+}
 if (/<(?:script|img)\b[^>]*src=["']https?:/i.test(html)) throw new Error('Unexpected remote runtime asset');
 writeFileSync(path.join(root, 'preview.html'), html);
 mkdirSync(path.join(root, 'docs'), { recursive: true });
-const receipt = { builtAt: new Date().toISOString(), sha256: createHash('sha256').update(html).digest('hex'), bytes: Buffer.byteLength(html), coverage: catalog.coverage, standalone: true, browserVerified: false, realHostVerified: false };
+const receipt = { builtAt: new Date().toISOString(), sha256: createHash('sha256').update(html).digest('hex'), bytes: Buffer.byteLength(html), coverage: catalog.coverage, watchArt, standalone: true, browserVerified: false, realHostVerified: false };
 writeFileSync(path.join(root, 'docs/build-receipt.json'), JSON.stringify(receipt, null, 2) + '\n');
 console.log(JSON.stringify(receipt));

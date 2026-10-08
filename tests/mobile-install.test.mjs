@@ -158,3 +158,20 @@ test('mobile installer can repair files after its previous process exits mid-app
     await assert.rejects(fs.stat(path.join(backupRoot, 'install.lock')), { code: 'ENOENT' });
     assert.equal(await fs.readFile(path.join(backupRoot, firstBackup, 'before', 'extension.js'), 'utf8'), 'before process exit');
 });
+
+test('mobile installer CLI starts through a real directory alias as well as its physical path', async t => {
+    const f = await fixture(t);
+    const physical = path.join(f.root, 'physical'), alias = path.join(f.root, 'alias');
+    await fs.mkdir(physical);
+    await fs.copyFile(new URL('../scripts/mobile-install.mjs', import.meta.url), path.join(physical, 'mobile-install.mjs'));
+    // Windows junctions do not need Developer Mode; failure to create one is a test failure, not a skip.
+    await fs.symlink(physical, alias, process.platform === 'win32' ? 'junction' : 'dir');
+    assert.equal(await fs.realpath(alias), await fs.realpath(physical));
+    const run = folder => spawnSync(process.execPath, [path.join(folder, 'mobile-install.mjs'), '--help'], { encoding: 'utf8' });
+    const direct = run(physical), linked = run(alias);
+    assert.equal(direct.status, 0, direct.stderr);
+    assert.match(direct.stdout, /Omnitrix 手机安装 \/ 修复 \/ 更新/);
+    assert.equal(linked.status, 0, linked.stderr);
+    assert.equal(linked.stdout, direct.stdout, 'a path alias must execute the CLI instead of silently exiting');
+    assert.deepEqual((await fs.readdir(f.root)).sort(), ['alias', 'physical'], '--help does not install runtime files');
+});

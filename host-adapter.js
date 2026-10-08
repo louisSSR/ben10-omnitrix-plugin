@@ -2,7 +2,7 @@ export const SETTINGS_NAMESPACE = 'ben10Omnitrix';
 export const MESSAGE_NAMESPACE = 'ben10-omnitrix';
 const LOCAL_KEY = 'ben10-omnitrix:preferences:v1';
 const WATCHES = new Set(['original', 'recalibrated', 'ultimatrix', 'omniverse']);
-const MODES = new Set(['projection', 'carousel', 'dial', 'archive']);
+const MODES = new Set(['projection', 'carousel', 'dial']);
 const isRecord = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 
 export function sanitizePreferences(value) {
@@ -10,6 +10,7 @@ export function sanitizePreferences(value) {
     const result = {};
     if (WATCHES.has(value.watch)) result.watch = value.watch;
     if (MODES.has(value.mode)) result.mode = value.mode;
+    else if (value.mode === 'archive') result.mode = 'projection';
     if (typeof value.reducedMotion === 'boolean') result.reducedMotion = value.reducedMotion;
     if (typeof value.selectedId === 'string' && /^[a-z0-9][a-z0-9-]{0,119}$/.test(value.selectedId)) {
         result.selectedId = value.selectedId;

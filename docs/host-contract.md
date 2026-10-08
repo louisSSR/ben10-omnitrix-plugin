@@ -26,7 +26,7 @@ HTML SHA256：1.18 `1eccc894791ef961db5a80d01bb517256843d86f720664f2cf5ff8f55f10
 
 ## 偏好与消息协议
 
-偏好保存在 `getContext().extensionSettings.ben10Omnitrix`，保留该命名空间未知字段。只允许 `watch`（original/recalibrated/ultimatrix/omniverse）、`mode`（projection/carousel/dial/archive）、`reducedMotion`（boolean）、`selectedId`（受限短 ID）。UI 还必须确认 ID 在当前 catalog 中。getContext/设置/保存能力不足时，降级同源 localStorage；localStorage 失败时仅本次内存，并把能力告诉 iframe。
+偏好保存在 `getContext().extensionSettings.ben10Omnitrix`，保留该命名空间未知字段。只允许 `watch`（original/recalibrated/ultimatrix/omniverse）、`mode`（projection/carousel/dial）、`reducedMotion`（boolean）、`selectedId`（受限短 ID）。0.2.0 移除记录墙，旧的 `archive` 偏好在 Core 和 Adapter 两侧均迁移为 `projection`。UI 还必须确认 ID 在当前 catalog 中。getContext/设置/保存能力不足时，降级同源 localStorage；localStorage 失败时仅本次内存，并把能力告诉 iframe。
 
 消息统一为 `{namespace:'ben10-omnitrix',type,payload}`。宿主必须同时核对同源 origin、精确 iframe.contentWindow、namespace 和类型，再做字段白名单过滤。iframe 使用相同的来源与 parent 校验。只有当前相对路径 `preview.html` 可成为子页；没有任意 URL 输入。
 

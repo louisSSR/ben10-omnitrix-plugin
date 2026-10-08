@@ -1,0 +1,143 @@
+{
+  "kind": "reference-guided generated UI artwork",
+  "official": false,
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "originalBytesPreserved": true,
+  "driverAccepted": false,
+  "referenceNotes": "First two use inspected official animation frames. UA and OV use inspected public mirrors with provenance limitations documented in docs/watch-generation-reference.md. These are cel-style UI redraws, not official assets or exact animation reconstructions.",
+  "assets": [
+    {
+      "id": "original",
+      "file": "original.png",
+      "width": 1254,
+      "height": 1254,
+      "byteLength": 1012665,
+      "sha256": "2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 772961,
+      "alphaBBox": [
+        128,
+        16,
+        1214,
+        1254
+      ],
+      "actualGeneratedImageViewed": true,
+      "reference": {
+        "kind": "official animation frame plus user reference",
+        "url": "https://www.youtube.com/watch?v=iLBivD9Pxks&t=116s",
+        "observed": "Four small green bezel lights plus one separate larger side button; broad black band, gray edges and curved pale supports."
+      },
+      "observedScreenInSquareContainBox": {
+        "center": [
+          0.499,
+          0.465
+        ],
+        "diameterRatio": 0.402,
+        "method": "Visual alignment estimate, validated in browser; UI geometry, not official dimensions"
+      }
+    },
+    {
+      "id": "recalibrated",
+      "file": "recalibrated.png",
+      "width": 1254,
+      "height": 1254,
+      "byteLength": 761232,
+      "sha256": "d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 938608,
+      "alphaBBox": [
+        0,
+        26,
+        1240,
+        1229
+      ],
+      "actualGeneratedImageViewed": true,
+      "reference": {
+        "kind": "official animation frame",
+        "url": "https://www.youtube.com/watch?v=iLBivD9Pxks&t=120s",
+        "observed": "Green strap with black middle stripe, dark round core, side cylinders, silver-gray lower arc."
+      },
+      "observedScreenInSquareContainBox": {
+        "center": [
+          0.5,
+          0.429
+        ],
+        "diameterRatio": 0.373,
+        "method": "Visual alignment estimate, validated in browser; UI geometry, not official dimensions"
+      }
+    },
+    {
+      "id": "ultimatrix",
+      "file": "ultimatrix.png",
+      "width": 1024,
+      "height": 1536,
+      "byteLength": 1223650,
+      "sha256": "871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "transparentPixels": 769751,
+      "alphaBBox": [
+        0,
+        31,
+        992,
+        1502
+      ],
+      "actualGeneratedImageViewed": true,
+      "reference": {
+        "kind": "public image mirror; original publisher unverified",
+        "url": "https://www.pinclipart.com/picdir/big/394-3943027_cartoon-network-wiki-ben-10-ultimate-alien-omnitrix.png",
+        "observed": "Long green cuff, upper round core, separate side tubes, dark rectangular panel."
+      },
+      "observedScreenInSquareContainBox": {
+        "center": [
+          0.5,
+          0.191
+        ],
+        "diameterRatio": 0.241,
+        "method": "Visual alignment estimate, validated in browser; UI geometry, not official dimensions"
+      }
+    },
+    {
+      "id": "omniverse",
+      "file": "omniverse.png",
+      "width": 1254,
+      "height": 1254,
+      "byteLength": 797286,
+      "sha256": "6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "transparentPixels": 949946,
+      "alphaBBox": [
+        210,
+        31,
+        1075,
+        1226
+      ],
+      "actualGeneratedImageViewed": true,
+      "reference": {
+        "kind": "production-marked model sheet mirror; upstream publication unverified",
+        "url": "https://x.com/Ben10protector/status/1831392265149018138",
+        "observed": "Light band, black-and-green angular cover and three green rectangles per side; open configuration."
+      },
+      "observedScreenInSquareContainBox": {
+        "center": [
+          0.5,
+          0.379
+        ],
+        "diameterRatio": 0.235,
+        "method": "Visual alignment estimate, validated in browser; UI geometry, not official dimensions"
+      }
+    }
+  ]
+}

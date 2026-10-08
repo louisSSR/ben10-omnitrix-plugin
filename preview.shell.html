@@ -30,10 +30,17 @@
           <div class="stage" id="stage" tabindex="0" aria-label="选择区域，左右方向键切换外星人，Enter 锁定">
             <div class="stage-grid" aria-hidden="true"></div><div class="orbit-line orbit-a" aria-hidden="true"></div><div class="orbit-line orbit-b" aria-hidden="true"></div>
             <p class="stage-coordinate" aria-hidden="true">DNA SEQUENCE<br><b id="sequence-id">001</b></p>
-            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light"></div><div class="holo-shape" id="holo-shape"></div><div class="scanline"></div><div class="holo-base"></div></div>
+            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
             <div class="carousel" id="carousel" aria-label="环形形态列表"></div>
-            <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人"><span class="watch-strap"></span><span class="watch-case"><span class="watch-rail rail-left"></span><span class="watch-rail rail-right"></span><span class="watch-bolt bolt-n"></span><span class="watch-bolt bolt-e"></span><span class="watch-bolt bolt-s"></span><span class="watch-bolt bolt-w"></span><span class="watch-bezel"><span class="watch-screen"><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape" id="dial-shape"></span></span></span><span class="watch-switch"></span></span></button>
-            <div id="archive-grid" class="archive-grid" aria-label="外星人记录墙"></div>
+            <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人">
+              <span class="watch-ground-shadow"></span>
+              <img class="watch-art original" src="./assets/watches-v3/original.png" alt="" draggable="false">
+              <img class="watch-art recalibrated" src="./assets/watches-v3/recalibrated.png" alt="" draggable="false">
+              <img class="watch-art ultimatrix" src="./assets/watches-v3/ultimatrix.png" alt="" draggable="false">
+              <img class="watch-art omniverse" src="./assets/watches-v3/omniverse.png" alt="" draggable="false">
+              <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span><span class="screen-glass"></span></span>
+              <span class="watch-contact-ring"></span>
+            </button>
             <div class="summon-flash" aria-hidden="true"></div><div class="summon-ring" aria-hidden="true"></div>
             <div class="stage-notice" id="stage-notice" hidden>这个形态的素材还在整理中</div>
             <div class="stage-bottom"><span id="stage-hint">滑动切换 · 点击表盘锁定</span><span class="live-tag"><i></i> DNA LINK</span></div>
@@ -46,7 +53,7 @@
     </main>
     <footer><span>OMNITRIX / FAN INTERFACE</span><span>用一次选择，开启一场冒险。</span><button type="button" class="subtle" id="sources-button">素材与使用说明</button></footer>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <dialog id="about-dialog"><div class="dialog-head"><h2>关于这份变身档案</h2><button class="arrow" id="close-about" aria-label="关闭说明" type="button">×</button></div><p>基于你提供的手表、投影与转盘参考制作的同人交互界面。四款表壳属于界面重绘，并非官方素材。</p><p id="coverage-note"></p><p>已接入剪影由此前逐张核对的来源图制作；缺图会明确标注，未来补图可继续使用同一份档案。版权归各原权利方。</p><p>选择和锁定仅改变本界面状态。“写入酒馆输入框”需要手动点击，写入后也不会自动发送。</p><p>电脑与手机共用此界面，支持方向键、Enter 和左右滑动；“减少动态”及系统动态偏好可关闭复杂动画。</p></dialog>
+    <dialog id="about-dialog"><div class="dialog-head"><h2>关于这份变身档案</h2><button class="arrow" id="close-about" aria-label="关闭说明" type="button">×</button></div><p>基于你提供的手表、投影与转盘参考制作的同人交互界面。四款表壳是依据参考生成的 AI 界面插画，并非官方素材。</p><p id="coverage-note"></p><p>已接入剪影由此前逐张核对的来源图制作；缺图会明确标注，未来补图可继续使用同一份档案。版权归各原权利方。</p><p>选择和锁定仅改变本界面状态。“写入酒馆输入框”需要手动点击，写入后也不会自动发送。</p><p>电脑与手机共用此界面，支持方向键、Enter 和左右滑动；“减少动态”及系统动态偏好可关闭复杂动画。</p></dialog>
   </div>
   <script type="application/json" id="catalog-data"><!-- CATALOG_DATA --></script>
   <script>/* APP_CODE */</script>

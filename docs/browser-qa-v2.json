@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "checkedAt": "2026-10-09T03:21:54+08:00",
+  "previewSha256": "2c017042b55a15e258ee3864085b950820d901011e930f9144356c48fe0500d0",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium browser; viewport emulation, not a phone",
+  "viewports": [
+    {"width": 320, "height": 960, "mode": "carousel", "watch": "omniverse", "horizontalOverflow": false, "allEightRingItemsInsideStage": true, "rearScale": 0.48, "frontScale": 1.16, "rearBounds": {"width": 23.52, "height": 31.68}, "frontBounds": {"width": 56.84, "height": 76.56}},
+    {"width": 390, "height": 960, "mode": "dial", "watch": "original", "selected": "火焰人", "horizontalOverflow": false},
+    {"width": 390, "height": 960, "mode": "dial", "watch": "omniverse", "selected": "火焰人", "horizontalOverflow": false},
+    {"width": 390, "height": 960, "mode": "projection", "watch": "recalibrated", "horizontalOverflow": false, "beamBaseCenterOffsetPx": {"x": -0.00019, "y": 1.99804}},
+    {"width": 390, "height": 960, "mode": "projection", "watch": "ultimatrix", "horizontalOverflow": false, "beamBaseCenterOffsetPx": {"x": -0.00076, "y": 1.99941}},
+    {"width": 1280, "height": 900, "mode": "carousel", "horizontalOverflow": false, "allFourWatchImagesLoaded": true}
+  ],
+  "interactionEvidence": {
+    "dialSelection": {
+      "action": "Select the next alien in the rendered dial UI",
+      "during": {"selected": "超能兽", "previousHidden": false, "currentVisibility": "hidden", "shutterTransforms": ["matrix(1, 0, 0, 1, 0, 0)", "matrix(1, 0, 0, 1, 0, 0)"]},
+      "after": {"selected": "超能兽", "previousHidden": true, "currentVisibility": "visible", "shutterTransforms": ["matrix(1, 0, 0, 1, -154.066, -154.066)", "matrix(1, 0, 0, 1, 154.066, 154.066)"]},
+      "scope": "Observed cover/swap/reveal; not a claim of frame-exact reproduction of the animation reference. Captured before the final projection-follow cancellation adjustment, which did not change dial code."
+    },
+    "reducedMotion": {"buttonPressed": true, "shapeAnimation": "none", "lightAnimation": "none", "restoredAfterCheck": true},
+    "previewErrorLogs": [],
+    "temporaryViewportOverrideReset": true
+  },
+  "screenshots": [
+    "screenshots/v3-desktop-carousel.png",
+    "screenshots/v3-mobile-320-carousel.png",
+    "screenshots/v3-mobile-af-projection.png",
+    "screenshots/v3-mobile-ua-projection.png",
+    "screenshots/v3-mobile-original-dial.png",
+    "screenshots/v3-mobile-omniverse-dial.png"
+  ],
+  "boundaries": {
+    "realPhoneVerified": false,
+    "realSillyTavernVerified": false,
+    "driverAccepted": false,
+    "all225SilhouettesComplete": false,
+    "availableSilhouettes": 98,
+    "missingSilhouettes": 127,
+    "art": "Reference-guided AI redraws. Classic and AF checked against official video frames; UA and OV references include mirrors whose original publication was not independently verified."
+  }
+}

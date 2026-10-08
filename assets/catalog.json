@@ -47,7 +47,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.8858,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 0.982143,
+        "visiblePixels": 76097,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-heatblast"
+      }
     },
     {
       "id": "wildmutt",
@@ -66,7 +78,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.6735,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.291667,
+        "visiblePixels": 171962,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-wildmutt"
+      }
     },
     {
       "id": "diamondhead",
@@ -85,7 +109,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.7573,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.14881,
+        "visiblePixels": 152776,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-diamondhead"
+      }
     },
     {
       "id": "xlr8",
@@ -108,7 +144,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.751,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.158333,
+        "visiblePixels": 107427,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-xlr8"
+      }
     },
     {
       "id": "grey-matter",
@@ -131,7 +179,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7969,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.091667,
+        "visiblePixels": 7891
+      }
     },
     {
       "id": "four-arms",
@@ -154,7 +208,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.8587,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.013095,
+        "visiblePixels": 146056,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-four-arms"
+      }
     },
     {
       "id": "stinkfly",
@@ -177,7 +243,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.5696,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.527381,
+        "visiblePixels": 84525,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-stinkfly"
+      }
     },
     {
       "id": "ripjaws",
@@ -200,7 +278,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.77,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.129762,
+        "visiblePixels": 101228,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-ripjaws"
+      }
     },
     {
       "id": "upgrade",
@@ -223,7 +313,19 @@
         "https://www.discoveryjapan.jp/cartoonnetwork/ben10/"
       ],
       "artSourceLabel": "WBD / Cartoon Network 角色原图",
-      "artProvenance": "official-publisher"
+      "artProvenance": "official-publisher",
+      "dialFit": {
+        "scale": 0.7286,
+        "method": "legacy-avif-filter-diamond-envelope",
+        "diamondExtent": 1.194048,
+        "visiblePixels": 161653,
+        "sourceImageSize": [
+          699,
+          700
+        ],
+        "resamplingMargin": 2,
+        "filterId": "omni-key-upgrade"
+      }
     },
     {
       "id": "ghostfreak",
@@ -242,7 +344,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6484,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.341667,
+        "visiblePixels": 13190
+      }
     },
     {
       "id": "cannonbolt",
@@ -265,7 +373,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6779,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.283333,
+        "visiblePixels": 26486
+      }
     },
     {
       "id": "wildvine",
@@ -284,7 +398,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.73,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.191667,
+        "visiblePixels": 7702
+      }
     },
     {
       "id": "spitter",
@@ -302,7 +422,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6566,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.325,
+        "visiblePixels": 20561
+      }
     },
     {
       "id": "buzzshock",
@@ -353,7 +479,13 @@
         "https://www.pngitem.com/middle/hmhJTRo_ben-10-ultimate-alien-benwolf-hd-png-download/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6607,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.316667,
+        "visiblePixels": 8237
+      }
     },
     {
       "id": "upchuck-perk",
@@ -377,7 +509,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6607,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.316667,
+        "visiblePixels": 19093
+      }
     },
     {
       "id": "snare-oh",
@@ -398,7 +536,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6069,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.433333,
+        "visiblePixels": 11995
+      }
     },
     {
       "id": "frankenstrike",
@@ -422,7 +566,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6868,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.266667,
+        "visiblePixels": 12796
+      }
     },
     {
       "id": "ditto",
@@ -441,7 +591,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/ditto/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5465,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.591667,
+        "visiblePixels": 13977
+      }
     },
     {
       "id": "eye-guy",
@@ -464,7 +620,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7849,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.108333,
+        "visiblePixels": 11686
+      }
     },
     {
       "id": "way-big",
@@ -483,7 +645,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/way-big/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6327,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.375,
+        "visiblePixels": 7098
+      }
     },
     {
       "id": "swampfire",
@@ -502,7 +670,13 @@
         "https://ben10hero.com/additional-aliens/swampfire/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.751,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.158333,
+        "visiblePixels": 7198
+      }
     },
     {
       "id": "echo-echo",
@@ -521,7 +695,13 @@
         "https://ben10hero.com/additional-aliens/echo-echo/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5965,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.458333,
+        "visiblePixels": 18118
+      }
     },
     {
       "id": "humungousaur",
@@ -544,7 +724,13 @@
         "https://ben10hero.com/additional-aliens/humungousaur/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6868,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.266667,
+        "visiblePixels": 16490
+      }
     },
     {
       "id": "jetray",
@@ -563,7 +749,13 @@
         "https://ben10hero.com/additional-aliens/jetray/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7909,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.1,
+        "visiblePixels": 7836
+      }
     },
     {
       "id": "big-chill",
@@ -588,7 +780,13 @@
         "https://ben10hero.com/additional-aliens/big-chill/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5272,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.65,
+        "visiblePixels": 12110
+      }
     },
     {
       "id": "chromastone",
@@ -610,7 +808,13 @@
         "https://ben10hero.com/additional-aliens/chromastone/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6034,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.441667,
+        "visiblePixels": 13260
+      }
     },
     {
       "id": "brainstorm",
@@ -629,7 +833,13 @@
         "https://ben10hero.com/additional-aliens/brainstorm/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7054,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.233333,
+        "visiblePixels": 13932
+      }
     },
     {
       "id": "spidermonkey",
@@ -652,7 +862,13 @@
         "https://ben10hero.com/additional-aliens/spidermonkey/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7404,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.175,
+        "visiblePixels": 17169
+      }
     },
     {
       "id": "goop",
@@ -671,7 +887,13 @@
         "https://ben10hero.com/additional-aliens/goop/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7352,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.183333,
+        "visiblePixels": 13105
+      }
     },
     {
       "id": "alien-x",
@@ -690,7 +912,13 @@
         "https://ben10hero.com/additional-aliens/alien-x/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.822,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.058333,
+        "visiblePixels": 10972
+      }
     },
     {
       "id": "upchuck-murk",
@@ -711,7 +939,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6566,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.325,
+        "visiblePixels": 18441
+      }
     },
     {
       "id": "lodestar",
@@ -730,7 +964,13 @@
         "https://ben10hero.com/additional-aliens/lodestar/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6649,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.308333,
+        "visiblePixels": 8113
+      }
     },
     {
       "id": "nanomech",
@@ -762,7 +1002,13 @@
         "https://ben10hero.com/additional-aliens/rath/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.715,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.216667,
+        "visiblePixels": 16573
+      }
     },
     {
       "id": "waterhazard",
@@ -781,7 +1027,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.762,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.141667,
+        "visiblePixels": 11615
+      }
     },
     {
       "id": "ampfibian",
@@ -800,7 +1052,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6365,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.366667,
+        "visiblePixels": 14007
+      }
     },
     {
       "id": "armodrillo",
@@ -823,7 +1081,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8419,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.033333,
+        "visiblePixels": 12182
+      }
     },
     {
       "id": "terraspin",
@@ -842,7 +1106,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/terraspin/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6177,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.408333,
+        "visiblePixels": 18832
+      }
     },
     {
       "id": "nrg",
@@ -861,7 +1131,13 @@
         "https://www.pngaaa.com/detail/6057003"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7054,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.233333,
+        "visiblePixels": 18641
+      }
     },
     {
       "id": "fasttrack",
@@ -880,7 +1156,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7102,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.225,
+        "visiblePixels": 8792
+      }
     },
     {
       "id": "clockwork",
@@ -902,7 +1184,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.715,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.216667,
+        "visiblePixels": 18395
+      }
     },
     {
       "id": "chamalien",
@@ -921,7 +1209,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7849,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.108333,
+        "visiblePixels": 8648
+      }
     },
     {
       "id": "eatle",
@@ -943,7 +1237,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7006,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.241667,
+        "visiblePixels": 12849
+      }
     },
     {
       "id": "juryrigg",
@@ -965,7 +1265,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6289,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.383333,
+        "visiblePixels": 10263
+      }
     },
     {
       "id": "shocksquatch",
@@ -1001,7 +1307,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/feedback/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6251,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.391667,
+        "visiblePixels": 12307
+      }
     },
     {
       "id": "bloxx",
@@ -1024,7 +1336,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5736,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.516667,
+        "visiblePixels": 22461
+      }
     },
     {
       "id": "gravattack",
@@ -1043,7 +1361,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6327,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.375,
+        "visiblePixels": 23245
+      }
     },
     {
       "id": "crashhopper",
@@ -1062,7 +1386,13 @@
         "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6177,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.408333,
+        "visiblePixels": 7828
+      }
     },
     {
       "id": "ball-weevil",
@@ -1081,7 +1411,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/ball-weevil/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7006,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.241667,
+        "visiblePixels": 9298
+      }
     },
     {
       "id": "walkatrout",
@@ -1100,7 +1436,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/walkatrout/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6251,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.391667,
+        "visiblePixels": 18156
+      }
     },
     {
       "id": "pesky-dust",
@@ -1123,7 +1465,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8156,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.066667,
+        "visiblePixels": 8047
+      }
     },
     {
       "id": "mole-stache",
@@ -1142,7 +1490,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/mole-stache/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7457,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.166667,
+        "visiblePixels": 14030
+      }
     },
     {
       "id": "the-worst",
@@ -1161,7 +1515,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/the-worst/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5931,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.466667,
+        "visiblePixels": 28410
+      }
     },
     {
       "id": "kickin-hawk",
@@ -1180,7 +1540,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/kickin-hawk/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.73,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.191667,
+        "visiblePixels": 12289
+      }
     },
     {
       "id": "toepick",
@@ -1199,7 +1565,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.715,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.216667,
+        "visiblePixels": 18641
+      }
     },
     {
       "id": "astrodactyl",
@@ -1218,7 +1590,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7006,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.241667,
+        "visiblePixels": 7613
+      }
     },
     {
       "id": "bullfrag",
@@ -1237,7 +1615,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bullfrag/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6868,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.266667,
+        "visiblePixels": 10558
+      }
     },
     {
       "id": "atomix",
@@ -1256,7 +1640,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/atomix/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6913,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.258333,
+        "visiblePixels": 16906
+      }
     },
     {
       "id": "gutrot",
@@ -1275,7 +1665,13 @@
         "https://bogleech.com/halloween/hall20-ben10"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6959,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.25,
+        "visiblePixels": 21732
+      }
     },
     {
       "id": "whampire",
@@ -1294,7 +1690,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7457,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.166667,
+        "visiblePixels": 6954
+      }
     },
     {
       "id": "ultimate-humungousaur",
@@ -1330,7 +1732,13 @@
         "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7352,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.183333,
+        "visiblePixels": 14336
+      }
     },
     {
       "id": "ultimate-spidermonkey",
@@ -1351,7 +1759,13 @@
         "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6214,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.4,
+        "visiblePixels": 10861
+      }
     },
     {
       "id": "ultimate-big-chill",
@@ -1369,7 +1783,13 @@
         "https://www.pngkey.com/maxpic/u2w7w7r5r5a9w7r5/"
       ],
       "artSourceLabel": "Community reproduction: Ultimate Big Chill action pose",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5931,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.466667,
+        "visiblePixels": 10770
+      }
     },
     {
       "id": "ultimate-cannonbolt",
@@ -1387,7 +1807,13 @@
         "https://www.pngaaa.com/detail/7832317"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6607,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.316667,
+        "visiblePixels": 25694
+      }
     },
     {
       "id": "ultimate-echo-echo",
@@ -1408,7 +1834,13 @@
         "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8093,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.075,
+        "visiblePixels": 11247
+      }
     },
     {
       "id": "ultimate-wildmutt",
@@ -1426,7 +1858,13 @@
         "https://www.animecharactersdatabase.com/characters.php?id=140133"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6289,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.383333,
+        "visiblePixels": 18649
+      }
     },
     {
       "id": "ultimate-way-big",
@@ -1458,7 +1896,13 @@
         "https://ben10db.weebly.com/omniverse.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7054,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.233333,
+        "visiblePixels": 23582
+      }
     },
     {
       "id": "ultimate-arctiguana",
@@ -1476,7 +1920,13 @@
         "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5643,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.541667,
+        "visiblePixels": 15472
+      }
     },
     {
       "id": "ultimate-gravattack",
@@ -1512,7 +1962,13 @@
         "https://ben10db.weebly.com/omniverse.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5326,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.633333,
+        "visiblePixels": 20901
+      }
     },
     {
       "id": "stink-arms",
@@ -1602,7 +2058,13 @@
         "https://www.pinclipart.com/downpngs/TTTTmT_uprigg-is-the-combination-of-upgrades-and-jury/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5612,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.55,
+        "visiblePixels": 16445
+      }
     },
     {
       "id": "big-chuck",
@@ -1657,7 +2119,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
       ],
       "artSourceLabel": "Community reproduction: Bad Ben as Ghostfreak",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8847,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 0.983333,
+        "visiblePixels": 7056
+      }
     },
     {
       "id": "bad-gravattack",
@@ -1741,7 +2209,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/wildvine/"
       ],
       "artSourceLabel": "Community reproduction: Gwen 10 Wildvine",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6214,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.4,
+        "visiblePixels": 8194
+      }
     },
     {
       "id": "gwen10-xlr8",
@@ -1773,7 +2247,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/diamondhead/"
       ],
       "artSourceLabel": "Community reproduction: Gwen 10 Diamondhead",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.751,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.158333,
+        "visiblePixels": 9282
+      }
     },
     {
       "id": "gwen10-cannonbolt",
@@ -1876,7 +2356,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6404,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.358333,
+        "visiblePixels": 18629
+      }
     },
     {
       "id": "ghostfreak-true-af",
@@ -1907,7 +2393,13 @@
         "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6365,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.366667,
+        "visiblePixels": 25040
+      }
     },
     {
       "id": "reboot-diamondhead",
@@ -1926,7 +2418,13 @@
         "https://www.pngaaa.com/detail/3127545"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6214,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.4,
+        "visiblePixels": 14577
+      }
     },
     {
       "id": "reboot-four-arms",
@@ -1945,7 +2443,13 @@
         "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7909,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.1,
+        "visiblePixels": 16338
+      }
     },
     {
       "id": "reboot-gax",
@@ -1964,7 +2468,13 @@
         "https://www.pngaaa.com/download/3127648"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.762,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.141667,
+        "visiblePixels": 15727
+      }
     },
     {
       "id": "reboot-grey-matter",
@@ -1983,7 +2493,13 @@
         "https://www.pngaaa.com/detail/3127521"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6959,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.25,
+        "visiblePixels": 10925
+      }
     },
     {
       "id": "reboot-heatblast",
@@ -2002,7 +2518,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · Heatblast 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.715,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.216667,
+        "visiblePixels": 8356
+      }
     },
     {
       "id": "reboot-overflow",
@@ -2021,7 +2543,13 @@
         "https://www.pngaaa.com/detail/3127540"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6177,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.408333,
+        "visiblePixels": 21055
+      }
     },
     {
       "id": "reboot-stinkfly",
@@ -2040,7 +2568,13 @@
         "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7006,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.241667,
+        "visiblePixels": 7121
+      }
     },
     {
       "id": "reboot-upgrade",
@@ -2059,7 +2593,13 @@
         "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6692,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.3,
+        "visiblePixels": 13684
+      }
     },
     {
       "id": "reboot-wildvine",
@@ -2078,7 +2618,13 @@
         "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8093,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.075,
+        "visiblePixels": 8382
+      }
     },
     {
       "id": "reboot-xlr8",
@@ -2097,7 +2643,13 @@
         "https://www.pngaaa.com/detail/3127476"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6177,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.408333,
+        "visiblePixels": 8147
+      }
     },
     {
       "id": "reboot-rath",
@@ -2116,7 +2668,13 @@
         "https://www.nicepng.com/ourpic/u2t4u2t4r5q8w7e6_ben-10-reboot-humungousaur/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6289,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.383333,
+        "visiblePixels": 17469
+      }
     },
     {
       "id": "reboot-shock-rock",
@@ -2135,7 +2693,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/shock-rock/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6823,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.275,
+        "visiblePixels": 21997
+      }
     },
     {
       "id": "reboot-humungousaur",
@@ -2154,7 +2718,13 @@
         "https://www.pngitem.com/middle/hhhoiho_ben-10-png-ben-ten-reboot-humungousaur-transparent/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6779,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.283333,
+        "visiblePixels": 11265
+      }
     },
     {
       "id": "reboot-slapback",
@@ -2173,7 +2743,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · Slapback 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.7006,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.241667,
+        "visiblePixels": 19708
+      }
     },
     {
       "id": "reboot-goop",
@@ -2419,7 +2995,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-omniverse/additional-aliens-part-2/omni-enhanced-overflow/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6289,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.383333,
+        "visiblePixels": 18200
+      }
     },
     {
       "id": "reboot-omni-enhanced-stinkfly",
@@ -2467,7 +3049,13 @@
         "https://www.pngitem.com/middle/iTTmJmx_image-ben-10-omni-enhanced-xlr8-hd-png/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6823,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.275,
+        "visiblePixels": 9903
+      }
     },
     {
       "id": "reboot-omni-kix-cannonbolt",
@@ -2729,7 +3317,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · Bootleg 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.6177,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.408333,
+        "visiblePixels": 15599
+      }
     },
     {
       "id": "reboot-crystalfist",
@@ -2747,7 +3341,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · CrystalFist 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.7054,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.233333,
+        "visiblePixels": 17611
+      }
     },
     {
       "id": "reboot-dark-matter",
@@ -2777,7 +3377,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · HotShot 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.7404,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.175,
+        "visiblePixels": 15841
+      }
     },
     {
       "id": "reboot-humungoraptor",
@@ -2856,7 +3462,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · Undertow 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.87,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.0,
+        "visiblePixels": 14740
+      }
     },
     {
       "id": "reboot-wreckingbolt",
@@ -2874,7 +3486,13 @@
         "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html"
       ],
       "artSourceLabel": "Cartoon Network 官方游戏 · Wreckingbolt 站姿",
-      "artProvenance": "official-game-adaptation"
+      "artProvenance": "official-game-adaptation",
+      "dialFit": {
+        "scale": 0.8487,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.025,
+        "visiblePixels": 15408
+      }
     },
     {
       "id": "reboot-monster-kevin-which-watch",
@@ -3296,7 +3914,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/"
       ],
       "artSourceLabel": "社区转载角色图（原始发布待核对）",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6069,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.433333,
+        "visiblePixels": 11249
+      }
     },
     {
       "id": "ultimate-spidermonkey-ov",
@@ -3621,7 +4245,13 @@
         "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/"
       ],
       "artSourceLabel": "Community reproduction: Ghostfreak OV",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8628,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.008333,
+        "visiblePixels": 7308
+      }
     },
     {
       "id": "nanomech-ua",
@@ -3638,7 +4268,13 @@
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nanomech/"
       ],
       "artSourceLabel": "Community reproduction: Nanomech (Ultimate Alien)",
-      "artProvenance": "community-reproduction-of-character-art"
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7676,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.133333,
+        "visiblePixels": 9732
+      }
     }
   ]
 }

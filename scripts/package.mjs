@@ -6,7 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const version = JSON.parse(readFileSync(path.join(root, 'manifest.json'))).version;
 const dir = path.join(root, 'dist', `ben10-omnitrix-${version}`);
 mkdirSync(dir, { recursive:true });
-const files = ['manifest.json','extension.js','host-adapter.js','extension.css','preview.html','README.md','NOTICE.md','assets/provenance.json','docs/host-contract.md','docs/review.md','docs/browser-qa.json'];
+const files = ['manifest.json','extension.js','host-adapter.js','extension.css','preview.html','README.md','NOTICE.md','assets/provenance.json','assets/dial-fit.json','assets/watches-v3/provenance.json','assets/watches-v3/prompts.json','docs/host-contract.md','docs/review-v2.md','docs/browser-qa-v2.json','docs/dial-animation-reference.md','docs/watch-generation-reference.md','docs/install-troubleshooting.md','docs/mobile-install.md','scripts/mobile-install.mjs','scripts/mobile-install.sh'];
 for (const file of files) {
   if (!existsSync(path.join(root,file))) throw new Error(`Missing ${file}`);
   mkdirSync(path.dirname(path.join(dir,file)), { recursive:true });

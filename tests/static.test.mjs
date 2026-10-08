@@ -5,6 +5,8 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
+import { inflateSync } from 'node:zlib';
+import { execFileSync } from 'node:child_process';
 import { WATCHES, MODES } from '../core.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -38,6 +40,128 @@ test('standalone build keeps all records and exactly 98 reviewed silhouettes', (
   for (const id of ['ghostfreak-ov', 'nanomech-ua']) assert.ok(ready.some(form => form.id === id), `${id} has reviewed art`);
 });
 
+function rgbaPixels(png) {
+  assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+  assert.deepEqual([png.readUInt32BE(16), png.readUInt32BE(20), png[24], png[25], png[28]], [200, 240, 8, 6, 0], 'native bodies use non-interlaced 200×240 RGBA PNG');
+  const blocks = [];
+  for (let offset = 8; offset < png.length;) {
+    const length = png.readUInt32BE(offset), type = png.toString('ascii', offset + 4, offset + 8);
+    if (type === 'IDAT') blocks.push(png.subarray(offset + 8, offset + 8 + length));
+    offset += length + 12;
+  }
+  const raw = inflateSync(Buffer.concat(blocks)), stride = 800, pixels = Buffer.alloc(stride * 240);
+  assert.equal(raw.length, (stride + 1) * 240);
+  const paeth = (a, b, c) => { const p = a + b - c, distances = [Math.abs(p - a), Math.abs(p - b), Math.abs(p - c)]; return distances[0] <= distances[1] && distances[0] <= distances[2] ? a : distances[1] <= distances[2] ? b : c; };
+  for (let y = 0; y < 240; y++) {
+    const filter = raw[y * (stride + 1)]; assert.ok(filter <= 4);
+    for (let x = 0; x < stride; x++) {
+      const index = y * stride + x, left = x >= 4 ? pixels[index - 4] : 0, up = y ? pixels[index - stride] : 0, diagonal = y && x >= 4 ? pixels[index - stride - 4] : 0;
+      const prediction = [0, left, up, Math.floor((left + up) / 2), paeth(left, up, diagonal)][filter];
+      pixels[index] = (raw[y * (stride + 1) + 1 + x] + prediction) & 255;
+    }
+  }
+  return pixels;
+}
+
+// Pillow only decodes the original AVIF bytes. Filter and envelope verification
+// below runs independently in JS; it does not import or execute the fit builder.
+function legacyRgbPixels() {
+  const decoder = `import base64,io,json,sys,zlib,xml.etree.ElementTree as ET
+from PIL import Image
+ns='{http://www.w3.org/2000/svg}'
+result={}
+for symbol in ET.parse(sys.argv[1]).iter(ns+'symbol'):
+    image=symbol.find(ns+'image')
+    uri=image.attrib['href']
+    if not uri.startswith('data:image/avif;base64,'): continue
+    with Image.open(io.BytesIO(base64.b64decode(uri.split(',',1)[1]))) as pic:
+        assert pic.format=='AVIF' and pic.mode=='RGB'
+        result[symbol.attrib['id']]={'width':pic.width,'height':pic.height,'rgb':base64.b64encode(zlib.compress(pic.tobytes())).decode('ascii')}
+print(json.dumps(result))`;
+  return JSON.parse(execFileSync(process.env.PYTHON || 'python', ['-c', decoder, path.join(root, 'assets/silhouettes.svg')], { encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 }));
+}
+
+test('all 98 dial fits keep every visible pixel corner inside the safe diamond without changing body bytes', () => {
+  const fitReport = JSON.parse(read('assets/dial-fit.json')), svg = read('assets/silhouettes.svg');
+  assert.equal(fitReport.sourceSvgSha256, createHash('sha256').update(svg).digest('hex'));
+  assert.equal(fitReport.shapeCount, 98); assert.equal(fitReport.bitmapEdits, 0); assert.equal(fitReport.safeDiamondRadius, .87);
+  // Source geometry can be tested before preview.html is rebuilt. A separate
+  // build-freshness test above still requires its catalog to match this source.
+  const ready = sourceCatalog.forms.filter(form => form.asset), legacy = legacyRgbPixels();
+  assert.deepEqual(Object.keys(fitReport.fits).sort(), ready.map(form => form.id).sort());
+  let nativeCount = 0, legacyCount = 0;
+  for (const form of ready) {
+    const fit = fitReport.fits[form.id]; assert.deepEqual(form.dialFit, fit);
+    assert.ok(Number.isFinite(fit.scale) && fit.scale > 0 && fit.scale < 1, form.id);
+    const symbol = svg.match(new RegExp(`<symbol\\b[^>]*id="${form.asset}"[^>]*>[\\s\\S]*?<\\/symbol>`))?.[0];
+    assert.ok(symbol, form.id); assert.ok(html.includes(symbol), `${form.id} body bytes remain embedded unchanged`);
+    const encoded = symbol.match(/data:image\/png;base64,([A-Za-z0-9+/=]+)/)?.[1];
+    let extent = 0, visiblePixels = 0;
+    const checkCorner = (x, y, margin = 0) => {
+      const distance = (Math.abs(x - 100) + Math.abs(y - 120) + margin) / 120;
+      extent = Math.max(extent, distance);
+      assert.ok(distance * fit.scale <= fitReport.safeDiamondRadius + 1e-6, `${form.id} visible corner (${x}, ${y}) is clipped by the dial`);
+    };
+    if (encoded) {
+      nativeCount++; assert.equal(fit.method, 'native-png-alpha-diamond-envelope');
+      const pixels = rgbaPixels(Buffer.from(encoded, 'base64'));
+      for (let y = 0; y < 240; y++) for (let x = 0; x < 200; x++) if (pixels[(y * 200 + x) * 4 + 3] > 0) {
+        visiblePixels++;
+        for (const dx of [0, 1]) for (const dy of [0, 1]) checkCorner(x + dx, y + dy);
+      }
+      assert.equal(visiblePixels, fit.visiblePixels, form.id);
+    } else {
+      legacyCount++; assert.equal(fit.method, 'legacy-avif-filter-diamond-envelope');
+      const decoded = legacy[form.asset]; assert.ok(decoded, form.id);
+      const { width, height } = decoded, rgb = inflateSync(Buffer.from(decoded.rgb, 'base64'));
+      assert.equal(rgb.length, width * height * 3); assert.deepEqual(fit.sourceImageSize, [width, height]);
+      const imageTag = symbol.match(/<image\b[^>]*\/>/)[0];
+      const attribute = name => imageTag.match(new RegExp(`\\b${name}="([^"]+)"`))?.[1];
+      assert.equal(attribute('preserveAspectRatio'), 'xMidYMid meet');
+      assert.equal(attribute('transform'), undefined);
+      const filterId = attribute('filter').match(/^url\(#([^()]+)\)$/)[1];
+      assert.equal(fit.filterId, filterId);
+      const filter = svg.match(new RegExp(`<filter\\b[^>]*id="${filterId}"[^>]*>[\\s\\S]*?<\\/filter>`))[0];
+      assert.match(filter, /color-interpolation-filters="sRGB"/);
+      assert.equal((filter.match(/<feComponentTransfer>/g) || []).length, 1);
+      assert.equal((filter.match(/<feColorMatrix\b/g) || []).length, 1);
+      assert.doesNotMatch(filter, /<feFuncA\b/);
+      const matrix = filter.match(/<feColorMatrix type="matrix" values="([^"]+)"/)[1].split(/\s+/).map(Number);
+      assert.deepEqual(matrix, [...Array(15).fill(0), 1, 1, 1, 0, 0]);
+      const tables = ['R', 'G', 'B'].map(channel => {
+        const table = filter.match(new RegExp(`<feFunc${channel} type="table" tableValues="([^"]+)"`))[1].split(/\s+/).map(Number);
+        assert.equal(table.length, 256); assert.ok(table.every(value => value >= 0 && value <= 1));
+        const transparent = table.flatMap((value, index) => value === 0 ? [index] : []);
+        assert.ok(transparent.length > 0);
+        assert.equal(transparent.at(-1) - transparent[0] + 1, transparent.length, 'interpolating transparent colors cannot create visible islands');
+        return table;
+      });
+      const transferred = (value, table) => {
+        const index = value / 255 * (table.length - 1), low = Math.floor(index), high = Math.min(low + 1, table.length - 1);
+        return table[low] + (index - low) * (table[high] - table[low]);
+      };
+      const boxWidth = Number(attribute('width')), boxHeight = Number(attribute('height'));
+      const ratio = Math.min(boxWidth / width, boxHeight / height);
+      const originX = Number(attribute('x') || 0) + (boxWidth - width * ratio) / 2;
+      const originY = Number(attribute('y') || 0) + (boxHeight - height * ratio) / 2;
+      assert.equal(fit.resamplingMargin, 2, 'reserve one SVG unit per axis for sampling');
+      for (let y = 0; y < height; y++) for (let x = 0; x < width; x++) {
+        const pixel = (y * width + x) * 3;
+        const alpha = Math.min(1, tables.reduce((sum, table, channel) => sum + transferred(rgb[pixel + channel], table), 0));
+        if (alpha <= 0) continue;
+        visiblePixels++;
+        for (const dx of [0, 1]) for (const dy of [0, 1]) checkCorner(originX + (x + dx) * ratio, originY + (y + dy) * ratio, fit.resamplingMargin);
+      }
+      assert.equal(visiblePixels, fit.visiblePixels, form.id);
+      assert.ok(fit.scale > .4745, `${form.id} uses its visible body instead of the empty viewport`);
+    }
+    assert.ok(Math.abs(extent - fit.diamondExtent) < 1e-6, `${form.id} fit records the measured envelope`);
+  }
+  assert.deepEqual([nativeCount, legacyCount], [90, 8]);
+  assert.ok(fitReport.fits.heatblast.scale > .8, 'Heatblast remains legible instead of retaining the old half-size fit');
+  for (const form of sourceCatalog.forms.filter(form => !form.asset)) assert.equal(form.dialFit, undefined, `${form.id} remains missing`);
+});
+
 test('built preview has no runtime remote resource or unresolved build marker', () => {
   const resourceTags = [...html.matchAll(/<(script|img|link|iframe|video|audio|source|image|use)\b([^>]*)>/gi)];
   for (const [, tag, attributes] of resourceTags) {
@@ -53,6 +177,8 @@ test('built preview has no runtime remote resource or unresolved build marker', 
   assert.doesNotMatch(runtimeScripts[0][1], /\bsrc\s*=/i);
   assert.doesNotMatch(runtime, /^\s*(?:import|export)\s/m);
   assert.doesNotMatch(runtime, /\b(?:fetch|XMLHttpRequest)\s*\(/);
+  assert.ok(runtime.includes(read('core.js').replace(/^export /gm, '')), 'delivered core matches the tested source');
+  assert.ok(runtime.includes(app.replace(/^import[^\n]+\n/, '')), 'delivered app matches the tested source');
   assert.doesNotThrow(() => new vm.Script(runtime, { filename: 'built-preview-runtime.js' }));
 });
 
@@ -64,17 +190,61 @@ test('build receipt binds the actual delivered HTML bytes and coverage', () => {
   assert.equal(receipt.standalone, true);
 });
 
-test('all four watch skins and three summon modes plus archive are included', () => {
+test('all four watch images are embedded unchanged and bound by the build receipt', () => {
+  const receipt = JSON.parse(read('docs/build-receipt.json'));
+  const provenance = JSON.parse(read('assets/watches-v3/provenance.json'));
+  const decoder = `import json,sys
+from pathlib import Path
+from PIL import Image
+result={}
+for name in ('original','recalibrated','ultimatrix','omniverse'):
+    with Image.open(Path(sys.argv[1])/(name+'.png')) as pic:
+        assert pic.format=='PNG' and pic.mode=='RGBA'
+        alpha=pic.getchannel('A')
+        result[name]={'width':pic.width,'height':pic.height,'alphaExtrema':alpha.getextrema(),'transparentPixels':alpha.histogram()[0]}
+print(json.dumps(result))`;
+  const decoded = JSON.parse(execFileSync(process.env.PYTHON || 'python', ['-c', decoder, path.join(root, 'assets/watches-v3')], { encoding: 'utf8' }));
+  assert.deepEqual(receipt.watchArt.map(item => item.id), WATCHES.map(watch => watch.id));
+  assert.deepEqual(provenance.assets.map(item => item.id).sort(), WATCHES.map(watch => watch.id).sort());
+  for (const item of receipt.watchArt) {
+    const bytes = readFileSync(path.join(root, 'assets', 'watches-v3', `${item.id}.png`));
+    const metadata = provenance.assets.find(asset => asset.id === item.id);
+    const actual = decoded[item.id];
+    assert.equal(item.sha256, createHash('sha256').update(bytes).digest('hex'), item.id);
+    assert.equal(item.bytes, bytes.length, item.id);
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a', item.id);
+    assert.deepEqual([bytes[24], bytes[25]], [8, 6], `${item.id} uses RGBA PNG`);
+    const dimensions = [bytes.readUInt32BE(16), bytes.readUInt32BE(20)];
+    assert.ok(dimensions.every(size => size >= 512), `${item.id} has sufficient native resolution`);
+    assert.deepEqual([item.width, item.height], dimensions, `${item.id} receipt dimensions`);
+    assert.deepEqual([actual.width, actual.height], dimensions, `${item.id} decoded dimensions`);
+    assert.deepEqual([metadata.width, metadata.height], dimensions, `${item.id} provenance dimensions`);
+    assert.equal(metadata.file, `${item.id}.png`, item.id);
+    assert.equal(metadata.byteLength, bytes.length, item.id);
+    assert.equal(metadata.sha256, item.sha256, item.id);
+    // Image generation may retain alpha 254 on the visible subject; exact 255 was never an asset requirement.
+    assert.equal(actual.alphaExtrema[0], 0, `${item.id} has genuinely transparent background pixels`);
+    assert.ok(actual.alphaExtrema[1] >= 250, `${item.id} has a near-opaque visible subject`);
+    assert.ok(actual.transparentPixels > 0 && actual.transparentPixels < item.width * item.height, item.id);
+    assert.deepEqual(metadata.alphaExtrema, actual.alphaExtrema, `${item.id} provenance alpha range`);
+    assert.equal(metadata.transparentPixels, actual.transparentPixels, `${item.id} provenance transparency count`);
+    assert.ok(html.includes(`data:image/png;base64,${bytes.toString('base64')}`), `${item.id} is available offline without bitmap edits`);
+  }
+});
+
+test('offline build includes four watch skins, exactly three stages and the two dial shutters', () => {
   const runtime = runtimeScripts[0][2];
   for (const watch of WATCHES) assert.ok(runtime.includes(`id: '${watch.id}'`), watch.id);
   for (const mode of MODES) assert.ok(runtime.includes(`id: '${mode.id}'`), mode.id);
   assert.match(html, /id=["']omni-app["'][^>]*data-mode=["']projection["'][^>]*data-watch=["']original["']/);
   assert.match(css, /\.watch-case\s*\{/);
   for (const id of ['recalibrated', 'ultimatrix', 'omniverse']) assert.ok(css.includes(`[data-watch=${id}]`), `${id} skin CSS`);
-  for (const id of ['holo-shape', 'carousel', 'dial-shape', 'archive-grid']) assert.ok(html.includes(`id="${id}"`), `${id} stage`);
+  for (const id of ['holo-shape', 'carousel', 'dial-shape', 'dial-previous', 'dial-shutter-a', 'dial-shutter-b']) assert.ok(html.includes(`id="${id}"`), `${id} stage`);
   assert.ok(css.includes('[data-mode=carousel]'));
   assert.ok(css.includes('[data-mode=dial]'));
-  assert.ok(css.includes('[data-mode=archive]'));
+  assert.doesNotMatch(html, /id=["']archive-grid["']|data-mode=["']archive["']/);
+  assert.doesNotMatch(css, /\[data-mode=["']?archive\b|\.archive-(?:grid|card)\b/);
+  assert.doesNotMatch(app, /archive-grid|renderArchive/);
 });
 
 function functionSection(first, next) {
@@ -84,11 +254,109 @@ function functionSection(first, next) {
   return app.slice(start, end);
 }
 function node(tag, namespaceURI = null) {
-  return { tag, namespaceURI, children: [], attributes: {}, dataset: {}, className: '', textContent: '',
-    style: { setProperty() {} },
-    setAttribute(name, value) { this.attributes[name] = value; },
-    append(...children) { this.children.push(...children); },
-    replaceChildren(...children) { this.children = children; },
+  const result = { tag, namespaceURI, children: [], attributes: {}, dataset: {}, className: '', textContent: '', hidden: false,
+    style: { setProperty(name, value) { this[name] = String(value); }, getPropertyValue(name) { return this[name] || ''; } },
+    setAttribute(name, value) { this.attributes[name] = String(value); if (name === 'class') this.className = String(value); },
+    getAttribute(name) { return this.attributes[name]; },
+    append(...children) { for (const child of children) { child.parentNode = this; this.children.push(child); } },
+    replaceChildren(...children) { this.children = []; this.append(...children); },
+    matches(selector) {
+      return selector.split(',').some(part => {
+        part = part.trim();
+        if (part.startsWith('.')) return this.className.split(/\s+/).includes(part.slice(1));
+        if (part.startsWith('#')) return this.id === part.slice(1);
+        const attribute = part.match(/^\[([^=\]]+)(?:=["']([^"']*)["'])?\]$/);
+        if (attribute) {
+          const key = attribute[1].startsWith('data-') ? attribute[1].slice(5).replace(/-([a-z])/g, (_, letter) => letter.toUpperCase()) : null;
+          const value = key ? this.dataset[key] : this.attributes[attribute[1]];
+          return attribute[2] === undefined ? value !== undefined : value === attribute[2];
+        }
+        return this.tag === part;
+      });
+    },
+    closest(selector) { return this.matches(selector) ? this : this.parentNode?.closest(selector) || null; },
+    querySelectorAll(selector) { return this.children.flatMap(child => [...(child.matches(selector) ? [child] : []), ...child.querySelectorAll(selector)]); },
+    querySelector(selector) { return this.querySelectorAll(selector)[0] || null; },
+    focus() { this.onFocus?.(this); },
+  };
+  result.classList = {
+    contains: name => result.className.split(/\s+/).includes(name),
+    add(...names) { result.className = [...new Set([...result.className.split(/\s+/).filter(Boolean), ...names])].join(' '); },
+    remove(...names) { result.className = result.className.split(/\s+/).filter(name => !names.includes(name)).join(' '); },
+    toggle(name, force) { const add = force === undefined ? !this.contains(name) : force; if (add) this.add(name); else this.remove(name); return add; },
+  };
+  return result;
+}
+
+// Execute the actual app, using controlled browser interfaces to test state and cancellation.
+// Explicit rectangle fixtures below test coordinate handling, not browser layout or painted pixels.
+function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {} } = {}) {
+  let now = 1000, serial = 0;
+  const timers = new Map(), frames = new Map(), animations = [], elements = new Map(), anonymous = [];
+  const rectangles = new Map(Object.entries(rects)), observers = [];
+  const document = { activeElement: null };
+  const makeNode = (tag, namespace = null) => {
+    const result = node(tag, namespace), listeners = new Map();
+    result.onFocus = value => { document.activeElement = value; };
+    result.addEventListener = (type, fn, options = {}) => { if (!listeners.has(type)) listeners.set(type, []); listeners.get(type).push({ fn, signal: options.signal }); };
+    result.emit = (type, extra = {}) => {
+      const event = { target: result, preventDefault() { this.defaultPrevented = true; }, isTrusted: true, ...extra };
+      for (const { fn, signal } of listeners.get(type) || []) if (!signal?.aborted) fn(event);
+    };
+    result.animate = (keyframes, options) => {
+      const handle = { node: result, keyframes, options, cancelled: false, finished: new Promise(() => {}), cancel() { this.cancelled = true; } };
+      animations.push(handle); return handle;
+    };
+    result.showModal = () => { result.open = true; }; result.close = () => { result.open = false; };
+    result.getBoundingClientRect = () => rectangles.get(result.id) || { left: 0, top: 0, right: 500, bottom: 500 };
+    return result;
+  };
+  for (const match of read('preview.shell.html').matchAll(/<([a-z][\w-]*)\b([^>]*)>/gi)) {
+    const result = makeNode(match[1].toLowerCase()), id = match[2].match(/\bid=["']([^"']+)["']/)?.[1];
+    result.className = match[2].match(/\bclass=["']([^"']+)["']/)?.[1] || '';
+    for (const attribute of match[2].matchAll(/\bdata-([\w-]+)=["']([^"']*)["']/g)) result.dataset[attribute[1].replace(/-([a-z])/g, (_, letter) => letter.toUpperCase())] = attribute[2];
+    if (id) { result.id = id; elements.set(id, result); } else anonymous.push(result);
+  }
+  document.createElement = tag => makeNode(tag);
+  document.createElementNS = (namespace, tag) => makeNode(tag, namespace);
+  document.getElementById = id => elements.get(id) || null;
+  document.querySelector = selector => [...elements.values(), ...anonymous].find(value => value.matches(selector)) || null;
+  const fixture = [...sourceCatalog.forms.filter(form => form.asset).slice(0, 12), sourceCatalog.forms.find(form => !form.asset)];
+  elements.get('catalog-data').textContent = JSON.stringify({ ...sourceCatalog, forms: fixture });
+  elements.get('stage').clientWidth = 390;
+  let saved = JSON.stringify({ mode, watch: 'original', selectedId: fixture[0].id, reducedMotion });
+  const window = makeNode('window'), systemMotion = makeNode('media'); window.parent = window; systemMotion.matches = systemReduced;
+  const context = vm.createContext({ document, window, matchMedia: () => systemMotion, AbortController,
+    localStorage: { getItem: () => saved, setItem: (_, value) => { saved = value; } },
+    location: { origin: 'null' }, navigator: { clipboard: { writeText: async () => {} } },
+    performance: { now: () => now }, Date: { now: () => now },
+    setTimeout(fn, delay) { const id = ++serial; timers.set(id, { fn, due: now + delay }); return id; }, clearTimeout: id => timers.delete(id),
+    requestAnimationFrame(fn) { const id = ++serial; frames.set(id, fn); return id; }, cancelAnimationFrame: id => frames.delete(id),
+    ResizeObserver: class {
+      constructor(callback) { this.callback = callback; this.targets = new Set(); this.disconnected = false; observers.push(this); }
+      observe(target) { this.targets.add(target); }
+      disconnect() { this.targets.clear(); this.disconnected = true; }
+    },
+  });
+  const core = read('core.js').replace(/^export /gm, '');
+  vm.runInContext(`(() => { ${core}\n${app.replace(/^import[^\n]+\n/, '')}\n})();`, context);
+  const advance = ms => {
+    const end = now + ms;
+    for (;;) {
+      const next = [...timers.entries()].filter(([, timer]) => timer.due <= end).sort((a, b) => a[1].due - b[1].due)[0];
+      if (!next) break;
+      timers.delete(next[0]); now = next[1].due; next[1].fn();
+    }
+    now = end;
+  };
+  return { elements, fixture, animations, timers, frames, systemMotion, window, observers,
+    get preferences() { return JSON.parse(saved); },
+    advance,
+    setRect(id, rect) { rectangles.set(id, rect); },
+    resize() { for (const observer of observers) if (!observer.disconnected) observer.callback([...observer.targets].map(target => ({ target }))); },
+    frame(ms = 16) { advance(ms); const pending = [...frames.values()]; frames.clear(); for (const fn of pending) fn(now); },
+    click(id) { elements.get(id).emit('click'); },
+    action(action, value) { const control = makeNode('button'); control.dataset = { action, value }; elements.get('omni-app').emit('click', { target: control }); },
   };
 }
 
@@ -112,26 +380,151 @@ test('actual figure renderer gives missing or invalid art a labeled placeholder'
   assert.equal(valid.children[0].attributes.href, '#alien-heatblast');
 });
 
-test('actual animation policy honors manual and system reduced motion and cancels handles', () => {
-  const preferences = { reducedMotion: true };
-  const systemMotion = { matches: false };
-  let animations = 0, cancels = 0;
-  const animatedNode = { animate() { animations++; return { cancel() { cancels++; }, finished: new Promise(() => {}) }; } };
-  const context = vm.createContext({ preferences, systemMotion, motionHandles: [] });
-  vm.runInContext(`${functionSection('reduced', 'selectionMotion')}globalThis.animateForTest = animate; globalThis.stopForTest = stopMotion;`, context);
-  context.animateForTest(animatedNode, [], {});
-  assert.equal(animations, 0);
-  preferences.reducedMotion = false; systemMotion.matches = true;
-  context.animateForTest(animatedNode, [], {});
-  assert.equal(animations, 0);
-  systemMotion.matches = false;
-  context.animateForTest(animatedNode, [], {});
-  assert.equal(animations, 1);
-  context.stopForTest();
-  assert.equal(cancels, 1);
-  assert.equal(context.motionHandles.length, 0);
+test('manual and system reduced motion select immediately with no pending animation work', () => {
+  for (const mode of ['projection', 'carousel', 'dial']) for (const options of [{ reducedMotion: true }, { systemReduced: true }]) {
+    const h = boot({ mode, ...options }); h.click('next');
+    assert.equal(h.preferences.selectedId, h.fixture[1].id);
+    assert.equal(h.animations.length, 0);
+    assert.equal(h.frames.size, 0);
+    assert.equal(h.timers.size, 0);
+    assert.notEqual(h.elements.get('dial-shape').style.visibility, 'hidden');
+    assert.equal(h.elements.get('holo-light').hidden, mode !== 'projection');
+  }
   assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)[\s\S]*?animation:\s*none!important;transition:\s*none!important/);
   assert.match(css, /\.reduced-motion[\s\S]*?animation:\s*none!important;transition:\s*none!important/);
+});
+
+test('projection keeps its steady light after settling and hides it for missing art and other modes', () => {
+  const h = boot(), light = h.elements.get('holo-light'); assert.equal(light.hidden, false);
+  h.click('next'); h.click('next'); h.advance(1000);
+  assert.equal(h.timers.size, 0); assert.equal(light.hidden, false);
+  h.click('motion-toggle'); assert.equal(light.hidden, false);
+  for (const mode of ['carousel', 'dial']) { h.action('mode', mode); assert.equal(light.hidden, true); }
+  h.action('mode', 'projection');
+  h.elements.get('ready-only').emit('change', { target: { checked: false } });
+  h.action('select', h.fixture.at(-1).id);
+  assert.equal(light.hidden, true); assert.equal(h.elements.get('stage-notice').hidden, false);
+});
+
+test('projection anchor follows the actual offset faces of all four watch generations', () => {
+  const h = boot({ rects: {
+    stage: { left: 120, top: 220, width: 480, height: 550 },
+    'watch-screen': { left: 295, top: 560, width: 110, height: 70 },
+  } });
+  const light = h.elements.get('hologram');
+  const anchor = () => [parseFloat(light.style.left), parseFloat(light.style.top) + parseFloat(light.style.height) - 7];
+  assert.deepEqual(anchor(), [230, 375], 'stage scroll/column offset is removed from the rendered face center');
+  h.frame(901);
+  assert.equal(h.frames.size, 0, 'initial geometry tracking is bounded');
+  for (const [watch, rectangle, expected] of [
+    ['recalibrated', { left: 310, top: 568, width: 84, height: 58 }, [232, 377]],
+    ['ultimatrix', { left: 301, top: 513, width: 98, height: 70 }, [230, 328]],
+    ['omniverse', { left: 288, top: 535, width: 130, height: 62 }, [233, 346]],
+    ['original', { left: 295, top: 560, width: 110, height: 70 }, [230, 375]],
+  ]) {
+    h.setRect('watch-screen', rectangle); h.action('watch', watch);
+    assert.deepEqual(anchor(), expected, `${watch} uses its own face instead of the classic-watch center`);
+    assert.equal(h.frames.size, 1, `${watch} follows the layout transition`);
+    h.frame(901);
+    assert.equal(h.frames.size, 0, `${watch} does not retain a permanent layout loop`);
+  }
+  const settled = { ...light.style };
+  h.click('next');
+  assert.equal(h.frames.size, 0, 'changing only the alien does not start another layout follower');
+  assert.equal(light.style.top, settled.top);
+  assert.equal(light.style.height, settled.height);
+});
+
+test('projection anchor realigns on resize and follows changing perspective bounds for only 900 ms', () => {
+  const h = boot({ rects: {
+    stage: { left: 120, top: 220, width: 480, height: 550 },
+    'watch-screen': { left: 295, top: 560, width: 110, height: 70 },
+  } });
+  h.frame(901);
+  h.setRect('stage', { left: 17, top: 185, width: 356, height: 470 });
+  h.setRect('watch-screen', { left: 151, top: 459, width: 88, height: 54 });
+  h.resize();
+  const light = h.elements.get('hologram');
+  assert.equal(light.style.left, '178px');
+  assert.equal(parseFloat(light.style.top) + parseFloat(light.style.height) - 7, 301);
+  assert.equal(h.frames.size, 1);
+  h.setRect('watch-screen', { left: 164, top: 445, width: 70, height: 44 });
+  h.frame(450);
+  assert.equal(light.style.left, '182px', 'animation-frame sampling follows the moved display');
+  assert.equal(parseFloat(light.style.top) + parseFloat(light.style.height) - 7, 282);
+  assert.equal(h.frames.size, 1);
+  h.frame(451);
+  assert.equal(h.frames.size, 0);
+  const top = light.style.top;
+  h.frame(1000);
+  assert.equal(light.style.top, top, 'no permanent frame task remains after the transition');
+});
+
+test('projection anchor keeps the original layout deadline after selecting or confirming mid-transition', () => {
+  for (const action of ['next', 'confirm']) {
+    const h = boot({ rects: {
+      stage: { left: 120, top: 220, width: 480, height: 550 },
+      'watch-screen': { left: 295, top: 560, width: 110, height: 70 },
+    } });
+    const light = h.elements.get('hologram');
+    const anchor = () => [parseFloat(light.style.left), parseFloat(light.style.top) + parseFloat(light.style.height) - 7];
+    h.setRect('watch-screen', { left: 301, top: 513, width: 98, height: 70 });
+    h.action('watch', 'ultimatrix');
+    assert.deepEqual(anchor(), [230, 328]);
+    assert.equal(h.frames.size, 1);
+    h.setRect('watch-screen', { left: 309, top: 527, width: 98, height: 70 });
+    h.frame(450);
+    assert.deepEqual(anchor(), [238, 342], `${action}: the moving UA face is followed before interaction`);
+    h.click(action);
+    if (action === 'next') assert.equal(h.preferences.selectedId, h.fixture[1].id);
+    else assert.equal(h.elements.get('confirmation').hidden, false);
+    assert.equal(h.frames.size, 1, `${action}: stopMotion resumes the remaining layout follow-up`);
+    h.setRect('watch-screen', { left: 296, top: 490, width: 104, height: 64 });
+    h.frame(16);
+    assert.deepEqual(anchor(), [228, 302], `${action}: the next frame follows the continuing face movement`);
+    assert.equal(h.frames.size, 1);
+    h.frame(434);
+    assert.equal(h.frames.size, 0, `${action}: tracking ends at the original 900 ms, not 900 ms after interaction`);
+    h.click('next');
+    assert.equal(h.frames.size, 0, `${action}: later alien selections do not restart an expired layout window`);
+  }
+});
+
+test('projection anchor reduced motion aligns immediately and page exit cancels its layout follower', () => {
+  const rects = {
+    stage: { left: 17, top: 185, width: 356, height: 470 },
+    'watch-screen': { left: 151, top: 459, width: 88, height: 54 },
+  };
+  for (const options of [{ reducedMotion: true }, { systemReduced: true }]) {
+    const h = boot({ rects, ...options });
+    assert.equal(h.elements.get('hologram').style.left, '178px');
+    assert.equal(h.frames.size, 0);
+    h.setRect('watch-screen', { left: 160, top: 420, width: 70, height: 44 });
+    h.resize();
+    assert.equal(h.elements.get('hologram').style.left, '178px');
+    assert.equal(parseFloat(h.elements.get('hologram').style.top) + parseFloat(h.elements.get('hologram').style.height) - 7, 257);
+    assert.equal(h.frames.size, 0, 'resize does not animate when reduced motion is already enabled');
+  }
+  for (const interrupt of ['manual', 'system', 'mode', 'pagehide']) {
+    const h = boot({ rects });
+    h.resize();
+    assert.equal(h.frames.size, 1, interrupt);
+    const staleFrame = [...h.frames.values()][0];
+    if (interrupt === 'manual') h.click('motion-toggle');
+    if (interrupt === 'system') { h.systemMotion.matches = true; h.systemMotion.emit('change'); }
+    if (interrupt === 'mode') h.action('mode', 'dial');
+    if (interrupt === 'pagehide') h.window.emit('pagehide');
+    assert.equal(h.frames.size, 0, `${interrupt} cancels the pending geometry frame`);
+    if (interrupt === 'pagehide') {
+      assert.ok(h.observers.every(observer => observer.disconnected));
+      const before = { ...h.elements.get('hologram').style };
+      h.setRect('watch-screen', { left: 1000, top: 1000, width: 90, height: 60 });
+      staleFrame(2500); h.resize();
+      assert.equal(h.elements.get('hologram').style.left, before.left);
+      assert.equal(h.elements.get('hologram').style.top, before.top);
+      assert.equal(h.frames.size, 0, 'a stale callback cannot restart work after pagehide');
+    }
+  }
 });
 
 test('rebuilding watch and mode controls restores the active replacement button', () => {
@@ -161,26 +554,91 @@ test('rebuilding watch and mode controls restores the active replacement button'
   }
 });
 
-test('archive selection updates existing cards so their flip transitions can run', () => {
-  const grid = node('div');
-  const visible = [{ id: 'heatblast', en: 'Heatblast', asset: 'alien-heatblast' }, { id: 'wildmutt', en: 'Wildmutt', asset: 'alien-wildmutt' }];
-  const preferences = { selectedId: 'heatblast' };
-  const context = vm.createContext({ visible, preferences, archiveSignature: '', $: () => grid,
-    document: { createElement: tag => node(tag), createElementNS: (namespace, tag) => node(tag, namespace) },
-  });
-  vm.runInContext(`${functionSection('textElement', 'hourglass')}${functionSection('renderArchive', 'renderStage')}globalThis.archiveForTest = renderArchive;`, context);
-  context.archiveForTest();
-  const originalCards = [...grid.children];
-  preferences.selectedId = 'wildmutt';
-  context.archiveForTest();
-  assert.equal(grid.children[0], originalCards[0]);
-  assert.equal(grid.children[1], originalCards[1]);
-  assert.equal(grid.children[0].attributes['aria-pressed'], 'false');
-  assert.equal(grid.children[1].attributes['aria-pressed'], 'true');
-  context.visible = [visible[1]];
-  context.archiveForTest();
-  assert.equal(grid.children.length, 1);
-  assert.notEqual(grid.children[0], originalCards[1]);
+test('dial keeps the old figure until covered and rapid selection cannot reveal a stale transition', () => {
+  const h = boot({ mode: 'dial' }), previous = h.elements.get('dial-previous'), current = h.elements.get('dial-shape');
+  h.click('next');
+  assert.equal(previous.querySelector('use').attributes.href, `#${h.fixture[0].asset}`);
+  assert.equal(previous.hidden, false);
+  assert.equal(current.style.visibility, 'hidden');
+  assert.equal(h.animations.filter(handle => ['dial-shutter-a', 'dial-shutter-b'].includes(handle.node.id)).length, 2);
+  const staleCallbacks = [...h.timers.values()].map(timer => timer.fn);
+  h.advance(100); h.click('next');
+  assert.ok(h.animations.slice(0, 2).every(handle => handle.cancelled));
+  for (const fn of staleCallbacks) fn();
+  assert.equal(previous.hidden, false, 'an old completion cannot uncover the new transition early');
+  assert.equal(previous.querySelector('use').attributes.href, `#${h.fixture[0].asset}`);
+  h.advance(300); assert.equal(current.style.visibility, 'hidden');
+  h.advance(100);
+  assert.equal(previous.hidden, true); assert.equal(current.style.visibility, '');
+  assert.equal(current.querySelector('use').attributes.href, `#${h.fixture[2].asset}`);
+  h.advance(500); assert.equal(h.timers.size, 0);
+  assert.equal(h.elements.get('omni-app').classList.contains('dial-transition'), false);
+});
+
+test('mode, filter, reduced-motion and page-exit interrupts leave the latest selection settled', () => {
+  for (const interrupt of ['mode', 'filter', 'manual', 'system', 'pagehide']) {
+    const h = boot({ mode: 'dial' }); h.click('next');
+    const staleCallbacks = [...h.timers.values()].map(timer => timer.fn);
+    if (interrupt === 'mode') h.action('mode', 'projection');
+    if (interrupt === 'filter') h.elements.get('search').emit('input', { target: { value: 'no matching form 987654321' } });
+    if (interrupt === 'manual') h.click('motion-toggle');
+    if (interrupt === 'system') { h.systemMotion.matches = true; h.systemMotion.emit('change'); }
+    if (interrupt === 'pagehide') h.window.emit('pagehide');
+    for (const fn of staleCallbacks) fn();
+    h.advance(1000);
+    assert.equal(h.elements.get('dial-previous').hidden, true, interrupt);
+    assert.equal(h.elements.get('dial-shape').style.visibility, '', interrupt);
+    assert.equal(h.timers.size, 0, interrupt); assert.equal(h.frames.size, 0, interrupt);
+    if (interrupt === 'filter') {
+      assert.equal(h.elements.get('confirm').disabled, true);
+      assert.equal(h.elements.get('dial-shape').querySelector('use'), null);
+      assert.equal(h.elements.get('empty-state').hidden, false);
+    } else assert.equal(h.elements.get('dial-shape').querySelector('use').attributes.href, `#${h.fixture[1].asset}`, interrupt);
+  }
+});
+
+test('ring reuses slots while the incoming form moves larger and above the rear forms', () => {
+  const h = boot({ mode: 'carousel' }), carousel = h.elements.get('carousel');
+  const slots = [...carousel.children], incoming = carousel.querySelector(`[data-value="${h.fixture[1].id}"]`);
+  const before = { transform: incoming.style.transform, zIndex: Number(incoming.style.zIndex), opacity: Number(incoming.style.opacity) };
+  h.click('next'); h.frame(160);
+  assert.ok(carousel.children.every((slot, index) => slot === slots[index]));
+  assert.equal(carousel.querySelector(`[data-value="${h.fixture[1].id}"]`), incoming);
+  assert.notEqual(incoming.style.transform, before.transform);
+  assert.ok(Number(incoming.style.zIndex) > before.zIndex);
+  assert.ok(Number(incoming.style.opacity) > before.opacity);
+  h.frame(600); h.advance(50);
+  assert.equal(incoming.attributes['aria-pressed'], 'true');
+  assert.ok(incoming.classList.contains('is-front'));
+  const rear = carousel.children.find(slot => slot.classList.contains('is-back'));
+  assert.ok(Number(incoming.style.zIndex) > Number(rear.style.zIndex));
+  assert.equal(carousel.style.transform, undefined, 'the parent plane is not rotated');
+  assert.equal(h.frames.size, 0);
+  h.click('next'); h.click('motion-toggle');
+  assert.equal(h.frames.size, 0); assert.equal(h.timers.size, 0);
+});
+
+test('keyboard navigation works from a ring button and a swipe is not overwritten by its follow-up click', () => {
+  const h = boot({ mode: 'carousel' }), stage = h.elements.get('stage');
+  const selected = h.elements.get('carousel').querySelector(`[data-value="${h.fixture[0].id}"]`);
+  selected.focus(); stage.emit('keydown', { target: selected, key: 'ArrowRight' });
+  assert.equal(h.preferences.selectedId, h.fixture[1].id);
+  stage.emit('pointerdown', { pointerId: 1, clientX: 250, clientY: 80, button: 0, pointerType: 'touch' });
+  stage.emit('pointerup', { pointerId: 1, clientX: 150, clientY: 83 });
+  assert.equal(h.preferences.selectedId, h.fixture[2].id);
+  h.action('select', h.fixture[0].id);
+  assert.equal(h.preferences.selectedId, h.fixture[2].id);
+  h.advance(400); h.action('select', h.fixture[0].id);
+  assert.equal(h.preferences.selectedId, h.fixture[0].id);
+});
+
+test('unsupported shutter animation degrades to an immediate visible selection', () => {
+  const h = boot({ mode: 'dial' }); h.elements.get('dial-shutter-a').animate = undefined;
+  h.click('next');
+  assert.equal(h.elements.get('dial-shape').querySelector('use').attributes.href, `#${h.fixture[1].asset}`);
+  assert.equal(h.elements.get('dial-shape').style.visibility, '');
+  assert.equal(h.elements.get('omni-app').classList.contains('selection-transition'), false);
+  assert.equal(h.timers.size, 0);
 });
 
 test('keyboard and mobile layout affordances remain in the offline build', () => {

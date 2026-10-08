@@ -1,6 +1,6 @@
 """Import a verified catalogue snapshot; never promote missing or unreviewed artwork."""
 from pathlib import Path
-import sys,json,re,hashlib,shutil
+import sys,json,re,hashlib,shutil,subprocess
 source=Path(sys.argv[1]).resolve()
 root=Path(__file__).resolve().parents[1]
 out=root/'assets';out.mkdir(exist_ok=True)
@@ -27,3 +27,5 @@ assets=[{key:entry[key] for key in ['formId','url','pageUrl','rights','contentTy
 provenance={'source':'Reviewed Ben10 cosmic-selector archive snapshot','catalogSha256':hashlib.sha256((source/'catalog.json').read_bytes()).hexdigest(),'svgSha256':hashlib.sha256(svg).hexdigest(),'coverage':catalog['coverage'],'assets':assets,'notes':['Community-reposted images are not publisher-hosted originals.','Artwork remains copyrighted by its respective owners. No open artwork license is asserted.','Missing artwork stays missing. Silhouettes use the previously verified native display cache.']}
 (out/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({'coverage':catalog['coverage'],'svgBytes':len(svg)},ensure_ascii=False))
+if (root/'scripts/fit-dial.py').exists():
+ subprocess.run([sys.executable,str(root/'scripts/fit-dial.py')],check=True)

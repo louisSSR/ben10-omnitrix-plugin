@@ -195,6 +195,9 @@ async function main() {
     await install(options);
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+// Android can expose the same script through /data/user/0 and /data/data aliases.
+// Compare canonical paths on both sides, including --preserve-symlinks-main launches.
+const entryPath = process.argv[1] ? await fs.realpath(path.resolve(process.argv[1])).catch(() => null) : null;
+if (entryPath && entryPath === await fs.realpath(fileURLToPath(import.meta.url))) {
     main().catch(error => { console.error(error.message); process.exitCode = 1; });
 }

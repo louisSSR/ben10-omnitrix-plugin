@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems } from '../core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement } from '../core.js';
+import { sanitizePreferences } from '../host-adapter.js';
 
 const forms = Object.freeze([
   Object.freeze({ id: 'heatblast', name: '火焰人', en: 'Heatblast', group: 'os', asset: 'alien-heatblast', aliases: ['烈焰人', 'Pyronite'] }),
@@ -11,11 +12,20 @@ const forms = Object.freeze([
 const ids = rows => rows.map(row => row.id);
 const defaults = { watch: 'original', mode: 'projection', reducedMotion: false, selectedId: 'heatblast' };
 
-test('four watch generations and three summon modes plus archive have unique IDs', () => {
+test('four watch generations and exactly three summon modes have unique IDs', () => {
   assert.deepEqual(ids(WATCHES), ['original', 'recalibrated', 'ultimatrix', 'omniverse']);
-  assert.deepEqual(ids(MODES), ['projection', 'carousel', 'dial', 'archive']);
+  assert.deepEqual(ids(MODES), ['projection', 'carousel', 'dial']);
   assert.equal(new Set(ids(WATCHES)).size, WATCHES.length);
   assert.equal(new Set(ids(MODES)).size, MODES.length);
+});
+
+test('legacy archive preferences recover to projection without losing the saved watch or form', () => {
+  const legacy = Object.freeze({ watch: 'omniverse', mode: 'archive', selectedId: 'nanomech-ua', reducedMotion: true });
+  const expected = { ...legacy, mode: 'projection' };
+  assert.deepEqual(normalizePreferences(legacy, forms), expected);
+  assert.deepEqual(sanitizePreferences(legacy), expected);
+  assert.deepEqual(normalizePreferences(sanitizePreferences(legacy), forms), expected);
+  assert.equal(legacy.mode, 'archive');
 });
 
 test('unusable persisted preferences recover without creating an invalid selection', () => {
@@ -69,12 +79,12 @@ test('selection wraps in both directions including large and fractional steps', 
   assert.equal(stepSelection([forms[0]], 'heatblast', -19), forms[0]);
 });
 
-test('ring starts with selection, wraps, and displays eight distinct forms', () => {
+test('ring keeps the selection between its neighbors and wraps eight distinct forms', () => {
   const many = Array.from({ length: 12 }, (_, n) => ({ id: `form-${n}` }));
   const ring = ringItems(many, 'form-10');
-  assert.deepEqual(ids(ring), ['form-10', 'form-11', 'form-0', 'form-1', 'form-2', 'form-3', 'form-4', 'form-5']);
+  assert.deepEqual(ids(ring), ['form-6', 'form-7', 'form-8', 'form-9', 'form-10', 'form-11', 'form-0', 'form-1']);
   assert.equal(new Set(ids(ring)).size, 8);
-  assert.deepEqual(ids(ringItems(many, 'form-11', 3)), ['form-11', 'form-0', 'form-1']);
+  assert.deepEqual(ids(ringItems(many, 'form-11', 3)), ['form-10', 'form-11', 'form-0']);
 });
 
 test('small rings never duplicate forms and absent selections recover to the first form', () => {
@@ -83,8 +93,33 @@ test('small rings never duplicate forms and absent selections recover to the fir
     const ring = ringItems(small, small.at(-1).id);
     assert.equal(ring.length, length);
     assert.equal(new Set(ids(ring)).size, length);
-    assert.equal(ring[0], small.at(-1));
-    assert.equal(ringItems(small, 'removed')[0], small[0]);
+    assert.equal(ring[Math.floor(length / 2)], small.at(-1));
+    assert.equal(ringItems(small, 'removed')[Math.floor(length / 2)], small[0]);
   }
   assert.deepEqual(ringItems([], 'none'), []);
+});
+
+test('orbit depth makes the front larger, brighter and above the back on desktop and mobile', () => {
+  for (const width of [320, 390, 720, 1024]) {
+    const front = ringPlacement(0, width), side = ringPlacement(Math.PI / 2, width), back = ringPlacement(Math.PI, width);
+    for (const property of ['scale', 'opacity', 'zIndex', 'z', 'y']) {
+      assert.ok(front[property] > side[property] && side[property] > back[property], `${property} follows depth at ${width}px`);
+    }
+    assert.ok(Math.abs(side.x) < width / 2, 'side position stays inside the measured stage');
+    const opposite = ringPlacement(-Math.PI / 2, width);
+    assert.ok(Math.abs(side.x + opposite.x) < 1e-9);
+    assert.equal(side.scale, opposite.scale);
+    assert.ok(front.opacity <= 1 && back.opacity > 0);
+  }
+});
+
+test('moving a slot from back to front changes depth continuously and invalid measurements stay finite', () => {
+  const poses = [Math.PI, Math.PI * .75, Math.PI * .5, Math.PI * .25, 0].map(angle => ringPlacement(angle, 390));
+  for (let n = 1; n < poses.length; n++) {
+    assert.ok(poses[n].scale > poses[n - 1].scale);
+    assert.ok(poses[n].zIndex > poses[n - 1].zIndex);
+  }
+  for (const value of [undefined, NaN, Infinity, -Infinity]) {
+    assert.ok(Object.values(ringPlacement(value, value)).every(Number.isFinite));
+  }
 });

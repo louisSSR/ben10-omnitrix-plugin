@@ -1,12 +1,42 @@
 {
-  "builtAt": "2026-10-08T17:13:21.138Z",
-  "sha256": "ba8ba05d2271fd9977a60c84f1a11fda762709fe7930317b2ee954da0661ad84",
-  "bytes": 1087204,
+  "builtAt": "2026-10-08T19:12:14.040Z",
+  "sha256": "2c017042b55a15e258ee3864085b950820d901011e930f9144356c48fe0500d0",
+  "bytes": 6178620,
   "coverage": {
     "total": 225,
     "reviewed": 98,
     "missing": 127
   },
+  "watchArt": [
+    {
+      "id": "original",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1012665,
+      "sha256": "2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4"
+    },
+    {
+      "id": "recalibrated",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 761232,
+      "sha256": "d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2"
+    },
+    {
+      "id": "ultimatrix",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1223650,
+      "sha256": "871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197"
+    },
+    {
+      "id": "omniverse",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 797286,
+      "sha256": "6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd"
+    }
+  ],
   "standalone": true,
   "browserVerified": false,
   "realHostVerified": false
