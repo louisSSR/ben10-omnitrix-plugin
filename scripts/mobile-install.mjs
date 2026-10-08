@@ -10,7 +10,7 @@ export const REPOSITORY = 'louisSSR/ben10-omnitrix-plugin';
 export const RUNTIME_FILES = Object.freeze(['extension.js', 'host-adapter.js', 'extension.css', 'preview.html', 'manifest.json']);
 const DEFAULT_ROOT = '/data/user/0/com.jm.sillydroid/files/android-tavern/data/server';
 const BACKUPS = '.ben10-omnitrix-backups';
-const FILE_LIMIT = 32 * 1024 * 1024;
+const FILE_LIMIT = 64 * 1024 * 1024;
 const sha256 = value => createHash('sha256').update(value).digest('hex');
 const gitBlob = value => createHash('sha1').update(`blob ${value.length}\0`).update(value).digest('hex');
 

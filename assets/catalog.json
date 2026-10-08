@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 121,
-    "missing": 103
+    "reviewed": 156,
+    "missing": 68
   },
   "forms": [
     {
@@ -2154,10 +2154,21 @@
       "group": "fusion",
       "appearance": "The End of an Era",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-humungoopsaur",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Humungoopsaur"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.pngegg.com/es/png-wsfvy"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5073,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.714683,
+        "visiblePixels": 781572
+      }
     },
     {
       "id": "eon-rat",
@@ -2872,11 +2883,22 @@
       "group": "reboot",
       "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-jetray",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6207,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.401553,
+        "visiblePixels": 388879
+      }
     },
     {
       "id": "reboot-way-big",
@@ -2885,11 +2907,22 @@
       "group": "reboot",
       "appearance": "Animated reboot/current Ben; introduced in season 4. This is a roster candidate, not a visually verified redesign.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-way-big",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6928,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.255631,
+        "visiblePixels": 136546
+      }
     },
     {
       "id": "reboot-surge",
@@ -2898,11 +2931,22 @@
       "group": "reboot",
       "appearance": "Animated reboot/current Ben; introduced in season 5. This is a roster candidate, not a visually verified redesign.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-surge",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7509,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.158602,
+        "visiblePixels": 48377
+      }
     },
     {
       "id": "reboot-alien-x",
@@ -2963,11 +3007,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-buzzshock",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.6166,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.410862,
+        "visiblePixels": 918343
+      }
     },
     {
       "id": "reboot-chromastone",
@@ -3002,11 +3057,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-spidermonkey",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.575,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.512908,
+        "visiblePixels": 630411
+      }
     },
     {
       "id": "reboot-omni-enhanced-cannonbolt",
@@ -3015,12 +3081,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-cannonbolt",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6632,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.311667,
+        "visiblePixels": 728489
+      }
     },
     {
       "id": "reboot-omni-enhanced-diamondhead",
@@ -3029,12 +3106,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-diamondhead",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6938,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.253833,
+        "visiblePixels": 391511
+      }
     },
     {
       "id": "reboot-omni-enhanced-four-arms",
@@ -3043,12 +3131,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-four-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6512,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.335918,
+        "visiblePixels": 697745
+      }
     },
     {
       "id": "reboot-omni-enhanced-grey-matter",
@@ -3057,12 +3156,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-grey-matter",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.728,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.194983,
+        "visiblePixels": 507027
+      }
     },
     {
       "id": "reboot-omni-enhanced-heatblast",
@@ -3147,12 +3257,23 @@
       "group": "enhanced",
       "appearance": "Animated reboot season 2; actually listed as an Omni-Enhanced transformation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-enhanced-wildvine",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Enhanced_Forms",
         "https://www.youtube.com/watch?v=jWtQMgGnQ-E"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.781,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.113853,
+        "visiblePixels": 212527
+      }
     },
     {
       "id": "reboot-omni-enhanced-xlr8",
@@ -3187,12 +3308,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in The Greatest Lake.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-cannonbolt",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.733,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.186869,
+        "visiblePixels": 53934
+      }
     },
     {
       "id": "reboot-omni-kix-diamondhead",
@@ -3201,12 +3333,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Mud on the Run.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-diamondhead",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6223,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.397849,
+        "visiblePixels": 86464
+      }
     },
     {
       "id": "reboot-omni-kix-four-arms",
@@ -3215,12 +3358,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Summer Breakers.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-four-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6795,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.280247,
+        "visiblePixels": 210912
+      }
     },
     {
       "id": "reboot-omni-kix-heatblast",
@@ -3229,12 +3383,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Bon Voyage.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-heatblast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6581,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.321878,
+        "visiblePixels": 181276
+      }
     },
     {
       "id": "reboot-omni-kix-humungousaur",
@@ -3243,12 +3408,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in The Monsters in Your Head.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-humungousaur",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7126,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.220857,
+        "visiblePixels": 115127
+      }
     },
     {
       "id": "reboot-omni-kix-jetray",
@@ -3257,12 +3433,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Ben 10 Versus the Universe: The Movie.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-jetray",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5906,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.472868,
+        "visiblePixels": 57436
+      }
     },
     {
       "id": "reboot-omni-kix-rath",
@@ -3271,12 +3458,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Falls, Falls, Falls.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-rath",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.7549,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.152396,
+        "visiblePixels": 71148
+      }
     },
     {
       "id": "reboot-omni-kix-shock-rock",
@@ -3285,12 +3483,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Tokyo Fun, Part 2: Slamming It Up.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-shock-rock",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6781,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.282991,
+        "visiblePixels": 66532
+      }
     },
     {
       "id": "reboot-omni-kix-slapback",
@@ -3299,12 +3508,23 @@
       "group": "kix",
       "appearance": "Animated reboot; first used in Bottomless Ben.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-kix-slapback",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_(Reboot)",
         "https://ben10.fandom.com/wiki/Omni-Kix_Armors",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6875,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.265337,
+        "visiblePixels": 69553
+      }
     },
     {
       "id": "reboot-omni-kix-xlr8",
@@ -3338,12 +3558,23 @@
       "group": "naut",
       "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-naut-heatblast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5888,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.477372,
+        "visiblePixels": 56912
+      }
     },
     {
       "id": "reboot-omni-naut-humungousaur",
@@ -3352,12 +3583,23 @@
       "group": "naut",
       "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-naut-humungousaur",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.75,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.159856,
+        "visiblePixels": 48171
+      }
     },
     {
       "id": "reboot-omni-naut-jetray",
@@ -3366,12 +3608,23 @@
       "group": "naut",
       "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-naut-jetray",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5439,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.599265,
+        "visiblePixels": 136435
+      }
     },
     {
       "id": "reboot-omni-naut-shock-rock",
@@ -3380,12 +3633,23 @@
       "group": "naut",
       "appearance": "Ben 10 Versus the Universe: The Movie; one of only four alien Omni-Naut forms actually shown.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-omni-naut-shock-rock",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omni-Naut_Armors",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray",
         "https://www.youtube.com/watch?v=zE6afSCF5sA"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6552,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.327715,
+        "visiblePixels": 81399
+      }
     },
     {
       "id": "reboot-grey-arms",
@@ -3430,10 +3694,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in Introducing Kevin 11.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-bashmouth",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.8056,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.079812,
+        "visiblePixels": 103526
+      }
     },
     {
       "id": "reboot-bootleg",
@@ -3490,10 +3765,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in King of the Castle.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-dark-matter",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6876,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.265139,
+        "visiblePixels": 62653
+      }
     },
     {
       "id": "reboot-hot-shot",
@@ -3526,11 +3812,22 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in Ben 10,010 (alternate future Kevin).",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-humungoraptor",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix",
         "https://ben10.fandom.com/wiki/Humungoraptor"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5184,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.677957,
+        "visiblePixels": 724184
+      }
     },
     {
       "id": "reboot-quad-smack",
@@ -3539,10 +3836,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in Which Watch.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-quad-smack",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.798,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.090126,
+        "visiblePixels": 95585
+      }
     },
     {
       "id": "reboot-rush",
@@ -3551,10 +3859,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in Introducing Kevin 11.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-rush",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.5355,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.624378,
+        "visiblePixels": 103466
+      }
     },
     {
       "id": "reboot-skunkmoth",
@@ -3575,10 +3894,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; first used in King of the Castle.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-thornblade",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/reboot.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.726,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.198297,
+        "visiblePixels": 255618
+      }
     },
     {
       "id": "reboot-undertow",
@@ -4223,10 +4553,21 @@
       "group": "edition-variant",
       "appearance": "Omniverse",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-clockwork-ov16",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Clockwork"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/omniverse.html"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6286,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.383943,
+        "visiblePixels": 632984
+      }
     },
     {
       "id": "clockwork-ov11",
@@ -4235,10 +4576,21 @@
       "group": "edition-variant",
       "appearance": "Ben Again",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-clockwork-ov11",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Clockwork"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5682,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.5311,
+        "visiblePixels": 726513
+      }
     },
     {
       "id": "heatblast-age4",
@@ -4247,11 +4599,22 @@
       "group": "body-variant",
       "appearance": "Don't Drink the Water",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-heatblast-age4",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Heatblast_(Classic)",
         "https://ben10.fandom.com/wiki/Don%27t_Drink_the_Water"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5885,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.478166,
+        "visiblePixels": 369484
+      }
     },
     {
       "id": "heatblast-original-future",
@@ -4274,13 +4637,24 @@
       "group": "alternate",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-mad-rath",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Rath_(Classic)",
         "https://ben10.fandom.com/wiki/Power_Watch",
         "https://ben10.fandom.com/wiki/Mad_Ben",
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/rath/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-character-art",
+      "dialFit": {
+        "scale": 0.5728,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.518727,
+        "visiblePixels": 644461
+      }
     },
     {
       "id": "mad-diamondhead",
@@ -4289,13 +4663,24 @@
       "group": "alternate",
       "appearance": "It's a Mad, Mad, Mad Ben World: Part 1",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-mad-diamondhead",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
         "https://ben10.fandom.com/wiki/Power_Watch",
         "https://ben10.fandom.com/wiki/Mad_Ben",
         "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_1"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/diamondhead/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "community-reproduction-of-character-art",
+      "dialFit": {
+        "scale": 0.6052,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.4375,
+        "visiblePixels": 72247
+      }
     },
     {
       "id": "mad-upchuck-perk",

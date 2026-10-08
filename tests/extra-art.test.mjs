@@ -16,7 +16,7 @@ const writeJson = (file, value) => writeFileSync(file, JSON.stringify(value), 'u
 
 // A tiny valid PNG with transparent margins, faint pixels and alpha below 255.
 // Its geometry is independent of any production character or generated image.
-function fixturePng() {
+function fixturePng({ indexed = false, transparent = true } = {}) {
   const chunk = (type, bytes) => {
     const body = Buffer.concat([Buffer.from(type), bytes]);
     let crc = 0xffffffff;
@@ -30,7 +30,15 @@ function fixturePng() {
   };
   const width = 8, height = 12, header = Buffer.alloc(13);
   header.writeUInt32BE(width, 0); header.writeUInt32BE(height, 4);
-  header[8] = 8; header[9] = 6;
+  header[8] = 8; header[9] = indexed ? 3 : 6;
+  if (indexed) {
+    const pixels = Buffer.alloc((width + 1) * height);
+    for (let y = 2; y < 10; y++) for (let x = 2; x < 6; x++) pixels[y * (width + 1) + x + 1] = 1;
+    return Buffer.concat([Buffer.from('89504e470d0a1a0a', 'hex'), chunk('IHDR', header),
+      chunk('PLTE', Buffer.from([23, 200, 71, 11, 22, 33])),
+      ...(transparent ? [chunk('tRNS', Buffer.from([0, 254]))] : []),
+      chunk('IDAT', deflateSync(pixels)), chunk('IEND', Buffer.alloc(0))]);
+  }
   const pixels = Buffer.alloc((width * 4 + 1) * height);
   for (let y = 2; y < 10; y++) for (let x = 2; x < 6; x++) pixels[y * (width * 4 + 1) + 1 + x * 4 + 3] = 254;
   pixels[(width * 4 + 1) + 1 + 4 + 3] = 1;
@@ -129,6 +137,23 @@ test('reviewed supplement merges one body, provenance and old selected ID withou
   assert.equal((result.svg.match(/id="alien-target"/g) || []).length, 1);
   assert.equal(result.provenance.assets.filter(asset => asset.formId === 'target').length, 1);
   assert.equal(result.provenance.svgSha256, digest(Buffer.from(result.svg)));
+});
+
+test('palette transparency remains byte-exact and yields a body fit; an opaque palette is rejected', t => {
+  const f = fixture(t), file = path.join(f.dir, f.plan.assets[0].maskFile);
+  const indexed = fixturePng({ indexed: true });
+  writeFileSync(file, indexed); f.plan.assets[0].maskSha256 = digest(indexed); savePlan(f);
+  assert.ok(merged(f).svg.includes(indexed.toString('base64')));
+  const result = runPython(f, [path.join(f.dir, 'scripts/extra_art.py')]);
+  assert.equal(result.status, 0, result.stderr);
+  assert.deepEqual(readFileSync(file), indexed);
+  const fit = readJson(path.join(f.dir, 'assets/dial-fit.json')).fits.target;
+  assert.equal(fit.visiblePixels, 32);
+  assert.ok(fit.diamondExtent * fit.scale <= .87);
+  const opaque = fixturePng({ indexed: true, transparent: false });
+  writeFileSync(file, opaque); f.plan.assets[0].maskSha256 = digest(opaque); savePlan(f);
+  const invalid = merge(f); reject(invalid, 'palette without alpha');
+  assert.match(invalid.stderr, /Missing alpha/);
 });
 
 for (const kind of ['source', 'mask']) {

@@ -5,7 +5,7 @@
   "css": "extension.css",
   "author": "Louis SSR",
   "homePage": "https://github.com/louisSSR/ben10-omnitrix-plugin",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "minimum_client_version": "1.18.0",
   "auto_update": false,
   "hooks": {

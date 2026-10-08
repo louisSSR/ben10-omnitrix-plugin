@@ -47,25 +47,38 @@ function rgbaPixels(png) {
   assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
   const width = png.readUInt32BE(16), height = png.readUInt32BE(20);
   assert.ok(width > 0 && width <= 8192 && height > 0 && height <= 8192);
-  assert.deepEqual([png[24], png[25], png[28]], [8, 6, 0], 'bodies use non-interlaced RGBA PNG');
+  assert.equal(png[24], 8); assert.equal(png[28], 0);
+  assert.ok([3, 6].includes(png[25]), 'bodies use RGBA or indexed transparent PNG');
+  const channels = png[25] === 3 ? 1 : 4;
+  let palette, transparency;
   const blocks = [];
   for (let offset = 8; offset < png.length;) {
     const length = png.readUInt32BE(offset), type = png.toString('ascii', offset + 4, offset + 8);
     if (type === 'IDAT') blocks.push(png.subarray(offset + 8, offset + 8 + length));
+    if (type === 'PLTE') palette = png.subarray(offset + 8, offset + 8 + length);
+    if (type === 'tRNS') transparency = png.subarray(offset + 8, offset + 8 + length);
     offset += length + 12;
   }
-  const raw = inflateSync(Buffer.concat(blocks)), stride = width * 4, pixels = Buffer.alloc(stride * height);
+  const raw = inflateSync(Buffer.concat(blocks)), stride = width * channels, pixels = Buffer.alloc(stride * height);
   assert.equal(raw.length, (stride + 1) * height);
   const paeth = (a, b, c) => { const p = a + b - c, distances = [Math.abs(p - a), Math.abs(p - b), Math.abs(p - c)]; return distances[0] <= distances[1] && distances[0] <= distances[2] ? a : distances[1] <= distances[2] ? b : c; };
   for (let y = 0; y < height; y++) {
     const filter = raw[y * (stride + 1)]; assert.ok(filter <= 4);
     for (let x = 0; x < stride; x++) {
-      const index = y * stride + x, left = x >= 4 ? pixels[index - 4] : 0, up = y ? pixels[index - stride] : 0, diagonal = y && x >= 4 ? pixels[index - stride - 4] : 0;
+      const index = y * stride + x, left = x >= channels ? pixels[index - channels] : 0, up = y ? pixels[index - stride] : 0, diagonal = y && x >= channels ? pixels[index - stride - channels] : 0;
       const prediction = [0, left, up, Math.floor((left + up) / 2), paeth(left, up, diagonal)][filter];
       pixels[index] = (raw[y * (stride + 1) + 1 + x] + prediction) & 255;
     }
   }
-  return { pixels, width, height };
+  if (channels === 4) return { pixels, width, height };
+  assert.ok(palette?.length && palette.length % 3 === 0 && transparency?.length);
+  const rgba = Buffer.alloc(width * height * 4);
+  for (let i = 0; i < pixels.length; i++) {
+    const index = pixels[i]; assert.ok(index * 3 + 2 < palette.length);
+    palette.copy(rgba, i * 4, index * 3, index * 3 + 3);
+    rgba[i * 4 + 3] = transparency[index] ?? 255;
+  }
+  return { pixels: rgba, width, height };
 }
 
 // Pillow only decodes the original AVIF bytes. Filter and envelope verification

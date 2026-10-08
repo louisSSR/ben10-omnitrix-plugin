@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "654d37f4672202fc8240f1c5cfbac85945046021bcd37c1bcad9333181697c49",
-  "shapeCount": 121,
+  "sourceSvgSha256": "2b1d7ef9493de7fe8d7ba0492380512455f9c4bfb4f67f9c5dfb746214534af5",
+  "shapeCount": 156,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -508,6 +508,12 @@
       "diamondExtent": 1.55,
       "visiblePixels": 16445
     },
+    "humungoopsaur": {
+      "scale": 0.5073,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.714683,
+      "visiblePixels": 781572
+    },
     "bad-ghostfreak": {
       "scale": 0.8847,
       "method": "native-png-alpha-diamond-envelope",
@@ -646,6 +652,60 @@
       "diamondExtent": 1.653873,
       "visiblePixels": 396312
     },
+    "reboot-jetray": {
+      "scale": 0.6207,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.401553,
+      "visiblePixels": 388879
+    },
+    "reboot-way-big": {
+      "scale": 0.6928,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.255631,
+      "visiblePixels": 136546
+    },
+    "reboot-surge": {
+      "scale": 0.7509,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.158602,
+      "visiblePixels": 48377
+    },
+    "reboot-buzzshock": {
+      "scale": 0.6166,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.410862,
+      "visiblePixels": 918343
+    },
+    "reboot-spidermonkey": {
+      "scale": 0.575,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.512908,
+      "visiblePixels": 630411
+    },
+    "reboot-omni-enhanced-cannonbolt": {
+      "scale": 0.6632,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.311667,
+      "visiblePixels": 728489
+    },
+    "reboot-omni-enhanced-diamondhead": {
+      "scale": 0.6938,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.253833,
+      "visiblePixels": 391511
+    },
+    "reboot-omni-enhanced-four-arms": {
+      "scale": 0.6512,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.335918,
+      "visiblePixels": 697745
+    },
+    "reboot-omni-enhanced-grey-matter": {
+      "scale": 0.728,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.194983,
+      "visiblePixels": 507027
+    },
     "reboot-omni-enhanced-heatblast": {
       "scale": 0.5857,
       "method": "native-png-alpha-diamond-envelope",
@@ -664,17 +724,107 @@
       "diamondExtent": 1.630403,
       "visiblePixels": 510402
     },
+    "reboot-omni-enhanced-wildvine": {
+      "scale": 0.781,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.113853,
+      "visiblePixels": 212527
+    },
     "reboot-omni-enhanced-xlr8": {
       "scale": 0.6823,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.275,
       "visiblePixels": 9903
     },
+    "reboot-omni-kix-cannonbolt": {
+      "scale": 0.733,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.186869,
+      "visiblePixels": 53934
+    },
+    "reboot-omni-kix-diamondhead": {
+      "scale": 0.6223,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.397849,
+      "visiblePixels": 86464
+    },
+    "reboot-omni-kix-four-arms": {
+      "scale": 0.6795,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.280247,
+      "visiblePixels": 210912
+    },
+    "reboot-omni-kix-heatblast": {
+      "scale": 0.6581,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.321878,
+      "visiblePixels": 181276
+    },
+    "reboot-omni-kix-humungousaur": {
+      "scale": 0.7126,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.220857,
+      "visiblePixels": 115127
+    },
+    "reboot-omni-kix-jetray": {
+      "scale": 0.5906,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.472868,
+      "visiblePixels": 57436
+    },
+    "reboot-omni-kix-rath": {
+      "scale": 0.7549,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.152396,
+      "visiblePixels": 71148
+    },
+    "reboot-omni-kix-shock-rock": {
+      "scale": 0.6781,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.282991,
+      "visiblePixels": 66532
+    },
+    "reboot-omni-kix-slapback": {
+      "scale": 0.6875,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.265337,
+      "visiblePixels": 69553
+    },
     "reboot-omni-kix-xlr8": {
       "scale": 0.5491,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.584264,
       "visiblePixels": 457506
+    },
+    "reboot-omni-naut-heatblast": {
+      "scale": 0.5888,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.477372,
+      "visiblePixels": 56912
+    },
+    "reboot-omni-naut-humungousaur": {
+      "scale": 0.75,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.159856,
+      "visiblePixels": 48171
+    },
+    "reboot-omni-naut-jetray": {
+      "scale": 0.5439,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.599265,
+      "visiblePixels": 136435
+    },
+    "reboot-omni-naut-shock-rock": {
+      "scale": 0.6552,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.327715,
+      "visiblePixels": 81399
+    },
+    "reboot-bashmouth": {
+      "scale": 0.8056,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.079812,
+      "visiblePixels": 103526
     },
     "reboot-bootleg": {
       "scale": 0.6177,
@@ -688,11 +838,41 @@
       "diamondExtent": 1.233333,
       "visiblePixels": 17611
     },
+    "reboot-dark-matter": {
+      "scale": 0.6876,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.265139,
+      "visiblePixels": 62653
+    },
     "reboot-hot-shot": {
       "scale": 0.7404,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.175,
       "visiblePixels": 15841
+    },
+    "reboot-humungoraptor": {
+      "scale": 0.5184,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.677957,
+      "visiblePixels": 724184
+    },
+    "reboot-quad-smack": {
+      "scale": 0.798,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.090126,
+      "visiblePixels": 95585
+    },
+    "reboot-rush": {
+      "scale": 0.5355,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.624378,
+      "visiblePixels": 103466
+    },
+    "reboot-thornblade": {
+      "scale": 0.726,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.198297,
+      "visiblePixels": 255618
     },
     "reboot-undertow": {
       "scale": 0.87,
@@ -759,6 +939,36 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.417939,
       "visiblePixels": 465295
+    },
+    "clockwork-ov16": {
+      "scale": 0.6286,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.383943,
+      "visiblePixels": 632984
+    },
+    "clockwork-ov11": {
+      "scale": 0.5682,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.5311,
+      "visiblePixels": 726513
+    },
+    "heatblast-age4": {
+      "scale": 0.5885,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.478166,
+      "visiblePixels": 369484
+    },
+    "mad-rath": {
+      "scale": 0.5728,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.518727,
+      "visiblePixels": 644461
+    },
+    "mad-diamondhead": {
+      "scale": 0.6052,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.4375,
+      "visiblePixels": 72247
     },
     "mad-nrg": {
       "scale": 0.6329,

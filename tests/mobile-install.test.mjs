@@ -17,16 +17,16 @@ const runtime = Object.fromEntries(Object.entries({
     'preview.html': '<!doctype html><html><body><main id="omni-app"></main></body></html>',
 }).map(([name, value]) => [name, Buffer.from(value)]));
 
-function remote({ fail, corrupt, requests = [], onRead = async () => {} } = {}) {
+function remote({ fail, corrupt, requests = [], onRead = async () => {}, files = runtime } = {}) {
     return async url => {
         requests.push(url);
         await onRead(url);
         if (url.endsWith('/git/ref/heads/main')) return Response.json({ object: { sha: commit, type: 'commit' } });
-        if (url.endsWith(`/git/trees/${commit}`)) return Response.json({ tree: RUNTIME_FILES.map(name => ({ path: name, type: 'blob', mode: '100644', size: runtime[name].length, sha: blob(runtime[name]) })) });
+        if (url.endsWith(`/git/trees/${commit}`)) return Response.json({ tree: RUNTIME_FILES.map(name => ({ path: name, type: 'blob', mode: '100644', size: files[name].length, sha: blob(files[name]) })) });
         const name = url.split('/').at(-1);
         if (name === fail) return new Response('failed', { status: 503 });
         assert.equal(url, `https://raw.githubusercontent.com/louisSSR/ben10-omnitrix-plugin/${commit}/${name}`);
-        return new Response(name === corrupt ? 'broken' : runtime[name]);
+        return new Response(name === corrupt ? 'broken' : files[name]);
     };
 }
 
@@ -45,6 +45,60 @@ test('mobile install defaults to a no-write preflight with commit-pinned downloa
     assert.deepEqual(await fs.readdir(f.root), []);
     assert.equal(requests.length, 7);
     assert.ok(requests.slice(2).every(url => url.includes(`/${commit}/`)));
+});
+
+test('mobile preflight accepts a complete 64 MiB preview with matching Git metadata without writing', async t => {
+    const f = await fixture(t);
+    const preview = Buffer.alloc(64 * 1024 * 1024, 32);
+    runtime['preview.html'].copy(preview);
+    const files = { ...runtime, 'preview.html': preview };
+    const result = await f.run({ fetchImpl: remote({ files }) });
+    assert.equal(result.mode, 'dry-run');
+    assert.equal(result.commit, commit);
+    assert.ok(result.changed.includes('preview.html'));
+    assert.deepEqual(await fs.readdir(f.root), []);
+});
+
+test('mobile apply rejects preview downloads above 64 MiB before writes, including absent or false lengths', async t => {
+    const f = await fixture(t);
+    await fs.mkdir(f.target, { recursive: true });
+    await fs.writeFile(path.join(f.target, 'manifest.json'), 'previous manifest');
+    const limit = 64 * 1024 * 1024;
+    const chunk = Buffer.alloc(1024 * 1024);
+    for (const declaredLength of [limit + 1, null, 1]) {
+        let provided = 0;
+        const base = remote();
+        const fetchImpl = url => url.endsWith('/preview.html') ? {
+            ok: true,
+            headers: new Headers(declaredLength === null ? {} : { 'content-length': String(declaredLength) }),
+            body: {
+                async *[Symbol.asyncIterator]() {
+                    for (let index = 0; index < 64; index++) { provided += chunk.length; yield chunk; }
+                    provided++; yield Buffer.alloc(1);
+                    provided += chunk.length; yield chunk;
+                },
+            },
+        } : base(url);
+        await assert.rejects(f.run({ apply: true, fetchImpl }), /下载文件超过大小限制/);
+        assert.equal(provided, declaredLength === limit + 1 ? 0 : limit + 1, 'stop at the header or first excess byte');
+        assert.deepEqual(await fs.readdir(f.target), ['manifest.json']);
+        assert.equal(await fs.readFile(path.join(f.target, 'manifest.json'), 'utf8'), 'previous manifest');
+        await assert.rejects(fs.stat(path.join(f.root, '.ben10-omnitrix-backups')), { code: 'ENOENT' });
+    }
+});
+
+test('mobile runtime capacity does not widen the commit and tree metadata limits', async () => {
+    for (const [suffix, limit] of [['/git/ref/heads/main', 256 * 1024], [`/git/trees/${commit}`, 2 * 1024 * 1024]]) {
+        const base = remote();
+        let bodyRead = false;
+        const fetchImpl = url => url.endsWith(suffix) ? {
+            ok: true,
+            headers: new Headers({ 'content-length': String(limit + 1) }),
+            body: { async *[Symbol.asyncIterator]() { bodyRead = true; yield Buffer.from('{}'); } },
+        } : base(url);
+        await assert.rejects(downloadRuntime(fetchImpl), /下载文件超过大小限制/);
+        assert.equal(bodyRead, false);
+    }
 });
 
 test('mobile install creates missing directory and repeating apply is a no-op', async t => {

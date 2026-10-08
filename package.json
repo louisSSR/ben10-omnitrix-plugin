@@ -1,6 +1,6 @@
 {
   "name": "ben10-omnitrix-plugin",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "type": "module",
   "description": "Multi-generation Omnitrix selector for SillyTavern, with a standalone preview.",

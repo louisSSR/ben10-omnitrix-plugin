@@ -33,14 +33,16 @@ def merge_extra_art(catalog, svg_bytes, provenance):
         mask = raw['mask']
         require(len(mask) >= 33 and mask[:8] == b'\x89PNG\r\n\x1a\n', 'Invalid PNG: '+key)
         width,height = struct.unpack('>II', mask[16:24])
-        require(0 < width <= 8192 and 0 < height <= 8192 and mask[24:26] == bytes([8,6]) and mask[28] == 0, 'Unsupported PNG: '+key)
+        require(0 < width <= 8192 and 0 < height <= 8192 and mask[24] == 8 and mask[25] in (3,6) and mask[28] == 0, 'Unsupported PNG: '+key)
         # Validate checksum/structure and decode every pixel BEFORE any outputs
         # are written. Reading only IHDR permits a truncated image into the SVG.
         with Image.open(io.BytesIO(mask)) as pic:
             pic.verify()
         with Image.open(io.BytesIO(mask)) as pic:
             pic.load()
-            require(pic.mode == 'RGBA' and pic.size == (width,height) and pic.getchannel('A').getextrema()[1] > 0, 'Empty or invalid body: '+key)
+            require(pic.mode == 'RGBA' or (pic.mode == 'P' and 'transparency' in pic.info), 'Missing alpha: '+key)
+            # Decode palette transparency for validation only; embed original bytes.
+            require(pic.size == (width,height) and pic.convert('RGBA').getchannel('A').getextrema()[1] > 0, 'Empty or invalid body: '+key)
         symbol_id = 'alien-' + key
         symbol = '<symbol id="'+symbol_id+'" viewBox="0 0 200 240"><image href="data:image/png;base64,'+base64.b64encode(mask).decode('ascii')+'" width="200" height="240"/></symbol>'
         pattern = r'<symbol\b[^>]*id="'+re.escape(symbol_id)+r'"[^>]*>[\s\S]*?</symbol>'
