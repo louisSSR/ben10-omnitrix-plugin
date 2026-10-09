@@ -11,6 +11,14 @@ SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材�
 - 一份共享档案：224 条记录，175 条已接入剪影，49 条素材待补。0.3.2 新增 Diamond Matter：依据社区角色介绍视频的完整身体面板做 AI 参考编辑，原面板作者未知；脸部、手脚、胸章和晶面有重绘，非官方透明原图。来源、原始字节、完整提示词和差异见 `assets/extra-art.json`。记录含作品版本、融合和身体状态，不等于独立物种数量。
 - 可搜索中文/英文名称和筛选作品。缺图会明确显示“素材待补”。
 
+## 0.3.3 界面更新
+
+本版只调整 UI，没有新增 Ultimate Way Big 或其他素材：仍为 **175/224 条已有剪影，49 条待补**。保留的搜索和筛选条件现在会明确显示；即使上次搜索只剩 1 条，也可恢复全部 224 条记录。
+
+环形转盘以手表正中心为原点，选中形态位于 12 点，同心椭圆上的图标从背面 0.70 倍放大到选中 1.25 倍。菱形盘使用常驻两瓣，从菱形收腰、完全闭合后换影，再交叉旋转展开；760ms 动作中在 342ms 交换剪影。这套时序是交互设计推演，尚未由参考视频完整验证。
+
+投影改为水平手表、升起圆芯与多层视差的 **2.5D** 展示；Ultimatrix 在手机布局中单独适应方位。四张表壳仍沿用已有 AI 美术，不声称是官方重绘或完整 3D 模型。179 张旧运行图片已逐文件核对，原字节不变；最终测试 **93/93 通过、0 跳过**，390 / 320 / 1280px 浏览器布局与筛选恢复已核验。截图、控制台未定来源错误与实际环境边界见 [0.3.3 记录](docs/review-v033.md)。
+
 ## 预览
 
 下载完整目录后打开根目录的 **preview.html**。样式和脚本仍在 HTML 内，图片位于同目录的 **assets/runtime/**；必须一起保留，不要只复制 HTML。运行资源均为本地文件，不依赖远程图片。当前自动浏览器只允许 HTTP/HTTPS，本版实际验证使用本地服务；`file://` 直接打开未在该浏览器中验收。
@@ -25,9 +33,9 @@ npm run dev
 
 ## 安装到 SillyTavern
 
-当前是 0.3.2 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
+当前是 0.3.3 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
 
-1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.3.2` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
+1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.3.3` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
 2. 重载酒馆，在扩展设置里打开 **Omnitrix**。
 3. 选择手表和召唤界面，选择外星人并点击“锁定形态”。
 4. 需要使用时点击“写入酒馆输入框”。原有草稿保留，插件不会自动发送或调用模型。
@@ -42,7 +50,7 @@ npm run dev
 
 这个入口不依赖插件已经出现在管理列表里。默认运行只预检，文档中的 `--apply` 表示执行覆盖。没有原生“终端”的旧版 SillyDroid 尚未验证这条路径。
 
-仓库已公开，匿名 Git 和安装清单读取通过。公开状态解决下载权限；覆盖工具解决同名目录残留，两者分别处理。非 SillyDroid 的诊断依据见[安装报错说明](docs/install-troubleshooting.md)。
+仓库已公开，此前版本的匿名 Git 和安装清单读取通过。公开状态解决下载权限；覆盖工具解决同名目录残留，两者分别处理。非 SillyDroid 的诊断依据见[安装报错说明](docs/install-troubleshooting.md)。
 
 目前未在用户手机的真实酒馆中核验安装和启用，独立预览成功不等于安装成功。
 
@@ -56,6 +64,6 @@ npm run package
 
 零运行时第三方依赖。维护 `core.js`、`app.js`、`styles.css` 和 `preview.shell.html`，构建生成 HTML 与本地图片目录，以及记录字节数和 SHA-256 的 `runtime-manifest.json`。`host-adapter.js` 隔离 SillyTavern 能力；同一 Core/UI 用于独立预览和宿主 iframe。素材迁移不压缩或重绘原图。
 
-ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.3.2 验证记录](docs/review-v032.md)。
+ST 1.18 / 1.19 的目标 API 已按固定版本源码比对，采用能力检测共用实现。源码与模拟测试不代表真实酒馆验收；详见 [宿主契约](docs/host-contract.md) 和 [0.3.3 验证记录](docs/review-v033.md)。此前素材新增与安装器修复见 [0.3.2 验证记录](docs/review-v032.md)。
 
 所有截图参考、动画角色及剪影的权利归各原权利人。请阅读 [NOTICE.md](NOTICE.md)。

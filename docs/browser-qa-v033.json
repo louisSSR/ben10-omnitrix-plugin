@@ -1,0 +1,91 @@
+{
+  "version": "0.3.3",
+  "checkedAt": "2026-10-09T05:41:46.003Z",
+  "previewSha256": "bb69b301cbdaa36ff8bb985319d037a5d7b713d5a1beffbb99cd8d36e997e2a3",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA / Codex in-app Chromium. Widths exercised in local responsive-preview iframes; not physical phones.",
+  "coverage": {
+    "total": 224,
+    "reviewed": 175,
+    "missing": 49
+  },
+  "viewports": [
+    {
+      "width": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 320,
+      "clientWidth": 305,
+      "scrollWidth": 305,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 1280,
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "horizontalOverflow": false
+    }
+  ],
+  "checks": {
+    "carouselCentered": true,
+    "dialPermanentLeaves": true,
+    "mobileNextSelection": {
+      "carousel": "Heatblast -> Wildmutt",
+      "dial": "Heatblast -> Wildmutt"
+    },
+    "filterReset": {
+      "before": "1 / 224",
+      "queryBefore": "Diamond Matter",
+      "after": "224 / 224",
+      "queryAfter": "",
+      "activation": "Enter on reset button"
+    },
+    "projectionShellsInspected": [
+      "original",
+      "recalibrated",
+      "ultimatrix",
+      "omniverse"
+    ],
+    "projectionKind": "2.5D layered silhouettes, not complete 3D models",
+    "unchangedRuntimeImageCount": 179,
+    "finalPreview": {
+      "watch": "original",
+      "mode": "carousel",
+      "selected": "heatblast",
+      "query": "",
+      "count": "224 / 224"
+    }
+  },
+  "screenshots": [
+    "screenshots/v033-mobile-ring-dial.png",
+    "screenshots/v033-mobile-projection.png",
+    "screenshots/v033-mobile-ov-ua.png",
+    "screenshots/v033-desktop-ring.png",
+    "screenshots/v033-filter-recovery.png"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": {
+    "count": 3,
+    "message": "Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+    "source": "unattributed; no origin established, not asserted to be product-free"
+  },
+  "animationReference": {
+    "video": "https://www.bilibili.com/video/BV1MRGwzqEJE/",
+    "observedTime": 33.476212,
+    "fullSwitchCaptured": false,
+    "timing": "interaction design extrapolation"
+  },
+  "automated": {
+    "tests": 93,
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0
+  },
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

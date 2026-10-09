@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Omnitrix 手机布局核对</title>
+<style>body{margin:0;padding:20px;background:#161b17;color:#e4ecd9;font:14px system-ui}main{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}h1{font-size:18px}h2{font-size:13px;font-weight:500}iframe{display:block;height:900px;border:1px solid #45523e;background:#09110b;max-width:100%}section{max-width:100%}a{color:#c4f57b}</style></head>
+<body><h1>同一套界面 · 手机宽度核对</h1><p>以下两个窗口都载入正式 preview.html。可独立切换手表、英雄和召唤方式。<a href="preview.html">打开完整前端</a></p>
+<p><a href="responsive-preview.html">手机并排</a> · <a href="responsive-preview.html?desktop=1">1280 px 桌面</a></p>
+<main><section><h2>390 px</h2><iframe id="phone390" title="390像素手机预览" src="preview.html" width="390"></iframe></section><section><h2>320 px</h2><iframe id="phone320" title="320像素手机预览" src="preview.html" width="320"></iframe></section></main>
+<script>if(new URLSearchParams(location.search).get('desktop')==='1'){document.querySelector('main').replaceChildren();const s=document.createElement('section');const f=document.createElement('iframe');f.id='desktop';f.title='1280像素桌面预览';f.width='1280';f.style.maxWidth='none';f.src='preview.html';s.append(f);document.querySelector('main').append(s);}</script></body></html>

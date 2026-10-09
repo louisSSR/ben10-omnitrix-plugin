@@ -7,7 +7,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { inflateSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
-import { WATCHES, MODES } from '../core.js';
+import { WATCHES, MODES, dialSelectionFrames } from '../core.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => readFileSync(path.join(root, file), 'utf8');
@@ -269,7 +269,7 @@ test('offline build includes four watch skins, exactly three stages and the two 
   assert.match(html, /id=["']omni-app["'][^>]*data-mode=["']projection["'][^>]*data-watch=["']original["']/);
   assert.match(css, /\.watch-case\s*\{/);
   for (const id of ['recalibrated', 'ultimatrix', 'omniverse']) assert.ok(css.includes(`[data-watch=${id}]`), `${id} skin CSS`);
-  for (const id of ['holo-shape', 'carousel', 'dial-shape', 'dial-previous', 'dial-shutter-a', 'dial-shutter-b']) assert.ok(html.includes(`id="${id}"`), `${id} stage`);
+  for (const id of ['holo-shape', 'holo-depth-back', 'holo-depth-mid', 'holo-depth-front', 'projection-emitter', 'carousel', 'dial-shape', 'dial-previous', 'screen-rotor', 'dial-shutter-a', 'dial-shutter-b']) assert.ok(html.includes(`id="${id}"`), `${id} stage`);
   assert.ok(css.includes('[data-mode=carousel]'));
   assert.ok(css.includes('[data-mode=dial]'));
   assert.doesNotMatch(html, /id=["']archive-grid["']|data-mode=["']archive["']/);
@@ -390,6 +390,26 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
   };
 }
 
+function assertCoordinates(actual, expected, message) {
+  assert.equal(actual.length, expected.length, message);
+  actual.forEach((value, index) => assert.ok(Number.isFinite(value) && Math.abs(value - expected[index]) < 1e-6,
+    `${message}: coordinate ${index} is ${value}, expected ${expected[index]}`));
+}
+function projectionAnchor(h) {
+  const hologram = h.elements.get('hologram'), emitter = h.elements.get('projection-emitter');
+  const lift = parseFloat(emitter.style.height) - 16;
+  return [parseFloat(hologram.style.left), parseFloat(hologram.style.top) + parseFloat(hologram.style.height) - 5 + lift];
+}
+function assertProjectionEmitter(h, center, faceWidth, lift, message) {
+  const emitter = h.elements.get('projection-emitter'), hologram = h.elements.get('hologram');
+  const left = parseFloat(emitter.style.left), top = parseFloat(emitter.style.top), height = parseFloat(emitter.style.height);
+  assertCoordinates([left, top, parseFloat(emitter.style.width), height],
+    [center[0], center[1] - lift, faceWidth * 1.06, lift + 16], message);
+  assert.ok(top < center[1] && top + height > center[1], `${message}: the lifted emitter spans the face center`);
+  assertCoordinates([parseFloat(hologram.style.left), parseFloat(hologram.style.top) + parseFloat(hologram.style.height)],
+    [left, top + 5], `${message}: hologram rises from the emitter cap`);
+}
+
 test('actual figure renderer gives missing or invalid art a labeled placeholder', () => {
   const context = vm.createContext({ document: {
     createElement: tag => node(tag), createElementNS: (namespace, tag) => node(tag, namespace),
@@ -442,18 +462,19 @@ test('projection anchor follows the actual offset faces of all four watch genera
     'watch-screen': { left: 295, top: 560, width: 110, height: 70 },
   } });
   const light = h.elements.get('hologram');
-  const anchor = () => [parseFloat(light.style.left), parseFloat(light.style.top) + parseFloat(light.style.height) - 7];
-  assert.deepEqual(anchor(), [230, 375], 'stage scroll/column offset is removed from the rendered face center');
+  assertCoordinates(projectionAnchor(h), [230, 375], 'stage scroll/column offset is removed from the rendered face center');
+  assertProjectionEmitter(h, [230, 375], 110, 30, 'original emitter is centered on the rendered face');
   h.frame(901);
   assert.equal(h.frames.size, 0, 'initial geometry tracking is bounded');
-  for (const [watch, rectangle, expected] of [
-    ['recalibrated', { left: 310, top: 568, width: 84, height: 58 }, [232, 377]],
-    ['ultimatrix', { left: 301, top: 513, width: 98, height: 70 }, [230, 328]],
-    ['omniverse', { left: 288, top: 535, width: 130, height: 62 }, [233, 346]],
-    ['original', { left: 295, top: 560, width: 110, height: 70 }, [230, 375]],
+  for (const [watch, rectangle, expected, lift] of [
+    ['recalibrated', { left: 310, top: 568, width: 84, height: 58 }, [232, 377], 30],
+    ['ultimatrix', { left: 301, top: 513, width: 98, height: 70 }, [230, 328], 30],
+    ['omniverse', { left: 288, top: 535, width: 130, height: 62 }, [233, 346], 35.1],
+    ['original', { left: 295, top: 560, width: 110, height: 70 }, [230, 375], 30],
   ]) {
     h.setRect('watch-screen', rectangle); h.action('watch', watch);
-    assert.deepEqual(anchor(), expected, `${watch} uses its own face instead of the classic-watch center`);
+    assertCoordinates(projectionAnchor(h), expected, `${watch} uses its own face instead of the classic-watch center`);
+    assertProjectionEmitter(h, expected, rectangle.width, lift, `${watch} emitter follows the moving watch face`);
     assert.equal(h.frames.size, 1, `${watch} follows the layout transition`);
     h.frame(901);
     assert.equal(h.frames.size, 0, `${watch} does not retain a permanent layout loop`);
@@ -463,6 +484,18 @@ test('projection anchor follows the actual offset faces of all four watch genera
   assert.equal(h.frames.size, 0, 'changing only the alien does not start another layout follower');
   assert.equal(light.style.top, settled.top);
   assert.equal(light.style.height, settled.height);
+});
+
+test('projection emitter lift scales with the face and respects the minimum and maximum travel', () => {
+  for (const [width, lift] of [[60, 30], [130, 35.1], [240, 46]]) {
+    const h = boot({ reducedMotion: true, rects: {
+      stage: { left: 0, top: 0, width: 480, height: 550 },
+      'watch-screen': { left: 100, top: 400, width, height: 80 },
+    } });
+    assertCoordinates(projectionAnchor(h), [100 + width / 2, 440], `face width ${width} retains its center`);
+    assertProjectionEmitter(h, [100 + width / 2, 440], width, lift, `face width ${width} gives a bounded rising emitter`);
+    assert.equal(h.frames.size, 0, 'reduced motion places the emitter without a layout animation');
+  }
 });
 
 test('projection anchor realigns on resize and follows changing perspective bounds for only 900 ms', () => {
@@ -476,12 +509,13 @@ test('projection anchor realigns on resize and follows changing perspective boun
   h.resize();
   const light = h.elements.get('hologram');
   assert.equal(light.style.left, '178px');
-  assert.equal(parseFloat(light.style.top) + parseFloat(light.style.height) - 7, 301);
+  assertCoordinates(projectionAnchor(h), [178, 301], 'resize follows the raised emitter and face center');
+  assertProjectionEmitter(h, [178, 301], 88, 30, 'resized emitter stays centered');
   assert.equal(h.frames.size, 1);
   h.setRect('watch-screen', { left: 164, top: 445, width: 70, height: 44 });
   h.frame(450);
   assert.equal(light.style.left, '182px', 'animation-frame sampling follows the moved display');
-  assert.equal(parseFloat(light.style.top) + parseFloat(light.style.height) - 7, 282);
+  assertCoordinates(projectionAnchor(h), [182, 282], 'moving face keeps the same emitter-to-hologram relationship');
   assert.equal(h.frames.size, 1);
   h.frame(451);
   assert.equal(h.frames.size, 0);
@@ -497,21 +531,20 @@ test('projection anchor keeps the original layout deadline after selecting or co
       'watch-screen': { left: 295, top: 560, width: 110, height: 70 },
     } });
     const light = h.elements.get('hologram');
-    const anchor = () => [parseFloat(light.style.left), parseFloat(light.style.top) + parseFloat(light.style.height) - 7];
     h.setRect('watch-screen', { left: 301, top: 513, width: 98, height: 70 });
     h.action('watch', 'ultimatrix');
-    assert.deepEqual(anchor(), [230, 328]);
+    assertCoordinates(projectionAnchor(h), [230, 328], `${action}: UA face anchors the rising emitter`);
     assert.equal(h.frames.size, 1);
     h.setRect('watch-screen', { left: 309, top: 527, width: 98, height: 70 });
     h.frame(450);
-    assert.deepEqual(anchor(), [238, 342], `${action}: the moving UA face is followed before interaction`);
+    assertCoordinates(projectionAnchor(h), [238, 342], `${action}: the moving UA face is followed before interaction`);
     h.click(action);
     if (action === 'next') assert.equal(h.preferences.selectedId, h.fixture[1].id);
     else assert.equal(h.elements.get('confirmation').hidden, false);
     assert.equal(h.frames.size, 1, `${action}: stopMotion resumes the remaining layout follow-up`);
     h.setRect('watch-screen', { left: 296, top: 490, width: 104, height: 64 });
     h.frame(16);
-    assert.deepEqual(anchor(), [228, 302], `${action}: the next frame follows the continuing face movement`);
+    assertCoordinates(projectionAnchor(h), [228, 302], `${action}: the next frame follows the continuing face movement`);
     assert.equal(h.frames.size, 1);
     h.frame(434);
     assert.equal(h.frames.size, 0, `${action}: tracking ends at the original 900 ms, not 900 ms after interaction`);
@@ -532,7 +565,8 @@ test('projection anchor reduced motion aligns immediately and page exit cancels 
     h.setRect('watch-screen', { left: 160, top: 420, width: 70, height: 44 });
     h.resize();
     assert.equal(h.elements.get('hologram').style.left, '178px');
-    assert.equal(parseFloat(h.elements.get('hologram').style.top) + parseFloat(h.elements.get('hologram').style.height) - 7, 257);
+    assertCoordinates(projectionAnchor(h), [178, 257], 'reduced-motion resize keeps the emitter centered on the face');
+    assertProjectionEmitter(h, [178, 257], 70, 30, 'reduced-motion emitter rises without a follower');
     assert.equal(h.frames.size, 0, 'resize does not animate when reduced motion is already enabled');
   }
   for (const interrupt of ['manual', 'system', 'mode', 'pagehide']) {
@@ -586,19 +620,34 @@ test('rebuilding watch and mode controls restores the active replacement button'
 
 test('dial keeps the old figure until covered and rapid selection cannot reveal a stale transition', () => {
   const h = boot({ mode: 'dial' }), previous = h.elements.get('dial-previous'), current = h.elements.get('dial-shape');
+  const motion = dialSelectionFrames(1);
   h.click('next');
   assert.equal(previous.querySelector('use').attributes.href, `#${h.fixture[0].asset}`);
   assert.equal(previous.hidden, false);
   assert.equal(current.style.visibility, 'hidden');
-  assert.equal(h.animations.filter(handle => ['dial-shutter-a', 'dial-shutter-b'].includes(handle.node.id)).length, 2);
+  const firstAnimations = h.animations.filter(handle => ['dial-shutter-a', 'dial-shutter-b', 'screen-rotor'].includes(handle.node.id));
+  assert.equal(firstAnimations.length, 3);
+  for (const [id, keyframes] of [['dial-shutter-a', motion.a], ['dial-shutter-b', motion.b], ['screen-rotor', motion.rotor]]) {
+    const animation = firstAnimations.find(handle => handle.node.id === id);
+    assert.equal(animation.options.duration, motion.duration);
+    assert.deepEqual(JSON.parse(JSON.stringify(animation.keyframes)), keyframes, `${id} uses the shared direction-aware choreography`);
+  }
+  const swapOffset = motion.swapAt / motion.duration;
+  for (const frames of [motion.a, motion.b]) {
+    const plateau = frames.findIndex((frame, index) => index + 1 < frames.length && frame.clipPath === frames[index + 1].clipPath && frame.offset <= swapOffset && frames[index + 1].offset >= swapOffset);
+    assert.ok(plateau >= 0, 'the shape exchange occurs while a leaf holds its closed geometry');
+    assert.notEqual(frames[plateau].clipPath, frames[0].clipPath, 'closed geometry differs from the open aperture');
+    assert.ok(frames.every(frame => !('opacity' in frame)), 'heroes exchange behind moving leaves instead of a dissolve');
+  }
   const staleCallbacks = [...h.timers.values()].map(timer => timer.fn);
   h.advance(100); h.click('next');
-  assert.ok(h.animations.slice(0, 2).every(handle => handle.cancelled));
+  assert.ok(firstAnimations.every(handle => handle.cancelled), 'both old leaves and the old rotor are cancelled');
   for (const fn of staleCallbacks) fn();
   assert.equal(previous.hidden, false, 'an old completion cannot uncover the new transition early');
   assert.equal(previous.querySelector('use').attributes.href, `#${h.fixture[0].asset}`);
-  h.advance(300); assert.equal(current.style.visibility, 'hidden');
-  h.advance(100);
+  h.advance(motion.swapAt - 1); assert.equal(current.style.visibility, 'hidden');
+  assert.equal(previous.hidden, false, 'the latest requested hero is not revealed before the closed exchange point');
+  h.advance(1);
   assert.equal(previous.hidden, true); assert.equal(current.style.visibility, '');
   assert.equal(current.querySelector('use').attributes.href, `#${h.fixture[2].asset}`);
   h.advance(500); assert.equal(h.timers.size, 0);

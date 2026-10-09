@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement } from '../core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames } from '../core.js';
 import { sanitizePreferences } from '../host-adapter.js';
 
 const forms = Object.freeze([
@@ -106,17 +106,51 @@ test('small rings never duplicate forms and absent selections recover to the fir
   assert.deepEqual(ringItems([], 'none'), []);
 });
 
-test('orbit depth makes the front larger, brighter and above the back on desktop and mobile', () => {
+test('the selected orbit slot is at twelve oclock and larger than the opposite slot', () => {
   for (const width of [320, 390, 720, 1024]) {
     const front = ringPlacement(0, width), side = ringPlacement(Math.PI / 2, width), back = ringPlacement(Math.PI, width);
-    for (const property of ['scale', 'opacity', 'zIndex', 'z', 'y']) {
+    assert.equal(front.x, 0);
+    assert.ok(front.y < 0 && Math.abs(side.y) < 1e-9 && back.y > 0);
+    assert.equal(front.depth, 1);
+    assert.equal(front.scale, 1.25);
+    assert.equal(back.scale, .70);
+    for (const property of ['scale', 'opacity', 'zIndex']) {
       assert.ok(front[property] > side[property] && side[property] > back[property], `${property} follows depth at ${width}px`);
     }
-    assert.ok(Math.abs(side.x) < width / 2, 'side position stays inside the measured stage');
+    assert.equal(front.z, 0);
+    assert.equal(side.z, 0);
+    assert.equal(back.z, 0);
     const opposite = ringPlacement(-Math.PI / 2, width);
     assert.ok(Math.abs(side.x + opposite.x) < 1e-9);
     assert.equal(side.scale, opposite.scale);
+    assert.ok(Math.abs(front.y + back.y) < 1e-9);
+    assert.equal(front.rotate, 0);
+    assert.ok(Math.abs(side.rotate - 90) < 1e-9);
     assert.ok(front.opacity <= 1 && back.opacity > 0);
+  }
+});
+
+test('the ellipse matches the CSS ring and upright 40 to 58px icons stay inside the stage', () => {
+  for (const width of [81, 160, 240, 277, 320, 343, 390, 599, 600, 720, 1024]) {
+    const radiusX = ringPlacement(Math.PI / 2, width).x;
+    const radiusY = -ringPlacement(0, width).y;
+    assert.ok(radiusX <= width * .34 && radiusX <= 220);
+    assert.equal(radiusY, radiusX * .8);
+    if (width >= 277) assert.equal(radiusX, Math.min(220, width * .34));
+    for (let step = 0; step < 48; step++) {
+      const pose = ringPlacement(step * Math.PI / 24, width);
+      assert.ok(Math.abs((pose.x / radiusX) ** 2 + (pose.y / radiusY) ** 2 - 1) < 1e-9);
+      for (const iconSize of [40, 58]) {
+        const halfBounds = iconSize * pose.scale / 2;
+        assert.ok(Math.abs(pose.x) + halfBounds <= width / 2 - 4 + 1e-9, `${width}px at slot ${step} fits a ${iconSize}px icon`);
+      }
+    }
+  }
+  for (const width of [1, 40, 76, 80]) for (const angle of [0, Math.PI / 2, Math.PI]) {
+    const pose = ringPlacement(angle, width);
+    assert.equal(Math.abs(pose.x), 0);
+    assert.equal(Math.abs(pose.y), 0);
+    assert.ok(Object.values(pose).every(Number.isFinite));
   }
 });
 
@@ -129,4 +163,78 @@ test('moving a slot from back to front changes depth continuously and invalid me
   for (const value of [undefined, NaN, Infinity, -Infinity]) {
     assert.ok(Object.values(ringPlacement(value, value)).every(Number.isFinite));
   }
+});
+
+const polygonPoints = clip => [...clip.matchAll(/([\d.]+)%\s+([\d.]+)%/g)].map(match => [Number(match[1]), Number(match[2])]);
+const horizontalBounds = (clip, y) => {
+  const points = polygonPoints(clip), xs = [];
+  for (let n = 0; n < points.length; n++) {
+    const [x1, y1] = points[n], [x2, y2] = points[(n + 1) % points.length];
+    if (y1 !== y2 && y >= Math.min(y1, y2) && y <= Math.max(y1, y2)) xs.push(x1 + (x2 - x1) * (y - y1) / (y2 - y1));
+  }
+  return [Math.min(...xs), Math.max(...xs)];
+};
+const effectProgress = (easing, time) => {
+  if (easing === 'linear') return time;
+  const match = easing.match(/^cubic-bezier\(([^)]+)\)$/);
+  assert.ok(match, 'the motion declares a supported global easing');
+  const [x1, y1, x2, y2] = match[1].split(',').map(Number);
+  const component = (t, p1, p2) => 3 * (1 - t) ** 2 * t * p1 + 3 * (1 - t) * t ** 2 * p2 + t ** 3;
+  let low = 0, high = 1;
+  for (let n = 0; n < 40; n++) {
+    const mid = (low + high) / 2;
+    if (component(mid, x1, x2) < time) low = mid; else high = mid;
+  }
+  return component((low + high) / 2, y1, y2);
+};
+
+test('dial swap stays inside actual wall clock coverage after global WAAPI easing', () => {
+  const motion = dialSelectionFrames(1);
+  for (const delta of [-20, 0, 20]) {
+    const progress = effectProgress(motion.easing, (motion.swapAt + delta) / motion.duration);
+    assert.ok(progress >= motion.a[2].offset && progress <= motion.a[3].offset, `both leaves remain closed at ${motion.swapAt + delta}ms`);
+    assert.ok(progress >= motion.rotor[2].offset && progress <= motion.rotor[3].offset, 'the rotor remains at the covered angle');
+  }
+});
+
+test('dial leaves visibly form an hourglass then fully cover the swap before reopening', () => {
+  const motion = dialSelectionFrames(1), swapOffset = motion.swapAt / motion.duration;
+  assert.ok(motion.duration > 0 && motion.duration <= 760);
+  assert.ok(swapOffset > .30 && swapOffset < .55);
+  for (const frames of [motion.a, motion.b, motion.rotor]) {
+    assert.equal(frames[0].offset, 0);
+    assert.equal(frames.at(-1).offset, 1);
+    for (let n = 1; n < frames.length; n++) assert.ok(frames[n].offset > frames[n - 1].offset);
+  }
+  for (const frames of [motion.a, motion.b]) {
+    assert.equal(frames[0].clipPath, frames.at(-1).clipPath);
+    assert.ok(frames.every(frame => polygonPoints(frame.clipPath).length === 5));
+    assert.ok(frames.every(frame => !('opacity' in frame) && !('transform' in frame)), 'permanent leaves morph their structure');
+    assert.equal(frames[2].clipPath, frames[3].clipPath, 'coverage stays fixed throughout the swap window');
+  }
+  const opening = y => horizontalBounds(motion.b[1].clipPath, y)[0] - horizontalBounds(motion.a[1].clipPath, y)[1];
+  assert.ok(opening(50) > 0 && opening(5) > opening(50) && opening(95) > opening(50), 'the waist narrows while both ends remain open');
+  for (const y of [.1, 5, 25, 50, 75, 95, 99.9]) {
+    const left = horizontalBounds(motion.a[2].clipPath, y), right = horizontalBounds(motion.b[2].clipPath, y);
+    assert.equal(left[0], 0);
+    assert.equal(right[1], 100);
+    assert.equal(left[1], right[0], 'the two half-screen leaves meet without a gap');
+  }
+  assert.equal(motion.rotor[2].transform, motion.rotor[3].transform, 'rotation also holds at the covered swap');
+  assert.equal(motion.rotor[0].transform, 'rotate(0deg)');
+  assert.equal(motion.rotor[2].transform, 'rotate(90deg)');
+  assert.equal(motion.rotor.at(-1).transform, 'rotate(180deg)');
+});
+
+test('dial rotation reverses with direction and calls do not share mutable keyframes', () => {
+  const next = dialSelectionFrames(1), previous = dialSelectionFrames(-1);
+  assert.deepEqual(previous.a, next.a);
+  assert.deepEqual(previous.b, next.b);
+  assert.equal(previous.rotor[2].transform, 'rotate(-90deg)');
+  assert.equal(previous.rotor.at(-1).transform, 'rotate(-180deg)');
+  assert.equal(previous.swapAt, next.swapAt);
+  for (const direction of [undefined, 0, NaN, Infinity, -Infinity, '-1']) assert.deepEqual(dialSelectionFrames(direction), next);
+  next.a[0].clipPath = 'none'; next.rotor[0].transform = 'none';
+  assert.notEqual(dialSelectionFrames(1).a[0].clipPath, 'none');
+  assert.notEqual(dialSelectionFrames(1).rotor[0].transform, 'none');
 });

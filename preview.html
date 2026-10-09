@@ -42,6 +42,99 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .reduced-motion *,.reduced-motion *::before,.reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media(max-width:600px){.selection-bar{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;gap:12px}.selection-bar .confirm{grid-column:1/-1;width:100%;margin:0}.selection-name h3{font-size:20px;overflow-wrap:break-word}.selection-name>span{letter-spacing:.6px}}
+
+/* Device scenes: all coordinates originate at the actual face centre. */
+.stage{--ring-radius:min(220px,34cqw);container-type:inline-size;isolation:isolate}
+.watch-device{transform-origin:var(--face-x) var(--face-y);left:50%;border:0;background:transparent;padding:0}
+[data-mode=projection] .watch-device{top:76%;width:430px;height:430px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(64deg) rotateZ(90deg);filter:drop-shadow(0 18px 3px #081009) drop-shadow(0 26px 18px #000b)}
+[data-mode=projection] .watch-screen{background:#172814;box-shadow:inset 0 0 14px #000}
+[data-mode=projection] .hourglass{opacity:.25}
+[data-mode=projection] .orbit-line{top:77%;height:94px;width:380px;opacity:.5}
+[data-mode=projection] .orbit-b{width:470px;height:138px;opacity:.2}
+.projection-emitter{display:none;position:absolute;z-index:10;transform:translateX(-50%);transform-origin:50% 100%;pointer-events:none;filter:drop-shadow(0 5px 5px #0009)}
+[data-mode=projection] .projection-emitter{display:block}
+.emitter-foot{position:absolute;inset:auto -6% -8px;height:44%;border:3px solid #3b4939;border-radius:50%;background:#131b15;box-shadow:0 0 0 2px #030906}
+.emitter-shaft{position:absolute;inset:12px 0 4px;border-radius:0 0 45% 45% / 0 0 32% 32%;border:2px solid #101810;background:linear-gradient(90deg,#080d0a,#354137 22%,#18251c 57%,#080d0a);display:flex;align-items:center;justify-content:space-evenly;overflow:hidden}
+.emitter-shaft i{width:5px;height:45%;min-height:8px;background:#aaff2c;box-shadow:0 0 7px #adff3866;transform:skewY(-12deg);border-radius:1px}
+.emitter-shaft i:nth-child(even){height:28%;transform:skewY(12deg)}
+.emitter-cap{position:absolute;inset:-15px -2% auto;height:38px;border-radius:50%;border:4px solid #5c704c;background:radial-gradient(ellipse,#f1ffc8,#b9ff57 38%,#71b93e 66%,#102215 70%);box-shadow:0 0 0 2px #0e1c0d,0 0 22px #aaff3244,inset 0 -4px 0 #17281c}
+.hologram{z-index:12;transform:translateX(-50%);perspective:680px;pointer-events:none}
+.holo-volume{position:absolute;inset:0 0 22px;transform-style:preserve-3d;transform-origin:50% 100%;animation:volume-drift 7s ease-in-out infinite}
+.holo-shape,.holo-depth,.holo-echo{position:absolute;inset:0;height:auto;transform-origin:50% 100%;pointer-events:none}
+.holo-shape{animation:none;opacity:.86;transform:translateZ(8px);mask-image:repeating-linear-gradient(0deg,#000 0 2px,#000b 2px 3px);filter:drop-shadow(0 0 1px #efffc9) drop-shadow(0 0 7px #aaff3e66)}
+.holo-depth svg,.holo-shape svg{width:100%;height:100%}
+.holo-shape svg{filter:brightness(0) saturate(100%) invert(90%) sepia(65%) saturate(850%) hue-rotate(25deg)}
+.holo-depth{mask-image:repeating-linear-gradient(0deg,#000 0 1px,#0006 1px 3px)}
+.holo-depth svg{filter:brightness(0) saturate(100%) invert(65%) sepia(90%) saturate(800%) hue-rotate(30deg)}
+.depth-back{transform:translate3d(-9px,3px,-16px);opacity:.18;filter:blur(1px)}
+.depth-mid{transform:translate3d(-5px,2px,-7px);opacity:.38}
+.depth-front{transform:translate3d(-2px,1px,1px);opacity:.62}
+.holo-echo{z-index:3}
+.holo-light{inset:25% -7% 0;opacity:.24;clip-path:polygon(3% 0,97% 0,70% 100%,30% 100%);background:linear-gradient(0deg,#d9ff9777,#acff3818 65%,transparent);animation:beam-breathe-soft 4s ease-in-out infinite;filter:none}
+.holo-base{bottom:0;height:20px;left:20%;right:20%;transform:none;opacity:.8}
+.holo-base-outer{bottom:-4px;height:29px;left:5%;right:5%;opacity:.3;border-width:1px;background:none;box-shadow:none}
+.holo-particles{opacity:.18}.scanline{opacity:.22}
+.holo-scan{left:8%;right:8%;height:2px;z-index:5;box-shadow:0 0 12px #d5ff81;background:#e2ffb5}
+@keyframes volume-drift{0%,100%{transform:rotateY(-19deg) rotateX(2deg) translateY(0)}50%{transform:rotateY(17deg) rotateX(-2deg) translateY(-7px)}}
+@keyframes beam-breathe-soft{0%,100%{opacity:.16}50%{opacity:.29}}
+
+/* A luminous annular surface, with the watch in its centre and selection at twelve o'clock. */
+.selection-ring{display:none;position:absolute;left:50%;top:55%;width:calc(var(--ring-radius) * 2 + 64px);height:calc(var(--ring-radius) * 1.6 + 64px);transform:translate(-50%,-50%);pointer-events:none;z-index:9}
+[data-mode=carousel] .selection-ring{display:block}
+.ring-band{position:absolute;inset:0;border:2px solid #d5ff75bb;border-radius:50%;background:repeating-conic-gradient(from -22.5deg,#baff40aa 0deg 1deg,#a0f53148 1deg 44deg,#baff40cc 44deg 45deg);mask-image:radial-gradient(ellipse at center,transparent 0 52%,#000 53%);box-shadow:inset 0 0 22px #aeff6180,0 0 20px #b2ff3460}
+.selection-ring::after{content:"";position:absolute;inset:18%;border:2px solid #baff36a0;border-radius:50%;box-shadow:0 0 12px #a4ff3430}
+.ring-index{position:absolute;width:12px;height:12px;background:#efffc4;left:calc(50% - 6px);top:-12px;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 0 8px #c3ff61)}
+[data-mode=carousel] .watch-device{top:55%;width:300px;height:300px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(18deg);z-index:8;filter:drop-shadow(0 13px 9px #000b)}
+[data-mode=carousel] .watch-screen{background:#060d09;color:#b0ff30;box-shadow:inset 0 0 16px #000,0 0 12px #adff3333}
+[data-mode=carousel] .hourglass{width:88%;height:88%;filter:drop-shadow(0 0 4px #baff5880)}
+[data-mode=carousel] .orbit-line{display:none}
+.carousel{inset:0;perspective:none;transform-style:flat;z-index:14;pointer-events:none}
+.ring-item{left:50%;top:55%;width:58px;height:68px;margin:-34px 0 0 -29px;min-width:0;border:1px solid transparent;border-radius:5px;background:none;box-shadow:none;backdrop-filter:none;pointer-events:auto;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;padding:4px;transition:background .25s,border-color .25s;touch-action:pan-y}
+.ring-item::after{display:none}
+.ring-item svg{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(18%) sepia(35%) saturate(900%) hue-rotate(40deg);opacity:.95}
+.ring-item span:not(.pending-figure){display:none}
+.ring-item.is-selected{border-color:#dcff92;background:#b0fa4644;box-shadow:0 0 0 3px #adff3025,0 0 22px #aaff3433;border-radius:3px}
+.ring-item.is-selected svg{filter:brightness(0) saturate(100%) invert(94%) sepia(80%) saturate(400%) hue-rotate(25deg)}
+.ring-item.is-selected span:not(.pending-figure){display:block;position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:#d9fba4;background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.ring-item.is-front,.ring-item.is-back{filter:none}
+.ring-item .pending-figure{font-size:8px;color:#d6ff8b;line-height:1.4}
+
+/* Permanent opposing leaves make the diamond aperture a physical part of the dial. */
+[data-mode=dial] .watch-device{top:56%;width:520px;height:520px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y)));filter:drop-shadow(0 15px 10px #000a)}
+[data-mode=dial] .watch-screen{background:#b6fb24;box-shadow:inset 0 0 0 4px #0b130b,inset 0 0 24px #365409,0 0 20px #acff251a}
+[data-mode=dial] .dial-shape{inset:2%;background:#b7fa20;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+[data-mode=dial] .dial-shape::before{display:none}
+[data-mode=dial] .dial-shape svg{filter:brightness(0);transform:scale(var(--dial-scale,.55));width:100%;height:100%}
+.screen-rotor{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:50%;transform-origin:center;overflow:hidden;filter:drop-shadow(0 0 2px #071009)}
+.dial-shutter{inset:0;background:linear-gradient(112deg,#e3e7d9,#869180 43%,#566451);box-shadow:none;transform:none;pointer-events:none}
+.shutter-a{clip-path:polygon(0 0,50% 0,0 50%,50% 100%,0 100%)}
+.shutter-b{clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%,100% 50%)}
+.dial-shutter::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0001,transparent 40%,#0005);border:3px solid #0e190d;border-radius:50%}
+.screen-rim{border:3px solid #18251a;box-shadow:inset 0 0 0 1px #82976c80;inset:0;z-index:10}
+[data-mode=dial] .screen-glass{opacity:.25}
+.filter-recovery{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:12px 20px;color:#a9bd9b;background:#101a11;border-top:1px solid #293f25;font-size:11px}
+.filter-recovery button{min-height:38px;border:1px solid #a1ce5860;border-radius:5px;padding:6px 12px;color:#ccf791}
+.filter-recovery[hidden]{display:none!important}
+[data-watch=ultimatrix][data-mode=projection] .watch-device{top:68.5%;width:min(380px,90cqw);height:min(380px,90cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(68deg) rotateZ(-12deg)}
+[data-watch=ultimatrix][data-mode=dial] .watch-device{width:min(370px,100cqw);height:min(370px,100cqw);top:38%}
+@media(max-width:760px){
+  .stage{height:475px}.experience-head{padding:18px 17px 0}.stage-coordinate{top:86px;opacity:.55}
+  [data-mode=projection] .watch-device{width:330px;height:330px;top:77%}
+  [data-mode=carousel] .watch-device{width:240px;height:240px}
+  [data-mode=dial] .watch-device{width:395px;height:395px}
+  .ring-item{width:48px;height:58px;margin:-29px 0 0 -24px}
+  .selection-ring{width:calc(var(--ring-radius) * 2 + 48px);height:calc(var(--ring-radius) * 1.6 + 48px)}
+  .emitter-cap{height:30px;top:-11px;border-width:3px}
+  .filter-recovery{padding:10px 13px;font-size:10px}.stage-bottom{font-size:9px}
+}
+@media(max-width:380px){
+  .stage{height:445px}[data-mode=projection] .watch-device{width:295px;height:295px}
+  [data-mode=carousel] .watch-device{width:210px;height:210px}
+  [data-mode=dial] .watch-device{width:340px;height:340px}
+  .ring-item{width:42px;height:52px;margin:-26px 0 0 -21px}
+}
+[data-mode=projection] .watch-device{width:min(430px,88cqw);height:min(430px,88cqw)}
+[data-watch=omniverse][data-mode=projection] .watch-device{width:min(360px,78cqw);height:min(360px,78cqw)}
 </style>
 </head>
 <body>
@@ -172,7 +265,9 @@
           <div class="stage" id="stage" tabindex="0" aria-label="选择区域，左右方向键切换外星人，Enter 锁定">
             <div class="stage-grid" aria-hidden="true"></div><div class="orbit-line orbit-a" aria-hidden="true"></div><div class="orbit-line orbit-b" aria-hidden="true"></div>
             <p class="stage-coordinate" aria-hidden="true">DNA SEQUENCE<br><b id="sequence-id">001</b></p>
-            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
+            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-volume" id="holo-volume"><div class="holo-depth depth-back" id="holo-depth-back"></div><div class="holo-depth depth-mid" id="holo-depth-mid"></div><div class="holo-depth depth-front" id="holo-depth-front"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
+            <div class="projection-emitter" id="projection-emitter" aria-hidden="true"><div class="emitter-foot"></div><div class="emitter-shaft"><i></i><i></i><i></i><i></i><i></i></div><div class="emitter-cap"></div></div>
+            <div class="selection-ring" aria-hidden="true"><div class="ring-band"></div><div class="ring-index"></div></div>
             <div class="carousel" id="carousel" aria-label="环形形态列表"></div>
             <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人">
               <span class="watch-ground-shadow"></span>
@@ -180,7 +275,7 @@
               <img class="watch-art recalibrated" src="./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png" alt="" draggable="false">
               <img class="watch-art ultimatrix" src="./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png" alt="" draggable="false">
               <img class="watch-art omniverse" src="./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png" alt="" draggable="false">
-              <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span><span class="screen-glass"></span></span>
+              <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="screen-rotor" id="screen-rotor"><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span></span><span class="screen-glass"></span></span>
               <span class="watch-contact-ring"></span>
             </button>
             <div class="summon-flash" aria-hidden="true"></div><div class="summon-ring" aria-hidden="true"></div>
@@ -188,6 +283,7 @@
             <div class="stage-bottom"><span id="stage-hint">滑动切换 · 点击表盘锁定</span><span class="live-tag"><i></i> DNA LINK</span></div>
           </div>
           <div class="selection-bar"><button id="previous" class="arrow" type="button" aria-label="上一个外星人">←</button><div class="selection-name"><span id="selected-en">HEATBLAST</span><h3 id="selected-name">火焰人</h3><p id="selected-group">初代经典</p></div><button id="next" class="arrow" type="button" aria-label="下一个外星人">→</button><button id="confirm" class="confirm" type="button"><span>锁定形态</span><b aria-hidden="true">↗</b></button></div>
+          <div class="filter-recovery library-tools" aria-label="当前英雄筛选"><span id="filter-summary" role="status" aria-live="polite"></span><button id="reset-filters" class="subtle" type="button" data-action="reset-filters">显示全部英雄</button></div>
           <div class="confirmation" id="confirmation" hidden><span id="confirmation-label"></span><button id="draft-button" type="button" class="subtle">复制形态名称</button></div>
         </section>
       </div>
@@ -240,20 +336,66 @@ function ringItems(forms, id, slots = 8) {
   return Array.from({ length }, (_, n) => forms[(start + n + forms.length) % forms.length]);
 }
 
-// Angle 0 faces the viewer at the bottom of the orbit. Measure the stage, not the host viewport.
+// The watch center is the origin; angle 0 is the selected slot at twelve o'clock.
+// The ring stays in one plane. Depth changes size and stacking, not its z position.
 function ringPlacement(relativeAngle, width) {
   const size = Number.isFinite(width) && width > 0 ? width : 400;
   const angle = Number.isFinite(relativeAngle) ? relativeAngle : 0;
-  const mobile = size < 600;
   const depth = (Math.cos(angle) + 1) / 2;
+  // Match CSS --ring-radius: min(220px, 34cqw). Cards remain upright;
+  // only extremely narrow stages need the largest 58px icon's half-width guard.
+  const edgeRadius = Math.max(0, size / 2 - 58 * 1.25 / 2 - 4);
+  const radiusX = Math.min(size * .34, 220, edgeRadius);
+  const radiusY = radiusX * .8;
   return {
-    x: Math.sin(angle) * Math.min(mobile ? 170 : 250, size * .32),
-    y: Math.cos(angle) * (mobile ? 90 : 110),
-    z: Math.cos(angle) * 80,
-    scale: .48 + depth * .68,
-    opacity: .28 + depth * .72,
+    x: Math.sin(angle) * radiusX,
+    y: -Math.cos(angle) * radiusY,
+    z: 0,
+    rotate: Math.atan2(radiusY * Math.sin(angle), radiusX * Math.cos(angle)) * 180 / Math.PI,
+    scale: .70 + depth * .55,
+    opacity: .35 + depth * .65,
     zIndex: 20 + Math.round(depth * 80),
     depth,
+  };
+}
+
+// CSS contract: a/b are permanent full-size leaves; their parent #screen-rotor
+// rotates around its center. These equal-vertex clips morph the opening itself.
+// The 760ms choreography is interaction design, not a verified animation timing.
+function dialSelectionFrames(direction = 1) {
+  const sign = Number.isFinite(direction) && direction < 0 ? -1 : 1;
+  const duration = 760;
+  const aOpen = 'polygon(0% 0%,50% 0%,0% 50%,50% 100%,0% 100%)';
+  const bOpen = 'polygon(50% 0%,100% 0%,100% 100%,50% 100%,100% 50%)';
+  const aHourglass = 'polygon(0% 0%,25% 0%,42% 50%,25% 100%,0% 100%)';
+  const bHourglass = 'polygon(75% 0%,100% 0%,100% 100%,75% 100%,58% 50%)';
+  const aClosed = 'polygon(0% 0%,50% 0%,50% 50%,50% 100%,0% 100%)';
+  const bClosed = 'polygon(50% 0%,100% 0%,100% 100%,50% 100%,50% 50%)';
+  const curve = 'cubic-bezier(.45,0,.2,1)';
+  const leaf = (open, hourglass, closed) => [
+    { clipPath: open, offset: 0, easing: curve },
+    { clipPath: hourglass, offset: .16, easing: curve },
+    { clipPath: closed, offset: .30, easing: 'linear' },
+    { clipPath: closed, offset: .55, easing: curve },
+    { clipPath: hourglass, offset: .76, easing: curve },
+    { clipPath: open, offset: 1, easing: 'linear' },
+  ];
+  return {
+    duration,
+    swapAt: duration * .45,
+    // Global easing must stay linear so swapAt matches the covered wall-clock window.
+    // Individual transition segments carry their own easing instead.
+    easing: 'linear',
+    a: leaf(aOpen, aHourglass, aClosed),
+    b: leaf(bOpen, bHourglass, bClosed),
+    rotor: [
+      { transform: 'rotate(0deg)', offset: 0, easing: 'linear' },
+      { transform: 'rotate(0deg)', offset: .16, easing: curve },
+      { transform: `rotate(${sign * 90}deg)`, offset: .30, easing: 'linear' },
+      { transform: `rotate(${sign * 90}deg)`, offset: .55, easing: curve },
+      { transform: `rotate(${sign * 180}deg)`, offset: .76, easing: 'linear' },
+      { transform: `rotate(${sign * 180}deg)`, offset: 1, easing: 'linear' },
+    ],
   };
 }
 
@@ -339,9 +481,15 @@ function alignProjection() {
   // Anchor the light to the rendered face, including its perspective transform.
   const x = face.left + face.width / 2 - stage.left;
   const y = face.top + face.height / 2 - stage.top;
-  const top = Math.max(72, y - 300), height = Math.max(100, y - top + 7);
+  const lift = Math.min(46, Math.max(30, face.width * .27));
+  const emitter = $('projection-emitter');
+  if (emitter) {
+    emitter.style.left = `${x}px`; emitter.style.top = `${y - lift}px`;
+    emitter.style.width = `${face.width * 1.06}px`; emitter.style.height = `${lift + 16}px`;
+  }
+  const top = Math.max(92, y - lift - 240), height = Math.max(100, y - lift - top + 5);
   hologram.style.left = `${x}px`; hologram.style.top = `${top}px`;
-  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(200, height * .62)}px`;
+  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(210, height * .82)}px`;
   return true;
 }
 function trackProjection(transition = false) {
@@ -358,6 +506,9 @@ function trackProjection(transition = false) {
 }
 function setFigures(form) {
   $('holo-shape').replaceChildren(figure(form));
+  for (const id of ['holo-depth-back', 'holo-depth-mid', 'holo-depth-front']) {
+    if ($(id)) $(id).replaceChildren(figure(form));
+  }
   $('dial-shape').replaceChildren(figure(form));
   $('dial-shape').style.visibility = '';
   displayedId = form?.id || '';
@@ -372,8 +523,9 @@ function stopMotion(settle = true) {
   app.classList.remove('selection-transition', 'dial-transition', 'holo-transition', 'ring-transition');
   for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
   // CSS supplies complementary diagonal polygons above both dial figures, with pointer-events:none.
-  if ($('dial-shutter-a')) $('dial-shutter-a').style.transform = 'translate(-105%,-105%)';
-  if ($('dial-shutter-b')) $('dial-shutter-b').style.transform = 'translate(105%,105%)';
+  for (const id of ['dial-shutter-a', 'dial-shutter-b']) {
+    if ($(id)) { $(id).style.transform = ''; $(id).style.clipPath = ''; }
+  }
   const form = visible.length ? byId.get(settle ? preferences.selectedId : displayedId) : null;
   setFigures(form);
   if (settle) { ringRotation = ringTarget; positionRing(ringRotation); }
@@ -397,6 +549,16 @@ function selectionMotion(direction = 1, previousForm = null) {
   app.classList.add('selection-transition');
   if (preferences.mode === 'projection') {
     app.classList.add('holo-transition');
+    animate($('projection-emitter'), [
+      { transform: 'translateX(-50%) scaleY(.12)', opacity: .35 },
+      { transform: 'translateX(-50%) scaleY(1.08)', opacity: 1, offset: .72 },
+      { transform: 'translateX(-50%) scaleY(1)', opacity: 1 },
+    ], { duration: 560, easing: 'cubic-bezier(.2,.75,.25,1)' });
+    animate($('holo-volume'), [
+      { opacity: 0, transform: 'translateY(45px) scale(.35,.05)' },
+      { opacity: .3, offset: .25 },
+      { opacity: 1, transform: 'translateY(0) scale(1)' },
+    ], { duration: 760, easing: 'cubic-bezier(.2,.7,.2,1)' });
     animate($('holo-shape'), [
       { opacity: .15, transform: `translate(${direction * 10}px,55px) scale(.76,.3)`, clipPath: 'inset(100% 0 0 0)', filter: 'blur(6px)' },
       { opacity: .8, transform: 'translate(0,12px) scale(1.02,.92)', clipPath: 'inset(35% 0 0 0)', filter: 'blur(2px)', offset: .4 },
@@ -419,16 +581,13 @@ function selectionMotion(direction = 1, previousForm = null) {
     app.classList.add('dial-transition');
     previous.replaceChildren(figure(previousForm)); previous.hidden = false;
     $('dial-shape').style.visibility = 'hidden'; displayedId = previousForm?.id || '';
-    // Old stays visible until BOTH diagonal leaves cover the diamond; only then reveal the new figure.
-    for (const [leaf, sign] of [[a, -1], [b, 1]]) {
-      animate(leaf, [
-        { transform: `translate(${sign * 105}%,${sign * 105}%)` },
-        { transform: 'translate(0,0)', offset: .36 },
-        { transform: 'translate(0,0)', offset: .55 },
-        { transform: `translate(${sign * -105}%,${sign * -105}%)` },
-      ], { duration: 760, easing: 'cubic-bezier(.55,0,.25,1)' });
-    }
-    after(325, () => { previous.hidden = true; $('dial-shape').style.visibility = ''; displayedId = preferences.selectedId; });
+    // Two opposing leaves narrow the opening, cross over its centre, then reopen.
+    // Swap behind the closed leaves, never dissolve one hero into the next.
+    const motion = dialSelectionFrames(direction);
+    animate(a, motion.a, { duration: motion.duration, easing: motion.easing });
+    animate(b, motion.b, { duration: motion.duration, easing: motion.easing });
+    animate($('screen-rotor'), motion.rotor, { duration: motion.duration, easing: motion.easing });
+    after(motion.swapAt, () => { previous.hidden = true; $('dial-shape').style.visibility = ''; displayedId = preferences.selectedId; });
   }
   after(780, () => {
     for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
@@ -463,12 +622,14 @@ function renderControls() {
 function positionRing(rotation) {
   const count = ringEntries.length;
   const width = $('stage').clientWidth || 400;
+  $('stage').style.setProperty('--ring-radius', `${Math.abs(ringPlacement(Math.PI / 2, width).x)}px`);
   ringNodes.forEach((node, index) => {
     if (index >= count) return;
     const pose = ringPlacement(index / count * turn + rotation, width);
     node.style.transform = `translate3d(${pose.x}px,${pose.y}px,${pose.z}px) scale(${pose.scale})`;
     node.style.opacity = String(pose.opacity); node.style.zIndex = String(pose.zIndex);
     node.style.setProperty('--ring-depth', String(pose.depth));
+    node.style.setProperty('--sector-angle', `${pose.rotate || 0}deg`);
     node.classList.toggle('is-front', pose.depth > .7); node.classList.toggle('is-back', pose.depth < .3);
   });
 }
@@ -542,6 +703,7 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
 }
 function renderCatalog() {
   $('result-count').textContent = `${visible.length} / ${forms.length}`;
+  renderFilterSummary();
   $('empty-state').hidden = visible.length !== 0;
   $('catalog-grid').replaceChildren(...visible.map(form => {
     const node = button('', 'alien-card', 'select', form.id);
@@ -567,6 +729,19 @@ function refreshFilter() {
   }
   $('confirmation').hidden = true;
   renderFilters(); renderCatalog(); renderStage();
+}
+function renderFilterSummary() {
+  const filters = [];
+  if (query.trim()) filters.push(`搜索「${query.trim()}」`);
+  if (group !== 'all') filters.push(data.groups[group] || group);
+  if (readyOnly) filters.push('仅已有剪影');
+  $('filter-summary').textContent = `显示 ${visible.length} / ${forms.length} 个英雄 · ${filters.join(' · ') || '全部形态'}`;
+}
+function resetFilters() {
+  query = ''; group = 'all'; readyOnly = false;
+  $('search').value = '';
+  $('ready-only').checked = false;
+  refreshFilter();
 }
 function select(id, direction = 1) {
   if (!byId.has(id) || !visible.some(form => form.id === id)) return;
@@ -611,6 +786,7 @@ listen(app, 'click', event => {
     const previousForm = byId.get(displayedId);
     preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
   } else if (action === 'group') { group = value; refreshFilter(); }
+  else if (action === 'reset-filters') resetFilters();
 });
 listen($('previous'), 'click', () => step(-1)); listen($('next'), 'click', () => step(1));
 listen($('confirm'), 'click', confirm); listen($('watch-device'), 'click', confirm);

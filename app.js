@@ -1,4 +1,4 @@
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement } from './core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames } from './core.js';
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
@@ -81,9 +81,15 @@ function alignProjection() {
   // Anchor the light to the rendered face, including its perspective transform.
   const x = face.left + face.width / 2 - stage.left;
   const y = face.top + face.height / 2 - stage.top;
-  const top = Math.max(72, y - 300), height = Math.max(100, y - top + 7);
+  const lift = Math.min(46, Math.max(30, face.width * .27));
+  const emitter = $('projection-emitter');
+  if (emitter) {
+    emitter.style.left = `${x}px`; emitter.style.top = `${y - lift}px`;
+    emitter.style.width = `${face.width * 1.06}px`; emitter.style.height = `${lift + 16}px`;
+  }
+  const top = Math.max(92, y - lift - 240), height = Math.max(100, y - lift - top + 5);
   hologram.style.left = `${x}px`; hologram.style.top = `${top}px`;
-  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(200, height * .62)}px`;
+  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(210, height * .82)}px`;
   return true;
 }
 function trackProjection(transition = false) {
@@ -100,6 +106,9 @@ function trackProjection(transition = false) {
 }
 function setFigures(form) {
   $('holo-shape').replaceChildren(figure(form));
+  for (const id of ['holo-depth-back', 'holo-depth-mid', 'holo-depth-front']) {
+    if ($(id)) $(id).replaceChildren(figure(form));
+  }
   $('dial-shape').replaceChildren(figure(form));
   $('dial-shape').style.visibility = '';
   displayedId = form?.id || '';
@@ -114,8 +123,9 @@ function stopMotion(settle = true) {
   app.classList.remove('selection-transition', 'dial-transition', 'holo-transition', 'ring-transition');
   for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
   // CSS supplies complementary diagonal polygons above both dial figures, with pointer-events:none.
-  if ($('dial-shutter-a')) $('dial-shutter-a').style.transform = 'translate(-105%,-105%)';
-  if ($('dial-shutter-b')) $('dial-shutter-b').style.transform = 'translate(105%,105%)';
+  for (const id of ['dial-shutter-a', 'dial-shutter-b']) {
+    if ($(id)) { $(id).style.transform = ''; $(id).style.clipPath = ''; }
+  }
   const form = visible.length ? byId.get(settle ? preferences.selectedId : displayedId) : null;
   setFigures(form);
   if (settle) { ringRotation = ringTarget; positionRing(ringRotation); }
@@ -139,6 +149,16 @@ function selectionMotion(direction = 1, previousForm = null) {
   app.classList.add('selection-transition');
   if (preferences.mode === 'projection') {
     app.classList.add('holo-transition');
+    animate($('projection-emitter'), [
+      { transform: 'translateX(-50%) scaleY(.12)', opacity: .35 },
+      { transform: 'translateX(-50%) scaleY(1.08)', opacity: 1, offset: .72 },
+      { transform: 'translateX(-50%) scaleY(1)', opacity: 1 },
+    ], { duration: 560, easing: 'cubic-bezier(.2,.75,.25,1)' });
+    animate($('holo-volume'), [
+      { opacity: 0, transform: 'translateY(45px) scale(.35,.05)' },
+      { opacity: .3, offset: .25 },
+      { opacity: 1, transform: 'translateY(0) scale(1)' },
+    ], { duration: 760, easing: 'cubic-bezier(.2,.7,.2,1)' });
     animate($('holo-shape'), [
       { opacity: .15, transform: `translate(${direction * 10}px,55px) scale(.76,.3)`, clipPath: 'inset(100% 0 0 0)', filter: 'blur(6px)' },
       { opacity: .8, transform: 'translate(0,12px) scale(1.02,.92)', clipPath: 'inset(35% 0 0 0)', filter: 'blur(2px)', offset: .4 },
@@ -161,16 +181,13 @@ function selectionMotion(direction = 1, previousForm = null) {
     app.classList.add('dial-transition');
     previous.replaceChildren(figure(previousForm)); previous.hidden = false;
     $('dial-shape').style.visibility = 'hidden'; displayedId = previousForm?.id || '';
-    // Old stays visible until BOTH diagonal leaves cover the diamond; only then reveal the new figure.
-    for (const [leaf, sign] of [[a, -1], [b, 1]]) {
-      animate(leaf, [
-        { transform: `translate(${sign * 105}%,${sign * 105}%)` },
-        { transform: 'translate(0,0)', offset: .36 },
-        { transform: 'translate(0,0)', offset: .55 },
-        { transform: `translate(${sign * -105}%,${sign * -105}%)` },
-      ], { duration: 760, easing: 'cubic-bezier(.55,0,.25,1)' });
-    }
-    after(325, () => { previous.hidden = true; $('dial-shape').style.visibility = ''; displayedId = preferences.selectedId; });
+    // Two opposing leaves narrow the opening, cross over its centre, then reopen.
+    // Swap behind the closed leaves, never dissolve one hero into the next.
+    const motion = dialSelectionFrames(direction);
+    animate(a, motion.a, { duration: motion.duration, easing: motion.easing });
+    animate(b, motion.b, { duration: motion.duration, easing: motion.easing });
+    animate($('screen-rotor'), motion.rotor, { duration: motion.duration, easing: motion.easing });
+    after(motion.swapAt, () => { previous.hidden = true; $('dial-shape').style.visibility = ''; displayedId = preferences.selectedId; });
   }
   after(780, () => {
     for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
@@ -205,12 +222,14 @@ function renderControls() {
 function positionRing(rotation) {
   const count = ringEntries.length;
   const width = $('stage').clientWidth || 400;
+  $('stage').style.setProperty('--ring-radius', `${Math.abs(ringPlacement(Math.PI / 2, width).x)}px`);
   ringNodes.forEach((node, index) => {
     if (index >= count) return;
     const pose = ringPlacement(index / count * turn + rotation, width);
     node.style.transform = `translate3d(${pose.x}px,${pose.y}px,${pose.z}px) scale(${pose.scale})`;
     node.style.opacity = String(pose.opacity); node.style.zIndex = String(pose.zIndex);
     node.style.setProperty('--ring-depth', String(pose.depth));
+    node.style.setProperty('--sector-angle', `${pose.rotate || 0}deg`);
     node.classList.toggle('is-front', pose.depth > .7); node.classList.toggle('is-back', pose.depth < .3);
   });
 }
@@ -284,6 +303,7 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
 }
 function renderCatalog() {
   $('result-count').textContent = `${visible.length} / ${forms.length}`;
+  renderFilterSummary();
   $('empty-state').hidden = visible.length !== 0;
   $('catalog-grid').replaceChildren(...visible.map(form => {
     const node = button('', 'alien-card', 'select', form.id);
@@ -309,6 +329,19 @@ function refreshFilter() {
   }
   $('confirmation').hidden = true;
   renderFilters(); renderCatalog(); renderStage();
+}
+function renderFilterSummary() {
+  const filters = [];
+  if (query.trim()) filters.push(`搜索「${query.trim()}」`);
+  if (group !== 'all') filters.push(data.groups[group] || group);
+  if (readyOnly) filters.push('仅已有剪影');
+  $('filter-summary').textContent = `显示 ${visible.length} / ${forms.length} 个英雄 · ${filters.join(' · ') || '全部形态'}`;
+}
+function resetFilters() {
+  query = ''; group = 'all'; readyOnly = false;
+  $('search').value = '';
+  $('ready-only').checked = false;
+  refreshFilter();
 }
 function select(id, direction = 1) {
   if (!byId.has(id) || !visible.some(form => form.id === id)) return;
@@ -353,6 +386,7 @@ listen(app, 'click', event => {
     const previousForm = byId.get(displayedId);
     preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
   } else if (action === 'group') { group = value; refreshFilter(); }
+  else if (action === 'reset-filters') resetFilters();
 });
 listen($('previous'), 'click', () => step(-1)); listen($('next'), 'click', () => step(1));
 listen($('confirm'), 'click', confirm); listen($('watch-device'), 'click', confirm);

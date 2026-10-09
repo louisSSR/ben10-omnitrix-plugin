@@ -38,19 +38,65 @@ export function ringItems(forms, id, slots = 8) {
   return Array.from({ length }, (_, n) => forms[(start + n + forms.length) % forms.length]);
 }
 
-// Angle 0 faces the viewer at the bottom of the orbit. Measure the stage, not the host viewport.
+// The watch center is the origin; angle 0 is the selected slot at twelve o'clock.
+// The ring stays in one plane. Depth changes size and stacking, not its z position.
 export function ringPlacement(relativeAngle, width) {
   const size = Number.isFinite(width) && width > 0 ? width : 400;
   const angle = Number.isFinite(relativeAngle) ? relativeAngle : 0;
-  const mobile = size < 600;
   const depth = (Math.cos(angle) + 1) / 2;
+  // Match CSS --ring-radius: min(220px, 34cqw). Cards remain upright;
+  // only extremely narrow stages need the largest 58px icon's half-width guard.
+  const edgeRadius = Math.max(0, size / 2 - 58 * 1.25 / 2 - 4);
+  const radiusX = Math.min(size * .34, 220, edgeRadius);
+  const radiusY = radiusX * .8;
   return {
-    x: Math.sin(angle) * Math.min(mobile ? 170 : 250, size * .32),
-    y: Math.cos(angle) * (mobile ? 90 : 110),
-    z: Math.cos(angle) * 80,
-    scale: .48 + depth * .68,
-    opacity: .28 + depth * .72,
+    x: Math.sin(angle) * radiusX,
+    y: -Math.cos(angle) * radiusY,
+    z: 0,
+    rotate: Math.atan2(radiusY * Math.sin(angle), radiusX * Math.cos(angle)) * 180 / Math.PI,
+    scale: .70 + depth * .55,
+    opacity: .35 + depth * .65,
     zIndex: 20 + Math.round(depth * 80),
     depth,
+  };
+}
+
+// CSS contract: a/b are permanent full-size leaves; their parent #screen-rotor
+// rotates around its center. These equal-vertex clips morph the opening itself.
+// The 760ms choreography is interaction design, not a verified animation timing.
+export function dialSelectionFrames(direction = 1) {
+  const sign = Number.isFinite(direction) && direction < 0 ? -1 : 1;
+  const duration = 760;
+  const aOpen = 'polygon(0% 0%,50% 0%,0% 50%,50% 100%,0% 100%)';
+  const bOpen = 'polygon(50% 0%,100% 0%,100% 100%,50% 100%,100% 50%)';
+  const aHourglass = 'polygon(0% 0%,25% 0%,42% 50%,25% 100%,0% 100%)';
+  const bHourglass = 'polygon(75% 0%,100% 0%,100% 100%,75% 100%,58% 50%)';
+  const aClosed = 'polygon(0% 0%,50% 0%,50% 50%,50% 100%,0% 100%)';
+  const bClosed = 'polygon(50% 0%,100% 0%,100% 100%,50% 100%,50% 50%)';
+  const curve = 'cubic-bezier(.45,0,.2,1)';
+  const leaf = (open, hourglass, closed) => [
+    { clipPath: open, offset: 0, easing: curve },
+    { clipPath: hourglass, offset: .16, easing: curve },
+    { clipPath: closed, offset: .30, easing: 'linear' },
+    { clipPath: closed, offset: .55, easing: curve },
+    { clipPath: hourglass, offset: .76, easing: curve },
+    { clipPath: open, offset: 1, easing: 'linear' },
+  ];
+  return {
+    duration,
+    swapAt: duration * .45,
+    // Global easing must stay linear so swapAt matches the covered wall-clock window.
+    // Individual transition segments carry their own easing instead.
+    easing: 'linear',
+    a: leaf(aOpen, aHourglass, aClosed),
+    b: leaf(bOpen, bHourglass, bClosed),
+    rotor: [
+      { transform: 'rotate(0deg)', offset: 0, easing: 'linear' },
+      { transform: 'rotate(0deg)', offset: .16, easing: curve },
+      { transform: `rotate(${sign * 90}deg)`, offset: .30, easing: 'linear' },
+      { transform: `rotate(${sign * 90}deg)`, offset: .55, easing: curve },
+      { transform: `rotate(${sign * 180}deg)`, offset: .76, easing: 'linear' },
+      { transform: `rotate(${sign * 180}deg)`, offset: 1, easing: 'linear' },
+    ],
   };
 }

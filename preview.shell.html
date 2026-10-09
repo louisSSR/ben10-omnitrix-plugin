@@ -30,7 +30,9 @@
           <div class="stage" id="stage" tabindex="0" aria-label="选择区域，左右方向键切换外星人，Enter 锁定">
             <div class="stage-grid" aria-hidden="true"></div><div class="orbit-line orbit-a" aria-hidden="true"></div><div class="orbit-line orbit-b" aria-hidden="true"></div>
             <p class="stage-coordinate" aria-hidden="true">DNA SEQUENCE<br><b id="sequence-id">001</b></p>
-            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
+            <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-volume" id="holo-volume"><div class="holo-depth depth-back" id="holo-depth-back"></div><div class="holo-depth depth-mid" id="holo-depth-mid"></div><div class="holo-depth depth-front" id="holo-depth-front"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
+            <div class="projection-emitter" id="projection-emitter" aria-hidden="true"><div class="emitter-foot"></div><div class="emitter-shaft"><i></i><i></i><i></i><i></i><i></i></div><div class="emitter-cap"></div></div>
+            <div class="selection-ring" aria-hidden="true"><div class="ring-band"></div><div class="ring-index"></div></div>
             <div class="carousel" id="carousel" aria-label="环形形态列表"></div>
             <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人">
               <span class="watch-ground-shadow"></span>
@@ -38,7 +40,7 @@
               <img class="watch-art recalibrated" src="./assets/watches-v3/recalibrated.png" alt="" draggable="false">
               <img class="watch-art ultimatrix" src="./assets/watches-v3/ultimatrix.png" alt="" draggable="false">
               <img class="watch-art omniverse" src="./assets/watches-v3/omniverse.png" alt="" draggable="false">
-              <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span><span class="screen-glass"></span></span>
+              <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="screen-rotor" id="screen-rotor"><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span></span><span class="screen-glass"></span></span>
               <span class="watch-contact-ring"></span>
             </button>
             <div class="summon-flash" aria-hidden="true"></div><div class="summon-ring" aria-hidden="true"></div>
@@ -46,6 +48,7 @@
             <div class="stage-bottom"><span id="stage-hint">滑动切换 · 点击表盘锁定</span><span class="live-tag"><i></i> DNA LINK</span></div>
           </div>
           <div class="selection-bar"><button id="previous" class="arrow" type="button" aria-label="上一个外星人">←</button><div class="selection-name"><span id="selected-en">HEATBLAST</span><h3 id="selected-name">火焰人</h3><p id="selected-group">初代经典</p></div><button id="next" class="arrow" type="button" aria-label="下一个外星人">→</button><button id="confirm" class="confirm" type="button"><span>锁定形态</span><b aria-hidden="true">↗</b></button></div>
+          <div class="filter-recovery library-tools" aria-label="当前英雄筛选"><span id="filter-summary" role="status" aria-live="polite"></span><button id="reset-filters" class="subtle" type="button" data-action="reset-filters">显示全部英雄</button></div>
           <div class="confirmation" id="confirmation" hidden><span id="confirmation-label"></span><button id="draft-button" type="button" class="subtle">复制形态名称</button></div>
         </section>
       </div>

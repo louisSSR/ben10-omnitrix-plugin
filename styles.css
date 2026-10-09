@@ -35,3 +35,96 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .reduced-motion *,.reduced-motion *::before,.reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media(max-width:600px){.selection-bar{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;gap:12px}.selection-bar .confirm{grid-column:1/-1;width:100%;margin:0}.selection-name h3{font-size:20px;overflow-wrap:break-word}.selection-name>span{letter-spacing:.6px}}
+
+/* Device scenes: all coordinates originate at the actual face centre. */
+.stage{--ring-radius:min(220px,34cqw);container-type:inline-size;isolation:isolate}
+.watch-device{transform-origin:var(--face-x) var(--face-y);left:50%;border:0;background:transparent;padding:0}
+[data-mode=projection] .watch-device{top:76%;width:430px;height:430px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(64deg) rotateZ(90deg);filter:drop-shadow(0 18px 3px #081009) drop-shadow(0 26px 18px #000b)}
+[data-mode=projection] .watch-screen{background:#172814;box-shadow:inset 0 0 14px #000}
+[data-mode=projection] .hourglass{opacity:.25}
+[data-mode=projection] .orbit-line{top:77%;height:94px;width:380px;opacity:.5}
+[data-mode=projection] .orbit-b{width:470px;height:138px;opacity:.2}
+.projection-emitter{display:none;position:absolute;z-index:10;transform:translateX(-50%);transform-origin:50% 100%;pointer-events:none;filter:drop-shadow(0 5px 5px #0009)}
+[data-mode=projection] .projection-emitter{display:block}
+.emitter-foot{position:absolute;inset:auto -6% -8px;height:44%;border:3px solid #3b4939;border-radius:50%;background:#131b15;box-shadow:0 0 0 2px #030906}
+.emitter-shaft{position:absolute;inset:12px 0 4px;border-radius:0 0 45% 45% / 0 0 32% 32%;border:2px solid #101810;background:linear-gradient(90deg,#080d0a,#354137 22%,#18251c 57%,#080d0a);display:flex;align-items:center;justify-content:space-evenly;overflow:hidden}
+.emitter-shaft i{width:5px;height:45%;min-height:8px;background:#aaff2c;box-shadow:0 0 7px #adff3866;transform:skewY(-12deg);border-radius:1px}
+.emitter-shaft i:nth-child(even){height:28%;transform:skewY(12deg)}
+.emitter-cap{position:absolute;inset:-15px -2% auto;height:38px;border-radius:50%;border:4px solid #5c704c;background:radial-gradient(ellipse,#f1ffc8,#b9ff57 38%,#71b93e 66%,#102215 70%);box-shadow:0 0 0 2px #0e1c0d,0 0 22px #aaff3244,inset 0 -4px 0 #17281c}
+.hologram{z-index:12;transform:translateX(-50%);perspective:680px;pointer-events:none}
+.holo-volume{position:absolute;inset:0 0 22px;transform-style:preserve-3d;transform-origin:50% 100%;animation:volume-drift 7s ease-in-out infinite}
+.holo-shape,.holo-depth,.holo-echo{position:absolute;inset:0;height:auto;transform-origin:50% 100%;pointer-events:none}
+.holo-shape{animation:none;opacity:.86;transform:translateZ(8px);mask-image:repeating-linear-gradient(0deg,#000 0 2px,#000b 2px 3px);filter:drop-shadow(0 0 1px #efffc9) drop-shadow(0 0 7px #aaff3e66)}
+.holo-depth svg,.holo-shape svg{width:100%;height:100%}
+.holo-shape svg{filter:brightness(0) saturate(100%) invert(90%) sepia(65%) saturate(850%) hue-rotate(25deg)}
+.holo-depth{mask-image:repeating-linear-gradient(0deg,#000 0 1px,#0006 1px 3px)}
+.holo-depth svg{filter:brightness(0) saturate(100%) invert(65%) sepia(90%) saturate(800%) hue-rotate(30deg)}
+.depth-back{transform:translate3d(-9px,3px,-16px);opacity:.18;filter:blur(1px)}
+.depth-mid{transform:translate3d(-5px,2px,-7px);opacity:.38}
+.depth-front{transform:translate3d(-2px,1px,1px);opacity:.62}
+.holo-echo{z-index:3}
+.holo-light{inset:25% -7% 0;opacity:.24;clip-path:polygon(3% 0,97% 0,70% 100%,30% 100%);background:linear-gradient(0deg,#d9ff9777,#acff3818 65%,transparent);animation:beam-breathe-soft 4s ease-in-out infinite;filter:none}
+.holo-base{bottom:0;height:20px;left:20%;right:20%;transform:none;opacity:.8}
+.holo-base-outer{bottom:-4px;height:29px;left:5%;right:5%;opacity:.3;border-width:1px;background:none;box-shadow:none}
+.holo-particles{opacity:.18}.scanline{opacity:.22}
+.holo-scan{left:8%;right:8%;height:2px;z-index:5;box-shadow:0 0 12px #d5ff81;background:#e2ffb5}
+@keyframes volume-drift{0%,100%{transform:rotateY(-19deg) rotateX(2deg) translateY(0)}50%{transform:rotateY(17deg) rotateX(-2deg) translateY(-7px)}}
+@keyframes beam-breathe-soft{0%,100%{opacity:.16}50%{opacity:.29}}
+
+/* A luminous annular surface, with the watch in its centre and selection at twelve o'clock. */
+.selection-ring{display:none;position:absolute;left:50%;top:55%;width:calc(var(--ring-radius) * 2 + 64px);height:calc(var(--ring-radius) * 1.6 + 64px);transform:translate(-50%,-50%);pointer-events:none;z-index:9}
+[data-mode=carousel] .selection-ring{display:block}
+.ring-band{position:absolute;inset:0;border:2px solid #d5ff75bb;border-radius:50%;background:repeating-conic-gradient(from -22.5deg,#baff40aa 0deg 1deg,#a0f53148 1deg 44deg,#baff40cc 44deg 45deg);mask-image:radial-gradient(ellipse at center,transparent 0 52%,#000 53%);box-shadow:inset 0 0 22px #aeff6180,0 0 20px #b2ff3460}
+.selection-ring::after{content:"";position:absolute;inset:18%;border:2px solid #baff36a0;border-radius:50%;box-shadow:0 0 12px #a4ff3430}
+.ring-index{position:absolute;width:12px;height:12px;background:#efffc4;left:calc(50% - 6px);top:-12px;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 0 8px #c3ff61)}
+[data-mode=carousel] .watch-device{top:55%;width:300px;height:300px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(18deg);z-index:8;filter:drop-shadow(0 13px 9px #000b)}
+[data-mode=carousel] .watch-screen{background:#060d09;color:#b0ff30;box-shadow:inset 0 0 16px #000,0 0 12px #adff3333}
+[data-mode=carousel] .hourglass{width:88%;height:88%;filter:drop-shadow(0 0 4px #baff5880)}
+[data-mode=carousel] .orbit-line{display:none}
+.carousel{inset:0;perspective:none;transform-style:flat;z-index:14;pointer-events:none}
+.ring-item{left:50%;top:55%;width:58px;height:68px;margin:-34px 0 0 -29px;min-width:0;border:1px solid transparent;border-radius:5px;background:none;box-shadow:none;backdrop-filter:none;pointer-events:auto;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;padding:4px;transition:background .25s,border-color .25s;touch-action:pan-y}
+.ring-item::after{display:none}
+.ring-item svg{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(18%) sepia(35%) saturate(900%) hue-rotate(40deg);opacity:.95}
+.ring-item span:not(.pending-figure){display:none}
+.ring-item.is-selected{border-color:#dcff92;background:#b0fa4644;box-shadow:0 0 0 3px #adff3025,0 0 22px #aaff3433;border-radius:3px}
+.ring-item.is-selected svg{filter:brightness(0) saturate(100%) invert(94%) sepia(80%) saturate(400%) hue-rotate(25deg)}
+.ring-item.is-selected span:not(.pending-figure){display:block;position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:#d9fba4;background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.ring-item.is-front,.ring-item.is-back{filter:none}
+.ring-item .pending-figure{font-size:8px;color:#d6ff8b;line-height:1.4}
+
+/* Permanent opposing leaves make the diamond aperture a physical part of the dial. */
+[data-mode=dial] .watch-device{top:56%;width:520px;height:520px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y)));filter:drop-shadow(0 15px 10px #000a)}
+[data-mode=dial] .watch-screen{background:#b6fb24;box-shadow:inset 0 0 0 4px #0b130b,inset 0 0 24px #365409,0 0 20px #acff251a}
+[data-mode=dial] .dial-shape{inset:2%;background:#b7fa20;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+[data-mode=dial] .dial-shape::before{display:none}
+[data-mode=dial] .dial-shape svg{filter:brightness(0);transform:scale(var(--dial-scale,.55));width:100%;height:100%}
+.screen-rotor{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:50%;transform-origin:center;overflow:hidden;filter:drop-shadow(0 0 2px #071009)}
+.dial-shutter{inset:0;background:linear-gradient(112deg,#e3e7d9,#869180 43%,#566451);box-shadow:none;transform:none;pointer-events:none}
+.shutter-a{clip-path:polygon(0 0,50% 0,0 50%,50% 100%,0 100%)}
+.shutter-b{clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%,100% 50%)}
+.dial-shutter::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0001,transparent 40%,#0005);border:3px solid #0e190d;border-radius:50%}
+.screen-rim{border:3px solid #18251a;box-shadow:inset 0 0 0 1px #82976c80;inset:0;z-index:10}
+[data-mode=dial] .screen-glass{opacity:.25}
+.filter-recovery{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:12px 20px;color:#a9bd9b;background:#101a11;border-top:1px solid #293f25;font-size:11px}
+.filter-recovery button{min-height:38px;border:1px solid #a1ce5860;border-radius:5px;padding:6px 12px;color:#ccf791}
+.filter-recovery[hidden]{display:none!important}
+[data-watch=ultimatrix][data-mode=projection] .watch-device{top:68.5%;width:min(380px,90cqw);height:min(380px,90cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(68deg) rotateZ(-12deg)}
+[data-watch=ultimatrix][data-mode=dial] .watch-device{width:min(370px,100cqw);height:min(370px,100cqw);top:38%}
+@media(max-width:760px){
+  .stage{height:475px}.experience-head{padding:18px 17px 0}.stage-coordinate{top:86px;opacity:.55}
+  [data-mode=projection] .watch-device{width:330px;height:330px;top:77%}
+  [data-mode=carousel] .watch-device{width:240px;height:240px}
+  [data-mode=dial] .watch-device{width:395px;height:395px}
+  .ring-item{width:48px;height:58px;margin:-29px 0 0 -24px}
+  .selection-ring{width:calc(var(--ring-radius) * 2 + 48px);height:calc(var(--ring-radius) * 1.6 + 48px)}
+  .emitter-cap{height:30px;top:-11px;border-width:3px}
+  .filter-recovery{padding:10px 13px;font-size:10px}.stage-bottom{font-size:9px}
+}
+@media(max-width:380px){
+  .stage{height:445px}[data-mode=projection] .watch-device{width:295px;height:295px}
+  [data-mode=carousel] .watch-device{width:210px;height:210px}
+  [data-mode=dial] .watch-device{width:340px;height:340px}
+  .ring-item{width:42px;height:52px;margin:-26px 0 0 -21px}
+}
+[data-mode=projection] .watch-device{width:min(430px,88cqw);height:min(430px,88cqw)}
+[data-watch=omniverse][data-mode=projection] .watch-device{width:min(360px,78cqw);height:min(360px,78cqw)}

@@ -18,13 +18,13 @@
     },
     {
       "path": "preview.html",
-      "bytes": 255614,
-      "sha256": "0c0655ea0ecae38f932ad4bbc0432f1aa8a6ebefdfc08da79633533680b39af4"
+      "bytes": 270678,
+      "sha256": "bb69b301cbdaa36ff8bb985319d037a5d7b713d5a1beffbb99cd8d36e997e2a3"
     },
     {
       "path": "manifest.json",
-      "bytes": 435,
-      "sha256": "fba03d9d9bf3ac0c38586cb348fb4e23ab4156c5799bac3d70bb86211582c3db"
+      "bytes": 453,
+      "sha256": "87d8435bd28e264673526c60cd597ec095c6221503f0001291b7413ac83775b5"
     },
     {
       "path": "assets/runtime/00fe56cc1d0346ce6f20dc662d9b2ffdd6a9d013daa344bb64a8c10d55431dd8.png",
