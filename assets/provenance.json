@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "318d103bf7d1fc0e0dac996d93579d9792f32cd1d43577424cdf86c18698d2ae",
-  "svgSha256": "9dcf593d6a023bf513086fa3f2a93afdd6add050080c631a361b35ac911a60ab",
+  "catalogSha256": "c7187a80be643b5a6d4fd58f699a6b90662e591fb0f27dc7ab55a65da97225a2",
+  "svgSha256": "2525f6341e117e9e1a73a40006b3401084b13a39ee75fbe0888e5d0fa0028df0",
   "coverage": {
-    "total": 230,
-    "reviewed": 228,
+    "total": 232,
+    "reviewed": 230,
     "missing": 2
   },
   "assets": [
@@ -2066,6 +2066,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "84895219ad788451b9a64d11f9667445fcbd5d0f5485945eec2f1f6a7aeca095",
       "maskSha256": "d6559bc366aef860a8bff3e7d26efdcd1682d50f6216531f9894334c2a7dbd5f",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-humungousaur-armodrillo",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified by root; no separate redistribution license was established. AI reconstruction and interpretive completion are disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "3704347488f586f7f513e4f62454ddb78f8c83a5265784ec83050e2622dca7ae",
+      "maskSha256": "24d81b205f68cf1576790046a9fd6317e524624c825d006ff6fcdcf6932aedaa",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-humungousaur-bloxx",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI reconstruction and incomplete source anatomy are explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491",
+      "maskSha256": "8f7e6e4f62ac14c411b07d3923314be740337947b374dcdbbdb07fde064279a6",
       "contentType": "image/png"
     }
   ],

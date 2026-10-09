@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "9dcf593d6a023bf513086fa3f2a93afdd6add050080c631a361b35ac911a60ab",
-  "shapeCount": 228,
+  "sourceSvgSha256": "2525f6341e117e9e1a73a40006b3401084b13a39ee75fbe0888e5d0fa0028df0",
+  "shapeCount": 230,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -1419,6 +1419,18 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.492395,
       "visiblePixels": 424487
+    },
+    "skurd-humungousaur-armodrillo": {
+      "scale": 0.7035,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.236613,
+      "visiblePixels": 610308
+    },
+    "skurd-humungousaur-bloxx": {
+      "scale": 0.5587,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.557124,
+      "visiblePixels": 655312
     }
   }
 }

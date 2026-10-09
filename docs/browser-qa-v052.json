@@ -1,0 +1,561 @@
+{
+  "version": "0.5.2",
+  "date": "2026-10-10",
+  "previewSha256": "25cda296f8b5f6d80a4f78b87f7ed289799b260738b785507cb3e0f77bfe0d32",
+  "modelSha256": "d0fb219ac7a83451a58d302a00c94eb39a2fa5f523e3b0f9c06bb9ebd6c31e21",
+  "coverage": {
+    "total": 232,
+    "reviewed": 230,
+    "missing": 2
+  },
+  "screenshots": [
+    "screenshots/v052-desktop-bloxx-dial.jpg",
+    "screenshots/v052-desktop-bloxx-projection.jpg",
+    "screenshots/v052-desktop-bloxx-ring.jpg",
+    "screenshots/v052-desktop-drill-dial.jpg",
+    "screenshots/v052-desktop-drill-projection.jpg",
+    "screenshots/v052-desktop-drill-ring.jpg",
+    "screenshots/v052-final-bloxx-projection.jpg",
+    "screenshots/v052-mobile-bloxx-dial.jpg",
+    "screenshots/v052-mobile-bloxx-projection.jpg",
+    "screenshots/v052-mobile-bloxx-ring.jpg",
+    "screenshots/v052-mobile-drill-dial.jpg",
+    "screenshots/v052-mobile-drill-projection.jpg",
+    "screenshots/v052-mobile-drill-ring.jpg",
+    "screenshots/v052-narrow-bloxx-dial.jpg",
+    "screenshots/v052-narrow-drill-dial.jpg"
+  ],
+  "shots": [
+    {
+      "file": "screenshots/v052-desktop-bloxx-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 505.8229370117187,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.84375,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.84375
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 511.18751525878906,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 242.4791717529297,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 242.4791717529297
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-desktop-bloxx-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 374.94252586364746,
+        "height": 19.28084373474121,
+        "left": 679.9427490234375,
+        "right": 813.723876953125,
+        "top": 355.66168212890625,
+        "width": 133.7811279296875,
+        "x": 679.9427490234375,
+        "y": 355.66168212890625
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-desktop-bloxx-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 306.1421432495117,
+        "height": 41.65926361083984,
+        "left": 652.107421875,
+        "right": 841.5592498779297,
+        "top": 264.4828796386719,
+        "width": 189.4518280029297,
+        "x": 652.107421875,
+        "y": 264.4828796386719
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 505.1562805175781,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.17709350585935,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.17709350585935
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 510.5208435058594,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 241.8125,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 241.8125
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 374.94252586364746,
+        "height": 19.28084373474121,
+        "left": 679.9427490234375,
+        "right": 813.723876953125,
+        "top": 355.66168212890625,
+        "width": 133.7811279296875,
+        "x": 679.9427490234375,
+        "y": 355.66168212890625
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 306.1421432495117,
+        "height": 41.65926361083984,
+        "left": 652.107421875,
+        "right": 841.5592498779297,
+        "top": 264.4828796386719,
+        "width": 189.4518280029297,
+        "x": 652.107421875,
+        "y": 264.4828796386719
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-final-bloxx-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 541.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 387.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 387.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 544.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 383.9479370117187,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 383.9479370117187
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 473.9676933288574,
+        "height": 17.674968719482422,
+        "left": 126.0061264038086,
+        "right": 248.6501312255859,
+        "top": 456.292724609375,
+        "width": 122.64400482177734,
+        "x": 126.0061264038086,
+        "y": 456.292724609375
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 426.44586181640625,
+        "height": 27.8812255859375,
+        "left": 123.93611907958984,
+        "right": 250.7201385498047,
+        "top": 398.5646362304687,
+        "width": 126.78401947021484,
+        "x": 123.93611907958984,
+        "y": 398.5646362304687
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 541.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 387.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 387.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 544.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 383.9479370117187,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 383.9479370117187
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 473.9676933288574,
+        "height": 17.674968719482422,
+        "left": 126.0061264038086,
+        "right": 248.6501312255859,
+        "top": 456.292724609375,
+        "width": 122.64400482177734,
+        "x": 126.0061264038086,
+        "y": 456.292724609375
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 426.44586181640625,
+        "height": 27.8812255859375,
+        "left": 123.93611907958984,
+        "right": 250.7201385498047,
+        "top": 398.5646362304687,
+        "width": 126.78401947021484,
+        "x": 123.93611907958984,
+        "y": 398.5646362304687
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v052-narrow-bloxx-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 502.453125,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 375.171875,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 375.171875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 505.0989837646485,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 372.5260620117187,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 372.5260620117187
+      },
+      "scrollWidth": 305,
+      "selected": "Humungousaur（Skurd 积木炮）",
+      "view": "low",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v052-narrow-drill-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 502.453125,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 375.171875,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 375.171875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 505.0989837646485,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 372.5260620117187,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 372.5260620117187
+      },
+      "scrollWidth": 305,
+      "selected": "Humungousaur（Skurd 钻头臂）",
+      "view": "low",
+      "watch": "original",
+      "width": 305
+    }
+  ],
+  "screenshotHashes": [
+    {
+      "file": "screenshots/v052-desktop-bloxx-dial.jpg",
+      "sha256": "922c92c8c3ab1420dec2cf73a0ac9fabd143c23792ec0b2060034466c07e7b4e"
+    },
+    {
+      "file": "screenshots/v052-desktop-bloxx-projection.jpg",
+      "sha256": "6115b2cb3495ca713f2c6b1a15e4e6a58fdcde41f53464949d0010fced0bac23"
+    },
+    {
+      "file": "screenshots/v052-desktop-bloxx-ring.jpg",
+      "sha256": "43be693b3ba30cce89bb7116d062a0f72f85c0d68ce39332f32565f39f39fa17"
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-dial.jpg",
+      "sha256": "f804794ed66b2d358f86bf39c9a734f83720c8ae7c57624048126bf6ced22e60"
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-projection.jpg",
+      "sha256": "be48d4c3352b7df763d5d6e2a02231cdcfc2c6ff5bff1db16b0817065d92bb36"
+    },
+    {
+      "file": "screenshots/v052-desktop-drill-ring.jpg",
+      "sha256": "6fe3ff8c23c8fb63291bd536e81927c5dc8accf0e85338a2bb1d3b88586ea2af"
+    },
+    {
+      "file": "screenshots/v052-final-bloxx-projection.jpg",
+      "sha256": "25401dbc79d682180aa522d6150189293d34c7b085549148314acf5882986e55"
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-dial.jpg",
+      "sha256": "8819dae29f1d611dd091ffc1724af56bf773400ba34124ba83e4908286197726"
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-projection.jpg",
+      "sha256": "081ad3135bc14863e6ac452b629c1e792ed364531a161e97da41f5f46ebb0422"
+    },
+    {
+      "file": "screenshots/v052-mobile-bloxx-ring.jpg",
+      "sha256": "239fec8050a7263fa636ef0f007c5ee7dccbaf220a77104c2c6815e9c67c1f37"
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-dial.jpg",
+      "sha256": "6e0ebb5be5a6b1d38c840cdaa942fb6f64234be838e693ec3de01a65c8404c12"
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-projection.jpg",
+      "sha256": "e964dd975a4d8d40f27f0eeb6cf9975999e1ee947da618cd50293b4b8ff2ba20"
+    },
+    {
+      "file": "screenshots/v052-mobile-drill-ring.jpg",
+      "sha256": "94ad88a1ddb9c27a0f631edf95df02b0a4b6ce8ff4ca062967f595bf82ff6365"
+    },
+    {
+      "file": "screenshots/v052-narrow-bloxx-dial.jpg",
+      "sha256": "a65c7757cfeff925b4d576a1fbf889ad0fb73f00f84d4ef4c2c799164a86360d"
+    },
+    {
+      "file": "screenshots/v052-narrow-drill-dial.jpg",
+      "sha256": "901f111945041059bbf8838e4134dc635910c213b1a4b351e9a6dadb83aefa15"
+    }
+  ],
+  "tests": {
+    "total": 125,
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0
+  },
+  "consoleErrorsAndWarnings": [],
+  "normalAnimationSelectionVerified": true,
+  "physicalPhoneVerified": false,
+  "realHostVerified": false,
+  "humanAccepted": false,
+  "limits": [
+    "Desktop width 1265 and mobile width 375 covered all three modes for both new forms; narrow width 305 covered both diamond dials only.",
+    "Normal-animation selection was checked separately; screenshots alone do not establish physical phone frame rate or all animation timings.",
+    "The drill hand/foot and block-cannon lower legs are disclosed AI reconstructions beyond cropped source pixels. Fine detail is not independent canon evidence.",
+    "Large foreground equipment obscures body detail in these source camera angles. Source fidelity does not establish readability at every possible UI size.",
+    "Root observed the drill in all three modes: the complete body renders, but the large camera-facing drill merges with the head and torso in a solid black silhouette, and its internal spiral disappears. This is a silhouette readability limit, not missing-limb rendering.",
+    "All-work transformation coverage is incomplete; 13 additional Skurd search leads are not 13 admitted forms."
+  ]
+}

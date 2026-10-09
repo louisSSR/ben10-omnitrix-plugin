@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 230,
-    "reviewed": 228,
+    "total": 232,
+    "reviewed": 230,
     "missing": 2
   },
   "forms": [
@@ -5785,6 +5785,68 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.492395,
         "visiblePixels": 424487
+      }
+    },
+    {
+      "id": "skurd-humungousaur-armodrillo",
+      "name": "Humungousaur（Skurd 钻头臂）",
+      "en": "Humungousaur (Skurd Armodrillo Drill Arm)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd equips Humungousaur with an Armodrillo-derived drill arm. A partial-DNA body state of Humungousaur, not a separate alien species. Descriptive catalog title.",
+      "aliases": [
+        "Skurd Humungousaur Armodrillo",
+        "Humungousaur Drill Arm",
+        "神力暴龙 Skurd 钻头臂",
+        "超巨人 Skurd 钻头臂"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+        "https://ben10.fandom.com/wiki/Armodrillo",
+        "https://ben10.fandom.com/wiki/Stuck_on_You"
+      ],
+      "asset": "alien-skurd-humungousaur-armodrillo",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference reconstruction from a directly inspected official Cartoon Network video frame at 30 seconds, supported by a distant frame at approximately 25 seconds. The steep overhead body and single huge foreshortened gray spiral drill are retained. The cropped ordinary hand and lower foot are minimally reconstructed; their exact contours and fine face, finger, toe, chest and drill details are AI interpretation, not an official transparent original or recovered missing pixels.",
+      "dialFit": {
+        "scale": 0.7035,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.236613,
+        "visiblePixels": 610308
+      }
+    },
+    {
+      "id": "skurd-humungousaur-bloxx",
+      "name": "Humungousaur（Skurd 积木炮）",
+      "en": "Humungousaur (Skurd Bloxx Cannon)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd modifies Humungousaur with a forward-projecting red/yellow/blue block cannon. This is a partial-DNA body state of an existing transformation, not a separate alien species. Bloxx identification is community-supported; the catalog title is descriptive and does not assert hidden cannon attachment anatomy.",
+      "aliases": [
+        "Skurd Humungousaur Bloxx",
+        "Humungousaur Bloxx-Lobber",
+        "Humungousaur Skurd Block Cannon",
+        "超巨人 Skurd 积木炮",
+        "神力暴龙 Skurd 积木炮"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "https://ben10.fandom.com/wiki/Skurd",
+        "https://altariq.fandom.com/wiki/Stuck_on_You",
+        "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
+      ],
+      "asset": "alien-skurd-humungousaur-bloxx",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference reconstruction from the directly inspected 38-second official Cartoon Network clip frame. The large foreshortened square red cannon, curved red/yellow/blue block tube, ordinary opposite brown arm, torso and chest band follow the visible source. The main frame cuts off below the upper thighs: lower legs and feet are AI reconstructed using the same host’s small visible legs in the 25-second frame only as a proportion reference. Hand joints, face, chest/Skurd markings, block seams and other low-resolution details are interpreted. This is neither official transparent artwork nor an exact full-body pixel extraction.",
+      "dialFit": {
+        "scale": 0.5587,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.557124,
+        "visiblePixels": 655312
       }
     }
   ]

@@ -8457,6 +8457,289 @@
         "realHostVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "skurd-humungousaur-armodrillo",
+      "sourceFile": "assets/source-art/skurd-humungousaur-armodrillo-source-original.jpg",
+      "sourceSha256": "3704347488f586f7f513e4f62454ddb78f8c83a5265784ec83050e2622dca7ae",
+      "maskFile": "assets/source-art/skurd-humungousaur-armodrillo-reference-edit.png",
+      "maskSha256": "24d81b205f68cf1576790046a9fd6317e524624c825d006ff6fcdcf6932aedaa",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference reconstruction from a directly inspected official Cartoon Network video frame at 30 seconds, supported by a distant frame at approximately 25 seconds. The steep overhead body and single huge foreshortened gray spiral drill are retained. The cropped ordinary hand and lower foot are minimally reconstructed; their exact contours and fine face, finger, toe, chest and drill details are AI interpretation, not an official transparent original or recovered missing pixels.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified by root; no separate redistribution license was established. AI reconstruction and interpretive completion are disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: The Power of Skurd | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root",
+        "observedTimestampSeconds": 30,
+        "requestedTimestampSeconds": 30,
+        "sourceWidth": 806,
+        "sourceHeight": 453,
+        "sourceFormat": "JPEG",
+        "captureRegion": "Video picture region with stone floor, shadows and bottom-right Cartoon Network logo; browser chrome excluded. Ordinary hand and lower foot extend beyond the picture border.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-humungousaur-armodrillo-support-original.jpg",
+          "sha256": "89586609049951ef82bfd185d7f4c435ad25f2a3e21b126d1fd70d57d06cdb9b",
+          "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=25s",
+          "observedTimestampSeconds": 24.999966,
+          "sourceWidth": 806,
+          "sourceHeight": 453,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "actuallyViewedByReviewer": true,
+          "use": "Distant full body establishes ordinary brown feet, ordinary other hand and broad anatomy; white wind ribbons obscure the drill. Low resolution cannot establish precise finger/toe contours."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Stuck on You",
+        "officialClipActuallyViewedByRoot": true,
+        "bothSourceScreenshotsIndependentlyViewedByReviewer": true,
+        "communityIdentityUrls": [
+          "https://ben10.fandom.com/wiki/Armodrillo",
+          "https://ben10.fandom.com/wiki/Stuck_on_You"
+        ],
+        "communityEvidenceAccess": "Search-index excerpts actually returned by web search; full community pages were not opened by this reviewer.",
+        "communityIdentity": "The Armodrillo entry identifies Skurd giving Humungousaur Armodrillo's arm in Stuck on You, and the episode synopsis describes replacing the prior Diamondhead arm with Armodrillo's. The DNA attribution is not inferred merely from yellow coloring.",
+        "limits": "Official screenshots establish the visible drill/body; the named DNA attribution is separately community-text-supported. The source screenshots do not establish the exact cropped hand and foot."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent RGBA character sprite for a Ben 10 transformation selector.\nInput image 1 is the EDIT TARGET: the close official animation frame of Humungousaur with Skurd's drill arm at 30 seconds. Input image 2 is a SUPPORTING anatomy reference only: the distant shot showing the same body and ordinary feet/hand while white wind trails partly obscure the drill.\nPrimary request: make a faithful transparent reference reconstruction of image 1, keeping its steep overhead camera, foreshortened pose, facing direction, proportions, and asymmetric body. Preserve the huge gray spiral drill thrust toward the camera in the upper-right foreground, with its almost circular front-facing foreshortening, dark spiral lines, gray cel shadows, yellow rear collar and black connector. It replaces ONE arm only. Preserve the brown dinosaur-like ridged head looking upward, green eyes and white teeth, broad brown shoulders, tan belly, ordinary brown other arm descending on image-left, two ordinary brown legs, black-and-white waist garment, and green-and-black Skurd band with green slime crossing the upper torso. The giant drill partly occludes the upper body exactly as in image 1.\nOnly minimally extend image 1's cropped ordinary hand at the lower-left and cropped lower foot, using image 2 as a limited guide to ordinary brown extremities and proportions. This is disclosed interpretive completion, not an exact recovery of unavailable pixels. Keep the visible image-right ordinary foot and the core body arrangement. Do not change the steep overhead view into a generic standing side view. Do not lengthen the drill into a long side-view cone; retain the reference's circular perspective. No second drill, crystal arm, sword, tail, wing, extra arm, added armor or unrelated costume.\nRemove the environment, stones, background shadow, CN logo, wind trails, debris, and all text. Preserve the cel-animation palette and clear black outlines, with restrained clean flat shading. Enclose every tip, both feet, the ordinary hand and entire drill within the canvas with at least 5 percent transparent padding. Real transparent background, no white backdrop, checkerboard, glow, ground shadow or border. One character, one pose only.",
+        "promptSha256": "42818829aaa40815bb8698159abdf4286a06799f1347f21747b94b6cd1ef55cb",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "24d81b205f68cf1576790046a9fd6317e524624c825d006ff6fcdcf6932aedaa",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Both source JPEGs actually viewed before generation. Main frame shows a steeply overhead brown Humungousaur with one enormous camera-facing gray spiral drill, yellow connector collar, ordinary left-of-image brown arm, green Skurd/band, and ordinary brown legs; the lower hand and one foot are clipped. Supporting shot gives a distant body outline, but wind ribbons cover much of the raised drill.",
+        "Generated sprite actually viewed in native image_gen output and independently re-displayed from the saved file. Same large spiral drill and yellow collar, asymmetric overhead pose, green band, face and ordinary other arm remain; both ordinary feet and the completed hand are inside the canvas. No second drill, crystal sword, added tail or wings are present.",
+        "Saved image payload equals the native generated image payload byte-for-byte. The local view tool initially labeled its data URL application/octet-stream and displayed near black; displaying the same unchanged payload as image/png showed normal colors. No pixel conversion, alpha editing or file re-encoding occurred."
+      ],
+      "limitations": [
+        "This is a transparent AI redraw based on JPEG browser screenshots, not a downloaded original production frame or native transparent asset.",
+        "The ordinary hand and lower foot missing at the 30-second border were reconstructed using only coarse anatomy from the distant supporting frame. Their exact pose, joint contours, toes and nails are interpretation rather than verified original pixels.",
+        "Fine facial wrinkles, finger/toe joints, green chest details and drill/shading contours were redrawn and are not independent canon evidence.",
+        "The prompt requested 5 percent padding, but top/bottom margins are narrower. Strong-alpha bbox is [288,14,1421,1030] within 1494x1053; all four image edges remain alpha zero. Faint alpha residue exists inside the canvas. No programmatic cleanup was applied.",
+        "The large drill intentionally dominates and obscures the body in this camera angle. Its outline may dominate a small solid silhouette; root must verify readability in current watch modes before adopting.",
+        "Physical phone, real SillyTavern, current UI rendering and user acceptance are unverified. This body state does not create a new independent species."
+      ],
+      "alphaInspection": {
+        "sha256": "24d81b205f68cf1576790046a9fd6317e524624c825d006ff6fcdcf6932aedaa",
+        "bytes": 939313,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1494,
+          1053
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          49,
+          11,
+          1474,
+          1035
+        ],
+        "strongAlphaBBox": [
+          288,
+          14,
+          1421,
+          1030
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alpha0Pixels": 962874,
+        "alpha255Pixels": 1445,
+        "weakAlpha1to15": 9715,
+        "midAlpha16to127": 3010,
+        "strongAlphaPixels": 597583,
+        "programmaticPixelEdits": false,
+        "actualViewedByReviewer": true,
+        "rawBytesMatch": true
+      },
+      "adoptionBasis": "Recognizable disclosed reconstruction with retained visible drill/body arrangement, source/output actual visual inspection by generation reviewer and independent root review, and contained solid silhouette. Catalog integration and three-mode UI checks remain required.",
+      "independentReview": {
+        "reviewer": "root",
+        "sourceAndOutputActuallyViewed": true,
+        "result": "Recognizable overhead large drill, face and green band; completed ordinary hand and both feet remain contained, with no unrelated appendage. Source completion and narrow padding limitations retained.",
+        "currentUIViewed": false
+      },
+      "uiReview": {
+        "version": "0.5.2",
+        "previewSha256": "25cda296f8b5f6d80a4f78b87f7ed289799b260738b785507cb3e0f77bfe0d32",
+        "evidence": "docs/browser-qa-v052.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "skurd-humungousaur-bloxx",
+      "sourceFile": "assets/source-art/skurd-humungousaur-bloxx-source-original.jpg",
+      "sourceSha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491",
+      "maskFile": "assets/source-art/skurd-humungousaur-bloxx-reference-edit.png",
+      "maskSha256": "8f7e6e4f62ac14c411b07d3923314be740337947b374dcdbbdb07fde064279a6",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference reconstruction from the directly inspected 38-second official Cartoon Network clip frame. The large foreshortened square red cannon, curved red/yellow/blue block tube, ordinary opposite brown arm, torso and chest band follow the visible source. The main frame cuts off below the upper thighs: lower legs and feet are AI reconstructed using the same host’s small visible legs in the 25-second frame only as a proportion reference. Hand joints, face, chest/Skurd markings, block seams and other low-resolution details are interpreted. This is neither official transparent artwork nor an exact full-body pixel extraction.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI reconstruction and incomplete source anatomy are explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: The Power of Skurd | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root",
+        "observedTimestampSeconds": 37.999933,
+        "requestedTimestampSeconds": 38,
+        "sourceWidth": 806,
+        "sourceHeight": 453,
+        "sourceFormat": "JPEG",
+        "rootReportedReadyState": 4,
+        "captureRegion": "Video picture region including forest and bottom-right Cartoon Network logo, excluding browser chrome. Character is cropped below the upper thighs.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-humungousaur-bloxx-support-legs-original.jpg",
+          "sha256": "89586609049951ef82bfd185d7f4c435ad25f2a3e21b126d1fd70d57d06cdb9b",
+          "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=25s",
+          "kind": "official-video-frame-screenshot",
+          "requestedTimestampSeconds": 25,
+          "observedTimestampSeconds": 24.999966,
+          "sourceWidth": 806,
+          "sourceHeight": 453,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "sourceViewed": true,
+          "purpose": "Same-host ordinary lower-leg and foot proportions only. This different state is obscured by a cyclone and has a drill; neither drill, raised-arm pose nor wind is adopted.",
+          "limitations": "Small distant legs in a different pose are not proof of the exact unseen 38-second leg pose or detailed feet. Fractional DOM capture time was recorded and checked by root."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Stuck on You",
+        "officialClipActuallyViewedByRoot": true,
+        "sourceScreenshotsIndependentlyViewedByReviewer": true,
+        "communityIdentityUrls": [
+          "https://ben10.fandom.com/wiki/Skurd",
+          "https://altariq.fandom.com/wiki/Stuck_on_You"
+        ],
+        "officialEpisodeMetadataUrl": "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w",
+        "limits": "The official frame establishes the visible block-cannon body state, but does not verbally name its DNA donor. Bloxx and episode-scene association are community-supported. Apple TV establishes episode metadata, not precise limb design. Hidden shoulder/arm attachment and missing lower anatomy are not independently proved."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Create one transparent-background full-body reference sprite of the EXACT modified Humungousaur body state shown in the FIRST reference image (official Ben 10: Omniverse animation at 38 seconds). This is reference-guided reconstruction, not a new design. Preserve the existing front-facing, slightly foreshortened pose, head direction, proportions, chunky original 2D animation linework and flat cel shading.\n\nPRIMARY REFERENCE: first image. Preserve the enormous forward-pointing red square cannon muzzle at image-left, with its dark maroon square recessed bore and thick red rectangular rim. Its very large apparent size relative to the head is intentional perspective and must remain. Preserve the curved segmented red, yellow and blue block tube extending from the shoulder region up around the image-left side of the head toward this muzzle. Keep the visible configuration as shown; do not invent a second cannon, drill, crystal blade, gun hand, or new additional arm. The opposite image-right arm is the ordinary muscular brown Humungousaur arm and hand shown in the source, held out and down, with normal fingers and dark nails. Preserve the brown reptilian head, its green eyes and tense open clenched-teeth expression, the pale beige chest and abdominal plates, the green Skurd slime/diagonal green-and-black chest band and small chest badge, the white waist band and black shorts. Keep the cannon attached to the body as a coherent visible assembly; avoid asserting hidden attachment anatomy or adding an extra normal image-left arm behind it.\n\nSECONDARY REFERENCE: second image is the same host in a different state. Use ONLY its visible ordinary brown legs, wide foot proportions and stout balanced stance to reconstruct the parts below the thighs that the primary image crops. Do NOT transfer its spiral drill, yellow drill machinery, raised-arm pose, white wind/cyclone, debris, background, glow or action effects. The new lower legs and feet should continue the front-facing primary pose plausibly and conservatively; they are reference reconstruction, not an invented dynamic leaping or running pose.\n\nKeep the whole modified body AND all of the large cannon assembly fully visible with comfortable transparent margins on every side. Crisp clean animation-style contour, recognizable original silhouette, no photorealism, no 3D plastic material. The entire background must be genuinely transparent alpha. Remove the forest, ground, shadows on the floor, CN watermark/logo, text, framing, particles and detached marks. Do not crop the cannon or either foot. Deliver ONE character sprite, not a collage, turntable or character sheet.",
+        "promptSha256": "08e3d15e890144550dc475839596c4ff92e330153c4887ac0f1236d85d8d371e",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "8f7e6e4f62ac14c411b07d3923314be740337947b374dcdbbdb07fde064279a6",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Independent main-source view shows a front-facing Humungousaur, enormous red square cannon pointing toward the camera at image-left, curved block tube next to the head, green Skurd chest band and ordinary image-right brown arm and hand. Upper thighs meet the lower picture edge.",
+        "Independent support-source view shows the same host’s wide brown legs and feet at small scale. Its upper body and drill are obscured by white cyclone effects; those elements are not used in this reconstruction.",
+        "Actual generated-output view preserves the primary source’s foreshortened cannon, curved block sequence, head direction, clenched teeth, chest band, shorts and ordinary opposite arm. It adds a conservative standing lower-body continuation. No additional cannon, drill, sword, wind or background is present.",
+        "Strong-alpha body bounds are [36,16,1228,1253] within the 1240x1269 canvas. The recognizable body and cannon are fully inside the canvas; tiny alpha=1 residue reaches the left and bottom edges.",
+        "Root independently viewed the generated output and accepted it as a disclosed image candidate: large square cannon, segmented curved tube, green connection/chest band, ordinary opposite arm and upper-body pose correspond to the main reference; lower legs remain explicit AI reconstruction."
+      ],
+      "limitations": [
+        "Both references are unchanged 806x453 JPEG screenshots from a browser video region, not original transparent PNG or native animation assets.",
+        "Main source has no knees, lower legs or feet. Everything below the source’s upper-thigh crop is AI reconstruction guided only by the small ordinary legs in a different 25-second state. The added pose, knee plates, toes and detailed contours are not exact recovered canonical pixels.",
+        "Finger joints, teeth, face lines, Skurd/badge details and block seams are AI interpretations of low-resolution source pixels. These generated details are not independent evidence of canon design.",
+        "The cannon’s visible configuration is preserved without claiming whether the unseen attachment is specifically a transformed arm or shoulder equipment. This partial-DNA body state does not count as a new species.",
+        "The output contains faint alpha=1 residue on the left and bottom edges. No trimming, painting, padding, alpha-thresholding, resampling or other programmatic pixel editing was performed.",
+        "Current watch modes, physical phone, real SillyTavern and user acceptance remain separate unverified gates; root image-candidate review does not establish any of those."
+      ],
+      "alphaInspection": {
+        "file": "reference-edit.png",
+        "sha256": "8f7e6e4f62ac14c411b07d3923314be740337947b374dcdbbdb07fde064279a6",
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1240,
+          1269
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          0,
+          12,
+          1231,
+          1269
+        ],
+        "strongAlphaBBox": [
+          36,
+          16,
+          1228,
+          1253
+        ],
+        "transparentPixels": 918248,
+        "opaquePixels": 2622,
+        "weakAlphaPixels1to15": 13652,
+        "midAlphaPixels16to127": 4525,
+        "edgeMax": {
+          "top": 0,
+          "bottom": 1,
+          "left": 1,
+          "right": 0
+        },
+        "inspectionReadOnly": true,
+        "programmaticPixelEdits": 0
+      },
+      "adoptionBasis": "Root-reviewed disclosed image candidate: independently viewed primary/support screenshots and output establish recognizable visible configuration, while the lower-body completion remains explicitly synthetic. Production integration and UI review remain separate.",
+      "uiReview": {
+        "version": "0.5.2",
+        "previewSha256": "25cda296f8b5f6d80a4f78b87f7ed289799b260738b785507cb3e0f77bfe0d32",
+        "evidence": "docs/browser-qa-v052.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [
@@ -8559,6 +8842,44 @@
       "sourceUrls": [
         "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
         "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
+      ]
+    },
+    {
+      "id": "skurd-humungousaur-armodrillo",
+      "name": "Humungousaur（Skurd 钻头臂）",
+      "en": "Humungousaur (Skurd Armodrillo Drill Arm)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd equips Humungousaur with an Armodrillo-derived drill arm. A partial-DNA body state of Humungousaur, not a separate alien species. Descriptive catalog title.",
+      "aliases": [
+        "Skurd Humungousaur Armodrillo",
+        "Humungousaur Drill Arm",
+        "神力暴龙 Skurd 钻头臂",
+        "超巨人 Skurd 钻头臂"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s",
+        "https://ben10.fandom.com/wiki/Armodrillo",
+        "https://ben10.fandom.com/wiki/Stuck_on_You"
+      ]
+    },
+    {
+      "id": "skurd-humungousaur-bloxx",
+      "name": "Humungousaur（Skurd 积木炮）",
+      "en": "Humungousaur (Skurd Bloxx Cannon)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd modifies Humungousaur with a forward-projecting red/yellow/blue block cannon. This is a partial-DNA body state of an existing transformation, not a separate alien species. Bloxx identification is community-supported; the catalog title is descriptive and does not assert hidden cannon attachment anatomy.",
+      "aliases": [
+        "Skurd Humungousaur Bloxx",
+        "Humungousaur Bloxx-Lobber",
+        "Humungousaur Skurd Block Cannon",
+        "超巨人 Skurd 积木炮",
+        "神力暴龙 Skurd 积木炮"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "https://ben10.fandom.com/wiki/Skurd",
+        "https://altariq.fandom.com/wiki/Stuck_on_You",
         "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
       ]
     }
