@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "c7187a80be643b5a6d4fd58f699a6b90662e591fb0f27dc7ab55a65da97225a2",
-  "svgSha256": "2525f6341e117e9e1a73a40006b3401084b13a39ee75fbe0888e5d0fa0028df0",
+  "catalogSha256": "76505cd72b291166d87697ca77748a973df42a20355d7072883f45e3c596c19e",
+  "svgSha256": "d97a3d81d4add5ab21a2739e9fc9f64c5753f81d50c3816d54234785937aefb3",
   "coverage": {
-    "total": 232,
-    "reviewed": 230,
+    "total": 235,
+    "reviewed": 233,
     "missing": 2
   },
   "assets": [
@@ -2086,6 +2086,36 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491",
       "maskSha256": "8f7e6e4f62ac14c411b07d3923314be740337947b374dcdbbdb07fde064279a6",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-whampire-armodrillo",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI reconstruction and source-detail limitations are explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "c8d1fc0282d1ce5352ed1b337d2db94848e79384cad549d94b566c71b44ddd82",
+      "maskSha256": "f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-whampire-bloxx",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official upload identity was reported by root and the local source review; no separate redistribution license was established. AI reconstruction and incomplete source anatomy are explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "56d0cbb3e3a44c7064510437772d3d3fdd3769cb528e2429ec1d5a9b17fb98bf",
+      "maskSha256": "337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-whampire-feedback",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was observed by root; no separate redistribution license was established. Reference-guided AI reconstruction and incomplete-frame interpretation are disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e09d58d5cf4ca5f0cd3292191a81a19fa4187ea6fde89af6c92b010d15e83ef8",
+      "maskSha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b",
       "contentType": "image/png"
     }
   ],

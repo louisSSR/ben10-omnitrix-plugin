@@ -12,11 +12,15 @@ const mul = (a, n) => a.map(v => v * n);
 const dot = (a, b) => a.reduce((s, v, i) => s + v * b[i], 0);
 const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
 const unit = a => { const n = Math.hypot(...a); return n > 1e-10 ? mul(a, 1 / n) : [0, 1, 0]; };
+// RGB stores linear-light material values; the shader converts its final light to display sRGB.
+// The fourth component is a material tag, not opacity: rubber / coating / metal / glass / lamp.
+// All parts stay opaque and share the same fixed-size vertex format and draw batches.
 const C = {
-  black: [.025, .038, .045, .17], rubber: [.045, .058, .064, .08], edge: [.11, .14, .16, .28],
-  dark: [.055, .08, .13, .18], inner: [.105, .135, .125, .09], silver: [.57, .63, .65, .52],
-  white: [.72, .79, .73, .25], green: [.11, .42, .055, .25], lime: [.43, .79, .06, .32],
-  light: [.65, .93, .11, .25], dim: [.13, .27, .025, .15],
+  black: [.032, .040, .047, 1], rubber: [.019, .024, .028, 0], edge: [.11, .14, .16, 2],
+  dark: [.029, .040, .055, 1], inner: [.012, .016, .018, 0], silver: [.47, .53, .57, 2],
+  white: [.61, .65, .58, 1], green: [.035, .30, .009, 1], lime: [.24, .78, .009, 4],
+  light: [.49, 1.0, .07, 4], dim: [.034, .18, .006, 1],
+  glass: [.004, .010, .008, 3], steel: [.20, .24, .26, 2], seam: [.003, .005, .006, 0],
 };
 
 function part(id, group = 'body') { return { id, group, positions: [], normals: [], colors: [] }; }
@@ -34,7 +38,7 @@ function quad(p, a, b, c, d, color, normals) {
 }
 
 /** A closed revolved profile includes bevels, inner walls and end faces. */
-function lathe(id, profile, color, { center = [0, 0, 0], axis = 'y', scale = [1, 1], group = 'body', segments = 64 } = {}) {
+function lathe(id, profile, color, { center = [0, 0, 0], axis = 'y', scale = [1, 1], group = 'body', segments = 64, surfaceColors = null } = {}) {
   const p = part(id, group);
   const point = (r, h, t) => axis === 'x'
     ? add(center, [h, Math.sin(t) * r * scale[0], Math.cos(t) * r * scale[1]])
@@ -47,7 +51,7 @@ function lathe(id, profile, color, { center = [0, 0, 0], axis = 'y', scale = [1,
     for (let i = 0; i < segments; i++) {
       const t0 = i * TAU / segments, t1 = (i + 1) * TAU / segments;
       const n0 = normal(r1 - r0, h1 - h0, t0), n1 = normal(r1 - r0, h1 - h0, t1);
-      quad(p, point(r0, h0, t0), point(r0, h0, t1), point(r1, h1, t1), point(r1, h1, t0), color, [n0, n1, n1, n0]);
+      quad(p, point(r0, h0, t0), point(r0, h0, t1), point(r1, h1, t1), point(r1, h1, t0), surfaceColors?.[j] || color, [n0, n1, n1, n0]);
     }
   }
   return p;
@@ -59,6 +63,18 @@ function ring(id, outer, inner, bottom, top, color, options = {}) {
 function cylinder(id, radius, bottom, top, color, options = {}) {
   const b = Math.min(radius * .08, (top - bottom) * .28, .035);
   return lathe(id, [[0, bottom], [radius - b, bottom], [radius, bottom + b], [radius, top - b], [radius - b, top], [0, top]], color, options);
+}
+
+// Small status lamps use recessed domed lenses rather than full-height green cylinders.
+function lens(id, radius, bottom, top, color, options = {}) {
+  const h = top - bottom;
+  return lathe(id, [[0,bottom],[radius*.94,bottom],[radius,bottom+h*.22],
+    [radius*.91,bottom+h*.68],[radius*.62,bottom+h*.94],[0,top]], color, {segments:32,...options});
+}
+function frontLens(id,x,y,z,radius,depth,color,group='body') {
+  const sign=Math.sign(depth)||1;
+  return transformPart(lens(id,radius,0,Math.abs(depth),color,{group}),
+    v=>[v[0]+x,v[2]+y,sign*v[1]+z],n=>[n[0],n[2],sign*n[1]]);
 }
 
 // Convex polygon extrusion with a genuine bevel on both broad faces.
@@ -100,21 +116,33 @@ function frontCylinder(id, x, y, z, radius, depth, color, group = 'body') {
 }
 
 /** Rounded sweep, also used for the broad curved original-generation metal claws. */
-function sweep(id, points, width, thickness, color, { group = 'body', side = [1, 0, 0], segments = 12 } = {}) {
+function sweep(id, points, width, thickness, color, { group = 'body', side = [1, 0, 0], segments = 12, beveled = false } = {}) {
   const p = part(id, group), rows = [];
+  const section=beveled?[[-.78,-1],[.78,-1],[1,-.58],[1,.58],[.78,1],[-.78,1],[-1,.58],[-1,-.58]]:null;
+  if(section)segments=section.length;
   for (let i = 0; i < points.length; i++) {
     const tangent = unit(sub(points[Math.min(i+1,points.length-1)], points[Math.max(0,i-1)]));
     let u = unit(sub(side, mul(tangent, dot(side, tangent))));
     if (Math.abs(dot(u, tangent)) > .98) u = unit(cross(tangent, [0, 0, 1]));
     const v = unit(cross(tangent, u));
     rows.push(Array.from({length:segments}, (_, k) => {
-      const a = k*TAU/segments, offset = add(mul(u,Math.cos(a)*width/2),mul(v,Math.sin(a)*thickness/2));
-      return {position:add(points[i],offset),normal:unit(add(mul(u,Math.cos(a)/width),mul(v,Math.sin(a)/thickness)))};
+      const a = k*TAU/segments, sx=section?section[k][0]:Math.cos(a), sy=section?section[k][1]:Math.sin(a);
+      const offset = add(mul(u,sx*width/2),mul(v,sy*thickness/2));
+      return {position:add(points[i],offset),normal:unit(add(mul(u,Math.cos(a)/width),mul(v,Math.sin(a)/thickness))),u,v};
     }));
   }
   for(let i=0;i<rows.length-1;i++) for(let k=0;k<segments;k++) {
     const j=(k+1)%segments,a=rows[i][k],b=rows[i][j],c=rows[i+1][j],d=rows[i+1][k];
-    quad(p,a.position,b.position,c.position,d.position,color,[a.normal,b.normal,c.normal,d.normal]);
+    let normals=[a.normal,b.normal,c.normal,d.normal];
+    if(section) {
+      // Keep each bevel edge crisp across the section while shading smoothly along its bend.
+      // Flat normals per longitudinal segment would create false shiny horizontal bands.
+      const ex=section[j][0]-section[k][0],ey=section[j][1]-section[k][1];
+      const at=row=>unit(add(mul(row.u,ey/width),mul(row.v,-ex/thickness)));
+      const start=at(a),end=at(d);
+      normals=[start,start,end,end];
+    }
+    quad(p,a.position,b.position,c.position,d.position,color,normals);
   }
   for (let k=0;k<segments;k++) {
     const j=(k+1)%segments;
@@ -125,10 +153,13 @@ function sweep(id, points, width, thickness, color, { group = 'body', side = [1,
 }
 const curve = (a,b,c,steps=20) => Array.from({length:steps+1},(_,i)=>{const t=i/steps;return a.map((v,k)=>(1-t)**2*v+2*(1-t)*t*b[k]+t*t*c[k]);});
 function cuff(id, halfLength, ry, rz, color) {
-  return lathe(id, [[.94,-halfLength],[1,-halfLength+.045],[1,halfLength-.045],[.94,halfLength],[.77,halfLength],[.74,halfLength-.035],[.74,-halfLength+.035],[.77,-halfLength],[.94,-halfLength]],color,{axis:'x',center:[0,-.67,0],scale:[ry,rz]});
+  return lathe(id, [[.94,-halfLength],[1,-halfLength+.045],[1,halfLength-.045],[.94,halfLength],[.77,halfLength],[.74,halfLength-.035],[.74,-halfLength+.035],[.77,-halfLength],[.94,-halfLength]],color,{axis:'x',center:[0,-.67,0],scale:[ry,rz],surfaceColors:[color,color,color,color,C.inner,C.inner,C.inner,color]});
 }
 function cuffBand(id, x0, x1, ry, rz, color) {
   return ring(id,1.015,.975,x0,x1,color,{axis:'x',center:[0,-.67,0],scale:[ry,rz]});
+}
+function cuffSeam(id,x,ry,rz) {
+  return ring(id,1.008,.997,x-.004,x+.004,C.seam,{axis:'x',center:[0,-.67,0],scale:[ry,rz],segments:48});
 }
 function faceSymbol(parts, cx, y, radius, color, group='core') {
   for (const sign of [-1,1]) parts.push(prism(`hourglass-${sign}`,[[cx-radius*.72,sign*radius*.74],[cx+radius*.72,sign*radius*.74],[cx+radius*.16,0],[cx-radius*.16,0]],y,y+.009,color,{group,bevel:0}));
@@ -157,8 +188,11 @@ export function buildWatchGeometry(watchId='original') {
   const ry=ua?.71:ov?.73:af?.65:.71, rz=ua?.67:ov?.75:af?.63:.75;
   const length=ua?1.23:ov?.59:af?.38:.49;
   parts.push(cuff('cuff-hollow-wall',length,ry,rz,ov?C.white:af||ua?C.green:C.rubber));
-  parts.push(cuffBand('cuff-front-rim',length-.04,length+.018,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.silver));
-  parts.push(cuffBand('cuff-back-rim',-length-.018,-length+.04,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.silver));
+  const rimWidth=watch==='original'?.10:.04;
+  parts.push(cuffBand('cuff-front-rim',length-rimWidth,length+.018,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.steel));
+  parts.push(cuffBand('cuff-back-rim',-length-.018,-length+rimWidth,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.steel));
+  // Shallow moulding seams stay on the existing cuff; no speculative switches or armour plates.
+  for(const side of [-1,1]) parts.push(cuffSeam(`cuff-moulding-seam-${side}`,side*(length-rimWidth-.027),ry,rz));
   if(af) parts.push(cuffBand('green-band-black-centre',-.095,.095,ry+.008,rz+.008,C.black));
   if(!ua&&!ov) {
     parts.push(cylinder('case-lower-cushion',r+.20,-.08,.09,C.black));
@@ -168,18 +202,21 @@ export function buildWatchGeometry(watchId='original') {
   if(watch==='original') {
     for(let i=0;i<4;i++) {
       const t=Math.PI/4+i*Math.PI/2, cs=Math.cos(t),sn=Math.sin(t);
-      parts.push(sweep(`curved-silver-claw-${i}`,curve([cs*.64,.16,sn*.64],[cs*1.06,.20,sn*1.06],[cs*.91,-.47,sn*.91]),.19,.075,C.silver,{side:[-sn,0,cs]}));
+      parts.push(sweep(`curved-silver-claw-${i}`,curve([cs*.64,.16,sn*.64],[cs*1.06,.20,sn*1.06],[cs*.91,-.47,sn*.91]),.225,.080,C.silver,{side:[-sn,0,cs],beveled:true}));
     }
+    parts.push(frontCylinder('large-side-button-gasket',.16,-.025,.744,.181,.028,C.seam));
     parts.push(frontCylinder('large-side-button-bezel',.16,-.025,.765,.163,.095,C.silver));
-    parts.push(frontCylinder('large-side-button-green',.16,-.025,.861,.115,.028,C.lime));
+    parts.push(frontCylinder('large-side-button-inset',.16,-.025,.858,.129,.010,C.black));
+    parts.push(frontLens('large-side-button-green',.16,-.025,.866,.111,.032,C.lime));
   }
   if(af) {
     for(const s of [-1,1]) {
       parts.push(frontCylinder(`lateral-control-${s}`,0,.13,s*.62,.108,s*.18,C.dark));
-      parts.push(frontCylinder(`lateral-control-green-${s}`,0,.13,s*.795,.071,s*.012,C.green));
+      parts.push(frontCylinder(`lateral-control-seat-${s}`,0,.13,s*.797,.078,s*.011,C.seam));
+      parts.push(frontLens(`lateral-control-green-${s}`,0,.13,s*.805,.063,s*.018,C.lime));
     }
     const arc=Array.from({length:23},(_,i)=>{const t=.40+i/22*2.35;return[Math.cos(t)*.665,.055,Math.sin(t)*.665];});
-    parts.push(sweep('lower-front-silver-arc',arc,.095,.055,C.silver,{side:[0,1,0]}));
+    parts.push(sweep('lower-front-silver-arc',arc,.095,.055,C.silver,{side:[0,1,0],beveled:true}));
   }
   if(ua) {
     parts.push(box('elongated-upper-bracer',[0,-.01,0],[2.35,.25,1.16],C.green,{bevel:.06}));
@@ -191,7 +228,10 @@ export function buildWatchGeometry(watchId='original') {
     const pipeB=[[-1.04,-.49,.61],[-.62,-.46,.68],[.10,-.33,.701],[.46,-.19,.674],[.57,-.09,.65]];
     for(const [i,points] of [pipeA,pipeB].entries()) {
       parts.push(sweep(`independent-side-pipe-${i}`,points,.075,.075,C.lime,{side:[0,0,1]}));
-      for(const [j,p] of [points[0],points.at(-1)].entries()) parts.push(frontCylinder(`pipe-end-coupler-${i}-${j}`,p[0],p[1],p[2]-.023,.060,.046,C.silver));
+      for(const [j,p] of [points[0],points.at(-1)].entries()) {
+        parts.push(frontCylinder(`pipe-end-coupler-${i}-${j}`,p[0],p[1],p[2]-.023,.060,.046,C.silver));
+        parts.push(frontLens(`pipe-end-inset-${i}-${j}`,p[0],p[1],p[2]+.022,.036,.011,C.lime));
+      }
     }
   }
   if(ov) {
@@ -213,12 +253,17 @@ export function buildWatchGeometry(watchId='original') {
   parts.push(ring('core-lower-seal',r+.04,r-.025,.09,.13,C.black,{center:coreCenter,group:'core'}));
   if(af||ov) coreMarks(parts,cx,r+.027,.14,top-.07);
   parts.push(ring('core-face-beveled-rim',r+.055,r-.048,top-.075,top+.015,ua||watch==='original'?C.silver:C.edge,{center:coreCenter,group:'core'}));
-  parts.push(cylinder('inset-face-glass',r-.043,top-.022,top+.006,C.black,{center:coreCenter,group:'core'}));
+  // Three nested machined layers give the rim a readable lip, inset gasket and lower joint.
+  // All remain below or outside the face anchor; they do not cover its selectable symbol.
+  parts.push(ring('core-rim-polished-lip',r+.047,r-.043,top+.009,top+.019,C.silver,{center:coreCenter,group:'core',segments:48}));
+  parts.push(ring('core-face-inner-gasket',r-.043,r-.055,top+.003,top+.011,C.seam,{center:coreCenter,group:'core',segments:48}));
+  parts.push(ring('core-rim-lower-joint',r+.056,r+.041,top-.064,top-.053,C.seam,{center:coreCenter,group:'core',segments:48}));
+  parts.push(cylinder('inset-face-glass',r-.043,top-.022,top+.006,C.glass,{center:coreCenter,group:'core'}));
   faceSymbol(parts,cx,top+.008,r-.075,C.lime);
   if(watch==='original') for(let i=0;i<4;i++) {
     const t=Math.PI/4+i*Math.PI/2,center=[cx+Math.cos(t)*(r+.025),0,Math.sin(t)*(r+.025)];
-    parts.push(cylinder(`four-status-light-bezel-${i}`,.068,top-.004,top+.041,C.black,{center,group:'core'}));
-    parts.push(cylinder(`four-status-light-green-${i}`,.044,top+.035,top+.046,C.lime,{center,group:'core'}));
+    parts.push(ring(`four-status-light-bezel-${i}`,.068,.047,top+.007,top+.030,C.edge,{center,group:'core',segments:32}));
+    parts.push(lens(`four-status-light-green-${i}`,.046,top+.023,top+.048,C.lime,{center,group:'core'}));
   }
   const min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];
   for(const p of parts) {
@@ -269,14 +314,38 @@ varying vec3 vWorld; varying vec3 vNormal; varying vec4 vColor;
 void main(){vWorld=aPosition+uOffset;vNormal=aNormal;vColor=aColor;gl_Position=uViewProjection*vec4(vWorld,1.0);}`;
 const FRAGMENT=`precision mediump float;
 varying vec3 vWorld;varying vec3 vNormal;varying vec4 vColor;uniform vec3 uEye;
-void main(){vec3 n=normalize(vNormal);vec3 v=normalize(uEye-vWorld);
-vec3 light=normalize(vec3(-0.65,1.0,0.85));vec3 fill=normalize(vec3(0.8,0.28,-0.6));
-float diffuse=max(dot(n,light),0.0);float secondary=max(dot(n,fill),0.0);
-float spec=pow(max(dot(n,normalize(light+v)),0.0),mix(22.0,74.0,vColor.a))*vColor.a;
-float rim=pow(1.0-max(dot(n,v),0.0),3.0)*max(dot(n,fill),0.0);
-float ao=0.88+0.12*smoothstep(-1.4,0.1,vWorld.y);
-vec3 rgb=vColor.rgb*(0.34+0.78*diffuse+0.24*secondary)*ao+vec3(0.70,0.79,0.80)*spec*0.55+vec3(0.24,0.34,0.26)*rim*0.20;
-gl_FragColor=vec4(rgb,1.0);}`;
+// Fixed studio panels are an analytic lighting approximation, not a sampled environment map.
+// No textures, noise, frame time, extra draw passes or continuously running animation are needed.
+vec3 linearToDisplay(vec3 c){
+  vec3 low=c*12.92,high=1.055*pow(max(c,vec3(0.0)),vec3(1.0/2.4))-0.055;
+  return mix(low,high,step(vec3(0.0031308),c));
+}
+void main(){
+  vec3 n=normalize(vNormal),v=normalize(uEye-vWorld),base=vColor.rgb;
+  float metal=step(1.5,vColor.a)*(1.0-step(2.5,vColor.a));
+  float glass=step(2.5,vColor.a)*(1.0-step(3.5,vColor.a));
+  float lamp=step(3.5,vColor.a),rubber=1.0-step(0.5,vColor.a);
+  vec3 key=normalize(vec3(-0.65,1.0,0.85)),fill=normalize(vec3(0.8,0.28,-0.6));
+  float ndv=max(dot(n,v),0.0),ndk=max(dot(n,key),0.0),ndf=max(dot(n,fill),0.0);
+  float fresnel=pow(1.0-ndv,5.0);
+  float cavity=0.82+0.18*smoothstep(-1.35,0.02,vWorld.y);
+  float diffuse=0.20+0.13*(n.y*0.5+0.5)+0.67*ndk+0.16*ndf;
+  vec3 reflected=reflect(-v,n);
+  float broadPanel=smoothstep(0.35,0.97,dot(reflected,normalize(vec3(-0.55,0.85,0.35))));
+  float edgePanel=smoothstep(0.80,0.98,dot(reflected,normalize(vec3(0.72,0.32,0.65))));
+  float exponent=mix(32.0,96.0,max(glass,lamp));
+  float highlight=pow(max(dot(n,normalize(key+v)),0.0),exponent);
+  float specular=0.075+0.16*metal+0.36*glass+0.20*lamp-0.06*rubber;
+  float reflection=(0.045+0.45*metal+0.18*glass)*(1.0-rubber);
+  vec3 tint=mix(vec3(0.84,0.92,1.0),base*0.45+vec3(0.55),metal);
+  vec3 rgb=base*diffuse*cavity*(1.0-0.17*metal);
+  rgb+=tint*(highlight*specular+(broadPanel*0.32+edgePanel*0.23)*reflection);
+  rgb+=vec3(0.55,0.68,0.75)*fresnel*(0.045+0.13*metal+0.24*glass)*(1.0-rubber);
+  rgb=mix(rgb,base*(0.62+0.34*ndk)+vec3(0.72,0.95,0.47)*highlight*0.28,lamp);
+  // A mild highlight shoulder keeps bright metal below clipped white; dark values keep contrast.
+  rgb=rgb/(vec3(1.0)+rgb*0.45);
+  gl_FragColor=vec4(clamp(linearToDisplay(rgb),0.0,1.0),1.0);
+}`;
 
 /** Event-driven renderer: no idle animation loop; disposal releases all owned resources. */
 export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}) {

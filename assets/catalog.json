@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 232,
-    "reviewed": 230,
+    "total": 235,
+    "reviewed": 233,
     "missing": 2
   },
   "forms": [
@@ -5847,6 +5847,96 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.557124,
         "visiblePixels": 655312
+      }
+    },
+    {
+      "id": "skurd-whampire-armodrillo",
+      "name": "Whampire（Skurd 钻头臂）",
+      "en": "Whampire (Skurd Armodrillo Drill Arm)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd equips Whampire with one Armodrillo-derived drill arm. The single modified arm and airborne body are visible in the official clip; Armodrillo identity is separately community-supported. Partial-DNA state of the existing Whampire transformation, not a separate species. Descriptive catalog title.",
+      "aliases": [
+        "Whampire Skurd Armodrillo",
+        "Skurd Whampire Drill Arm",
+        "Whampire Armodrillo Arm"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+        "https://ben10.fandom.com/wiki/Armodrillo",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
+      ],
+      "asset": "alien-skurd-whampire-armodrillo",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference redraw from the independently inspected clean official Cartoon Network clip frame at 51.91963 seconds, with a 55.033333-second close view as detail support. The original image-right airborne pose, one large yellow/gray drill arm, ordinary backward-reaching arm and two bent visible legs/feet are retained. Low-resolution black regions, facial expression/lines, fingers/toes, green panels, connector seams and drill shading are AI interpretations. This is not official transparent art or exact pixel extraction.",
+      "dialFit": {
+        "scale": 0.7579,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.147827,
+        "visiblePixels": 325736
+      }
+    },
+    {
+      "id": "skurd-whampire-bloxx",
+      "name": "Whampire（Skurd 双积木炮）",
+      "en": "Whampire (Skurd Twin Bloxx Cannons)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd-assisted Whampire with two block cannons, both directly visible in the official clip frame; Bloxx DNA identity is community-supported. A partial-DNA body state, not a separate species or a complete Bloxx transformation. Descriptive catalog title; hidden attachment anatomy is not asserted.",
+      "aliases": [
+        "Whampire Skurd Bloxx",
+        "Whampire Bloxx-Lobbers",
+        "Skurd Whampire Block Cannons"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://ben10.fandom.com/wiki/Bloxx_(Classic)",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
+      ],
+      "asset": "alien-skurd-whampire-bloxx",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference reconstruction of the official Cartoon Network clip at 56.344598 seconds, retaining the two large red block cannon mouths, separate curved red/yellow/blue tubes, exposed Whampire head/ear structures and heavily obscured main-frame body pose. The cropped lower legs and pointed feet were conservatively completed from a small different-pose reference at 57.672089 seconds. The added leg contours, joints, green markings and fine equipment/face details are interpretive, not recovered official pixels or native transparent artwork.",
+      "dialFit": {
+        "scale": 0.6073,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.432387,
+        "visiblePixels": 728360
+      }
+    },
+    {
+      "id": "skurd-whampire-feedback",
+      "name": "Whampire（Skurd 吸能臂）",
+      "en": "Whampire (Skurd Feedback Arms)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd-assisted Whampire body state with Feedback-derived absorbing hands/arms according to community episode records. A partial-DNA body configuration, not a new species or the complete Feedback body.",
+      "aliases": [
+        "Whampire Skurd Feedback",
+        "Whampire Feedback Hands",
+        "Skurd Whampire Energy Absorbing Arms"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://ben10.fandom.com/wiki/Feedback",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
+      ],
+      "asset": "alien-skurd-whampire-feedback",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference reconstruction of an actually inspected 70.356998-second screenshot from the official Cartoon Network clip Skurd Returns. The three-quarter Whampire head and torso, two huge foreshortened black absorbing arms, eight visible hollow gold finger-tube mouths and two near-arm side ends follow the source. The lower legs and feet cut off by that frame are conservatively reconstructed using a distant 51.91963-second frame of the same host in a different arm state and flying pose only for coarse ordinary leg/boot proportions. This is not an official transparent original, exact source-pixel extraction, or proof of the precise unseen leg stance. Fine face, tube, badge and membrane contours are interpreted.",
+      "dialFit": {
+        "scale": 0.5298,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.641894,
+        "visiblePixels": 510399
       }
     }
   ]

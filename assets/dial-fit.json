@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "2525f6341e117e9e1a73a40006b3401084b13a39ee75fbe0888e5d0fa0028df0",
-  "shapeCount": 230,
+  "sourceSvgSha256": "d97a3d81d4add5ab21a2739e9fc9f64c5753f81d50c3816d54234785937aefb3",
+  "shapeCount": 233,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -1431,6 +1431,24 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.557124,
       "visiblePixels": 655312
+    },
+    "skurd-whampire-armodrillo": {
+      "scale": 0.7579,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.147827,
+      "visiblePixels": 325736
+    },
+    "skurd-whampire-bloxx": {
+      "scale": 0.6073,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.432387,
+      "visiblePixels": 728360
+    },
+    "skurd-whampire-feedback": {
+      "scale": 0.5298,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.641894,
+      "visiblePixels": 510399
     }
   }
 }

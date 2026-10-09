@@ -8740,6 +8740,437 @@
         "realHostVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "skurd-whampire-armodrillo",
+      "sourceFile": "assets/source-art/skurd-whampire-armodrillo-source-original.jpg",
+      "sourceSha256": "c8d1fc0282d1ce5352ed1b337d2db94848e79384cad549d94b566c71b44ddd82",
+      "maskFile": "assets/source-art/skurd-whampire-armodrillo-reference-edit.png",
+      "maskSha256": "f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference redraw from the independently inspected clean official Cartoon Network clip frame at 51.91963 seconds, with a 55.033333-second close view as detail support. The original image-right airborne pose, one large yellow/gray drill arm, ordinary backward-reaching arm and two bent visible legs/feet are retained. Low-resolution black regions, facial expression/lines, fingers/toes, green panels, connector seams and drill shading are AI interpretations. This is not official transparent art or exact pixel extraction.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI reconstruction and source-detail limitations are explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: Skurd Returns | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root; independently corroborated official web search metadata",
+        "observedTimestampSeconds": 51.91963,
+        "requestedTimestampSeconds": 52,
+        "sourceWidth": 816,
+        "sourceHeight": 459,
+        "sourceFormat": "JPEG",
+        "rootReportedReadyState": 4,
+        "captureRegion": "Unobstructed video picture region, including red/black spacecraft environment, large separate Malgax figure, impact flash and bottom-right Cartoon Network logo. Browser chrome and timeline preview overlay are absent. Whampire is a small full body within the frame.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-whampire-armodrillo-support-original.jpg",
+          "sha256": "60ff00b905f4eff9fc23b0507370ca6f18b37da5b5cf41a40d176658d765d9b5",
+          "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=55s",
+          "kind": "official-video-frame-screenshot",
+          "observedTimestampSeconds": 55.033333,
+          "requestedTimestampSeconds": 55,
+          "sourceWidth": 816,
+          "sourceHeight": 459,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "actuallyViewedByReviewer": true,
+          "use": "Close view of the same Whampire head, black/green upper body, yellow housing and gray drill. Used only for conservative detail interpretation; its different frontal perspective, looping green action streaks and motion-blurred cone are not transferred to the main pose.",
+          "limitations": "Motion blur and green action trails obscure precise drill edges. It does not establish a substitute full-body pose or exact lines in the dark main-source regions."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Malgax Attacks",
+        "officialClipActuallyViewedByRoot": true,
+        "bothSourceScreenshotsIndependentlyViewedByReviewer": true,
+        "communityIdentityUrls": [
+          "https://ben10.fandom.com/wiki/Armodrillo",
+          "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]"
+        ],
+        "communityEvidenceAccess": "Armodrillo identity appeared in returned web-search index text; the community transcript was actually opened. A robots restriction was reported for the character page and no alternate access was attempted.",
+        "communityIdentity": "Community episode history associates the Whampire drill state with Armodrillo. A transcript uses plural arms, while another entry specifies one; the observed clean official frame resolves the artwork to one modified drill arm and one ordinary arm.",
+        "licensedEpisodeMetadataUrl": "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038",
+        "limits": "Official pixels prove this single-drill body pose, while donor naming remains separately community-supported. Distributor synopsis confirms the episode/Skurd plot but not exact anatomy. Dark source pixels cannot establish every generated contour."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: transparent reference reconstruction. Produce ONE clean full-body RGBA character sprite following the FIRST reference image, the unobstructed official Ben 10: Omniverse frame at approximately 52 seconds. Preserve its exact airborne action pose and facing direction, with clear 2D animation contours and restrained flat cel shading. This is a faithful reference redraw, not a new character design.\n\nThe target is ONLY Whampire, the smaller black-and-green figure flying toward image-right in the first image. Do NOT include the enormous black-and-red enemy on the right or any part of that enemy. Preserve Whampire's compact upper body tilted toward image-right, his narrow pointed-eared/head-horn silhouette, green face and neck markings, black chest and limbs with green patches and membrane panels as visibly arranged. Preserve the ordinary arm stretching back toward image-left with its small clawed hand. Preserve BOTH bent black legs trailing to image-left and their green ankle/leg patches and narrow clawed feet in the SAME arrangement as the main reference. Keep the pose airborne and bent; do not turn him into a front-facing standing figure, running figure or symmetrical T pose.\n\nThere is exactly ONE modified drill arm, projecting toward image-right and a little downward. Preserve the very large yellow rounded cylindrical housing with the black rectangular panel on its visible side, the short gray segmented connector between the housing and Whampire, and the gray pointed spiral/conical drill tip beyond it. Use the first reference's perspective, width, short apparent drill-tip length and position relative to the body. Do NOT add a second drill, cannons, blades, extra arms or long drill shaft. Preserve the visible Skurd-related green connection without inventing hidden new anatomy.\n\nThe SECOND reference image at 55 seconds is DETAIL SUPPORT ONLY. It shows the same Whampire face, green/black body and yellow/gray drill assembly closer up, but in a different camera angle and pose. Use it to clarify otherwise tiny facial, arm-connector and drill-material cues. Do NOT transfer its front-facing foreshortened pose, huge foreground drill-tip perspective, looping green ribbons, motion trails, blur or stretched green action shapes into the main pose.\n\nThe source body is low resolution and portions are very dark, so clean up the same visible silhouettes conservatively. Hands, toes, face lines and dark internal details may be minimally clarified, but do not invent new armor, tail, wings beyond the source's visible membranes, donor head features or equipment. All body parts are already within the first source frame: retain them instead of replacing the lower body. Keep both feet, ordinary hand, entire head and drill tip wholly inside the output with transparent padding on all sides.\n\nRemove the entire red/black spacecraft background, enemy, yellow impact star, lighting effects, speed lines, CN watermark, logos, text, timeline overlays, shadows and detached marks. Genuine transparent background with no matte, checkerboard, floor, glow or border. One character, one pose, no character sheet or collage.",
+        "promptSha256": "0d2f25d237ef860046a58ea22c384321893d77216353488153f929f688d90a60",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "The accepted clean main JPEG was actually viewed from disk: one compact airborne Whampire faces image-right with a large yellow housing/gray drill, ordinary arm reaching image-left, and two bent legs/feet. The black/red enemy is distinct background material, not part of the body.",
+        "The support JPEG was actually viewed before generation; it clarifies the head and drill construction while showing a different angle with green action streaks and blur.",
+        "The actual generated sprite retains the reference direction, airborne posture, single drill and asymmetric arms, with both bent legs and feet complete. It excludes the enemy, spacecraft, impact star, CN logo and green motion streaks. No standing pose or second drill is introduced.",
+        "Generated output was viewed in the native image_gen response and then from the saved unchanged PNG using view_image detail original. Default high-detail display appeared nearly black; original-resolution display showed normal colors. No image re-encoding or pixel repair was performed.",
+        "The first supplied main screenshot had a timeline thumbnail overlay covering the target and was excluded before generation. Only the independently inspected clean replacement was supplied to image_gen; the rejected screenshot is retained privately and is absent from copyMap."
+      ],
+      "limitations": [
+        "Source and support are unchanged 816x459 JPEG browser video-region screenshots, not original production frames or native transparent assets.",
+        "The main-source body is small and very dark. Facial lines/expression, finger and toe shapes, black internal boundaries, green membrane/chest details, gray connector seams and drill shading are AI interpretation rather than independent canonical evidence.",
+        "Both legs/feet are visible in the main frame, so there is no claimed recovery of a cropped lower body. Their fine contours still required reference-based redrawing at low resolution.",
+        "The asymmetrical flying pose and large drill intentionally determine the outline; readability in small watch silhouettes still requires current UI inspection.",
+        "Strong-alpha bounds are [113,61,1558,816] within 1672x941; all four outer edges are alpha zero. Faint alpha residue remains inside the canvas. No trimming, painting, padding, alpha-thresholding or resampling was applied.",
+        "This is one partial-DNA state of the existing Whampire body, not a new species. Physical phone, real SillyTavern, current UI rendering and user acceptance remain unverified."
+      ],
+      "alphaInspection": {
+        "file": "reference-edit.png",
+        "sha256": "f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075",
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1672,
+          941
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          35,
+          19,
+          1632,
+          931
+        ],
+        "strongAlphaBBox": [
+          113,
+          61,
+          1558,
+          816
+        ],
+        "transparentPixels": 1247616,
+        "opaquePixels": 1573,
+        "weakAlphaPixels1to15": 19764,
+        "midAlphaPixels16to127": 5146,
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "inspectionReadOnly": true,
+        "programmaticPixelEdits": 0,
+        "actualViewedByReviewer": true,
+        "rawBytesMatch": true
+      },
+      "adoptionBasis": "Retained after root and independent source/output image review, production integration, and actual current-build desktop/mobile-width checks. Source reconstruction limits remain applicable; physical phone, live host and human acceptance are unverified.",
+      "candidateAdoptionBasis": "Disclosed image candidate based on actually viewed official screenshots and saved output, preserving the full airborne reference arrangement. Independent root image review, production integration and current UI review remain separate.",
+      "candidateObservationStage": "The observations and candidateAdoptionBasis describe inspection before current UI integration. Subsequent UI findings are recorded in uiReview.",
+      "uiReview": {
+        "version": "0.5.3",
+        "previewSha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85",
+        "evidence": "docs/browser-qa-v053.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "skurd-whampire-bloxx",
+      "sourceFile": "assets/source-art/skurd-whampire-bloxx-source-original.jpg",
+      "sourceSha256": "56d0cbb3e3a44c7064510437772d3d3fdd3769cb528e2429ec1d5a9b17fb98bf",
+      "maskFile": "assets/source-art/skurd-whampire-bloxx-reference-edit.png",
+      "maskSha256": "337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference reconstruction of the official Cartoon Network clip at 56.344598 seconds, retaining the two large red block cannon mouths, separate curved red/yellow/blue tubes, exposed Whampire head/ear structures and heavily obscured main-frame body pose. The cropped lower legs and pointed feet were conservatively completed from a small different-pose reference at 57.672089 seconds. The added leg contours, joints, green markings and fine equipment/face details are interpretive, not recovered official pixels or native transparent artwork.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official upload identity was reported by root and the local source review; no separate redistribution license was established. AI reconstruction and incomplete source anatomy are explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: Skurd Returns | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "officialChannelEvidence": "Root actual clip review plus local scope report of verified official-channel search metadata. This reviewer independently viewed the supplied screenshot, not the channel browser page.",
+        "observedTimestampSeconds": 56.344598,
+        "sourceWidth": 816,
+        "sourceHeight": 459,
+        "sourceFormat": "JPEG",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "captureRegion": "Video picture region with red environment and bottom-right Cartoon Network logo, excluding browser chrome. Both lower legs are cropped; most torso/arm attachment anatomy is hidden by the two cannons."
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-whampire-bloxx-support-original.jpg",
+          "sha256": "1a67dda1d0940d22bbfd55d123ea9965197d8092530fb6273f918b750a6fc758",
+          "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=58s",
+          "kind": "official-video-frame-screenshot",
+          "observedTimestampSeconds": 57.672089,
+          "sourceWidth": 816,
+          "sourceHeight": 459,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "sourceViewed": true,
+          "purpose": "Only the small Whampire at image-left is used for ordinary slender black/green lower-leg and pointed-foot proportions. The different leaping pose is not substituted for the main frame; the enemy at image-right, blasts and red/black scenery are excluded.",
+          "limitations": "Small low-resolution legs in a different pose do not establish the precise cropped 56-second leg pose, green knee/ankle shapes or toe contours."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Malgax Attacks",
+        "officialClipActuallyViewedByRoot": true,
+        "bothSourceScreenshotsActuallyViewedByThisReviewer": true,
+        "cannonPairVisuallyConfirmed": true,
+        "communityIdentityUrls": [
+          "https://ben10.fandom.com/wiki/Bloxx_(Classic)",
+          "https://ben10.fandom.com/wiki/Malgax_Attacks",
+          "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]"
+        ],
+        "licensedEpisodeMetadataUrl": "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038",
+        "communityIdentityEvidence": "Root scope report records community episode/character excerpts naming paired Bloxx-Lobbers on Whampire during the returning-Skurd battle. This generation reviewer read that bounded local source report; direct pages were not newly fetched in this subtask.",
+        "limits": "Official frame pixels establish the pair of visible block weapons and Whampire host; donor naming is separately community-supported. No exact hidden shoulder/forearm attachment or cropped lower-leg configuration is asserted."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: ONE transparent RGBA Ben 10 character sprite.\nInput image 1 is the EDIT TARGET: the official animation close-up of Whampire equipped by Skurd with TWO Bloxx block cannons. Input image 2 is a SUPPORTING lower-body proportion reference only; use ONLY the small Whampire at the far left. The enemy at image-right and the environment are not part of the requested sprite.\nPrimary request: reconstruct the single subject from image 1 on a genuinely transparent background, preserving its camera angle, pose, composition, and visible equipment structure. Keep exactly two huge dark-red square/rectangular cannon mouths across the foreground: the larger image-left/front mouth and the separate angled image-right mouth. Retain their broad stepped red frames, deep dark-red interiors and source-perspective angles. Keep BOTH separate curved red/yellow/blue segmented block tubes rising behind them, with the narrow green-and-black Whampire head and its two long pointed green ear structures visible between the tubes. Preserve the source's visible green-and-black torso/waist portions and slender black upper legs under the cannons. The cannons must continue to occlude most of the torso; do not reveal invented hidden arm joints or shoulder mechanisms.\nImage 1 cuts off the lower legs. Extend only the missing ordinary slender lower legs and pointed feet conservatively, retaining the bent leg directions of image 1. Use the small left-side character in image 2 only as a limited guide to black/green leg proportions and pointed feet, not as a replacement leaping pose. Any continuation is an interpretive completion, not recovery of missing official pixels. Do not copy image 2's enemy, blasts, cape-like shapes, background structures, or motion trails.\nStyle: clean cel-animation reconstruction faithful to the visible source palette and restrained black outlines. Remove the red room, black window struts, all other scenery, cast shadows, CN logo, projectiles and text. Do not add wings, tail, third cannon, drill, extra arms, extra faces, unrelated armor, or decorative effects. Do not turn the obscured body into a generic upright vampire. Preserve the main frame's two-cannon arrangement and same host identity. Entire subject including both cannon corners, curved tubes, long ears and conservatively completed feet must be inside the canvas with clear transparent margins. Transparent background only; no checkerboard, white backdrop, ground, glow or border. One character and one pose.",
+        "promptSha256": "8674775ab02c589a6e76b048b1a1391d8fe02d06e9ebd704731f7c432de64d72",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Both source screenshots were actually viewed before image generation. The main frame shows two distinct red square cannon mouths in the foreground, two curved multicolored block tubes behind them, pointed green ear structures and a partially visible green/black host with spread upper legs. The room/window structures are background, not body appendages.",
+        "Native generated output was actually viewed; the saved PNG payload was compared with the generated payload and is identical. Both cannons, both curved tubes and both ears are retained; the legs are extended into a spread bent stance with pointed black/green feet. No enemy, projectile, third cannon, drill, wing or tail is included.",
+        "The cannon fronts dominate the body and conceal torso/arm detail as in the source. Their internal mouths, colored blocks, green ear/head shapes and dark leg sections may merge when rendered as a solid silhouette. UI readability has not yet been tested."
+      ],
+      "limitations": [
+        "The source and support are unchanged 816x459 JPEG browser screenshots, not original production PNGs or complete transparent art.",
+        "Both lower legs and feet are interpretive extensions beyond the main crop. Exact bend, knee/ankle markings, pointed heels/toes and continuity under occluding cannons are not recovered canonical pixels. The support establishes only coarse proportions in another pose.",
+        "Fine face/eye lines, visible chest/waist markings, block seams, cannon interior angles and shading are reference redraw interpretations. The hidden cannon attachment is intentionally not resolved.",
+        "The output has strong-alpha bbox [54,26,1350,1124] within 1373x1145. Main solid geometry remains inside the canvas; faint alpha1 residue reaches the bottom edge. No cropping, painting, padding, alpha cleanup, resizing or re-encoding was applied.",
+        "The giant paired cannons obscure most of the host. A small solid silhouette can lose the tube colors and cannon interiors; root must check current three watch modes before adoption.",
+        "This is an altered state of Whampire rather than a new species, full Bloxx body or alternate wearer inferred from background. Current UI, physical phone, real SillyTavern and human acceptance are unverified."
+      ],
+      "alphaInspection": {
+        "sha256": "337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66",
+        "bytes": 1008577,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1373,
+          1145
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          35,
+          22,
+          1356,
+          1145
+        ],
+        "strongAlphaBBox": [
+          54,
+          26,
+          1350,
+          1124
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 1,
+          "left": 0,
+          "right": 0
+        },
+        "alpha0Pixels": 843725,
+        "alpha255Pixels": 2234,
+        "weakAlpha1to15": 18544,
+        "midAlpha16to127": 5613,
+        "strongAlphaPixels": 704203,
+        "inspectionReadOnly": true,
+        "programmaticPixelEdits": 0,
+        "rawBytesMatch": true
+      },
+      "adoptionBasis": "Retained after root and independent source/output image review, production integration, and actual current-build desktop/mobile-width checks. Source reconstruction limits remain applicable; physical phone, live host and human acceptance are unverified.",
+      "candidateAdoptionBasis": "Source-guided recognizable twin-cannon arrangement with actual source/output viewing and unchanged saved bytes. The whole derived silhouette is contained, but lower-leg completion and small-source detail remain explicit interpretation. Independent root view and UI review remain required.",
+      "candidateObservationStage": "The observations and candidateAdoptionBasis describe inspection before current UI integration. Subsequent UI findings are recorded in uiReview.",
+      "uiReview": {
+        "version": "0.5.3",
+        "previewSha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85",
+        "evidence": "docs/browser-qa-v053.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "skurd-whampire-feedback",
+      "sourceFile": "assets/source-art/skurd-whampire-feedback-source-original.jpg",
+      "sourceSha256": "e09d58d5cf4ca5f0cd3292191a81a19fa4187ea6fde89af6c92b010d15e83ef8",
+      "maskFile": "assets/source-art/skurd-whampire-feedback-reference-edit.png",
+      "maskSha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b",
+      "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+      "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference reconstruction of an actually inspected 70.356998-second screenshot from the official Cartoon Network clip Skurd Returns. The three-quarter Whampire head and torso, two huge foreshortened black absorbing arms, eight visible hollow gold finger-tube mouths and two near-arm side ends follow the source. The lower legs and feet cut off by that frame are conservatively reconstructed using a distant 51.91963-second frame of the same host in a different arm state and flying pose only for coarse ordinary leg/boot proportions. This is not an official transparent original, exact source-pixel extraction, or proof of the precise unseen leg stance. Fine face, tube, badge and membrane contours are interpreted.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was observed by root; no separate redistribution license was established. Reference-guided AI reconstruction and incomplete-frame interpretation are disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: Skurd Returns | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root",
+        "observedTimestampSeconds": 70.356998,
+        "sourceWidth": 816,
+        "sourceHeight": 459,
+        "sourceFormat": "JPEG",
+        "captureRegion": "Official video picture region with red-and-black environment and lower-right Cartoon Network logo; full host head and both forward absorbing arms visible, lower legs and feet cropped by bottom border.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-whampire-feedback-support-original.jpg",
+          "sha256": "c8d1fc0282d1ce5352ed1b337d2db94848e79384cad549d94b566c71b44ddd82",
+          "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+          "observedTimestampSeconds": 51.91963,
+          "sourceWidth": 816,
+          "sourceHeight": 459,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "actuallyViewedByReviewer": true,
+          "use": "Small complete Whampire with drill arm flies toward image-right; only ordinary long black/green legs and pointed boots guide missing lower-body proportions. The different arm state, flying pose, exact joints, green markings and camera angle cannot prove the precise unseen Feedback-arm stance. No drill, enemy, beam or leaping pose is transferred."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Malgax Attacks",
+        "officialClipActuallyViewedByRoot": true,
+        "bothSourceScreenshotsActuallyViewedByGenerationReviewer": true,
+        "communityIdentityUrls": [
+          "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+          "https://ben10.fandom.com/wiki/Feedback",
+          "https://ben10.fandom.com/wiki/Malgax_Attacks"
+        ],
+        "communityIdentity": "The inherited round193 scope evidence identifies Feedback hands/arms after the block-cannon exchange, during beam absorption and the draining of Malgax armor. The community host/donor association is separately supported from the official visible limb geometry.",
+        "communityEvidenceAccess": "Read the round193 Whampire scope audit, including candidate identities and evidence. Its author records readable community transcript lines 1044, 1051 and 1057, and labeled indexed excerpts; this generation reviewer did not reopen the restricted Fandom pages.",
+        "limits": "The official source screenshot shows the actual arms and black bores. Feedback is a community-supported donor identification, not a reason to add Feedback antennae, tail, extra hands or glowing tube interiors. One modified Whampire host, not a new species."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent RGBA animation character sprite for a transformation selector.\nInput image 1 is the EDIT TARGET: the official animated Whampire with Skurd Feedback arms. Input image 2 is SUPPORT ONLY for the same host's ordinary lower-leg and pointed-boot proportions; it depicts a different modified-arm state and a different pose.\nMake a faithful, clean transparent reference reconstruction of image 1. Preserve its three-quarter camera angle, green horned bat-like head behind the foreground arms, pale gray snarling face, black/green slender torso at image-left, yellow-green Skurd shoulder band, green waist and small chest/waist badge. Preserve BOTH enormous overlapping black absorbing forearms/hands reaching toward image-right and toward the camera. Match the visible configuration of eight hollow gold cylindrical finger tube mouths across the two hands, including the partially obscured central mouth, the perspective and staggered arrangement. Keep the two gold rounded side-end details on the near forearm. Tube bores are BLACK inside, NOT glowing. Preserve the source's visible arm attachment and overlapping silhouettes; do not separate or add a third hand. Keep the hands disproportionately large from foreshortening and retain the main source's outstretched-arm action.\nComplete only the lower legs and feet cut off by image 1. Use image 2 ONLY as a coarse guide to the normal long black/green legs and pointed boots. Continue image 1's upright three-quarter body into a conservative, balanced stance. Exact unseen leg pose is interpretive reconstruction; do not transfer the support's flying/leaping pose, drill arm, yellow drill housing, enemy, blast or background. Preserve any small green membrane edges already visible on the primary host; do not invent expanded bat wings, antennae, a tail, tentacles, extra fingers or new equipment.\nOriginal 2D animation style, clean black contour lines, restrained flat cel shading and the reference palette. Remove red scenery, enemy, CN logo, all beams, lightning, glow, detached effects, text, floor and cast shadow. Genuine transparent alpha background, no colored backdrop or checkerboard. One character, one pose, no collage. Enclose head, all tube ends, both arms and both pointed feet completely within the canvas with comfortable transparent margins.",
+        "promptSha256": "2e15af77bec98a490e00cffe28ced079e156569371e14fd8fbf0a65eba60ae90",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Both source screenshots were actually viewed before generation. Main source shows a full horned green Whampire head and gray face behind two huge forward-reaching black arms, eight gold hollow tube mouths with black interiors and two near-forearm side ends. The normal lower body is clipped by the frame.",
+        "Generated output was actually viewed natively and from the saved image payload. The source-visible three-quarter arrangement, overlapped arms, eight black-bore tube ends and two side ends remain. The host retains its head, torso, shoulder membrane and reconstructed two legs/pointed feet. No extra hand, drill, enemy, antennae, tail, lightning or luminous bores were observed.",
+        "The saved PNG bytes exactly match the built-in native output. view_image labeled the data URL application/octet-stream and its ordinary image_url rendering appeared mostly dark; forwarding the same base64 as an ImageContent block with mimeType image/png displayed the normal colored image. Native and local base64 payloads were compared equal. No re-encoding or pixel changes occurred."
+      ],
+      "limitations": [
+        "The lower legs and pointed feet are AI reconstruction beyond the primary frame. The distant support is the same host with another arm state and flying pose, and supplies only broad proportions; it does not prove exact knee bends, foot positions, green patches or original stance.",
+        "Small face/fang lines, chest symbol, green membrane edges, finger-tube joints and shading are AI interpretation of low-resolution JPEG pixels.",
+        "The enormous overlapping hands intentionally obscure much of the torso. At small solid-silhouette size the tube interiors disappear and arms may dominate recognition; the current watch UI must be checked by root.",
+        "Strong-alpha bbox is [58,39,1197,1278] within a 1211x1299 canvas. Right/bottom margins are narrow; alpha-1 noise reaches top, bottom and left edges. All solid anatomy is contained. Original generated alpha is retained without programmatic cleanup.",
+        "Current UI, physical phone, real SillyTavern and user acceptance remain unverified. This is a body variant, not the full Feedback body or an independent species."
+      ],
+      "alphaInspection": {
+        "sha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b",
+        "bytes": 718919,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1211,
+          1299
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          0,
+          0,
+          1200,
+          1299
+        ],
+        "strongAlphaBBox": [
+          58,
+          39,
+          1197,
+          1278
+        ],
+        "alpha0Pixels": 1062690,
+        "alpha255Pixels": 2355,
+        "weakAlpha1to15": 32805,
+        "midAlpha16to127": 5907,
+        "strongAlphaPixels": 471687,
+        "edgeMax": {
+          "top": 1,
+          "bottom": 1,
+          "left": 1,
+          "right": 0
+        },
+        "programmaticPixelEdits": false,
+        "actualViewedByGenerationReviewer": true,
+        "rawBytesMatch": true
+      },
+      "adoptionBasis": "Retained after root and independent source/output image review, production integration, and actual current-build desktop/mobile-width checks. Source reconstruction limits remain applicable; physical phone, live host and human acceptance are unverified.",
+      "independentReview": {
+        "reviewer": "root",
+        "status": "pending",
+        "sourceAndOutputActuallyViewed": false,
+        "currentUIViewed": false
+      },
+      "candidateAdoptionBasis": "One disclosed reference reconstruction with visible source body/arm geometry retained, source and output actual image inspection, and contained solid anatomy. Pending independent root visual review and actual UI checks before production adoption.",
+      "candidateObservationStage": "The observations and candidateAdoptionBasis describe inspection before current UI integration. Subsequent UI findings are recorded in uiReview.",
+      "uiReview": {
+        "version": "0.5.3",
+        "previewSha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85",
+        "evidence": "docs/browser-qa-v053.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [
@@ -8881,6 +9312,60 @@
         "https://ben10.fandom.com/wiki/Skurd",
         "https://altariq.fandom.com/wiki/Stuck_on_You",
         "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
+      ]
+    },
+    {
+      "id": "skurd-whampire-armodrillo",
+      "name": "Whampire（Skurd 钻头臂）",
+      "en": "Whampire (Skurd Armodrillo Drill Arm)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd equips Whampire with one Armodrillo-derived drill arm. The single modified arm and airborne body are visible in the official clip; Armodrillo identity is separately community-supported. Partial-DNA state of the existing Whampire transformation, not a separate species. Descriptive catalog title.",
+      "aliases": [
+        "Whampire Skurd Armodrillo",
+        "Skurd Whampire Drill Arm",
+        "Whampire Armodrillo Arm"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=52s",
+        "https://ben10.fandom.com/wiki/Armodrillo",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
+      ]
+    },
+    {
+      "id": "skurd-whampire-bloxx",
+      "name": "Whampire（Skurd 双积木炮）",
+      "en": "Whampire (Skurd Twin Bloxx Cannons)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd-assisted Whampire with two block cannons, both directly visible in the official clip frame; Bloxx DNA identity is community-supported. A partial-DNA body state, not a separate species or a complete Bloxx transformation. Descriptive catalog title; hidden attachment anatomy is not asserted.",
+      "aliases": [
+        "Whampire Skurd Bloxx",
+        "Whampire Bloxx-Lobbers",
+        "Skurd Whampire Block Cannons"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://ben10.fandom.com/wiki/Bloxx_(Classic)",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
+      ]
+    },
+    {
+      "id": "skurd-whampire-feedback",
+      "name": "Whampire（Skurd 吸能臂）",
+      "en": "Whampire (Skurd Feedback Arms)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Malgax Attacks. Skurd-assisted Whampire body state with Feedback-derived absorbing hands/arms according to community episode records. A partial-DNA body configuration, not a new species or the complete Feedback body.",
+      "aliases": [
+        "Whampire Skurd Feedback",
+        "Whampire Feedback Hands",
+        "Skurd Whampire Energy Absorbing Arms"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+        "https://en.wikiquote.org/wiki/Ben_10:_Omniverse_(season_8)#Malgax_Attacks_[8.07]",
+        "https://ben10.fandom.com/wiki/Feedback",
+        "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
       ]
     }
   ]

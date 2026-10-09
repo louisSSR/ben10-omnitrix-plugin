@@ -1,0 +1,1080 @@
+{
+  "version": "0.5.3",
+  "date": "2026-10-10",
+  "previewSha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85",
+  "modelSha256": "f7cd07a3d42e5a7c00eeee7e5c19cdf2faa2448087991b644baf814a96cdc56f",
+  "coverage": {
+    "total": 235,
+    "reviewed": 233,
+    "missing": 2
+  },
+  "tests": {
+    "total": 125,
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0
+  },
+  "screenshots": [
+    "screenshots/v053-desktop-bloxx-dial.jpg",
+    "screenshots/v053-desktop-bloxx-projection.jpg",
+    "screenshots/v053-desktop-bloxx-ring.jpg",
+    "screenshots/v053-desktop-drill-dial.jpg",
+    "screenshots/v053-desktop-drill-projection.jpg",
+    "screenshots/v053-desktop-drill-ring.jpg",
+    "screenshots/v053-desktop-feedback-dial.jpg",
+    "screenshots/v053-desktop-feedback-projection.jpg",
+    "screenshots/v053-desktop-feedback-ring.jpg",
+    "screenshots/v053-mobile-bloxx-dial.jpg",
+    "screenshots/v053-mobile-bloxx-projection.jpg",
+    "screenshots/v053-mobile-bloxx-ring.jpg",
+    "screenshots/v053-mobile-drill-dial.jpg",
+    "screenshots/v053-mobile-drill-projection.jpg",
+    "screenshots/v053-mobile-drill-ring.jpg",
+    "screenshots/v053-mobile-feedback-dial.jpg",
+    "screenshots/v053-mobile-feedback-projection.jpg",
+    "screenshots/v053-mobile-feedback-ring.jpg",
+    "screenshots/v053-narrow-bloxx-dial.jpg",
+    "screenshots/v053-narrow-drill-dial.jpg",
+    "screenshots/v053-narrow-feedback-dial.jpg",
+    "screenshots/v053-watch-desktop-omniverse.jpg",
+    "screenshots/v053-watch-desktop-original.jpg",
+    "screenshots/v053-watch-desktop-recalibrated.jpg",
+    "screenshots/v053-watch-desktop-ultimatrix.jpg",
+    "screenshots/v053-watch-mobile-omniverse.jpg",
+    "screenshots/v053-watch-mobile-original.jpg",
+    "screenshots/v053-watch-mobile-recalibrated.jpg",
+    "screenshots/v053-watch-mobile-ultimatrix.jpg"
+  ],
+  "shots": [
+    {
+      "file": "screenshots/v053-desktop-bloxx-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 505.8229370117187,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.84375,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.84375
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 511.18751525878906,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 242.4791717529297,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 242.4791717529297
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-bloxx-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-bloxx-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 358.03443908691406,
+        "height": 111.61051940917967,
+        "left": 647.0662841796875,
+        "right": 846.6004638671875,
+        "top": 246.4239196777344,
+        "width": 199.5341796875,
+        "x": 647.0662841796875,
+        "y": 246.4239196777344
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 505.1562805175781,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.17709350585935,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.17709350585935
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 510.5208435058594,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 241.8125,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 241.8125
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 358.03443908691406,
+        "height": 111.61051940917967,
+        "left": 647.0662841796875,
+        "right": 846.6004638671875,
+        "top": 246.4239196777344,
+        "width": 199.5341796875,
+        "x": 647.0662841796875,
+        "y": 246.4239196777344
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 505.1562805175781,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.17709350585935,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.17709350585935
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 510.5208435058594,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 241.8125,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 241.8125
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 358.03443908691406,
+        "height": 111.61051940917967,
+        "left": 647.0662841796875,
+        "right": 846.6004638671875,
+        "top": 246.4239196777344,
+        "width": 199.5341796875,
+        "x": 647.0662841796875,
+        "y": 246.4239196777344
+      },
+      "scrollWidth": 1265,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 513.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 359.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 359.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 516.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 355.94793701171875,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 355.94793701171875
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 484.319091796875,
+        "height": 66.91943359375,
+        "left": 120.92623138427734,
+        "right": 253.73003387451172,
+        "top": 417.399658203125,
+        "width": 132.80380249023438,
+        "x": 120.92623138427734,
+        "y": 417.399658203125
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 433.1829223632813,
+        "height": 74.688720703125,
+        "left": 120.55620574951172,
+        "right": 254.10004425048828,
+        "top": 358.49420166015625,
+        "width": 133.54383850097656,
+        "x": 120.55620574951172,
+        "y": 358.49420166015625
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 513.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 359.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 359.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 516.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 355.94793701171875,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 355.94793701171875
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 484.319091796875,
+        "height": 66.91943359375,
+        "left": 120.92623138427734,
+        "right": 253.73003387451172,
+        "top": 417.399658203125,
+        "width": 132.80380249023438,
+        "x": 120.92623138427734,
+        "y": 417.399658203125
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 433.1829223632813,
+        "height": 74.688720703125,
+        "left": 120.55620574951172,
+        "right": 254.10004425048828,
+        "top": 358.49420166015625,
+        "width": 133.54383850097656,
+        "x": 120.55620574951172,
+        "y": 358.49420166015625
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 513.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 359.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 359.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 516.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 355.94793701171875,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 355.94793701171875
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 484.319091796875,
+        "height": 66.91943359375,
+        "left": 120.92623138427734,
+        "right": 253.73003387451172,
+        "top": 417.399658203125,
+        "width": 132.80380249023438,
+        "x": 120.92623138427734,
+        "y": 417.399658203125
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-ring.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 433.1829223632813,
+        "height": 74.688720703125,
+        "left": 120.55620574951172,
+        "right": 254.10004425048828,
+        "top": 358.49420166015625,
+        "width": 133.54383850097656,
+        "x": 120.55620574951172,
+        "y": 358.49420166015625
+      },
+      "scrollWidth": 375,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-narrow-bloxx-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 499.1198120117187,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 371.8385620117187,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 371.8385620117187
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 501.76564025878906,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 369.1927185058594,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 369.1927185058594
+      },
+      "scrollWidth": 305,
+      "selected": "Whampire（Skurd 双积木炮）",
+      "view": "left",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v053-narrow-drill-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 499.1198120117187,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 371.8385620117187,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 371.8385620117187
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 501.76564025878906,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 369.1927185058594,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 369.1927185058594
+      },
+      "scrollWidth": 305,
+      "selected": "Whampire（Skurd 钻头臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v053-narrow-feedback-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 499.7864685058594,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 372.5052185058594,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 372.5052185058594
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 502.4322967529297,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 369.859375,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 369.859375
+      },
+      "scrollWidth": 305,
+      "selected": "Whampire（Skurd 吸能臂）",
+      "view": "left",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-omniverse.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 391.98960399627686,
+        "height": 15.666666984558104,
+        "left": 702.7454833984375,
+        "right": 790.9212646484375,
+        "top": 376.3229370117187,
+        "width": 88.17578125,
+        "x": 702.7454833984375,
+        "y": 376.3229370117187
+      },
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "low",
+      "watch": "omniverse",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-original.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-recalibrated.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 453.7367401123047,
+        "height": 67.24430847167969,
+        "left": 685.4844970703125,
+        "right": 808.1822509765625,
+        "top": 386.492431640625,
+        "width": 122.69775390625,
+        "x": 685.4844970703125,
+        "y": 386.492431640625
+      },
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "right",
+      "watch": "recalibrated",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-ultimatrix.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 446.62347412109375,
+        "height": 56.97607421875,
+        "left": 695.939453125,
+        "right": 797.7272186279297,
+        "top": 389.64739990234375,
+        "width": 101.78776550292967,
+        "x": 695.939453125,
+        "y": 389.64739990234375
+      },
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "ultimatrix",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-omniverse.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 569.0104293823242,
+        "height": 90.30208587646484,
+        "left": 140.9322967529297,
+        "right": 233.72396850585935,
+        "top": 478.7083435058594,
+        "width": 92.79167175292967,
+        "x": 140.9322967529297,
+        "y": 478.7083435058594
+      },
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "top",
+      "watch": "omniverse",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-original.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 487.5334587097168,
+        "height": 26.202312469482425,
+        "left": 127.7395477294922,
+        "right": 246.91671752929688,
+        "top": 461.3311462402344,
+        "width": 119.17716979980467,
+        "x": 127.7395477294922,
+        "y": 461.3311462402344
+      },
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-recalibrated.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 483.4091796875,
+        "height": 60.599609375,
+        "left": 127.61544799804688,
+        "right": 247.0407943725586,
+        "top": 422.8095703125,
+        "width": 119.42534637451172,
+        "x": 127.61544799804688,
+        "y": 422.8095703125
+      },
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "recalibrated",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-ultimatrix.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 510.1031303405762,
+        "height": 50.61246871948242,
+        "left": 140.77853393554688,
+        "right": 233.8777313232422,
+        "top": 459.49066162109375,
+        "width": 93.09919738769533,
+        "x": 140.77853393554688,
+        "y": 459.49066162109375
+      },
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "right",
+      "watch": "ultimatrix",
+      "width": 375
+    }
+  ],
+  "screenshotHashes": [
+    {
+      "file": "screenshots/v053-desktop-bloxx-dial.jpg",
+      "sha256": "efcc7e19c8283d34dfb92574b750d59a37087d1e4a53c50af349baacfd0e3493"
+    },
+    {
+      "file": "screenshots/v053-desktop-bloxx-projection.jpg",
+      "sha256": "743a646441285805aee23c1003f3cc73af5da2b0d62f20f038235e0f668d75d0"
+    },
+    {
+      "file": "screenshots/v053-desktop-bloxx-ring.jpg",
+      "sha256": "bed0aa981befb61ce068bde0d429d9d5cc6f190d93f3dd4a6eceb914b0b917b6"
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-dial.jpg",
+      "sha256": "8549ae9d21efa27c2175472c2f323519cf84076ef9333322e29e7c392739e931"
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-projection.jpg",
+      "sha256": "a91a1fdeb64ccb7c31099fcd62ebe263a7ab2f4f1984de436bbc23ffdd7763da"
+    },
+    {
+      "file": "screenshots/v053-desktop-drill-ring.jpg",
+      "sha256": "d547a81238917dff7f960b6b5025c9c1cf161b07af2d351cd151fb7bdc6080c6"
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-dial.jpg",
+      "sha256": "0822c984e4c749caf3a83e8afd632190fb8e12367d01fa9c804516d498b2188d"
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-projection.jpg",
+      "sha256": "6f9a1859c69fed914c7ef0a14a8e113beab81f9fe3fe7ce3a754517ff2ebac26"
+    },
+    {
+      "file": "screenshots/v053-desktop-feedback-ring.jpg",
+      "sha256": "05e445a4726c5638f538389bc2ec3463726af3ce18fd37b96ee547f63ae256e3"
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-dial.jpg",
+      "sha256": "1ec735bbe8c846f667bcd18f0f803e010d5a99377b169222f30f2a29aff43f4a"
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-projection.jpg",
+      "sha256": "913161cbbacf87207d42d6b019a5c9b1d5e20a5f0119fa1b9517043b3737b94a"
+    },
+    {
+      "file": "screenshots/v053-mobile-bloxx-ring.jpg",
+      "sha256": "15999e4a901596756f1e0aeb72a60a4064c8c9c2c23723762cdf7c496f93452c"
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-dial.jpg",
+      "sha256": "3d626b08e8196eaa362a3c84afc6d4bde7e1c8726c5b36715ff3a4587ef538b2"
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-projection.jpg",
+      "sha256": "3700916ac32a7738622f40251a247c08fee0f4733d791405a06d0f64e578df85"
+    },
+    {
+      "file": "screenshots/v053-mobile-drill-ring.jpg",
+      "sha256": "1b59ec0dc58305523449601c2cfefcbd2cd9d473fa5f4d4bc57a27bcbe6cee4e"
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-dial.jpg",
+      "sha256": "e70040745745a3c7a8efb045a0658e245bb9d6787c2e40553347b6ba2fe8e90f"
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-projection.jpg",
+      "sha256": "d745fd55f1c00f41149e1d786199a09cd7c44dc40f9948f1b7e55b18bd45efc3"
+    },
+    {
+      "file": "screenshots/v053-mobile-feedback-ring.jpg",
+      "sha256": "368205fb9dc27fc1b53f4249fa3b7172df00e33620d3b0438ee84325e6ce1c47"
+    },
+    {
+      "file": "screenshots/v053-narrow-bloxx-dial.jpg",
+      "sha256": "d5e631643d3f87a1f4ba3086a2c0ec8703a1f7c47dfcdf244e890a14ec9366ce"
+    },
+    {
+      "file": "screenshots/v053-narrow-drill-dial.jpg",
+      "sha256": "46c13803d35e1a8831ee805bcafc1f9fde7eb1d9ac2fab020b867ed5988f9ae5"
+    },
+    {
+      "file": "screenshots/v053-narrow-feedback-dial.jpg",
+      "sha256": "b30ce64bf2cee4a4ffca7b0b821455386ac04636248e0007200d10e94da3cbf9"
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-omniverse.jpg",
+      "sha256": "5e737a4524e131a176e161c8273f57b7fb41470635ef7abe1f68296ac004b975"
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-original.jpg",
+      "sha256": "48c74a5eb7f31cb515b8747a439a4422e0121122784d0b3c8b469437a44989d9"
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-recalibrated.jpg",
+      "sha256": "60c0fe6cf14df6a4f581646e417c68b0155cc7fb7c9b97933316b1da86d13865"
+    },
+    {
+      "file": "screenshots/v053-watch-desktop-ultimatrix.jpg",
+      "sha256": "a76dd1f0f32236766c4e75fa65aea627a0d0af2e6e30bd7b6af2bf9875fee842"
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-omniverse.jpg",
+      "sha256": "6b6917bdb2ca6663dd3c0bbc572dfe71d1bf91cb45c0031239b290e8408e1f8f"
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-original.jpg",
+      "sha256": "609ad479126da799c20cdfedc01198337d72e06bddb387cf453ba9959a66987f"
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-recalibrated.jpg",
+      "sha256": "13197cc733591adfe7d1e889ea9da4c81d01bb9c565e0b017205ee2a89ba9048"
+    },
+    {
+      "file": "screenshots/v053-watch-mobile-ultimatrix.jpg",
+      "sha256": "eb09c7223eb882b64592e96d627da46a7fd21b2424fa4f399df75426f43502b3"
+    }
+  ],
+  "consoleErrorsAndWarnings": [],
+  "normalAnimationSelectionVerified": true,
+  "watchTransitionsVerified": true,
+  "physicalPhoneVerified": false,
+  "realHostVerified": false,
+  "humanAccepted": false,
+  "limits": [
+    "实际查看四代模型及三项新增素材的 29 张最终截图；暗部层次和曲面高光较前版改善，但程序化模型的精细度仍不等同于绘制参考图，未代替用户视觉接受。",
+    "钻头臂的横向飞行轮廓在 305 宽度表盘中完整显示，但整体较小；双积木炮的内部炮管、吸能臂的空心指端在纯黑剪影中会合并。",
+    "正常动态下通过页面按钮验证火焰人切换为超能兽再返回、镜头切换及表芯收起和弹出；静态证据使用减少动态以便比较，未测量实机帧率。",
+    "全息英雄仍是带视觉厚度效果的平面图像，表身采用真实三维几何；没有将英雄图像声明为完整三维角色。",
+    "手机证据来自桌面浏览器的 375 与 305 CSS 像素视口，不能代替手机实机、SillyDroid、真实 SillyTavern 和用户验收。"
+  ]
+}

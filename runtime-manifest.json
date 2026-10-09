@@ -18,13 +18,13 @@
     },
     {
       "path": "preview.html",
-      "bytes": 363833,
-      "sha256": "25cda296f8b5f6d80a4f78b87f7ed289799b260738b785507cb3e0f77bfe0d32"
+      "bytes": 374225,
+      "sha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85"
     },
     {
       "path": "manifest.json",
       "bytes": 435,
-      "sha256": "6c7bc14039b0df9bcdd09a2916e7d334d75b61cc93dd3789003404ea8bc93ea8"
+      "sha256": "f9d912dfbe8b5fc273d51dc6c3b1d1c95eebf70667dbfa3fb4aa3ea66e213685"
     },
     {
       "path": "assets/runtime/00fe56cc1d0346ce6f20dc662d9b2ffdd6a9d013daa344bb64a8c10d55431dd8.png",
@@ -265,6 +265,11 @@
       "path": "assets/runtime/31eea259196e5be2153bbfbb34ba2573b6927e694ed62717757624fe86654aec.png",
       "bytes": 3101,
       "sha256": "31eea259196e5be2153bbfbb34ba2573b6927e694ed62717757624fe86654aec"
+    },
+    {
+      "path": "assets/runtime/337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66.png",
+      "bytes": 1008577,
+      "sha256": "337fec8a90399ea4172d2aadd2675fbcc98fb235ca81dc6062154f8a512fcb66"
     },
     {
       "path": "assets/runtime/36c4d9d1bb33aea0adb0dfac3716938526f23e6f5ca5633a9b3c2501c9cdbab1.png",
@@ -817,6 +822,11 @@
       "sha256": "a636887eaa571226c922163ba15af8cb8124cc433136acde4be6ce2344851407"
     },
     {
+      "path": "assets/runtime/a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b.png",
+      "bytes": 718919,
+      "sha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b"
+    },
+    {
       "path": "assets/runtime/a8db6a0a8a5665542bff0b1b7dd6d950f16e164b98758b0f1b02f336a809b70e.png",
       "bytes": 185589,
       "sha256": "a8db6a0a8a5665542bff0b1b7dd6d950f16e164b98758b0f1b02f336a809b70e"
@@ -1115,6 +1125,11 @@
       "path": "assets/runtime/efc1febe632b6400589a7b46a5202a88f98dde42dc3c1ca68247978674bac853.png",
       "bytes": 297711,
       "sha256": "efc1febe632b6400589a7b46a5202a88f98dde42dc3c1ca68247978674bac853"
+    },
+    {
+      "path": "assets/runtime/f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075.png",
+      "bytes": 566581,
+      "sha256": "f0972a3a87c505646225e975abe192a2b76942464115b12d8ab532d4104c4075"
     },
     {
       "path": "assets/runtime/f13e3bbe9e1109fe88acb163305ac6f7c4c735b78c8fe970133910af74147f06.png",
