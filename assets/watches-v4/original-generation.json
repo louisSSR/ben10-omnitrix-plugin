@@ -1,0 +1,37 @@
+{
+  "id": "original",
+  "kind": "reference-guided multi-view sprite atlas",
+  "official": false,
+  "modelGeometry": false,
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "originalBytesPreserved": true,
+  "layout": {
+    "columns": 4,
+    "rows": 2
+  },
+  "reference": {
+    "role": "structural reference",
+    "source": "assets/watches-v3/original.png"
+  },
+  "prompt": "Use case: stylized-concept. Create ONE production sprite atlas for the original 2005 Ben 10 Omnitrix wrist device, using the supplied existing front illustration as the identity reference, correcting its flatness into a coherent solid three-dimensional object. This is a single 4-column by 2-row atlas image, ideally 2048x1024; eight equal square cells, no margins between cells, absolutely no text, borders or labels. Real transparent background in every empty pixel.\n\nDesign: the SAME original Omnitrix in every cell: broad black cuff with silver gray edges, round chunky dark charcoal raised bezel, FOUR small luminous green circular studs evenly spaced at cardinal positions on the bezel, four pale curved silver braces around the case, ONE separate large green activation button on the device's left side. Center is round luminous lime green with black classic hourglass. Watch is NOT a flat strap laid out as a strip: form a thick curved bracelet/cuff with visible inner wrist cavity, smoothly rounded inner wall and believable continuous strap underneath. No arm, no skin, no pedestal. Hard surface animated feature-film quality 3D cel shading, precise beveled rims, readable thickness and sidewall seams, matte dark band, satin metallic gray hardware, restrained green emission. Stay faithful to the reference design, no invented tiny technical greebles, no extra buttons.\n\nThe cuff's main direction runs horizontally left to right in the image. In each cell the entire object fits inside 84% of cell width and 78% height, centered horizontally; projected face center at x=50%, y=43%. Identical scale across both rows, soft studio key light upper left, weaker green bounce. Real perspective, the near parts occlude far parts.\n\nColumns left-to-right:\n1. High/front elevated 70-degree camera, see circular dial and some thick front wall.\n2. Front elevated 45-degree three-quarter camera, see dial, its cylindrical thickness, cuff roundness, both near braces, inside wrist cavity.\n3. Low front elevated 20-degree camera, see strong front sidewall, oval dial top, underside of cuff and depth of button.\n4. Back elevated 45-degree camera, see opposite physical rear side of the SAME device, same stud positions, same cuff and braces, no mirrored duplication of left side button.\n\nTOP ROW: core fully retracted/closed, green hourglass face flush within bezel.\nBOTTOM ROW: EXACT SAME corresponding camera, object position, proportions and lighting as above, but central round dial module rises vertically on a short cylindrical piston about 1/3 of dial diameter. Show exposed dark mechanical cylinder with evenly spaced green vertical luminous marks and two metal collar rings. Emitter top becomes plain pale luminous green glass ready for holographic projection, without a figure or beam. Only this center module moves upward; the stationary cuff body, braces and activation button must not change.\n\nImportant: each view must visibly reveal DIFFERENT physical surfaces and occlusions. Do not make eight skewed copies of a front picture. Render a volumetric model interpretation, suitable for swapping view frames in an interactive interface. No cast shadow outside the object, no background glow filling transparency.",
+  "observedLimitations": [
+    "Views are discrete artist redraws, not a continuous 3D mesh.",
+    "Camera elevations and requested alignment are approximate, not calibrated.",
+    "Closed and raised states may have small silhouette and scale differences."
+  ],
+  "driverAccepted": false,
+  "output": {
+    "file": "assets/watches-v4/original-atlas.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "dacba74ccda7c45bcfc2453031ce20b57ef3e499b68b075c49ae964ff54e32eb",
+    "bytes": 1623140,
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "currentUIViewed": true,
+  "currentUIReview": "docs/browser-qa-v040.json"
+}

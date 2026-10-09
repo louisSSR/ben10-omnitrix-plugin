@@ -132,3 +132,48 @@
  .stage{height:455px}
  .ring-item{width:42px;height:52px;margin:-26px 0 0 -21px}
 }
+
+/* The body is a separately drawn camera view. No perspective squash of the artwork. */
+.watch-multiview{display:none;position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.watch-atlas{display:none;position:absolute;width:400%;height:200%;max-width:none;object-fit:fill;pointer-events:none;user-select:none}
+[data-watch=original] .watch-atlas.original,[data-watch=recalibrated] .watch-atlas.recalibrated,[data-watch=ultimatrix] .watch-atlas.ultimatrix,[data-watch=omniverse] .watch-atlas.omniverse{display:block}
+.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-art{display:none}
+.omni-app[data-watch-art=atlas] .watch-multiview{display:block}
+.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-device,.omni-app[data-watch-art=loading]:not([data-mode=dial]) .watch-device{left:50%;top:74%;width:min(300px,86cqw);height:auto;aspect-ratio:1;transform:translate(-50%,-50%);transform-origin:center;transition:none;filter:drop-shadow(0 16px 12px #0009)}
+.omni-app[data-mode=projection] .stage{height:560px}
+.omni-app[data-mode=carousel] .stage{height:540px}
+.omni-app[data-watch-art=atlas][data-mode=carousel] .watch-device,.omni-app[data-watch-art=loading][data-mode=carousel] .watch-device{top:64%;width:min(410px,96cqw);height:auto;transform:translate(-50%,-50%)}
+.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-body-depth,.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-ground-shadow,.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-contact-ring,.omni-app[data-watch-art=atlas] .projection-emitter{display:none}
+.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-screen{display:block;inset:auto;transform:translate(-50%,-50%) rotate(var(--watch-face-angle,0deg));transform-origin:center;border-radius:50%;opacity:0;pointer-events:none;background:radial-gradient(ellipse,#edffb9,#b9ff5266 48%,#9afb2533 72%);border:0;box-shadow:none;transition:opacity .16s;z-index:5}
+.omni-app[data-watch-art=atlas]:not([data-mode=dial]) .watch-screen>*{display:none}
+.omni-app[data-watch-art=atlas][data-mode=projection][data-core-state=raised] .watch-screen{opacity:.85;box-shadow:0 0 13px #99ff3b77}
+.omni-app[data-core-state=closed][data-mode=projection] .hologram{visibility:hidden;opacity:0;pointer-events:none}
+.selection-ring{left:var(--ring-center-x,50%);top:var(--ring-center-y,55%);height:calc(var(--ring-radius) * 2 * var(--ring-ellipse,.8) + 58px)}
+.ring-item{left:var(--ring-center-x,50%);top:var(--ring-center-y,55%)}
+.watch-view-toolbar{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;padding:13px 20px;border-top:1px solid #39552955;background:linear-gradient(120deg,#142315,#0d180e);min-height:68px}
+.view-label{font-size:10px;letter-spacing:1px;color:#8ea180;margin-right:8px}
+.watch-view-controls{display:flex;gap:5px}
+.watch-view-controls button{min-height:39px;padding:8px 13px;border-radius:5px;border:1px solid #51713966;color:#a6b29a;background:#102012;font-size:11px;transition:background .18s,color .18s}
+.watch-view-controls button[aria-pressed=true]{color:#dfff9b;background:#42612380;border-color:#baff6266;box-shadow:inset 0 0 10px #a9ed3420}
+#toggle-watch-core{min-height:39px;padding:8px 13px;border:1px solid #8cc84360;color:#b6e185;border-radius:5px;font-size:11px}
+#watch-view-status{font-size:10px;color:#cbbc7d;flex-basis:100%;text-align:center}
+#watch-view-status:empty{display:none}
+[data-mode=dial] .watch-view-toolbar{display:none}
+@media(max-width:760px){
+ .watch-view-toolbar{gap:7px;padding:12px 10px}
+ .view-label{display:none}
+ .watch-view-controls{gap:4px}
+ .watch-view-controls button{padding:8px 10px;font-size:10px;min-height:40px}
+ #toggle-watch-core{font-size:10px;min-height:40px}
+ .selection-ring{height:calc(var(--ring-radius) * 2 * var(--ring-ellipse,.8) + 48px)}
+}
+@media(prefers-reduced-motion:reduce){.watch-view-toolbar *{transition:none}}
+.reduced-motion .watch-view-toolbar *{transition:none}
+
+/* Keep only this frame's empty margin from admitting a neighbouring atlas cell. */
+.omni-app[data-watch=ultimatrix][data-watch-view=left][data-core-state=raised] .watch-multiview{clip-path:inset(0 0 0 3%)}
+/* A failed atlas shows the labelled front fallback without flattening that image. */
+.omni-app[data-watch-art=fallback]:not([data-mode=dial]) .watch-device{left:50%;top:74%;width:min(300px,86cqw);height:auto;aspect-ratio:1;transform:translate(-50%,-50%);transform-origin:center;transition:none}
+.omni-app[data-watch-art=fallback][data-mode=carousel] .watch-device{top:64%;width:min(410px,96cqw)}
+.omni-app:is([data-watch-art=loading],[data-watch-art=fallback]) .watch-body-depth{display:none}
+.omni-app[data-watch-art=atlas][data-mode=carousel] .watch-device{width:min(410px,var(--watch-ring-body-width,96cqw));transform:translate(calc(0% - var(--watch-view-face-x,50%)),-50%)}

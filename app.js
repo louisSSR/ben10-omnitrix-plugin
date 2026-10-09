@@ -1,4 +1,4 @@
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames } from './core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames, watchFrameLayout } from './core.js';
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
@@ -26,6 +26,14 @@ const motionTimers = new Set();
 const ringNodes = [], ringEntries = [];
 const turn = Math.PI * 2;
 const modulo = (n, length) => ((n % length) + length) % length;
+let watchViews = {};
+try { watchViews = JSON.parse($('watch-views')?.textContent || '{}'); } catch { /* Older previews retain the front artwork. */ }
+if (!watchViews || typeof watchViews !== 'object' || Array.isArray(watchViews)) watchViews = {};
+const viewOptions = ['top', 'left', 'low', 'right'].map((id, index) => ({ id,
+  name: typeof watchViews.views?.[index]?.name === 'string' ? watchViews.views[index].name : ['俯视', '左前', '低角度', '右前'][index] }));
+let watchViewIndex = 2;
+const raisedByMode = { projection: true, carousel: false };
+const watchAtlasStates = new Map();
 
 function watchSelectionPool() {
   if (!readyForms.length) return forms;
@@ -82,24 +90,87 @@ function notice(text) {
   toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 2700);
 }
 function reduced() { return preferences.reducedMotion || systemMotion.matches; }
+function currentWatchLayout(raised = raisedByMode[preferences.mode] === true) {
+  return watchFrameLayout(watchViews.watches?.[preferences.watch], watchViewIndex, raised, watchViews.columns, watchViews.rows);
+}
+function projectionVisible(form) {
+  return preferences.mode === 'projection' && raisedByMode.projection && !!form?.asset;
+}
+function renderWatchView(withMotion = false) {
+  const viewport = $('watch-multiview'), screen = $('watch-screen');
+  const layout = currentWatchLayout(), isDial = preferences.mode === 'dial';
+  const state = !layout || !viewport ? 'fallback' : watchAtlasStates.get(preferences.watch) || 'loading';
+  const ready = !isDial && state === 'ready';
+  app.dataset.watchView = viewOptions[watchViewIndex].id;
+  app.dataset.coreState = raisedByMode[preferences.mode] ? 'raised' : 'closed';
+  app.dataset.watchArt = isDial ? 'dial' : ready ? 'atlas' : state;
+  if (viewport) {
+    viewport.hidden = !ready;
+    viewport.style.aspectRatio = layout?.aspectRatio || '';
+  }
+  // CSS gives #watch-device and the clipped viewport the exact same cell bounds.
+  $('watch-device').style.aspectRatio = ready ? layout.aspectRatio : '';
+  $('watch-device').style.setProperty('--watch-view-face-x', ready ? `${layout.anchor.x * 100}%` : '50%');
+  $('watch-device').style.setProperty('--watch-ring-body-width', ready ? `${Math.min(96, 92 / (2 * Math.max(layout.anchor.x, 1 - layout.anchor.x)))}cqw` : '96cqw');
+  for (const watch of WATCHES) {
+    const image = $(`watch-atlas-${watch.id}`);
+    if (!image) continue;
+    image.hidden = !ready || watch.id !== preferences.watch;
+    if (layout) { image.style.left = layout.left; image.style.top = layout.top; }
+  }
+  for (const [property, key] of [['left', 'x'], ['top', 'y'], ['width', 'w'], ['height', 'h']]) {
+    screen.style[property] = ready ? `${layout.anchor[key] * 100}%` : '';
+  }
+  screen.style.setProperty('--watch-face-angle', ready ? `${layout.anchor.a}deg` : '0deg');
+  if ($('projection-emitter')) $('projection-emitter').hidden = true;
+  const toolbar = $('watch-view-toolbar'), controls = $('watch-view-controls');
+  if (toolbar) toolbar.hidden = isDial;
+  if (controls) {
+    const focused = document.activeElement?.dataset?.action === 'watch-view' ? document.activeElement.dataset.value : null;
+    controls.replaceChildren(...viewOptions.map((view, index) => {
+      const control = button(view.name, 'watch-view-option', 'watch-view', view.id);
+      control.setAttribute('aria-pressed', String(watchViewIndex === index)); control.disabled = !ready;
+      return control;
+    }));
+    if (focused) [...controls.children].find(control => control.dataset.value === focused)?.focus({ preventScroll: true });
+  }
+  if ($('toggle-watch-core')) {
+    $('toggle-watch-core').textContent = raisedByMode[preferences.mode] ? '收起表芯' : '弹出表芯';
+    $('toggle-watch-core').setAttribute('aria-pressed', String(raisedByMode[preferences.mode] === true));
+    $('toggle-watch-core').disabled = !ready;
+  }
+  if ($('watch-view-status')) {
+    $('watch-view-status').textContent = isDial || ready ? '' : state === 'loading' ? '多角度表身加载中，暂用正视图' : '多角度表身暂不可用，已回退正视图';
+    $('watch-view-status').hidden = isDial || ready;
+  }
+  if (withMotion && ready) animate(viewport, [{ opacity: .25 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' });
+}
+function alignRing() {
+  if (preferences.mode !== 'carousel') return .8;
+  const stage = $('stage'), bounds = stage.getBoundingClientRect();
+  const layout = app.dataset.watchArt === 'atlas' ? currentWatchLayout() : null;
+  const device = $('watch-device').getBoundingClientRect();
+  const face = $('watch-screen').getBoundingClientRect();
+  const x = layout ? device.left + device.width * layout.anchor.x - bounds.left : face.left + face.width / 2 - bounds.left;
+  const y = layout ? device.top + device.height * layout.anchor.y - bounds.top : face.top + face.height / 2 - bounds.top;
+  if (Number.isFinite(x) && Number.isFinite(y)) {
+    stage.style.setProperty('--ring-center-x', `${x}px`); stage.style.setProperty('--ring-center-y', `${y}px`);
+  }
+  const ratio = layout?.ellipseRatio || .8;
+  stage.style.setProperty('--ring-ellipse', String(ratio));
+  return ratio;
+}
 function alignProjection() {
   const screen = $('watch-screen'), hologram = $('hologram');
-  if (preferences.mode !== 'projection' || !screen || !hologram) return false;
+  if (preferences.mode !== 'projection' || !raisedByMode.projection || !screen || !hologram) return false;
   const stage = $('stage').getBoundingClientRect(), face = screen.getBoundingClientRect();
   if (!Number.isFinite(face.width) || !face.width || !stage.height) return false;
-  // The gauntlet and sliding-cover watches put the emitter in different places.
-  // Anchor the light to the rendered face, including its perspective transform.
+  // The atlas already depicts the raised core; its face is the beam base.
   const x = face.left + face.width / 2 - stage.left;
   const y = face.top + face.height / 2 - stage.top;
-  const lift = Math.min(46, Math.max(30, face.width * .27));
-  const emitter = $('projection-emitter');
-  if (emitter) {
-    emitter.style.left = `${x}px`; emitter.style.top = `${y - lift}px`;
-    emitter.style.width = `${face.width * 1.06}px`; emitter.style.height = `${lift + 16}px`;
-  }
-  const top = Math.max(78, y - lift - 285), height = Math.max(100, y - lift - top + 5);
+  const top = Math.max(8, Math.min(78, y - 100), y - 285), height = Math.max(0, y - top + 5);
   hologram.style.left = `${x}px`; hologram.style.top = `${top}px`;
-  const room = Number.isFinite(stage.width) ? Math.max(60, 2 * Math.min(x, stage.width - x) - 16) : 236;
+  const room = Number.isFinite(stage.width) ? Math.max(0, 2 * Math.min(x, stage.width - x) - 16) : 236;
   hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(236, height * .82, room)}px`;
   return true;
 }
@@ -123,7 +194,8 @@ function setFigures(form) {
   $('dial-shape').replaceChildren(figure(form));
   $('dial-shape').style.visibility = '';
   displayedId = form?.id || '';
-  if ($('holo-light')) $('holo-light').hidden = preferences.mode !== 'projection' || !form?.asset;
+  $('hologram').hidden = !projectionVisible(form);
+  if ($('holo-light')) $('holo-light').hidden = !projectionVisible(form);
 }
 function stopMotion(settle = true) {
   motionRevision++;
@@ -159,12 +231,8 @@ function selectionMotion(direction = 1, previousForm = null) {
   if (reduced()) return;
   app.classList.add('selection-transition');
   if (preferences.mode === 'projection') {
+    if (!projectionVisible(byId.get(preferences.selectedId))) { app.classList.remove('selection-transition'); return; }
     app.classList.add('holo-transition');
-    animate($('projection-emitter'), [
-      { transform: 'translateX(-50%) scaleY(.12)', opacity: .35 },
-      { transform: 'translateX(-50%) scaleY(1.08)', opacity: 1, offset: .72 },
-      { transform: 'translateX(-50%) scaleY(1)', opacity: 1 },
-    ], { duration: 560, easing: 'cubic-bezier(.2,.75,.25,1)' });
     animate($('holo-volume'), [
       { opacity: 0, transform: 'translateY(45px) scale(.35,.05)' },
       { opacity: .3, offset: .25 },
@@ -202,7 +270,7 @@ function selectionMotion(direction = 1, previousForm = null) {
   }
   after(780, () => {
     for (const id of ['dial-previous', 'holo-echo', 'holo-scan']) if ($(id)) $(id).hidden = true;
-    if ($('holo-light')) $('holo-light').hidden = preferences.mode !== 'projection' || !byId.get(preferences.selectedId)?.asset;
+    if ($('holo-light')) $('holo-light').hidden = !projectionVisible(byId.get(preferences.selectedId));
     app.classList.remove('selection-transition', 'dial-transition', 'holo-transition');
   });
 }
@@ -233,11 +301,12 @@ function renderControls() {
 function positionRing(rotation) {
   const count = ringEntries.length;
   const width = $('stage').clientWidth || 400;
-  $('stage').style.setProperty('--ring-radius', `${Math.abs(ringPlacement(Math.PI / 2, width).x)}px`);
+  const ellipseRatio = alignRing();
+  $('stage').style.setProperty('--ring-radius', `${Math.abs(ringPlacement(Math.PI / 2, width, ellipseRatio).x)}px`);
   $('stage').style.setProperty('--ring-turn', `${rotation * 180 / Math.PI}deg`);
   ringNodes.forEach((node, index) => {
     if (index >= count) return;
-    const pose = ringPlacement(index / count * turn + rotation, width);
+    const pose = ringPlacement(index / count * turn + rotation, width, ellipseRatio);
     node.style.transform = `translate3d(${pose.x}px,${pose.y}px,${pose.z}px) scale(${pose.scale})`;
     node.style.opacity = String(pose.opacity); node.style.zIndex = String(pose.zIndex);
     node.style.setProperty('--ring-depth', String(pose.depth));
@@ -298,6 +367,7 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
   const watch = WATCHES.find(item => item.id === preferences.watch);
   const layoutChanged = app.dataset.mode !== preferences.mode || app.dataset.watch !== preferences.watch;
   app.dataset.mode = preferences.mode; app.dataset.watch = preferences.watch;
+  renderWatchView();
   $('mode-name').textContent = mode.name; $('mode-code').textContent = `SELECTION / ${mode.code}`;
   $('watch-chip').textContent = watch.name; $('stage-hint').textContent = mode.hint;
   $('selected-en').textContent = form?.en || ''; $('selected-name').textContent = form?.name || form?.en || '没有可选形态';
@@ -396,9 +466,30 @@ listen(app, 'click', event => {
     stopMotion();
     const previousForm = byId.get(displayedId);
     preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
+  } else if (action === 'watch-view' && preferences.mode !== 'dial' && app.dataset.watchArt === 'atlas') {
+    const index = viewOptions.findIndex(view => view.id === value);
+    if (index < 0 || index === watchViewIndex) return;
+    stopMotion(); watchViewIndex = index; renderWatchView(true); positionRing(ringRotation); trackProjection(true);
   } else if (action === 'group') { group = value; refreshFilter(); }
   else if (action === 'reset-filters') resetFilters();
 });
+if ($('toggle-watch-core')) listen($('toggle-watch-core'), 'click', () => {
+  if (preferences.mode === 'dial' || app.dataset.watchArt !== 'atlas') return;
+  stopMotion(); raisedByMode[preferences.mode] = !raisedByMode[preferences.mode];
+  renderWatchView(true); setFigures(byId.get(preferences.selectedId)); positionRing(ringRotation); trackProjection(true);
+});
+for (const watch of WATCHES) {
+  const image = $(`watch-atlas-${watch.id}`); if (!image) continue;
+  const update = state => {
+    watchAtlasStates.set(watch.id, state);
+    if (preferences.watch === watch.id && preferences.mode !== 'dial') {
+      renderWatchView(); positionRing(ringRotation); trackProjection(true);
+    }
+  };
+  watchAtlasStates.set(watch.id, image.complete ? image.naturalWidth > 0 ? 'ready' : 'fallback' : 'loading');
+  listen(image, 'load', () => update(image.naturalWidth > 0 ? 'ready' : 'fallback'));
+  listen(image, 'error', () => update('fallback'));
+}
 listen($('previous'), 'click', () => step(-1)); listen($('next'), 'click', () => step(1));
 listen($('confirm'), 'click', confirm); listen($('watch-device'), 'click', confirm);
 listen($('search'), 'input', event => { query = event.target.value; refreshFilter(); });

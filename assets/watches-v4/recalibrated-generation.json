@@ -1,0 +1,76 @@
+{
+  "id": "recalibrated",
+  "kind": "reference-guided generated UI sprite atlas",
+  "official": false,
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "prompt": "Use case: stylized-concept. Asset type: one transparent 4-column by 2-row sprite atlas for an interactive Omnitrix UI. Generate exactly EIGHT views of ONE physically identical ALIEN FORCE RECALIBRATED OMNITRIX, arranged on a regular four-column, two-row grid. Wide 2:1 canvas, equal square cells, no text, numbers, separators or cell borders. Background truly transparent.\n\nInput image 1 is an inspected official animation screenshot showing the closed AF watch. Input image 2 is an inspected official screenshot showing its raised core. Use only the watch, ignore the wearer, browser, webpage, character and hologram. They constrain the specific prop structure. This is a new UI redraw, not an exact official reconstruction.\n\nIdentity: compact circular dark charcoal/navy housing on a vivid green curved wristband with a broad BLACK middle stripe; green lower base; TWO short opposed dark cylindrical side controls with green end faces; one narrow SILVER-GRAY crescent/arc at the front lower edge. NO classic white claws, NO four bezel indicator dots, NO long Ultimatrix cuff, NO OV angular sliding cover. Central usable circular screen stays empty flat muted charcoal, no hourglass, alien, logo or writing.\n\nBuild an actual thick three-dimensional wearable CLOSED WRISTBAND LOOP, smoothly curved around an empty wrist-sized interior cavity. It must look like a small cuff/ring, not a flat strap laid out as a long ribbon. Place the watch longitudinal axis horizontally left-to-right on screen in every cell. Every full device comfortably fits its own cell with transparent padding. At low and rear angles clearly show the complete ring and inside cavity, never crop band ends. Keep thickness, strap width, buttons, crescent, colors and screen size consistent across all eight views.\n\nColumns are four fixed camera views: column 1 front-leaning overhead at 70 degrees above horizontal; column 2 front three-quarter at 45 degrees; column 3 low front at 20 degrees, showing sidewalls and the hollow cuff interior; column 4 rear three-quarter at 45 degrees showing the same object's back side. Do not duplicate the front view as the rear view. In the upper row the circular core is fully lowered into the housing. In the lower row use EXACTLY the same camera and unchanged body placement, angle, scale and perspective as the cell directly above, but raise ONLY the circular core a short distance on a dark cylindrical neck. Show restrained lime bands/graphic glyph-like marks on this raised AF cylinder, guided by image 2, not alphabetic text. Screen remains blank. Raised core must remain centered on its base and not detach or float.\n\nStyle: beautiful premium hard-surface 3D CEL-SHADED prop render, substantial rounded forms, clean designed contours, restrained beveled edges and simple assembly seams, coherent soft studio lighting and limited polished shadows on the prop itself. Faithful green/black/gray AF design rather than a new sci-fi watch. No metal microtexture, extra controls, arbitrary screws, added armor, hands, arms, environment, ground plane, cast shadow outside the asset, glow fog, graphics or lettering. Eight consistent views of one model, not eight redesigns.",
+  "references": [
+    {
+      "file": ".local/watch-reference/af-official-closed-119.png",
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "bytes": 124726,
+      "sha256": "bb75a033d5c3bc04a3a7e0693c3453568edb7fec16f743c38c7fe15795b4b1c4",
+      "role": "official animation screenshot, lowered core",
+      "url": "https://www.youtube.com/watch?v=iLBivD9Pxks&t=120s",
+      "actualViewed": true
+    },
+    {
+      "file": ".local/watch-reference/af-official-holo-123.png",
+      "width": 1265,
+      "height": 712,
+      "format": "JPEG",
+      "bytes": 132304,
+      "sha256": "174c9c74626bb5ff319e72bd35e01c633ee43f7f47172c417ffdbf48d6c032d1",
+      "role": "official animation screenshot, raised core",
+      "url": "https://www.youtube.com/watch?v=iLBivD9Pxks&t=124s",
+      "actualViewed": true
+    }
+  ],
+  "output": {
+    "file": "assets/watches-v4/recalibrated-atlas.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "062118d3b47f5f68846a98c7455224f0b75d4113a6546e242a58befa7db58f15",
+    "bytes": 1162085,
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 2,
+    "upperRow": "core lowered",
+    "lowerRow": "core raised",
+    "requestedViewElevationDeg": [
+      70,
+      45,
+      20,
+      45
+    ],
+    "lastColumn": "rear three-quarter",
+    "cameraAnglesMeasured": false
+  },
+  "actualGeneratedImageViewed": true,
+  "readyForIntegration": true,
+  "currentUIViewed": true,
+  "driverAccepted": false,
+  "findings": [
+    "Eight complete views show a closed curved green wristband with black middle stripe and visible hollow inner cavity.",
+    "The same compact dark circular housing, opposing green-ended controls and front silver-gray arc remain recognizable across angles.",
+    "Lower row shows an attached short raised core with green side marks; the rear view exposes the back of the cuff.",
+    "Bodies retain useful padding at alpha>=128 in every cell."
+  ],
+  "limits": [
+    "New back, inside closure construction and orthographic dimensions are UI drawing inference, not an exact official production reconstruction.",
+    "Requested elevation angles are visual categories and were not measured from a 3D model.",
+    "The ring axis is mainly vertical in some cells; retained after root clarified that volume and different viewpoints are the user priority.",
+    "Upper/lower body scale and placement are approximately paired, not pixel-registered.",
+    "1774x887 yields fractional 443.5x443.5 CSS cells; no raster resizing, cropping or recomposition was performed.",
+    "40892 pixels have alpha1..15; retained native alpha without pixel cleanup. Actual runtime appearance remains for root UI review."
+  ],
+  "currentUIReview": "docs/browser-qa-v040.json"
+}

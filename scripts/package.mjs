@@ -8,6 +8,8 @@ const dir = path.join(root, 'dist', `ben10-omnitrix-${version}`);
 mkdirSync(dir, { recursive:true });
 const files = ['manifest.json','extension.js','host-adapter.js','extension.css','preview.html','README.md','NOTICE.md','assets/provenance.json','assets/dial-fit.json','assets/watches-v3/provenance.json','assets/watches-v3/prompts.json','docs/host-contract.md','docs/review-v2.md','docs/browser-qa-v2.json','docs/dial-animation-reference.md','docs/watch-generation-reference.md','docs/install-troubleshooting.md','docs/mobile-install.md','scripts/mobile-install.mjs','scripts/mobile-install.sh'];
 const runtime = JSON.parse(readFileSync(path.join(root, 'runtime-manifest.json')));
+files.push('assets/watches-v4/views.json');
+for (const watch of ['original','recalibrated','ultimatrix','omniverse']) files.push(`assets/watches-v4/${watch}-generation.json`);
 if (runtime.schemaVersion !== 1 || !Array.isArray(runtime.files)) throw new Error('Invalid runtime manifest');
 files.push('runtime-manifest.json');
 for (const entry of runtime.files) {

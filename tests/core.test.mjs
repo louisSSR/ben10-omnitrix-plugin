@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames } from '../core.js';
+import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames, watchFrameLayout } from '../core.js';
 import { sanitizePreferences } from '../host-adapter.js';
 
 const forms = Object.freeze([
@@ -11,6 +11,41 @@ const forms = Object.freeze([
 ]);
 const ids = rows => rows.map(row => row.id);
 const defaults = { watch: 'original', mode: 'projection', reducedMotion: false, selectedId: 'heatblast' };
+
+test('watch atlas coordinates select the requested view and physical core state without guessing geometry', () => {
+  const frames = Array.from({ length: 4 }, (_, index) => ({
+    closed: { x: .4 + index * .03, y: .55, w: .3, h: .2 },
+    raised: { x: .4 + index * .03, y: .3, w: .3, h: .1, a: -12 },
+  }));
+  const atlas = { width: 2400, height: 1200, frames };
+  const before = JSON.stringify(atlas);
+  for (let index = 0; index < 4; index++) for (const raised of [false, true]) {
+    const layout = watchFrameLayout(atlas, index, raised);
+    assert.equal(layout.left, `${-100 * index}%`);
+    assert.equal(layout.top, raised ? '-100%' : '0%');
+    assert.equal(layout.aspectRatio, '600 / 600');
+    assert.deepEqual(layout.anchor, { ...frames[index][raised ? 'raised' : 'closed'], a: raised ? -12 : 0 });
+  }
+  assert.equal(JSON.stringify(atlas), before, 'geometry lookup does not mutate shared asset metadata');
+  assert.equal(watchFrameLayout({ ...atlas, height: 800 }).aspectRatio, '600 / 400', 'non-square cell proportions are retained');
+  for (const value of [null, {}, { ...atlas, width: 0 }, { ...atlas, height: Infinity }, { ...atlas, frames: frames.slice(1) },
+    { ...atlas, frames: frames.map(frame => ({ ...frame, closed: { ...frame.closed, x: 2 } })) },
+    { ...atlas, frames: frames.map(frame => ({ ...frame, closed: { ...frame.closed, h: NaN } })) }]) {
+    assert.equal(watchFrameLayout(value, 0), null);
+  }
+  for (const index of [-1, 4, NaN, .5]) assert.equal(watchFrameLayout(atlas, index), null);
+  assert.equal(watchFrameLayout(atlas, 0, false, 8, 1), null, 'unsupported atlas layout must use the fallback');
+});
+
+test('ring ellipse follows the view while preserving radius and bounded icon depth', () => {
+  for (const [requested, expected] of [[.32, .32], [.65, .65], [1, 1], [0, .32], [2, 1], [NaN, .8]]) {
+    const top = ringPlacement(0, 500, requested), side = ringPlacement(Math.PI / 2, 500, requested);
+    assert.equal(side.x, 165);
+    assert.equal(top.y, -165 * expected);
+    assert.equal(top.scale, 1.25);
+    assert.equal(top.z, 0);
+  }
+});
 
 test('four watch generations and exactly three summon modes have unique IDs', () => {
   assert.deepEqual(ids(WATCHES), ['original', 'recalibrated', 'ultimatrix', 'omniverse']);

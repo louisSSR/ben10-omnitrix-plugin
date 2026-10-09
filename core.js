@@ -40,7 +40,7 @@ export function ringItems(forms, id, slots = 8) {
 
 // The watch center is the origin; angle 0 is the selected slot at twelve o'clock.
 // The ring stays in one plane. Depth changes size and stacking, not its z position.
-export function ringPlacement(relativeAngle, width) {
+export function ringPlacement(relativeAngle, width, ellipseRatio = .8) {
   const size = Number.isFinite(width) && width > 0 ? width : 400;
   const angle = Number.isFinite(relativeAngle) ? relativeAngle : 0;
   const depth = (Math.cos(angle) + 1) / 2;
@@ -48,7 +48,8 @@ export function ringPlacement(relativeAngle, width) {
   // only extremely narrow stages need the largest 58px icon's half-width guard.
   const edgeRadius = Math.max(0, size / 2 - 58 * 1.25 / 2 - 4);
   const radiusX = Math.min(size * .34, 165, edgeRadius);
-  const radiusY = radiusX * .8;
+  const ratio = Number.isFinite(ellipseRatio) ? Math.min(1, Math.max(.32, ellipseRatio)) : .8;
+  const radiusY = radiusX * ratio;
   return {
     x: Math.sin(angle) * radiusX,
     y: -Math.cos(angle) * radiusY,
@@ -58,6 +59,25 @@ export function ringPlacement(relativeAngle, width) {
     opacity: .35 + depth * .65,
     zIndex: 20 + Math.round(depth * 80),
     depth,
+  };
+}
+
+// Each anchor is the centre and size of the already-drawn face in one atlas cell.
+// The viewport must have this exact cell aspect ratio (no object-fit letterboxing).
+// Invalid geometry falls back to the existing front artwork instead of guessing.
+export function watchFrameLayout(atlas, viewIndex = 2, raised = false, columns = 4, rows = 2) {
+  if (!atlas || columns !== 4 || rows !== 2 || !Number.isInteger(viewIndex) || viewIndex < 0 || viewIndex >= columns ||
+      !Number.isFinite(atlas.width) || atlas.width <= 0 || !Number.isFinite(atlas.height) || atlas.height <= 0 ||
+      !Array.isArray(atlas.frames) || atlas.frames.length !== columns) return null;
+  const anchor = atlas.frames[viewIndex]?.[raised ? 'raised' : 'closed'];
+  if (!anchor || !['x', 'y', 'w', 'h'].every(key => Number.isFinite(anchor[key])) ||
+      anchor.x < 0 || anchor.x > 1 || anchor.y < 0 || anchor.y > 1 ||
+      anchor.w <= 0 || anchor.w > 1 || anchor.h <= 0 || anchor.h > 1) return null;
+  return {
+    left: `${-100 * viewIndex}%`, top: raised ? '-100%' : '0%',
+    aspectRatio: `${atlas.width / columns} / ${atlas.height / rows}`,
+    anchor: { x: anchor.x, y: anchor.y, w: anchor.w, h: anchor.h, a: Number.isFinite(anchor.a) ? anchor.a : 0 },
+    ellipseRatio: Math.min(1, Math.max(.32, anchor.h / anchor.w)),
   };
 }
 

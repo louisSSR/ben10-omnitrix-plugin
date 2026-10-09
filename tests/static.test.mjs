@@ -322,7 +322,7 @@ function node(tag, namespaceURI = null) {
 
 // Execute the actual app, using controlled browser interfaces to test state and cancellation.
 // Explicit rectangle fixtures below test coordinate handling, not browser layout or painted pixels.
-function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {} } = {}) {
+function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {}, atlas = null, imageState = 'ready' } = {}) {
   let now = 1000, serial = 0;
   const timers = new Map(), frames = new Map(), animations = [], elements = new Map(), anonymous = [];
   const rectangles = new Map(Object.entries(rects)), observers = [];
@@ -355,6 +355,11 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
   document.querySelector = selector => [...elements.values(), ...anonymous].find(value => value.matches(selector)) || null;
   const fixture = [...sourceCatalog.forms.filter(form => form.asset).slice(0, 12), sourceCatalog.forms.find(form => !form.asset)];
   elements.get('catalog-data').textContent = JSON.stringify({ ...sourceCatalog, forms: fixture });
+  if (elements.has('watch-views')) elements.get('watch-views').textContent = JSON.stringify(atlas);
+  for (const watch of WATCHES) {
+    const image = elements.get(`watch-atlas-${watch.id}`);
+    if (image) { image.complete = imageState !== 'loading'; image.naturalWidth = imageState === 'ready' ? 2400 : 0; }
+  }
   elements.get('stage').clientWidth = 390;
   let saved = JSON.stringify({ mode, watch: 'original', selectedId: fixture[0].id, reducedMotion });
   const window = makeNode('window'), systemMotion = makeNode('media'); window.parent = window; systemMotion.matches = systemReduced;
@@ -398,19 +403,163 @@ function assertCoordinates(actual, expected, message) {
     `${message}: coordinate ${index} is ${value}, expected ${expected[index]}`));
 }
 function projectionAnchor(h) {
-  const hologram = h.elements.get('hologram'), emitter = h.elements.get('projection-emitter');
-  const lift = parseFloat(emitter.style.height) - 16;
-  return [parseFloat(hologram.style.left), parseFloat(hologram.style.top) + parseFloat(hologram.style.height) - 5 + lift];
+  const hologram = h.elements.get('hologram');
+  return [parseFloat(hologram.style.left), parseFloat(hologram.style.top) + parseFloat(hologram.style.height) - 5];
 }
-function assertProjectionEmitter(h, center, faceWidth, lift, message) {
-  const emitter = h.elements.get('projection-emitter'), hologram = h.elements.get('hologram');
-  const left = parseFloat(emitter.style.left), top = parseFloat(emitter.style.top), height = parseFloat(emitter.style.height);
-  assertCoordinates([left, top, parseFloat(emitter.style.width), height],
-    [center[0], center[1] - lift, faceWidth * 1.06, lift + 16], message);
-  assert.ok(top < center[1] && top + height > center[1], `${message}: the lifted emitter spans the face center`);
-  assertCoordinates([parseFloat(hologram.style.left), parseFloat(hologram.style.top) + parseFloat(hologram.style.height)],
-    [left, top + 5], `${message}: hologram rises from the emitter cap`);
+function assertProjectionBase(h, center, message) {
+  assert.equal(h.elements.get('projection-emitter').hidden, true, `${message}: the old synthetic emitter stays hidden`);
+  assertCoordinates(projectionAnchor(h), center, `${message}: the atlas face itself is the beam base`);
 }
+
+function viewFixture() {
+  const frames = Array.from({ length: 4 }, (_, index) => ({
+    closed: { x: .4 + index * .03, y: .6, w: .3, h: .3 - index * .05, a: index - 2 },
+    raised: { x: .4 + index * .03, y: .3, w: .3, h: .3 - index * .06, a: index - 2 },
+  }));
+  return { columns: 4, rows: 2, views: [
+    { id: 'top', name: '俯视' }, { id: 'left', name: '左前' }, { id: 'low', name: '低角度' }, { id: 'right', name: '右前' },
+  ], watches: Object.fromEntries(WATCHES.map(watch => [watch.id, { width: 2400, height: 1200, frames }])) };
+}
+
+test('watch atlas starts at the low view with the mode-specific core and preserves host preferences', () => {
+  for (const mode of ['projection', 'carousel', 'dial']) {
+    const h = boot({ mode, atlas: viewFixture(), reducedMotion: true });
+    const appNode = h.elements.get('omni-app'), image = h.elements.get('watch-atlas-original');
+    assert.equal(appNode.dataset.watchView, 'low');
+    assert.equal(appNode.dataset.coreState, mode === 'projection' ? 'raised' : 'closed');
+    assert.equal(appNode.dataset.watchArt, mode === 'dial' ? 'dial' : 'atlas');
+    assert.equal(h.elements.get('watch-view-toolbar').hidden, mode === 'dial');
+    assert.equal(image.hidden, mode === 'dial');
+    assert.equal(image.style.left, '-200%');
+    assert.equal(image.style.top, mode === 'projection' ? '-100%' : '0%');
+    if (mode !== 'dial') {
+      assert.equal(h.elements.get('watch-multiview').style.aspectRatio, '600 / 600');
+      assert.equal(h.elements.get('watch-device').style.aspectRatio, '600 / 600');
+      assertCoordinates(['left', 'top', 'width', 'height'].map(key => parseFloat(h.elements.get('watch-screen').style[key])),
+        [46, mode === 'projection' ? 30 : 60, 30, mode === 'projection' ? 18 : 20], `${mode} uses its current frame face`);
+    } else assert.equal(h.elements.get('watch-screen').style.left, '', 'dial retains the old front-face positioning');
+    const saved = h.preferences;
+    h.action('watch-view', 'right');
+    if (mode !== 'dial') {
+      assert.equal(appNode.dataset.watchView, 'right');
+      assert.equal(image.style.left, '-300%');
+      assert.equal(h.elements.get('watch-screen').style['--watch-face-angle'], '1deg');
+      const selected = h.elements.get('watch-view-controls').children.find(control => control.dataset.value === 'right');
+      assert.equal(selected.attributes['aria-pressed'], 'true');
+    } else assert.equal(appNode.dataset.watchView, 'low', 'dial ignores hidden view controls');
+    assert.deepEqual(h.preferences, saved, 'view controls do not write local or host preferences');
+  }
+});
+
+test('watch atlas core toggle updates row, beam visibility and ring centre from the same frame', () => {
+  const h = boot({ mode: 'carousel', atlas: viewFixture(), reducedMotion: true, rects: {
+    stage: { left: 20, top: 60, width: 390, height: 590 },
+    'watch-device': { left: 80, top: 330, width: 240, height: 240 },
+    'watch-screen': { left: 180, top: 400, width: 50, height: 30 },
+  } });
+  const stage = h.elements.get('stage'), image = h.elements.get('watch-atlas-original');
+  const saved = h.preferences;
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [170.4, 414], 'closed face centres the ring');
+  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.2 / .3], 'closed view determines the ring ellipse');
+  h.click('toggle-watch-core');
+  assert.equal(image.style.top, '-100%');
+  assert.equal(h.elements.get('toggle-watch-core').textContent, '收起表芯');
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [170.4, 342], 'raised face recentres the ring');
+  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.18 / .3], 'raised view determines the ring ellipse');
+  assert.deepEqual(h.preferences, saved, 'core row is session state');
+  h.action('mode', 'projection');
+  assert.equal(h.elements.get('hologram').hidden, false, 'projection starts with its raised core');
+  h.click('toggle-watch-core');
+  assert.equal(image.style.top, '0%');
+  assert.equal(h.elements.get('hologram').hidden, true); assert.equal(h.elements.get('holo-light').hidden, true);
+  h.click('next');
+  assert.equal(h.elements.get('hologram').hidden, true, 'hero selection does not reopen a lowered core');
+  h.click('toggle-watch-core');
+  assert.equal(h.elements.get('hologram').hidden, false);
+  h.action('mode', 'dial');
+  assert.equal(h.elements.get('watch-device').style.aspectRatio, '');
+  for (const key of ['left', 'top', 'width', 'height']) assert.equal(h.elements.get('watch-screen').style[key], '');
+  h.action('mode', 'carousel');
+  assert.equal(image.style.top, '-100%', 'each summon mode retains its own temporary core state');
+});
+
+test('watch atlas loading and errors restore the front image and can recover without affecting other watches', () => {
+  const h = boot({ atlas: viewFixture(), imageState: 'loading', reducedMotion: true });
+  const appNode = h.elements.get('omni-app'), original = h.elements.get('watch-atlas-original');
+  assert.equal(appNode.dataset.watchArt, 'loading');
+  assert.equal(h.elements.get('watch-multiview').hidden, true);
+  assert.match(h.elements.get('watch-view-status').textContent, /加载中/);
+  assert.ok(h.elements.get('watch-view-controls').children.every(control => control.disabled));
+  h.action('watch-view', 'top'); assert.equal(appNode.dataset.watchView, 'low');
+  original.naturalWidth = 2400; original.emit('load');
+  assert.equal(appNode.dataset.watchArt, 'atlas'); assert.equal(original.hidden, false);
+  assert.equal(h.elements.get('watch-view-status').hidden, true);
+  original.emit('error');
+  assert.equal(appNode.dataset.watchArt, 'fallback'); assert.equal(original.hidden, true);
+  assert.equal(h.elements.get('watch-screen').style.left, '');
+  assert.match(h.elements.get('watch-view-status').textContent, /已回退正视图/);
+  original.emit('load');
+  const inactive = h.elements.get('watch-atlas-ultimatrix'); inactive.emit('error');
+  assert.equal(appNode.dataset.watchArt, 'atlas', 'an inactive watch error cannot replace the visible atlas');
+  h.action('watch', 'ultimatrix');
+  assert.equal(appNode.dataset.watchArt, 'fallback');
+  h.action('watch', 'original');
+  assert.equal(appNode.dataset.watchArt, 'atlas');
+  h.window.emit('pagehide'); original.emit('error');
+  assert.equal(appNode.dataset.watchArt, 'atlas', 'page exit aborts atlas event listeners');
+});
+
+test('watch atlas face-centred body width follows views and core rows and resets on fallback', () => {
+  const atlas = viewFixture();
+  atlas.watches.original.frames[0].raised.x = .7;
+  const h = boot({ mode: 'carousel', atlas, reducedMotion: true });
+  const device = h.elements.get('watch-device');
+  const assertBody = (faceX, width, message) => {
+    assertCoordinates([parseFloat(device.style['--watch-view-face-x']), parseFloat(device.style['--watch-ring-body-width'])],
+      [faceX * 100, width], message);
+    assert.match(device.style['--watch-view-face-x'], /%$/);
+    assert.match(device.style['--watch-ring-body-width'], /cqw$/);
+    assert.ok(width * Math.max(faceX, 1 - faceX) <= 48 + 1e-6, `${message}: neither side of the centred face crosses the stage`);
+  };
+  assertBody(.46, 92 / (2 * .54), 'initial low-view frame');
+  h.action('watch-view', 'top');
+  assertBody(.4, 92 / (2 * .6), 'new view updates the body offset and safe width');
+  h.click('toggle-watch-core');
+  assertBody(.7, 92 / (2 * .7), 'raised face can have a different horizontal anchor');
+  h.click('toggle-watch-core');
+  assertBody(.4, 92 / (2 * .6), 'closing restores its own frame geometry');
+  h.elements.get('watch-atlas-original').emit('error');
+  assertBody(.5, 96, 'front-art fallback clears the prior atlas offset');
+});
+
+test('watch atlas invalid metadata falls back without displaying misaligned frame artwork', () => {
+  for (const atlas of [null, [], { ...viewFixture(), columns: 8 },
+    { ...viewFixture(), watches: { original: { width: 2400, height: 1200, frames: [] } } }]) {
+    const h = boot({ atlas, reducedMotion: true });
+    assert.equal(h.elements.get('omni-app').dataset.watchArt, 'fallback');
+    assert.equal(h.elements.get('watch-multiview').hidden, true);
+    assert.equal(h.elements.get('toggle-watch-core').disabled, true);
+  }
+});
+
+test('watch atlas angle fades are short and cancelled on rapid input or reduced motion', () => {
+  const h = boot({ atlas: viewFixture() });
+  h.action('watch-view', 'top');
+  const first = h.animations.find(handle => handle.node.id === 'watch-multiview');
+  assert.equal(first.options.duration, 180);
+  assert.ok(first.keyframes.every(frame => !('transform' in frame)), 'the body is never flattened with a whole-watch rotation');
+  h.action('watch-view', 'left');
+  assert.equal(first.cancelled, true);
+  const second = h.animations.at(-1);
+  h.click('motion-toggle');
+  assert.equal(second.cancelled, true);
+  const count = h.animations.length;
+  h.action('watch-view', 'right'); h.click('toggle-watch-core');
+  assert.equal(h.animations.length, count, 'reduced motion changes atlas cells immediately');
+  assert.equal(h.frames.size, 0); assert.equal(h.timers.size, 0);
+  assert.equal(h.elements.get('watch-atlas-original').style.left, '-300%');
+  assert.equal(h.elements.get('watch-atlas-original').style.top, '0%');
+});
 
 test('actual figure renderer gives missing or invalid art a labeled placeholder', () => {
   const context = vm.createContext({ document: {
@@ -465,18 +614,18 @@ test('projection anchor follows the actual offset faces of all four watch genera
   } });
   const light = h.elements.get('hologram');
   assertCoordinates(projectionAnchor(h), [230, 375], 'stage scroll/column offset is removed from the rendered face center');
-  assertProjectionEmitter(h, [230, 375], 110, 30, 'original emitter is centered on the rendered face');
+  assertProjectionBase(h, [230, 375], 'original light is centered on the rendered face');
   h.frame(901);
   assert.equal(h.frames.size, 0, 'initial geometry tracking is bounded');
-  for (const [watch, rectangle, expected, lift] of [
-    ['recalibrated', { left: 310, top: 568, width: 84, height: 58 }, [232, 377], 30],
-    ['ultimatrix', { left: 301, top: 513, width: 98, height: 70 }, [230, 328], 30],
-    ['omniverse', { left: 288, top: 535, width: 130, height: 62 }, [233, 346], 35.1],
-    ['original', { left: 295, top: 560, width: 110, height: 70 }, [230, 375], 30],
+  for (const [watch, rectangle, expected] of [
+    ['recalibrated', { left: 310, top: 568, width: 84, height: 58 }, [232, 377]],
+    ['ultimatrix', { left: 301, top: 513, width: 98, height: 70 }, [230, 328]],
+    ['omniverse', { left: 288, top: 535, width: 130, height: 62 }, [233, 346]],
+    ['original', { left: 295, top: 560, width: 110, height: 70 }, [230, 375]],
   ]) {
     h.setRect('watch-screen', rectangle); h.action('watch', watch);
     assertCoordinates(projectionAnchor(h), expected, `${watch} uses its own face instead of the classic-watch center`);
-    assertProjectionEmitter(h, expected, rectangle.width, lift, `${watch} emitter follows the moving watch face`);
+    assertProjectionBase(h, expected, `${watch} light follows the moving watch face`);
     assert.equal(h.frames.size, 1, `${watch} follows the layout transition`);
     h.frame(901);
     assert.equal(h.frames.size, 0, `${watch} does not retain a permanent layout loop`);
@@ -488,14 +637,14 @@ test('projection anchor follows the actual offset faces of all four watch genera
   assert.equal(light.style.height, settled.height);
 });
 
-test('projection emitter lift scales with the face and respects the minimum and maximum travel', () => {
-  for (const [width, lift] of [[60, 30], [130, 35.1], [240, 46]]) {
+test('projection light uses the existing face without adding synthetic emitter travel', () => {
+  for (const width of [60, 130, 240]) {
     const h = boot({ reducedMotion: true, rects: {
       stage: { left: 0, top: 0, width: 480, height: 550 },
       'watch-screen': { left: 100, top: 400, width, height: 80 },
     } });
     assertCoordinates(projectionAnchor(h), [100 + width / 2, 440], `face width ${width} retains its center`);
-    assertProjectionEmitter(h, [100 + width / 2, 440], width, lift, `face width ${width} gives a bounded rising emitter`);
+    assertProjectionBase(h, [100 + width / 2, 440], `face width ${width} retains its already-drawn height`);
     assert.equal(h.frames.size, 0, 'reduced motion places the emitter without a layout animation');
   }
 });
@@ -512,7 +661,7 @@ test('projection anchor realigns on resize and follows changing perspective boun
   const light = h.elements.get('hologram');
   assert.equal(light.style.left, '178px');
   assertCoordinates(projectionAnchor(h), [178, 301], 'resize follows the raised emitter and face center');
-  assertProjectionEmitter(h, [178, 301], 88, 30, 'resized emitter stays centered');
+  assertProjectionBase(h, [178, 301], 'resized light stays centered');
   assert.equal(h.frames.size, 1);
   h.setRect('watch-screen', { left: 164, top: 445, width: 70, height: 44 });
   h.frame(450);
@@ -568,7 +717,7 @@ test('projection anchor reduced motion aligns immediately and page exit cancels 
     h.resize();
     assert.equal(h.elements.get('hologram').style.left, '178px');
     assertCoordinates(projectionAnchor(h), [178, 257], 'reduced-motion resize keeps the emitter centered on the face');
-    assertProjectionEmitter(h, [178, 257], 70, 30, 'reduced-motion emitter rises without a follower');
+    assertProjectionBase(h, [178, 257], 'reduced-motion light aligns without a follower');
     assert.equal(h.frames.size, 0, 'resize does not animate when reduced motion is already enabled');
   }
   for (const interrupt of ['manual', 'system', 'mode', 'pagehide']) {

@@ -1,0 +1,109 @@
+{
+  "version": "0.4.0",
+  "checkedAt": "2026-10-09T08:54:35.943370+00:00",
+  "previewSha256": "68a8239d00745dc24c489694be2e2df915a1b6d7f4e8eab71bbaf90065803cb8",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; responsive iframes, not physical phones",
+  "coverage": {
+    "total": 224,
+    "reviewed": 184,
+    "missing": 40
+  },
+  "checks": {
+    "desktop": {
+      "outerWidth": 1280,
+      "height": 720,
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "raisedViewsInspected": 16,
+      "closedRaisedToggle": true
+    },
+    "mobileProjection": {
+      "count": 32,
+      "actualWidths": [
+        375,
+        305
+      ],
+      "views": [
+        "top",
+        "low"
+      ],
+      "watches": 4,
+      "states": [
+        "closed",
+        "raised"
+      ],
+      "overflow": 0,
+      "incorrectVisibility": 0,
+      "separateLeftViewsInspected": [
+        "recalibrated",
+        "ultimatrix"
+      ],
+      "buildNote": "Measured before carousel-only centering refinement; projection geometry unchanged."
+    },
+    "mobileRing": {
+      "count": 64,
+      "actualWidths": [
+        375,
+        305
+      ],
+      "views": [
+        "top",
+        "left",
+        "low",
+        "right"
+      ],
+      "watches": 4,
+      "states": [
+        "closed",
+        "raised"
+      ],
+      "clipped": 0,
+      "maxStageCenterErrorPx": 3.814697265625e-06
+    },
+    "mobileDial": {
+      "watch": "original",
+      "heroes": [
+        "Heatblast",
+        "Wildmutt"
+      ],
+      "nextWorks": true,
+      "viewToolbarHidden": true
+    },
+    "originalImagesPreserved": 188,
+    "newAtlases": 4,
+    "frames": 32,
+    "finalSelection": {
+      "watch": "original",
+      "view": "left",
+      "mode": "projection",
+      "core": "raised",
+      "hero": "Heatblast"
+    }
+  },
+  "screenshots": [
+    "screenshots/v040-final-preview.jpg",
+    "screenshots/v040-desktop-closed.jpg",
+    "screenshots/v040-mobile-projection.jpg",
+    "screenshots/v040-mobile-ring.jpg",
+    "screenshots/v040-mobile-dial.jpg"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": [
+    {
+      "message": "MutationObserver.observe parameter 1 is not of type Node",
+      "timestamp": "2026-10-09T08:46:51.680Z",
+      "source": "unattributed; no source URL returned"
+    }
+  ],
+  "automated": {
+    "tests": 104,
+    "passed": 104,
+    "failed": 0,
+    "skipped": 0
+  },
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

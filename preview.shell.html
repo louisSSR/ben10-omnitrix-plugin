@@ -50,12 +50,24 @@
               <img class="watch-art recalibrated" src="./assets/watches-v3/recalibrated.png" alt="" draggable="false">
               <img class="watch-art ultimatrix" src="./assets/watches-v3/ultimatrix.png" alt="" draggable="false">
               <img class="watch-art omniverse" src="./assets/watches-v3/omniverse.png" alt="" draggable="false">
+              <span class="watch-multiview" id="watch-multiview" aria-hidden="true">
+                <img class="watch-atlas original" id="watch-atlas-original" src="./assets/watches-v4/original-atlas.png" alt="" draggable="false">
+                <img class="watch-atlas recalibrated" id="watch-atlas-recalibrated" src="./assets/watches-v4/recalibrated-atlas.png" alt="" draggable="false">
+                <img class="watch-atlas ultimatrix" id="watch-atlas-ultimatrix" src="./assets/watches-v4/ultimatrix-atlas.png" alt="" draggable="false">
+                <img class="watch-atlas omniverse" id="watch-atlas-omniverse" src="./assets/watches-v4/omniverse-atlas.png" alt="" draggable="false">
+              </span>
               <span class="watch-screen" id="watch-screen"><span class="screen-rim"></span><svg class="hourglass" viewBox="0 0 100 100" aria-hidden="true"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg><span class="dial-shape dial-previous" id="dial-previous" hidden></span><span class="dial-shape" id="dial-shape"></span><span class="screen-rotor" id="screen-rotor"><span class="dial-shutter shutter-a" id="dial-shutter-a"></span><span class="dial-shutter shutter-b" id="dial-shutter-b"></span></span><span class="screen-glass"></span></span>
               <span class="watch-contact-ring"></span>
             </button>
             <div class="summon-flash" aria-hidden="true"></div><div class="summon-ring" aria-hidden="true"></div>
             <div class="stage-notice" id="stage-notice" hidden>这个形态的素材还在整理中</div>
             <div class="stage-bottom"><span id="stage-hint">滑动切换 · 点击表盘锁定</span><span class="live-tag"><i></i> DNA LINK</span></div>
+          </div>
+          <div class="watch-view-toolbar" id="watch-view-toolbar" aria-label="手表视角">
+            <span class="view-label">观察装置</span>
+            <div class="watch-view-controls" id="watch-view-controls"></div>
+            <button id="toggle-watch-core" type="button" class="subtle">收起表芯</button>
+            <span id="watch-view-status" role="status" aria-live="polite"></span>
           </div>
           <div class="selection-bar"><button id="previous" class="arrow" type="button" aria-label="上一个外星人">←</button><div class="selection-name"><span id="selected-en">HEATBLAST</span><h3 id="selected-name">火焰人</h3><p id="selected-group">初代经典</p></div><button id="next" class="arrow" type="button" aria-label="下一个外星人">→</button><button id="confirm" class="confirm" type="button"><span>锁定形态</span><b aria-hidden="true">↗</b></button></div>
           <div class="filter-recovery library-tools" aria-label="当前英雄筛选"><span id="filter-summary" role="status" aria-live="polite"></span><button id="reset-filters" class="subtle" type="button" data-action="reset-filters">显示全部英雄</button></div>
@@ -69,6 +81,7 @@
     <dialog id="about-dialog"><div class="dialog-head"><h2>关于这份变身档案</h2><button class="arrow" id="close-about" aria-label="关闭说明" type="button">×</button></div><p>基于你提供的手表、投影与转盘参考制作的同人交互界面。四款表壳是依据参考生成的 AI 界面插画，并非官方素材。</p><p id="coverage-note"></p><p>剪影依据逐张核对的来源图制作。部分形态使用 AI 辅助去背景的参考编辑稿，细节可能与原画不同，并非官方透明原图。Mucilator、Slamworm 使用游戏制作方的模型参考；Rocks 来自舞台演出宣传图；漫画版 Diamondhead、小奇兵来自出版社封面，小奇兵保留手持铅笔。缺图会明确标注，版权归各原权利方。</p><p>选择和锁定仅改变本界面状态。“写入酒馆输入框”需要手动点击，写入后也不会自动发送。</p><p>电脑与手机共用此界面，支持方向键、Enter 和左右滑动；“减少动态”及系统动态偏好可关闭复杂动画。</p></dialog>
   </div>
   <script type="application/json" id="catalog-data"><!-- CATALOG_DATA --></script>
+  <script type="application/json" id="watch-views"><!-- WATCH_VIEWS_DATA --></script>
   <script>/* APP_CODE */</script>
 </body>
 </html>

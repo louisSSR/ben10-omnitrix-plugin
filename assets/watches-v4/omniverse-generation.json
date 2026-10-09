@@ -1,0 +1,37 @@
+{
+  "id": "omniverse",
+  "kind": "reference-guided multi-view sprite atlas",
+  "official": false,
+  "modelGeometry": false,
+  "tool": "built-in image_gen.imagegen",
+  "transparentBackground": true,
+  "originalBytesPreserved": true,
+  "layout": {
+    "columns": 4,
+    "rows": 2
+  },
+  "reference": {
+    "role": "structural reference",
+    "source": "private reference: production-marked model sheet mirror (see docs/watch-generation-reference.md)"
+  },
+  "prompt": "Use case: stylized-concept. Create ONE transparent production sprite atlas for the Omniverse completed Omnitrix, based faithfully on the supplied three-state production-marked model sheet (reference only, not edit target). A single 4-column by 2-row sprite atlas image, ideally 2048x1024, eight equal cells. No captions, no marks, no grid lines, transparent empty pixels. Every cell shows the SAME coherent, thick 3D physical wrist device in refined cel-shaded product rendering, not a skewed 2D graphic.\n\nPreserve structure precisely from reference: pale gray/off-white wide curved cuff, green piping along both edges; upper face is a black angular folded diamond-like lid with green angular zigzag edging. Each visible cuff side has exactly three small green rectangular insets, not large circular buttons. Interior cuff is gray, with real thickness and curvature. No huge silver/chrome bezel, no black-and-white generic smartwatch, no original Omnitrix round green stud lights, no cables. Device band is a CLOSED curved wrist cuff, with an empty oval inner wrist cavity clearly visible from low cameras. Retain angular lid silhouette; don't stretch it into a giant flat hourglass plaque.\n\nColumns: 1 high frontal/top 70-degree view; 2 front-left three-quarter 45-degree view; 3 low front 20-degree view showing thickness, side faces, inner cuff; 4 front-right/opposite side 45-degree view, revealing other physical surfaces. Keep every whole object inside each cell with safe margins. Fixed apparent case width across cameras and rows; face center about x50% y43% in each cell. Deliberate perspective and occlusion; the band continues behind the body. Soft top-left studio lighting, subtle cel shading and fine edge highlights without random greebles.\n\nTOP row: first reference state, angular black/green face cover CLOSED and integrated into the wrist cuff. Green hourglass detailing consistent with the supplied closed state. BOTTOM row: same four cameras, same exact cuff, position and scale; angular cover has opened/retracted only in its center, revealing the SMALL dark circular module lifted on a black cylindrical piston with green geometric markings, as in the rightmost reference. Raised module top has a thin dark rim and plain soft green luminous emitter glass. No silver oversize cylinder, no characters or light beams. Closed and raised images are corresponding animation states; no other redesign between rows.\n\nThis is a controlled multi-view volume study and usable sprite atlas for an interactive wrist-device UI. Show real thickness, inner surfaces, underside occlusion and side detail in each view. Actual transparency, no checkerboard drawn, no shadows outside the object, no backdrop.",
+  "observedLimitations": [
+    "Views are discrete artist redraws, not a continuous 3D mesh.",
+    "Camera elevations and requested alignment are approximate, not calibrated.",
+    "Closed and raised states may have small silhouette and scale differences."
+  ],
+  "driverAccepted": false,
+  "output": {
+    "file": "assets/watches-v4/omniverse-atlas.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "f1ee85ea04c490ede8bd07b1e37aa4d056c0c3036390073a6cc5857cf66d6373",
+    "bytes": 1508468,
+    "alphaExtrema": [
+      0,
+      255
+    ]
+  },
+  "currentUIViewed": true,
+  "currentUIReview": "docs/browser-qa-v040.json"
+}
