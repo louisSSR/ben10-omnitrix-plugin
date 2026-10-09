@@ -9171,6 +9171,430 @@
         "realHostVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "reboot-ripjaws",
+      "sourceFile": "assets/source-art/reboot-ripjaws-source-original.jpg",
+      "sourceSha256": "61e05dde1f7495acf92ef5f8a50f83e00c59031c1c2570a72f3b7937a63adab2",
+      "maskFile": "assets/source-art/reboot-ripjaws-reference-edit.png",
+      "maskSha256": "ee0ade3254e152e34dcfc067fb252443185ba3d375945eb3cd60c9d7bbda3be7",
+      "pageUrl": "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s",
+      "url": "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference redraw from the 28.609727-second running frame of a community-uploaded Alien X-Tinction comparison clip, supported by the same fish body at 28.100355 seconds. Root observed the human Gwen 10 to Ripjaws sequence at 27.039163, 27.760774 and 28.100355 seconds. The full existing running pose, two arms, two legs, head lure/fins, waist garment and two blue back-reservoir ends are retained. Fine face, claws, reservoir connections, fins and garment markings are interpretations of low-resolution animation screenshots. This is not official transparent artwork, an official uploader source, or exact pixel extraction.",
+      "rights": "Underlying Ben 10 animation and character rights remain with their owners. The video is a community comparison/repost by AdeebTarequeSattar; the official upstream upload and redistribution permission are not verified. AI reference reconstruction is disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "sourcePageLabel": "Ben 10: Ripjaws First Appearance (The Krakken vs Alien X-tinction); AdeebTarequeSattar; community comparison upload",
+      "sourceCapture": {
+        "kind": "community-video-frame-screenshot",
+        "title": "Ben 10: Ripjaws First Appearance (The Krakken vs Alien X-tinction)",
+        "channel": "AdeebTarequeSattar",
+        "officialUploader": false,
+        "observedTimestampSeconds": 28.609727,
+        "timestampObservedBy": "root",
+        "sourceWidth": 816,
+        "sourceHeight": 459,
+        "sourceFormat": "JPEG",
+        "captureRegion": "Video picture with complete image-right running fish at image-left, floating rocks, night valley, broadcast CN logo and small community creator mark. No browser chrome.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true,
+        "channelHandle": "@adeebsattar-h8r",
+        "channelUrl": "https://www.youtube.com/@adeebsattar-h8r",
+        "videoUrl": "https://www.youtube.com/watch?v=19JIOioADxQ",
+        "description": null,
+        "descriptionStatus": "Root observed no description on the actual video page",
+        "pageMetadataObservedBy": "root",
+        "pageMetadataEvidence": "Root correction report in round194 after actually opening this exact video page; not a fresh page observation by this subagent"
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-ripjaws-support-original.jpg",
+          "sha256": "7897fdf9d48a6986495892587dc4add75a07adf16bf497152f96f3fc05713003",
+          "pageUrl": "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s",
+          "kind": "community-video-frame-screenshot",
+          "observedTimestampSeconds": 28.100355,
+          "sourceWidth": 816,
+          "sourceHeight": 459,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "actuallyViewedByReviewer": true,
+          "use": "Image-left Ripjaws only clarifies the fish face, black neck apparatus and waist. Image-right Ampfibian is a separate blue-and-white bell/jellyfish character and is excluded completely. The support frontal stride is not transferred to the primary running pose."
+        }
+      ],
+      "versionEvidence": {
+        "series": "Ben 10 (2016 reboot)",
+        "episode": "Alien X-Tinction",
+        "wearer": "Gwen 10, alternate Omnitrix-bearing Gwen",
+        "pairedWearerCheck": "Ultimate Alien Ben becomes the separate Ampfibian on image-right; the main reboot Gwen energy-disc scene is unrelated.",
+        "communityIdentitySources": [
+          "https://ben10.fandom.com/wiki/Alien_X-Tinction/Transcript",
+          "https://ben10.fandom.com/wiki/Ripjaws_(Reboot)"
+        ],
+        "communityTextAccess": "Previously returned search-index excerpts explicitly identify Gwen 10 and Ripjaws. No restricted Fandom page was reopened for generation.",
+        "videoSequenceActuallyViewedByRoot": true,
+        "videoPersonallyWatchedByGenerationReviewer": false,
+        "fourLocalIdentityFramesActuallyViewedByGenerationReviewer": true,
+        "identitySequence": [
+          {
+            "observedTimestampSeconds": 27.039163,
+            "sha256": "9556fc541b21a2fb5e70076f4df119297675ab330df3f0f222989aa536451c17",
+            "observation": "Human Gwen 10 on image-left, Ultimate Alien Ben on image-right",
+            "localScreenshotActuallyViewedByGenerationReviewer": true
+          },
+          {
+            "observedTimestampSeconds": 27.760774,
+            "sha256": "b9af2f4457b2cab24f7950a472da9d5689889112dd18ad07120d6e94a5a5352f",
+            "observation": "Bright transformation flash between human and alien frames",
+            "localScreenshotActuallyViewedByGenerationReviewer": true
+          },
+          {
+            "observedTimestampSeconds": 28.100355,
+            "sha256": "7897fdf9d48a6986495892587dc4add75a07adf16bf497152f96f3fc05713003",
+            "observation": "Ripjaws on image-left and Ampfibian on image-right, matching prior human positions",
+            "localScreenshotActuallyViewedByGenerationReviewer": true
+          },
+          {
+            "observedTimestampSeconds": 28.609727,
+            "sha256": "61e05dde1f7495acf92ef5f8a50f83e00c59031c1c2570a72f3b7937a63adab2",
+            "observation": "Complete Ripjaws running toward image-right with its own two blue shoulder-back reservoir ends",
+            "localScreenshotActuallyViewedByGenerationReviewer": true
+          }
+        ],
+        "bodyBoundaryFinding": "The two blue circles in the primary running frame are joined to Ripjaws own upper-back breathing apparatus beneath its backward-raised arm. They are not Ampfibian remnants; the supporting frame shows that other character separately at image-right.",
+        "old257PixelImageUsed": false,
+        "old257PixelImageAuthenticationClaimed": false,
+        "limits": "The wearer/body mapping is supported by root-observed sequential community footage and the independently viewed saved frames. This closes this new source identity correspondence; it does not convert the uploader into an official publisher or authenticate the unused old isolated bitmap."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent RGBA 2D animation character sprite.\nInput image 1 is the EDIT TARGET: the complete pale-blue fish humanoid Ripjaws running toward image-right in an Alien X-Tinction community clip screenshot. Input image 2 is DETAIL SUPPORT ONLY: the same pale-blue fish humanoid at image-left; completely ignore the separate blue-and-white jellyfish alien on the right.\nFaithfully redraw only the existing Ripjaws in the EXACT running pose of image 1, with clean original-animation contours and flat cel colors. Keep the side/three-quarter view, forward-leaning torso, head facing right, raised rear arm arching back toward image-left, front arm bent up toward image-right, one leg extending down and forward, and the other bent back with its foot raised. Preserve all visible arm and leg overlaps. Do not replace this with the frontal stride from image 2, a symmetrical standing figure, aquatic tail pose or a new action pose.\nPreserve the source's pale gray-blue skin, broad fish head, visible teeth, green head fin, one thin angler lure, green forearm fins, black neck/shoulder breathing apparatus, black waist/short garment with narrow bands and dark pointed hanging cloth strips. The TWO blue circular reservoir ends on the upper back belong to this fish character's breathing apparatus: keep both exactly where they are in image 1, below the raised rear arm and behind the head. They are not pieces of the separate jellyfish. Do not enlarge them into invented machinery or remove them. Use image 2 only to clarify the same fish face, neck apparatus and waist cues. Keep the original source's visible small claws and webbed/pointed foot contours conservatively; fine contours are reference interpretation, not new anatomy. Do not add a chest badge/Omnitrix symbol that is absent from these source frames.\nThe full body is already present in image 1: retain the entire head/lure/fins, both hands, both legs and both feet. No extra arms, legs, tentacles, wings, fins, appendages or large fish tail. No part of Ampfibian, another character, floating rock, ground, dust, energy, light rays, blur trails, CN logo, creator mark or background may remain. Genuine transparent alpha background, no matte/checkerboard, shadow or glow. One isolated character with comfortable transparent margin around every contour. This is a faithful reference reconstruction of a screenshot, not a new character design or photorealistic rendering.",
+        "fullPrompt": "Use case: background-extraction.\nAsset type: one transparent RGBA 2D animation character sprite.\nInput image 1 is the EDIT TARGET: the complete pale-blue fish humanoid Ripjaws running toward image-right in an Alien X-Tinction community clip screenshot. Input image 2 is DETAIL SUPPORT ONLY: the same pale-blue fish humanoid at image-left; completely ignore the separate blue-and-white jellyfish alien on the right.\nFaithfully redraw only the existing Ripjaws in the EXACT running pose of image 1, with clean original-animation contours and flat cel colors. Keep the side/three-quarter view, forward-leaning torso, head facing right, raised rear arm arching back toward image-left, front arm bent up toward image-right, one leg extending down and forward, and the other bent back with its foot raised. Preserve all visible arm and leg overlaps. Do not replace this with the frontal stride from image 2, a symmetrical standing figure, aquatic tail pose or a new action pose.\nPreserve the source's pale gray-blue skin, broad fish head, visible teeth, green head fin, one thin angler lure, green forearm fins, black neck/shoulder breathing apparatus, black waist/short garment with narrow bands and dark pointed hanging cloth strips. The TWO blue circular reservoir ends on the upper back belong to this fish character's breathing apparatus: keep both exactly where they are in image 1, below the raised rear arm and behind the head. They are not pieces of the separate jellyfish. Do not enlarge them into invented machinery or remove them. Use image 2 only to clarify the same fish face, neck apparatus and waist cues. Keep the original source's visible small claws and webbed/pointed foot contours conservatively; fine contours are reference interpretation, not new anatomy. Do not add a chest badge/Omnitrix symbol that is absent from these source frames.\nThe full body is already present in image 1: retain the entire head/lure/fins, both hands, both legs and both feet. No extra arms, legs, tentacles, wings, fins, appendages or large fish tail. No part of Ampfibian, another character, floating rock, ground, dust, energy, light rays, blur trails, CN logo, creator mark or background may remain. Genuine transparent alpha background, no matte/checkerboard, shadow or glow. One isolated character with comfortable transparent margin around every contour. This is a faithful reference reconstruction of a screenshot, not a new character design or photorealistic rendering.",
+        "promptSha256": "4ce39a9878ff86f1e7131ae9c3223375abefecf0cc586482af2af81b029505ae",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "ee0ade3254e152e34dcfc067fb252443185ba3d375945eb3cd60c9d7bbda3be7",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Main, support and human identity frame were actually viewed before generation, and the saved transformation-flash frame was subsequently viewed. The main source already contains the complete running body; no missing limb completion was needed.",
+        "Saved output actually viewed in color at original resolution. It preserves the forward-leaning image-right run, backward-raised arm, bent front arm, one down-forward leg and one folded rear leg; both hands, feet, head fin, one lure and green forearm fins remain. No second character, rock, scene object, chest badge or extra appendage is present.",
+        "The two visible blue reservoir ends remain attached to the upper back. Their connector lines and small fittings, face/teeth, claw tips, green garment markings and shading are redrawn interpretations of small source pixels rather than new evidence of canon structure.",
+        "Native generated output and saved PNG base64 payloads were compared equal. The first image display appeared dark; forwarding the unchanged saved payload again with explicit image/png MIME displayed the normal colors. No re-encoding or pixel alteration occurred."
+      ],
+      "limitations": [
+        "The source is community-posted footage displayed in an 816x459 JPEG video-region screenshot, not a native production frame or official upload. Main subject occupies only part of that picture.",
+        "Face and tooth lines, lure tip, claw/foot divisions, small reservoir fittings and hose connections, fin geometry and waist/garment markings are AI interpretation. In particular the more explicit reservoir connector shapes are not independently resolved in the original low-resolution frame.",
+        "The whole primary running silhouette is visible and preserved. The supporting frontal stride is detail support only; this does not claim a new aquatic body state or independent species.",
+        "Strong-alpha bbox [112,18,1277,1120] is contained in 1373x1145 with all outer edges alpha zero. Top/bottom padding is narrow. Faint cyan/blue residue remains around some contours: one inspected lower-leg fringe pixel is RGBA [0,255,255,1]. Raw alpha is unchanged; root must check actual watch appearance.",
+        "Current UI, physical phone, real SillyTavern and user acceptance remain unverified."
+      ],
+      "alphaInspection": {
+        "sha256": "ee0ade3254e152e34dcfc067fb252443185ba3d375945eb3cd60c9d7bbda3be7",
+        "bytes": 785686,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1373,
+          1145
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          35,
+          8,
+          1359,
+          1129
+        ],
+        "strongAlphaBBox": [
+          112,
+          18,
+          1277,
+          1120
+        ],
+        "alpha0Pixels": 1100710,
+        "alpha255Pixels": 2068,
+        "weakAlpha1to15": 41661,
+        "midAlpha16to127": 5599,
+        "strongAlphaPixels": 424115,
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "inspectionReadOnly": true,
+        "actualViewedByGenerationReviewer": true,
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0,
+        "faintFringeSample": {
+          "position": [
+            769,
+            944
+          ],
+          "rgba": [
+            0,
+            255,
+            255,
+            1
+          ]
+        }
+      },
+      "adoptionBasis": "Retained after source/output review and actual current-build desktop/mobile-width checks. Reference reconstruction and uploader limits remain disclosed; real host, physical phone and human acceptance remain unverified.",
+      "independentReview": {
+        "reviewer": "root",
+        "status": "pending-output-review",
+        "sourceActuallyViewed": true,
+        "outputActuallyViewed": false,
+        "currentUIViewed": false
+      },
+      "candidateAdoptionBasis": "Candidate to fill the already registered reboot-ripjaws missing-art entry using newly authenticated source correspondence and a complete observed running contour. No new form ID is created. Independent root output and current UI checks remain required.",
+      "candidateObservationStage": "Earlier observations describe source/output inspection before integration. Current UI evidence is recorded separately in uiReview.",
+      "uiReview": {
+        "version": "0.5.4",
+        "previewSha256": "d069f37db927d5e48605cbed2c4bba51d705fb1cfd67c5a5bba4da47f26e4fb3",
+        "evidence": "docs/browser-qa-v054.json",
+        "screenshots": [
+          "screenshots/v054-ripjaws-desktop-dial.jpg",
+          "screenshots/v054-ripjaws-desktop-projection.jpg",
+          "screenshots/v054-ripjaws-desktop-carousel.jpg",
+          "screenshots/v054-ripjaws-mobile-dial.jpg",
+          "screenshots/v054-ripjaws-mobile-projection.jpg",
+          "screenshots/v054-ripjaws-mobile-carousel.jpg",
+          "screenshots/v054-ripjaws-narrow-dial.jpg"
+        ],
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "skurd-kickin-hawk-diamondhead-arm",
+      "sourceFile": "assets/source-art/skurd-kickin-hawk-diamondhead-arm-source-original.jpg",
+      "sourceSha256": "b7c011656c86b3fbb06ef743938a9b44eadca0da62e8d4da9ac490e4147245dc",
+      "maskFile": "assets/source-art/skurd-kickin-hawk-diamondhead-arm-reference-edit.png",
+      "maskSha256": "fdeee65fc7c47e60f71e7fbfee03340f5b7f80dc8913a5e11320aa1977b81f3e",
+      "pageUrl": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+      "url": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference reconstruction of the actually inspected official Cartoon Network Dragon Charmcaster screenshot at 55.813333 seconds. The primary three-quarter upright upper body, swept crest, huge pale-blue crystal forearm, gripping crystal hand and separate vertical blue/violet sword are retained. The torso below the source crop, ordinary opposite hand, hips, long legs and birdlike feet are conservative AI continuation; a motion-blurred 66.149137-second jumping/back-side view of the same host guides only broad leg/foot proportions, not the exact generated stance. Fine face, fingers, badge, green coating, crystal facets and clothing/leg markings are interpreted. This is not official transparent artwork or an exact complete-body pixel extraction.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. The reference is from an observed official Cartoon Network upload; no separate redistribution license was established. AI reference reconstruction and missing-body interpretation are disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: Dragon Charmcaster | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root; independently corroborated verified official-channel web search metadata",
+        "observedTimestampSeconds": 55.813333,
+        "sourceWidth": 816,
+        "sourceHeight": 459,
+        "sourceFormat": "JPEG",
+        "captureRegion": "Video picture region with the three-quarter upper body at lower-left, the long vertical sword, night sky, buildings and tree, and the Cartoon Network logo at lower-right. Crest and sword tip are complete; lower torso, ordinary opposite hand, hips and legs are cropped or obscured.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skurd-kickin-hawk-diamondhead-arm-support-legs-original.jpg",
+          "sha256": "72b88c09c4e10c24175812a40e701e3db9e62b11944b46b253441964aa313771",
+          "pageUrl": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=66s",
+          "kind": "official-video-frame-screenshot",
+          "observedTimestampSeconds": 66.149137,
+          "sourceWidth": 816,
+          "sourceHeight": 459,
+          "sourceFormat": "JPEG",
+          "sourceBytesUnchanged": true,
+          "actuallyViewedByReviewer": true,
+          "use": "Same modified host in a motion-blurred back-side leap. Only ordinary leg length, dark waist/shorts silhouette and birdlike foot proportions support the missing lower body. The jumping pose, horizontal sword, dragon, pale dragon whiskers and background are excluded.",
+          "limitations": "Different angle and pose; crest tip is slightly cut and movement blurs the body. Does not prove exact front-side clothing, knee panels, hand, claw shapes or the conservative standing stance."
+        }
+      ],
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Third Time's a Charm",
+        "officialClipActuallyViewedByRoot": true,
+        "bothSourceScreenshotsActuallyViewedByGenerationReviewer": true,
+        "communityIdentityUrls": [
+          "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+          "https://ben10.fandom.com/wiki/Third_Time%27s_a_Charm",
+          "https://ben10.fandom.com/wiki/Skurd"
+        ],
+        "communityEvidenceAccess": "Read round194 scope evidence and returned web-search indexed episode history/gallery labels. Restricted source pages were not reopened or bypassed.",
+        "communityIdentity": "Community episode history explicitly names Kickin' Hawk with a Diamondhead arm and sword against dragon Charmcaster. Official pixels separately establish a hand gripping a sword rather than an arm-blade.",
+        "limits": "Only the inspected pose and visible attachment are depicted. Unseen anatomy, precisely reconstructed legs and all generated fine lines are not official design evidence."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction / identity-preserving transparent reference reconstruction.\nAsset type: ONE full-body transparent RGBA animation character sprite for a Ben 10 transformation selector.\nInput image 1 is the PRIMARY EDIT TARGET: Kickin' Hawk with one Skurd Diamondhead-derived forearm, his huge crystal hand gripping a separate long crystal SWORD. Input image 2 is SUPPORT ONLY for the same host's ordinary leg/foot proportions, which are cropped off in the primary image. This is a source-guided redraw, not a new character design.\n\nKeep the PRIMARY image's upright three-quarter upper-body pose and direction. Preserve his brown birdlike face and beak, vivid yellow-green narrow eyes in the angular dark teal/green mask, swept tall pale cream/gray head crest, brown feathered shoulders and ordinary body, green Skurd-related shoulder/chest coating with the visible dark spots/markings and small green hourglass badge. Keep the visible ordinary opposite shoulder/arm behind the huge foreground crystal forearm; do not create a second crystal arm. Preserve the source's asymmetry rather than turning it into a symmetrical frontal portrait.\n\nCRITICAL weapon structure: the enormous pale-blue faceted forearm rises diagonally from lower image-left foreground toward upper image-right, where the thick crystal fingers form a CLOSED GRIP around the small purple-blue HILT of a SEPARATE sword. Preserve the visible wrist, hand/knuckle facets and a real hand gripping the handle. Above the fist stands the very long upright tapered crystal blade, its left plane light blue and right plane deep violet-blue, with the primary image's pointed tip, broad width and vertical alignment. The hand must NOT merge directly into a knife blade. Do not add a shield, helmet, second blade, double-ended staff or donor head. Keep the giant forearm's foreground scale and sword's length compared with the head.\n\nContinue the bottom of the PRIMARY torso into a conservative full-body stance with two ordinary slim dark brown birdlike legs and brown clawed feet. The primary source is cropped below the upper torso/arm. Use the SECOND image only to guide the normal long leg proportions, modest dark shorts/waist outline and feet/toes; keep both legs and both feet fully visible. Do NOT copy the second image's back-facing leap, bent airborne pose, horizontally swung sword, motion blur, extra pale dragon whiskers, pink dragon, wings, tail, enemy or scenery. The added lower-body stance is a minimal interpretive extension of the primary upright torso, not a claim of recovered source pixels. Keep the ordinary opposite hand conservative and close to the body if not clearly resolved.\n\nStyle: clean 2D television animation contours, restrained flat cel shading, the reference palette and recognizable original silhouette. Keep the face, beak, eyes, crest, brown/green host and blue/violet crystal weapon distinct. Remove night sky, stars, purple lighting haze, buildings, branches, dragon, CN logo, all captions, effects, speed lines, ground and cast shadows. Do not include loose objects or detached marks. Genuine transparent alpha background, no matte color and no checkerboard. One character, one pose. Use a tall canvas as necessary and contain the entire long sword tip, crest, ordinary hand, both feet and all crystal edges inside comfortable transparent margins.",
+        "promptSha256": "23341383dedc8678f2eb04e9cfb815b2a9cefc470b3b44f2e657a26279bad80a",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "fdeee65fc7c47e60f71e7fbfee03340f5b7f80dc8913a5e11320aa1977b81f3e",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Main and support JPEGs were independently viewed before generation. Main: angular green bird mask and pale crest, brown shoulders, green Skurd coating, one huge pale-blue forearm and closed crystal grip around a separate upright blue/violet sword. Support: two ordinary slim legs and clawed feet in a different airborne back-side pose.",
+        "The native generated output was actually inspected. It retains the three-quarter head/torso direction, asymmetric crystal forearm and separate gripped sword, completes two legs/feet and an ordinary opposite hand, and excludes dragon, buildings, tree, logo and motion lines. The reconstructed legs are standing rather than the support’s leap, as required by the main upright torso.",
+        "The saved PNG hash matches the native generated file. A subsequent view_image rendering appeared nearly black despite its base64 PNG payload being exactly equal to the native image_gen image payload; this display discrepancy was not treated as altered file bytes. No pixel editing or re-encoding was attempted. Root must inspect its current rendering independently."
+      ],
+      "limitations": [
+        "The main source has no complete lower body. Ordinary opposite hand, torso continuation below the crop, hips, legs, foot spread and exact stance are conservative AI reconstruction. The support supplies coarse same-host proportions only.",
+        "Face lines, finger joints, small badge, green coating patches, dark shorts and lower-leg green shapes, toes and crystal facets are AI interpretation; output cannot establish unseen canonical details.",
+        "The tall blade and huge foreground forearm dominate the composition and will make the host relatively small in a fitted watch dial; root current UI review is required.",
+        "RGBA output is 1024x1536, alpha range 0–254, strong-alpha bbox [204,11,788,1525], outer edges alpha zero. Weak alpha-1–15 residue extends beyond the solid figure within the canvas. Original alpha is preserved without thresholding or cleanup.",
+        "Native output was visibly inspected and copied unchanged; the later local view_image display discrepancy still requires root visual confirmation before adoption.",
+        "Current UI, physical phone, real SillyTavern and human visual acceptance remain unverified. One body variant, not another species."
+      ],
+      "alphaInspection": {
+        "sha256": "fdeee65fc7c47e60f71e7fbfee03340f5b7f80dc8913a5e11320aa1977b81f3e",
+        "bytes": 1218313,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "programmaticPixelEdits": false,
+        "alphaRange": [
+          0,
+          254
+        ],
+        "positiveAlphaBBox": [
+          49,
+          8,
+          978,
+          1527
+        ],
+        "alpha0Pixels": 1230073,
+        "alpha255Pixels": 0,
+        "weakAlpha1to15": 20595,
+        "midAlpha16to127": 4783,
+        "strongAlphaPixels": 317413,
+        "thresholdBBoxes": {
+          "1": [
+            49,
+            8,
+            978,
+            1527
+          ],
+          "16": [
+            204,
+            10,
+            788,
+            1525
+          ],
+          "64": [
+            204,
+            11,
+            788,
+            1525
+          ],
+          "128": [
+            204,
+            11,
+            788,
+            1525
+          ],
+          "240": [
+            206,
+            15,
+            787,
+            1522
+          ]
+        },
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alphaSamples": {
+          "0,0": 0,
+          "0,768": 0,
+          "1023,768": 0,
+          "150,700": 0,
+          "750,800": 0,
+          "520,100": 0,
+          "860,450": 0
+        },
+        "strongAlphaBBox": [
+          204,
+          11,
+          788,
+          1525
+        ],
+        "source-original.jpg": {
+          "size": [
+            816,
+            459
+          ],
+          "format": "JPEG",
+          "sha256": "b7c011656c86b3fbb06ef743938a9b44eadca0da62e8d4da9ac490e4147245dc"
+        },
+        "support-legs-original.jpg": {
+          "size": [
+            816,
+            459
+          ],
+          "format": "JPEG",
+          "sha256": "72b88c09c4e10c24175812a40e701e3db9e62b11944b46b253441964aa313771"
+        },
+        "actualViewedByGenerationReviewer": true,
+        "rawBytesMatch": true,
+        "inspectionReadOnly": true
+      },
+      "adoptionBasis": "Retained after source/output review and actual current-build desktop/mobile-width checks. Reference reconstruction and uploader limits remain disclosed; real host, physical phone and human acceptance remain unverified.",
+      "independentReview": {
+        "reviewer": "root",
+        "status": "pending",
+        "sourceAndOutputActuallyViewed": false,
+        "currentUIViewed": false
+      },
+      "candidateAdoptionBasis": "Disclosed source-guided candidate after actual primary/support/native-output visual inspection and local byte/hash checks. Independent root visual review, production integration and current UI checks remain separate gates.",
+      "candidateObservationStage": "Earlier observations describe source/output inspection before integration. Current UI evidence is recorded separately in uiReview.",
+      "uiReview": {
+        "version": "0.5.4",
+        "previewSha256": "d069f37db927d5e48605cbed2c4bba51d705fb1cfd67c5a5bba4da47f26e4fb3",
+        "evidence": "docs/browser-qa-v054.json",
+        "screenshots": [
+          "screenshots/v054-kickin-desktop-dial.jpg",
+          "screenshots/v054-kickin-desktop-projection.jpg",
+          "screenshots/v054-kickin-desktop-carousel.jpg",
+          "screenshots/v054-kickin-mobile-dial.jpg",
+          "screenshots/v054-kickin-mobile-projection.jpg",
+          "screenshots/v054-kickin-mobile-carousel.jpg",
+          "screenshots/v054-kickin-narrow-dial.jpg"
+        ],
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [
@@ -9367,6 +9791,53 @@
         "https://ben10.fandom.com/wiki/Feedback",
         "https://www.directv.com/guide/EPISODE/Ben-10-Omniverse-Malgax-Attacks-fee164a3-ac14-5f86-60b6-36b83991e038"
       ]
+    },
+    {
+      "id": "skurd-kickin-hawk-diamondhead-arm",
+      "name": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "en": "Kickin' Hawk (Skurd Diamondhead Arm and Sword)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Third Time's a Charm. Skurd equips Kickin' Hawk with a Diamondhead-derived crystal arm and a separately held crystal sword during the fight with dragon Charmcaster. One partial-DNA body state of an existing transformation, not a separate species. Visible geometry is supported by official screenshots; donor naming is separately corroborated by community episode history.",
+      "aliases": [
+        "Skurd Kickin Hawk Diamondhead",
+        "Kickin Hawk Crystal Arm and Sword",
+        "威力鹰 Skurd 钻石臂",
+        "踢击鹰 Skurd 水晶剑"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+        "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://ben10.fandom.com/wiki/Third_Time%27s_a_Charm"
+      ]
+    }
+  ],
+  "identityCorrections": [
+    {
+      "before": {
+        "id": "reboot-ripjaws",
+        "name": null,
+        "en": "Ripjaws",
+        "group": "reboot",
+        "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+        "aliases": [],
+        "sourceUrls": [
+          "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
+          "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
+        ]
+      },
+      "after": {
+        "id": "reboot-ripjaws",
+        "name": null,
+        "en": "Ripjaws",
+        "group": "reboot",
+        "appearance": "Ben 10 (2016 reboot), Alien X-Tinction (2021). Alternate Gwen 10 uses this Ripjaws design; community footage transformation continuity observed. Distinct version representation, not a new species.",
+        "aliases": [],
+        "sourceUrls": [
+          "https://www.youtube.com/watch?v=19JIOioADxQ",
+          "https://ben10.fandom.com/wiki/Alien_X-Tinction/Transcript",
+          "https://ben10.fandom.com/wiki/Ripjaws_(Reboot)"
+        ]
+      }
     }
   ]
 }

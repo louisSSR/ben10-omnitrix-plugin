@@ -152,15 +152,93 @@ function sweep(id, points, width, thickness, color, { group = 'body', side = [1,
   return p;
 }
 const curve = (a,b,c,steps=20) => Array.from({length:steps+1},(_,i)=>{const t=i/steps;return a.map((v,k)=>(1-t)**2*v+2*(1-t)*t*b[k]+t*t*c[k]);});
-function cuff(id, halfLength, ry, rz, color) {
-  return lathe(id, [[.94,-halfLength],[1,-halfLength+.045],[1,halfLength-.045],[.94,halfLength],[.77,halfLength],[.74,halfLength-.035],[.74,-halfLength+.035],[.77,-halfLength],[.94,-halfLength]],color,{axis:'x',center:[0,-.67,0],scale:[ry,rz],surfaceColors:[color,color,color,color,C.inner,C.inner,C.inner,color]});
+// A wrist shell is lofted across its width, not the same straight ellipse for every generation.
+// Cross-section curvature and the concealed inner return are modelling interpretations.
+function wristPoint(shell,x,r,t) {
+  const {watch,length,ry,rz}=shell,s=Math.sin(t),c=Math.cos(t);
+  const power={original:.77,recalibrated:.85,ultimatrix:.74,omniverse:.73}[watch];
+  const nx=clamp(Math.abs(x)/length),middle=1-nx*nx,upper=Math.max(s,0)**2;
+  const shape=clamp((r-.77)/.17);
+  const q=1+(power-1)*shape,round=v=>Math.sign(v)*Math.abs(v)**q;
+  const flare={original:.12,recalibrated:.17,ultimatrix:.018,omniverse:.14}[watch];
+  const crown={original:.07,recalibrated:.09,ultimatrix:.035,omniverse:.085}[watch];
+  return [x*(1+flare*upper*shape),-.67+round(s)*ry*r*(.98+.02*middle)+crown*middle*upper*shape,
+    round(c)*rz*r*(.97+.03*middle)];
 }
-function cuffBand(id, x0, x1, ry, rz, color) {
-  return ring(id,1.015,.975,x0,x1,color,{axis:'x',center:[0,-.67,0],scale:[ry,rz]});
+function wristLoft(id,profile,color,shell,{segments=64,surfaceColors=null}={}) {
+  const p=part(id);
+  for(let j=0;j<profile.length-1;j++) {
+    const [x0,r0]=profile[j],[x1,r1]=profile[j+1];
+    const normal=t=>{
+      const a=wristPoint(shell,x0,r0,t),b=wristPoint(shell,x1,r1,t);
+      const dt=sub(wristPoint(shell,(x0+x1)/2,(r0+r1)/2,t+.001),wristPoint(shell,(x0+x1)/2,(r0+r1)/2,t-.001));
+      return unit(cross(sub(b,a),dt));
+    };
+    for(let i=0;i<segments;i++) {
+      const a=i*TAU/segments,b=(i+1)*TAU/segments,na=normal(a),nb=normal(b);
+      quad(p,wristPoint(shell,x0,r0,a),wristPoint(shell,x0,r0,b),wristPoint(shell,x1,r1,b),wristPoint(shell,x1,r1,a),surfaceColors?.[j]||color,[na,nb,nb,na]);
+    }
+  }
+  return p;
 }
-function cuffSeam(id,x,ry,rz) {
-  return ring(id,1.008,.997,x-.004,x+.004,C.seam,{axis:'x',center:[0,-.67,0],scale:[ry,rz],segments:48});
+function shapedCuff(shell,color) {
+  const l=shell.length;
+  const profile=[[-l,.955],[-l+.025,1],[-l*.68,1],[0,1],[l*.68,1],[l-.025,1],[l,.955],
+    [l,.77],[l-.035,.74],[0,.74],[-l+.035,.74],[-l,.77],[-l,.955]];
+  return wristLoft('cuff-hollow-wall',profile,color,shell,{surfaceColors:[color,color,color,color,color,color,color,C.inner,C.inner,C.inner,C.inner,color]});
 }
+function shapedBand(id,x0,x1,shell,color) {
+  const b=Math.min(.009,(x1-x0)*.24);
+  return wristLoft(id,[[x0,1.001],[x0+b,1.018],[x1-b,1.018],[x1,1.001],[x0,1.001]],color,shell,{segments:64});
+}
+
+// Subdivide existing solid surfaces before bending: the silhouette gains real curvature,
+// rather than shading an unchanged flat box. The deformation keeps normal vectors valid.
+function bendSolid(source,height,{steps=3,axis='y'}={}) {
+  const p=part(source.id,source.group);
+  const shift=v=>axis==='z'?[v[0],v[1],v[2]+height(v[0],v[1])]:[v[0],v[1]+height(v[0],v[2]),v[2]];
+  const shade=(v,n)=>{
+    const e=.0005,q=axis==='z'?v[1]:v[2];
+    const dx=(height(v[0]+e,q)-height(v[0]-e,q))/(2*e),dq=(height(v[0],q+e)-height(v[0],q-e))/(2*e);
+    return axis==='z'?unit([n[0]-dx*n[2],n[1]-dq*n[2],n[2]]):unit([n[0]-dx*n[1],n[1],n[2]-dq*n[1]]);
+  };
+  for(let i=0;i<source.positions.length;i+=9) {
+    const a=source.positions.slice(i,i+3),b=source.positions.slice(i+3,i+6),c=source.positions.slice(i+6,i+9);
+    const na=source.normals.slice(i,i+3),nb=source.normals.slice(i+3,i+6),nc=source.normals.slice(i+6,i+9);
+    const color=source.colors.slice(i/3*4,i/3*4+4);
+    const vertex=(u,v)=>({pos:add(a,add(mul(sub(b,a),u),mul(sub(c,a),v))),normal:unit(add(na,add(mul(sub(nb,na),u),mul(sub(nc,na),v))))});
+    const emit=(q,r,s)=>triangle(p,shift(q.pos),shift(r.pos),shift(s.pos),color,shade(q.pos,q.normal),shade(r.pos,r.normal),shade(s.pos,s.normal));
+    for(let u=0;u<steps;u++) for(let v=0;v<steps-u;v++) {
+      const a0=vertex(u/steps,v/steps),b0=vertex((u+1)/steps,v/steps),c0=vertex(u/steps,(v+1)/steps);
+      emit(a0,b0,c0);
+      if(u+v<steps-1)emit(b0,vertex((u+1)/steps,(v+1)/steps),c0);
+    }
+  }
+  return p;
+}
+
+// The folded seat has a real round well. A solid pitched diamond would cover the retracted dial.
+function diamondSeat(id,rx,rz,hole,bottom,top,color,height) {
+  const p=part(id),segments=64,profile=[[1,bottom],[1,top],[0,top],[0,bottom],[1,bottom]];
+  const point=(k,y,t)=>{
+    const cs=Math.cos(t),sn=Math.sin(t),outer=1/(Math.abs(cs)/rx+Math.abs(sn)/rz);
+    const r=hole+(outer-hole)*k,x=r*cs,z=r*sn;
+    return [x,y+height(x,z),z];
+  };
+  for(let j=0;j<profile.length-1;j++) {
+    const [k0,y0]=profile[j],[k1,y1]=profile[j+1];
+    const normal=t=>{
+      const dt=sub(point((k0+k1)/2,(y0+y1)/2,t+.001),point((k0+k1)/2,(y0+y1)/2,t-.001));
+      return unit(cross(sub(point(k1,y1,t),point(k0,y0,t)),dt));
+    };
+    for(let i=0;i<segments;i++) {
+      const a=i*TAU/segments,b=(i+1)*TAU/segments,na=normal(a),nb=normal(b);
+      quad(p,point(k0,y0,a),point(k0,y0,b),point(k1,y1,b),point(k1,y1,a),color,[na,nb,nb,na]);
+    }
+  }
+  return p;
+}
+
 function faceSymbol(parts, cx, y, radius, color, group='core') {
   for (const sign of [-1,1]) parts.push(prism(`hourglass-${sign}`,[[cx-radius*.72,sign*radius*.74],[cx+radius*.72,sign*radius*.74],[cx+radius*.16,0],[cx-radius*.16,0]],y,y+.009,color,{group,bevel:0}));
 }
@@ -181,28 +259,48 @@ function coreMarks(parts,cx,radius,bottom,top) {
 /** Pure geometry construction. Positions are the closed pose; groups carry rigid motion. */
 export function buildWatchGeometry(watchId='original') {
   const watch=IDS.includes(watchId)?watchId:'original', parts=[];
-  const ua=watch==='ultimatrix', ov=watch==='omniverse', af=watch==='recalibrated';
+  const ua=watch==='ultimatrix', ov=watch==='omniverse', af=watch==='recalibrated', original=watch==='original';
   const cx=ua?.54:0, r=ov?.455:af?.52:ua?.60:.57;
+  // The original's broad bezel stays fixed; only its smaller central emitter rises.
+  // This separation, clearance and travel are an art-directed mechanism, not an official blueprint.
+  const coreRadius=original?.44:r;
   const top=ov?.30:af?.31:ua?.31:.34;
   const lift=ov?.35:af?.33:ua?.30:.32;
   const ry=ua?.71:ov?.73:af?.65:.71, rz=ua?.67:ov?.75:af?.63:.75;
   const length=ua?1.23:ov?.59:af?.38:.49;
-  parts.push(cuff('cuff-hollow-wall',length,ry,rz,ov?C.white:af||ua?C.green:C.rubber));
+  const shell={watch,length,ry,rz};
+  parts.push(shapedCuff(shell,ov?C.white:af||ua?C.green:C.rubber));
   const rimWidth=watch==='original'?.10:.04;
-  parts.push(cuffBand('cuff-front-rim',length-rimWidth,length+.018,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.steel));
-  parts.push(cuffBand('cuff-back-rim',-length-.018,-length+rimWidth,ry,rz,ov?C.green:ua?C.green:af?C.edge:C.steel));
+  parts.push(shapedBand('cuff-front-rim',length-rimWidth,length+.018,shell,ov||ua?C.green:af?C.edge:C.steel));
+  parts.push(shapedBand('cuff-back-rim',-length-.018,-length+rimWidth,shell,ov||ua?C.green:af?C.edge:C.steel));
   // Shallow moulding seams stay on the existing cuff; no speculative switches or armour plates.
-  for(const side of [-1,1]) parts.push(cuffSeam(`cuff-moulding-seam-${side}`,side*(length-rimWidth-.027),ry,rz));
-  if(af) parts.push(cuffBand('green-band-black-centre',-.095,.095,ry+.008,rz+.008,C.black));
+  for(const side of [-1,1]) {
+    const x=side*(length-rimWidth-.027);
+    parts.push(shapedBand(`cuff-moulding-seam-${side}`,x-.003,x+.003,shell,C.seam));
+  }
+  if(af) parts.push(shapedBand('green-band-black-centre',-.105,.105,shell,C.black));
   if(!ua&&!ov) {
-    parts.push(cylinder('case-lower-cushion',r+.20,-.08,.09,C.black));
-    parts.push(ring('case-base-beveled-rim',r+.18,r-.06,.055,.16,af?C.green:C.edge));
-    parts.push(ring('fixed-core-collar',r+.13,r-.025,.13,.245,af?C.dark:C.black));
+    parts.push(lathe('case-lower-cushion',[[0,-.095],[r+.10,-.095],[r+.185,-.055],[r+.205,.005],[r+.195,.065],[r+.15,.10],[0,.10]],C.black));
+    parts.push(lathe('case-base-beveled-rim',[[r+.17,.025],[r+.20,.055],[r+.19,.098],[r+.14,.16],[r-.06,.16],[r-.06,.025],[r+.17,.025]],af?C.green:C.edge));
+    if(original) {
+      // Wide dark fixed shoulder, with a recessed inner socket around the moving cap.
+      // Its inner radius clears every core part throughout the unchanged lift stroke.
+      parts.push(lathe('fixed-core-collar',[[.686,.115],[.713,.145],[.718,.205],[.705,.263],[.678,.302],
+        [.535,.315],[.508,.294],[.505,.267],[.505,.115],[.686,.115]],C.black,
+        {surfaceColors:[C.dark,C.black,C.black,C.black,C.black,C.edge,C.seam,C.seam,C.dark]}));
+      parts.push(ring('fixed-bezel-inner-joint',.529,.504,.282,.294,C.seam));
+      parts.push(ring('fixed-bezel-lower-joint',.719,.710,.178,.190,C.seam));
+    } else {
+      parts.push(lathe('fixed-core-collar',[[r+.145,.12],[r+.155,.148],[r+.13,.19],[r+.09,.245],[r-.025,.245],[r-.025,.12],[r+.145,.12]],C.dark));
+    }
   }
   if(watch==='original') {
     for(let i=0;i<4;i++) {
       const t=Math.PI/4+i*Math.PI/2, cs=Math.cos(t),sn=Math.sin(t);
-      parts.push(sweep(`curved-silver-claw-${i}`,curve([cs*.64,.16,sn*.64],[cs*1.06,.20,sn*1.06],[cs*.91,-.47,sn*.91]),.225,.080,C.silver,{side:[-sn,0,cs],beveled:true}));
+      const bend=curve([cs*.65,.18,sn*.65],[cs*.98,.24,sn*1.07],[cs*.76,-.28,sn*.97],28);
+      // A thin dark seat separates each curved silver hook from the cuff and fixed case.
+      parts.push(sweep(`silver-claw-seat-${i}`,bend.map(([x,y,z])=>[x,y-.016,z]),.272,.085,C.seam,{side:[-sn,0,cs],beveled:true}));
+      parts.push(sweep(`curved-silver-claw-${i}`,bend,.250,.088,C.silver,{side:[-sn,0,cs],beveled:true}));
     }
     parts.push(frontCylinder('large-side-button-gasket',.16,-.025,.744,.181,.028,C.seam));
     parts.push(frontCylinder('large-side-button-bezel',.16,-.025,.765,.163,.095,C.silver));
@@ -219,14 +317,24 @@ export function buildWatchGeometry(watchId='original') {
     parts.push(sweep('lower-front-silver-arc',arc,.095,.055,C.silver,{side:[0,1,0],beveled:true}));
   }
   if(ua) {
-    parts.push(box('elongated-upper-bracer',[0,-.01,0],[2.35,.25,1.16],C.green,{bevel:.06}));
-    parts.push(box('rear-dark-panel',[-.69,.128,0],[.67,.032,.72],C.dark,{bevel:.025}));
+    const hood=[[-1.18,-.46],[-1.05,-.57],[.50,-.65],[.91,-.56],[1.14,-.34],[1.22,0],[1.14,.34],[.91,.56],[.50,.65],[-1.05,.57],[-1.18,.46]];
+    const hoodCurve=(x,z)=>.045*(1-(z/.67)**2)-.055*Math.max(0,(-x-.45)/.75)**2;
+    parts.push(bendSolid(prism('elongated-upper-bracer',hood,-.115,.135,C.green,{bevel:.045}),hoodCurve,{steps:4}));
+    parts.push(bendSolid(box('rear-dark-panel',[-.69,.155,0],[.67,.025,.72],C.dark,{bevel:.012}),hoodCurve,{steps:3}));
     parts.push(ring('offset-silver-core-collar',r+.13,r-.055,.115,.265,C.silver,{center:[cx,0,0]}));
-    // The observed side uses two separate pipes; the back remains a restrained plain cuff.
-    parts.push(box('near-side-dark-inlay',[-.11,-.28,.616],[1.89,.40,.045],C.dark,{bevel:.035}));
+    // The visible side panel and its two independent pipes follow the same solid wrist surface.
+    // This keeps the upper pipe seated instead of hovering over a flat vertical sticker.
+    const sideZ=(x,y)=>{
+      let a=0,b=Math.PI/2;
+      for(let i=0;i<14;i++){const mid=(a+b)/2;if(wristPoint(shell,x,1,mid)[1]<y)a=mid;else b=mid;}
+      return wristPoint(shell,x,1,(a+b)/2)[2];
+    };
+    parts.push(bendSolid(box('near-side-dark-inlay',[-.11,-.28,.616],[1.89,.40,.045],C.dark,{bevel:.02}),
+      (x,y)=>sideZ(x,y)-.616+.010,{steps:4,axis:'z'}));
     const pipeA=[[-.93,-.27,.668],[-.85,-.37,.686],[-.70,-.40,.693],[-.52,-.39,.699],[.29,-.19,.672],[.40,-.10,.653]];
     const pipeB=[[-1.04,-.49,.61],[-.62,-.46,.68],[.10,-.33,.701],[.46,-.19,.674],[.57,-.09,.65]];
     for(const [i,points] of [pipeA,pipeB].entries()) {
+      for(const p of points)p[2]=sideZ(p[0],p[1])+.065;
       parts.push(sweep(`independent-side-pipe-${i}`,points,.075,.075,C.lime,{side:[0,0,1]}));
       for(const [j,p] of [points[0],points.at(-1)].entries()) {
         parts.push(frontCylinder(`pipe-end-coupler-${i}-${j}`,p[0],p[1],p[2]-.023,.060,.046,C.silver));
@@ -235,42 +343,61 @@ export function buildWatchGeometry(watchId='original') {
     }
   }
   if(ov) {
-    parts.push(prism('shallow-diamond-support',[[-.90,0],[0,-.70],[.90,0],[0,.70]],.045,.135,C.green,{bevel:.025}));
-    parts.push(prism('black-faceted-diamond-frame',[[-.84,0],[0,-.645],[.84,0],[0,.645]],.12,.18,C.black,{bevel:.035}));
+    // Cover and seat share a pitched surface, with a small seated overlap in the closed pose.
+    // The original slide distance remains an interaction interpretation, not a canonical hinge.
+    const roof=(x,z)=>.105*Math.max(0,1-Math.abs(z)/.70)-.016*Math.min(1,Math.abs(x)/.84);
+    parts.push(bendSolid(prism('shallow-diamond-support',[[-.84,0],[0,-.70],[.84,0],[0,.70]],.035,.14,C.green,{bevel:.026}),roof,{steps:3}));
+    parts.push(diamondSeat('black-faceted-diamond-frame',.78,.645,r+.030,.10,.25,C.black,roof));
     parts.push(ring('small-black-core-collar',r+.085,r-.04,.17,.255,C.dark));
-    const lids=[{id:'left',poly:[[-.86,0],[0,-.64],[0,.64]]},{id:'right',poly:[[.86,0],[0,.64],[0,-.64]]}];
+    const lids=[{id:'left',poly:[[-.75,0],[0,-.62],[0,0],[0,.62]]},{id:'right',poly:[[.75,0],[0,.62],[0,0],[0,-.62]]}];
     for(const lid of lids) {
-      parts.push(prism(`green-lid-rim-${lid.id}`,lid.poly,.322,.355,C.green,{group:`lid-${lid.id}`,bevel:.018}));
+      parts.push(bendSolid(prism(`green-lid-rim-${lid.id}`,lid.poly,.247,.30,C.green,{group:`lid-${lid.id}`,bevel:.014}),roof,{steps:3}));
       const poly=lid.poly.map(([x,z])=>[x*.93,z*.91]);
-      parts.push(prism(`black-lid-panel-${lid.id}`,poly,.351,.38,C.black,{group:`lid-${lid.id}`,bevel:.018}));
+      parts.push(bendSolid(prism(`black-lid-panel-${lid.id}`,poly,.293,.351,C.black,{group:`lid-${lid.id}`,bevel:.015}),roof,{steps:3}));
     }
     for(let i=0;i<3;i++) parts.push(box(`three-front-green-markers-${i}`,[-.17+i*.17,-.15,.758],[.09,.09,.028],C.green,{bevel:.006}));
   }
-  const coreCenter=[cx,0,0];
+  const coreCenter=[cx,0,0],cr=coreRadius;
   // The shaft is retained inside the socket when closed and overlaps its fixed collar even at full lift.
   // Its -0.11 lower end stays above the cuff's inner roof, avoiding a piston through the wrist cavity.
-  parts.push(cylinder('independent-lift-core',r+.025,-.11,top-.045,C.dark,{center:coreCenter,group:'core'}));
-  parts.push(ring('core-lower-seal',r+.04,r-.025,.09,.13,C.black,{center:coreCenter,group:'core'}));
-  if(af||ov) coreMarks(parts,cx,r+.027,.14,top-.07);
-  parts.push(ring('core-face-beveled-rim',r+.055,r-.048,top-.075,top+.015,ua||watch==='original'?C.silver:C.edge,{center:coreCenter,group:'core'}));
-  // Three nested machined layers give the rim a readable lip, inset gasket and lower joint.
-  // All remain below or outside the face anchor; they do not cover its selectable symbol.
-  parts.push(ring('core-rim-polished-lip',r+.047,r-.043,top+.009,top+.019,C.silver,{center:coreCenter,group:'core',segments:48}));
-  parts.push(ring('core-face-inner-gasket',r-.043,r-.055,top+.003,top+.011,C.seam,{center:coreCenter,group:'core',segments:48}));
-  parts.push(ring('core-rim-lower-joint',r+.056,r+.041,top-.064,top-.053,C.seam,{center:coreCenter,group:'core',segments:48}));
-  parts.push(cylinder('inset-face-glass',r-.043,top-.022,top+.006,C.glass,{center:coreCenter,group:'core'}));
-  faceSymbol(parts,cx,top+.008,r-.075,C.lime);
-  if(watch==='original') for(let i=0;i<4;i++) {
-    const t=Math.PI/4+i*Math.PI/2,center=[cx+Math.cos(t)*(r+.025),0,Math.sin(t)*(r+.025)];
-    parts.push(ring(`four-status-light-bezel-${i}`,.068,.047,top+.007,top+.030,C.edge,{center,group:'core',segments:32}));
-    parts.push(lens(`four-status-light-green-${i}`,.046,top+.023,top+.048,C.lime,{center,group:'core'}));
+  parts.push(cylinder('independent-lift-core',cr+.025,-.11,top-.045,C.dark,{center:coreCenter,group:'core'}));
+  parts.push(ring('core-lower-seal',cr+.04,cr-.025,.09,.13,C.black,{center:coreCenter,group:'core'}));
+  if(af||ov) coreMarks(parts,cx,cr+.027,.14,top-.07);
+  if(original) {
+    // Eight inset vertical emission slots use capsule outlines; no speculative writing or screws.
+    const capsule=(halfWidth,bottom,top)=>Array.from({length:18},(_,j)=>{
+      const a=(j<=8?j:j-1)*Math.PI/8;
+      return [Math.cos(a)*halfWidth,(j<=8?top-halfWidth:bottom+halfWidth)+Math.sin(a)*halfWidth];
+    });
+    for(let i=0;i<8;i++) {
+      const t=i*TAU/8,cs=Math.cos(t),sn=Math.sin(t);
+      const slot=(id,halfWidth,bottom,top,depth,color)=>transformPart(
+        prism(id,capsule(halfWidth,bottom,top),0,depth,color,{group:'core',bevel:.0015}),
+        v=>[cx+cs*(cr+.026+v[1])-sn*v[0],v[2],sn*(cr+.026+v[1])+cs*v[0]],
+        n=>[cs*n[1]-sn*n[0],n[2],sn*n[1]+cs*n[0]]);
+      parts.push(slot(`core-vertical-slot-seat-${i}`,.027,.000,.266,.003,C.seam));
+      parts.push(slot(`core-vertical-slot-green-${i}`,.016,.015,.251,.006,C.lime));
+    }
+  }
+  parts.push(ring('core-face-beveled-rim',cr+.055,cr-.048,top-.075,top+.015,ua?C.silver:original?C.black:C.edge,{center:coreCenter,group:'core'}));
+  // The original has a slim silver inner lip inside a dark crown, not a broad silver lid.
+  parts.push(ring('core-rim-polished-lip',original?cr-.022:cr+.047,cr-.043,top+.009,top+.019,ua||original?C.silver:af?C.dark:C.black,{center:coreCenter,group:'core',segments:48}));
+  parts.push(ring('core-face-inner-gasket',cr-.043,cr-.055,top+.003,top+.011,C.seam,{center:coreCenter,group:'core',segments:48}));
+  parts.push(ring('core-rim-lower-joint',cr+.056,cr+.041,top-.064,top-.053,C.seam,{center:coreCenter,group:'core',segments:48}));
+  parts.push(cylinder('inset-face-glass',cr-.043,top-.022,top+.006,C.glass,{center:coreCenter,group:'core'}));
+  faceSymbol(parts,cx,top+.008,cr-.075,C.lime);
+  if(original) for(let i=0;i<4;i++) {
+    const t=i*Math.PI/2,center=[cx+Math.cos(t)*.625,0,Math.sin(t)*.625];
+    parts.push(cylinder(`four-status-light-seat-${i}`,.085,.282,.326,C.black,{center,segments:32}));
+    parts.push(ring(`four-status-light-bezel-${i}`,.077,.057,.317,.341,C.edge,{center,segments:32}));
+    parts.push(lens(`four-status-light-green-${i}`,.056,.331,.379,C.lime,{center}));
   }
   const min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];
   for(const p of parts) {
     for(let i=0;i<p.positions.length;i++) {min[i%3]=Math.min(min[i%3],p.positions[i]);max[i%3]=Math.max(max[i%3],p.positions[i]);}
     p.positions=new Float32Array(p.positions);p.normals=new Float32Array(p.normals);p.colors=new Float32Array(p.colors);
   }
-  return {watch,parts,face:{center:[cx,top+.021,0],radius:r-.052},lift,bounds:{min,max}};
+  return {watch,parts,face:{center:[cx,top+.021,0],radius:coreRadius-.052},lift,bounds:{min,max}};
 }
 
 export function watchPose(state={}) {
@@ -304,7 +431,10 @@ export function projectWatchFace(geometry,pose,aspect=1) {
   const ux=(x1.x-x0.x)/2,uy=(x1.y-x0.y)/2,vx=(z1.x-z0.x)/2,vy=(z1.y-z0.y)/2;
   const aa=ux*ux+vx*vx,bb=ux*uy+vx*vy,dd=uy*uy+vy*vy;
   const disc=Math.sqrt((aa-dd)**2+4*bb*bb),major=Math.sqrt(Math.max(0,(aa+dd+disc)/2)),minor=Math.sqrt(Math.max(0,(aa+dd-disc)/2));
-  const angle=Math.abs(bb)<1e-10?(aa>=dd?0:Math.PI/2):Math.atan2(2*bb,aa-dd)/2;
+  // A circle has no preferred major axis. Round-off can swap aa/dd and rotate its content 90°.
+  // Use a relative eigenvalue-gap tolerance so small and large projected dials behave alike.
+  const nearCircle=disc<=(aa+dd)*1e-6;
+  const angle=nearCircle?0:Math.abs(bb)<1e-10?(aa>=dd?0:Math.PI/2):Math.atan2(2*bb,aa-dd)/2;
   return {x:p.x,y:p.y,w:major*2,h:minor*2,a:angle*180/Math.PI,ellipseRatio:major>0?minor/major:1,visible:p.depth>0&&p.x>0&&p.x<1&&p.y>0&&p.y<1};
 }
 
@@ -328,18 +458,20 @@ void main(){
   vec3 key=normalize(vec3(-0.65,1.0,0.85)),fill=normalize(vec3(0.8,0.28,-0.6));
   float ndv=max(dot(n,v),0.0),ndk=max(dot(n,key),0.0),ndf=max(dot(n,fill),0.0);
   float fresnel=pow(1.0-ndv,5.0);
-  float cavity=0.82+0.18*smoothstep(-1.35,0.02,vWorld.y);
-  float diffuse=0.20+0.13*(n.y*0.5+0.5)+0.67*ndk+0.16*ndf;
+  // A darker underside and stronger key separate the solid shoulder from its inner wrist cavity.
+  // This is a studio-light approximation, not contact-shadow or ambient-occlusion simulation.
+  float cavity=(0.58+0.42*smoothstep(-1.35,0.02,vWorld.y))*(0.60+0.40*smoothstep(-0.75,0.12,n.y));
+  float diffuse=0.085+0.12*(n.y*0.5+0.5)+0.94*ndk+0.08*ndf;
   vec3 reflected=reflect(-v,n);
   float broadPanel=smoothstep(0.35,0.97,dot(reflected,normalize(vec3(-0.55,0.85,0.35))));
   float edgePanel=smoothstep(0.80,0.98,dot(reflected,normalize(vec3(0.72,0.32,0.65))));
-  float exponent=mix(32.0,96.0,max(glass,lamp));
+  float exponent=mix(mix(32.0,72.0,metal),112.0,max(glass,lamp));
   float highlight=pow(max(dot(n,normalize(key+v)),0.0),exponent);
-  float specular=0.075+0.16*metal+0.36*glass+0.20*lamp-0.06*rubber;
-  float reflection=(0.045+0.45*metal+0.18*glass)*(1.0-rubber);
+  float specular=0.07+0.40*metal+0.40*glass+0.28*lamp-0.055*rubber;
+  float reflection=(0.04+0.68*metal+0.23*glass)*(1.0-rubber);
   vec3 tint=mix(vec3(0.84,0.92,1.0),base*0.45+vec3(0.55),metal);
   vec3 rgb=base*diffuse*cavity*(1.0-0.17*metal);
-  rgb+=tint*(highlight*specular+(broadPanel*0.32+edgePanel*0.23)*reflection);
+  rgb+=tint*(highlight*specular+(broadPanel*0.48+edgePanel*0.32)*reflection);
   rgb+=vec3(0.55,0.68,0.75)*fresnel*(0.045+0.13*metal+0.24*glass)*(1.0-rubber);
   rgb=mix(rgb,base*(0.62+0.34*ndk)+vec3(0.72,0.95,0.47)*highlight*0.28,lamp);
   // A mild highlight shoulder keeps bright metal below clipped white; dark values keep contrast.

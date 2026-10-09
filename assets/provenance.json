@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "76505cd72b291166d87697ca77748a973df42a20355d7072883f45e3c596c19e",
-  "svgSha256": "d97a3d81d4add5ab21a2739e9fc9f64c5753f81d50c3816d54234785937aefb3",
+  "catalogSha256": "a2ddfc1cbd8cb6765e9f7fdbc44ca5a2afbf95d1337c91ed62fe157396d14914",
+  "svgSha256": "61aa58251a8473ece8d019135f11295b7c8a9bf7a8ed0d93e7ae3a9d012ffc57",
   "coverage": {
-    "total": 235,
-    "reviewed": 233,
-    "missing": 2
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
   },
   "assets": [
     {
@@ -2116,6 +2116,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "e09d58d5cf4ca5f0cd3292191a81a19fa4187ea6fde89af6c92b010d15e83ef8",
       "maskSha256": "a7e8e6419056cf77e33882ab8a5601c929c29a51fd609a544054d5372974b89b",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-ripjaws",
+      "url": "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s",
+      "pageUrl": "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s",
+      "rights": "Underlying Ben 10 animation and character rights remain with their owners. The video is a community comparison/repost by AdeebTarequeSattar; the official upstream upload and redistribution permission are not verified. AI reference reconstruction is disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "61e05dde1f7495acf92ef5f8a50f83e00c59031c1c2570a72f3b7937a63adab2",
+      "maskSha256": "ee0ade3254e152e34dcfc067fb252443185ba3d375945eb3cd60c9d7bbda3be7",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-kickin-hawk-diamondhead-arm",
+      "url": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+      "pageUrl": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. The reference is from an observed official Cartoon Network upload; no separate redistribution license was established. AI reference reconstruction and missing-body interpretation are disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "b7c011656c86b3fbb06ef743938a9b44eadca0da62e8d4da9ac490e4147245dc",
+      "maskSha256": "fdeee65fc7c47e60f71e7fbfee03340f5b7f80dc8913a5e11320aa1977b81f3e",
       "contentType": "image/png"
     }
   ],

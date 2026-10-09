@@ -23,6 +23,18 @@ def https_source(value):
         return False
 
 
+def validate_identity(row, catalog, label='new form'):
+    require(isinstance(row, dict) and set(row) == set(IDENTITY_FIELDS), 'Invalid '+label+' identity fields')
+    key = row['id']
+    require(isinstance(key, str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', key), 'Invalid '+label+' ID')
+    require(row['name'] is None or isinstance(row['name'], str) and row['name'].strip(), 'Invalid '+label+' name: '+key)
+    require(all(isinstance(row[field], str) and row[field].strip() for field in ('en', 'appearance')), 'Invalid '+label+' label: '+key)
+    require(isinstance(catalog.get('groups'), dict) and isinstance(row['group'], str) and row['group'] in catalog['groups'], 'Unknown '+label+' group: '+key)
+    require(isinstance(row['aliases'], list) and all(isinstance(alias, str) and alias.strip() for alias in row['aliases']), 'Invalid '+label+' aliases: '+key)
+    require(isinstance(row['sourceUrls'], list) and row['sourceUrls'] and all(https_source(url) for url in row['sourceUrls']), 'Invalid '+label+' HTTPS sources: '+key)
+    return key
+
+
 def merge_extra_art(catalog, svg_bytes, provenance):
     svg_bytes = hydrate_svg(svg_bytes, ROOT / 'assets')
     registry = ROOT / 'assets/extra-art.json'
@@ -36,16 +48,9 @@ def merge_extra_art(catalog, svg_bytes, provenance):
     require(isinstance(new_forms, list), 'Invalid newForms list')
     new_ids = set()
     for row in new_forms:
-        require(isinstance(row, dict) and set(row) == set(IDENTITY_FIELDS), 'Invalid new form identity fields')
-        key = row['id']
-        require(isinstance(key, str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', key), 'Invalid new form ID')
+        key = validate_identity(row, catalog)
         require(key not in new_ids, 'Duplicate new form ID: '+key)
         new_ids.add(key)
-        require(row['name'] is None or isinstance(row['name'], str) and row['name'].strip(), 'Invalid new form name: '+key)
-        require(all(isinstance(row[field], str) and row[field].strip() for field in ('en', 'appearance')), 'Invalid new form label: '+key)
-        require(isinstance(catalog.get('groups'), dict) and isinstance(row['group'], str) and row['group'] in catalog['groups'], 'Unknown new form group: '+key)
-        require(isinstance(row['aliases'], list) and all(isinstance(alias, str) and alias.strip() for alias in row['aliases']), 'Invalid new form aliases: '+key)
-        require(isinstance(row['sourceUrls'], list) and row['sourceUrls'] and all(https_source(url) for url in row['sourceUrls']), 'Invalid new form HTTPS sources: '+key)
         if key in forms:
             require(all(forms[key].get(field) == row[field] for field in IDENTITY_FIELDS), 'Conflicting new form identity: '+key)
         else:
@@ -54,6 +59,27 @@ def merge_extra_art(catalog, svg_bytes, provenance):
             form = {**row, 'aliases': row['aliases'].copy(), 'sourceUrls': row['sourceUrls'].copy(), 'asset': None}
             catalog['forms'].append(form)
             forms[key] = form
+    corrections = plan.get('identityCorrections', [])
+    require(isinstance(corrections, list), 'Invalid identityCorrections list')
+    corrected_ids = set()
+    updates = []
+    for correction in corrections:
+        require(isinstance(correction, dict) and set(correction) == {'before', 'after'}, 'Invalid identity correction fields')
+        before, after = correction['before'], correction['after']
+        key = validate_identity(before, catalog, 'identity correction before')
+        require(validate_identity(after, catalog, 'identity correction after') == key and before['group'] == after['group'], 'Identity correction must preserve ID and group: '+key)
+        require(key not in corrected_ids, 'Duplicate identity correction: '+key)
+        corrected_ids.add(key)
+        require(key in forms and key not in new_ids, 'Identity correction requires an existing form outside newForms: '+key)
+        require(not any(key in (merge.get('from'), merge.get('into')) for merge in plan.get('mergedForms', [])), 'Identity correction overlaps mergedForms: '+key)
+        form = forms[key]
+        require(all(field in form for field in IDENTITY_FIELDS) and {field: form[field] for field in IDENTITY_FIELDS} in (before, after), 'Identity correction source drift: '+key)
+        updates.append((form, after))
+    # Validate the whole correction batch before changing any identity. Runtime
+    # fields such as asset and dialFit remain untouched; exact after matching
+    # makes repeated merge/import applications idempotent.
+    for form, after in updates:
+        form.update({**after, 'aliases': after['aliases'].copy(), 'sourceUrls': after['sourceUrls'].copy()})
     seen = set()
     for entry in extras:
         key = entry['formId']

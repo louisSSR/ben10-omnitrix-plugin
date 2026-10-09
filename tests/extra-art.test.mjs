@@ -320,3 +320,110 @@ test('optimized snapshot import rejects changed baseline bytes before output wri
   reject(runPython(f, ['-O', path.join(f.dir, 'scripts/import-catalog.py'), path.join(f.dir, 'snapshot')]), 'snapshot hash');
   assert.deepEqual(readFileSync(path.join(f.dir, 'assets/catalog.json')), before);
 });
+
+const identityFields = ['id', 'name', 'en', 'group', 'appearance', 'aliases', 'sourceUrls'];
+const identityOf = row => Object.fromEntries(identityFields.map(field => [field, structuredClone(row[field])]));
+function identityCorrection(f, id = 'seed') {
+  const before = identityOf(f.catalog.forms.find(row => row.id === id));
+  return { before, after: { ...structuredClone(before), name: '已核实身份', appearance: 'Verified wearer and episode', sourceUrls: ['https://example.test/verified-identity'] } };
+}
+
+test('identity correction changes only seven identity fields and preserves runtime metadata', t => {
+  const f = fixture(t), seed = f.catalog.forms[0];
+  seed.dialFit = { scale: .61, custom: 'retained' }; seed.customRuntime = { selected: true };
+  writeJson(path.join(f.dir, 'assets/catalog.json'), f.catalog);
+  const correction = identityCorrection(f); f.plan.identityCorrections = [correction]; savePlan(f);
+  const row = merged(f).catalog.forms.find(form => form.id === 'seed');
+  assert.deepEqual(identityOf(row), correction.after);
+  assert.deepEqual(row, { ...seed, ...correction.after });
+  assert.equal(row.asset, 'alien-seed'); assert.deepEqual(row.dialFit, seed.dialFit);
+});
+
+test('identity correction accepts exact before or after and is idempotent', t => {
+  const f = fixture(t); f.plan.identityCorrections = [identityCorrection(f)]; savePlan(f);
+  assert.deepEqual(merged(f, 3), merged(f));
+  Object.assign(f.catalog.forms[0], f.plan.identityCorrections[0].after);
+  writeJson(path.join(f.dir, 'assets/catalog.json'), f.catalog);
+  assert.deepEqual(identityOf(merged(f).catalog.forms[0]), f.plan.identityCorrections[0].after);
+});
+
+test('identity correction refuses source drift including missing identity fields', t => {
+  const f = fixture(t); f.plan.identityCorrections = [identityCorrection(f)]; savePlan(f);
+  for (const field of identityFields) {
+    const catalog = structuredClone(f.catalog);
+    if (field === 'id') catalog.forms[0].id = 'changed-seed';
+    else if (field === 'group') catalog.forms[0].group = 'ua';
+    else catalog.forms[0][field] = Array.isArray(catalog.forms[0][field]) ? ['https://example.test/drift'] : 'Unexpected source change';
+    writeJson(path.join(f.dir, 'assets/catalog.json'), catalog);
+    const result = merge(f); reject(result, `source drift ${field}`);
+    assert.match(result.stderr, /Identity correction (source drift|requires an existing form)/);
+  }
+  const catalog = structuredClone(f.catalog); delete catalog.forms[0].name;
+  writeJson(path.join(f.dir, 'assets/catalog.json'), catalog);
+  const result = merge(f); reject(result, 'missing identity name'); assert.match(result.stderr, /source drift/);
+});
+
+test('identity correction validates both sides and cannot add runtime fields, change ID/group or duplicate a correction', t => {
+  const f = fixture(t), correction = identityCorrection(f);
+  for (const [side, field, value, message] of [
+    ['before', 'sourceUrls', ['http://example.test/old'], /Invalid identity correction before HTTPS sources/],
+    ['after', 'sourceUrls', [], /Invalid identity correction after HTTPS sources/],
+    ['after', 'asset', 'alien-forged', /Invalid identity correction after identity fields/],
+    ['after', 'dialFit', { scale: 1 }, /Invalid identity correction after identity fields/],
+    ['after', 'id', 'another-id', /must preserve ID and group/],
+    ['after', 'group', 'ua', /must preserve ID and group/],
+    ['before', 'aliases', 'wrong type', /Invalid identity correction before aliases/],
+    ['after', 'name', false, /Invalid identity correction after name/]
+  ]) {
+    const invalid = structuredClone(correction); invalid[side][field] = value;
+    f.plan.identityCorrections = [invalid]; savePlan(f);
+    const result = merge(f); reject(result, `${side}.${field}`); assert.match(result.stderr, message);
+  }
+  f.plan.identityCorrections = [correction, structuredClone(correction)]; savePlan(f);
+  let result = merge(f); reject(result, 'duplicate correction'); assert.match(result.stderr, /Duplicate identity correction/);
+  f.plan.identityCorrections = {}; savePlan(f);
+  result = merge(f); reject(result, 'non-list corrections'); assert.match(result.stderr, /Invalid identityCorrections list/);
+  f.plan.identityCorrections = [{ ...correction, extra: true }]; savePlan(f);
+  result = merge(f); reject(result, 'extra correction key'); assert.match(result.stderr, /Invalid identity correction fields/);
+});
+
+test('identity correction refuses overlaps with newForms and mergedForms', t => {
+  const f = fixture(t); f.plan.identityCorrections = [identityCorrection(f)];
+  f.plan.newForms = [identityOf(f.catalog.forms[0])]; savePlan(f);
+  let result = merge(f); reject(result, 'newForms overlap'); assert.match(result.stderr, /outside newForms/);
+  delete f.plan.newForms;
+  f.plan.identityCorrections = [identityCorrection(f, 'target')]; savePlan(f);
+  result = merge(f); reject(result, 'mergedForms target overlap'); assert.match(result.stderr, /overlaps mergedForms/);
+  f.plan.identityCorrections = [identityCorrection(f, 'old-target')]; savePlan(f);
+  result = merge(f); reject(result, 'mergedForms source overlap'); assert.match(result.stderr, /overlaps mergedForms/);
+});
+
+test('snapshot reimport retains identity corrections and produces stable fitted output', t => {
+  const f = fixture(t); f.plan.identityCorrections = [identityCorrection(f)]; savePlan(f);
+  const files = ['catalog.json', 'silhouettes.svg', 'provenance.json', 'dial-fit.json'];
+  const run = () => {
+    const result = runPython(f, [path.join(f.dir, 'scripts/import-catalog.py'), path.join(f.dir, 'snapshot')]);
+    assert.equal(result.status, 0, result.stderr || result.error?.message);
+    return files.map(file => digest(readFileSync(path.join(f.dir, 'assets', file))));
+  };
+  const first = run(); assert.deepEqual(run(), first);
+  const row = readJson(path.join(f.dir, 'assets/catalog.json')).forms.find(form => form.id === 'seed');
+  assert.deepEqual(identityOf(row), f.plan.identityCorrections[0].after);
+  assert.equal(row.asset, 'alien-seed'); assert.ok(row.dialFit.scale > 0);
+  assert.equal(readJson(path.join(f.dir, 'snapshot/catalog.json')).forms[0].appearance, 'Fixture Edition');
+});
+
+test('snapshot source identity drift rejects before overwriting live outputs even with optimization', t => {
+  const f = fixture(t); f.plan.identityCorrections = [identityCorrection(f)]; savePlan(f);
+  const snapshot = readJson(path.join(f.dir, 'snapshot/catalog.json')); snapshot.forms[0].appearance = 'Upstream changed';
+  writeJson(path.join(f.dir, 'snapshot/catalog.json'), snapshot);
+  const meta = readJson(path.join(f.dir, 'snapshot/display-library-cache-v2.json'));
+  meta.catalogJsonSha256 = digest(readFileSync(path.join(f.dir, 'snapshot/catalog.json')));
+  writeJson(path.join(f.dir, 'snapshot/display-library-cache-v2.json'), meta);
+  const files = ['catalog.json', 'silhouettes.svg', 'provenance.json'];
+  const before = files.map(file => digest(readFileSync(path.join(f.dir, 'assets', file))));
+  const result = runPython(f, ['-O', path.join(f.dir, 'scripts/import-catalog.py'), path.join(f.dir, 'snapshot')]);
+  reject(result, 'upstream identity drift'); assert.match(result.stderr, /Identity correction source drift/);
+  assert.deepEqual(files.map(file => digest(readFileSync(path.join(f.dir, 'assets', file)))), before);
+  assert.equal(existsSync(path.join(f.dir, 'assets/dial-fit.json')), false);
+});

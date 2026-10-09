@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "d97a3d81d4add5ab21a2739e9fc9f64c5753f81d50c3816d54234785937aefb3",
-  "shapeCount": 233,
+  "sourceSvgSha256": "61aa58251a8473ece8d019135f11295b7c8a9bf7a8ed0d93e7ae3a9d012ffc57",
+  "shapeCount": 235,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -814,6 +814,12 @@
       "diamondExtent": 1.613503,
       "visiblePixels": 538054
     },
+    "reboot-ripjaws": {
+      "scale": 0.621,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.400825,
+      "visiblePixels": 471375
+    },
     "reboot-spidermonkey": {
       "scale": 0.575,
       "method": "native-png-alpha-diamond-envelope",
@@ -1449,6 +1455,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.641894,
       "visiblePixels": 510399
+    },
+    "skurd-kickin-hawk-diamondhead-arm": {
+      "scale": 0.5949,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.46224,
+      "visiblePixels": 342791
     }
   }
 }

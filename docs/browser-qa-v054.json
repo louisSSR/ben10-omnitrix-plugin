@@ -1,0 +1,877 @@
+{
+  "version": "0.5.4",
+  "date": "2026-10-09",
+  "previewSha256": "d069f37db927d5e48605cbed2c4bba51d705fb1cfd67c5a5bba4da47f26e4fb3",
+  "modelSha256": "ef0f5fd6f46413e0f76cde88229309d7ba634ac9291d37e1073066dec5c6387b",
+  "modelCandidateSha256": "7ab76fa0691bbef93ee46d4b49fc5c0476140eb332ba2353ab60c059027026bd",
+  "rootModelReviewSha256": "0ee5019f7241d7768616ce7248bdf0982e71cf9ad88310ea589ca8c2c1cf8eb1",
+  "projectorFixReceiptSha256": "dcda1ae75438a1cb2e32075cc36d22bfb818a06a1f990aad8fe3272d59277b03",
+  "extraArtScriptSha256": "4a9af55fe1f0041bd30a64a53ecdfbc8888ef4fb039e67588c3e52a8535f5ae7",
+  "coverage": {
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
+  },
+  "tests": {
+    "total": 135,
+    "passed": 135,
+    "failed": 0,
+    "skipped": 0
+  },
+  "testLogSha256": "2fd69c8ce59d3822726113bded91c4486e72f1f961f862ad0561053df6f5c071",
+  "screenshots": [
+    "screenshots/v054-kickin-desktop-carousel.jpg",
+    "screenshots/v054-kickin-desktop-dial.jpg",
+    "screenshots/v054-kickin-desktop-projection.jpg",
+    "screenshots/v054-kickin-mobile-carousel.jpg",
+    "screenshots/v054-kickin-mobile-dial.jpg",
+    "screenshots/v054-kickin-mobile-projection.jpg",
+    "screenshots/v054-kickin-narrow-dial.jpg",
+    "screenshots/v054-ripjaws-desktop-carousel.jpg",
+    "screenshots/v054-ripjaws-desktop-dial.jpg",
+    "screenshots/v054-ripjaws-desktop-projection.jpg",
+    "screenshots/v054-ripjaws-mobile-carousel.jpg",
+    "screenshots/v054-ripjaws-mobile-dial.jpg",
+    "screenshots/v054-ripjaws-mobile-projection.jpg",
+    "screenshots/v054-ripjaws-narrow-dial.jpg",
+    "screenshots/v054-watch-af-desktop.jpg",
+    "screenshots/v054-watch-af-mobile.jpg",
+    "screenshots/v054-watch-original-desktop.jpg",
+    "screenshots/v054-watch-original-mobile.jpg",
+    "screenshots/v054-watch-ov-desktop.jpg",
+    "screenshots/v054-watch-ov-mobile.jpg",
+    "screenshots/v054-watch-ua-desktop.jpg",
+    "screenshots/v054-watch-ua-mobile.jpg"
+  ],
+  "shots": [
+    {
+      "file": "screenshots/v054-kickin-desktop-carousel.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 300.7875270843506,
+        "height": 30.95003318786621,
+        "left": 675.9862060546875,
+        "right": 817.6805114746094,
+        "top": 269.8374938964844,
+        "width": 141.69430541992188,
+        "x": 675.9862060546875,
+        "y": 269.8374938964844
+      },
+      "screenTransform": "matrix(1, 0.000897454, -0.000897454, 1, -70.8333, -15.4115)",
+      "scrollWidth": 1265,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "86679df4d488d455a20d683e0162a2736b40ee36d432ab34b3249ee1c774fb65"
+    },
+    {
+      "file": "screenshots/v054-kickin-desktop-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 472.78126525878906,
+        "height": 193.2291717529297,
+        "left": 650.21875,
+        "right": 843.4479217529297,
+        "top": 279.5520935058594,
+        "width": 193.2291717529297,
+        "x": 650.21875,
+        "y": 279.5520935058594
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 476.8020935058594,
+        "height": 201.27084350585935,
+        "left": 646.1979370117188,
+        "right": 847.4687805175781,
+        "top": 275.53125,
+        "width": 201.27084350585935,
+        "x": 646.1979370117188,
+        "y": 275.53125
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -100.635, -100.635)",
+      "scrollWidth": 1265,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "b8ae83e1f99a2da020e319f3f1b715f585c328382f8cf1ae2f44d4ef9dfae7f8"
+    },
+    {
+      "file": "screenshots/v054-kickin-desktop-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 208.46259117126465,
+        "height": 14.321004867553713,
+        "left": 696.802978515625,
+        "right": 796.8636932373047,
+        "top": 194.14158630371097,
+        "width": 100.06071472167967,
+        "x": 696.802978515625,
+        "y": 194.14158630371097
+      },
+      "screenTransform": "matrix(1, 0.000605459, -0.000605459, 1, -50.026, -7.13021)",
+      "scrollWidth": 1265,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "325a14a892ab54f33bdcde6ad4b87ae8ccf52df43f8b35ba7f3ee933673d8c6b"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-carousel.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 394.8602714538574,
+        "height": 20.710124969482425,
+        "left": 139.9126434326172,
+        "right": 234.74362182617188,
+        "top": 374.150146484375,
+        "width": 94.83097839355467,
+        "x": 139.9126434326172,
+        "y": 374.150146484375
+      },
+      "screenTransform": "matrix(1, 0.000897454, -0.000897454, 1, -47.4063, -10.3125)",
+      "scrollWidth": 375,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "8036702ecce349a6e8c08634e30633b7936937a55286285f25f5890ff093e413"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 494.87501525878906,
+        "height": 115.66667175292967,
+        "left": 129.5,
+        "right": 245.1666717529297,
+        "top": 379.2083435058594,
+        "width": 115.66667175292967,
+        "x": 129.5,
+        "y": 379.2083435058594
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 497.28126525878906,
+        "height": 120.47917175292967,
+        "left": 127.09375,
+        "right": 247.5729217529297,
+        "top": 376.8020935058594,
+        "width": 120.47917175292967,
+        "x": 127.09375,
+        "y": 376.8020935058594
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -60.2396, -60.2396)",
+      "scrollWidth": 375,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "6de3991466c9ca8df6c6bed92346a35a707333cd9441af57309c8cc4d1123dbe"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 443.6944274902344,
+        "height": 13.12841796875,
+        "left": 141.46481323242188,
+        "right": 233.19145965576172,
+        "top": 430.5660095214844,
+        "width": 91.72664642333984,
+        "x": 141.46481323242188,
+        "y": 430.5660095214844
+      },
+      "screenTransform": "matrix(1, 0.000605459, -0.000605459, 1, -45.8594, -6.53646)",
+      "scrollWidth": 375,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "07e13b9eeef38f186ec25054bdc7b125dfb143331a531bf4cde2237295812b5e"
+    },
+    {
+      "file": "screenshots/v054-kickin-narrow-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 483.1510620117187,
+        "height": 95.34375,
+        "left": 104.66146087646484,
+        "right": 200.00521087646484,
+        "top": 387.8073120117187,
+        "width": 95.34375,
+        "x": 104.66146087646484,
+        "y": 387.8073120117187
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 485.1302108764648,
+        "height": 99.30208587646484,
+        "left": 102.68229675292967,
+        "right": 201.98438262939453,
+        "top": 385.828125,
+        "width": 99.30208587646484,
+        "x": 102.68229675292967,
+        "y": 385.828125
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -49.651, -49.651)",
+      "scrollWidth": 305,
+      "selected": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 305,
+      "sha256": "afe9f7aa76815e291c43d7811478d3a630099416d2ce62326ca4f32ea37f41ec"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-carousel.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 300.7875270843506,
+        "height": 30.95003318786621,
+        "left": 675.9862060546875,
+        "right": 817.6805114746094,
+        "top": 269.8374938964844,
+        "width": 141.69430541992188,
+        "x": 675.9862060546875,
+        "y": 269.8374938964844
+      },
+      "screenTransform": "matrix(1, 0.000897454, -0.000897454, 1, -70.8333, -15.4115)",
+      "scrollWidth": 1265,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "77eb5acbd8f203fc9c0eaf54df138a9f9a6ac2402ffd9f947f5d7ab0272034c9"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 473.4479217529297,
+        "height": 193.2291717529297,
+        "left": 650.21875,
+        "right": 843.4479217529297,
+        "top": 280.21875,
+        "width": 193.2291717529297,
+        "x": 650.21875,
+        "y": 280.21875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 477.4687805175781,
+        "height": 201.27084350585935,
+        "left": 646.1979370117188,
+        "right": 847.4687805175781,
+        "top": 276.19793701171875,
+        "width": 201.27084350585935,
+        "x": 646.1979370117188,
+        "y": 276.19793701171875
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -100.635, -100.635)",
+      "scrollWidth": 1265,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "85fea5f195a1bbcf9b95d0ef8fc3eb675e46e4b6a99098e204ff23aeb2035fb1"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 372.4625654220581,
+        "height": 14.320963859558104,
+        "left": 696.802978515625,
+        "right": 796.8636932373047,
+        "top": 358.1416015625,
+        "width": 100.06071472167967,
+        "x": 696.802978515625,
+        "y": 358.1416015625
+      },
+      "screenTransform": "matrix(1, 0.000605459, -0.000605459, 1, -50.026, -7.13021)",
+      "scrollWidth": 1265,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "8aedd095be87e24c29a34ea7870c233e7f26b3984f91aeb9c5571f8173996183"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-carousel.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 394.8602714538574,
+        "height": 20.710124969482425,
+        "left": 139.9126434326172,
+        "right": 234.74362182617188,
+        "top": 374.150146484375,
+        "width": 94.83097839355467,
+        "x": 139.9126434326172,
+        "y": 374.150146484375
+      },
+      "screenTransform": "matrix(1, 0.000897454, -0.000897454, 1, -47.4063, -10.3125)",
+      "scrollWidth": 375,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "469400b34a988459c062cede2f487c0763d1561f60e280a6aa236aa4443a2331"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 494.2083587646485,
+        "height": 115.66667175292967,
+        "left": 129.5,
+        "right": 245.1666717529297,
+        "top": 378.5416870117187,
+        "width": 115.66667175292967,
+        "x": 129.5,
+        "y": 378.5416870117187
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 496.6146087646485,
+        "height": 120.47917175292967,
+        "left": 127.09375,
+        "right": 247.5729217529297,
+        "top": 376.1354370117187,
+        "width": 120.47917175292967,
+        "x": 127.09375,
+        "y": 376.1354370117187
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -60.2396, -60.2396)",
+      "scrollWidth": 375,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "d77d93332c3122d6c98550d90dcf63dc481b351a02cabcfe54d4e9e06b743927"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-projection.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 443.6944274902344,
+        "height": 13.12841796875,
+        "left": 141.46481323242188,
+        "right": 233.19145965576172,
+        "top": 430.5660095214844,
+        "width": 91.72664642333984,
+        "x": 141.46481323242188,
+        "y": 430.5660095214844
+      },
+      "screenTransform": "matrix(1, 0.000605459, -0.000605459, 1, -45.8594, -6.53646)",
+      "scrollWidth": 375,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "3d43cf04e61256d5c6a3f0726d1a118c64c70b06115d6318ef36423868e383ee"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-narrow-dial.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 483.1510620117187,
+        "height": 95.34375,
+        "left": 104.66146087646484,
+        "right": 200.00521087646484,
+        "top": 387.8073120117187,
+        "width": 95.34375,
+        "x": 104.66146087646484,
+        "y": 387.8073120117187
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 485.1302108764648,
+        "height": 99.30208587646484,
+        "left": 102.68229675292967,
+        "right": 201.98438262939453,
+        "top": 385.828125,
+        "width": 99.30208587646484,
+        "x": 102.68229675292967,
+        "y": 385.828125
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -49.651, -49.651)",
+      "scrollWidth": 305,
+      "selected": "Ripjaws",
+      "view": "low",
+      "watch": "original",
+      "width": 305,
+      "sha256": "05973f3411ab820e598fc07e37abd0b6ac75adc4c59c1d73b5cc2c6d6609bf30"
+    },
+    {
+      "file": "screenshots/v054-watch-af-desktop.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 528.4596481323242,
+        "height": 66.10677337646484,
+        "left": 681.697021484375,
+        "right": 811.9697723388672,
+        "top": 462.3528747558594,
+        "width": 130.2727508544922,
+        "x": 681.697021484375,
+        "y": 462.3528747558594
+      },
+      "screenTransform": "matrix(1, 0.00066018, -0.00066018, 1, -65.1146, -33.0104)",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "recalibrated",
+      "width": 1265,
+      "sha256": "54dbeefdd1b2f91fc68cae2d69eda8943ce505d4baca822a7a901fad59bfd68d"
+    },
+    {
+      "file": "screenshots/v054-watch-af-mobile.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 483.4091796875,
+        "height": 60.599609375,
+        "left": 127.61544799804688,
+        "right": 247.0407943725586,
+        "top": 422.8095703125,
+        "width": 119.42534637451172,
+        "x": 127.61544799804688,
+        "y": 422.8095703125
+      },
+      "screenTransform": "matrix(1, 0.00066018, -0.00066018, 1, -59.6927, -30.2604)",
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "recalibrated",
+      "width": 375,
+      "sha256": "b753e3b49a56d0ab657d14bf4e95f902841c1354c2cbce2a842e39f4eb5f2069"
+    },
+    {
+      "file": "screenshots/v054-watch-original-desktop.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 407.5296020507813,
+        "height": 54.4967041015625,
+        "left": 692.7221069335938,
+        "right": 800.9446029663086,
+        "top": 353.03289794921875,
+        "width": 108.22249603271484,
+        "x": 692.7221069335938,
+        "y": 353.03289794921875
+      },
+      "screenTransform": "matrix(1, 0.000450828, -0.000450828, 1, -54.099, -27.224)",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "left",
+      "watch": "original",
+      "width": 1265,
+      "sha256": "deff1a7f2dc4fa4f7da1322cbc818e4e939523fe75728bf8e1f8b96af9788318"
+    },
+    {
+      "file": "screenshots/v054-watch-original-mobile.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 443.6944274902344,
+        "height": 13.12841796875,
+        "left": 141.46481323242188,
+        "right": 233.19145965576172,
+        "top": 430.5660095214844,
+        "width": 91.72664642333984,
+        "x": 141.46481323242188,
+        "y": 430.5660095214844
+      },
+      "screenTransform": "matrix(1, 0.000605459, -0.000605459, 1, -45.8594, -6.53646)",
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "low",
+      "watch": "original",
+      "width": 375,
+      "sha256": "1dc2fbf220338daa1d1af60b71fc0a1953f543c626cc0fa97463d19da93c5921"
+    },
+    {
+      "file": "screenshots/v054-watch-ov-desktop.jpg",
+      "art": "model",
+      "core": "false",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 515.0468902587891,
+        "height": 91.13542175292967,
+        "left": 700.1823120117188,
+        "right": 793.4843978881836,
+        "top": 423.9114685058594,
+        "width": 93.30208587646484,
+        "x": 700.1823120117188,
+        "y": 423.9114685058594
+      },
+      "screenTransform": "matrix(1, 0, 0, 1, -46.651, -45.5677)",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "top",
+      "watch": "omniverse",
+      "width": 1265,
+      "sha256": "1cd7d4d34a9db6c01cffcbeed8a3c5d2e9202452f829185fe8ad77e4c07d2fe2"
+    },
+    {
+      "file": "screenshots/v054-watch-ov-mobile.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 461.5915937423706,
+        "height": 14.360270500183104,
+        "left": 146.91244506835938,
+        "right": 227.7437973022461,
+        "top": 447.2313232421875,
+        "width": 80.83135223388672,
+        "x": 146.91244506835938,
+        "y": 447.2313232421875
+      },
+      "screenTransform": "matrix(1, 0.00059089, -0.00059089, 1, -40.4115, -7.15625)",
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "low",
+      "watch": "omniverse",
+      "width": 375,
+      "sha256": "fedfe69620e180d6de586a63ec7aabc8cdaa9c89b9a66e8f16df7e4f63531f84"
+    },
+    {
+      "file": "screenshots/v054-watch-ua-desktop.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 444.9221725463867,
+        "height": 55.21932220458984,
+        "left": 696.0538940429688,
+        "right": 797.6128158569336,
+        "top": 389.7028503417969,
+        "width": 101.55892181396484,
+        "x": 696.0538940429688,
+        "y": 389.7028503417969
+      },
+      "screenTransform": "matrix(1, -0.000313428, 0.000313428, 1, -50.7708, -27.5938)",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "view": "right",
+      "watch": "ultimatrix",
+      "width": 1265,
+      "sha256": "7004c7e79ec6fee4af22c0a4bf92648683a443c4eb5e71332aa8a111049fa844"
+    },
+    {
+      "file": "screenshots/v054-watch-ua-mobile.jpg",
+      "art": "model",
+      "core": "true",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 510.1031303405762,
+        "height": 50.61246871948242,
+        "left": 140.77853393554688,
+        "right": 233.8777313232422,
+        "top": 459.49066162109375,
+        "width": 93.09919738769533,
+        "x": 140.77853393554688,
+        "y": 459.49066162109375
+      },
+      "screenTransform": "matrix(1, -0.000313428, 0.000313428, 1, -46.5417, -25.2917)",
+      "scrollWidth": 375,
+      "selected": "火焰人",
+      "view": "right",
+      "watch": "ultimatrix",
+      "width": 375,
+      "sha256": "3f377f5a0fe2375c706d9060eb88b03fcf398cd3c172727b958c94683d0550d9"
+    }
+  ],
+  "screenshotHashes": [
+    {
+      "file": "screenshots/v054-kickin-desktop-carousel.jpg",
+      "sha256": "86679df4d488d455a20d683e0162a2736b40ee36d432ab34b3249ee1c774fb65"
+    },
+    {
+      "file": "screenshots/v054-kickin-desktop-dial.jpg",
+      "sha256": "b8ae83e1f99a2da020e319f3f1b715f585c328382f8cf1ae2f44d4ef9dfae7f8"
+    },
+    {
+      "file": "screenshots/v054-kickin-desktop-projection.jpg",
+      "sha256": "325a14a892ab54f33bdcde6ad4b87ae8ccf52df43f8b35ba7f3ee933673d8c6b"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-carousel.jpg",
+      "sha256": "8036702ecce349a6e8c08634e30633b7936937a55286285f25f5890ff093e413"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-dial.jpg",
+      "sha256": "6de3991466c9ca8df6c6bed92346a35a707333cd9441af57309c8cc4d1123dbe"
+    },
+    {
+      "file": "screenshots/v054-kickin-mobile-projection.jpg",
+      "sha256": "07e13b9eeef38f186ec25054bdc7b125dfb143331a531bf4cde2237295812b5e"
+    },
+    {
+      "file": "screenshots/v054-kickin-narrow-dial.jpg",
+      "sha256": "afe9f7aa76815e291c43d7811478d3a630099416d2ce62326ca4f32ea37f41ec"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-carousel.jpg",
+      "sha256": "77eb5acbd8f203fc9c0eaf54df138a9f9a6ac2402ffd9f947f5d7ab0272034c9"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-dial.jpg",
+      "sha256": "85fea5f195a1bbcf9b95d0ef8fc3eb675e46e4b6a99098e204ff23aeb2035fb1"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-desktop-projection.jpg",
+      "sha256": "8aedd095be87e24c29a34ea7870c233e7f26b3984f91aeb9c5571f8173996183"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-carousel.jpg",
+      "sha256": "469400b34a988459c062cede2f487c0763d1561f60e280a6aa236aa4443a2331"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-dial.jpg",
+      "sha256": "d77d93332c3122d6c98550d90dcf63dc481b351a02cabcfe54d4e9e06b743927"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-mobile-projection.jpg",
+      "sha256": "3d43cf04e61256d5c6a3f0726d1a118c64c70b06115d6318ef36423868e383ee"
+    },
+    {
+      "file": "screenshots/v054-ripjaws-narrow-dial.jpg",
+      "sha256": "05973f3411ab820e598fc07e37abd0b6ac75adc4c59c1d73b5cc2c6d6609bf30"
+    },
+    {
+      "file": "screenshots/v054-watch-af-desktop.jpg",
+      "sha256": "54dbeefdd1b2f91fc68cae2d69eda8943ce505d4baca822a7a901fad59bfd68d"
+    },
+    {
+      "file": "screenshots/v054-watch-af-mobile.jpg",
+      "sha256": "b753e3b49a56d0ab657d14bf4e95f902841c1354c2cbce2a842e39f4eb5f2069"
+    },
+    {
+      "file": "screenshots/v054-watch-original-desktop.jpg",
+      "sha256": "deff1a7f2dc4fa4f7da1322cbc818e4e939523fe75728bf8e1f8b96af9788318"
+    },
+    {
+      "file": "screenshots/v054-watch-original-mobile.jpg",
+      "sha256": "1dc2fbf220338daa1d1af60b71fc0a1953f543c626cc0fa97463d19da93c5921"
+    },
+    {
+      "file": "screenshots/v054-watch-ov-desktop.jpg",
+      "sha256": "1cd7d4d34a9db6c01cffcbeed8a3c5d2e9202452f829185fe8ad77e4c07d2fe2"
+    },
+    {
+      "file": "screenshots/v054-watch-ov-mobile.jpg",
+      "sha256": "fedfe69620e180d6de586a63ec7aabc8cdaa9c89b9a66e8f16df7e4f63531f84"
+    },
+    {
+      "file": "screenshots/v054-watch-ua-desktop.jpg",
+      "sha256": "7004c7e79ec6fee4af22c0a4bf92648683a443c4eb5e71332aa8a111049fa844"
+    },
+    {
+      "file": "screenshots/v054-watch-ua-mobile.jpg",
+      "sha256": "3f377f5a0fe2375c706d9060eb88b03fcf398cd3c172727b958c94683d0550d9"
+    }
+  ],
+  "consoleErrorsAndWarnings": [],
+  "normalAnimationSelectionVerified": true,
+  "watchTransitionsVerified": true,
+  "physicalPhoneVerified": false,
+  "realHostVerified": false,
+  "humanAccepted": false,
+  "limits": [
+    "根代理在当前构建实际查看22幅画面；1265、375、305为浏览器页面可用宽度，未在真实手机测试。",
+    "已操作正常动态的形态切换、三种界面、四代手表、镜头和升芯开合；减少动态开启后下一项可切换，随后恢复正常动态。",
+    "手表为实体几何与近似材质；英雄全息仍为图片图层，不是角色三维模型。",
+    "环形界面当前仍为全身图；用户新提供XAPK的头像资料正在独立整理，本版不声称完成头像替换。",
+    "真实SillyTavern/SillyDroid、真实手机性能及用户视觉接受仍未验证。"
+  ]
+}

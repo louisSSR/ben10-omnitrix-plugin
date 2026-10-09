@@ -292,3 +292,44 @@ test('context loss releases GPU resources once and stale callbacks cannot revive
   assert.equal(h.batches.length, drawsAtDisposal);
   assert.deepEqual(h.unavailable, ['context-lost']);
 });
+
+test('circular dials keep upright content across generations, scales and near-square viewports', () => {
+  for (const watch of watches) {
+    const original = buildWatchGeometry(watch), digest = geometryDigest(original);
+    const pose = watchPose({ watch, mode: 'dial', view: 'left', raised: true });
+    for (const radius of [original.face.radius, .0001, .08, .168, .467, 1.2]) {
+      const geometry = { ...original, face: { ...original.face, radius } };
+      for (const aspect of [1, 1 - Number.EPSILON, 1 + Number.EPSILON, 1 - 1e-8, 1 + 1e-8, 1 - 2e-7, 1 + 2e-7]) {
+        const face = projectWatchFace(geometry, pose, aspect);
+        assert.equal(face.a, 0, `${watch}/radius=${radius}/aspect=${aspect}: a circular screen must not rotate the hero`);
+        assert.ok(face.w > 0 && face.h > 0 && Number.isFinite(face.w + face.h));
+        assert.ok(face.ellipseRatio > .99999, 'these fixtures are visually circular');
+      }
+    }
+    assert.equal(geometryDigest(original), digest, 'projection must not mutate geometry');
+  }
+});
+
+test('almost overhead round faces remain upright under tiny pitch and aspect perturbations', () => {
+  for (const watch of watches) {
+    const geometry = buildWatchGeometry(watch);
+    for (const azimuth of [0, .41, 1.2]) for (const aspect of [1 - 1e-8, 1, 1 + 1e-8]) {
+      const pose = { ...watchPose({ watch, mode: 'dial' }), azimuth, elevation: Math.PI / 2 - 1e-5 };
+      const before = structuredClone(pose), face = projectWatchFace(geometry, pose, aspect);
+      assert.ok(face.ellipseRatio > .99999, 'the near-overhead fixture is visually circular');
+      assert.equal(face.a, 0, `${watch}/${azimuth}/${aspect}: no arbitrary principal-axis rotation near a circle`);
+      assert.deepEqual(pose, before, 'axis stabilization does not change the camera pose');
+    }
+  }
+});
+
+test('clearly elliptical top-view projections retain their nondegenerate major-axis direction', () => {
+  for (const watch of watches) {
+    const geometry = buildWatchGeometry(watch), pose = watchPose({ watch, mode: 'dial' });
+    for (const aspect of [.5, .75, 1.4, 2]) {
+      const face = projectWatchFace(geometry, pose, aspect);
+      assert.ok(face.ellipseRatio < .85, `${watch}/${aspect}: not a degenerate circle`);
+      assert.equal(face.a, aspect < 1 ? 0 : 90, 'preserve normalized-canvas ellipse orientation outside the circular limit');
+    }
+  }
+});

@@ -1,11 +1,11 @@
 {
-  "builtAt": "2026-10-09T17:38:48.772Z",
-  "sha256": "b0b16ec285294be8a346346b6312dd4a1764ebf0bf091ccdaf0491b5ef762f85",
-  "bytes": 374225,
+  "builtAt": "2026-10-09T18:28:16.717Z",
+  "sha256": "d069f37db927d5e48605cbed2c4bba51d705fb1cfd67c5a5bba4da47f26e4fb3",
+  "bytes": 385418,
   "coverage": {
-    "total": 235,
-    "reviewed": 233,
-    "missing": 2
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
   },
   "watchArt": [
     {
@@ -81,7 +81,7 @@
   "watchModel": {
     "renderer": "local-webgl-geometry",
     "source": "watch-model.js",
-    "sha256": "f7cd07a3d42e5a7c00eeee7e5c19cdf2faa2448087991b644baf814a96cdc56f",
+    "sha256": "ef0f5fd6f46413e0f76cde88229309d7ba634ac9291d37e1073066dec5c6387b",
     "generations": 4,
     "sharedGeometryAcrossViews": true,
     "artFallbackRetained": true,
@@ -89,8 +89,8 @@
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 246,
-  "runtimeBytes": 114841162,
-  "runtimeManifestSha256": "e14ec6b3d3552ea1e37de536ac65424949c0a026a5837c8ae9a2460f46e5a3c8",
-  "browserEvidence": "docs/browser-qa-v053.json"
+  "runtimeFiles": 248,
+  "runtimeBytes": 116856354,
+  "runtimeManifestSha256": "d15b5900cbdbedba14c609d226f0bb087b91b0e1124d0f8ec7280d84e2723b28",
+  "browserEvidence": "docs/browser-qa-v054.json"
 }

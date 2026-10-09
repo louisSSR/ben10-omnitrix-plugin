@@ -21,9 +21,9 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 235,
-    "reviewed": 233,
-    "missing": 2
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
   },
   "forms": [
     {
@@ -3295,13 +3295,25 @@
       "name": null,
       "en": "Ripjaws",
       "group": "reboot",
-      "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
+      "appearance": "Ben 10 (2016 reboot), Alien X-Tinction (2021). Alternate Gwen 10 uses this Ripjaws design; community footage transformation continuity observed. Distinct version representation, not a new species.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-ripjaws",
       "sourceUrls": [
-        "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
-        "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+        "https://www.youtube.com/watch?v=19JIOioADxQ",
+        "https://ben10.fandom.com/wiki/Alien_X-Tinction/Transcript",
+        "https://ben10.fandom.com/wiki/Ripjaws_(Reboot)"
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=19JIOioADxQ&t=28s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference redraw from the 28.609727-second running frame of a community-uploaded Alien X-Tinction comparison clip, supported by the same fish body at 28.100355 seconds. Root observed the human Gwen 10 to Ripjaws sequence at 27.039163, 27.760774 and 28.100355 seconds. The full existing running pose, two arms, two legs, head lure/fins, waist garment and two blue back-reservoir ends are retained. Fine face, claws, reservoir connections, fins and garment markings are interpretations of low-resolution animation screenshots. This is not official transparent artwork, an official uploader source, or exact pixel extraction.",
+      "dialFit": {
+        "scale": 0.621,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.400825,
+        "visiblePixels": 471375
+      }
     },
     {
       "id": "reboot-spidermonkey",
@@ -5937,6 +5949,36 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.641894,
         "visiblePixels": 510399
+      }
+    },
+    {
+      "id": "skurd-kickin-hawk-diamondhead-arm",
+      "name": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "en": "Kickin' Hawk (Skurd Diamondhead Arm and Sword)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Third Time's a Charm. Skurd equips Kickin' Hawk with a Diamondhead-derived crystal arm and a separately held crystal sword during the fight with dragon Charmcaster. One partial-DNA body state of an existing transformation, not a separate species. Visible geometry is supported by official screenshots; donor naming is separately corroborated by community episode history.",
+      "aliases": [
+        "Skurd Kickin Hawk Diamondhead",
+        "Kickin Hawk Crystal Arm and Sword",
+        "威力鹰 Skurd 钻石臂",
+        "踢击鹰 Skurd 水晶剑"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+        "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://ben10.fandom.com/wiki/Third_Time%27s_a_Charm"
+      ],
+      "asset": "alien-skurd-kickin-hawk-diamondhead-arm",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference reconstruction of the actually inspected official Cartoon Network Dragon Charmcaster screenshot at 55.813333 seconds. The primary three-quarter upright upper body, swept crest, huge pale-blue crystal forearm, gripping crystal hand and separate vertical blue/violet sword are retained. The torso below the source crop, ordinary opposite hand, hips, long legs and birdlike feet are conservative AI continuation; a motion-blurred 66.149137-second jumping/back-side view of the same host guides only broad leg/foot proportions, not the exact generated stance. Fine face, fingers, badge, green coating, crystal facets and clothing/leg markings are interpreted. This is not official transparent artwork or an exact complete-body pixel extraction.",
+      "dialFit": {
+        "scale": 0.5949,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.46224,
+        "visiblePixels": 342791
       }
     }
   ]
