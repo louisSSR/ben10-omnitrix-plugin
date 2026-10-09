@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "7a3a967a643ccf42edcdcaf4b10e06d0582a50ea997a11b01e86f6c580b4ef88",
-  "svgSha256": "1080559404068533dc1292e049d363a910ada544dcfa2e25805f80fe102e7726",
+  "catalogSha256": "b7dca5c910804972a1bf18186fe37b944b16ef0fbd21bda9b8a67a201373bba9",
+  "svgSha256": "6f50daee83f78604db80b3dffadae4366ea03686f249e466013e880fdabbef91",
   "coverage": {
     "total": 224,
-    "reviewed": 183,
-    "missing": 41
+    "reviewed": 184,
+    "missing": 40
   },
   "assets": [
     {
@@ -1616,6 +1616,16 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "0ab0896637519bc5fdc637239522308c12c6805e5dae32b0b5599857d7d2f0d8",
       "maskSha256": "6bbea0d0a0f1c836490f46868a7ce74cd12d2a16d05c6aa478f2ac5860862718",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-monster-kevin-which-watch",
+      "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "pageUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official verified @cartoonnetwork clip, no open license asserted. AI transparent output is reference-guided interpretative artwork, not official production transparent art or exact extraction.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "9a6bd45043bf1c527b7a2942d1807bac270460d2bbaf8c3f5f6e5ea1df9aabcd",
+      "maskSha256": "3cb3beb958bb91b8ccd3e90d8ceca83578ae50c981bce5217a98b5f2bf531db0",
       "contentType": "image/png"
     }
   ],

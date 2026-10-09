@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 183,
-    "missing": 41
+    "reviewed": 184,
+    "missing": 40
   },
   "forms": [
     {
@@ -4130,11 +4130,22 @@
       "group": "fusion",
       "appearance": "Which Watch; Antitrix amalgamation. Descriptive title, not a confirmed official alien name.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-monster-kevin-which-watch",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix",
         "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=c-RzwyY0ovY"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-multi-reference-interpretative-redraw-of-official-cn-animation-frames",
+      "dialFit": {
+        "scale": 0.6682,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.301834,
+        "visiblePixels": 742146
+      }
     },
     {
       "id": "reboot-monster-kevin-tales",

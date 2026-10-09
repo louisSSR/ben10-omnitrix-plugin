@@ -3097,6 +3097,159 @@
         "observation": "Actually viewed settled black diamond dial and green projection on desktop and the stated mobile-width iframe. Complete visible coil tips, claws, limbs and wingbeat effects fit inside the diamond. No visible detached scene residue and no horizontal overflow. Wingbeat strokes remain part of Skunkmoth action silhouette, not anatomical wings.",
         "realPhone": false
       }
+    },
+    {
+      "formId": "reboot-monster-kevin-which-watch",
+      "sourceFile": "assets/source-art/monster-kevin-source-240969.png",
+      "sourceSha256": "9a6bd45043bf1c527b7a2942d1807bac270460d2bbaf8c3f5f6e5ea1df9aabcd",
+      "maskFile": "assets/source-art/reboot-monster-kevin-which-watch-multireference-edit.png",
+      "maskSha256": "3cb3beb958bb91b8ccd3e90d8ceca83578ae50c981bce5217a98b5f2bf531db0",
+      "pageUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-multi-reference-interpretative-redraw-of-official-cn-animation-frames",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official verified @cartoonnetwork clip, no open license asserted. AI transparent output is reference-guided interpretative artwork, not official production transparent art or exact extraction.",
+      "observations": "All three source captures actually viewed. Primary contains the full outer contour of curled airborne Monster Kevin: purple wings, golden spikes, mane, armored chest, three different arm positions per side, and a green coiled serpentine lower body. A small central Charmcaster and her external glowing spellbook are removed in output. The slender red arm/claw is informed by support248969; chest/face by support235969. Output actual view retains six heterogeneous arms, paired wings, green coil, and attached flame/circuitry/mechanical-wrist structures, with no human walking legs.",
+      "limitations": [
+        "AI multi-reference interpretation and enlarged linework, not pixel-identical extraction. Small chest/arm regions originally occluded by Charmcaster/book are reconstructed from observed neighboring details.",
+        "Fine fingers, flame edge curves, circuit tracings, armor seams, spike proportions and mechanical wrist/canister details are approximated. Do not present output as a canonical model sheet.",
+        "Source support248969 is partly occluded by Humungousaur, and support235969 crops the body and includes browser UI. Only visible details were used; primary240969 supplies pose and outside contour.",
+        "Head/episode identity belongs to Which Watch. Tales from the Omnitrix is a separately held story fusion and is not populated by this image.",
+        "Root subsequently viewed the current desktop and 390/320px black dial/projection. Full action contour fits; low-alpha residue remains in raw pixels, with no visibly detached exterior block at delivery sizes."
+      ],
+      "adoptionBasis": "Root actually compared official animation captures and raw AI reference output, confirmed Which Watch episode identity using observed anatomy and official episode synopsis, then viewed the current desktop and mobile black dial/projection. Minor central contact reconstruction and fine-detail redraw are explicitly retained.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+        "playbackSeconds": 240.969066,
+        "paused": true,
+        "uploader": "Cartoon Network",
+        "channelHandle": "@cartoonnetwork",
+        "officialUploaderObserved": true,
+        "observedBy": "root CUA; all saved images independently viewed by subagent",
+        "sourceSize": [
+          980,
+          551
+        ],
+        "nativeVideoSize": [
+          1280,
+          720
+        ],
+        "allVisibleContourInsideSource": true,
+        "smallOverlap": "Charmcaster/book overlap central chest and slender red arm; repaired from neighboring source details"
+      },
+      "editionEvidence": {
+        "episode": "Which Watch",
+        "officialEpisodeUrl": "https://tv.apple.com/us/episode/which-watch/umc.cmc.pem5fmri4sh1g1b0lhmdwmgt?showId=umc.cmc.3t7brfiivfbeszy8drfj1fuoz",
+        "officialTextDirectlyRead": true,
+        "summary": "Apple TV official synopsis directly read: Which Watch concerns Space Camp and Charmcaster behind Kevin. Actual neighboring video frames show the Humungousaur fight and fire near the spellbook. Six heterogeneous arms and coiled tail match this edition; space backdrop alone is insufficient."
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/monster-kevin-support-red-arm-248969.png",
+          "sha256": "7989f9b8e3b0017c6d9b7656ca9d298675397e053496dc9068df1d9e338244df",
+          "bytes": 52036,
+          "size": [
+            980,
+            551
+          ],
+          "playbackSeconds": 248.969059,
+          "role": "Visible slender red arm/claw and attached flame, circuitry, wing and wrist detail. Humungousaur occludes much of torso; not used as output pose.",
+          "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+          "sourceKind": "official-animation-browser-capture",
+          "sourceViewed": true
+        },
+        {
+          "file": "assets/source-art/monster-kevin-support-head-235969.png",
+          "sha256": "0395a7dee795790a13c43a88d1c0968ed2716aa0038f95901e52bfa3318ccb03",
+          "bytes": 61489,
+          "size": [
+            980,
+            551
+          ],
+          "playbackSeconds": 235.969053,
+          "role": "Head/chest closeup and official uploader/title context. Screenshot includes browser/page UI and white area, all excluded from output. Not a complete body source.",
+          "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+          "sourceKind": "official-animation-browser-capture",
+          "sourceViewed": true
+        }
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nCreate one transparent character asset from these ACTUALLY VIEWED animation references: Monster Kevin from the Ben 10 Reboot episode Which Watch. This is a faithful multi-reference interpretative redraw, not a new design and not the Tales from the Omnitrix version.\n\nImage 1, monster-kevin-source-240969, is the PRIMARY POSE. Preserve its exact floating curled full-body configuration, body proportions, face angle, paired purple wings, golden back spikes, black-and-white mane, purple-black armored chest with red Antitrix badge, and the single thick green segmented serpentine lower body coiled toward image-right. He has NO walking legs.\nPreserve precisely SIX mismatched arms in the original arrangement:\n- upper image-left is the attached purple/magenta flame arm and flame claw, extending left;\n- upper image-right is the huge lavender faceted crystal arm ending in the original pointed crystal fingers;\n- middle image-left is the black limb with purple circuit lines and its dark multi-pronged hand, extending down-left;\n- middle image-right is the golden-brown branching tentacle arm reaching downward across the right side of the green coil;\n- lower image-left is the skinny red arm and slender red claw;\n- lower image-right is the mechanical gray multi-pronged claw with its ORIGINAL orange/black forearm housing, pale blue circular hub and yellow/silver wrist components. These mechanical wrist parts are attached anatomy and must remain.\nDo not add or merge arms, replace any arm with another material, duplicate wings, add legs, change the coil, or convert this into a standing humanoid.\n\nRemove ONLY the separate small gray-haired purple-clothed woman overlapping the center-left chest/arm area, the external bright purple rectangular floating spellbook near the skinny red hand, and the entire starfield/space environment. Reconstruct only the small chest/arm-contact areas hidden by that woman/book using the nearby references; do not remove connected character flame, circuitry, wrist devices or mechanical-claw parts as though they were props.\n\nImage 2, monster-kevin-support-red-arm-248969, is a DETAIL reference for the fully visible skinny red arm/claw, wing contours, attached flame claw, circuitry and mechanical wrist. Remove and ignore the separate brown dinosaur-like fighter; do NOT adopt this fighting pose or copy the crop.\nImage 3, monster-kevin-support-head-235969, is only a close HEAD/CHEST detail reference for the purple face with four eyes, black hair/white mane, armor and Antitrix. Ignore the entire browser interface, white webpage, caption, title banner and text; do NOT use it as composition.\n\nRendering: clean enlarged flat 2D animation linework and original purple/black/gold/green/red colors. Complete visible curled action body and ALL original extremities contained inside comfortable transparent margins. Genuine alpha-transparent background. No text, watermark, page UI, stars, scenery, ground, shadows, external glow, checkerboard texture, extra people or added accessories. Preserve attached flame as solid animation shapes with clean edges; no large foggy halo. Keep this exact source action and six-arm identity.",
+        "attempt": 1,
+        "rawOutputSha256": "3cb3beb958bb91b8ccd3e90d8ceca83578ae50c981bce5217a98b5f2bf531db0",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1672,
+          940
+        ],
+        "range": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          0,
+          0,
+          1652,
+          940
+        ],
+        "thresholdBBoxes": {
+          "16": [
+            49,
+            8,
+            1608,
+            937
+          ],
+          "128": [
+            50,
+            8,
+            1607,
+            936
+          ],
+          "240": [
+            51,
+            9,
+            1606,
+            934
+          ]
+        },
+        "zeroPixels": 829534,
+        "oneTo15Pixels": 44475,
+        "sixteenTo127Pixels": 10754,
+        "atLeast128Pixels": 686917,
+        "cornerAlpha": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "currentUIReview": {
+        "version": "0.3.7",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          390,
+          320
+        ],
+        "actualClientWidths": [
+          390,
+          320
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed settled black diamond dial and green projection on desktop and both mobile-width iframes. Six arms, wings, mane and coiled tail fit inside diamond. No visible detached scene residue or horizontal overflow at these delivery sizes. Projection remains layered 2.5D.",
+        "realPhone": false
+      }
     }
   ],
   "mergedForms": [

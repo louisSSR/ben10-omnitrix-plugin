@@ -1,0 +1,74 @@
+{
+  "version": "0.3.7",
+  "checkedAt": "2026-10-09T07:30:17.581Z",
+  "previewSha256": "05ec53e8fc4a624e40f229782e00a0026011f08468dc37f417cc5bcf543eea6c",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; mobile widths are responsive-preview iframes, not physical phones",
+  "coverage": {
+    "total": 224,
+    "reviewed": 184,
+    "missing": 40
+  },
+  "added": [
+    "reboot-monster-kevin-which-watch"
+  ],
+  "checks": {
+    "rootSourceAndOutputViewed": [
+      "reboot-monster-kevin-which-watch"
+    ],
+    "rootCurrentDialAndProjectionViewed": [
+      "reboot-monster-kevin-which-watch"
+    ],
+    "mobileDialAndProjectionViewed": [
+      {
+        "formId": "reboot-monster-kevin-which-watch",
+        "targetWidth": 390,
+        "clientWidth": 390,
+        "scrollWidth": 390
+      },
+      {
+        "formId": "reboot-monster-kevin-which-watch",
+        "targetWidth": 320,
+        "clientWidth": 320,
+        "scrollWidth": 320
+      }
+    ],
+    "oldRuntimeImagesByteExact": 187,
+    "filterReset": {
+      "before": "1 / 224",
+      "after": "224 / 224",
+      "finalQuery": "",
+      "readyOnly": false
+    },
+    "finalSelection": {
+      "hero": "Heatblast",
+      "watch": "original",
+      "mode": "carousel"
+    },
+    "projectionKind": "2.5D layered silhouettes; not complete 3D models"
+  },
+  "screenshots": [
+    "screenshots/v037-monster-dial.png",
+    "screenshots/v037-monster-projection.png",
+    "screenshots/v037-mobile-dial.png",
+    "screenshots/v037-mobile-projection.png",
+    "screenshots/v037-final-preview.png"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": {
+    "count": 1,
+    "message": "MutationObserver.observe parameter 1 is not of type Node",
+    "timestamp": "2026-10-09T07:26:08.705Z",
+    "source": "unattributed; same class observed in previous harness runs"
+  },
+  "automated": {
+    "tests": 93,
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0
+  },
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}
