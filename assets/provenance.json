@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "562e86a696f61ba157cd9d06771234ba70b1477053064c87314ca5c2333fe10e",
-  "svgSha256": "f9089ca574cc0293605a3a2980b405c0c63fc5cac73074074e635257d790164d",
+  "catalogSha256": "164bb6200af085df4c42ded956baf676b69c9ad72a357179570a9e1697421914",
+  "svgSha256": "ac6d0b10965401e31469b73f8ee4f1c132c74064025b4d024a23d0ab451c19d7",
   "coverage": {
-    "total": 224,
-    "reviewed": 222,
+    "total": 226,
+    "reviewed": 224,
     "missing": 2
   },
   "assets": [
@@ -2006,6 +2006,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "481a910ce2b8edda96b9e94f6c93de905f58449758d8d0de734f15aa1fd4231c",
       "maskSha256": "49c0b7e8b1315bc6de2ce5c9d3c295675dce3adb74d3309cad4df691067b50c7",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "kevin-11-os-amalgam",
+      "url": "https://i.pinimg.com/originals/13/b9/86/13b9868423149e64a53654e8b7a4c49a.png",
+      "pageUrl": "https://www.pinterest.com/pin/kevin-11was-kevin-levins-third-mutation-caused-by-the-energy-he-absorbed-from-the-prototype-omnitrix-going-out-of-con--755830749982888378/",
+      "rights": "Underlying Ben10 character/animation artwork remains copyrighted. Original transparent drawing artist and reuse licence are unknown. Pinterest/CDN public availability does not grant redistribution rights; no official production-art provenance or open licence is asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+      "maskSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "clockwork-techno-bubble-enhanced",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/techno-bubbled_clockwork.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+      "rights": "Underlying Ben 10 character and image rights remain with their rights holders. Ben10Hero is a community repost/reference website; redistribution permission and an open license are unverified.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+      "maskSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
       "contentType": "image/png"
     }
   ],

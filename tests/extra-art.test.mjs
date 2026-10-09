@@ -61,7 +61,7 @@ function fixture(t) {
     { id: 'target', name: '目标', en: 'Target', group: 'ua', appearance: 'Fixture Edition', aliases: ['Existing Alias'], asset: null, sourceUrls: ['https://example.test/target'], visualVerified: false },
     { id: 'old-target', name: '旧名称', en: 'Target (Old label)', group: 'ua', appearance: 'Fixture Edition', aliases: ['Legacy spelling'], asset: null, sourceUrls: ['https://example.test/old'], visualVerified: false }
   ];
-  const catalog = { schemaVersion: 1, groups: [], coverage: { total: 3, reviewed: 1, missing: 2 }, forms };
+  const catalog = { schemaVersion: 1, groups: { os: 'Original Series', ua: 'Ultimate Alien' }, coverage: { total: 3, reviewed: 1, missing: 2 }, forms };
   const symbol = `<symbol id="alien-seed" viewBox="0 0 200 240"><image href="data:image/png;base64,${png.toString('base64')}" width="200" height="240"/></symbol>`;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg">${symbol}</svg>`;
   const plan = { schemaVersion: 1, assets: [{
@@ -108,6 +108,9 @@ function merged(f, times = 1) {
 }
 
 function savePlan(f) { writeJson(path.join(f.dir, 'assets/extra-art.json'), f.plan); }
+function newForm(id = 'new-body') {
+  return { id, name: null, en: 'New Body', group: 'os', appearance: 'Fixture Edition', aliases: ['New alias'], sourceUrls: ['https://example.test/new-body'] };
+}
 function reject(result, message) {
   assert.equal(result.error, undefined);
   assert.notEqual(result.status, 0, message + ': unexpectedly accepted');
@@ -207,6 +210,77 @@ test('merges reject a different edition or a second already reviewed body', t =>
 test('repeating the same merge is byte-for-byte and structurally idempotent', t => {
   const f = fixture(t);
   assert.deepEqual(merged(f, 2), merged(f, 1));
+});
+
+test('new identity rows stay pending without separately reviewed art or a dial fit', t => {
+  const f = fixture(t); f.plan.newForms = [newForm()]; savePlan(f);
+  const result = merged(f, 2), row = result.catalog.forms.find(form => form.id === 'new-body');
+  assert.deepEqual(result.catalog.coverage, { total: 3, reviewed: 2, missing: 1 });
+  assert.deepEqual(row, { ...newForm(), asset: null });
+  assert.equal(result.provenance.assets.some(asset => asset.formId === row.id), false);
+  assert.equal(result.svg.includes('id="alien-new-body"'), false);
+  const fitted = runPython(f, [path.join(f.dir, 'scripts/extra_art.py')]);
+  assert.equal(fitted.status, 0, fitted.stderr);
+  assert.equal(readJson(path.join(f.dir, 'assets/dial-fit.json')).fits['new-body'], undefined);
+  assert.equal(readJson(path.join(f.dir, 'assets/catalog.json')).forms.find(form => form.id === row.id).dialFit, undefined);
+});
+
+test('new reviewed bodies survive repeated merges and snapshot reimports with identical fitted output', t => {
+  const f = fixture(t); f.plan.newForms = [newForm()];
+  f.plan.assets.push({ ...f.plan.assets[0], formId: 'new-body' }); savePlan(f);
+  assert.deepEqual(merged(f, 2), merged(f));
+  const importer = path.join(f.dir, 'scripts/import-catalog.py');
+  const files = ['catalog.json', 'silhouettes.svg', 'provenance.json', 'dial-fit.json'];
+  const run = () => {
+    const result = runPython(f, [importer, path.join(f.dir, 'snapshot')]);
+    assert.equal(result.status, 0, result.stderr || result.error?.message);
+    return files.map(file => digest(readFileSync(path.join(f.dir, 'assets', file))));
+  };
+  const first = run(); assert.deepEqual(run(), first);
+  const catalog = readJson(path.join(f.dir, 'assets/catalog.json'));
+  assert.deepEqual(catalog.coverage, { total: 3, reviewed: 3, missing: 0 });
+  const row = catalog.forms.find(form => form.id === 'new-body');
+  assert.equal(row.asset, 'alien-new-body'); assert.ok(row.dialFit.scale > 0);
+  assert.equal(catalog.forms.filter(form => form.id === row.id).length, 1);
+  assert.equal(readJson(path.join(f.dir, 'assets/provenance.json')).catalogSha256, digest(readFileSync(path.join(f.dir, 'assets/catalog.json'))));
+});
+
+test('existing identity rows allow generated runtime fields but reject identity conflicts', t => {
+  const f = fixture(t); f.plan.mergedForms = [];
+  const identity = Object.fromEntries(['id', 'name', 'en', 'group', 'appearance', 'aliases', 'sourceUrls'].map(field => [field, f.catalog.forms[1][field]]));
+  f.plan.newForms = [identity]; savePlan(f);
+  assert.deepEqual(merged(f, 2), merged(f));
+  for (const field of ['name', 'en', 'group', 'appearance', 'aliases', 'sourceUrls']) {
+    const changed = structuredClone(identity);
+    changed[field] = field === 'group' ? 'os' : Array.isArray(changed[field]) ? ['https://example.test/conflicting'] : 'Conflicting';
+    f.plan.newForms = [changed]; savePlan(f);
+    const result = merge(f); reject(result, `identity conflict: ${field}`);
+    assert.match(result.stderr, /Conflicting new form identity/);
+  }
+});
+
+test('new rows reject duplicate IDs, malformed identity fields and forged runtime metadata', t => {
+  const f = fixture(t);
+  f.plan.newForms = [newForm(), newForm()]; savePlan(f);
+  let result = merge(f); reject(result, 'duplicate new ID'); assert.match(result.stderr, /Duplicate new form ID/);
+  for (const [field, value, message] of [
+    ['id', '../body', /Invalid new form ID/], ['id', 1, /Invalid new form ID/], ['id', '---', /Invalid new form ID/],
+    ['name', '', /Invalid new form name/], ['name', false, /Invalid new form name/],
+    ['en', ' ', /Invalid new form label/], ['en', null, /Invalid new form label/],
+    ['appearance', '', /Invalid new form label/], ['appearance', [], /Invalid new form label/],
+    ['group', 'unknown', /Unknown new form group/], ['group', [], /Unknown new form group/],
+    ['aliases', 'alias', /Invalid new form aliases/], ['aliases', [1], /Invalid new form aliases/],
+    ['sourceUrls', [], /Invalid new form HTTPS sources/], ['sourceUrls', ['http://example.test/body'], /Invalid new form HTTPS sources/],
+    ['sourceUrls', ['https://'], /Invalid new form HTTPS sources/], ['sourceUrls', [false], /Invalid new form HTTPS sources/],
+    ['asset', 'alien-forged', /Invalid new form identity fields/], ['dialFit', { scale: 1 }, /Invalid new form identity fields/]
+  ]) {
+    f.plan.newForms = [{ ...newForm(), [field]: value }]; savePlan(f);
+    result = merge(f); reject(result, `invalid new row ${field}`); assert.match(result.stderr, message);
+  }
+  f.plan.newForms = [newForm()]; delete f.plan.newForms[0].name; savePlan(f);
+  result = merge(f); reject(result, 'missing identity field'); assert.match(result.stderr, /Invalid new form identity fields/);
+  f.plan.newForms = {}; savePlan(f);
+  result = merge(f); reject(result, 'newForms is not an array'); assert.match(result.stderr, /Invalid newForms list/);
 });
 
 test('snapshot import retains supplements and repeated imports produce identical output', t => {

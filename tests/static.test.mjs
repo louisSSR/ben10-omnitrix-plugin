@@ -23,7 +23,7 @@ const inlineSvg = sourceSvg.replace(/href="runtime\/([a-f0-9]{64})\.(png|avif)"/
 const sourceCatalog = JSON.parse(read('assets/catalog.json'));
 const extraArt = JSON.parse(read('assets/extra-art.json'));
 const expectedReviewed = 98 + extraArt.assets.length;
-const expectedTotal = 225 - (extraArt.mergedForms || []).length;
+const expectedTotal = 225 + (extraArt.newForms || []).length - (extraArt.mergedForms || []).length;
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
 const catalogScripts = scripts.filter(match => /\bid=["']catalog-data["']/i.test(match[1]));
 assert.equal(catalogScripts.length, 1, 'exactly one embedded catalog');

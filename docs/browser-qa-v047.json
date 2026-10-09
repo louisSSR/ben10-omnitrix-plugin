@@ -1,0 +1,257 @@
+{
+  "version": "0.4.7",
+  "checkedAt": "2026-10-09T14:07:31.051Z",
+  "previewSha256": "53f200fc5cd99f384efca616b65760cd81402ba34b6d63d9fe12208cbc4469af",
+  "shots": [
+    {
+      "file": "screenshots/v047-kevin-11-dial.jpg",
+      "selected": "Kevin 11 (Original Series Amalgam)",
+      "mode": "dial",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-kevin-11-projection.jpg",
+      "selected": "Kevin 11 (Original Series Amalgam)",
+      "mode": "projection",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-kevin-11-ring.jpg",
+      "selected": "Kevin 11 (Original Series Amalgam)",
+      "mode": "carousel",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-dial.jpg",
+      "selected": "Clockwork enhanced by Techno-Bubble",
+      "mode": "dial",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-projection.jpg",
+      "selected": "Clockwork enhanced by Techno-Bubble",
+      "mode": "projection",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-ring.jpg",
+      "selected": "Clockwork enhanced by Techno-Bubble",
+      "mode": "carousel",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v047-kevin-11-mobile-dial.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v047-kevin-11-mobile-projection.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 390,
+            "scrollWidth": 390
+          }
+        },
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v047-kevin-11-mobile-ring.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Kevin 11 (Original Series Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-mobile-dial.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-mobile-projection.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v047-clockwork-enhanced-mobile-ring.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Clockwork enhanced by Techno-Bubble",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    }
+  ],
+  "console": {
+    "desktop": [],
+    "mobileComposite": [
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-09T13:59:09.195Z"
+      }
+    ]
+  },
+  "rootActuallyViewed": true,
+  "physicalPhoneVerified": false,
+  "realSillyTavernVerified": false,
+  "humanAccepted": false,
+  "interactionNote": "两次连续跨 iframe 切模式时右框未立即切换，读取实际 data-mode 后分别操作并重拍；未定位根因，不称为没有交互异常。最终12张截图的选中对象及模式逐项核对。",
+  "coverage": {
+    "total": 226,
+    "reviewed": 224,
+    "missing": 2
+  },
+  "selectedIds": [
+    "kevin-11-os-amalgam",
+    "clockwork-techno-bubble-enhanced"
+  ],
+  "screenshots": [
+    "screenshots/v047-kevin-11-dial.jpg",
+    "screenshots/v047-kevin-11-projection.jpg",
+    "screenshots/v047-kevin-11-ring.jpg",
+    "screenshots/v047-clockwork-enhanced-dial.jpg",
+    "screenshots/v047-clockwork-enhanced-projection.jpg",
+    "screenshots/v047-clockwork-enhanced-ring.jpg",
+    "screenshots/v047-kevin-11-mobile-dial.jpg",
+    "screenshots/v047-kevin-11-mobile-projection.jpg",
+    "screenshots/v047-kevin-11-mobile-ring.jpg",
+    "screenshots/v047-clockwork-enhanced-mobile-dial.jpg",
+    "screenshots/v047-clockwork-enhanced-mobile-projection.jpg",
+    "screenshots/v047-clockwork-enhanced-mobile-ring.jpg"
+  ],
+  "consoleAssessment": "Desktop log query returned no errors. The mobile composite recorded one MutationObserver.observe parameter-not-Node error with no source URL; attribution unresolved. Recorded final selections and modes rendered correctly; this is not a claim of an error-free runtime.",
+  "fourGenerationGeometry": "32 pre-rendered watch frames retained from 0.4.0; no new watch redraw or continuous 3D mesh in this asset update."
+}

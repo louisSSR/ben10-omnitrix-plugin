@@ -7615,6 +7615,269 @@
         "sourceLimitationsPreserved": true,
         "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
       }
+    },
+    {
+      "formId": "kevin-11-os-amalgam",
+      "url": "https://i.pinimg.com/originals/13/b9/86/13b9868423149e64a53654e8b7a4c49a.png",
+      "pageUrl": "https://www.pinterest.com/pin/kevin-11was-kevin-levins-third-mutation-caused-by-the-energy-he-absorbed-from-the-prototype-omnitrix-going-out-of-con--755830749982888378/",
+      "rights": "Underlying Ben10 character/animation artwork remains copyrighted. Original transparent drawing artist and reuse licence are unknown. Pinterest/CDN public availability does not grant redistribution rights; no official production-art provenance or open licence is asserted.",
+      "renderMode": "source-alpha",
+      "sourceFile": "assets/source-art/kevin-11-os-community-alpha-original.png",
+      "maskFile": "assets/source-art/kevin-11-os-community-alpha-original.png",
+      "sourceSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+      "maskSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+      "artProvenance": "Native community transparent drawing of the original-series Kevin11 alien-DNA amalgam. Whole composite body is recognizable against the independently viewed first-mutation animation screenshot; no AI generation or pixel editing was performed. Original author/publication unverified, exact drawing details not official-certified.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "originalBytesUnchanged": true,
+      "sourceCapture": {
+        "kind": "community-transparent-drawing",
+        "downloadedBy": "root",
+        "downloadMethod": "literal image_query-exposed URL, HTTP200",
+        "originalBytesUnchanged": true,
+        "originPageUrl": "https://www.pinterest.com/pin/kevin-11was-kevin-levins-third-mutation-caused-by-the-energy-he-absorbed-from-the-prototype-omnitrix-going-out-of-con--755830749982888378/",
+        "originPageHttpStatus": 403,
+        "originPageRead": false,
+        "originPageStopped": true,
+        "producerPublicationVerified": false,
+        "nativeSize": [
+          963,
+          1080
+        ],
+        "sourceAndMaskSameFile": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/kevin-11-os-animation-support-original.png",
+          "sha256": "717daac3803adefcb176cfa6a53f5364735ebc57163eb9634f17b57358e3f3e3",
+          "bytes": 216631,
+          "format": "PNG",
+          "size": [
+            403,
+            305
+          ],
+          "mode": "RGBA",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevin_11_1st_mutation.png",
+          "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+          "role": "Actually viewed cropped original-series first-mutation animation-image repost. Supports Framed identity and visible composite upper-body characteristics only; all alpha255 and bottom limbs cropped. Not feet reconstruction evidence.",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true
+        }
+      ],
+      "identitySources": [
+        {
+          "url": "https://tv.apple.com/us/episode/framed/umc.cmc.5dni3y327ebiq59haej5584vd?showId=umc.cmc.1vgxcrs7n1wt84y56xv4xn818",
+          "role": "Root actually read licensed-distributor Framed S2E3 metadata describing the amalgamation; not a newly watched original frame by this agent."
+        },
+        {
+          "url": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+          "role": "Actually downloaded community character page with explicit Framed first-mutation linkage and Kevin_11_1st_mutation image label."
+        }
+      ],
+      "observations": [
+        "Independently actually viewed the 963x1080 transparent file. One non-human full body has four complete fists/hands and two complete bent legs/feet, torn brown trousers, red muscular torso, green crystal image-left upper arm, fiery image-right upper arm, two orange furry lower arms, pale-yellow insect wings and a long blue/black-striped curved tail.",
+        "Wing tips, crystal hand, fiery hand, lower fists, tail tip and both feet remain inside the canvas. No visible broad edge cut, extra character, logo or opaque background was seen.",
+        "Composite face includes red skin, dark hair and a glowing asymmetric eye/eye-stalk feature; this was compared against the original-series mutation screenshot rather than normal human Kevin or the reboot Antitrix bodies.",
+        "Raw source and proposed mask are the same native transparent bitmap; this review did not create or recolor a mask. Pure-black watch/render acceptance is deferred to root."
+      ],
+      "limitations": [
+        "Community transparent drawing/cutout with an unverified original artist and publication chain. Not a verified studio original, official model sheet or AI-generated reconstruction.",
+        "The native PNG was obtained by root via the exact publicly exposed image_query URL with HTTP200, before a subsequent attempt to read the Pinterest origin page returned HTTP403. That source page remains unread and stopped; its slug is not used to establish mutation order, episode identity or official provenance.",
+        "Identity/edition is separately supported by the actually viewed Ben10Hero first-mutation animation image and its Framed linkage, plus root-observed AppleTV licensed Framed episode metadata. Those sources do not authenticate the transparent drawing original artist or publication.",
+        "The complete community pose differs from the forward-bent action in the animation support frame. The four-arm count, crystal/fire upper arms, orange small lower arms, insect wings, striped tail and composite head/torso match the visible original-series characteristics; precise wing clefts, fingers, red legs/feet and costume lines are not certified pixel-exact by that cropped support frame.",
+        "The original animation support image is opaque RGBA(alpha255) and cuts the lower body/legs and fiery-side limb continuation. It is retained unchanged solely as identity/design reference, not complete alpha or proof of hidden feet.",
+        "Native 963x1080 PNG retains original bytes: positive-alpha bbox[65,25,946,1049], alpha>=128 bbox[66,26,946,1048], canvas-edge alpha maxima0. No body crop or background cleanup was performed. Fine antialias pixels remain (alpha1..15:867; alpha16..127:3931).",
+        "Current watch UI, physical phone, real SillyTavern and driver acceptance remain unverified for this new entry. Reuse permission unknown."
+      ],
+      "alphaInspection": {
+        "sha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+        "bytes": 165860,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          963,
+          1080
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          65,
+          25,
+          946,
+          1049
+        ],
+        "strongAlphaBBox": [
+          66,
+          26,
+          946,
+          1048
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 867,
+        "midAlpha16to127": 3931,
+        "sourceBytesUnchanged": true,
+        "programmaticPixelEdits": false
+      },
+      "generation": {
+        "performed": false,
+        "tool": null,
+        "programmaticPixelEdits": false
+      },
+      "uiReview": {
+        "version": "0.4.7",
+        "checkedAt": "2026-10-09T14:07:31.051Z",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "desktopClientWidth": 1265,
+        "mobileFrameWidths": [
+          390,
+          320
+        ],
+        "observedMobileClientWidths": [
+          390,
+          375,
+          305
+        ],
+        "sourceSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+        "maskSha256": "7eed381e2222866651d1fe58cb38b020b9576eada3e03b3f0b67d443f6ba2c17",
+        "inspectedPreviewSha256": "53f200fc5cd99f384efca616b65760cd81402ba34b6d63d9fe12208cbc4469af",
+        "physicalPhoneVerified": false,
+        "realSillyTavernVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "observation": "Root viewed full silhouettes in the diamond, hologram and ring on desktop and both narrow iframe layouts. No horizontal overflow in recorded views. Community-source attribution limits remain unchanged."
+      }
+    },
+    {
+      "formId": "clockwork-techno-bubble-enhanced",
+      "sourceFile": "assets/source-art/clockwork-techno-bubble-enhanced-original.png",
+      "sourceSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+      "maskFile": "assets/source-art/clockwork-techno-bubble-enhanced-original.png",
+      "maskSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/04/techno-bubbled_clockwork.png",
+      "renderMode": "source-alpha",
+      "artProvenance": "Native transparent character cutout hosted by Ben10Hero community reference page, visually corresponding to the enhanced Clockwork in the page's animation screenshot mirrors. Original cutout artist, official upstream publisher and exact story-arc part unverified; not asserted to be official alpha artwork.",
+      "rights": "Underlying Ben 10 character and image rights remain with their rights holders. Ben10Hero is a community repost/reference website; redistribution permission and an open license are unverified.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "observations": "Actual views of the 480x480 cutout show the complete visible character with a tall three-pronged crown, black body and cyan circuitry, long projecting hands, both arms, both cylindrical feet, an upper-chest hourglass emblem and retained green gear window. Two actual animation screenshot mirrors show the same crown, circuitry, torso and limb design. The currently registered ordinary OV16 Clockwork is gold with a broad two-holed winding-key head and shorter block-like hands. The enhanced drawing therefore changes visible outer geometry as well as colour and pattern, supporting a separate temporary fusion/enhancement state rather than a new species.",
+      "limitations": [
+        "Upstream cutout artist, original transparent-file publisher and redistribution license are unknown.",
+        "No official uploaded episode/frame or complete merging sequence has been independently played in this task.",
+        "The animation mirrors are contextual support, and the transparent character drawing may have cleaned/retraced outlines; exact production-model fidelity is not asserted.",
+        "There is a small amount of semi-transparent edge colour, preserved as downloaded; no current black UI or native rendering review performed.",
+        "The two story-arc parts are supported by secondary indexed summaries; precise episode assignment and the complete merging sequence have not been played in this task.",
+        "Original cutout alpha and all PNG bytes are preserved; the native edge includes 3200 pixels with alpha 1..127. No current UI, black silhouette, physical phone or driver acceptance is claimed."
+      ],
+      "adoptionBasis": "Proposed native-alpha community-hosted reference for a distinct temporary Clockwork/Techno-Bubble mechanical enhancement. Owner performs integration and actual UI review; no new alien species or official alpha origin asserted.",
+      "generation": {
+        "tool": null,
+        "performed": false,
+        "prompt": null,
+        "reason": "Native RGBA character cutout retained without pixel editing or generation.",
+        "finalOutputBytesUnchanged": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/clockwork-techno-bubble-enhanced-scene-640.png",
+          "sha256": "cdb34f8f9259abdf3d9b38bf7f58d6708eea8915149935b64d6f8694da282f1c",
+          "url": "https://ben10hero.com/wp-content/uploads/2017/04/iambw1_640.png",
+          "role": "Community-hosted animation screenshot: enhanced black/cyan Clockwork firing chest time beam; exact story-arc part and official upload chain unverified."
+        },
+        {
+          "file": "assets/source-art/clockwork-techno-bubble-enhanced-scene-641.png",
+          "sha256": "37234269a6a29e106b6c0a86d94eddcbc4b008c1e55a926bcd76d12a30beb4c8",
+          "url": "https://ben10hero.com/wp-content/uploads/2017/04/iambw1_641.png",
+          "role": "Community-hosted animation screenshot: enhanced black/cyan Clockwork firing chest time beam; exact story-arc part and official upload chain unverified."
+        }
+      ],
+      "alphaInspection": {
+        "size": [
+          480,
+          480
+        ],
+        "extrema": [
+          0,
+          255
+        ],
+        "bboxAtAlpha1": [
+          3,
+          7,
+          475,
+          475
+        ],
+        "bboxAtAlpha128": [
+          4,
+          8,
+          474,
+          474
+        ],
+        "strongAlphaEdgePixels": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "partialAlpha1to127Pixels": 3200
+      },
+      "sourceCapture": {
+        "kind": "community-hosted-transparent-character-cutout",
+        "host": "Ben10Hero",
+        "officialWebsite": false,
+        "upstreamArtistConfirmed": false,
+        "upstreamOfficialPublicationConfirmed": false
+      },
+      "additionalVideoObservation": {
+        "url": "https://www.youtube.com/watch?v=P9_-KHmRv88",
+        "channel": "UB CRASH",
+        "observedAtSeconds": 464.71,
+        "readyState": 4,
+        "actuallyViewed": true,
+        "observation": "Community commentary video shows animation back view with matching three-prong crown and black/cyan circuit body; exact episode part and full merging sequence remain unverified."
+      },
+      "uiReview": {
+        "version": "0.4.7",
+        "checkedAt": "2026-10-09T14:07:31.051Z",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "desktopClientWidth": 1265,
+        "mobileFrameWidths": [
+          390,
+          320
+        ],
+        "observedMobileClientWidths": [
+          390,
+          375,
+          305
+        ],
+        "sourceSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+        "maskSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+        "inspectedPreviewSha256": "53f200fc5cd99f384efca616b65760cd81402ba34b6d63d9fe12208cbc4469af",
+        "physicalPhoneVerified": false,
+        "realSillyTavernVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "observation": "Root viewed full silhouettes in the diamond, hologram and ring on desktop and both narrow iframe layouts. No horizontal overflow in recorded views. Community-source attribution limits remain unchanged."
+      }
     }
   ],
   "mergedForms": [
@@ -7622,6 +7885,37 @@
       "from": "shocksquatch-hu",
       "into": "shocksquatch",
       "reason": "Both existing rows name the same Heroes United design and appearance; the separately retained shocksquatch-ov row is the different Omniverse design."
+    }
+  ],
+  "newForms": [
+    {
+      "id": "kevin-11-os-amalgam",
+      "name": "凯文11（初代融合体）",
+      "en": "Kevin 11 (Original Series Amalgam)",
+      "group": "fusion",
+      "appearance": "Framed (Ben 10 Original Series, Season 2 Episode 3); alien-DNA amalgam, not ordinary human Kevin.",
+      "aliases": [
+        "Kevin 11 OS Amalgam",
+        "Kevin 11 Original Series Mutation"
+      ],
+      "sourceUrls": [
+        "https://tv.apple.com/us/episode/framed/umc.cmc.5dni3y327ebiq59haej5584vd?showId=umc.cmc.1vgxcrs7n1wt84y56xv4xn818",
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/"
+      ]
+    },
+    {
+      "id": "clockwork-techno-bubble-enhanced",
+      "name": "时钟王（Techno-Bubble 强化）",
+      "en": "Clockwork enhanced by Techno-Bubble",
+      "group": "fusion",
+      "appearance": "Omniverse: It's a Mad, Mad, Mad Ben World storyline; exact part of retained community animation mirrors unverified",
+      "aliases": [
+        "Techno-Bubbled Clockwork",
+        "Upgraded Clockwork"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ]
     }
   ]
 }

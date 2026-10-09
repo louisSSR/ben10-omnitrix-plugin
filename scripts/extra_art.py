@@ -3,12 +3,25 @@ from pathlib import Path
 import base64, hashlib, io, json, re, struct, subprocess, sys
 from PIL import Image
 from art_files import hydrate_svg, externalize_svg
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+IDENTITY_FIELDS = ('id', 'name', 'en', 'group', 'appearance', 'aliases', 'sourceUrls')
 
 def require(condition, message):
     if not condition:
         raise ValueError(message)
+
+
+def https_source(value):
+    if not isinstance(value, str) or any(char.isspace() for char in value):
+        return False
+    try:
+        parsed = urlsplit(value)
+        return parsed.scheme == 'https' and bool(parsed.hostname)
+    except ValueError:
+        return False
+
 
 def merge_extra_art(catalog, svg_bytes, provenance):
     svg_bytes = hydrate_svg(svg_bytes, ROOT / 'assets')
@@ -19,6 +32,28 @@ def merge_extra_art(catalog, svg_bytes, provenance):
     extras = plan['assets']
     svg = svg_bytes.decode('utf-8')
     forms = {form['id']: form for form in catalog['forms']}
+    new_forms = plan.get('newForms', [])
+    require(isinstance(new_forms, list), 'Invalid newForms list')
+    new_ids = set()
+    for row in new_forms:
+        require(isinstance(row, dict) and set(row) == set(IDENTITY_FIELDS), 'Invalid new form identity fields')
+        key = row['id']
+        require(isinstance(key, str) and re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', key), 'Invalid new form ID')
+        require(key not in new_ids, 'Duplicate new form ID: '+key)
+        new_ids.add(key)
+        require(row['name'] is None or isinstance(row['name'], str) and row['name'].strip(), 'Invalid new form name: '+key)
+        require(all(isinstance(row[field], str) and row[field].strip() for field in ('en', 'appearance')), 'Invalid new form label: '+key)
+        require(isinstance(catalog.get('groups'), dict) and isinstance(row['group'], str) and row['group'] in catalog['groups'], 'Unknown new form group: '+key)
+        require(isinstance(row['aliases'], list) and all(isinstance(alias, str) and alias.strip() for alias in row['aliases']), 'Invalid new form aliases: '+key)
+        require(isinstance(row['sourceUrls'], list) and row['sourceUrls'] and all(https_source(url) for url in row['sourceUrls']), 'Invalid new form HTTPS sources: '+key)
+        if key in forms:
+            require(all(forms[key].get(field) == row[field] for field in IDENTITY_FIELDS), 'Conflicting new form identity: '+key)
+        else:
+            # Identity alone never makes a selectable silhouette. The reviewed
+            # art loop below is the only path that assigns an asset.
+            form = {**row, 'aliases': row['aliases'].copy(), 'sourceUrls': row['sourceUrls'].copy(), 'asset': None}
+            catalog['forms'].append(form)
+            forms[key] = form
     seen = set()
     for entry in extras:
         key = entry['formId']

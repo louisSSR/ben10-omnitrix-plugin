@@ -19,6 +19,7 @@ for (const entry of runtime.files) {
   if (!files.includes(entry.path)) files.push(entry.path);
 }
 const supplemental = JSON.parse(readFileSync(path.join(root, 'assets/extra-art.json')));
+if (existsSync(path.join(root, 'docs/catalog-scope.md'))) files.push('docs/catalog-scope.md');
 const reviewKey = version.replaceAll('.', '');
 files.push('assets/extra-art.json', 'docs/build-receipt.json', `docs/review-v${reviewKey}.md`, `docs/browser-qa-v${reviewKey}.json`);
 if (existsSync(path.join(root, `docs/asset-migration-v${reviewKey}.json`))) files.push(`docs/asset-migration-v${reviewKey}.json`);

@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 224,
-    "reviewed": 222,
+    "total": 226,
+    "reviewed": 224,
     "missing": 2
   },
   "forms": [
@@ -5618,6 +5618,59 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.133333,
         "visiblePixels": 9732
+      }
+    },
+    {
+      "id": "kevin-11-os-amalgam",
+      "name": "凯文11（初代融合体）",
+      "en": "Kevin 11 (Original Series Amalgam)",
+      "group": "fusion",
+      "appearance": "Framed (Ben 10 Original Series, Season 2 Episode 3); alien-DNA amalgam, not ordinary human Kevin.",
+      "aliases": [
+        "Kevin 11 OS Amalgam",
+        "Kevin 11 Original Series Mutation"
+      ],
+      "sourceUrls": [
+        "https://tv.apple.com/us/episode/framed/umc.cmc.5dni3y327ebiq59haej5584vd?showId=umc.cmc.1vgxcrs7n1wt84y56xv4xn818",
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/"
+      ],
+      "asset": "alien-kevin-11-os-amalgam",
+      "visualSourceUrls": [
+        "https://www.pinterest.com/pin/kevin-11was-kevin-levins-third-mutation-caused-by-the-energy-he-absorbed-from-the-prototype-omnitrix-going-out-of-con--755830749982888378/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "Native community transparent drawing of the original-series Kevin11 alien-DNA amalgam. Whole composite body is recognizable against the independently viewed first-mutation animation screenshot; no AI generation or pixel editing was performed. Original author/publication unverified, exact drawing details not official-certified.",
+      "dialFit": {
+        "scale": 0.552,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.575805,
+        "visiblePixels": 339927
+      }
+    },
+    {
+      "id": "clockwork-techno-bubble-enhanced",
+      "name": "时钟王（Techno-Bubble 强化）",
+      "en": "Clockwork enhanced by Techno-Bubble",
+      "group": "fusion",
+      "appearance": "Omniverse: It's a Mad, Mad, Mad Ben World storyline; exact part of retained community animation mirrors unverified",
+      "aliases": [
+        "Techno-Bubbled Clockwork",
+        "Upgraded Clockwork"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ],
+      "asset": "alien-clockwork-techno-bubble-enhanced",
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "Native transparent character cutout hosted by Ben10Hero community reference page, visually corresponding to the enhanced Clockwork in the page's animation screenshot mirrors. Original cutout artist, official upstream publisher and exact story-arc part unverified; not asserted to be official alpha artwork.",
+      "dialFit": {
+        "scale": 0.6008,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.447917,
+        "visiblePixels": 110733
       }
     }
   ]
