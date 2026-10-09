@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "bbce18253ce369f5af00f6c2e3d95e3e6147f63f4b83f1c403c1a2539bcae0b7",
-  "svgSha256": "3aa8679659565e16f258e4c7da16f4573263bae272352c1d151d22cc74a19d2a",
+  "catalogSha256": "562e86a696f61ba157cd9d06771234ba70b1477053064c87314ca5c2333fe10e",
+  "svgSha256": "f9089ca574cc0293605a3a2980b405c0c63fc5cac73074074e635257d790164d",
   "coverage": {
     "total": 224,
-    "reviewed": 219,
-    "missing": 5
+    "reviewed": 222,
+    "missing": 2
   },
   "assets": [
     {
@@ -1976,6 +1976,36 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "436266b1d234d5da074faafda25208e9dac91adc45702aa02bdb47a240c4fb86",
       "maskSha256": "b4879a131ae2263fe0a609adaf57338dc31a680e0ebed3fcb4cabb5bb81313f6",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "game-portaler",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN0SzFbTJuAGwhgoLYxKTV8h1iSR8PvnebbSh2cGpJ7dXfFJKcS_zEdFnMWsQ9rLTeEIgVKZI7unfR4fLUlTfOhjGIwMiUrLW4xKSTQaP6YgqYpcZ7SF39aoMtAZ_ybOydFeAeV5nR7ZLS/s1600/New+alien+Ben+10+ov.png",
+      "pageUrl": "https://gameben10online.blogspot.com/2013/05/",
+      "rights": "Underlying Ben 10 and Fuel Run artwork remains copyrighted. The 2013 Blogger page is an independent community repost, not a verified publisher art release or open licence. Generated output is disclosed AI interpretative art, not official transparent production art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "90f40537e7b6f44a283d3df4a4ccbea4383261999eef1a51ec58a07984269909",
+      "maskSha256": "23c1917ac253d2b4d3cd7e75c3e7d23b7e6e7710def8f5f1904c519f0e3e4087",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "game-rath-arms",
+      "url": "https://www.maqio.com/cdn/shop/products/0F-JJGM-YSWH-2.jpg?v=1658138530",
+      "pageUrl": "https://www.maqio.com/products/ben-10-action-figure-four-arms-omni-glitch",
+      "rights": "Underlying Ben 10 characters, toy designs and retailer product photographs remain copyrighted. Retailer publication and sale do not confer a redistribution licence; permission is unknown. This is a disclosed AI reference interpretation of a photographed interchangeable toy configuration, not official transparent original art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "1b0861d289f19eb536b88a1ab767d69d66c42f98501d592c6a385b03df46a52b",
+      "maskSha256": "eb3706afe5ceb3a233dab3aa64b960a3d4cfb1731325145e2fd493886a4e5169",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-anti-vilgax",
+      "url": "https://www.youtube.com/watch?v=xkrfNOzgZKM&t=3858s",
+      "pageUrl": "https://www.youtube.com/watch?v=xkrfNOzgZKM&t=3858s",
+      "rights": "Underlying Ben 10 characters and original animation remain copyrighted. ToonRecapz is a community recap upload; public availability does not grant redistribution permission. Permission is unknown. This generated transparent reference reconstruction is disclosed, not official original production art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "481a910ce2b8edda96b9e94f6c93de905f58449758d8d0de734f15aa1fd4231c",
+      "maskSha256": "49c0b7e8b1315bc6de2ce5c9d3c295675dce3adb74d3309cad4df691067b50c7",
       "contentType": "image/png"
     }
   ],

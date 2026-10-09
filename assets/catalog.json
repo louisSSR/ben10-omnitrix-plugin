@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 219,
-    "missing": 5
+    "reviewed": 222,
+    "missing": 2
   },
   "forms": [
     {
@@ -4310,11 +4310,22 @@
       "group": "fusion",
       "appearance": "Ben 10 Versus the Universe: The Movie; Vilgax Antitrix amalgamation.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-anti-vilgax",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix",
         "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=xkrfNOzgZKM&t=3858s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference reconstruction from actually viewed ToonRecapz community animation screenshot at3858.475396s. Four-armed Anti-Vilgax design retained; cropped feet/lower legs and raised crystal fingertips interpretively completed. Not official transparent art or exact canonical anatomy.",
+      "dialFit": {
+        "scale": 0.6368,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.366055,
+        "visiblePixels": 660214
+      }
     },
     {
       "id": "reboot-alien-v",
@@ -4347,10 +4358,21 @@
       "group": "extra",
       "appearance": "Fuel Run; actual official online-game transformation, non-canon to the classic TV continuity. Later commissioned Omniverse-style redraw is not the game source.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-game-portaler",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Portaler"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://gameben10online.blogspot.com/2013/05/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided reconstruction of the original Fuel Run game version from two 2013 community-blog game-frame reposts. Detailed introductory head/torso/arms are combined with same-game small full-body proportions; the dialogue-obscured lower body and limb-end lines are interpretatively restored.",
+      "dialFit": {
+        "scale": 0.6393,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.360687,
+        "visiblePixels": 774678
+      }
     },
     {
       "id": "game-rath-arms",
@@ -4359,11 +4381,22 @@
       "group": "extra",
       "appearance": "Ben 10 Heroes and toy line; actual mobile-game Omni-Glitch fusion of Four Arms/Rath, non-canon to TV.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-game-rath-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Rath_Arms",
         "https://ben10.fandom.com/wiki/Heroes"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.maqio.com/products/ben-10-action-figure-four-arms-omni-glitch"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Toy reference reconstruction: Maqio photographs of the Ben-Four Arms-Rath Omni-Glitch interchangeable product provide the body and packaged Four Arms red spare alien head. One built-in AI edit replaces only the human Ben head with that photographed spare and preserves the four-arm, single-orange-arm/single-orange-leg arrangement. The reconstructed toy configuration is not a game screenshot; differences from the Ben 10 Heroes model are unconfirmed. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.5657,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.537746,
+        "visiblePixels": 521759
+      }
     },
     {
       "id": "game-shock-blast",

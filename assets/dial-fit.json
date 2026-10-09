@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "3aa8679659565e16f258e4c7da16f4573263bae272352c1d151d22cc74a19d2a",
-  "shapeCount": 219,
+  "sourceSvgSha256": "f9089ca574cc0293605a3a2980b405c0c63fc5cac73074074e635257d790164d",
+  "shapeCount": 222,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -1060,11 +1060,29 @@
       "diamondExtent": 1.585933,
       "visiblePixels": 581952
     },
+    "reboot-anti-vilgax": {
+      "scale": 0.6368,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.366055,
+      "visiblePixels": 660214
+    },
     "reboot-alien-v": {
       "scale": 0.5933,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.466146,
       "visiblePixels": 848897
+    },
+    "game-portaler": {
+      "scale": 0.6393,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.360687,
+      "visiblePixels": 774678
+    },
+    "game-rath-arms": {
+      "scale": 0.5657,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.537746,
+      "visiblePixels": 521759
     },
     "game-shock-blast": {
       "scale": 0.5733,

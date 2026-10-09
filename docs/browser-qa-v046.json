@@ -1,0 +1,365 @@
+{
+  "version": "0.4.6",
+  "checkedAt": "2026-10-09T13:21:15.104000+00:00",
+  "previewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc",
+  "screenshotCapturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc",
+  "screenshotCaptureReviewCheckedAt": "2026-10-09T13:18:59.593661+00:00",
+  "finalReloadPreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc",
+  "finalReloadCheckedAt": "2026-10-09T13:21:15.104000+00:00",
+  "screenshotsRecapturedAfterFinalize": false,
+  "visualDependenciesUnchanged": {
+    "snapshotSha256": "0d98b15154fe1a75fde6853cd20eb97b3c68abe627cdffe426742ecbe698f6e6",
+    "sourceFiles": [
+      {
+        "path": "app.js",
+        "bytes": 32782,
+        "sha256": "83f46bbc2b4f4e233c3a17f1328c30e78efa1ee474aad8cb3e24bcce249f80ae"
+      },
+      {
+        "path": "core.js",
+        "bytes": 7958,
+        "sha256": "723196d8d0649b99ffa30f1179ac04866cea7fde2c5b677a3623ff8e71a3b9cf"
+      },
+      {
+        "path": "styles.css",
+        "bytes": 52191,
+        "sha256": "437fa33be1ec86db23bdd9fa78b36ed5ef061434141cc67358d858cbb7738f2c"
+      },
+      {
+        "path": "preview.shell.html",
+        "bytes": 10842,
+        "sha256": "6479ea8e75e764871bd83c12ba6a19ec2a788640214ab1efc5e397c4bab6b43e"
+      },
+      {
+        "path": "assets/catalog.json",
+        "bytes": 207695,
+        "sha256": "562e86a696f61ba157cd9d06771234ba70b1477053064c87314ca5c2333fe10e"
+      },
+      {
+        "path": "assets/dial-fit.json",
+        "bytes": 40298,
+        "sha256": "07e30ba52742662d9b36d1f963aac4632b373f4c9b0ce3054e8294492127239c"
+      },
+      {
+        "path": "assets/silhouettes.svg",
+        "bytes": 57276,
+        "sha256": "f9089ca574cc0293605a3a2980b405c0c63fc5cac73074074e635257d790164d"
+      },
+      {
+        "path": "assets/watches-v4/views.json",
+        "bytes": 5697,
+        "sha256": "9ccd2f2e63d95bd3e2619de8dc6435d729994c9482a5ed6f02e277b0dd2b2c00"
+      }
+    ],
+    "runtimeImageCount": 230,
+    "runtimeImageRecordsSha256": "562f4bad9c547b0d56866fd7db4c21b4ee2ec1bd3093adbf9c303435b3b69c4b",
+    "scope": "Capture and final reload are separate build observations. Listed visual sources, full catalog/geometry and every runtime image remain byte-identical; unchanged captures are not recaptured final-build screenshots."
+  },
+  "url": "http://127.0.0.1:4191/preview.html#",
+  "surface": "Codex in-app browser; desktop and responsive iframe previews",
+  "coverage": {
+    "total": 224,
+    "reviewed": 222,
+    "missing": 2
+  },
+  "assets": [
+    {
+      "formId": "game-portaler",
+      "sourceFile": "assets/source-art/game-portaler-source-original.png",
+      "sourceSha256": "90f40537e7b6f44a283d3df4a4ccbea4383261999eef1a51ec58a07984269909",
+      "maskFile": "assets/source-art/game-portaler-reference-edit.png",
+      "maskSha256": "23c1917ac253d2b4d3cd7e75c3e7d23b7e6e7710def8f5f1904c519f0e3e4087",
+      "sourceUrl": "https://gameben10online.blogspot.com/2013/05/",
+      "artProvenance": "AI reference-guided reconstruction of the original Fuel Run game version from two 2013 community-blog game-frame reposts. Detailed introductory head/torso/arms are combined with same-game small full-body proportions; the dialogue-obscured lower body and limb-end lines are interpretatively restored.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed the 954x474 introductory frame: transformed Portaler at right has a dark-green turtle face, two narrow eyes and nostrils, yellow-tipped green antennae, red forehead Omnitrix plate, blue-purple sleeves, blunt yellow segmented arms and concentric belly rings; the dialogue box covers much of the lower body.",
+        "Actually viewed the 957x500 gameplay screenshot: a complete small matching playable sprite is visible near the center, supporting short yellow legs and blunt feet. Its upper-left HUD portrait differs and was explicitly excluded.",
+        "Actually viewed the generated transparent PNG: two antennae and arms, a large round torso, complete paired yellow feet, red shell rim and original-game forehead device remain. Human Ben, dialogue, interface, scenery and blog branding are absent. No later OV-commission tail, fingered redesign or alternate forehead placement was introduced."
+      ],
+      "limitations": [
+        "The game origin is supported by visible game dialogue/UI and a contemporaneous 2013 community blog caption, not by newly played official publisher footage. The blog includes informal/inaccurate plot discussion, which is not adopted as canon evidence.",
+        "The primary frame hides the lower belly/legs behind a dialogue box and truncates some far-arm context. The same-game full-body sprite is only about 54px high. Completed leg/foot segmentation, exact blunt-arm ends, full belly circles, shell continuation and refined facial lines are interpretative, not recovered original pixels.",
+        "Requested 8-percent breathing room was not fully achieved: strong-alpha bounds leave 38px left, 68px top, 29px right and 60px bottom. No strong-alpha pixels touch the canvas edge. Weak positive-alpha edge pixels remain and await real dark-mask UI inspection.",
+        "The Fuel Run original is deliberately distinct from the later Omniverse commissioned redesign, 5YL adaptations, Minecraft models and the unrelated HUD portrait. None was used as generation input.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance remain unverified."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/game-portaler-gameplay-support-original.png",
+          "sha256": "dfc8013355d89cfc6da325f7a0b1c3272e363889c943edcaea3b743f51457079",
+          "bytes": 51831,
+          "format": "PNG",
+          "size": [
+            957,
+            500
+          ],
+          "mode": "RGB",
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXetrKaDZh_wzY-yONV6aADZJdX9YFbwDht9YTlaM3Yo_OE7Qv9PBZxkbjLZn5cRfZaiDJ3ap5qUe0ZpqMvogA8i59j9vhJB8GR1GreSqnXDCnmbzqkYDZ93VzTgIcJnOsY7SUL1nZlMEc/s1600/fuelrun2.png",
+          "pageUrl": "https://gameben10online.blogspot.com/2013/05/",
+          "role": "Contemporaneous same-game full gameplay screenshot. ONLY the roughly 54px-high playable sprite near the middle supplies complete squat proportions, yellow short legs and blunt feet; the different upper-left HUD face is excluded. Tiny sprite pixels are not detailed limb certification.",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "game-rath-arms",
+      "sourceFile": "assets/source-art/game-rath-arms-toy-body-original.png",
+      "sourceSha256": "1b0861d289f19eb536b88a1ab767d69d66c42f98501d592c6a385b03df46a52b",
+      "maskFile": "assets/source-art/game-rath-arms-toy-reference-edit.png",
+      "maskSha256": "eb3706afe5ceb3a233dab3aa64b960a3d4cfb1731325145e2fd493886a4e5169",
+      "sourceUrl": "https://www.maqio.com/products/ben-10-action-figure-four-arms-omni-glitch",
+      "artProvenance": "Toy reference reconstruction: Maqio photographs of the Ben-Four Arms-Rath Omni-Glitch interchangeable product provide the body and packaged Four Arms red spare alien head. One built-in AI edit replaces only the human Ben head with that photographed spare and preserves the four-arm, single-orange-arm/single-orange-leg arrangement. The reconstructed toy configuration is not a game screenshot; differences from the Ben 10 Heroes model are unconfirmed. Not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Main actual product photo: broad white/black torso, four arms, upper arms raised and lower arms bent, one furry orange upper image-left arm and one furry orange image-right leg; other three arms red with black hands, opposite leg dark with a red foot. Both hands/feet and complete body are visible, human Ben head is present in the source only.",
+        "Packaging actually shows the separate squared red Four Arms alien head beside the physical Ben head, and names the interchangeable Omni-Glitch Ben-Four Arms-Rath product. A third exploded-parts photo also visibly confirms this spare head and body components but was not supplied to image generation.",
+        "Generated output: one red alien head on the same white/black torso, four arms and original asymmetric limb colors/pose. All hands and both feet fit within canvas; no broad flat body cut or detached substantial alpha128 object is observed."
+      ],
+      "limitations": [
+        "Toy-reference reconstruction of the Ben-Four Arms-Rath Omni-Glitch product: its supplied Four Arms red alien spare head is assembled onto the photographed body in place of the human Ben head. This exact alien-head assembly is an interpretive reconstruction, not a photographed assembled product.",
+        "The catalog includes the Ben 10 Heroes and toy-line fusion. This asset uses the toy configuration only; exact differences from the mobile-game body remain unconfirmed. It must not be described as an official game screenshot or exact mobile-game model.",
+        "Keep the photographed arrangement: exactly one orange furry upper arm on image-left and one orange furry leg on image-right, with three red arms and the dark/red opposite leg. No second orange arm or full Rath-striped body was invented.",
+        "The red spare head is small in the packaging photo. Eye/teeth details, head scale, neck connector, fur, fingers and surface highlights are AI interpretations, not pixel-exact original details.",
+        "The sources are PNG bytes served from literal URLs ending .jpg and have opaque/near-opaque white backgrounds (source1 alpha173..255, source2 alpha162..255). They are not native transparent body originals; source PNG bytes were preserved unchanged.",
+        "Generated alpha>=128 has bbox [113,15,1138,1230] inside 1254x1254 and only one substantial connected body component. Faint alpha1..15 residue exists, including top/left edge maxima1; RGB preview specks must be evaluated with their actual alpha in UI.",
+        "Reuse licence unknown. No browser/current UI, real phone, real SillyTavern or driver acceptance was performed by this agent."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/game-rath-arms-toy-package-original.png",
+          "sha256": "74976d7fe07a433cd99afb400b6ef9b9c03618c76b089986f42b46f547aa44d4",
+          "url": "https://www.maqio.com/cdn/shop/products/0F-JJGM-YSWH-1.jpg?v=1658138530",
+          "role": "Actual packaged Four Arms red interchangeable alien head and labelled product; no human head used in final body."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "reboot-anti-vilgax",
+      "sourceFile": "assets/source-art/reboot-anti-vilgax-source-video-3858.jpg",
+      "sourceSha256": "481a910ce2b8edda96b9e94f6c93de905f58449758d8d0de734f15aa1fd4231c",
+      "maskFile": "assets/source-art/reboot-anti-vilgax-reference-edit.png",
+      "maskSha256": "49c0b7e8b1315bc6de2ce5c9d3c295675dce3adb74d3309cad4df691067b50c7",
+      "sourceUrl": "https://www.youtube.com/watch?v=xkrfNOzgZKM&t=3858s",
+      "artProvenance": "AI reference reconstruction from actually viewed ToonRecapz community animation screenshot at3858.475396s. Four-armed Anti-Vilgax design retained; cropped feet/lower legs and raised crystal fingertips interpretively completed. Not official transparent art or exact canonical anatomy.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed the1721x927JPEG: grey-green octopus head/four red eyes/tentacle beard and red collar, four arms with upper violet crystal claws and lower blue cuffs/black claws, red-orange shoulder flames, red-black ribbed chest, grey central chest connector/red emblem, two yellow-green tubes, orange waist and violet knee-side projections. Feet and some raised crystal fingertips are outside the screenshot.",
+        "Actually viewed the1472x1069RGBA output: the broad front-facing four-arm pose and the same major head, shoulder flame, chest-tube and claw features are readable. Both complete generated feet and the formerly cropped raised crystal fingertips are now shown. No buildings, sky or other character retained."
+      ],
+      "limitations": [
+        "Original pixels are a browser screenshot of ToonRecapz community recap footage, not an independently authenticated official transparent model sheet. The underlying animation/publication rights remain with their owners; uploader title and AI summary alone do not authenticate a frame.",
+        "The source cuts off lower shins/feet and portions of the raised upper-right crystalline fingertips. Both completed feet, lower-leg proportions, toe count/shape, inner green leg panels and completed finger tips are explicitly AI interpretation, not witnessed official pixels. No ordinary Vilgax or Alien V anatomy image was supplied as a reference.",
+        "Only the primary 3858.475396-second screenshot was passed to imagegen. Root samples at about3853.475,3863.475,3868.475 showed an earlier two-arm form, an obscuring black-purple mass, and spacesuited Ben, respectively; none was used as same-form foot evidence. The later Alien V footage was excluded.",
+        "The output redraws linework, shading, claw edges, face/tentacle proportions, flame contours and surface connections. It is recognizable reference reconstruction, not a pixel-exact extraction or new canonical detail evidence.",
+        "Original generated alpha retained without programmatic pixel cleanup. Alpha1..15 residue:26806pixels; alpha16..127:5932pixels. Thin blue/red translucent edge fringes remain. Alpha>=128 bbox[63,18,1452,1045] is inside the1472x1069canvas with no strong-alpha edge pixels; weak residue reaches the left edge.",
+        "Current black watch UI, real phone, real SillyTavern and human acceptance are pending root; candidate source/output review is distinct from runtime acceptance."
+      ],
+      "supportingSources": [],
+      "uiReviewed": true,
+      "humanAccepted": false
+    }
+  ],
+  "checks": {
+    "modes": [
+      "dial",
+      "projection",
+      "carousel"
+    ],
+    "desktop": {
+      "outerWidth": 1280,
+      "clientWidth": 1265,
+      "height": 720
+    },
+    "mobileClientWidths": [
+      375,
+      305
+    ],
+    "newContoursInspected": true,
+    "filtersClearedInFinalPreview": true,
+    "oldRuntimeImagesByteExact": 227,
+    "registeredImageHashesUnchanged": true,
+    "tests": {
+      "passed": 104,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "todo": 0,
+      "logSha256": "44f9afaeab5f05625232a8f827a0228343f89be6d0e9c9cf148b0e598b795c90"
+    }
+  },
+  "console": {
+    "mainErrors": [],
+    "responsiveContainerErrors": [
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'."
+    ]
+  },
+  "screenshots": [
+    "screenshots/v046-portaler-dial.jpg",
+    "screenshots/v046-portaler-projection.jpg",
+    "screenshots/v046-portaler-ring.jpg",
+    "screenshots/v046-portaler-mobile-dial.jpg",
+    "screenshots/v046-portaler-mobile-projection.jpg",
+    "screenshots/v046-portaler-mobile-ring.jpg",
+    "screenshots/v046-rath-arms-dial.jpg",
+    "screenshots/v046-rath-arms-projection.jpg",
+    "screenshots/v046-rath-arms-ring.jpg",
+    "screenshots/v046-rath-arms-mobile-dial.jpg",
+    "screenshots/v046-rath-arms-mobile-projection.jpg",
+    "screenshots/v046-rath-arms-mobile-ring.jpg",
+    "screenshots/v046-anti-vilgax-dial.jpg",
+    "screenshots/v046-anti-vilgax-projection.jpg",
+    "screenshots/v046-anti-vilgax-ring.jpg",
+    "screenshots/v046-anti-vilgax-mobile-dial.jpg",
+    "screenshots/v046-anti-vilgax-mobile-projection.jpg",
+    "screenshots/v046-anti-vilgax-mobile-ring.jpg"
+  ],
+  "screenshotEvidence": [
+    {
+      "file": "screenshots/v046-portaler-dial.jpg",
+      "sha256": "25c0d1919cb998de5fcebffa507d699cef83c3f064e1c17541d8e5b1465c47ed",
+      "bytes": 92257,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-portaler-projection.jpg",
+      "sha256": "8f281ea40976fdbe43d97a24b4ea7294aeaafbeaca1de900f351e97cac30e66f",
+      "bytes": 95024,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-portaler-ring.jpg",
+      "sha256": "37defe2923b5fcbdb4e3d83e23fb7cee345ef168b14c7aea849fd236dd85dcea",
+      "bytes": 102033,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-portaler-mobile-dial.jpg",
+      "sha256": "27ef9061a51466268e6fed40229052baea407f76de4cb61b4f84b38fcc30276d",
+      "bytes": 93663,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-portaler-mobile-projection.jpg",
+      "sha256": "1876a4ea401f045d6284168554013d801c326ab400aa4a4557908feaf79599f1",
+      "bytes": 94274,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-portaler-mobile-ring.jpg",
+      "sha256": "55b67a05e4e818cd8da776967bb5d10a4c826396cbe143a5ee455a1ac4360a26",
+      "bytes": 95903,
+      "formId": "game-portaler",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-dial.jpg",
+      "sha256": "37ce60324a7ed03cd7bdcfa2f6fee999ce4f64cdf1000739ccb95b4515eee783",
+      "bytes": 93758,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-projection.jpg",
+      "sha256": "7921f0d802d05365715f40040f3561fea21442726d600fa3c22b57e624dcb80b",
+      "bytes": 97459,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-ring.jpg",
+      "sha256": "983a084257574f1aac7a2f5c4274802841d5c0c61ed1159b114d4cc39a36ca7e",
+      "bytes": 103320,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-mobile-dial.jpg",
+      "sha256": "ea29f41579890a15baa7cdbbdc116b4874e7862071dca57996126e34334c7a21",
+      "bytes": 97699,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-mobile-projection.jpg",
+      "sha256": "cc42c574bdc14054e04ff0217883d96adf71756f77c5e2af94319810f7d92f50",
+      "bytes": 96372,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-rath-arms-mobile-ring.jpg",
+      "sha256": "ed377f7b5dd4693057daddd34a85ec91a89d0a1c33e451745b14d3155af1acc3",
+      "bytes": 96242,
+      "formId": "game-rath-arms",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-dial.jpg",
+      "sha256": "2a02f3a6501ffdf1d7cb4b7ed747cd7b4c63c05561e30ff166ab69ff0de765d9",
+      "bytes": 93323,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-projection.jpg",
+      "sha256": "ba03cc36db93c59e0a4444b7f64da415493ffa1693b79752178cdf8c34cee530",
+      "bytes": 96446,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-ring.jpg",
+      "sha256": "9ddd41cd121b414d22d5191afb2ffe8f4ddf7b0a62c1639a6ef1cfbd7649bbcb",
+      "bytes": 102725,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-mobile-dial.jpg",
+      "sha256": "f10373514e071357282e943046d90e4991d08919fb8f787810d0a4fcffbff02b",
+      "bytes": 96952,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-mobile-projection.jpg",
+      "sha256": "eb430a8b1f199a005ff519078dc638c030a5f42496290d9bc099f9601ce53bb2",
+      "bytes": 95555,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    },
+    {
+      "file": "screenshots/v046-anti-vilgax-mobile-ring.jpg",
+      "sha256": "a16ad63e20f84e1044ed64bacb71db1b4ccca1b58142c4e17bb0285892dfe03b",
+      "bytes": 96019,
+      "formId": "reboot-anti-vilgax",
+      "capturePreviewSha256": "2e5ec12e82ed1c441418f4a6544be55b4a26f2492b53c676abb6ebc14e6f62cc"
+    }
+  ],
+  "boundaries": [
+    "Local browser/responsive evidence only; no physical-phone, real SillyTavern/SillyDroid or driver acceptance claimed.",
+    "This finalization performs no installation, chat write, model call, packaging or Git action.",
+    "Original source-stage limitations remain verbatim; current local UI review is recorded separately in uiReview.",
+    "All selected screenshots were captured before finalization and retain their capture-build hash even if it equals the final reload hash. Final reload, filter/console observations and fresh tests bind the final build separately.",
+    "All adopted entries are AI reference reconstructions. Missing body regions and species-anatomy support are disclosed individually; unseen anatomy is not claimed to be an exact official variant model.",
+    "The four-angle watch sprites and transitions remain the existing implementation, not a continuously rotatable 3D mesh."
+  ],
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false
+}
