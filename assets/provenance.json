@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "3b1e469c14684874f500694e6bac5195a864d864b6d40bcc021670ed244e73c0",
-  "svgSha256": "bb96396714c2cd75c0b501ab267ee3bb80d6cff90e64773a0aa69e9eff23a5ee",
+  "catalogSha256": "318d103bf7d1fc0e0dac996d93579d9792f32cd1d43577424cdf86c18698d2ae",
+  "svgSha256": "9dcf593d6a023bf513086fa3f2a93afdd6add050080c631a361b35ac911a60ab",
   "coverage": {
-    "total": 228,
-    "reviewed": 226,
+    "total": 230,
+    "reviewed": 228,
     "missing": 2
   },
   "assets": [
@@ -2046,6 +2046,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "7d63874051d448c85110073701698c615e224a44c1ed7f5ce8fd02f3730cb294",
       "maskSha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "kevin-ov-weapon-xi-amalgam",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-5th-mutation.png",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Ben10Hero is a community reference site, not an authenticated official frame publisher. Original frame attribution and reuse permission are unverified. AI redraw and interpretive completion are explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "afb450c562a98f1971fd11c1ac6a9e0f85b19b448bf79b701dc250e54a783175",
+      "maskSha256": "22a79c93033aa6fb45c912105fdb8f4c30dacac604eb04486dd62673efa346f1",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "skurd-humungousaur-diamondhead",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI redraw is explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "84895219ad788451b9a64d11f9667445fcbd5d0f5485945eec2f1f6a7aeca095",
+      "maskSha256": "d6559bc366aef860a8bff3e7d26efdcd1682d50f6216531f9894334c2a7dbd5f",
       "contentType": "image/png"
     }
   ],

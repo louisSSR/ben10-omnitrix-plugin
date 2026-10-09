@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 228,
-    "reviewed": 226,
+    "total": 230,
+    "reviewed": 228,
     "missing": 2
   },
   "forms": [
@@ -5727,6 +5727,64 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.436657,
         "visiblePixels": 824410
+      }
+    },
+    {
+      "id": "kevin-ov-weapon-xi-amalgam",
+      "name": "凯文（OV Weapon XI 融合体）",
+      "en": "Kevin (Omniverse Weapon XI Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Omniverse; modern Kevin's fifth mutation associated with Weapon XI: Part 2 in the community reference. Descriptive catalog title; distinct from the original-series and Ultimate Alien amalgams.",
+      "aliases": [
+        "Kevin Omniverse Mutation",
+        "Kevin Fifth Mutation",
+        "Kevin Weapon XI Amalgam"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://www.youtube.com/watch?v=P_PNpm6oT2I"
+      ],
+      "asset": "alien-kevin-ov-weapon-xi-amalgam",
+      "visualSourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided redraw of a community-hosted modern Omniverse Kevin Weapon XI amalgam still. Visible pose, asymmetric composite limbs, black mane and two different wings are retained. The original upper orange wing tip and lowest green foot were clipped at the source border; their completion is an explicit AI interpretation, not recovered official anatomy or an official transparent original.",
+      "dialFit": {
+        "scale": 0.6316,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.377372,
+        "visiblePixels": 639664
+      }
+    },
+    {
+      "id": "skurd-humungousaur-diamondhead",
+      "name": "Humungousaur（Skurd 钻石臂与剑）",
+      "en": "Humungousaur (Skurd Diamondhead Arm and Sword)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd modifies Humungousaur with a Diamondhead-derived forearm and crystal sword; this is a partial-DNA body state, not a separate alien species. Descriptive catalog title.",
+      "aliases": [
+        "Skurd Humungousaur Diamondhead",
+        "Humungousaur Crystal Arm",
+        "超巨人 Skurd 钻石臂",
+        "神力暴龙 Skurd 钻石臂"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+        "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
+      ],
+      "asset": "alien-skurd-humungousaur-diamondhead",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference reconstruction from a directly inspected 17-second frame of the official Cartoon Network clip The Power of Skurd. The original overhead pose, asymmetric crystal forearm, sword-holding brown arm and visible feet are preserved. Fine facial lines, finger joints, chest/slime markings and crystal facets are interpretations of a small animated source, not an official transparent original or exact pixel extraction.",
+      "dialFit": {
+        "scale": 0.5829,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.492395,
+        "visiblePixels": 424487
       }
     }
   ]

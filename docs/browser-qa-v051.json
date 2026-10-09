@@ -1,0 +1,498 @@
+{
+  "version": "0.5.1",
+  "date": "2026-10-10",
+  "previewSha256": "d33683c2adb96b8863a27ff2d9d96b0001d89654a7a67a0e44245968ef32aa4c",
+  "modelSha256": "d0fb219ac7a83451a58d302a00c94eb39a2fa5f523e3b0f9c06bb9ebd6c31e21",
+  "coverage": {
+    "total": 230,
+    "reviewed": 228,
+    "missing": 2
+  },
+  "screenshots": [
+    "screenshots/v051-desktop-kevin-dial.jpg",
+    "screenshots/v051-desktop-kevin-projection.jpg",
+    "screenshots/v051-desktop-kevin-ring.jpg",
+    "screenshots/v051-desktop-skurd-dial.jpg",
+    "screenshots/v051-desktop-skurd-projection.jpg",
+    "screenshots/v051-desktop-skurd-ring.jpg",
+    "screenshots/v051-final-skurd-projection.jpg",
+    "screenshots/v051-mobile-kevin-dial.jpg",
+    "screenshots/v051-mobile-kevin-projection.jpg",
+    "screenshots/v051-mobile-kevin-ring.jpg",
+    "screenshots/v051-mobile-skurd-dial.jpg",
+    "screenshots/v051-mobile-skurd-projection.jpg",
+    "screenshots/v051-mobile-skurd-ring.jpg",
+    "screenshots/v051-narrow-kevin-dial.jpg",
+    "screenshots/v051-narrow-skurd-dial.jpg"
+  ],
+  "shots": [
+    {
+      "file": "screenshots/v051-desktop-kevin-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 526.4896240234375,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 268.51043701171875,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 268.51043701171875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 531.8541870117188,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 263.1458435058594,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 263.1458435058594
+      },
+      "scrollWidth": 1265,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-desktop-kevin-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 210.9425106048584,
+        "height": 19.28084373474121,
+        "left": 679.9427490234375,
+        "right": 813.723876953125,
+        "top": 191.6616668701172,
+        "width": 133.7811279296875,
+        "x": 679.9427490234375,
+        "y": 191.6616668701172
+      },
+      "scrollWidth": 1265,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-desktop-kevin-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 306.1421432495117,
+        "height": 41.65926361083984,
+        "left": 652.107421875,
+        "right": 841.5592498779297,
+        "top": 264.4828796386719,
+        "width": 189.4518280029297,
+        "x": 652.107421875,
+        "y": 264.4828796386719
+      },
+      "scrollWidth": 1265,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-desktop-skurd-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 505.1562805175781,
+        "height": 257.97918701171875,
+        "left": 617.84375,
+        "right": 875.8229370117188,
+        "top": 247.17709350585935,
+        "width": 257.97918701171875,
+        "x": 617.84375,
+        "y": 247.17709350585935
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 510.5208435058594,
+        "height": 268.7083435058594,
+        "left": 612.4791870117188,
+        "right": 881.1875305175781,
+        "top": 241.8125,
+        "width": 268.7083435058594,
+        "x": 612.4791870117188,
+        "y": 241.8125
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-desktop-skurd-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 374.94252586364746,
+        "height": 19.28084373474121,
+        "left": 679.9427490234375,
+        "right": 813.723876953125,
+        "top": 355.66168212890625,
+        "width": 133.7811279296875,
+        "x": 679.9427490234375,
+        "y": 355.66168212890625
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-desktop-skurd-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 306.1421432495117,
+        "height": 41.65926361083984,
+        "left": 652.107421875,
+        "right": 841.5592498779297,
+        "top": 264.4828796386719,
+        "width": 189.4518280029297,
+        "x": 652.107421875,
+        "y": 264.4828796386719
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-final-skurd-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 416.78228759765625,
+        "height": 73.0020751953125,
+        "left": 674.3977661132812,
+        "right": 819.2689056396484,
+        "top": 343.78021240234375,
+        "width": 144.8711395263672,
+        "x": 674.3977661132812,
+        "y": 343.78021240234375
+      },
+      "scrollWidth": 1265,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v051-mobile-kevin-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 541.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 387.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 387.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 544.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 383.9479370117187,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 383.9479370117187
+      },
+      "scrollWidth": 375,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-mobile-kevin-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 473.9676933288574,
+        "height": 17.674968719482422,
+        "left": 126.0061264038086,
+        "right": 248.6501312255859,
+        "top": 456.292724609375,
+        "width": 122.64400482177734,
+        "x": 126.0061264038086,
+        "y": 456.292724609375
+      },
+      "scrollWidth": 375,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-mobile-kevin-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 426.44586181640625,
+        "height": 27.8812255859375,
+        "left": 123.93611907958984,
+        "right": 250.7201385498047,
+        "top": 398.5646362304687,
+        "width": 126.78401947021484,
+        "x": 123.93611907958984,
+        "y": 398.5646362304687
+      },
+      "scrollWidth": 375,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-mobile-skurd-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 541.59375,
+        "height": 154.4375,
+        "left": 110.11458587646484,
+        "right": 264.55208587646484,
+        "top": 387.15625,
+        "width": 154.4375,
+        "x": 110.11458587646484,
+        "y": 387.15625
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 544.8021087646484,
+        "height": 160.8541717529297,
+        "left": 106.90625,
+        "right": 267.7604217529297,
+        "top": 383.9479370117187,
+        "width": 160.8541717529297,
+        "x": 106.90625,
+        "y": 383.9479370117187
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-mobile-skurd-projection.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "projection",
+      "screen": {
+        "bottom": 473.9676933288574,
+        "height": 17.674968719482422,
+        "left": 126.0061264038086,
+        "right": 248.6501312255859,
+        "top": 456.292724609375,
+        "width": 122.64400482177734,
+        "x": 126.0061264038086,
+        "y": 456.292724609375
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-mobile-skurd-ring.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "mode": "carousel",
+      "screen": {
+        "bottom": 426.44586181640625,
+        "height": 27.8812255859375,
+        "left": 123.93611907958984,
+        "right": 250.7201385498047,
+        "top": 398.5646362304687,
+        "width": 126.78401947021484,
+        "x": 123.93611907958984,
+        "y": 398.5646362304687
+      },
+      "scrollWidth": 375,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v051-narrow-kevin-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 502.453125,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 375.171875,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 375.171875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 505.0989837646485,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 372.5260620117187,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 372.5260620117187
+      },
+      "scrollWidth": 305,
+      "selected": "凯文（OV Weapon XI 融合体）",
+      "view": "low",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v051-narrow-skurd-dial.jpg",
+      "art": "model",
+      "dial": {
+        "bottom": 502.453125,
+        "height": 127.28125,
+        "left": 88.69271087646484,
+        "right": 215.97396087646484,
+        "top": 375.171875,
+        "width": 127.28125,
+        "x": 88.69271087646484,
+        "y": 375.171875
+      },
+      "mode": "dial",
+      "screen": {
+        "bottom": 505.0989837646485,
+        "height": 132.5729217529297,
+        "left": 86.046875,
+        "right": 218.6197967529297,
+        "top": 372.5260620117187,
+        "width": 132.5729217529297,
+        "x": 86.046875,
+        "y": 372.5260620117187
+      },
+      "scrollWidth": 305,
+      "selected": "Humungousaur（Skurd 钻石臂与剑）",
+      "view": "low",
+      "watch": "original",
+      "width": 305
+    }
+  ],
+  "tests": {
+    "total": 125,
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0
+  },
+  "consoleErrorsAndWarnings": [],
+  "normalAnimationSelectionVerified": true,
+  "physicalPhoneVerified": false,
+  "realHostVerified": false,
+  "humanAccepted": false,
+  "limits": [
+    "Desktop width 1265 and mobile width 375 covered all three modes for both new forms; narrow width 305 covered both diamond dials only.",
+    "Most pose captures used reduced motion. Final normal-motion previous/next selection restored the new Skurd form. Static images do not prove phone frame rate.",
+    "One immediate ring capture caught its transition; stable selected-item DOM and a later screenshot confirmed the center item.",
+    "AI fine details and the cropped Kevin extremities are interpretations, not official transparent originals.",
+    "All-work transformation coverage is still incomplete."
+  ]
+}

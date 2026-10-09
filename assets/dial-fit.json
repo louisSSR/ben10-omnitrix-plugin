@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "bb96396714c2cd75c0b501ab267ee3bb80d6cff90e64773a0aa69e9eff23a5ee",
-  "shapeCount": 226,
+  "sourceSvgSha256": "9dcf593d6a023bf513086fa3f2a93afdd6add050080c631a361b35ac911a60ab",
+  "shapeCount": 228,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -1407,6 +1407,18 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.436657,
       "visiblePixels": 824410
+    },
+    "kevin-ov-weapon-xi-amalgam": {
+      "scale": 0.6316,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.377372,
+      "visiblePixels": 639664
+    },
+    "skurd-humungousaur-diamondhead": {
+      "scale": 0.5829,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.492395,
+      "visiblePixels": 424487
     }
   }
 }

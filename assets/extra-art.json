@@ -8220,6 +8220,243 @@
         "sourceLimitationsPreserved": true,
         "observation": "Root actually viewed this selected form in the diamond dial, holographic projection and ring on desktop and two narrow iframe layouts. Recorded final selections and modes match the intended form; recorded document widths show no horizontal overflow. Source-stage AI redraw limitations are retained and are not superseded by local UI review."
       }
+    },
+    {
+      "formId": "kevin-ov-weapon-xi-amalgam",
+      "sourceFile": "assets/source-art/kevin-ov-weapon-xi-amalgam-source-original.png",
+      "sourceSha256": "afb450c562a98f1971fd11c1ac6a9e0f85b19b448bf79b701dc250e54a783175",
+      "maskFile": "assets/source-art/kevin-ov-weapon-xi-amalgam-reference-edit.png",
+      "maskSha256": "22a79c93033aa6fb45c912105fdb8f4c30dacac604eb04486dd62673efa346f1",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-5th-mutation.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided redraw of a community-hosted modern Omniverse Kevin Weapon XI amalgam still. Visible pose, asymmetric composite limbs, black mane and two different wings are retained. The original upper orange wing tip and lowest green foot were clipped at the source border; their completion is an explicit AI interpretation, not recovered official anatomy or an official transparent original.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Ben10Hero is a community reference site, not an authenticated official frame publisher. Original frame attribution and reuse permission are unverified. AI redraw and interpretive completion are explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "sourceCapture": {
+        "kind": "community-hosted-animation-still",
+        "literalSource": "Original 618w srcset URL recorded in the cached Ben10Hero Kevin page",
+        "sourceWidth": 618,
+        "sourceHeight": 480,
+        "sourceAlphaRange": [
+          255,
+          255
+        ],
+        "sourceBytesUnchanged": true,
+        "exactEpisodeOfStillVerified": false,
+        "croppedExtremities": [
+          "orange wing tip at the top border",
+          "lowest green foot at the bottom border"
+        ]
+      },
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "continuity": "Classic continuity, modern Kevin",
+        "realm": "reference",
+        "identityStatus": "Community-supported fifth mutation; catalog title is descriptive rather than an asserted official form name.",
+        "communityIdentity": "Actually read cached page body associates a fifth mutation and fight with Swampfire with Weapon XI: Part 2. The source image has the page alt label Kevin's 5th mutation.",
+        "cachedPageSha256": "18ee8fd1fbe4191ac4fbfba288adda60c832118038935be481f56cf81c3c097a",
+        "officialClipLead": "https://www.youtube.com/watch?v=P_PNpm6oT2I",
+        "officialClipActuallyViewedByThisReviewer": false,
+        "priorRootReportedObservation": "At 47.16 seconds, the upper body appears within smoke; no complete wing or foot contour established.",
+        "officialEvidenceLimit": "Prior root observation is explicitly second-hand here and does not establish the reconstructed extremities or exact provenance of the source still."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Image 1 is the sole edit target and character-design reference: modern Kevin's Weapon XI amalgam from Ben 10 Omniverse. Make one clean full-body cel-animation character sprite on a genuinely transparent background. Preserve the original crouched three-quarter pose, asymmetric anatomy, exact visible placement and number of appendages: gray angry face and black beard, long swept black mane/tendrils with gold end bands, gold forehead antenna/crown, black-and-gold broad segmented chest, enormous image-left blue shoulder armor with gold trim and blocky dark-red forearm/fist, all the separate dark-red fists visible on the image-right side, thin red arm on image-left, dangling yellow hand, small green insect-like lower legs, orange bat-like wing on image-left and purple patterned wing on image-right. Do not simplify or symmetrize the fused body. Remove all blue-gray floor and scenery. Preserve all anatomy already visible; enlarge the canvas instead of clipping it. The reference's orange wing tip and lowest green foot are cut by the image border: minimally reconstruct only those missing extremities using the immediately adjacent contour and cel style. These two tip reconstructions are interpretive completion, not an exact restoration of official artwork; do not invent additional structures. Keep all wing tips, fingers, tendril tips and feet fully inside the canvas with at least 6% transparent padding on each side. Crisp black outlines and the reference's flat palette; no 3D rendering, no added symbol, text, checkerboard, glow, drop shadow, floor or scenery. No extra limbs, no omitted visible arms, and no change to the body pose.",
+        "promptSha256": "f40ad9b4536437537459d619a5d0534d0167be5ff4ba66c83a38e6e1874a9c84",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "22a79c93033aa6fb45c912105fdb8f4c30dacac604eb04486dd62673efa346f1",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Source actually viewed at 618x480: gray snarling face, gold angular forehead feature, swept black mane with gold-tipped locks, black-and-gold broad torso, enormous blue-and-gold image-left shoulder with red blocky forearm, multiple separate red fist shapes on image-right, thin red arm on image-left, yellow hanging hand, small green lower legs, orange left wing and purple patterned right wing. Orange upper wing and lower green foot are clipped by the source border.",
+        "Generated output actually viewed at 1423x1105: the same asymmetric crouched pose and major visible parts remain recognizable, with both different wings and both green feet enclosed in the strong-alpha outline. The floor and scenery are removed. Orange wing top and bottom green toes are generated completion. Their exact angle, length and outlines are not canon evidence.",
+        "No added ordinary human Kevin, duplicate pose-only catalog entry, new species claim, external background figure, ground shadow or decorative glow is included."
+      ],
+      "limitations": [
+        "This is a reconstructed transparent sprite, not a native-alpha original or exact extraction. The community still is opaque and its exact upstream publication/frame time is not verified.",
+        "Orange wing tip and lowest green foot/toes are explicitly inferred beyond cropped source pixels. Small finger, knuckle, tendril, mouth, seam and shading details are AI interpretation as well. Do not cite this derivative as an independent anatomical reference.",
+        "The prompt requested 6 percent padding, but the output gives much narrower top/bottom padding. Strong-alpha bbox is [145,18,1350,1097] within 1423x1105, so its solid outline remains inside the image; faint alpha 1 residue reaches the left and bottom borders. No manual cleanup or pixel editing was applied.",
+        "Current watch rendering, dark silhouette readability, real phone, real SillyTavern and user acceptance are unverified. Root must inspect current UI modes separately before changing currentUIViewed.",
+        "Identity belongs to modern Omniverse Kevin in classic continuity, separate from the younger Omniverse flashback amalgam, original-series Kevin11, Ultimate Alien Ultimate Kevin and reboot Antitrix forms. This is a distinct transformation body, not an additional alien species."
+      ],
+      "alphaInspection": {
+        "sha256": "22a79c93033aa6fb45c912105fdb8f4c30dacac604eb04486dd62673efa346f1",
+        "bytes": 1082230,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1423,
+          1105
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          0,
+          15,
+          1399,
+          1105
+        ],
+        "strongAlphaBBox": [
+          145,
+          18,
+          1350,
+          1097
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 1,
+          "left": 1,
+          "right": 0
+        },
+        "alpha0Pixels": 932751,
+        "alpha255Pixels": 2365,
+        "weakAlpha1to15": 22343,
+        "midAlpha16to127": 6701,
+        "strongAlphaPixels": 610620,
+        "programmaticPixelEdits": false,
+        "actualViewedByReviewer": true
+      },
+      "adoptionBasis": "Actual source/output comparison supports a recognizable, openly disclosed reconstructed body candidate with contained solid silhouette. Seven-field identity has no current catalog ID collision. Parent integration, independent comparison and UI checks remain required.",
+      "uiReview": {
+        "version": "0.5.1",
+        "previewSha256": "d33683c2adb96b8863a27ff2d9d96b0001d89654a7a67a0e44245968ef32aa4c",
+        "evidence": "docs/browser-qa-v051.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "skurd-humungousaur-diamondhead",
+      "sourceFile": "assets/source-art/skurd-humungousaur-diamondhead-source-original.jpg",
+      "sourceSha256": "84895219ad788451b9a64d11f9667445fcbd5d0f5485945eec2f1f6a7aeca095",
+      "maskFile": "assets/source-art/skurd-humungousaur-diamondhead-reference-edit.png",
+      "maskSha256": "d6559bc366aef860a8bff3e7d26efdcd1682d50f6216531f9894334c2a7dbd5f",
+      "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+      "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference reconstruction from a directly inspected 17-second frame of the official Cartoon Network clip The Power of Skurd. The original overhead pose, asymmetric crystal forearm, sword-holding brown arm and visible feet are preserved. Fine facial lines, finger joints, chest/slime markings and crystal facets are interpretations of a small animated source, not an official transparent original or exact pixel extraction.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Official video provenance was verified; no separate redistribution license was established. AI redraw is explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Omniverse: The Power of Skurd | Ben 10 | Cartoon Network",
+        "channel": "Cartoon Network",
+        "verifiedChannelObservedBy": "root",
+        "observedTimestampSeconds": 16.999996,
+        "requestedTimestampSeconds": 17,
+        "sourceWidth": 806,
+        "sourceHeight": 453,
+        "sourceFormat": "JPEG",
+        "captureRegion": "Video picture region including the surrounding floor, shadow and bottom-right Cartoon Network logo; browser chrome excluded. Character occupies approximately 220 by 250 pixels.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "editionEvidence": {
+        "series": "Ben 10: Omniverse",
+        "episode": "Stuck on You",
+        "officialClipActuallyViewedByRoot": true,
+        "sourceScreenshotIndependentlyViewedByReviewer": true,
+        "communityEpisodeAssociationUrl": "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "officialEpisodeMetadataUrl": "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w",
+        "limits": "Apple TV establishes the episode metadata and Skurd joining Ben, not the precise limb design. Official video frame and the separately inspected screenshot establish the visible modified body; the complete uncompressed animation source was not obtained."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Input image 1 is the edit target: an official Ben 10 Omniverse animation frame showing Humungousaur with Skurd's Diamondhead-derived crystal forearm and sword, viewed steeply from above. Produce ONE transparent RGBA character sprite, preserving precisely THIS foreshortened overhead pose and the visible asymmetric body arrangement, not a generic upright character design. Retain the brown dinosaur-like head turned up with open mouth, brown rounded torso and segmented tan belly, brown bent legs and feet close together under the body, brown arm hanging down at image-left holding a long pale turquoise crystal sword pointed diagonally down-right from that hand, and the turquoise crystalline forearm and hand extending at image-right. Keep the small green slime Skurd and the green-and-black chest/shoulder band as present in the reference. The modified crystal arm and the sword-holding ordinary brown arm are distinct; do not turn both arms into crystals. Enlarge the existing subject with restrained clean cel shading and black outlines. This is a reference reconstruction from a small source, so preserve broad source shapes without inventing decorative armor or additional weapons. Remove the floor, shadows, logo, environment and all text. Keep the entire sword, both hands, both feet and every body extremity inside the canvas with clear transparent padding. Do not invent a long tail, wings, extra limbs, extra crystals, unrelated Omnitrix costume, ground shadow, glow, border or checkerboard. Preserve the image's camera angle, facing direction, pose, asymmetric hand positions and compact overhead proportions. Genuine transparent background.",
+        "promptSha256": "0160e59683d16dc6a0ad0dbb420ef744a8b5b102d89c7568794f42ed2adb239e",
+        "attempts": 1,
+        "successfulSavedOutputs": 1,
+        "rawOutputSha256": "d6559bc366aef860a8bff3e7d26efdcd1682d50f6216531f9894334c2a7dbd5f",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Actual source view shows the entire compact, steeply overhead body with open mouth, two brown feet, ordinary brown arm holding a long pale turquoise sword downward, modified turquoise arm extending image-right, and green Skurd/band across the upper torso.",
+        "Actual generated view retains the overhead posture, source-facing direction, both feet, asymmetric arms and sword. Floor, shadow and television logo are excluded. All strong-alpha body pixels remain inside the canvas.",
+        "Root independently viewed the source and the generated sprite and confirmed their recognizable pose and body-outline correspondence before this proposal was finalized."
+      ],
+      "limitations": [
+        "The source is an unchanged JPEG browser screenshot, 806x453, not a downloaded production model, original PNG or transparent animation asset.",
+        "The character is small in the reference. Finger/toe joints, teeth, eye outlines, slime/chest emblem, exact crystal faceting and clean black contours are AI interpretations; generated details are not independent canon evidence.",
+        "This is a Skurd partial-DNA state of the existing Humungousaur transformation, not a new independent species or an ordinary human character.",
+        "The mask has faint alpha residue inside the canvas; all four outer edges are completely transparent. No programmatic trimming, painting, padding, alpha-thresholding or resampling was performed.",
+        "Current watch modes, physical phone, real SillyTavern and user acceptance remain separate unverified gates."
+      ],
+      "alphaInspection": {
+        "sha256": "d6559bc366aef860a8bff3e7d26efdcd1682d50f6216531f9894334c2a7dbd5f",
+        "bytes": 745801,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1315,
+          1196
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          29,
+          27,
+          1297,
+          1160
+        ],
+        "strongAlphaBBox": [
+          202,
+          47,
+          1243,
+          1156
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 13152,
+        "midAlpha16to127": 3760,
+        "alpha0Pixels": 1148253,
+        "alpha255Pixels": 1627,
+        "programmaticPixelEdits": false,
+        "actualViewedByReviewer": true
+      },
+      "adoptionBasis": "Recognizable disclosed reference reconstruction supported by independently viewed official-video screenshot and output; production integration and UI review remain root work.",
+      "uiReview": {
+        "version": "0.5.1",
+        "previewSha256": "d33683c2adb96b8863a27ff2d9d96b0001d89654a7a67a0e44245968ef32aa4c",
+        "evidence": "docs/browser-qa-v051.json",
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "narrowDialWidth": 305,
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [
@@ -8289,6 +8526,40 @@
         "https://tv.apple.com/gb/episode/weapon-xi-part-2/umc.cmc.613nxkky874rqdci3u27vzwhx?showId=umc.cmc.3lfb2l0fbgvea7ktuah4zpr3c",
         "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
         "https://ben10.fandom.com/wiki/Weapon_XI:_Part_2"
+      ]
+    },
+    {
+      "id": "kevin-ov-weapon-xi-amalgam",
+      "name": "凯文（OV Weapon XI 融合体）",
+      "en": "Kevin (Omniverse Weapon XI Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Omniverse; modern Kevin's fifth mutation associated with Weapon XI: Part 2 in the community reference. Descriptive catalog title; distinct from the original-series and Ultimate Alien amalgams.",
+      "aliases": [
+        "Kevin Omniverse Mutation",
+        "Kevin Fifth Mutation",
+        "Kevin Weapon XI Amalgam"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://www.youtube.com/watch?v=P_PNpm6oT2I"
+      ]
+    },
+    {
+      "id": "skurd-humungousaur-diamondhead",
+      "name": "Humungousaur（Skurd 钻石臂与剑）",
+      "en": "Humungousaur (Skurd Diamondhead Arm and Sword)",
+      "group": "body-variant",
+      "appearance": "Ben 10: Omniverse, Stuck on You. Skurd modifies Humungousaur with a Diamondhead-derived forearm and crystal sword; this is a partial-DNA body state, not a separate alien species. Descriptive catalog title.",
+      "aliases": [
+        "Skurd Humungousaur Diamondhead",
+        "Humungousaur Crystal Arm",
+        "超巨人 Skurd 钻石臂",
+        "神力暴龙 Skurd 钻石臂"
+      ],
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s",
+        "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
+        "https://tv.apple.com/ca/episode/stuck-on-you/umc.cmc.6fzksfbd5siddhm6eitmlre8w"
       ]
     }
   ]

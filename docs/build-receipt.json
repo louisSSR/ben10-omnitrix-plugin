@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-10-09T16:14:33.593Z",
-  "sha256": "0e1db92d86ee42541fd6005d69929a8c863bc3cd41175fb674f8487de5abefeb",
-  "bytes": 356924,
+  "builtAt": "2026-10-09T16:36:29.260Z",
+  "sha256": "d33683c2adb96b8863a27ff2d9d96b0001d89654a7a67a0e44245968ef32aa4c",
+  "bytes": 360129,
   "coverage": {
-    "total": 228,
-    "reviewed": 226,
+    "total": 230,
+    "reviewed": 228,
     "missing": 2
   },
   "watchArt": [
@@ -76,7 +76,7 @@
     }
   ],
   "standalone": true,
-  "browserVerified": false,
+  "browserVerified": true,
   "realHostVerified": false,
   "watchModel": {
     "renderer": "local-webgl-geometry",
@@ -89,7 +89,8 @@
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 239,
-  "runtimeBytes": 108784762,
-  "runtimeManifestSha256": "b10f33f0f74101e5293fca74a578e6e2c1801de6191ed5348a62da423629f7ed"
+  "runtimeFiles": 241,
+  "runtimeBytes": 110615998,
+  "runtimeManifestSha256": "cd536a465267bac3dea06991ab7ac6ea674c5337c12c5747e226ce6f14f118b2",
+  "browserEvidence": "docs/browser-qa-v051.json"
 }
