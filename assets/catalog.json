@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 209,
-    "missing": 15
+    "reviewed": 219,
+    "missing": 5
   },
   "forms": [
     {
@@ -2208,10 +2208,21 @@
       "group": "fusion",
       "appearance": "Let's Do the Time War Again",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-big-chuck",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Let's_Do_the_Time_War_Again"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=QuVkcAJsyXk"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided redraw of the final animated Big Chuck design using two actually inspected community-video animation captures. The broad low reclining pose is retained; attackers and background are removed, with hidden contact areas, fingers and tucked rear limbs interpretatively reconstructed.",
+      "dialFit": {
+        "scale": 0.7452,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.167324,
+        "visiblePixels": 607886
+      }
     },
     {
       "id": "humungoopsaur",
@@ -2243,10 +2254,21 @@
       "group": "extra",
       "appearance": "Ben 10: Race Against Time",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-eon-rat",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Eon_(Transformation)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=GdYYUt78Ikw"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided reconstruction of Ben transformed into helmeted Eon in the 2007 live-action film, based on an actually viewed community-reposted scene. Lower coat, hands, legs and boots are interpreted, not recovered official pixels.",
+      "dialFit": {
+        "scale": 0.5667,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.535156,
+        "visiblePixels": 598626
+      }
     },
     {
       "id": "bad-ghostfreak",
@@ -3155,11 +3177,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-ampfibian",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=wv0kuN5OkfQ"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-from-community-animation-clip",
+      "dialFit": {
+        "scale": 0.7089,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.227214,
+        "visiblePixels": 409684
+      }
     },
     {
       "id": "reboot-big-chill",
@@ -3901,10 +3934,21 @@
       "group": "fusion",
       "appearance": "Riding the Storm Out. Descriptive community title, not a confirmed official alien name.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-amalgam-ben",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Amalgam_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10omniverse2013.blogspot.com/2017/11/amalgam-ben.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI redraw of an independently acquired community-blog animation repost of reboot Amalgam Ben. Human Ben head, original-ten spherical fusion body and mixed limbs are retained; occluded left hands and clipped wing tips are explicitly reconstructed.",
+      "dialFit": {
+        "scale": 0.5745,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.514301,
+        "visiblePixels": 831255
+      }
     },
     {
       "id": "reboot-xlrarmblastdiamondheat",
@@ -3913,10 +3957,21 @@
       "group": "fusion",
       "appearance": "Innervasion Part 5: High Override. Name recorded in the community article; four-alien DNA-pod combination.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-xlrarmblastdiamondheat",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/XLRArmBlastDiamondHeat"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=94zwEZdSrbA"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided redraw of an actually captured verified Cartoon Network reboot animation frame, preserving the four-arm stance, wheel-feet and tail with small-line interpretation.",
+      "dialFit": {
+        "scale": 0.6205,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.401903,
+        "visiblePixels": 595154
+      }
     },
     {
       "id": "reboot-bashmouth",
@@ -4231,11 +4286,22 @@
       "group": "fusion",
       "appearance": "Tales from the Omnitrix; STORY/IMAGINATION version, not established as an actual in-world transformation. Descriptive title.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-monster-kevin-tales",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix",
         "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=4NGo3R9ZTkk"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI interpretative reconstruction of the FIRST Tales from the Omnitrix Monster Kevin fusion from a community-reposted animation head/chest crop. Unseen arms/lower body use explicitly labeled ordinary Rush and Quad Smack component-anatomy references.",
+      "dialFit": {
+        "scale": 0.5485,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.585933,
+        "visiblePixels": 581952
+      }
     },
     {
       "id": "reboot-anti-vilgax",
@@ -4257,11 +4323,22 @@
       "group": "fusion",
       "appearance": "Ben 10 Versus the Universe: The Movie; Vilgax plus Celestialsapien Antitrix combination.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-alien-v",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix",
         "https://ben10.fandom.com/pt-br/wiki/Combina%C3%A7%C3%B5es_(Reboot)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/vilgax-alien-v-celestialsapien-lightning-rain-gif-17437876104556182587"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-explanatory-reference-reconstruction-from-community-animation",
+      "dialFit": {
+        "scale": 0.5933,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.466146,
+        "visiblePixels": 848897
+      }
     },
     {
       "id": "game-portaler",
@@ -4319,11 +4396,22 @@
       "group": "extra",
       "appearance": "DNA Decode in Omnitrix Glitch; actual game-opening unnamed seven-alien transformation. Descriptive community title; non-canon to TV.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-game-omnitrix-glitch-combination",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Omnitrix_Glitch_Combination",
         "https://ben10.fandom.com/wiki/Omnitrix_Glitch"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Previously acquired community-game-portal original comic atlas used for one built-in transparent reference redraw of its final red/pink fused body, with disclosed cropped foot/finger reconstruction. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.5726,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.51933,
+        "visiblePixels": 685489
+      }
     },
     {
       "id": "stage-rocks",
@@ -5391,10 +5479,21 @@
       "group": "extra",
       "appearance": "Ben 10 #4: publisher description identifies its comic debut.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-dynamite-xlr8",
       "sourceUrls": [
         "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343504011"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.midtowncomics.com/p/2583270-ben-10-vol-2-3-cover-t-2nd-ptg-a-robert-carey-cover/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Published Dynamite Ben 10 #3 second-print Robert Carey cover, obtained as the literal matching Midtown Comics SKU 0626DE8104 bitmap. One built-in transparent reference edit retains the complete comic action silhouette and interprets small internal ink details. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.5588,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.556634,
+        "visiblePixels": 497765
+      }
     },
     {
       "id": "dynamite-stinkfly",
@@ -5403,10 +5502,21 @@
       "group": "extra",
       "appearance": "Ben 10 #4: publisher description identifies its comic debut.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-dynamite-stinkfly",
       "sourceUrls": [
         "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343504011"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.midtowncomics.com/p/2583267-ben-10-vol-2-2-cover-w-3rd-ptg-a-robert-carey-cover/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided extraction of Robert Carey's Dynamite Ben 10 issue 2 third-print Stinkfly cover, retained from the Midtown Comics product listing. Licensed-cover edition identity is attributed to the retailer; no official transparent original or exact pixel extraction is asserted.",
+      "dialFit": {
+        "scale": 0.524,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.660122,
+        "visiblePixels": 516314
+      }
     },
     {
       "id": "dynamite-grey-matter",

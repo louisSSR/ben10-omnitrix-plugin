@@ -6119,6 +6119,1103 @@
         "sourceLimitationsPreserved": true,
         "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
       }
+    },
+    {
+      "formId": "reboot-xlrarmblastdiamondheat",
+      "sourceFile": "assets/source-art/reboot-xlrarmblastdiamondheat-source-original.jpg",
+      "sourceSha256": "a5727fbbc4b944748c5a1cbfcda4e2de6b5d4d59af27ffd529823248365dc3b0",
+      "maskFile": "assets/source-art/reboot-xlrarmblastdiamondheat-reference-edit.png",
+      "maskSha256": "17e28a319f29f98159e88dd92af729811081b04a536760015c03e361d869729a",
+      "pageUrl": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+      "url": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided redraw of an actually captured verified Cartoon Network reboot animation frame, preserving the four-arm stance, wheel-feet and tail with small-line interpretation.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Reposting/visibility is not an open licence; the generated sprite is AI interpretative art, not official transparent production art.",
+      "observations": [
+        "Actually viewed source and output: four flexed arms, separate wheel-feet, leftward connected spiked tail, cyan shoulder spikes and attached head flame remain. Laboratory and other figures are absent. The new output has four small face marks interpreted from the original; exact face micro-details and facets are not recovered pixels."
+      ],
+      "limitations": [
+        "Actual source is a 980x551 JPEG browser video screenshot retained from round178, whose earlier private filename ended .png. This copy uses the correct .jpg extension with unchanged SHA. Official channel verification/playback at 155.383566 seconds was recorded by root in round178, not newly replayed by this subagent.",
+        "The original pose and body perimeter are available; narrow overlap near the tail terminal and tiny face/fist/crystal details are reference-guided interpretation. No new full-body pose was invented.",
+        "Highest strong-alpha spike has a 32px top margin; the requested 12% margin was not fully achieved. All strong-alpha limbs/tips stay inside the canvas. Weak positive-alpha edge residue remains and is quantified; root must check actual black-mask presentation.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified for this candidate."
+      ],
+      "adoptionBasis": "Actual inspected design reference with openly disclosed interpretation; root must independently inspect current UI before adoption.",
+      "sourceCapture": {
+        "kind": "retained-official-animation-browser-capture",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/reboot-xlrarmblastdiamondheat-source-original.jpg",
+          "sha256": "a5727fbbc4b944748c5a1cbfcda4e2de6b5d4d59af27ffd529823248365dc3b0",
+          "bytes": 105757,
+          "format": "JPEG",
+          "size": [
+            980,
+            551
+          ],
+          "mode": "RGB",
+          "url": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+          "pageUrl": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+          "sourceViewed": true
+        },
+        "playbackSeconds": 155.383566,
+        "uploader": "Cartoon Network",
+        "channelHandle": "@cartoonnetwork",
+        "verificationScope": "Root actual playback in round178; source pixels independently re-viewed in round185"
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "round": 185,
+        "fullPrompt": "Use case: background-extraction / identity-preserve.\nAsset: one transparent full-figure character sprite for an Omnitrix selector. The sole reference is an actual Ben 10 reboot animation screenshot. Retain only the central foreground four-armed fusion XLRArmBlastDiamondHeat, in this exact spread-legged and four-fist flexing pose. Preserve its red angular face and small head flame, cyan crystalline head jaw/chest and tall shoulder spikes, green/cyan large upper forearms with two fists, smaller red/yellow lower forearms with two fists, black torso, two black/cyan legs ending in rounded wheel-feet, and a single black/cyan banded tail curling to image-left with a connected cyan spiked bulb at its end. The little cyan bulb at left belongs to the tail and must stay; the purple person behind it must go.\nFaithfully retain four arms, two legs, the source asymmetries and visible pose. Preserve the complete source silhouette, with only tiny contact-boundary reconstruction where background touches its tail. Remove the round cream/black alien behind, the blue winged alien on the right, the purple person on the left, every other background object, the laboratory and floor circles. No new anatomy, new pose, extra limb or accessory. Interpret small face lines and crystal facets conservatively from the low-resolution frame.\nClear flat 2D animation colors and restrained outlines, not a glossy or 3D redesign. Crisp attached head flame only. NO outer glow, aura, ambient haze, halo, motion blur, ground shadow, smoke, particles or translucent background veil. Genuine transparent RGBA background and transparent limb gaps, not a black rectangle or checkerboard. Center the figure at approximately 74 percent of canvas width and height so there is 12 percent empty transparent margin around the highest spike, hands, tail terminal and both wheels; do not crop any tip. No text or logos. This is reference-guided interpretative art, not exact extracted official pixels.",
+        "transparentBackground": true,
+        "rawOutputSha256": "17e28a319f29f98159e88dd92af729811081b04a536760015c03e361d869729a",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false
+      },
+      "alphaInspection": {
+        "sha256": "17e28a319f29f98159e88dd92af729811081b04a536760015c03e361d869729a",
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1366,
+          1152
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          133,
+          32,
+          1290,
+          1114
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 26352,
+        "midAlpha16to127": 7075
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "a5727fbbc4b944748c5a1cbfcda4e2de6b5d4d59af27ffd529823248365dc3b0",
+        "maskSha256": "17e28a319f29f98159e88dd92af729811081b04a536760015c03e361d869729a",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "reboot-amalgam-ben",
+      "sourceFile": "assets/source-art/reboot-amalgam-ben-source-original.png",
+      "sourceSha256": "563a94525c333640a82f5577681236c9bc8f5b5ed75b41f5a3bab2cc63b0ec97",
+      "maskFile": "assets/source-art/reboot-amalgam-ben-reference-edit.png",
+      "maskSha256": "8c3bdf145c1b638975bf39639e076081d912cd7cad3452029ab8c6ba031307c5",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2017/11/amalgam-ben.html",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg7tuf2W0VjC5bbZJoB5gbsSTnCfxtZ_7TkDc6miRbgbO4c1EorjQTFUGz3cY7QcOt-Z6RE4s6HSuCANhYV3PigRA1LRKfqL6py8z0R4PuhmUTL_06Pr-DeDHoe79DgZrNGxFhWrYXsZJy/s1600/Amalgam+Ben.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI redraw of an independently acquired community-blog animation repost of reboot Amalgam Ben. Human Ben head, original-ten spherical fusion body and mixed limbs are retained; occluded left hands and clipped wing tips are explicitly reconstructed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Reposting/visibility is not an open licence; the generated sprite is AI interpretative art, not official transparent production art.",
+      "observations": [
+        "Actually viewed the 809x681 source and output. Human brown-haired head, leaf collar and antennae, huge red/yellow sphere, black band, liquid tube, asymmetrical large red/crystal arms, two small purple/grey hands and paired wheel-feet distinguish this from Grey Arms. Output removes scenery and completes left-side hidden hands and wing tips; four hands remain visible."
+      ],
+      "limitations": [
+        "The Blogger-hosted page is a community repost, not an independently authenticated official upload. Episode and informal fusion name are associated by that page and body comparison, not a claim of newly played official footage.",
+        "The source machine obscures part of the large left black hand and small purple hand, and the top edge clips wing tips. Their completed contours, finger layout, wing ends and refined facial details are interpretative reconstruction.",
+        "The output broadens and regularizes the original frontal posture and wing shape. Canvas breathing room is narrower than requested: strong-alpha bounds are 15px from left, 13px from top, 12px from right and 19px from bottom. No strong-alpha pixel touches an edge.",
+        "The round178 file named amalgam-ben-official-60456.png was actually Grey Arms and was explicitly excluded; no Grey Arms pixels were supplied.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified for this candidate."
+      ],
+      "adoptionBasis": "Actual inspected design reference with openly disclosed interpretation; root must independently inspect current UI before adoption.",
+      "sourceCapture": {
+        "kind": "community-blog-animation-repost",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/reboot-amalgam-ben-source-original.png",
+          "sha256": "563a94525c333640a82f5577681236c9bc8f5b5ed75b41f5a3bab2cc63b0ec97",
+          "bytes": 494928,
+          "format": "PNG",
+          "size": [
+            809,
+            681
+          ],
+          "mode": "RGB",
+          "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg7tuf2W0VjC5bbZJoB5gbsSTnCfxtZ_7TkDc6miRbgbO4c1EorjQTFUGz3cY7QcOt-Z6RE4s6HSuCANhYV3PigRA1LRKfqL6py8z0R4PuhmUTL_06Pr-DeDHoe79DgZrNGxFhWrYXsZJy/s1600/Amalgam+Ben.png",
+          "pageUrl": "https://ben10omniverse2013.blogspot.com/2017/11/amalgam-ben.html",
+          "sourceViewed": true
+        }
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "round": 185,
+        "fullPrompt": "Use case: background-extraction plus identity-preserving interpretative reconstruction.\nAsset: one complete transparent sprite of reboot Amalgam Ben for an alien-selector. Input image is the sole primary reference, a community repost of animation from Riding the Storm Out. Keep THIS human-faced original-ten fusion, not the Grey Arms fusion or a normal Kevin mutant.\nPreserve the same upright frontal stance and unusual proportions: small brown-haired human Ben head with wide concerned eyes, green spiky leaf collar and two black antennae; extremely large round red/yellow molten spherical torso with black upper band, red collar and black/white hourglass chest device; asymmetrical shoulders with yellow round plate on image-left and silver/cyan crystal side on image-right; attached small blue liquid tube across the torso; black/bright-green lower abdomen and two short black/cyan legs ending in round grey/dark wheel feet.\nRetain FOUR distinctly different arms: image-left large arm has a white upper inset, bulky red muscle section and black distal hand/forearm; image-right large cyan crystalline arm ends in the visible long angular open claw. Under the large arms retain two much smaller arms: on image-left the thin black/purple Upgrade-patterned small arm and its purple-loop detail, and on image-right the thin green arm with the small grey open hand. Do not omit or duplicate these small limbs. Reconstruct only the portion of the image-left hands obscured by the foreground machine, extending their immediately visible materials and structure, and make all four hands readable. It is explicitly interpretative recovery, not exact hidden original pixels.\nPreserve the two long narrow black-edged yellow/orange wings rising diagonally behind the shoulders. The source clips the very ends; complete only those narrow tapered tips from visible direction and shape. Keep the small head, oversized sphere, mixed arm sizes and short wheel legs, no standard humanoid redesign. No new weapon or accessories.\nRemove machinery, walls, foreground block, floor and all scenery. Match clear flat 2D animated linework and colors, cleanly simplify only low-resolution small facial/hand details. Genuine transparent RGBA background and limb gaps. No outer glow, halo, haze, particles, shadow, smoke, checkerboard, solid background, text or watermark. Center the complete subject with generous transparent margin on every side: all antennae, wing tips, four hands and two wheel feet must fit entirely. The output is a source-guided reconstructed selection sprite, not official transparent art.",
+        "transparentBackground": true,
+        "rawOutputSha256": "8c3bdf145c1b638975bf39639e076081d912cd7cad3452029ab8c6ba031307c5",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false
+      },
+      "alphaInspection": {
+        "sha256": "8c3bdf145c1b638975bf39639e076081d912cd7cad3452029ab8c6ba031307c5",
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1247,
+          1261
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          15,
+          13,
+          1235,
+          1242
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 23333,
+        "midAlpha16to127": 7706
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "563a94525c333640a82f5577681236c9bc8f5b5ed75b41f5a3bab2cc63b0ec97",
+        "maskSha256": "8c3bdf145c1b638975bf39639e076081d912cd7cad3452029ab8c6ba031307c5",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "reboot-monster-kevin-tales",
+      "sourceFile": "assets/source-art/reboot-monster-kevin-tales-source-original.jpg",
+      "sourceSha256": "b36b97bd8d1aa92a862c0d07f80219b0ebda7b08e3b36e3b45c988c8f7c893dc",
+      "maskFile": "assets/source-art/reboot-monster-kevin-tales-reference-edit-v2.png",
+      "maskSha256": "5aa1133cba1b371654eec69da1e2f6497c8c6dec5ad12b1c4adf1b9d736372cd",
+      "pageUrl": "https://www.youtube.com/watch?v=4NGo3R9ZTkk",
+      "url": "https://www.youtube.com/watch?v=4NGo3R9ZTkk",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI interpretative reconstruction of the FIRST Tales from the Omnitrix Monster Kevin fusion from a community-reposted animation head/chest crop. Unseen arms/lower body use explicitly labeled ordinary Rush and Quad Smack component-anatomy references.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Eric95 video is a community repost with Kinemaster/OMNIVERSE1116 watermarks, not an official uploader. No open reuse licence asserted.",
+      "observations": [
+        "Actually viewed source17 and separate source31. The chosen first form has dark-green elongated Rush face with red eyes and attached red fire, dark-green chest and grey segmented shoulders; the red-chested second form was not passed to image generation.",
+        "Actually viewed output: four purple arms with red/black studded fists, two long green/brown skating legs, green torso, grey shoulder caps and fiery dark-green head form a complete new composite stance.",
+        "Actually viewed the second output after the targeted tail repair: the leaf/claw terminal is gone, replaced by a continuous narrow pointed tail tip. Head/fire, shoulder caps, four fists, paired skating legs and broad pose remain visually consistent; no pixel-identical invariant is claimed."
+      ],
+      "limitations": [
+        "The primary JPEG is an 807x455 browser screenshot at 16.99998 seconds in a community-uploaded video. Flame top, arm ends and the entire lower body lie outside the source.",
+        "The unseen arms, torso continuation, legs, feet and tail are reconstructed from ordinary component anatomy; these supports do not establish exact fused anatomy. Broad limb stance, finger/arm proportions, flame outline and tiny face/chest details are interpretative.",
+        "First attempt incorrectly expanded the tail end into a leaf/claw-like terminal. A second built-in edit replaced it with a gradually tapered tip; this is still an interpretative component-guided tail, not observed complete fused-model evidence.",
+        "Which Watch winged six-arm snake-body and Tales second red-chested form are explicitly excluded.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified."
+      ],
+      "adoptionBasis": "Actually inspected first-form head/chest identity with disclosed component-anatomy reconstruction and corrected tapered tail. Offered for root material and current-UI review, not automatically accepted.",
+      "sourceCapture": {
+        "kind": "community-reposted-animation-browser-capture",
+        "videoUrl": "https://www.youtube.com/watch?v=4NGo3R9ZTkk",
+        "playbackSeconds": 16.99998,
+        "uploader": "Eric95",
+        "observedBy": "Root actual CUA playback; source independently viewed by subagent",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/reboot-monster-kevin-tales-source-original.jpg",
+          "sha256": "b36b97bd8d1aa92a862c0d07f80219b0ebda7b08e3b36e3b45c988c8f7c893dc",
+          "bytes": 29294,
+          "format": "JPEG",
+          "size": [
+            807,
+            455
+          ],
+          "mode": "RGB"
+        }
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-rush-round121-original.png",
+          "sha256": "fd7fb749fc735e173908220b3d0319023b09329a3565b988beb16d252188510d",
+          "bytes": 223792,
+          "format": "PNG",
+          "size": [
+            670,
+            698
+          ],
+          "mode": "RGBA",
+          "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/3d6f6997-e714-4c0a-b5e0-6774a70fa836_orig.png",
+          "pageUrl": "https://ben10db.weebly.com/reboot.html",
+          "role": "Ordinary Rush component anatomy ONLY: unseen lower torso, digitigrade legs, skating feet and tapered tail; not direct evidence of the combined Tales whole body.",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true
+        },
+        {
+          "file": "assets/source-art/reboot-quad-smack-round121-original.png",
+          "sha256": "575272d3c91e09697a4d2d5af48026cb4e879bfd0b972209f1859fb7e283d687",
+          "bytes": 170974,
+          "format": "PNG",
+          "size": [
+            503,
+            415
+          ],
+          "mode": "RGBA",
+          "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ac7be0eb-c252-4968-8766-198a937bafc1_orig.png",
+          "pageUrl": "https://ben10db.weebly.com/reboot.html",
+          "role": "Ordinary Quad Smack component anatomy ONLY: four arms, segmented shoulder armour and red gauntlets; not direct evidence of the combined Tales whole body.",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true
+        }
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 2,
+        "round": 185,
+        "fullPrompt": "Use case: precise-object-edit / identity-preserve.\nInput 1 is the transparent full-character candidate to edit. Input 2 is ordinary Rush solely as a reference for the shape of his tapered green tail, not a replacement character.\nChange ONLY the distal end of the single tail on the viewer-right side of Input 1: remove the leaf-shaped green/yellow bulb and hooked claw fingers incorrectly attached to its tip. Keep the currently visible tail's base, segmented dark-green surface and overall rightward curl. Continue its final curve into a simple gradually narrowing pointed tail tip, as the plain tapered tail behind ordinary Rush in Input 2. It must be one continuous taper, with NO leaf, hand, fingers, blade, bulb or hook cluster at the end. This is a small local contour correction, not new whole-body reconstruction.\nEverything else must remain visually unchanged: exact fiery dark-green head and eyes, flame height and shape, chest symbol, grey shoulder caps, all four purple arms/red-black gauntlets, both green/brown-black legs, skating feet, stance, body proportions, colors and canvas composition. Do not redesign or rotate the character, do not add wings or additional parts, and do not alter the other limbs. Preserve genuine RGBA background transparency, remove no needed body part, keep all subject extremities inside the canvas. Empty space and limb gaps stay transparent. No outer glow, background, shadows, text or watermark. The corrected tail is explicitly an interpretative continuation guided by component anatomy, not an official exact fused-form tail drawing.",
+        "initialFullPrompt": "Use case: compositing / identity-preserving interpretative reconstruction.\nAsset: one full-figure transparent reference sprite of Monster Kevin, FIRST fusion form from Ben's imaginary story in Tales from the Omnitrix.\nInput 1 is the actual first-form animation head/chest crop: THIS is the primary fused identity and coloring. It shows an elongated angular dark forest-green Rush head with narrow glowing red eyes, a vivid attached red flame around the face/above the head, dark green chest with a red Antitrix mark in a white/black circle, broad grey segmented shoulder caps and purple arm roots. Preserve those features exactly as visible. Do not copy any words or video watermark.\nInput 2 is ordinary Rush, NOT the fused form. Use it ONLY as general anatomy support for the unseen lower torso, slender dark/brown-black digitigrade legs with dark-green shin/oval skating feet and one long tapered segmented green tail. Do not import its raised-arm pose or ordinary shoulder armor.\nInput 3 is ordinary Quad Smack, NOT the fused form. Use it ONLY as general support for four purple arms, grey segmented shoulder pads, and red/black bulky gauntlets with small pale studs. Do not copy its face, red chest plate, thick waist or short boot legs. The merged torso remains the dark-green Rush-type torso seen in Input 1.\nCompose a coherent complete first-form fusion: keep the head and upper chest orientation from Input 1, continue into the lean forward Rush-like lower body, four lowered/spread purple arms with distinctive red/black fists, two complete bent skating legs and one curling tapered tail. The missing arms/lower torso/legs/tail are explicitly a reference-guided reconstruction using component anatomy, NOT claimed recovered original fused-model pixels. Keep the broad segmented shoulder caps attached correctly, one head, four arms, two legs, one tail. Do not use the second Tales form's red chest or fiery hand-feet; do not use the six-arm winged snake-bodied Which Watch monster.\nClear 2D animated linework and restrained cel colors; details conservative and readable for a silhouette selector. Head flame is attached with a crisp contained edge. No ambient red light background, halo, floating flame cloud, sparks, scenery, text, logos, watermark, floor shadow or checkerboard. Genuine RGBA transparent background and transparent limb gaps. Whole figure and all flame tips, hands, tail and feet inside the canvas with generous transparent breathing room on every edge. This is an explicitly interpretative fusion candidate, not official transparent artwork or an exact production pose.",
+        "transparentBackground": true,
+        "rawOutputSha256": "5aa1133cba1b371654eec69da1e2f6497c8c6dec5ad12b1c4adf1b9d736372cd",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false,
+        "priorAttempt": {
+          "rawOutputSha256": "13abbe572d5d99a3f8ae84306963c68794b0d341efc54419ada0215c1c77ef1c",
+          "issue": "Leaf/claw tail terminal beyond the ordinary Rush tapered-tail reference",
+          "retainedPrivately": true
+        },
+        "repairScope": "Distal tail contour only requested; overall pose and identity visually checked, not pixel-identical proof."
+      },
+      "alphaInspection": {
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1218,
+          1292
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          24,
+          12,
+          1194,
+          1271
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 24742,
+        "midAlpha16to127": 7478
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "b36b97bd8d1aa92a862c0d07f80219b0ebda7b08e3b36e3b45c988c8f7c893dc",
+        "maskSha256": "5aa1133cba1b371654eec69da1e2f6497c8c6dec5ad12b1c4adf1b9d736372cd",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "big-chuck",
+      "sourceFile": "assets/source-art/big-chuck-source-original.jpg",
+      "sourceSha256": "8aada996b935f2eeb76e3efebd29f64ab7b293176dd7e97b1464a7d1d070e324",
+      "maskFile": "assets/source-art/big-chuck-reference-edit.png",
+      "maskSha256": "dd37fa34c78b4ec1da0bfed1f2bb4de83bfa6c1976ffba4767c66c9b5406d5b1",
+      "pageUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided redraw of the final animated Big Chuck design using two actually inspected community-video animation captures. The broad low reclining pose is retained; attackers and background are removed, with hidden contact areas, fingers and tucked rear limbs interpretatively reconstructed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. UB CRASH is a community explanatory upload containing Toonworld4all branding, not an official uploader. No open licence asserted.",
+      "observations": [
+        "Actually viewed both 807x455 sources: the 410.213333-second view shows the final white/grey/green broad-bodied Big Chuck lying low, with green large fins and smaller dorsal fins; four Eon attackers overlap the arms, back and rear body. The 406.213319-second crop supports the same face, neck studs and green throat design.",
+        "Actually viewed the transparent output: the low left-facing pose, white face, green eyes and throat, grey neck stud, rounded white striped torso, large green fins and two extended foreground arms remain. Attackers, swords, buildings and branding are absent. The short rear foot and claw/finger separations are interpretation after removing occluders."
+      ],
+      "limitations": [
+        "The source is a normal-browser capture of a community explainer, not a newly authenticated official video. Root observed playback; this subagent independently inspected the saved pixels. Only the stated sample times are claimed.",
+        "Small attackers obscure substantial limb junctions and parts of the rear body. Their completed outlines, rear-foot configuration, finger count/shape, and refined stripe and facial details are source-guided reconstruction rather than recovered original pixels. The source pose is low and wide, not a neutral upright model sheet.",
+        "The output retains narrow breathing room above the highest fin: strong-alpha bounds are 52px from left, 8px from top, 35px from right and 15px from bottom. No strong-alpha pixel touches a canvas edge. Weak positive-alpha edge pixels remain; actual dark watch rendering is pending root inspection.",
+        "Perkins early v1/v2 concept variants and the ordinary Upchuck frame around 395 seconds were excluded from image generation; neither is passed off as this final animated design.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance remain unverified."
+      ],
+      "adoptionBasis": "Same-design animation pose plus close-up with disclosed occlusion reconstruction, offered for root material/current-UI review.",
+      "sourceCapture": {
+        "kind": "community-reposted-animation-browser-capture",
+        "videoUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+        "playbackSeconds": 410.213333,
+        "uploader": "UB CRASH",
+        "observedBy": "Root actual CUA playback; saved source pixels independently viewed by subagent",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/big-chuck-source-original.jpg",
+          "sha256": "8aada996b935f2eeb76e3efebd29f64ab7b293176dd7e97b1464a7d1d070e324",
+          "bytes": 68863,
+          "format": "JPEG",
+          "size": [
+            807,
+            455
+          ],
+          "mode": "RGB",
+          "playbackSeconds": 410.213333,
+          "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+          "pageUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+          "sourceViewed": true,
+          "originalBytesUnchanged": true
+        }
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/big-chuck-face-support-original.jpg",
+          "sha256": "e6a7eee7ff74c553b23bfe5f231ef0fcd8c135b1da05e70a65964cf5e6117bab",
+          "bytes": 37147,
+          "format": "JPEG",
+          "size": [
+            807,
+            455
+          ],
+          "mode": "RGB",
+          "playbackSeconds": 406.213319,
+          "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+          "pageUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true,
+          "role": "Same final animated Big Chuck design face/chest crop: white face, grey/black brow, green eyes, green neck/chest and grey segmented neck studs. Not an independent full-body view."
+        }
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "round": 185,
+        "fullPrompt": "Use case: background-extraction / identity-preserve with disclosed reconstruction of occluded body parts.\nAsset type: one full-figure transparent sprite of FINAL ANIMATED Big Chuck (Way Big / Upchuck fusion) from Ben 10 Omniverse for an alien selector.\nInputs: image 1 is the primary complete-action pose screenshot at 410.213333 seconds, with the large white/grey/green Big Chuck lying low on the ground facing image-left while small humanoid Eon attackers overlap him. Image 2 is the same animated design's face/chest close-up at 406.213319 seconds, ONLY supporting head markings, grey segmented neck studs, and green neck/chest colors. These are community video repost screenshots; the output is interpretative redraw, not exact official cutout.\nRetain Big Chuck alone in the image 1 broad low-to-ground side-facing, propped/reclining pose, with huge rounded squat white body and black stripes, white face, dark grey/black forehead, two green eyes, open toothy mouth, vivid green throat/chest, grey round segmented neck studs, two very large green pointed shoulder fins and smaller green dorsal/neck fins. Retain the long white black-striped foreground arm reaching image-left with a green fin along it, and the other thick white arm descending to the right-hand green pointed fingers on the ground. Keep the original relative size of his huge head, rounded torso, long thick arms and small rear legs. Reconstruct only the parts hidden by the small attackers, using the visible same-design edges; keep the short rear limbs naturally tucked behind the broad body in this exact low pose, rather than inventing a standing pose. Complete interrupted fin and forearm contours, not new weapons or extra limbs. Preserve asymmetry and the source mouth expression. The green fins must read as parts attached to the white body, not isolated light streaks.\nRemove ALL small humanoid Eon attackers (the three in front and the one on his back), their purple swords, the city, ground, shadows, subtitles, corner logo and watermark. Do not import any Eon limb, black costume or sword into Big Chuck. Do not use early red/white or green/black concept designs; no long upright purple horn, no unrelated Upchuck design.\nFlat clean 2D animation colors with defined dark outlines, no 3D shading redesign. Genuine transparent RGBA background and clear limb gaps. No glow, aura, ambient haze, shadow, scene, checkerboard or text. Keep the entire silhouette inside the canvas with generous transparent margin, including both huge fins, all fingers and the full rounded rear body. This is source-guided interpretative recovery of occluded areas, not official model-sheet certification.",
+        "transparentBackground": true,
+        "rawOutputSha256": "dd37fa34c78b4ec1da0bfed1f2bb4de83bfa6c1976ffba4767c66c9b5406d5b1",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false
+      },
+      "alphaInspection": {
+        "sha256": "dd37fa34c78b4ec1da0bfed1f2bb4de83bfa6c1976ffba4767c66c9b5406d5b1",
+        "bytes": 909877,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1774,
+          887
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          52,
+          8,
+          1739,
+          872
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 16979,
+        "midAlpha16to127": 5224
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "8aada996b935f2eeb76e3efebd29f64ab7b293176dd7e97b1464a7d1d070e324",
+        "maskSha256": "dd37fa34c78b4ec1da0bfed1f2bb4de83bfa6c1976ffba4767c66c9b5406d5b1",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "reboot-ampfibian",
+      "sourceFile": "assets/source-art/reboot-ampfibian-source-video-027.jpg",
+      "sourceSha256": "be2eb21a67e02cf636cd35b25cc625733aeaa050fe638c4c7123e67233d45c69",
+      "maskFile": "assets/source-art/reboot-ampfibian-reference-edit.png",
+      "maskSha256": "443921c47b106a3230a55a56354abb2b6b79cd2f93bba7578db8fb51dec7a2a0",
+      "pageUrl": "https://www.youtube.com/watch?v=wv0kuN5OkfQ",
+      "url": "https://www.youtube.com/watch?v=wv0kuN5OkfQ",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-from-community-animation-clip",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Community video repost; official upstream animation publishing chain and redistribution permission are unverified. AI output is not official transparent original art.",
+      "observations": "Actually viewed the saved browser screenshot of the community clip at approximately 2.8 seconds: blue/white bell head, yellow-green eyes, central green chest badge, four independently connected long flipper-ended arms and twin tapering lower appendages are visible. The output retains that spread floating pose and whole recognizable character. No UA anatomy helper was used.",
+      "limitations": [
+        "Input is a full-page browser JPEG screenshot, not a native decoded video frame; only the top-left video panel guided the character. Community uploader title identifies Alien X-Tinction; original animation upstream attribution has not been independently established.",
+        "AI redrew outlines, proportions, white lightning patterns, eye/badge geometry and limb curvature; this is not pixel-exact extraction or an official model.",
+        "Generated alpha is preserved unchanged: alpha 0..254; alpha>=128 bbox [35,75,1502,968] on 1536x1024. Some faint alpha<16 residue extends towards the canvas edge; most grey preview glow is hidden RGB at alpha=0. Final black UI still needs root inspection."
+      ],
+      "adoptionBasis": "Same-version visible identity and complete observed floating contour support an AI reference draft; no single ideal standing source gate is imposed.",
+      "sourcePageLabel": "Ben 10 Reboot | Ampfibian And Chromastone | Alien X-Tinction Season 5 Special Event | Full HD; community Ben 10 Reboot World",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction / reference-guided character reconstruction.\nAsset type: one transparent PNG character reference for a Ben 10 transformation selector.\n\nInput image 1 is a browser screenshot of a community-uploaded Ben 10 Reboot Alien X-Tinction transformation clip. ONLY use the large video panel near the top left as the edit target. The single Ampfibian character is fully visible inside that panel. Ignore the surrounding website, text, thumbnails, green energy background, and CN broadcast watermark.\nPrimary request: carefully redraw/extract that exact single blue-and-white Ampfibian in the same floating, four-arms-spread pose onto a genuinely transparent background, leaving generous transparent margins on every side.\nKeep the observed reboot proportions and identity: small angular/bell-like blue head with white segmented lines and yellow-green eyes; compact broad blue chest with a green circular Omnitrix insignia at the center; four separate very long narrow arms whose wide tapering flipper-like hand ends curve outward/downward; long tapering twin leg appendages underneath with their visible overlap; the asymmetric loops and white lightning-like markings as seen. Preserve the source arm paths, four distinct arm connections, and both lower appendages. Do not straighten it into a standing human, add fingers, or add extra limbs.\nStyle: flat 2D cartoon cel colors with restrained clean dark outlines, faithful to the observed animation; no 3D, no new armor, no decorative lighting. Minor line cleanup is allowed because the screenshot is low detail. Do not invent anatomy beyond the visible figure.\nComposition: one complete isolated character, centered, whole antenna/head/arms/leg tips inside the canvas, at least 6 percent clear transparent margin. No environmental energy glow, ground/shadow, words, labels, logo, frame, or watermarks. This is a reference redraw, not an assertion of official original artwork.",
+        "fullPrompt": "Use case: background-extraction / reference-guided character reconstruction.\nAsset type: one transparent PNG character reference for a Ben 10 transformation selector.\n\nInput image 1 is a browser screenshot of a community-uploaded Ben 10 Reboot Alien X-Tinction transformation clip. ONLY use the large video panel near the top left as the edit target. The single Ampfibian character is fully visible inside that panel. Ignore the surrounding website, text, thumbnails, green energy background, and CN broadcast watermark.\nPrimary request: carefully redraw/extract that exact single blue-and-white Ampfibian in the same floating, four-arms-spread pose onto a genuinely transparent background, leaving generous transparent margins on every side.\nKeep the observed reboot proportions and identity: small angular/bell-like blue head with white segmented lines and yellow-green eyes; compact broad blue chest with a green circular Omnitrix insignia at the center; four separate very long narrow arms whose wide tapering flipper-like hand ends curve outward/downward; long tapering twin leg appendages underneath with their visible overlap; the asymmetric loops and white lightning-like markings as seen. Preserve the source arm paths, four distinct arm connections, and both lower appendages. Do not straighten it into a standing human, add fingers, or add extra limbs.\nStyle: flat 2D cartoon cel colors with restrained clean dark outlines, faithful to the observed animation; no 3D, no new armor, no decorative lighting. Minor line cleanup is allowed because the screenshot is low detail. Do not invent anatomy beyond the visible figure.\nComposition: one complete isolated character, centered, whole antenna/head/arms/leg tips inside the canvas, at least 6 percent clear transparent margin. No environmental energy glow, ground/shadow, words, labels, logo, frame, or watermarks. This is a reference redraw, not an assertion of official original artwork.",
+        "promptSha256": "fd06b9ea196921034b64bec36645158abc8b12ab8c276ec213542ed8117d1c32",
+        "promptFileSha256": "a784b46ea316bd78c49e87fa9ad1bf0e2578842664c0d14ef435bd0ea3b595fb",
+        "rawOutputSha256": "443921c47b106a3230a55a56354abb2b6b79cd2f93bba7578db8fb51dec7a2a0",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0,
+        "attempt": 1
+      },
+      "supportingSources": [],
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "be2eb21a67e02cf636cd35b25cc625733aeaa050fe638c4c7123e67233d45c69",
+        "maskSha256": "443921c47b106a3230a55a56354abb2b6b79cd2f93bba7578db8fb51dec7a2a0",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "reboot-alien-v",
+      "sourceFile": "assets/source-art/reboot-alien-v-tenor-frame000.png",
+      "sourceSha256": "04b04999e9bc78850f6a62cc7cc1a147bb5118a92ec7853f846b7ff5c5a447ed",
+      "maskFile": "assets/source-art/reboot-alien-v-reference-edit.png",
+      "maskSha256": "6ec7b22bea0130b1d3bafeab0c6f8f34877c918e84729428a565bb68fccd7fe5",
+      "pageUrl": "https://tenor.com/view/vilgax-alien-v-celestialsapien-lightning-rain-gif-17437876104556182587",
+      "url": "https://media1.tenor.com/m/8f_H7WFX_DsAAAAC/vilgax-alien-v.gif",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-explanatory-reference-reconstruction-from-community-animation",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Tenor community animation GIF and PNGAAA community anatomy illustration; authorship, upstream official publication and rights-holder redistribution permission remain unverified. PNGAAA labels its Gax image non-commercial use. Generated figure is explanatory AI art, not official full-body original.",
+      "observations": "Actually viewed GIF-derived frames 0,29,57: black head with red edge, narrow red eyes, long thick beard tentacles and broad shoulders. The output preserves those identity cues with a black/red cosmic figure. Actually viewed full Reboot Gax anatomy input separately; it was used only to guide a plausible powerful two-armed humanoid and two-legged body. No claim that those body details were observed for Alien V.",
+      "limitations": [
+        "The Alien V frames show only head and shoulders. Entire torso/pelvis/arms/hands/legs/feet and upright slightly crouched body pose are AI anatomical reconstruction, loosely guided by ordinary Reboot Gax; they are not directly verified Alien V movie contours.",
+        "Gax is a different wearer/transform design: green skin, yellow discs, spiked pads, uniform and badge were excluded. Using it as anatomy support is not same-variant identity proof.",
+        "AI redraw changes beard strands, facial edge geometry and body proportions; red speckles below the head are interpretive. This draft must not be called exact official reconstruction.",
+        "Generated alpha remains original 0..254: alpha>=128 bbox [27,9,1013,1515] on 1024x1536. Low-alpha residue extends to top/left edges. Red preview glow samples are alpha=0, but final black UI remains unreviewed."
+      ],
+      "adoptionBasis": "User-authorized explanatory missing-body reconstruction, with directly observed movie-form head identity and explicit unverified-body disclosure. Root material decision and current UI review remain pending.",
+      "sourcePageLabel": "Vilgax Alien V GIF; community tags celestialsapien, lightning, rain",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: reference-guided character reconstruction with transparent background.\nAsset type: one isolated Alien V reference illustration for a Ben 10 character selector.\n\nInputs and evidence roles:\nImage 1 (Alien V animation GIF frame) is the PRIMARY identity/color/head reference. It directly verifies the black head, narrow glowing red eyes, curved red head contour, long thick tentacle beard with several hanging strands, and broad black/red shoulders. It shows only head and shoulders, not the lower body.\nImage 2 is a full-body Reboot Gax picture. It is ONLY a same-species ANATOMY GUIDE for the broad powerful two-armed humanoid, hands, pelvis, two legs and feet. It is NOT Alien V variant proof. Do not copy Gax's green skin, yellow discs, human uniform, Omnitrix, shoulder pads/spikes, wrist cuffs, boots/armor, or white garment stripes.\n\nPrimary request: make an explicitly interpretive full-body Alien V reconstruction. Keep the actual head/eyes/beard silhouette and black-with-red-outline appearance from Image 1. Extend the verified broad shoulders into a simple very large muscular humanoid, two heavy arms, large hands and two sturdy legs, loosely using Image 2's anatomy. Put the character in a restrained upright slightly crouched front three-quarter pose, hands relaxed beside the body; the body pose is reconstructed rather than a traced movie pose. The entire torso and all limb anatomy below the shoulders are inferred because not supplied by the Alien V frame.\nKeep the whole figure black with restrained red outlines; only a few tiny red celestial speckles, no elaborate invented costume or accessories. Keep the beard hanging over upper chest. Do not give him Ben's Omnitrix, armor spikes, colored uniform, a sword, extra arms, or a second head.\nStyle: simple flat 2D animation cel shapes and clean dark/red linework, not realistic or 3D. Preserve identity rather than adding detail unsupported by the frames.\nComposition: one complete character centered, head/beard/hands/feet wholly within canvas with ample transparent margins. Genuinely transparent background; no scenery, red lightning, glow cloud, ground shadow, caption, emblem label, watermark, or panel. This is an AI explanatory reference reconstruction, not official full-body original art.",
+        "fullPrompt": "Use case: reference-guided character reconstruction with transparent background.\nAsset type: one isolated Alien V reference illustration for a Ben 10 character selector.\n\nInputs and evidence roles:\nImage 1 (Alien V animation GIF frame) is the PRIMARY identity/color/head reference. It directly verifies the black head, narrow glowing red eyes, curved red head contour, long thick tentacle beard with several hanging strands, and broad black/red shoulders. It shows only head and shoulders, not the lower body.\nImage 2 is a full-body Reboot Gax picture. It is ONLY a same-species ANATOMY GUIDE for the broad powerful two-armed humanoid, hands, pelvis, two legs and feet. It is NOT Alien V variant proof. Do not copy Gax's green skin, yellow discs, human uniform, Omnitrix, shoulder pads/spikes, wrist cuffs, boots/armor, or white garment stripes.\n\nPrimary request: make an explicitly interpretive full-body Alien V reconstruction. Keep the actual head/eyes/beard silhouette and black-with-red-outline appearance from Image 1. Extend the verified broad shoulders into a simple very large muscular humanoid, two heavy arms, large hands and two sturdy legs, loosely using Image 2's anatomy. Put the character in a restrained upright slightly crouched front three-quarter pose, hands relaxed beside the body; the body pose is reconstructed rather than a traced movie pose. The entire torso and all limb anatomy below the shoulders are inferred because not supplied by the Alien V frame.\nKeep the whole figure black with restrained red outlines; only a few tiny red celestial speckles, no elaborate invented costume or accessories. Keep the beard hanging over upper chest. Do not give him Ben's Omnitrix, armor spikes, colored uniform, a sword, extra arms, or a second head.\nStyle: simple flat 2D animation cel shapes and clean dark/red linework, not realistic or 3D. Preserve identity rather than adding detail unsupported by the frames.\nComposition: one complete character centered, head/beard/hands/feet wholly within canvas with ample transparent margins. Genuinely transparent background; no scenery, red lightning, glow cloud, ground shadow, caption, emblem label, watermark, or panel. This is an AI explanatory reference reconstruction, not official full-body original art.",
+        "promptSha256": "4058ddfdfd39d03cc242af998f697b91893ade695e353b4a49696766c4dc964e",
+        "promptFileSha256": "de50a1557a85ad5772e0cc0079c260fe27970224760204bbdb0ccb46fb6041b3",
+        "rawOutputSha256": "6ec7b22bea0130b1d3bafeab0c6f8f34877c918e84729428a565bb68fccd7fe5",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0,
+        "attempt": 1
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-alien-v-tenor-frame029.png",
+          "sha256": "38082a236fc1db78ccc506342539e65195dd72aa318ac4b38085ef55516ebba7",
+          "url": "https://media1.tenor.com/m/8f_H7WFX_DsAAAAC/vilgax-alien-v.gif",
+          "role": "Animation-derived GIF frame 29: same black/red head, eyes, beard and shoulders only; no additional torso or limb proof."
+        },
+        {
+          "file": "assets/source-art/reboot-alien-v-tenor-frame057.png",
+          "sha256": "4d7b1d6316e69245b165e8b6a7b68ba0cf5567b18f17f7d42a6883de5018da0c",
+          "url": "https://media1.tenor.com/m/8f_H7WFX_DsAAAAC/vilgax-alien-v.gif",
+          "role": "Animation-derived GIF frame 57: same head/shoulder identity, not full-body proof."
+        },
+        {
+          "file": "assets/source-art/reboot-alien-v-tenor-source-original.gif",
+          "sha256": "4fa6f84aa0933e6dc83f80cd1241bf84d5475e5df43314aca001f5bf689ae6e5",
+          "url": "https://media1.tenor.com/m/8f_H7WFX_DsAAAAC/vilgax-alien-v.gif",
+          "role": "Unchanged original community animation GIF; provenance for the three decoded reference frames."
+        },
+        {
+          "file": "assets/source-art/reboot-alien-v-gax-anatomy-source-original.png",
+          "sha256": "b022ba22d81775bea9894e1c9959536aaa08875c37cf28fe029af1d3106d56bd",
+          "url": "https://www.pngaaa.com/api-download/3127648",
+          "role": "Reboot Gax same-species anatomy helper only. It does not verify Alien V costume, body pose, limb proportions or lower-body details; no Gax uniform/armor/badge was copied."
+        }
+      ],
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "04b04999e9bc78850f6a62cc7cc1a147bb5118a92ec7853f846b7ff5c5a447ed",
+        "maskSha256": "6ec7b22bea0130b1d3bafeab0c6f8f34877c918e84729428a565bb68fccd7fe5",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "game-omnitrix-glitch-combination",
+      "sourceFile": "assets/source-art/game-omnitrix-glitch-combination-comic-atlas-original.png",
+      "sourceSha256": "36e93ce92bf4253a9d44feb9da8eafb9668780ea5672b1daf5e29f2deba05186",
+      "maskFile": "assets/source-art/game-omnitrix-glitch-combination-reference-edit.png",
+      "maskSha256": "f2d1a2c770a53cb60f39125a26563c35428a036d6683ae015d5572d24c57a55d",
+      "pageUrl": "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png",
+      "url": "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Previously acquired community-game-portal original comic atlas used for one built-in transparent reference redraw of its final red/pink fused body, with disclosed cropped foot/finger reconstruction. Not an official transparent original.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Original game/character copyright retained; redistribution license unknown; AI reference reconstruction disclosed.",
+      "observations": [
+        "Actually viewed the original 2001x822 atlas: terminal red/pink panel has red head/one enlarged orange eye, two cyan back projections, white-black chest, raised fire-coloured arm, lower cyan arm, large rounded black-yellow arm and cropped blue-black lower limbs.",
+        "Actually viewed the generated complete 1233x1275 RGBA: same terminal combination and gesture retained, two legs/feet completed interpretively, no ordinary Ben or neighboring panel subject; source/output bytes preserved."
+      ],
+      "limitations": [
+        "Specific final red/pink comic-panel fusion only; not every mix-and-match outcome, and the descriptive seven-alien-looking label is not an independently verified official character/species-composition name.",
+        "Original atlas was previously acquired from the public community game portal plays.org; original game/publisher ownership is not authenticated solely from portal hosting. Source original pixels and raw bytes retained.",
+        "Final panel cuts the blue/black leg ends and feet and small lower finger ends. The generated lower limbs/feet and those ends are openly interpretive reconstruction from visible direction/comic anatomy, not official hidden pixels. Earlier orange-panel feet are not asserted to be a verified same-version complete-body reference.",
+        "Small source comic character was enlarged and redrawn. Eye/finger/face linework, surface shading, limb proportions and some connecting curves are AI interpretation; do not use generated fine detail as canon evidence.",
+        "Raw alpha/bytes unchanged; low-alpha residue remains (18955 pixels alpha1..15 and 5803 pixels alpha16..127). Nonzero alpha bbox [0,23,1223,1275] reaches left/bottom through low residue; alpha>=128 bbox [122,27,1183,1245] has no body pixels on any canvas edge.",
+        "No ordinary human Ben, neighboring comic/combat sprite or menu icon included. Giant rounded black/yellow arm and the visible raised fire-coloured/lower cyan arm groups follow the final panel; no invisible extra arm claimed.",
+        "Redistribution license unknown; game/character copyright retained and AI redraw disclosed.",
+        "Current UI, real phone, real SillyTavern, browser and driver acceptance are pending root; this reviewer did not use shared CUA."
+      ],
+      "adoptionBasis": "Visible specific final-panel identity plus authorized interpretive foot/end reconstruction supports a complete transparent candidate; pending root independent/current-UI review.",
+      "sourceCapture": {
+        "method": "Whole previously downloaded native PNG atlas copied byte-for-byte; no programmatic panel crop or source editing.",
+        "sourceSize": [
+          2001,
+          822
+        ],
+        "sourceMode": "P",
+        "sourceAlphaRange": null,
+        "actualFormat": "PNG",
+        "selectedPanel": "Final red/pink lower-middle comic rectangle",
+        "selectedPanelBoundsApprox": [
+          599,
+          480,
+          906,
+          802
+        ],
+        "boundsMethod": "Visual selection estimate, not a cropped/edited pixel image",
+        "actualCaption": null,
+        "requestedImageUrl": "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png",
+        "sourceHostingBoundary": "Community game portal resource; no independent publisher authentication inferred."
+      },
+      "editionEvidence": {
+        "body": "Concrete terminal comic combination in Ben 10 Omnitrix Glitch",
+        "observedFeatures": "Red head with small green/dark eye and large orange eye, two cyan back crystal-like points, white/black chest, raised fire arm, lower cyan arm, giant black arm with two yellow discs, blue/black striped legs.",
+        "catalogNameBoundary": "Descriptive catalog body record, not proof of a named species or all possible game combinations."
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: identity-preserve / reference-guided reconstruction with background-extraction.\nAsset type: one complete transparent cutout of the SPECIFIC final comic fusion in the Ben 10 Omnitrix Glitch game. This is not every possible game combination and is not an official full-body sheet.\nInput image 1 is the original complete game comic atlas. The sole controlling character is in the RED/PINK rectangular panel near the LOWER MIDDLE, approximately x599..905, y480..801 of the 2001x822 atlas. Select that one concrete fusion only. Do not use the orange panels at the top-right as the controlling body, the row of cyan powered aliens, the ordinary human Ben images, the explosion or menu arrows.\nPreserve this panel's recognizable design: red broad alien head/face with the small dark/green left eye and ONE enlarged orange right eye; round open mouth; white broad chest/abdomen with bold black border/centre stripe and the round black-and-white chest badge; TWO long cyan crystal-like projections behind the shoulders; a raised red/yellow fire-coloured image-left arm with open hand; the separate lower cyan image-left bent arm and dark claw tips; and the very large black image-right rounded arm silhouette with TWO huge yellow circular joint/disc surfaces and the small pale finger tips at its lower end. Preserve these visible attached arm groups and their overlaps. Do not invent an extra hidden arm or additional eyes because another alien elsewhere in the atlas has them.\nPrimary request: redraw only this last-panel fused alien on genuine transparent alpha, retain its red-panel raised-arm pose and all of its visible upper-body identity. Remove the pink panel, radiating background, outline frame and all other characters/UI elements.\nThe panel cuts the blue/black leg ends and feet at the bottom. Conservatively complete two coherent blue/black lower limbs/feet from the visible striped upper-leg direction, preserving the raised image-left knee/leaning stance. The unseen legs/feet and small clipped finger ends are explicitly interpretive reconstruction, not official newly found pixels. Earlier orange-panel foot shapes may serve only as a general comic-style leg/foot anatomy hint; do not copy its green two-eye head or omit the final design's cyan back projections/orange eye.\nMake one single full character, with both back-crystal tips, raised hand, cyan lower hand, giant round arm and BOTH complete foot tips entirely inside the canvas with comfortable transparent padding. Keep flat cartoon game-art colors and strong readable contours close to the small source. No realistic muscles, extra alien traits, ordinary humanoid Ben body, scenery, glow, smoke, detached shards, extra objects, ground shadow, caption, logo, watermark, panel border or checkerboard drawing. Actual transparent alpha background.",
+        "promptSha256": "3815edc93d87ecb9800bf5f1de2eebd87c265653041f3d0a1d4282bf008d6903",
+        "attempt": 1,
+        "rawOutputSha256": "f2d1a2c770a53cb60f39125a26563c35428a036d6683ae015d5572d24c57a55d",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "3815edc93d87ecb9800bf5f1de2eebd87c265653041f3d0a1d4282bf008d6903",
+        "promptStorageNote": "UTF-8 LF exact effective prompt, no extra trailing newline; inline hash equals archived bytes."
+      },
+      "alphaInspection": {
+        "size": [
+          1233,
+          1275
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBbox": [
+          0,
+          23,
+          1223,
+          1275
+        ],
+        "alpha128Bbox": [
+          122,
+          27,
+          1183,
+          1245
+        ],
+        "alpha128EdgeCounts": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0
+        },
+        "alpha1to15": 18955,
+        "alpha16to127": 5803,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "36e93ce92bf4253a9d44feb9da8eafb9668780ea5672b1daf5e29f2deba05186",
+        "maskSha256": "f2d1a2c770a53cb60f39125a26563c35428a036d6683ae015d5572d24c57a55d",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "eon-rat",
+      "sourceFile": "assets/source-art/eon-rat-source-original.jpg",
+      "sourceSha256": "0f06c9c6b8f32d1cca0248b0e7ecfb589adaa37d5ce51b1777074a7201c5c804",
+      "maskFile": "assets/source-art/eon-rat-reference-edit.png",
+      "maskSha256": "242666b127973c9a524f484f3d6ddc25ba64674419faba8c3dac86b81ed9883d",
+      "pageUrl": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+      "url": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided reconstruction of Ben transformed into helmeted Eon in the 2007 live-action film, based on an actually viewed community-reposted scene. Lower coat, hands, legs and boots are interpreted, not recovered official pixels.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 characters and original visual works remain copyrighted; public availability is not an open redistribution licence. AI reconstruction is disclosed and not official transparent artwork.",
+      "observations": [
+        "The right-hand helmeted figure was selected; the unhelmeted adult on the left was excluded. Purple-lined headpiece, pale face, high collar and dark structured shoulder coat remain recognizable. Output has two complete gloved hands and two visible boots."
+      ],
+      "limitations": [
+        "Only head and upper torso are visible in the 65.08-second source; all hands, coat hem, leg/boot construction and standing pose are interpretative extensions. Neither the screenshot nor the reconstruction is an official full-body model sheet.",
+        "The source is an actual browser capture of MaxTrailerClips, a community uploader; official upload authenticity is not asserted. Dark chest ribs, armor seams and purple forearm insets in the output are interpretation of dim imagery.",
+        "The generated RGB preview has a large purple haze, but exterior sampled alpha is zero. Low-alpha residue is retained unchanged; actual watch silhouette must be inspected. Native output maximum alpha is 254 rather than 255.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are pending."
+      ],
+      "adoptionBasis": "Root actually inspected primary source and generated output; preserve source-specific design and openly disclosed reconstruction boundaries. Current UI follows integration.",
+      "sourceCapture": {
+        "kind": "community-video-browser-capture",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/eon-rat-source-original.jpg",
+          "sha256": "0f06c9c6b8f32d1cca0248b0e7ecfb589adaa37d5ce51b1777074a7201c5c804",
+          "bytes": 18311,
+          "format": "JPEG",
+          "size": [
+            807,
+            455
+          ],
+          "mode": "RGB",
+          "url": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+          "pageUrl": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+          "sourceViewed": true
+        },
+        "playbackSeconds": 65.08,
+        "uploader": "MaxTrailerClips"
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "round": 185,
+        "attempt": 1,
+        "fullPrompt": "Create one transparent full-body reference-guided character sprite of Ben transformed into Eon from the live-action film Ben 10: Race Against Time. The attached screenshot is the sole identity reference. Select ONLY the figure on the RIGHT: pale angular face inside a black angular headpiece with purple luminous inset seams, high black neck collar, wide dark structured shoulders, dark ribbed torso armor and hanging black outer coat. Do not use the unhelmeted dark-haired adult at left, and do not combine their faces. Preserve the right figure's headpiece silhouette, face opening, raised collar and coat volume. The frame ends at the lower torso; extend the concealed lower body conservatively into two straight dark trouser legs with simple armored boots, a long split black coat ending above the boots, and two slightly separated arms with dark gloves, so the overall figure reads clearly as a standing game-selection silhouette. The lower limbs, hands and coat hem are an openly interpretative reconstruction, not recovered official frame pixels. Front three-quarter angle matching the visible helmet, full figure with 12 percent empty transparent margin around all tips, neither foot cropped. Detailed restrained illustrated rendering, black and charcoal clothing with modest purple inset highlights. No scenery, machine, second character, floor shadow, mist, external glow, lettering or poster. Genuine transparent RGBA background and clear alpha gaps between arms, coat and legs; no solid backdrop, checkerboard or semi-transparent sheet.",
+        "transparentBackground": true,
+        "rawOutputSha256": "242666b127973c9a524f484f3d6ddc25ba64674419faba8c3dac86b81ed9883d",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false
+      },
+      "alphaInspection": {
+        "sha256": "242666b127973c9a524f484f3d6ddc25ba64674419faba8c3dac86b81ed9883d",
+        "bytes": 1717757,
+        "format": "PNG",
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "bboxAlpha128": [
+          213,
+          17,
+          853,
+          1519
+        ],
+        "weakAlpha1to15": 22087,
+        "midAlpha16to127": 4823,
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "0f06c9c6b8f32d1cca0248b0e7ecfb589adaa37d5ce51b1777074a7201c5c804",
+        "maskSha256": "242666b127973c9a524f484f3d6ddc25ba64674419faba8c3dac86b81ed9883d",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "dynamite-stinkfly",
+      "sourceFile": "assets/source-art/dynamite-stinkfly-source-original.jpg",
+      "sourceSha256": "8c83f57d2e6963ddb6dcbf7769648b8609236bf7d38c1f7b5912c0be0ee9b5ed",
+      "maskFile": "assets/source-art/dynamite-stinkfly-carey-reference-edit.png",
+      "maskSha256": "f520eff90c9572b0eb33d37c27fdec9743537d4850c9d14f12e0964f48588578",
+      "pageUrl": "https://www.midtowncomics.com/p/2583267-ben-10-vol-2-2-cover-w-3rd-ptg-a-robert-carey-cover/",
+      "url": "https://www.midtowncomics.com/images/PRODUCT/XL/2583267_xl.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided extraction of Robert Carey's Dynamite Ben 10 issue 2 third-print Stinkfly cover, retained from the Midtown Comics product listing. Licensed-cover edition identity is attributed to the retailer; no official transparent original or exact pixel extraction is asserted.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 characters and original visual works remain copyrighted; public availability is not an open redistribution licence. AI reconstruction is disclosed and not official transparent artwork.",
+      "observations": [
+        "Root inspected the cover and output. Four pale veined wings, two tall narrow dorsal structures, antennae, red compound eye detail and six clawed limbs retain the cover pose. All long tips are present and lettering was removed. Output regularizes some wing/leg texture and small joints."
+      ],
+      "limitations": [
+        "The original is a retailer-hosted licensed cover attributed to Robert Carey, SKU 0626DE8101. The source is not an official publisher upload, and the delivered drawing is an AI interpretation.",
+        "The cover provides the whole principal body contour; small linework, limb connections and translucent wing treatment are interpreted. No missing full-body anatomy is claimed to have been recovered.",
+        "The initial Duncan Rouleau issue 4 cover candidate was not adopted because its design differs substantially. This entry uses only the later Carey source and output; no hybrid of cover designs is introduced.",
+        "Thin yellow edge traces and weak-alpha fringe remain around parts of the wings. The generated margins are smaller than requested but strong body pixels do not touch the canvas; current watch fit is checked separately.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are pending."
+      ],
+      "adoptionBasis": "Root actually inspected primary source and generated output; preserve source-specific design and openly disclosed reconstruction boundaries. Current UI follows integration.",
+      "sourceCapture": {
+        "kind": "retailer-hosted-licensed-cover",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/dynamite-stinkfly-source-original.jpg",
+          "sha256": "8c83f57d2e6963ddb6dcbf7769648b8609236bf7d38c1f7b5912c0be0ee9b5ed",
+          "bytes": 208957,
+          "format": "JPEG",
+          "size": [
+            900,
+            1366
+          ],
+          "mode": "RGB",
+          "url": "https://www.midtowncomics.com/images/PRODUCT/XL/2583267_xl.jpg",
+          "pageUrl": "https://www.midtowncomics.com/p/2583267-ben-10-vol-2-2-cover-w-3rd-ptg-a-robert-carey-cover/",
+          "sourceViewed": true
+        }
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "round": 185,
+        "attempt": 1,
+        "fullPrompt": "Extract and redraw the ONE green insect alien Stinkfly on the attached Robert Carey Ben 10 issue 2 third-print comic cover as a complete transparent sprite. The cover artwork is the identity and pose reference. Precisely retain this Dynamite comic design: rough green segmented insect body, two red compound eyes on a small fierce mandible head, two curled slender antennae extending sideways, six visible jointed clawed limbs, four wide pale translucent veined wings, and the two long narrow black-and-yellow dorsal structures rising almost vertically between the wings. Preserve their number, placement, pose and asymmetric shapes from this cover; do not simplify it into the animation's green four-eye design or any other Stinkfly cover variant. All original limb tips and wing ends fit inside the source, so retain them all. Remove only the white cover backdrop, black/green BEN 10 lettering visible behind and BETWEEN the limbs/wings, Cartoon Network logo, all labels, tiny text, credits, issue strip, and the thin yellow printed outline halo that separates the character from cover typography. Preserve pale translucency within the actual four wings, but their surrounding empty spaces must be truly alpha-zero. Preserve the original comic inks and green textures on the creature; modest clean line interpretation is allowed but no new anatomy or stance. Center the entire creature with 10 percent transparent breathing room on every side, including highest left wing and bottom claws. Genuine transparent RGBA, no background, no ground shadow, no outer glow, no mist and no additional rays or particles. This is a reference-guided illustrative extraction, not official original transparent art.",
+        "transparentBackground": true,
+        "rawOutputSha256": "f520eff90c9572b0eb33d37c27fdec9743537d4850c9d14f12e0964f48588578",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false
+      },
+      "alphaInspection": {
+        "sha256": "f520eff90c9572b0eb33d37c27fdec9743537d4850c9d14f12e0964f48588578",
+        "bytes": 1308322,
+        "format": "PNG",
+        "size": [
+          1065,
+          1477
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          51,
+          31,
+          1037,
+          1442
+        ],
+        "weakAlpha1to15": 64159,
+        "midAlpha16to127": 11270,
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "8c83f57d2e6963ddb6dcbf7769648b8609236bf7d38c1f7b5912c0be0ee9b5ed",
+        "maskSha256": "f520eff90c9572b0eb33d37c27fdec9743537d4850c9d14f12e0964f48588578",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "dynamite-xlr8",
+      "sourceFile": "assets/source-art/dynamite-xlr8-carey-second-print-original.jpg",
+      "maskFile": "assets/source-art/dynamite-xlr8-reference-edit.png",
+      "sourceSha256": "436266b1d234d5da074faafda25208e9dac91adc45702aa02bdb47a240c4fb86",
+      "maskSha256": "b4879a131ae2263fe0a609adaf57338dc31a680e0ebed3fcb4cabb5bb81313f6",
+      "pageUrl": "https://www.midtowncomics.com/p/2583270-ben-10-vol-2-3-cover-t-2nd-ptg-a-robert-carey-cover/",
+      "url": "https://www.midtowncomics.com/images/PRODUCT/XL/2583270_xl.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Published Dynamite Ben 10 #3 second-print Robert Carey cover, obtained as the literal matching Midtown Comics SKU 0626DE8104 bitmap. One built-in transparent reference edit retains the complete comic action silhouette and interprets small internal ink details. Not an official transparent original.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "sourceCapture": {
+        "method": "Unmodified literal retailer product image download",
+        "format": "JPEG",
+        "width": 900,
+        "height": 1366,
+        "sku": "0626DE8104",
+        "cover": "Ben 10 #3 second printing Cover A / Robert Carey",
+        "publisherAnnouncementUrl": "https://www.linkedin.com/posts/dynamite-entertainment_xlr8-stinkfly-zombozo-make-first-appearances-activity-7481284899942014977-JXpu",
+        "publisherAnnouncementRead": true,
+        "publisherAnnouncementScope": "Publisher lists these new-print SKUs and states the XLR8 comic debut in issue 4; it does not alone identify the pixels of each reprint cover. Actual downloaded cover pixels supply the XLR8 figure."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Edit the supplied Ben 10 comic cover into a clean transparent character cutout for a silhouette selector. This is the Robert Carey XLR8 figure on the Ben 10 issue 3 second printing cover, not a request for the ordinary television XLR8 design.\n\nExtract ONLY the complete black-and-teal alien figure in the foreground. Keep its exact slanted airborne action: helmeted head tilted toward the lower left, the image-right arm raised with an open hand, the image-left arm reaching down with long pointed fingers, both bent legs and pointed boot/foot ends near the lower right, and the thick curved tail looping on the image-right side. Preserve the rounded ridged black helmet, broad reflective cyan visor, dark fitted body with thin bright green/teal accents, luminous round chest emblem, long forearms, finger silhouettes, bent knee positions, feet shapes, and the single curved tail. Do not exchange this for the animation model, add a classic tall head spike, add wheels, add extra arms or appendages, or change the pose into a standing model sheet.\n\nAll major body endpoints are visible in the source. Keep the visible anatomy and overlaps as shown; no missing-limb invention is needed. Small comic linework, shading, glossy highlights, and finger separations may be interpreted, but the existing large outer contour and proportions must remain close to the reference. Keep the inked body edge; remove only the colored cyan/purple sticker-like marketing outline outside the body, not actual limbs or the tail.\n\nRemove all white background, BEN 10 / Cartoon Network logos, lettering, issue number, publisher branding, author names, and geometric background shapes. Do not include Ben as a human, other aliens, a floor, props, a frame, a sticker border, a cast shadow, glow haze, or a rectangular background. Preserve a colored comic character cutout, not a new unrelated illustration. Use true transparent alpha around the character, including internal gaps between arm and torso and in the curved tail loop. Center the entire original action pose with clear transparent padding around every fingertip, head, foot end, and tail. Do not crop any body part.",
+        "promptSha256": "77749694acd7e85915123d94e095a2fd113f8245004ccfca6751b2c991214713",
+        "attempt": 1,
+        "rawOutputSha256": "b4879a131ae2263fe0a609adaf57338dc31a680e0ebed3fcb4cabb5bb81313f6",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "77749694acd7e85915123d94e095a2fd113f8245004ccfca6751b2c991214713",
+        "promptStorageNote": "UTF-8 LF exact effective prompt, no extra trailing newline; inline hash equals archived bytes."
+      },
+      "supportingSources": [],
+      "observations": [
+        "Source: foreground single black/teal XLR8 in a slanted action pose; entire helmet, raised image-right hand, downward image-left long fingers, bent legs/two foot ends and curved image-right tail lie within the source canvas. No other character occludes its outer contour.",
+        "Output: same diagonal gesture and major outline are retained, cyan visor/ridged rounded helmet, green chest disc, elongated arms and bent legs are visible. White cover, logos/lettering and colored sticker outline are removed.",
+        "Output has actual alpha 0..255; inspection was readonly. Alpha>=128 does not meet a canvas edge, with a small margin around the long downward fingertips and lowest foot. No broad flat body cut is visible."
+      ],
+      "limitations": [
+        "Official publisher announcement and matching retailer SKU/title support the published Robert Carey second-print cover identity; the bitmap was acquired from Midtown Comics, not directly from a publisher original-art archive.",
+        "Built-in AI transparent reference edit, not an official transparent original and not a pixel-exact background removal. Fine inkwork, shading, visor reflections, emblem detail and finger edges are interpreted.",
+        "The source already shows the complete action outline, including both hands, both foot ends and one curved tail. No substantial missing limb reconstruction was requested; overlaps remain as in the cover.",
+        "This is the Dynamite comic visual model. Rounded visor helmet, claw-like hands/feet and dark teal-accented body are retained; no ordinary television XLR8 tall head spike or wheel feet were substituted.",
+        "Transparent padding is tight: alpha>=128 bbox is [4,14,976,1540] in a 1018x1545 bitmap. Low-alpha pixels reach left/bottom canvas edges with maxima 4/3; faint residual antialiasing may influence envelope scaling.",
+        "Licensing/redistribution permission remains unknown; public sale and official publication do not confer a reuse license.",
+        "Actual UI, real SillyTavern, real phone and human driver acceptance have not been performed by this agent."
+      ],
+      "license": "unknown",
+      "rights": "Underlying Ben 10 characters and cover artwork remain copyrighted. Midtown Comics retailer publication and sale do not confer a redistribution licence; permission is unknown. AI reference interpretation is disclosed, not official transparent original art.",
+      "uiReview": {
+        "version": "0.4.5",
+        "checkedAt": "2026-10-09T12:33:18.979Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "436266b1d234d5da074faafda25208e9dac91adc45702aa02bdb47a240c4fb86",
+        "maskSha256": "b4879a131ae2263fe0a609adaf57338dc31a680e0ebed3fcb4cabb5bb81313f6",
+        "inspectedPreviewSha256": "d1ae9071736c5cc2ac6729bf1ac3dca1fc2838eed4ee3ffd870a07f688275f04",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
     }
   ],
   "mergedForms": [

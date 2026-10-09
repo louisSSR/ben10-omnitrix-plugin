@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "e9a903c092daab6e5edd02c834678dbf440afdde26d0d4c0cd3f1e83a4452156",
-  "shapeCount": 209,
+  "sourceSvgSha256": "3aa8679659565e16f258e4c7da16f4573263bae272352c1d151d22cc74a19d2a",
+  "shapeCount": 219,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -544,11 +544,23 @@
       "diamondExtent": 1.55,
       "visiblePixels": 16445
     },
+    "big-chuck": {
+      "scale": 0.7452,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.167324,
+      "visiblePixels": 607886
+    },
     "humungoopsaur": {
       "scale": 0.5073,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.714683,
       "visiblePixels": 781572
+    },
+    "eon-rat": {
+      "scale": 0.5667,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.535156,
+      "visiblePixels": 598626
     },
     "bad-ghostfreak": {
       "scale": 0.8847,
@@ -772,6 +784,12 @@
       "diamondExtent": 1.105542,
       "visiblePixels": 127256
     },
+    "reboot-ampfibian": {
+      "scale": 0.7089,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.227214,
+      "visiblePixels": 409684
+    },
     "reboot-big-chill": {
       "scale": 0.7521,
       "method": "native-png-alpha-diamond-envelope",
@@ -946,6 +964,18 @@
       "diamondExtent": 1.358919,
       "visiblePixels": 561817
     },
+    "reboot-amalgam-ben": {
+      "scale": 0.5745,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.514301,
+      "visiblePixels": 831255
+    },
+    "reboot-xlrarmblastdiamondheat": {
+      "scale": 0.6205,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.401903,
+      "visiblePixels": 595154
+    },
     "reboot-bashmouth": {
       "scale": 0.8056,
       "method": "native-png-alpha-diamond-envelope",
@@ -1024,11 +1054,29 @@
       "diamondExtent": 1.301834,
       "visiblePixels": 742146
     },
+    "reboot-monster-kevin-tales": {
+      "scale": 0.5485,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.585933,
+      "visiblePixels": 581952
+    },
+    "reboot-alien-v": {
+      "scale": 0.5933,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.466146,
+      "visiblePixels": 848897
+    },
     "game-shock-blast": {
       "scale": 0.5733,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.517443,
       "visiblePixels": 542604
+    },
+    "game-omnitrix-glitch-combination": {
+      "scale": 0.5726,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.51933,
+      "visiblePixels": 685489
     },
     "stage-rocks": {
       "scale": 0.6349,
@@ -1287,6 +1335,18 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.454014,
       "visiblePixels": 476451
+    },
+    "dynamite-xlr8": {
+      "scale": 0.5588,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.556634,
+      "visiblePixels": 497765
+    },
+    "dynamite-stinkfly": {
+      "scale": 0.524,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.660122,
+      "visiblePixels": 516314
     },
     "dynamite-grey-matter": {
       "scale": 0.5855,

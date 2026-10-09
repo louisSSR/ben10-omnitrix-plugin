@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "738e46856af3f7f6fe34a338d1aaa17306171b4716daf00ffaeca838e090964c",
-  "svgSha256": "e9a903c092daab6e5edd02c834678dbf440afdde26d0d4c0cd3f1e83a4452156",
+  "catalogSha256": "bbce18253ce369f5af00f6c2e3d95e3e6147f63f4b83f1c403c1a2539bcae0b7",
+  "svgSha256": "3aa8679659565e16f258e4c7da16f4573263bae272352c1d151d22cc74a19d2a",
   "coverage": {
     "total": 224,
-    "reviewed": 209,
-    "missing": 15
+    "reviewed": 219,
+    "missing": 5
   },
   "assets": [
     {
@@ -1876,6 +1876,106 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "3f825e6ed751ba1343f39e3c389e800d14aa1b209db7fa9805e6d21a76570d36",
       "maskSha256": "90cb9b3af84e4d01715dd54cdf8f3a090571bc88290571d08adb5f7f331aab7f",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-xlrarmblastdiamondheat",
+      "url": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+      "pageUrl": "https://www.youtube.com/watch?v=94zwEZdSrbA",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Reposting/visibility is not an open licence; the generated sprite is AI interpretative art, not official transparent production art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "a5727fbbc4b944748c5a1cbfcda4e2de6b5d4d59af27ffd529823248365dc3b0",
+      "maskSha256": "17e28a319f29f98159e88dd92af729811081b04a536760015c03e361d869729a",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-amalgam-ben",
+      "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg7tuf2W0VjC5bbZJoB5gbsSTnCfxtZ_7TkDc6miRbgbO4c1EorjQTFUGz3cY7QcOt-Z6RE4s6HSuCANhYV3PigRA1LRKfqL6py8z0R4PuhmUTL_06Pr-DeDHoe79DgZrNGxFhWrYXsZJy/s1600/Amalgam+Ben.png",
+      "pageUrl": "https://ben10omniverse2013.blogspot.com/2017/11/amalgam-ben.html",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Reposting/visibility is not an open licence; the generated sprite is AI interpretative art, not official transparent production art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "563a94525c333640a82f5577681236c9bc8f5b5ed75b41f5a3bab2cc63b0ec97",
+      "maskSha256": "8c3bdf145c1b638975bf39639e076081d912cd7cad3452029ab8c6ba031307c5",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-monster-kevin-tales",
+      "url": "https://www.youtube.com/watch?v=4NGo3R9ZTkk",
+      "pageUrl": "https://www.youtube.com/watch?v=4NGo3R9ZTkk",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Eric95 video is a community repost with Kinemaster/OMNIVERSE1116 watermarks, not an official uploader. No open reuse licence asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "b36b97bd8d1aa92a862c0d07f80219b0ebda7b08e3b36e3b45c988c8f7c893dc",
+      "maskSha256": "5aa1133cba1b371654eec69da1e2f6497c8c6dec5ad12b1c4adf1b9d736372cd",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "big-chuck",
+      "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "pageUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. UB CRASH is a community explanatory upload containing Toonworld4all branding, not an official uploader. No open licence asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "8aada996b935f2eeb76e3efebd29f64ab7b293176dd7e97b1464a7d1d070e324",
+      "maskSha256": "dd37fa34c78b4ec1da0bfed1f2bb4de83bfa6c1976ffba4767c66c9b5406d5b1",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-ampfibian",
+      "url": "https://www.youtube.com/watch?v=wv0kuN5OkfQ",
+      "pageUrl": "https://www.youtube.com/watch?v=wv0kuN5OkfQ",
+      "rights": "Community video repost; official upstream animation publishing chain and redistribution permission are unverified. AI output is not official transparent original art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "be2eb21a67e02cf636cd35b25cc625733aeaa050fe638c4c7123e67233d45c69",
+      "maskSha256": "443921c47b106a3230a55a56354abb2b6b79cd2f93bba7578db8fb51dec7a2a0",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-alien-v",
+      "url": "https://media1.tenor.com/m/8f_H7WFX_DsAAAAC/vilgax-alien-v.gif",
+      "pageUrl": "https://tenor.com/view/vilgax-alien-v-celestialsapien-lightning-rain-gif-17437876104556182587",
+      "rights": "Tenor community animation GIF and PNGAAA community anatomy illustration; authorship, upstream official publication and rights-holder redistribution permission remain unverified. PNGAAA labels its Gax image non-commercial use. Generated figure is explanatory AI art, not official full-body original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "04b04999e9bc78850f6a62cc7cc1a147bb5118a92ec7853f846b7ff5c5a447ed",
+      "maskSha256": "6ec7b22bea0130b1d3bafeab0c6f8f34877c918e84729428a565bb68fccd7fe5",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "game-omnitrix-glitch-combination",
+      "url": "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png",
+      "pageUrl": "https://plays.org/game/ben-10-omnitrix-glitch/debugging/assets/atlases/x1/atlas_comic.png",
+      "rights": "Original game/character copyright retained; redistribution license unknown; AI reference reconstruction disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "36e93ce92bf4253a9d44feb9da8eafb9668780ea5672b1daf5e29f2deba05186",
+      "maskSha256": "f2d1a2c770a53cb60f39125a26563c35428a036d6683ae015d5572d24c57a55d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "eon-rat",
+      "url": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+      "pageUrl": "https://www.youtube.com/watch?v=GdYYUt78Ikw",
+      "rights": "Underlying Ben 10 characters and original visual works remain copyrighted; public availability is not an open redistribution licence. AI reconstruction is disclosed and not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "0f06c9c6b8f32d1cca0248b0e7ecfb589adaa37d5ce51b1777074a7201c5c804",
+      "maskSha256": "242666b127973c9a524f484f3d6ddc25ba64674419faba8c3dac86b81ed9883d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-stinkfly",
+      "url": "https://www.midtowncomics.com/images/PRODUCT/XL/2583267_xl.jpg",
+      "pageUrl": "https://www.midtowncomics.com/p/2583267-ben-10-vol-2-2-cover-w-3rd-ptg-a-robert-carey-cover/",
+      "rights": "Underlying Ben 10 characters and original visual works remain copyrighted; public availability is not an open redistribution licence. AI reconstruction is disclosed and not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "8c83f57d2e6963ddb6dcbf7769648b8609236bf7d38c1f7b5912c0be0ee9b5ed",
+      "maskSha256": "f520eff90c9572b0eb33d37c27fdec9743537d4850c9d14f12e0964f48588578",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-xlr8",
+      "url": "https://www.midtowncomics.com/images/PRODUCT/XL/2583270_xl.jpg",
+      "pageUrl": "https://www.midtowncomics.com/p/2583270-ben-10-vol-2-3-cover-t-2nd-ptg-a-robert-carey-cover/",
+      "rights": "Underlying Ben 10 characters and cover artwork remain copyrighted. Midtown Comics retailer publication and sale do not confer a redistribution licence; permission is unknown. AI reference interpretation is disclosed, not official transparent original art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "436266b1d234d5da074faafda25208e9dac91adc45702aa02bdb47a240c4fb86",
+      "maskSha256": "b4879a131ae2263fe0a609adaf57338dc31a680e0ebed3fcb4cabb5bb81313f6",
       "contentType": "image/png"
     }
   ],
