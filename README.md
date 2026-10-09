@@ -4,7 +4,7 @@ SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材�
 
 ## 可用界面
 
-- 四款可切换表壳：初代 Omnitrix、Alien Force 重校准版、Ultimatrix、Omniverse 完成版。投影与转盘使用多视角立体重绘；正视菱形表盘沿用独立正面美术。
+- 四款可切换表壳：初代 Omnitrix、Alien Force 重校准版、Ultimatrix、Omniverse 完成版。三种召唤界面共用实时三维表身；各视角使用同一实体结构，支持独立表芯升降。WebGL 不可用时回退多视角插画。
 - 三种召唤界面：分层全息投影、带远近缩放的环形转盘、带交叉挡片的菱形表盘。每种都有选择与锁定动画；宇宙记录墙已移除，旧偏好自动回到投影。
 - 菱形表盘按每个剪影的实际透明像素单独计算比例，让翅膀、手臂等轮廓完整落在菱形内。226 个已接入素材均有适配记录。
 - 电脑与手机共用一套页面；支持点击、左右滑动、方向键和 Enter。遵循系统减少动态设置。
@@ -12,6 +12,10 @@ SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材�
 - 可搜索中文/英文名称和筛选作品。缺图会明确显示“素材待补”。
 
 **目录范围仍在核对。** 228 是当前已登记的记录数，用来统计素材接入状态；它不表示所有动画、电影、游戏、漫画中的变身形态都已穷尽。“2 条待补”仅指已登记目录里的缺图，不能据此推断全作品只剩两种形态尚未完成。作品版本、融合和身体状态也不应相加后称为独立物种总数。详见[范围说明](docs/catalog-scope.md)。
+
+## 0.5.0 立体表身
+
+四代改用同一几何模型的多镜头渲染，带真实厚度、内壁、侧面构件和独立升降表芯；快速反向连续，变化停止后不持续渲染。完成版可开盖露盘而不升芯。三种选择方式保留；无 WebGL 时显示已标注的插画回退。125 项测试通过，桌面及两种手机宽度已检查，详见 [验证记录](docs/review-v050.md)。背面尺寸和部分机构为建模解释，外星人投影仍是平面剪影分层，真实手机与酒馆尚未实测。
 
 ## 0.4.8 两种 Kevin 融合体与横滑修复
 
@@ -95,9 +99,9 @@ npm run dev
 
 ## 安装到 SillyTavern
 
-当前是 0.4.8 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
+当前是 0.5.0 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
 
-1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.4.8` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
+1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.5.0` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
 2. 重载酒馆，在扩展设置里打开 **Omnitrix**。
 3. 选择手表和召唤界面，选择外星人并点击“锁定形态”。
 4. 需要使用时点击“写入酒馆输入框”。原有草稿保留，插件不会自动发送或调用模型。

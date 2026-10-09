@@ -1,0 +1,222 @@
+{
+  "version": "0.5.0",
+  "date": "2026-10-10",
+  "previewSha256": "0e1db92d86ee42541fd6005d69929a8c863bc3cd41175fb674f8487de5abefeb",
+  "modelSha256": "d0fb219ac7a83451a58d302a00c94eb39a2fa5f523e3b0f9c06bb9ebd6c31e21",
+  "screenshots": [
+    "screenshots/v050-mobile-original-left.jpg",
+    "screenshots/v050-mobile-ultimatrix-right.jpg",
+    "screenshots/v050-mobile-recalibrated-low.jpg",
+    "screenshots/v050-mobile-omniverse-dial.jpg",
+    "screenshots/v050-narrow-omniverse-ring.jpg",
+    "screenshots/v050-narrow-original-dial.jpg",
+    "screenshots/v050-narrow-ultimatrix-projection.jpg",
+    "screenshots/v050-desktop-original-top-raised.jpg",
+    "screenshots/v050-desktop-original-right-closed.jpg",
+    "screenshots/v050-desktop-recalibrated-left-closed.jpg",
+    "screenshots/v050-desktop-omniverse-low-raised.jpg",
+    "screenshots/v050-final-original-volume.jpg"
+  ],
+  "shots": [
+    {
+      "file": "screenshots/v050-mobile-original-left.jpg",
+      "art": "model",
+      "canvas": [
+        321,
+        321
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 375,
+      "selected": "Heatblast",
+      "view": "left",
+      "watch": "original",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v050-mobile-ultimatrix-right.jpg",
+      "art": "model",
+      "canvas": [
+        321,
+        321
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 375,
+      "selected": "Heatblast",
+      "view": "right",
+      "watch": "ultimatrix",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v050-mobile-recalibrated-low.jpg",
+      "art": "model",
+      "canvas": [
+        321,
+        321
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 375,
+      "selected": "Heatblast",
+      "view": "low",
+      "watch": "recalibrated",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v050-mobile-omniverse-dial.jpg",
+      "art": "model",
+      "canvas": [
+        389,
+        389
+      ],
+      "core": "closed",
+      "mode": "dial",
+      "scrollWidth": 375,
+      "selected": "Heatblast",
+      "view": "low",
+      "watch": "omniverse",
+      "width": 375
+    },
+    {
+      "file": "screenshots/v050-narrow-omniverse-ring.jpg",
+      "art": "model",
+      "canvas": [
+        281,
+        281
+      ],
+      "core": "closed",
+      "mode": "carousel",
+      "scrollWidth": 305,
+      "selected": "Heatblast",
+      "view": "top",
+      "watch": "omniverse",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v050-narrow-original-dial.jpg",
+      "art": "model",
+      "canvas": [
+        321,
+        321
+      ],
+      "core": "closed",
+      "mode": "dial",
+      "scrollWidth": 305,
+      "selected": "Wildmutt",
+      "view": "top",
+      "watch": "original",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v050-narrow-ultimatrix-projection.jpg",
+      "art": "model",
+      "canvas": [
+        264,
+        264
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 305,
+      "selected": "Wildmutt",
+      "view": "left",
+      "watch": "ultimatrix",
+      "width": 305
+    },
+    {
+      "file": "screenshots/v050-desktop-original-top-raised.jpg",
+      "art": "model",
+      "canvas": [
+        525,
+        525
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 1265,
+      "selected": "Wildmutt",
+      "view": "top",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v050-desktop-original-right-closed.jpg",
+      "art": "model",
+      "canvas": [
+        525,
+        525
+      ],
+      "core": "closed",
+      "mode": "projection",
+      "scrollWidth": 1265,
+      "selected": "Wildmutt",
+      "view": "right",
+      "watch": "original",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v050-desktop-recalibrated-left-closed.jpg",
+      "art": "model",
+      "canvas": [
+        525,
+        525
+      ],
+      "core": "closed",
+      "mode": "projection",
+      "scrollWidth": 1265,
+      "selected": "Wildmutt",
+      "view": "left",
+      "watch": "recalibrated",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v050-desktop-omniverse-low-raised.jpg",
+      "art": "model",
+      "canvas": [
+        525,
+        525
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 1265,
+      "selected": "Wildmutt",
+      "view": "low",
+      "watch": "omniverse",
+      "width": 1265
+    },
+    {
+      "file": "screenshots/v050-final-original-volume.jpg",
+      "art": "model",
+      "canvas": [
+        525,
+        525
+      ],
+      "core": "raised",
+      "mode": "projection",
+      "scrollWidth": 1265,
+      "selected": "Heatblast",
+      "view": "left",
+      "watch": "original",
+      "width": 1265
+    }
+  ],
+  "rootActuallyViewed": true,
+  "automatedTests": {
+    "total": 125,
+    "passed": 125,
+    "failed": 0,
+    "skipped": 0
+  },
+  "consoleErrors": [],
+  "viewportRestored": true,
+  "physicalPhoneVerified": false,
+  "realHostVerified": false,
+  "humanAccepted": false,
+  "scope": "Four shared geometric watch models, preset camera transitions, independent core motion and existing three selection modes. Static pose captures mostly use reduced motion; final original capture and direct control exercise restore normal motion. Intermediate motion/resource lifecycles are tested with actual renderer calls in automated tests, not claimed as a browser video or physical-device frame-rate benchmark.",
+  "limits": [
+    "Only four preset camera controls are exposed, not a free orbit gesture.",
+    "Some captures show the lower part of the page after controls auto-scroll; screenshot viewport cropping is distinct from model/canvas clipping.",
+    "Backside dimensions, cavity and OV lid travel are reference-constrained interpretation, not official 3D assets.",
+    "Holographic aliens remain planar image layers.",
+    "No live phone, SillyDroid or SillyTavern installation or user acceptance in this pass."
+  ]
+}

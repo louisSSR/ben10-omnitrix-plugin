@@ -1,4 +1,5 @@
 import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames, watchFrameLayout } from './core.js';
+import { createWatchModel } from './watch-model.js';
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
@@ -34,6 +35,7 @@ const viewOptions = ['top', 'left', 'low', 'right'].map((id, index) => ({ id,
 let watchViewIndex = 2;
 const raisedByMode = { projection: true, carousel: false };
 const watchAtlasStates = new Map();
+let watchModel = null, modelAnchor = null;
 
 function watchSelectionPool() {
   if (!readyForms.length) return forms;
@@ -96,16 +98,26 @@ function currentWatchLayout(raised = raisedByMode[preferences.mode] === true) {
 function projectionVisible(form) {
   return preferences.mode === 'projection' && raisedByMode.projection && !!form?.asset;
 }
+function placeModelFace(anchor) {
+  if (!anchor || !['x', 'y', 'w', 'h'].every(key => Number.isFinite(anchor[key]))) return;
+  modelAnchor = anchor;
+  const screen = $('watch-screen');
+  for (const [property, key] of [['left', 'x'], ['top', 'y'], ['width', 'w'], ['height', 'h']]) screen.style[property] = `${anchor[key] * 100}%`;
+  screen.style.setProperty('--watch-face-angle', `${anchor.a || 0}deg`);
+}
 function renderWatchView(withMotion = false) {
   const viewport = $('watch-multiview'), screen = $('watch-screen');
   const layout = currentWatchLayout(), isDial = preferences.mode === 'dial';
   const state = !layout || !viewport ? 'fallback' : watchAtlasStates.get(preferences.watch) || 'loading';
   const ready = !isDial && state === 'ready';
+  const modeled = !!watchModel;
+  const interactive = modeled || ready;
   app.dataset.watchView = viewOptions[watchViewIndex].id;
   app.dataset.coreState = raisedByMode[preferences.mode] ? 'raised' : 'closed';
-  app.dataset.watchArt = isDial ? 'dial' : ready ? 'atlas' : state;
+  app.dataset.watchArt = modeled ? 'model' : isDial ? 'dial' : ready ? 'atlas' : state;
+  if ($('watch-model')) $('watch-model').hidden = !modeled;
   if (viewport) {
-    viewport.hidden = !ready;
+    viewport.hidden = modeled || !ready;
     viewport.style.aspectRatio = layout?.aspectRatio || '';
   }
   // CSS gives #watch-device and the clipped viewport the exact same cell bounds.
@@ -129,7 +141,7 @@ function renderWatchView(withMotion = false) {
     const focused = document.activeElement?.dataset?.action === 'watch-view' ? document.activeElement.dataset.value : null;
     controls.replaceChildren(...viewOptions.map((view, index) => {
       const control = button(view.name, 'watch-view-option', 'watch-view', view.id);
-      control.setAttribute('aria-pressed', String(watchViewIndex === index)); control.disabled = !ready;
+      control.setAttribute('aria-pressed', String(watchViewIndex === index)); control.disabled = !interactive;
       return control;
     }));
     if (focused) [...controls.children].find(control => control.dataset.value === focused)?.focus({ preventScroll: true });
@@ -137,18 +149,22 @@ function renderWatchView(withMotion = false) {
   if ($('toggle-watch-core')) {
     $('toggle-watch-core').textContent = raisedByMode[preferences.mode] ? '收起表芯' : '弹出表芯';
     $('toggle-watch-core').setAttribute('aria-pressed', String(raisedByMode[preferences.mode] === true));
-    $('toggle-watch-core').disabled = !ready;
+    $('toggle-watch-core').disabled = !interactive;
   }
   if ($('watch-view-status')) {
-    $('watch-view-status').textContent = isDial || ready ? '' : state === 'loading' ? '多角度表身加载中，暂用正视图' : '多角度表身暂不可用，已回退正视图';
-    $('watch-view-status').hidden = isDial || ready;
+    $('watch-view-status').textContent = modeled || isDial ? '' : ready ? '此设备暂用多角度插画' : state === 'loading' ? '多角度表身加载中，暂用正视图' : '多角度表身暂不可用，已回退正视图';
+    $('watch-view-status').hidden = modeled || isDial;
   }
-  if (withMotion && ready) animate(viewport, [{ opacity: .25 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' });
+  if (modeled) {
+    watchModel.setState({ watch: preferences.watch, view: viewOptions[watchViewIndex].id, mode: preferences.mode,
+      raised: !isDial && raisedByMode[preferences.mode] === true, reducedMotion: reduced(), visible: !document.hidden });
+    if (modelAnchor) placeModelFace(modelAnchor);
+  } else if (withMotion && ready) animate(viewport, [{ opacity: .25 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' });
 }
 function alignRing() {
   if (preferences.mode !== 'carousel') return .8;
   const stage = $('stage'), bounds = stage.getBoundingClientRect();
-  const layout = app.dataset.watchArt === 'atlas' ? currentWatchLayout() : null;
+  const layout = app.dataset.watchArt === 'model' && modelAnchor ? { anchor: modelAnchor, ellipseRatio: modelAnchor.ellipseRatio } : app.dataset.watchArt === 'atlas' ? currentWatchLayout() : null;
   const device = $('watch-device').getBoundingClientRect();
   const face = $('watch-screen').getBoundingClientRect();
   const x = layout ? device.left + device.width * layout.anchor.x - bounds.left : face.left + face.width / 2 - bounds.left;
@@ -470,7 +486,7 @@ listen(app, 'click', event => {
     stopMotion();
     const previousForm = byId.get(displayedId);
     preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
-  } else if (action === 'watch-view' && preferences.mode !== 'dial' && app.dataset.watchArt === 'atlas') {
+  } else if (action === 'watch-view' && preferences.mode !== 'dial' && ['atlas', 'model'].includes(app.dataset.watchArt)) {
     const index = viewOptions.findIndex(view => view.id === value);
     if (index < 0 || index === watchViewIndex) return;
     stopMotion(); watchViewIndex = index; renderWatchView(true); positionRing(ringRotation); trackProjection(true);
@@ -478,7 +494,7 @@ listen(app, 'click', event => {
   else if (action === 'reset-filters') resetFilters();
 });
 if ($('toggle-watch-core')) listen($('toggle-watch-core'), 'click', () => {
-  if (preferences.mode === 'dial' || app.dataset.watchArt !== 'atlas') return;
+  if (preferences.mode === 'dial' || !['atlas', 'model'].includes(app.dataset.watchArt)) return;
   stopMotion(); raisedByMode[preferences.mode] = !raisedByMode[preferences.mode];
   renderWatchView(true); setFigures(byId.get(preferences.selectedId)); positionRing(ringRotation); trackProjection(true);
 });
@@ -504,9 +520,9 @@ listen($('search'), 'input', event => { query = event.target.value; refreshFilte
 listen($('ready-only'), 'change', event => { readyOnly = event.target.checked; refreshFilter(); });
 listen($('motion-toggle'), 'click', () => {
   if (systemMotion.matches) { notice('已遵循系统的“减少动态”设置'); return; }
-  preferences.reducedMotion = !preferences.reducedMotion; stopMotion(); renderControls(); trackProjection(); save();
+  preferences.reducedMotion = !preferences.reducedMotion; stopMotion(); renderControls(); renderWatchView(); trackProjection(); save();
 });
-listen(systemMotion, 'change', () => { stopMotion(); renderControls(); trackProjection(); });
+listen(systemMotion, 'change', () => { stopMotion(); renderControls(); renderWatchView(); trackProjection(); });
 listen($('stage'), 'keydown', event => {
   if (event.target.closest('input,textarea,select,[contenteditable="true"]')) return;
   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); step(event.key === 'ArrowLeft' ? -1 : 1); }
@@ -555,7 +571,20 @@ listen(window, 'message', event => {
 });
 const resize = new ResizeObserver(() => { if (preferences.mode === 'carousel') renderRing(); trackProjection(true); });
 resize.observe($('stage'));
-listen(window, 'pagehide', () => { stopMotion(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
+watchModel = createWatchModel($('watch-model'), {
+  onFrame(anchor) {
+    if (lifetime.signal.aborted || app.dataset.watchArt !== 'model') return;
+    placeModelFace(anchor);
+    if (preferences.mode === 'carousel') positionRing(ringRotation);
+    else alignProjection();
+  },
+  onUnavailable() {
+    watchModel?.dispose(); watchModel = null; modelAnchor = null;
+    if (!lifetime.signal.aborted) { renderWatchView(); positionRing(ringRotation); trackProjection(); }
+  },
+});
+if (document.addEventListener) listen(document, 'visibilitychange', () => renderWatchView());
+listen(window, 'pagehide', () => { stopMotion(); watchModel?.dispose(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
 $('material-summary').textContent = `${data.coverage.reviewed} 个剪影已接入 / ${data.coverage.total} 条形态记录`;
 $('coverage-note').textContent = `当前有 ${data.coverage.total} 条形态记录，其中 ${data.coverage.reviewed} 条已接入核对过的剪影，${data.coverage.missing} 条素材待补。目录同时保留不同作品版本、身体状态、融合及扩展形态，不等于独立物种数量。`;
 $('ready-only').checked = readyOnly;

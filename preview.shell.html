@@ -45,6 +45,7 @@
             <div class="selection-ring" aria-hidden="true"><div class="ring-underlay"></div><div class="ring-band" id="ring-band"></div><div class="ring-core"><svg viewBox="0 0 100 100"><path d="M13 8H87L62 50L87 92H13L38 50Z"/></svg></div><div class="ring-index"></div></div>
             <div class="carousel" id="carousel" aria-label="环形形态列表"></div>
             <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人">
+              <canvas class="watch-model" id="watch-model" aria-hidden="true" hidden></canvas>
               <span class="watch-ground-shadow"></span><span class="watch-body-depth"></span>
               <img class="watch-art original" src="./assets/watches-v3/original.png" alt="" draggable="false">
               <img class="watch-art recalibrated" src="./assets/watches-v3/recalibrated.png" alt="" draggable="false">
@@ -78,7 +79,7 @@
     </main>
     <footer><span>OMNITRIX / FAN INTERFACE</span><span>用一次选择，开启一场冒险。</span><button type="button" class="subtle" id="sources-button">素材与使用说明</button></footer>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <dialog id="about-dialog"><div class="dialog-head"><h2>关于这份变身档案</h2><button class="arrow" id="close-about" aria-label="关闭说明" type="button">×</button></div><p>基于你提供的手表、投影与转盘参考制作的同人交互界面。四款表壳是依据参考生成的 AI 界面插画，并非官方素材。</p><p id="coverage-note"></p><p>剪影依据逐张核对的来源图制作。部分形态使用 AI 辅助去背景的参考编辑稿，细节可能与原画不同，并非官方透明原图。Mucilator、Slamworm 使用游戏制作方的模型参考；Rocks 来自舞台演出宣传图；漫画版 Diamondhead、小奇兵来自出版社封面，小奇兵保留手持铅笔。缺图会明确标注，版权归各原权利方。</p><p>选择和锁定仅改变本界面状态。“写入酒馆输入框”需要手动点击，写入后也不会自动发送。</p><p>电脑与手机共用此界面，支持方向键、Enter 和左右滑动；“减少动态”及系统动态偏好可关闭复杂动画。</p></dialog>
+    <dialog id="about-dialog"><div class="dialog-head"><h2>关于这份变身档案</h2><button class="arrow" id="close-about" aria-label="关闭说明" type="button">×</button></div><p>基于你提供的手表、投影与转盘参考制作的同人交互界面。四款表壳使用共用几何结构的实时三维重绘；背面、内部和尺寸含建模解释，并非官方三维模型。设备不支持时回退到 AI 多角度插画。英雄投影仍使用二维剪影分层显示。</p><p id="coverage-note"></p><p>剪影依据逐张核对的来源图制作。部分形态使用 AI 辅助去背景的参考编辑稿，细节可能与原画不同，并非官方透明原图。Mucilator、Slamworm 使用游戏制作方的模型参考；Rocks 来自舞台演出宣传图；漫画版 Diamondhead、小奇兵来自出版社封面，小奇兵保留手持铅笔。缺图会明确标注，版权归各原权利方。</p><p>选择和锁定仅改变本界面状态。“写入酒馆输入框”需要手动点击，写入后也不会自动发送。</p><p>电脑与手机共用此界面，支持方向键、Enter 和左右滑动；“减少动态”及系统动态偏好可关闭复杂动画。</p></dialog>
   </div>
   <script type="application/json" id="catalog-data"><!-- CATALOG_DATA --></script>
   <script type="application/json" id="watch-views"><!-- WATCH_VIEWS_DATA --></script>

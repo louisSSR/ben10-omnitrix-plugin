@@ -208,7 +208,8 @@ test('built preview has no runtime remote resource or unresolved build marker', 
   assert.doesNotMatch(runtime, /^\s*(?:import|export)\s/m);
   assert.doesNotMatch(runtime, /\b(?:fetch|XMLHttpRequest)\s*\(/);
   assert.ok(runtime.includes(read('core.js').replace(/^export /gm, '')), 'delivered core matches the tested source');
-  assert.ok(runtime.includes(app.replace(/^import[^\n]+\n/, '')), 'delivered app matches the tested source');
+  assert.ok(runtime.includes(app.replace(/^import[^\n]+\n/gm, '')), 'delivered app matches the tested source');
+  assert.ok(runtime.includes(read('watch-model.js').replace(/^export /gm, '')), 'delivered model matches the tested source');
   assert.doesNotThrow(() => new vm.Script(runtime, { filename: 'built-preview-runtime.js' }));
 });
 
@@ -322,7 +323,7 @@ function node(tag, namespaceURI = null) {
 
 // Execute the actual app, using controlled browser interfaces to test state and cancellation.
 // Explicit rectangle fixtures below test coordinate handling, not browser layout or painted pixels.
-function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {}, atlas = null, imageState = 'ready' } = {}) {
+function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {}, atlas = null, imageState = 'ready', modelFactory = null } = {}) {
   let now = 1000, serial = 0;
   const timers = new Map(), frames = new Map(), animations = [], elements = new Map(), anonymous = [];
   const rectangles = new Map(Object.entries(rects)), observers = [];
@@ -365,7 +366,7 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
   elements.get('stage').append(elements.get('carousel'), elements.get('watch-device'));
   let saved = JSON.stringify({ mode, watch: 'original', selectedId: fixture[0].id, reducedMotion });
   const window = makeNode('window'), systemMotion = makeNode('media'); window.parent = window; systemMotion.matches = systemReduced;
-  const context = vm.createContext({ document, window, matchMedia: () => systemMotion, AbortController,
+  const context = vm.createContext({ document, window, matchMedia: () => systemMotion, AbortController, createWatchModel: modelFactory,
     localStorage: { getItem: () => saved, setItem: (_, value) => { saved = value; } },
     location: { origin: 'null' }, navigator: { clipboard: { writeText: async () => {} } },
     performance: { now: () => now }, Date: { now: () => now },
@@ -378,7 +379,8 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
     },
   });
   const core = read('core.js').replace(/^export /gm, '');
-  vm.runInContext(`(() => { ${core}\n${app.replace(/^import[^\n]+\n/, '')}\n})();`, context);
+  const model = modelFactory ? '' : read('watch-model.js').replace(/^export /gm, '');
+  vm.runInContext(`(() => { ${core}\n${model}\n${app.replace(/^import[^\n]+\n/gm, '')}\n})();`, context);
   const advance = ms => {
     const end = now + ms;
     for (;;) {
@@ -398,6 +400,61 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
     action(action, value) { const control = makeNode('button'); control.dataset = { action, value }; elements.get('omni-app').emit('click', { target: control }); },
   };
 }
+
+test('model frames drive the shared face, ring centre and core state without atlas data', () => {
+  let callbacks, modelState;
+  const h = boot({ mode: 'carousel', reducedMotion: true, rects: {
+    stage: { left: 20, top: 60, width: 390, height: 540 },
+    'watch-device': { left: 80, top: 330, width: 240, height: 240 },
+  }, modelFactory: (_canvas, hooks) => {
+    callbacks = hooks;
+    return { setState(value) { modelState = value; }, dispose() {} };
+  } });
+  const appNode = h.elements.get('omni-app');
+  assert.equal(appNode.dataset.watchArt, 'model');
+  assert.equal(h.elements.get('watch-multiview').hidden, true);
+  assert.equal(h.elements.get('watch-model').hidden, false);
+  assert.ok(h.elements.get('watch-view-controls').children.every(control => !control.disabled));
+  callbacks.onFrame({ x: .5, y: .4, w: .3, h: .18, a: -4, ellipseRatio: .6 });
+  const stage = h.elements.get('stage'), screen = h.elements.get('watch-screen');
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [180, 366], 'ring follows the projected model face');
+  assert.equal(screen.style.left, '50%'); assert.equal(screen.style.top, '40%');
+  assert.equal(stage.style['--ring-ellipse'], '0.6');
+  h.click('toggle-watch-core'); assert.equal(modelState.raised, true);
+  callbacks.onFrame({ x: .51, y: .27, w: .3, h: .18, a: -4, ellipseRatio: .6 });
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [182.4, 334.8], 'intermediate lift callback moves the ring attachment');
+  h.action('watch-view', 'right'); assert.equal(modelState.view, 'right');
+  h.action('mode', 'dial'); assert.equal(modelState.mode, 'dial'); assert.equal(modelState.raised, false);
+  assert.equal(appNode.dataset.watchArt, 'model', 'dial keeps the same physical renderer');
+  h.click('motion-toggle'); assert.equal(modelState.reducedMotion, false);
+});
+
+test('a lost model falls back to labelled art and leaves hero selection operational', () => {
+  let hooks, disposals = 0;
+  const h = boot({ atlas: viewFixture(), modelFactory: (_canvas, callbacks) => {
+    hooks = callbacks; return { setState() {}, dispose() { disposals++; } };
+  } });
+  assert.equal(h.elements.get('omni-app').dataset.watchArt, 'model');
+  hooks.onUnavailable();
+  assert.equal(disposals, 1);
+  assert.equal(h.elements.get('omni-app').dataset.watchArt, 'atlas');
+  assert.equal(h.elements.get('watch-model').hidden, true);
+  assert.match(h.elements.get('watch-view-status').textContent, /多角度插画/);
+  h.click('next'); assert.equal(h.preferences.selectedId, h.fixture[1].id);
+  h.window.emit('pagehide'); assert.equal(disposals, 1);
+});
+
+test('page exit disposes the model and ignores late geometry callbacks', () => {
+  let hooks, disposals = 0;
+  const h = boot({ modelFactory: (_canvas, callbacks) => {
+    hooks = callbacks; return { setState() {}, dispose() { disposals++; } };
+  } });
+  hooks.onFrame({ x: .5, y: .4, w: .3, h: .18, ellipseRatio: .6 });
+  h.window.emit('pagehide');
+  hooks.onFrame({ x: .9, y: .8, w: .3, h: .18, ellipseRatio: .6 });
+  assert.equal(disposals, 1);
+  assert.equal(h.elements.get('watch-screen').style.left, '50%');
+});
 
 function assertCoordinates(actual, expected, message) {
   assert.equal(actual.length, expected.length, message);
@@ -495,7 +552,8 @@ test('watch atlas loading and errors restore the front image and can recover wit
   h.action('watch-view', 'top'); assert.equal(appNode.dataset.watchView, 'low');
   original.naturalWidth = 2400; original.emit('load');
   assert.equal(appNode.dataset.watchArt, 'atlas'); assert.equal(original.hidden, false);
-  assert.equal(h.elements.get('watch-view-status').hidden, true);
+  assert.equal(h.elements.get('watch-view-status').hidden, false);
+  assert.match(h.elements.get('watch-view-status').textContent, /多角度插画/);
   original.emit('error');
   assert.equal(appNode.dataset.watchArt, 'fallback'); assert.equal(original.hidden, true);
   assert.equal(h.elements.get('watch-screen').style.left, '');

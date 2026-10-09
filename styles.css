@@ -177,3 +177,16 @@
 .omni-app[data-watch-art=fallback][data-mode=carousel] .watch-device{top:64%;width:min(410px,96cqw)}
 .omni-app:is([data-watch-art=loading],[data-watch-art=fallback]) .watch-body-depth{display:none}
 .omni-app[data-watch-art=atlas][data-mode=carousel] .watch-device{width:min(410px,var(--watch-ring-body-width,96cqw));transform:translate(calc(0% - var(--watch-view-face-x,50%)),-50%)}
+
+/* One solid model, viewed by moving its camera. The canvas itself is never tilted. */
+.watch-model{position:absolute;inset:0;display:none;width:100%;height:100%;pointer-events:none}
+.omni-app[data-watch-art=model] .watch-model{display:block}
+.omni-app[data-watch-art=model] .watch-device{left:50%;top:72%;width:min(350px,94cqw);height:auto;aspect-ratio:1;transform:translate(-50%,-50%);transform-origin:center;transition:none;filter:drop-shadow(0 20px 15px #0008)}
+.omni-app[data-watch-art=model] .watch-art,.omni-app[data-watch-art=model] .watch-multiview,.omni-app[data-watch-art=model] .watch-body-depth,.omni-app[data-watch-art=model] .watch-ground-shadow,.omni-app[data-watch-art=model] .watch-contact-ring,.omni-app[data-watch-art=model] .projection-emitter{display:none}
+.omni-app[data-watch-art=model] .watch-screen{display:block;inset:auto;transform:translate(-50%,-50%) rotate(var(--watch-face-angle,0deg));transform-origin:center;border-radius:50%;pointer-events:none;box-shadow:none;border:0}
+.omni-app[data-watch-art=model]:not([data-mode=dial]) .watch-screen{opacity:0;background:transparent}
+.omni-app[data-watch-art=model]:not([data-mode=dial]) .watch-screen>*{display:none}
+.omni-app[data-watch-art=model][data-mode=carousel] .watch-device{top:57%;width:min(510px,100cqw)}
+.omni-app[data-watch-art=model][data-mode=dial] .watch-device{top:53%;width:min(650px,114cqw)}
+.omni-app[data-watch-art=model][data-mode=dial] .watch-screen{opacity:1;background:#93a083;overflow:hidden}
+.omni-app[data-watch-art=model][data-mode=dial] .screen-rim,.omni-app[data-watch-art=model][data-mode=dial] .screen-glass{display:none}

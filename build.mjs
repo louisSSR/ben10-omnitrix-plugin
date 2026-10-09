@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, lstatSync } from 'n
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { Script } from 'node:vm';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const read = file => readFileSync(path.join(root, file), 'utf8');
 const catalog = JSON.parse(read('assets/catalog.json'));
@@ -9,7 +10,10 @@ const watchViews = JSON.parse(read('assets/watches-v4/views.json'));
 if (watchViews.columns !== 4 || watchViews.rows !== 2 || watchViews.views?.length !== 4) throw new Error('Invalid watch view layout');
 const css = read('styles.css');
 const core = read('core.js').replace(/^export /gm, '');
-const code = read('app.js').replace(/^import[^\n]+\n/, '');
+const model = read('watch-model.js').replace(/^export /gm, '');
+const code = read('app.js').replace(/^import[^\n]+\n/gm, '');
+const applicationCode = `(() => {\n'use strict';\n${core}\n${model}\n${code}\n})();`;
+new Script(applicationCode, { filename: 'preview-inline.js' });
 const svg = read('assets/silhouettes.svg');
 if (/<script\b|\bon\w+\s*=/i.test(svg) || /(?:href|src)=["']https?:/i.test(svg)) throw new Error('Unsafe image library');
 const assetFiles = new Map();
@@ -40,7 +44,7 @@ const replacements = {
   '<!-- ART_SYMBOLS -->': `<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">${symbols}</svg>`,
   '<!-- CATALOG_DATA -->': JSON.stringify(catalog).replace(/</g, '\\u003c'),
   '<!-- WATCH_VIEWS_DATA -->': JSON.stringify(watchViews).replace(/</g, '\\u003c'),
-  '/* APP_CODE */': `(() => {\n'use strict';\n${core}\n${code}\n})();`,
+  '/* APP_CODE */': applicationCode,
 };
 for (const [key, value] of Object.entries(replacements)) {
   if (html.split(key).length !== 2) throw new Error(`Template marker missing/duplicate: ${key}`);
@@ -79,6 +83,7 @@ for (const watch of ['original', 'recalibrated', 'ultimatrix', 'omniverse']) {
 writeFileSync(path.join(root, 'preview.html'), html);
 mkdirSync(path.join(root, 'docs'), { recursive: true });
 const receipt = { builtAt: new Date().toISOString(), sha256: createHash('sha256').update(html).digest('hex'), bytes: Buffer.byteLength(html), coverage: catalog.coverage, watchArt, watchAtlases, standalone: true, browserVerified: false, realHostVerified: false };
+receipt.watchModel = { renderer: 'local-webgl-geometry', source: 'watch-model.js', sha256: hash(Buffer.from(read('watch-model.js'))), generations: 4, sharedGeometryAcrossViews: true, artFallbackRetained: true, officialModel: false };
 const entryFiles = ['extension.js', 'host-adapter.js', 'extension.css', 'preview.html', 'manifest.json'];
 const files = [...entryFiles.map(file => {
   const bytes = readFileSync(path.join(root, file));
