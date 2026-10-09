@@ -3250,6 +3250,374 @@
         "observation": "Actually viewed settled black diamond dial and green projection on desktop and both mobile-width iframes. Six arms, wings, mane and coiled tail fit inside diamond. No visible detached scene residue or horizontal overflow at these delivery sizes. Projection remains layered 2.5D.",
         "realPhone": false
       }
+    },
+    {
+      "formId": "nemetrix-tyrannopede",
+      "sourceFile": "assets/source-art/tyrannopede-official-panel-6400-original.jpg",
+      "sourceSha256": "e6818c1ec3780bcfcb1ffa50ce011ecdfbf9e2f407e43c432d7a1cce17c287c2",
+      "maskFile": "assets/source-art/nemetrix-tyrannopede-profile-reference-edit.png",
+      "maskSha256": "ffa6bb7d719065f3320798687134641a5a92cd62ae4e152d235e2120e49909f8",
+      "pageUrl": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+      "url": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-multi-reference-redraw-of-official-cnuk-character-profile-browser-capture",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Official Cartoon Network UK clip attribution is confirmed by primary YouTube result/oEmbed; no open license asserted. The output is AI interpretative reference artwork, not official production transparent art.",
+      "observations": [
+        "Primary 6.4-second profile screenshot has a small complete side-turned Tyrannopede: red horned head, dark dorsal armor, gray heavy body, small front limbs, heavy hind feet and single long bent tail with tip. The full outside action contour is inside the profile panel.",
+        "The subject drawing is approximately 140x100 pixels in the 980x551 screenshot, not a high-resolution animation model sheet. Root reported the actual video is 854x480.",
+        "The 12.8-second support screenshot is only a red face/black horn/teeth/color detail aid. Its transition-card border crops top/mouth; it is not an alternative whole body or complete head contour.",
+        "Actual output preserves the main right-facing bent side pose, long left-extending tail, two heavy hind limbs, small front claw positions, red head and dark back armor; no separate opponent or additional independent character is visible.",
+        "Output outside tips are contained in the image. All four alpha>=128 canvas edges are empty. Faint low-alpha residue remains; sampled RGB haze locations have alpha0 and must not be treated as an opaque background."
+      ],
+      "limitations": [
+        "One built-in multi-reference AI redraw from a very small official character-profile drawing, not an official transparent original or pixel-exact extraction. Body pose/proportions use the small complete profile, not the huge head portrait.",
+        "Fine tooth count, claw shape, horns, back-spike number/proportions, tail segmentation and armor linework are interpretative enlargement; do not present them as recovered canonical details.",
+        "Both original captures are browser screenshots, not original decoded video frames. Primary body resolution is approximately 140x100px in the upscaled screenshot.",
+        "Support12.8 is cropped by a profile-card transition; only visible face/color/teeth details support the redraw. It does not establish the unseen parts of its own cropped head or replace the full-body pose.",
+        "Very faint alpha residue extends to the bottom canvas; no pixel cleanup or later image editing was applied. Native PNG bytes remain unchanged.",
+        "Catalog appearance mentions Panuncian copies using regular predator forms in A Fistful of Brains. This supplied profile verifies the regular Tyrannopede body design, not an independently observed Panuncian-copy scene or species-count change."
+      ],
+      "adoptionBasis": "Root inspected the two retained source screenshots and unchanged generated output; complete main pose retained. Fine armor, claws and tooth details are interpretative enlargements of the small source. Local three-mode watch review completed for 0.4.1.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+        "playbackSeconds": 6.4,
+        "paused": true,
+        "capturedBy": "root CUA",
+        "sourceSize": [
+          980,
+          551
+        ],
+        "nativeVideoSize": [
+          854,
+          480
+        ],
+        "captureMethod": "browser screenshot of the actual stable paused character-profile video; not decoded original frame",
+        "actualFormat": "JPEG",
+        "formatExtensionCorrection": "Root capture carried .png filename but bytes are JPEG; mandatory candidate copy/public target uses .jpg without re-encoding.",
+        "subjectSizeApproxPixels": [
+          140,
+          100
+        ],
+        "allVisibleBodyContourInsideProfile": true,
+        "officialUploader": "Cartoon Network UK / @cartoonnetworkuk",
+        "uploaderEvidence": "Primary indexed YouTube verified-channel result plus actual oEmbed attribution; playback/screenshot alignment reported by root. This subagent did not independently operate browser."
+      },
+      "editionEvidence": {
+        "body": "Tyrannopede, Omniverse regular Nemetrix predator body",
+        "sourceTitle": "Ben 10 Omniverse | Humongosaur vs Tyrannopede | Cartoon Network",
+        "sourceAuthorUrl": "https://www.youtube.com/@cartoonnetworkuk",
+        "observedBodyVersion": "Red horned face, dark dorsal armor, gray torso/limbs and long segmented tail from actual complete profile.",
+        "catalogAppearanceBoundary": "A Fistful of Brains catalog occurrence is not independently observed in this CN UK profile clip. Do not claim this exact frame shows that wearer/episode."
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/tyrannopede-official-detail-12800-original.jpg",
+          "sha256": "81815f9efb573f5596d6527835ef85e5bc9d57667956ff1be52e70bca833e88d",
+          "bytes": 40681,
+          "size": [
+            980,
+            551
+          ],
+          "playbackSeconds": 12.8,
+          "url": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+          "sourceKind": "official-animation-browser-capture",
+          "sourceViewed": true,
+          "role": "Cropped face/black-horn/teeth/color aid only; profile-card transition cuts top/mouth. No pose or whole-head completion based on this support."
+        }
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction / faithful transparent character reference redraw.\nCreate ONE Tyrannopede asset from these actually viewed official Cartoon Network UK animation screenshots. This is a small-reference interpretative redraw, not a new alien design or a pixel-identical cutout.\n\nREFERENCE 1 (tyrannopede-official-panel-6400-original.jpg) is the ONLY FULL-BODY POSE authority. Use ONLY the SMALL red-headed, gray-bodied creature on the LOWER-RIGHT green character profile panel (approximately x560-705, y330-430 in the 980x551 screenshot). It faces image-right and its long bent tail extends toward image-left. Its existing outside contour, visible limb positions, tail tip, heavy hind feet, small forelimbs, body/head proportions and self-overlaps are all contained in that little profile drawing. Preserve that exact side-turned, forward-bent configuration. The original is small: enlarge its supported main shapes cleanly, without pretending unknown fine details were recovered.\n\nRetain the red angular horned Tyrannopede head/jaw, black projections and dark back plates/spines, heavy gray segmented armored torso, the small forelimb shapes and thick gray hind limbs/feet as actually visible, and the single long bent gray/dark tail with its visible pointed tip. Keep the head-to-body ratio and complete tail route from the SMALL full-body image. Keep precisely the limbs and overlaps that can be seen; do not invent extra legs, additional arms, hidden underside parts or new spikes. Do not straighten the tail or change the pose.\n\nThe HUGE red head on the lower-left of reference 1 is only a head-detail/color hint. It must NOT determine the body composition or make the output head disproportionately huge. IGNORE the brown dinosaur-like Humungousaur entirely, including the large upper portrait and small upper standing figure.\n\nREFERENCE 2 (tyrannopede-official-detail-12800-original.jpg) is ONLY a red face/black-horn/teeth/color detail aid. This is a cropped close-up interrupted by a moving green profile-card border; it is not a complete pose or complete head contour. Never reconstruct the cropped head/mouth from this close-up, never adopt its camera angle, and do not copy the transition border. The full outside silhouette comes from reference 1's small complete body.\n\nRemove all green panels, borders, text, logos, icons, sky, scenery and other characters. Output one complete existing Tyrannopede pose alone, with genuine alpha transparency and comfortable clear margins around every tail, foot and horn tip. Clean flat 2D animation colors and linework; no new lighting, ground shadow, glow, fog, white outline, checkerboard pattern or text. No anatomical completion from imagination. Fine surface lines and teeth may be simplified where the tiny reference cannot resolve them.",
+        "promptSha256": "2210174bf3e5f7286aa2c573eb4ec679349647d3ab59e6e056f07bdda40dcf74",
+        "attempt": 1,
+        "rawOutputSha256": "ffa6bb7d719065f3320798687134641a5a92cd62ae4e152d235e2120e49909f8",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "462171eb6e3a9b62a0c7b4f4556434a2dae6d919b7fca3c966ae02d1ce3c19e2",
+        "promptStorageNote": "Actual tool prompt and inline JSON are LF text; the unchanged Windows prompt archive uses CRLF. Both hashes are bound separately."
+      },
+      "alphaInspection": {
+        "size": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "nonzeroBbox": [
+          25,
+          39,
+          1502,
+          1024
+        ],
+        "alpha128Bbox": [
+          47,
+          107,
+          1496,
+          950
+        ],
+        "alpha1To15Pixels": 13836,
+        "alpha16To127Pixels": 4637,
+        "alpha128To255Pixels": 489639,
+        "edgeAlpha128Pixels": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0
+        },
+        "backgroundProbeRGBA": {
+          "(0, 0)": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "(1535, 0)": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "(0, 1023)": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "(1535, 1023)": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "(1100, 75)": [
+            3,
+            3,
+            4,
+            0
+          ],
+          "(500, 800)": [
+            40,
+            39,
+            43,
+            0
+          ],
+          "(1470, 670)": [
+            7,
+            1,
+            1,
+            0
+          ],
+          "(380, 760)": [
+            29,
+            29,
+            31,
+            0
+          ]
+        }
+      },
+      "uiReview": {
+        "version": "0.4.1",
+        "surface": "CUA local Chromium preview and responsive frames",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "physicalPhoneVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "nemetrix-buglizard",
+      "sourceFile": "assets/source-art/buglizard-official-panel-5639-original.jpg",
+      "sourceSha256": "d59c5696cccf0db515852b7590e25d60120ebe9c8a5f47cde155663f117b5b7e",
+      "maskFile": "assets/source-art/buglizard-profile-reference-edit.png",
+      "maskSha256": "206377782b571d388b6df2ef6cd0607c5d823bcefbb4457c8e990f6986517165",
+      "pageUrl": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+      "url": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Official Cartoon Network UK Omniverse character-profile browser screenshot used for one AI reference redraw; generated transparency is not an official original asset.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Original character/video copyright retained; license unknown; AI reference edit clearly disclosed.",
+      "observations": [
+        "Actually viewed original JPEG: lower-right Buglizard has a low side-facing gray/white body, black dorsal plates and bands, red studded collar, four supporting feet with self-overlap, a long leftward tail curling upward at the tip, and a giant right-facing mouth; the visible body and tail tip are inside its profile panel.",
+        "Actually viewed native generated output and the byte-identical local copy: complete long tail, four visible feet and giant jaws are contained with no major missing limb or broad flat-cut body edge. Gray plated body, black ridge, red collar and black eye patches remain recognizable.",
+        "Output enlarges and sharpens red-backed spines, claw/toe divisions, teeth and facial/plate detail beyond the small source; those details are interpretative rather than pixel-level source evidence.",
+        "Upper green winged figures are Stinkfly and were explicitly excluded. Green background panels, icons, borders and text are absent from the generated body."
+      ],
+      "limitations": [
+        "The primary body is a small complete profile graphic inside an upscaled browser screenshot; native video is 854x480. Fine teeth, toes, seams, spikes and facial lines in the larger generated output are AI interpretation, not official high-resolution detail.",
+        "This is a single built-in imagegen reference redraw with real alpha, not an official transparent PNG and not a pixel-exact background cutout. The source pose, four supporting feet, long upturned tail and large jaw outline were used; no Stinkfly anatomy was borrowed.",
+        "The cropped large lower-left Buglizard face is detail support within the same screenshot only. The lower-right whole-body profile remains the pose source.",
+        "Low-alpha residue remains: alpha1-15=20855 pixels and alpha16-127=4696 pixels. Nonzero bbox touches left/bottom canvas; alpha>=128 body bbox is [51,221,1861,741] with zero pixels on all four edges. Do not call this completely residue-free or treat low-alpha extent as proof of clipped anatomy.",
+        "The catalog A Fistful of Brains Panuncian-copy occurrence was not independently observed in this profile clip. This reference supports the regular Omniverse Buglizard body design, not a claim that this exact screenshot depicts that wearer or episode.",
+        "Copyright remains with original rightsholders; no redistribution license or official transparent-asset permission was established. Real SillyTavern, phone and driver acceptance are outside this candidate review."
+      ],
+      "adoptionBasis": "The whole side-facing regular Buglizard outline is supported by the lower-right official profile; root independently viewed source and generated output and approved proceeding to UI integration. Local three-mode UI inspection completed for 0.4.1; human acceptance remains pending.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+        "playbackSeconds": 5.63898,
+        "paused": true,
+        "capturedBy": "root CUA",
+        "sourceSize": [
+          1721,
+          927
+        ],
+        "nativeVideoSize": [
+          854,
+          480
+        ],
+        "captureMethod": "browser screenshot of actual stable paused character-profile video; not a decoded original frame",
+        "actualFormat": "JPEG",
+        "subjectSizeApproxPixels": [
+          240,
+          90
+        ],
+        "allVisibleBodyContourInsideProfile": true,
+        "officialUploader": "Cartoon Network UK / @cartoonnetworkuk",
+        "uploaderEvidence": "Primary indexed YouTube verified-channel result and actual public oEmbed attribution; stable paused playback and timestamp alignment observed by root. This subagent actually viewed the saved screenshot but did not operate the browser.",
+        "dimensionNote": "Root initial message estimated screenshot width1722; actual JPEG is1721x927."
+      },
+      "editionEvidence": {
+        "body": "Buglizard, Omniverse regular Nemetrix predator body",
+        "sourceTitle": "Ben 10 Omniverse | Stinkfly vs Buglizard | Cartoon Network",
+        "sourceAuthorUrl": "https://www.youtube.com/@cartoonnetworkuk",
+        "observedBodyVersion": "Gray/white low quadruped, black striped dorsal armor, red studded collar, giant jaws and long upturned tail.",
+        "catalogAppearanceBoundary": "The catalog A Fistful of Brains Panuncian-copy occurrence was not independently observed in this profile clip. This reference supports the regular Omniverse Buglizard body design, not a claim that this exact screenshot depicts that wearer or episode."
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: faithful transparent character reference redraw / background-extraction.\nCreate ONE Buglizard from this ACTUALLY VIEWED official Cartoon Network UK video profile screenshot. This is an interpretative enlargement of a small animation reference, not new creature design and not pixel-identical recovered production art.\n\nThe ONLY full-body pose authority is the SMALL COMPLETE FOUR-LEGGED gray/red creature on the LOWER-RIGHT profile panel (approximately x930-1175, y640-750 in the 1721x927 screenshot). Its head faces IMAGE-RIGHT, its body is held low, and its single long curved tail extends IMAGE-LEFT with the tail tip curling up. Use that exact existing side-turned body configuration and head-to-body/tail proportions. Preserve the FOUR short visible supporting legs and their bends/self-overlaps, the heavy low reptilian body, the full long tail route and its tip, and the unusually large powerful jaws. All main extremities exist inside this small reference; do not change it to a standing humanoid or a new attack pose.\n\nKeep the light gray/white plated body/head, dark black dorsal armor/ridge and dark bands, small dorsal spikes as visible, the red studded collar behind the head, red eyes inside the black eye patches, gray limbs and paws, and the existing large salmon/red fleshy mouth parts with pale pointed teeth. Keep its supported original outline. Do not invent additional legs, arms, wings, eye stalks, tail branches or new major armor structures.\n\nThe HUGE gray/red head on the lower-left is ONLY a facial/color/teeth detail aid; it is cropped and must NOT replace the small full-body pose, exaggerate head size further, or supply an imagined missing head contour. Fine teeth, claws, segments and small spike details may be simplified or interpretatively redrawn where the small profile is unclear.\n\nIGNORE AND REMOVE ALL of the UPPER green flying insect Stinkfly: both its huge portrait and its small winged figure. Do NOT borrow its green body, insect legs, wings, eye stalks, Omnitrix or any pose. Also remove every green profile panel, glow outline, honeycomb pattern, icon, word, logo, border and black divider. No other character or graphic remains.\n\nOutput a single complete Buglizard in the original low right-facing side pose, clean flat 2D animation colors and linework, with genuine alpha-transparent background and generous clear margins around the entire tail, all four paws, back spikes and mouth. No text, checkerboard, white/green outline, scenery, ground, shadow, fog or external glow. Do not complete hidden major anatomy from imagination.",
+        "promptSha256": "8db645844a3bc0b815406f72875f5f04a63f926664b7880c67dc5114a2eededa",
+        "attempt": 1,
+        "rawOutputSha256": "206377782b571d388b6df2ef6cd0607c5d823bcefbb4457c8e990f6986517165",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "8db645844a3bc0b815406f72875f5f04a63f926664b7880c67dc5114a2eededa",
+        "promptStorageNote": "The archived prompt is byte-identical UTF-8 LF text to the inline prompt sent to the built-in tool."
+      },
+      "alphaInspection": {
+        "size": [
+          1883,
+          835
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBbox": [
+          0,
+          68,
+          1866,
+          835
+        ],
+        "alpha128Bbox": [
+          51,
+          221,
+          1861,
+          741
+        ],
+        "alpha128EdgeCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alpha1to15": 20855,
+        "alpha16to127": 4696,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "uiReview": {
+        "version": "0.4.1",
+        "surface": "CUA local Chromium preview and responsive frames",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "physicalPhoneVerified": false,
+        "humanAccepted": false
+      }
+    },
+    {
+      "formId": "arctiguana",
+      "sourceFile": "assets/source-art/arctiguana-os-hawkdown-original.png",
+      "sourceSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "maskFile": "assets/source-art/arctiguana-os-hawkdown-original.png",
+      "maskSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "pageUrl": "https://www.thehawkdown.com/articguana",
+      "url": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/57c2fc3e-5131-4e65-9379-181b25329aea/Arctiguana.png",
+      "renderMode": "source-alpha",
+      "artProvenance": "TheHawkDown community fan redraw of Arctiguana, provisionally assigned to the OS base form by visible costume and anatomy traits. Not official artwork or an exact official reproduction.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 and author artwork remain copyrighted; redistribution permission unknown; no open license asserted.",
+      "observations": "Actual local views show yellow eyes, dark eye/upper-head framing, pale forearm cuffs on black clothing, a left-forearm Omnitrix and triangular dorsal fins in both images. The native fan drawing additionally shows a complete forward/lunging action contour with two large front hands, two smaller rear feet and a raised curved tail inside the canvas. Its foreshortening and face/hand proportions differ substantially from the animation-content screenshot. No visible trait contradicting basic OS Arctiguana identity was found; the screenshot does not verify the occluded lower body.",
+      "limitations": [
+        "TheHawkDown page labels this Fan Art / Arctiguana, without an explicit original-series edition caption. OS assignment is a visual inference, not author-declared or official confirmation.",
+        "The action pose, enlarged forehands, head/eye/mouth proportions and contour emphasis are strongly stylized by the community artist. This is not an exact official model or pixel-faithful OS silhouette.",
+        "The animation-content reference is a Ben10Hero community mirror with an unverified official upload chain. Its railing occludes the lower body; it supports visible upper-body traits, not the fan drawing's hind limbs, tail proportions or complete anatomy.",
+        "Native source alpha and PNG bytes are unchanged; the narrow right rear-foot margin is retained. No hidden anatomy was reconstructed. Black silhouette and current UI were inspected in the 0.4.1 local preview; physical-phone and human acceptance remain unverified.",
+        "Underlying Ben 10 and the community artwork are copyrighted; reuse permission and open licensing are unverified."
+      ],
+      "adoptionBasis": "Adopted native-alpha community redraw / OS edition inferred; local three-mode UI inspected for 0.4.1. Agreement of visible upper-body identifiers supports this scoped use; do not claim the reference verifies all body proportions or a distinct species.",
+      "generation": {
+        "tool": null,
+        "performed": false,
+        "prompt": null,
+        "reason": "Native RGBA PNG retained without any pixel editing or generation.",
+        "finalOutputBytesUnchanged": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/arctiguana-os-identity-reference-mirror.png",
+          "sha256": "7086267f55b55430f4170e840e7ccfcf7080a4fecfa7cd89290d0b08951b6eea",
+          "url": "http://ben10hero.com/wp-content/uploads/2016/08/articguana_002.png",
+          "role": "Animation-content community mirror: visible OS-like upper-body identifiers only; lower body occluded and official upload chain unverified."
+        }
+      ],
+      "uiReview": {
+        "version": "0.4.1",
+        "surface": "CUA local Chromium preview and responsive frames",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "physicalPhoneVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [

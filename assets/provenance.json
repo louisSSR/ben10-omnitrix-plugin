@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "b7dca5c910804972a1bf18186fe37b944b16ef0fbd21bda9b8a67a201373bba9",
-  "svgSha256": "6f50daee83f78604db80b3dffadae4366ea03686f249e466013e880fdabbef91",
+  "catalogSha256": "d9d5581515afa788e891a62998c30b6f49d6bf514c019bb54c56d2484335558c",
+  "svgSha256": "d6deac370e4aec9f8846bd31b36d24dca985197fde944e4810a74d945aac5041",
   "coverage": {
     "total": 224,
-    "reviewed": 184,
-    "missing": 40
+    "reviewed": 187,
+    "missing": 37
   },
   "assets": [
     {
@@ -1626,6 +1626,36 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "9a6bd45043bf1c527b7a2942d1807bac270460d2bbaf8c3f5f6e5ea1df9aabcd",
       "maskSha256": "3cb3beb958bb91b8ccd3e90d8ceca83578ae50c981bce5217a98b5f2bf531db0",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-tyrannopede",
+      "url": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+      "pageUrl": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Official Cartoon Network UK clip attribution is confirmed by primary YouTube result/oEmbed; no open license asserted. The output is AI interpretative reference artwork, not official production transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e6818c1ec3780bcfcb1ffa50ce011ecdfbf9e2f407e43c432d7a1cce17c287c2",
+      "maskSha256": "ffa6bb7d719065f3320798687134641a5a92cd62ae4e152d235e2120e49909f8",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-buglizard",
+      "url": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+      "pageUrl": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+      "rights": "Original character/video copyright retained; license unknown; AI reference edit clearly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "d59c5696cccf0db515852b7590e25d60120ebe9c8a5f47cde155663f117b5b7e",
+      "maskSha256": "206377782b571d388b6df2ef6cd0607c5d823bcefbb4457c8e990f6986517165",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "arctiguana",
+      "url": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/57c2fc3e-5131-4e65-9379-181b25329aea/Arctiguana.png",
+      "pageUrl": "https://www.thehawkdown.com/articguana",
+      "rights": "Underlying Ben 10 and author artwork remain copyrighted; redistribution permission unknown; no open license asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "maskSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
       "contentType": "image/png"
     }
   ],

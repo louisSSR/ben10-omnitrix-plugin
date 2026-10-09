@@ -1,0 +1,104 @@
+{
+  "version": "0.4.1",
+  "checkedAt": "2026-10-09T09:32:11.607Z",
+  "previewSha256": "10325f5928bcc5cd0641a71d452399ab56a248143a9314ea64c90026a955e041",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium and responsive iframes; not physical phones",
+  "coverage": {
+    "total": 224,
+    "reviewed": 187,
+    "missing": 37
+  },
+  "assets": [
+    {
+      "formId": "nemetrix-tyrannopede",
+      "sourceFile": "assets/source-art/tyrannopede-official-panel-6400-original.jpg",
+      "sourceSha256": "e6818c1ec3780bcfcb1ffa50ce011ecdfbf9e2f407e43c432d7a1cce17c287c2",
+      "maskFile": "assets/source-art/nemetrix-tyrannopede-profile-reference-edit.png",
+      "maskSha256": "ffa6bb7d719065f3320798687134641a5a92cd62ae4e152d235e2120e49909f8",
+      "artProvenance": "ai-multi-reference-redraw-of-official-cnuk-character-profile-browser-capture",
+      "sourceUrl": "https://www.youtube.com/watch?v=tHJE29iHE7I",
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "nemetrix-buglizard",
+      "sourceFile": "assets/source-art/buglizard-official-panel-5639-original.jpg",
+      "sourceSha256": "d59c5696cccf0db515852b7590e25d60120ebe9c8a5f47cde155663f117b5b7e",
+      "maskFile": "assets/source-art/buglizard-profile-reference-edit.png",
+      "maskSha256": "206377782b571d388b6df2ef6cd0607c5d823bcefbb4457c8e990f6986517165",
+      "artProvenance": "Official Cartoon Network UK Omniverse character-profile browser screenshot used for one AI reference redraw; generated transparency is not an official original asset.",
+      "sourceUrl": "https://www.youtube.com/watch?v=aC3qW-YqKoY",
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "arctiguana",
+      "sourceFile": "assets/source-art/arctiguana-os-hawkdown-original.png",
+      "sourceSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "maskFile": "assets/source-art/arctiguana-os-hawkdown-original.png",
+      "maskSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "artProvenance": "TheHawkDown community fan redraw of Arctiguana, provisionally assigned to the OS base form by visible costume and anatomy traits. Not official artwork or an exact official reproduction.",
+      "sourceUrl": "https://www.thehawkdown.com/articguana",
+      "uiReviewed": true,
+      "humanAccepted": false
+    }
+  ],
+  "checks": {
+    "modes": [
+      "dial",
+      "projection",
+      "carousel"
+    ],
+    "desktop": {
+      "outerWidth": 1280,
+      "clientWidth": 1265,
+      "height": 720
+    },
+    "mobileClientWidths": [
+      375,
+      305
+    ],
+    "newContoursInspected": true,
+    "filtersClearedInFinalPreview": true,
+    "oldRuntimeImagesByteExact": 192,
+    "postGenerationRasterEdits": 0,
+    "tests": {
+      "passed": 104,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "console": {
+    "mainErrors": [],
+    "responsiveContainerErrors": [
+      "MutationObserver.observe parameter 1 is not of type Node; no source URL, attribution unresolved; same container error recorded in v040."
+    ]
+  },
+  "screenshots": [
+    "screenshots/v041-tyrannopede-dial.jpg",
+    "screenshots/v041-tyrannopede-projection.jpg",
+    "screenshots/v041-tyrannopede-ring.jpg",
+    "screenshots/v041-tyrannopede-mobile-dial.jpg",
+    "screenshots/v041-tyrannopede-mobile-projection.jpg",
+    "screenshots/v041-tyrannopede-mobile-ring.jpg",
+    "screenshots/v041-buglizard-dial.jpg",
+    "screenshots/v041-buglizard-projection.jpg",
+    "screenshots/v041-buglizard-ring.jpg",
+    "screenshots/v041-buglizard-mobile-dial.jpg",
+    "screenshots/v041-buglizard-mobile-projection.jpg",
+    "screenshots/v041-buglizard-mobile-ring.jpg",
+    "screenshots/v041-arctiguana-dial.jpg",
+    "screenshots/v041-arctiguana-projection.jpg",
+    "screenshots/v041-arctiguana-ring.jpg",
+    "screenshots/v041-arctiguana-mobile-dial.jpg",
+    "screenshots/v041-arctiguana-mobile-projection.jpg",
+    "screenshots/v041-arctiguana-mobile-ring.jpg"
+  ],
+  "boundaries": [
+    "No real SillyTavern/SillyDroid installation or physical-phone validation.",
+    "No model calls or chat writes.",
+    "No driver visual acceptance claimed.",
+    "Four-angle watch artwork and transitions preserved from v040; not a continuously rotatable 3D mesh."
+  ]
+}

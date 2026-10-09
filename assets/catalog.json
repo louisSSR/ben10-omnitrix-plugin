@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 184,
-    "missing": 40
+    "reviewed": 187,
+    "missing": 37
   },
   "forms": [
     {
@@ -465,11 +465,22 @@
         "Freeze Lizard",
         "ben23-freezelizard"
       ],
-      "asset": null,
+      "asset": "alien-arctiguana",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Transformations",
         "https://ben10.fandom.com/wiki/Omnitrix_(Original)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.thehawkdown.com/articguana"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "TheHawkDown community fan redraw of Arctiguana, provisionally assigned to the OS base form by visible costume and anatomy traits. Not official artwork or an exact official reproduction.",
+      "dialFit": {
+        "scale": 0.5619,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.548077,
+        "visiblePixels": 2955970
+      }
     },
     {
       "id": "blitzwolfer",
@@ -4333,12 +4344,23 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-buglizard",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=aC3qW-YqKoY"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Official Cartoon Network UK Omniverse character-profile browser screenshot used for one AI reference redraw; generated transparency is not an official original asset.",
+      "dialFit": {
+        "scale": 0.8043,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.081607,
+        "visiblePixels": 491982
+      }
     },
     {
       "id": "nemetrix-crabdozer",
@@ -4477,13 +4499,24 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-tyrannopede",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix",
         "https://ben10.fandom.com/wiki/Tyrannopede"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=tHJE29iHE7I"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-multi-reference-redraw-of-official-cnuk-character-profile-browser-capture",
+      "dialFit": {
+        "scale": 0.8334,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.043837,
+        "visiblePixels": 508112
+      }
     },
     {
       "id": "nemetrix-vicetopus",
