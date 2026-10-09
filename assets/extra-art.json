@@ -3618,6 +3618,484 @@
         "physicalPhoneVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "humungousaur-grown",
+      "sourceFile": "assets/source-art/humungousaur-grown-pose-reference-original.png",
+      "sourceSha256": "931dac037211a6bbdaf30ae35b5e1c85eb5059691e17fc873aff6edf9c38a2ef",
+      "maskFile": "assets/source-art/humungousaur-grown-reference-edit.png",
+      "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
+      "pageUrl": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
+      "renderMode": "source-alpha",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "artProvenance": "AI reference reconstruction from three community-hosted Alien Force animation screenshots of grown Humungousaur. Not an official transparent original or pixel-exact animation cutout.",
+      "rights": "Underlying Ben 10 artwork remains copyrighted; no open redistribution license asserted.",
+      "observations": "Three actual local source images show the grown head crest, layered shoulder/back armor, bulky torso, bent upraised fists, short thick legs, pointed tail ridges and three dark short toe claws. The generated complete black silhouette retains the raised-fist wide-legged main pose, crown and plated shoulders. Output alpha is 0..255, 1333x1180, bbox [54,16,1290,1143], with every canvas edge fully transparent.",
+      "limitations": [
+        "Primary pose is a 576x432 community mirror of animation content. Official upload chain and exact episode timestamp are unverified.",
+        "Primary source cuts portions of the outer image-left fist/forearm, toes and tail end. These ends were reconstructed with same-form foot and head/armor references; exact outline is interpretative, not recovered production pixels.",
+        "Supporting foot/head images show the same grown design at other poses, not the exact same frame or camera. Reference combination does not prove exact joint positioning.",
+        "Generation emphasizes crown/armor and curls the reconstructed tail tip upward; individual spikes, digit shapes and proportions differ from the low-resolution original.",
+        "TheHawkDown maximum-size redraw was examined but excluded because shorts, pointed club tail and extra plates differ from the requested AF grown appearance; none of its pixels were used.",
+        "Output bytes retained without raster cleanup. Local watch UI review is pending; no physical-phone or user acceptance claimed."
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction / reference-guided character restoration.\nAsset type: one complete transparent character silhouette for an Omnitrix selection UI.\nPrimary request: recreate the GROWN Alien Force Humungousaur from the three supplied animation references as one solid black full-body silhouette on a truly transparent background. This is a reconstruction from references, not a pixel-exact cutout.\nInput 1 is the pose and entire body reference: preserve the broad dinosaur torso, large upraised bent arms with closed fists, short thick powerful legs, pointed crown crest, shoulder/back armor ridges, thick outward tail behind his left leg. Keep this recognizable forward-facing three-quarter pose, both fists raised, both feet apart. The first image cuts only portions of the outer left fist/forearm, toes and tail end; complete these short ends naturally rather than cropping them again. Do not preserve the rectangular edges.\nInput 2 is supporting anatomy for his huge dinosaur feet: three short thick dark claws on each foot; use the same short toes rather than long thin claws. Do not include the two human characters, smoke or scenery.\nInput 3 is supporting anatomy for this GROWN version's head crest, layered shoulder plates and dorsal/tail spikes. Keep this bulky armored grown form, not the unarmored ordinary form, not green Ultimate Humungousaur, and not the reboot club-tail form. Do not add clothes, a belt, shorts, cuffs or a mace.\nOutput just ONE opaque pure-black character silhouette, with clean crisp continuous edges and transparent negative spaces between his arms, sides, thighs and tail. No colored interior, facial details, Omnitrix emblem, outline glow, pedestal, caption, watermark or background. The outside silhouette should include the crown and visible spikes. Fit ALL of the character on the canvas with generous transparent margins on every side, including both fists, tail tip and all toes. Preserve the broad pose and avoid making a generic upright dinosaur. No additional characters or objects.",
+        "promptSha256": "2a2200a95d49e726a56c3f48ebfd1e8c0b80179f1717a55b5dc59e2b71d950cb",
+        "attempt": 1,
+        "rawOutputSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "ab6abb1bb5d28b2e8da84530814fea6ecae8bd28a34997bfad2050dc30fddedd",
+        "promptStorageNote": "Inline prompt trims the archived file trailing newline; both hashes are retained."
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/humungousaur-grown-feet-reference-original.png",
+          "sha256": "992fbbecdc786e5fb6888ab73d1edb2e198bfb4ce4139c86dd2dc1a575b45238",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/b10r2_509.png",
+          "role": "Same grown form foot/toe anatomy support; other pose and cropped body."
+        },
+        {
+          "file": "assets/source-art/humungousaur-grown-head-reference-original.png",
+          "sha256": "eb8e3e9bce7cbbf8e4b4308baa40c84c824f7b99f4c8d2fc6fe770442f21c81f",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/b10r2_513.png",
+          "role": "Same grown form crest, shoulder/back armor and spiked tail support; other pose and cropped body."
+        }
+      ],
+      "adoptionBasis": "Use multiple actual same-design references to reconstruct small cut-off extremities while preserving recognisable grown-form anatomy; make the restoration explicit rather than requiring a single uncropped production still.",
+      "uiReview": {
+        "version": "0.4.2",
+        "checkedAt": "2026-10-09T10:00:23.567Z",
+        "surface": "Codex in-app browser; desktop and two responsive iframes",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "931dac037211a6bbdaf30ae35b5e1c85eb5059691e17fc873aff6edf9c38a2ef",
+        "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
+        "inspectedPreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "nemetrix-hypnotick",
+      "sourceFile": "assets/source-art/hypnotick-tenor-frame-16-original.png",
+      "sourceSha256": "b1f8e53a8de364754a508da035596a3f1d2158f2d673514864fa7fb4726d3107",
+      "maskFile": "assets/source-art/hypnotick-multireference-edit-v2.png",
+      "maskSha256": "45b9e6a6e55eeda95dfa794741780e16c16a535fd8baa9ff387ff135ae435f05",
+      "pageUrl": "https://tenor.com/view/ben10-oliver10-hypnotick-big-chill-hypnosis-gif-27590765",
+      "url": "https://media1.tenor.com/m/f1kx6yq8JJEAAAAd/ben10-oliver10.gif",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Community animation GIF frames used for an AI multi-reference transparent redraw and one targeted wing correction. Not an official transparent original.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Original character/video copyright retained; source redistribution license unknown; AI reference edit disclosed.",
+      "observations": [
+        "Actually viewed frames0/16/24/31/38/48: slate-violet segmented flying insect abdomen with pointed lower end, red spiked collar, red eyes, paired tusks, long upward curved antennae and thin dark scythe appendages. Frames16/38 retain the airborne body; frame0 is cropped and used only for details.",
+        "Native saved frame16/38/0 PNG decoded RGBA pixels exactly match the unchanged source GIF composite frames; no cropping, resampling or pixel cleanup was performed.",
+        "Actually viewed both generated outputs. v1 enlarged the wings but introduced deep leaf/feather notches; v2 removes these to form wide smooth curved pale-green lateral surfaces and shallow lower arcs. The insect body, antenna hooks, tusks and abdomen tip remain contained.",
+        "Root independently viewed frame0/38/16 and both outputs, and accepted v2 for current-UI checking. No current-UI acceptance is asserted here."
+      ],
+      "limitations": [
+        "Community Tenor animation mirror tagged Hypnotick/Big Chill/hypnosis, uploader blackvenomsymbiote. Its original official upload and exact episode timestamp have not been independently established; do not call this an official transparent PNG or an official decoded original episode frame.",
+        "Three actual native GIF frames support the same Omniverse insect body. The high-resolution transparent output is an AI reference redraw, not a pixel-exact cutout; fine segments, claws/tusks, face/collar lines and small antenna endpoints are interpretative.",
+        "The source wings are broad translucent moving green arcs. Their exact static outer contour, translucency and membrane extent are not uniquely resolved by the low-resolution motion frames. The adopted v2 uses smooth wide green arcs; this remains an explicit AI interpretation. Do not claim all wing pixels are official anatomy.",
+        "v1 was held for unsupported deep feather/leaf-like wing notches and coarse leaf veins. One targeted correction removed those features while retaining the airborne body and large sideways wing span; both prompts and original output bytes are retained privately.",
+        "Low-alpha residue remains: alpha1-15=23877 pixels, alpha16-127=4821 pixels; nonzero bbox[0,0,1656,931]. Strong-alpha bbox>=128 is[68,7,1618,927], all four strong-alpha edge counts0. Do not claim residue-free background or infer clipped limbs from faint edge pixels.",
+        "The catalog A Fistful of Brains Panuncian-copy occurrence was not directly verified in this GIF. This reference supports the regular Omniverse Hypnotick body design, not proof of the exact wearer/episode or a separate species.",
+        "Copyright and redistribution license are unknown. Current UI, real phone/SillyTavern and driver acceptance are not established by source/material review."
+      ],
+      "adoptionBasis": "Same-version insect body is supported by actual animation references; smooth large wing arcs are a disclosed AI interpretation of motion-blurred surfaces. Root accepted v2 for current-UI checking; production adoption/UI acceptance remain separate.",
+      "sourceFrame": {
+        "frameIndex": 16,
+        "containerFile": "assets/source-art/hypnotick-tenor-original.gif",
+        "containerSha256": "2ff058078c612930f4d5dd98d15b1448648f97134aaabe1b6485d325cd479661",
+        "extractionMethod": "Whole native decoded composite GIF frame, unchanged RGBA pixels; no crop, resize or cleanup. Exact official episode time unknown.",
+        "nativeSize": [
+          640,
+          360
+        ],
+        "decodedPixelMatchVerified": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/hypnotick-tenor-frame-38-original.png",
+          "sha256": "442024750566bf9028dac6a09d478c9acfdac7d17125434524a896089c23dc0a",
+          "role": "Same-version frame38 airborne body and large translucent wing sweep",
+          "frameIndex": 38,
+          "actuallyViewed": true
+        },
+        {
+          "file": "assets/source-art/hypnotick-tenor-frame-0-detail-original.png",
+          "sha256": "b92fd96d669f3b7fb3571db6e0a828cfed66b21e204393c0bd0524dfb3b1109d",
+          "role": "Cropped frame0 close-up of head/collar/tusks/segments/appendages only; not full-body proof",
+          "frameIndex": 0,
+          "actuallyViewed": true
+        }
+      ],
+      "editionEvidence": {
+        "body": "Hypnotick, regular Omniverse Nemetrix predator body",
+        "sourceCaption": "Ben10 Oliver10 GIF; Hypnotick / Big Chill / hypnosis tags; uploader blackvenomsymbiote",
+        "observedVersionFeatures": "Slate-violet segmented insect with red spiked collar, curved antennae, tusks/scythe appendages and translucent green wing sweeps.",
+        "catalogAppearanceBoundary": "The catalog A Fistful of Brains Panuncian-copy occurrence was not directly verified in this GIF. This reference supports the regular Omniverse Hypnotick body design, not proof of the exact wearer/episode or a separate species."
+      },
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: precise-object-edit\nAsset type: transparent Ben 10 Omniverse Hypnotick reference redraw.\nPrimary request: correct ONLY the wings of Image 1. Keep the existing insect body, its floating pose, head size, red collar, tusks, thin scythe appendages, abdomen tip, long curved antennae, colors and their connections unchanged.\nInput images: Image 1 is the current generated transparent edit target. Image 2 is native animation frame16 and Image 3 is frame38; these are wing-shape references, not new poses.\nWing correction: the current wings have unsupported deep sawtooth notches, separate long feather/leaf lobes and thick plant-like leaf veins. Remove those inventions. Replace the lateral wing masses with broad pale cyan-green translucent swept surfaces having smooth flowing curved outer arcs, as visible in Images 2 and 3. At most use very shallow curved indentations; no deep forks or long separated leaf blades. Keep the LARGE sideways span of Image 1, roughly as wide as or wider than the whole antenna-to-abdomen height. Do not collapse the wings into four tiny shoulder leaves. Preserve their connection behind the body and airborne arc direction.\nInterior: remove the coarse leaf veins and invented feather subdivisions. The green surfaces should be simple smooth translucent arcs with minimal fine linework. Source motion trails are not extra limbs, antennae or organs.\nPreserve: all existing head/body/antenna shapes and proportions; do not change into Big Chill, a humanoid, or a standing pose. Keep both antenna hooks, both ivory tusks, the visible thin appendages and complete tapering abdominal tip.\nTransparency and framing: true alpha-zero empty background, clean transparent padding on every side including above both antenna hooks and below the abdomen tip. Remove isolated green specks and external halo/residue. No sky/clouds, text, logos, shadow, fog or opaque rectangle. Only the wings themselves may have translucent pale green alpha.\nThis remains an AI interpretation of blurred animation reference wings, not an official transparent original or pixel-exact cutout.",
+        "promptSha256": "34c115cab5bfaf75c71d943087d4a0fd26367dd647fbadfb412fea665e4636d6",
+        "attempt": 2,
+        "rawOutputSha256": "45b9e6a6e55eeda95dfa794741780e16c16a535fd8baa9ff387ff135ae435f05",
+        "rawBytesMatch": true,
+        "priorAttempts": [
+          {
+            "attempt": 1,
+            "tool": "image_gen.imagegen",
+            "prompt": "Use case: background-extraction\nAsset type: Ben 10 Omniverse Hypnotick transformation reference redraw for a silhouette selector.\nPrimary request: produce one complete colored Hypnotick in genuine transparent RGBA, using the supplied animation frames as references. This is an interpretative reference edit, not an official high-resolution asset.\nInput images: Image 1 is the primary complete floating pose (native GIF frame 16, 640x360). Image 2 is the same animated creature/pose at frame 38; use its broad translucent wing sweeps to clarify span and curvature. Image 3 is frame 0, a cropped close-up for head, collar, mandibles, segmented abdomen and scythe-limb details only; do not use its crop or enlarge the head relative to Image 1.\nSubject and pose: retain the front/three-quarter airborne insect body of Image 1, dark slate blue/violet segmented abdomen tapering down to its pointed curled tip, red spiked collar, red eyes, two long dark curved antennae extending upward, paired ivory jaw tusks, and the long thin black scythe-shaped appendages visible along the abdomen. Preserve the original connections, relative proportions and self-overlap. Do not turn it into Big Chill or add hands, feet or humanoid anatomy.\nWing geometry: the source wings form broad pale cyan-green translucent swept arcs extending far sideways behind the body, roughly comparable to or wider than the body-plus-antenna height. Preserve that large span and curved/swept flying character. Do not replace the broad arcs with four tiny short triangular leaves close to the shoulders. Use the clearest overlapping reference arcs to interpret the translucent wing edges; motion trails must not become additional antennae, legs or new organs.\nCompleteness: antenna hooks touch the top of the source frame; finish only their tiny clipped rounded ends following the existing curves. Keep the complete visible abdomen tip, tusks, appendages and wing sweeps. Do not invent large unseen anatomy or change into a standing pose. Small wing-edge and antenna-tip interpretation is allowed; fine lines and details are an AI redraw rather than pixel-exact tracing.\nBackground: remove sky, clouds, static/grain, haze, any Big Chill, and all scene content. Background must be true alpha zero, with generous clean transparent padding around every antenna, wing, jaw and body tip. No opaque rectangle, external glow, shadow, fog or isolated residue. The wings themselves may retain their pale translucent material; their outer silhouette must remain readable.\nStyle: retain the source animation's graphic colors, black outlines, collar and segmented insect structure. No photorealism, logos, text or extra characters.",
+            "promptSha256": "14ca0552aa9864633cf7f86f6b6a866c8466103032981b140042428e0247b779",
+            "outputSha256": "a92d3f92f7e5074db2ee3292ed472defcbcea7c8268b9730ae64d3104435b4f6",
+            "selected": false,
+            "reason": "Deep leaf/feather wing notches unsupported by source motion arcs."
+          }
+        ],
+        "archivedPromptFileSha256": "34c115cab5bfaf75c71d943087d4a0fd26367dd647fbadfb412fea665e4636d6",
+        "promptStorageNote": "Both archived prompts are byte-identical UTF-8 LF text to the inline prompts sent to the built-in tool."
+      },
+      "alphaInspection": {
+        "size": [
+          1672,
+          941
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBbox": [
+          0,
+          0,
+          1656,
+          931
+        ],
+        "alpha128Bbox": [
+          68,
+          7,
+          1618,
+          927
+        ],
+        "alpha128EdgeCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alpha1to15": 23877,
+        "alpha16to127": 4821,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "uiReview": {
+        "version": "0.4.2",
+        "checkedAt": "2026-10-09T10:00:23.567Z",
+        "surface": "Codex in-app browser; desktop and two responsive iframes",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "b1f8e53a8de364754a508da035596a3f1d2158f2d673514864fa7fb4726d3107",
+        "maskSha256": "45b9e6a6e55eeda95dfa794741780e16c16a535fd8baa9ff387ff135ae435f05",
+        "inspectedPreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "promo-antigravitesla",
+      "sourceFile": "assets/source-art/antigravitesla-source-9009-original.jpg",
+      "sourceSha256": "d6d6faaec97f5700a8008c48af0f43a64a3c261a3dc8af76bebedcab472ee957",
+      "maskFile": "assets/source-art/antigravitesla-promo-reference-edit.png",
+      "maskSha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+      "pageUrl": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+      "url": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference redraw of original Ultimate Access advertisement content viewed in a community YouTube repost; not an official transparent asset.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 animation remains copyrighted. The upload is a community repost, and its official upload chain and redistribution permission are unverified. Generated reference art is explicitly disclosed; no open license asserted.",
+      "observations": [
+        "Actually viewed the unchanged 1265x712 browser screenshot: a complete tall mint-faced, dark-haired and moustached alien stands at center-left with both hands on hips and two wide-set green boots. His head, bent elbows and both feet are inside the video frame; the adjacent pink-clothed female character does not cover his main contour.",
+        "The source shows asymmetric green/dark clothing, a pale vertical chest stripe and small chest device, green forearm/boot regions and pale cyan-green limb ovals. The external cyan electrical arc and green haze are scene effects, not anatomy.",
+        "Actually viewed the native generated output: the full tall hands-on-hips stance remains recognizable, with mint face, large dark moustache, asymmetric green/dark torso, chest stripe/device, pale limb ovals and wide-set green boots. No other character, hallway, web UI or detached lightning arc remains.",
+        "The selected local PNG is byte-identical to the built-in imagegen output. All alpha>=128 canvas edges are empty; the solid body fits within [103,31,920,1470]. Sampled exterior green haze RGB locations have alpha0, while low-alpha edge/residual pixels remain."
+      ],
+      "limitations": [
+        "The main character occupies only approximately 200x370 pixels in the retained browser screenshot. Facial features, moustache/hair shape, collar/seam details, hand joins, boots and limb-oval geometry in the enlarged result are AI interpretation, not recovered production-model detail.",
+        "This is one reference-guided redraw using the original existing stance. It is not pixel-identical extraction or an official transparent PNG. The output sharpens and regularizes the source and makes pale forearm details more explicit.",
+        "Original advertisement identity is supported by the actual animation content and the public community video title; the upload is sidroid1000B/@ChivatoMon, not an authenticated Cartoon Network publication. No independent official-upload chain is established.",
+        "No later crew-commission or Omniverse redesign reference was used. The retained full-body commercial pose is the only image input; no hidden major anatomy was reconstructed from a different version.",
+        "Alpha range is 0-254. 31,224 pixels have alpha1-15 and 5,233 have alpha16-127; the nonzero-alpha bounds touch left/bottom canvas. No pixel cleanup or re-encoding was applied. Do not call the asset completely residue-free or treat zero-alpha colored RGB as visible background.",
+        "Current watch UI, real SillyTavern, physical phone and human acceptance are pending for this candidate."
+      ],
+      "adoptionBasis": "Complete source stance and recognizable original commercial body retained; ready for root independent source/output review and actual watch UI verification, with interpretative detail and community-repost limits explicit.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+        "playbackSeconds": 9.009,
+        "paused": true,
+        "durationSeconds": 30.081,
+        "capturedBy": "root CUA",
+        "sourceSize": [
+          1265,
+          712
+        ],
+        "nativeVideoSize": [
+          1280,
+          720
+        ],
+        "captureMethod": "Unchanged screenshot of actual paused browser playback including surrounding YouTube UI; not a decoded original frame.",
+        "actualFormat": "JPEG",
+        "subjectSizeApproxPixels": [
+          200,
+          370
+        ],
+        "allVisibleBodyContourInsideFrame": true,
+        "uploader": "sidroid1000B / @ChivatoMon",
+        "uploaderClass": "community repost",
+        "uploaderEvidence": "Public indexed title/byline and root actual browser playback observation. Subagent actually viewed saved source pixels but its own browser inventory was empty."
+      },
+      "editionEvidence": {
+        "body": "Antigravitesla, original Ultimate Access Commercial 2 design; non-TV promo entry",
+        "sourceTitle": "ben 10 acceso total antigravitesla HD",
+        "observedBodyVersion": "Tall mint-faced humanoid with dark hair/moustache, green and dark costume, pale vertical chest stripe, limb ovals and green boots.",
+        "versionBoundary": "No later Omniverse third-party commission or fan costume substituted. Non-canon promo status follows existing catalog scope and is not recast as a TV-series appearance."
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction / identity-preserve.\nAsset type: one transparent character reference asset for a silhouette selector.\n\nThe input is an ACTUALLY VIEWED browser screenshot of the original Ben 10 Ultimate Access Antigravitesla advertisement, retained from a community video repost. Redraw ONLY the complete mint-faced adult male alien standing at CENTER-LEFT of the VIDEO (approximately x470-666, y210-577 in the 1265x712 screenshot). Keep the ORIGINAL COMMERCIAL design and this exact existing stance. This is an interpretative enlargement of small animation pixels, not recovery of a model sheet or an official transparent asset.\n\nPOSE AND OUTLINE: preserve his tall proportions, upright torso, head angle, both arms bent outward with BOTH HANDS RESTING AT HIS HIPS, and the wide-set legs ending in the two complete outward-pointing green boots. Keep the head-to-body ratio, slim waist, broad shoulder outline and actual limb lengths from the screenshot. Keep the visible existing joins and hand shapes without inventing new finger gestures. Do not move him into a new pose or add missing limbs; the main body is already fully visible.\n\nDESIGN: retain the pale mint/cyan face, short dark hair, prominent dark moustache, dark eyebrows and original facial placement. Retain the asymmetric green and dark gray torso/clothing, the narrow pale vertical chest stripe and its small circular chest device, green forearms/gloves, dark upper-leg sections, green lower-leg boots, and the PALE GREEN/CYAN OVAL NODULES visible on the outer upper arms, knees and shin/boot regions. Their placement belongs to the original advertisement. Do not replace this with a later Omniverse/crew-commission redesign, oversized armored body, different costume, different facial hair or different species. Preserve the source's own simple 2D animation color blocks and outline logic; simplify uncertain tiny facial/hand details instead of inventing intricate texture or sharp high-resolution details.\n\nEXCLUDE the adjacent pink-clothed female character at image-right, all hallway lockers, floor, walls, YouTube page/header/text/buttons, black browser margins, thumbnail/watermark and every other graphic. Remove the loose cyan electrical arc above/around his head and the diffuse green atmospheric haze/glow: those are OUTSIDE effects, not anatomy or costume. Keep the pale solid limb ovals themselves.\n\nOUTPUT: one complete full-body Antigravitesla alone in the original hands-on-hips stance, with genuine alpha-transparent background and generous clear margins around the head, bent elbows and both boot soles. Clean flat animation colors and crisp but modest linework. No ground, shadow, scenery, fog, glow, white fringe, checkerboard, text, second character, or redesigned anatomy. The silhouette should read immediately as the source's tall humanlike, moustached, hands-on-hips commercial alien.",
+        "promptSha256": "8cf2e67009055cb46eb74140481818f2757efd69356b7bc2501dfac419b06074",
+        "attempt": 1,
+        "rawOutputSha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "8cf2e67009055cb46eb74140481818f2757efd69356b7bc2501dfac419b06074",
+        "promptStorageNote": "UTF-8 LF prompt archive is byte-identical to the exact inline prompt sent to the built-in tool, including absence of a trailing newline."
+      },
+      "alphaInspection": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "format": "PNG",
+        "bytes": 1357802,
+        "sha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "nonzeroBbox": [
+          0,
+          28,
+          1014,
+          1536
+        ],
+        "alpha128Bbox": [
+          103,
+          31,
+          920,
+          1470
+        ],
+        "alpha1to15": 31224,
+        "alpha16to127": 5233,
+        "alpha128to255": 401243,
+        "alpha128EdgeCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "probes": {
+          "(0, 0)": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "(50, 500)": [
+            1,
+            2,
+            2,
+            0
+          ],
+          "(960, 500)": [
+            3,
+            8,
+            3,
+            0
+          ],
+          "(550, 30)": [
+            20,
+            21,
+            30,
+            0
+          ],
+          "(980, 1490)": [
+            11,
+            41,
+            11,
+            0
+          ],
+          "(550, 1420)": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "(175, 945)": [
+            9,
+            21,
+            14,
+            0
+          ]
+        }
+      },
+      "uiReview": {
+        "version": "0.4.2",
+        "checkedAt": "2026-10-09T10:00:23.567Z",
+        "surface": "Codex in-app browser; desktop and two responsive iframes",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "d6d6faaec97f5700a8008c48af0f43a64a3c261a3dc8af76bebedcab472ee957",
+        "maskSha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+        "inspectedPreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "reboot-chromastone",
+      "sourceFile": "assets/source-art/reboot-chromastone-source-tiermaker.png",
+      "sourceSha256": "5bdf6f1ef6ed9550cc40d2e3a9851aebf3b3469fed6c2cff5ee51a287defe2eb",
+      "maskFile": "assets/source-art/reboot-chromastone-reference-edit.png",
+      "maskSha256": "1970a84b2d57d1351147c3c319cf5b14f3bfc84d1845be9c7209ed9434a79dd5",
+      "pageUrl": "https://spinwheelmaker.com/wheel/3465",
+      "url": "https://tiermaker.com/images/chart/chart/ben-10-reboot-aliens-15767/zz1618870885chromastonepng.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI interpretative reference reconstruction of a community-hosted reboot-labelled action image; UAF auxiliary detail reference. Not official transparent artwork.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying franchise and source illustrations copyrighted; author/production upload chain and reuse licence unverified. Generated output is an AI reference redraw.",
+      "observations": "Independently viewed primary, UAF auxiliary and final saved output. The primary/output share the stocky purple-black torso, short crystal-topped head, single luminous eye, pink shoulder/chest crystals, green circular chest emblem and sideways lunge: very large image-left faceted palm, opposite arm stretched image-right, one leg extended down-left and the other bent down-right. Output isolates the action, completes cropped extremity ends, and retains the main limb bends and body configuration; foot/finger/line details are interpretative rather than authenticated production pixels.",
+      "limitations": [
+        "Primary is a small 257x255 community-hosted image labelled Ben 10 Reboot Aliens. Original animation publication/artist and explicit production edition attribution are unverified; use as reboot-design reference based on the observed chunky body, crystal/costume configuration and recorded community label, not as official transparent art.",
+        "AI reference reconstruction, not pixel-faithful extraction. Frame-clipped hand/finger ends and the bottom foot continuation were inferred; the resulting near lower foot is broader/longer than the original visible fragment. Exact missing tip geometry is not established.",
+        "UAF artwork supplies auxiliary crystalline hand/crystal construction only, not reboot pose or proportional authority. Its different edition is explicitly disclosed. No claim that the two editions have identical silhouettes or should be merged.",
+        "AI changed internal facet lines, finger construction, contour polish, shading and some colors (eye appears lime rather than the primary yellow-green). Chest/head details are interpretations of a low-resolution source.",
+        "Visible action is preserved, not a standing model-sheet pose. Low-alpha boundary pixels reach the canvas edges although alpha>=128 contour stays within [11,25,1250,1234]. Final pure-black current UI remains unviewed.",
+        "Source artwork and underlying Ben 10 remain copyrighted; redistribution permission and open licensing are unverified."
+      ],
+      "adoptionBasis": "A complete recognizable primary body and visible limb directions support a scoped reference reconstruction of clipped hand/foot endpoints. Root authorized this limited reconstruction; no direct base reuse or identity merge. Root current UI inspection is pending.",
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-chromastone-uaf-detail-reference.png",
+          "sha256": "0668658a82ae54038a05fc5f23b519cf269691075d7bd7378b90d84c18b45f6a",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+          "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+          "role": "Older UAF community mirror, crystalline hand/facet auxiliary only; different edition, not authority for reboot body pose or proportions.",
+          "sourceViewed": true
+        }
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent character reference for a Ben 10 silhouette selector.\nPrimary edit target: Image 1, chromastone-tiermaker-original.png. Reconstruct the visible Chromastone REBOOT animation action from this small 257x255 image, remove its entire luminous green background, and isolate just the crystal humanoid.\nInput roles: Image 1 is the authority for pose, short broad body proportions, head, costume, crystal placement, facing direction, limb bends and silhouette. Image 2, chromastone-uaf-ben10hero-original.png, is ONLY an auxiliary reference for the crystalline hand/finger construction and crystal surface details. It is from an older UAF design and must NOT replace the reboot character's pose, bulk, head proportions or costume.\nKeep Image 1's dynamic sideways lunge: face and single yellow eye looking down toward image-left; large faceted pink crystal left palm thrust outward toward image-left; opposite arm reaching straight toward image-right; one leg stretched down-left and the other bent down-right. Keep the stockier dark purple stone torso, black segmented shoulder/neck/waist/leg regions, shorter pink head crystal, pink crystals on the shoulders and chest, and round green chest Omnitrix in their source locations. Do not adopt Image 2's raised overhead hand or thin long body.\nLimited endpoint reconstruction is permitted: complete only the short pink crystal finger tips at the left/right frame edges and the short final foot/toe tip clipped at the bottom of Image 1, using the observed crystalline angular anatomy in the auxiliary image. Preserve the visible wrists, hand directions, leg lengths and knee bends. Do not add new arms, a tail, wings, extra spikes, armor, accessories or different limb poses. Do not lengthen an entire limb to make a standing figure.\nMaintain the source's flat 2D animation style, bold black contour, dark purple/black body and saturated pink faceted crystals. A clean faithful interpretative redraw of the low resolution input is intended, not a new redesign or a claim of official pixel-identical art.\nOne complete visible action figure, centered on a transparent square canvas with generous clear margins around every fingertip, foot and head crystal. Actual RGBA transparency, no colored background, green aura, lighting rays, checkerboard drawing, ground, cast shadow, text, label, watermark or extra character. Keep every visible body connection coherent.",
+        "promptSha256": "569e9b41f4eb8f417925de093c3c5f5593858632bbcacb98400ddeab9782dd92",
+        "outputBytesUnchanged": true,
+        "iterations": 1,
+        "programmaticPixelEdits": 0
+      },
+      "uiReview": {
+        "version": "0.4.2",
+        "checkedAt": "2026-10-09T10:00:23.567Z",
+        "surface": "Codex in-app browser; desktop and two responsive iframes",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "clientWidth": 1265,
+          "height": 720,
+          "outerWidth": 1280
+        },
+        "sourceSha256": "5bdf6f1ef6ed9550cc40d2e3a9851aebf3b3469fed6c2cff5ee51a287defe2eb",
+        "maskSha256": "1970a84b2d57d1351147c3c319cf5b14f3bfc84d1845be9c7209ed9434a79dd5",
+        "inspectedPreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
     }
   ],
   "mergedForms": [

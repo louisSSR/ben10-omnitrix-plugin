@@ -1,0 +1,370 @@
+{
+  "version": "0.4.2",
+  "checkedAt": "2026-10-09T10:02:03.615Z",
+  "previewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app browser; desktop and two responsive iframes",
+  "coverage": {
+    "total": 224,
+    "reviewed": 191,
+    "missing": 33
+  },
+  "assets": [
+    {
+      "formId": "humungousaur-grown",
+      "sourceFile": "assets/source-art/humungousaur-grown-pose-reference-original.png",
+      "sourceSha256": "931dac037211a6bbdaf30ae35b5e1c85eb5059691e17fc873aff6edf9c38a2ef",
+      "maskFile": "assets/source-art/humungousaur-grown-reference-edit.png",
+      "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
+      "sourceUrl": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
+      "artProvenance": "AI reference reconstruction from three community-hosted Alien Force animation screenshots of grown Humungousaur. Not an official transparent original or pixel-exact animation cutout.",
+      "renderMode": "source-alpha",
+      "officialSourceVerified": false,
+      "observations": "Three actual local source images show the grown head crest, layered shoulder/back armor, bulky torso, bent upraised fists, short thick legs, pointed tail ridges and three dark short toe claws. The generated complete black silhouette retains the raised-fist wide-legged main pose, crown and plated shoulders. Output alpha is 0..255, 1333x1180, bbox [54,16,1290,1143], with every canvas edge fully transparent.",
+      "limitations": [
+        "Primary pose is a 576x432 community mirror of animation content. Official upload chain and exact episode timestamp are unverified.",
+        "Primary source cuts portions of the outer image-left fist/forearm, toes and tail end. These ends were reconstructed with same-form foot and head/armor references; exact outline is interpretative, not recovered production pixels.",
+        "Supporting foot/head images show the same grown design at other poses, not the exact same frame or camera. Reference combination does not prove exact joint positioning.",
+        "Generation emphasizes crown/armor and curls the reconstructed tail tip upward; individual spikes, digit shapes and proportions differ from the low-resolution original.",
+        "TheHawkDown maximum-size redraw was examined but excluded because shorts, pointed club tail and extra plates differ from the requested AF grown appearance; none of its pixels were used.",
+        "Output bytes retained without raster cleanup. Local watch UI review is pending; no physical-phone or user acceptance claimed."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/humungousaur-grown-feet-reference-original.png",
+          "sha256": "992fbbecdc786e5fb6888ab73d1edb2e198bfb4ce4139c86dd2dc1a575b45238",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/b10r2_509.png",
+          "role": "Same grown form foot/toe anatomy support; other pose and cropped body."
+        },
+        {
+          "file": "assets/source-art/humungousaur-grown-head-reference-original.png",
+          "sha256": "eb8e3e9bce7cbbf8e4b4308baa40c84c824f7b99f4c8d2fc6fe770442f21c81f",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/b10r2_513.png",
+          "role": "Same grown form crest, shoulder/back armor and spiked tail support; other pose and cropped body."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "nemetrix-hypnotick",
+      "sourceFile": "assets/source-art/hypnotick-tenor-frame-16-original.png",
+      "sourceSha256": "b1f8e53a8de364754a508da035596a3f1d2158f2d673514864fa7fb4726d3107",
+      "maskFile": "assets/source-art/hypnotick-multireference-edit-v2.png",
+      "maskSha256": "45b9e6a6e55eeda95dfa794741780e16c16a535fd8baa9ff387ff135ae435f05",
+      "sourceUrl": "https://tenor.com/view/ben10-oliver10-hypnotick-big-chill-hypnosis-gif-27590765",
+      "artProvenance": "Community animation GIF frames used for an AI multi-reference transparent redraw and one targeted wing correction. Not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed frames0/16/24/31/38/48: slate-violet segmented flying insect abdomen with pointed lower end, red spiked collar, red eyes, paired tusks, long upward curved antennae and thin dark scythe appendages. Frames16/38 retain the airborne body; frame0 is cropped and used only for details.",
+        "Native saved frame16/38/0 PNG decoded RGBA pixels exactly match the unchanged source GIF composite frames; no cropping, resampling or pixel cleanup was performed.",
+        "Actually viewed both generated outputs. v1 enlarged the wings but introduced deep leaf/feather notches; v2 removes these to form wide smooth curved pale-green lateral surfaces and shallow lower arcs. The insect body, antenna hooks, tusks and abdomen tip remain contained.",
+        "Root independently viewed frame0/38/16 and both outputs, and accepted v2 for current-UI checking. No current-UI acceptance is asserted here."
+      ],
+      "limitations": [
+        "Community Tenor animation mirror tagged Hypnotick/Big Chill/hypnosis, uploader blackvenomsymbiote. Its original official upload and exact episode timestamp have not been independently established; do not call this an official transparent PNG or an official decoded original episode frame.",
+        "Three actual native GIF frames support the same Omniverse insect body. The high-resolution transparent output is an AI reference redraw, not a pixel-exact cutout; fine segments, claws/tusks, face/collar lines and small antenna endpoints are interpretative.",
+        "The source wings are broad translucent moving green arcs. Their exact static outer contour, translucency and membrane extent are not uniquely resolved by the low-resolution motion frames. The adopted v2 uses smooth wide green arcs; this remains an explicit AI interpretation. Do not claim all wing pixels are official anatomy.",
+        "v1 was held for unsupported deep feather/leaf-like wing notches and coarse leaf veins. One targeted correction removed those features while retaining the airborne body and large sideways wing span; both prompts and original output bytes are retained privately.",
+        "Low-alpha residue remains: alpha1-15=23877 pixels, alpha16-127=4821 pixels; nonzero bbox[0,0,1656,931]. Strong-alpha bbox>=128 is[68,7,1618,927], all four strong-alpha edge counts0. Do not claim residue-free background or infer clipped limbs from faint edge pixels.",
+        "The catalog A Fistful of Brains Panuncian-copy occurrence was not directly verified in this GIF. This reference supports the regular Omniverse Hypnotick body design, not proof of the exact wearer/episode or a separate species.",
+        "Copyright and redistribution license are unknown. Current UI, real phone/SillyTavern and driver acceptance are not established by source/material review."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/hypnotick-tenor-frame-38-original.png",
+          "sha256": "442024750566bf9028dac6a09d478c9acfdac7d17125434524a896089c23dc0a",
+          "role": "Same-version frame38 airborne body and large translucent wing sweep",
+          "frameIndex": 38,
+          "actuallyViewed": true
+        },
+        {
+          "file": "assets/source-art/hypnotick-tenor-frame-0-detail-original.png",
+          "sha256": "b92fd96d669f3b7fb3571db6e0a828cfed66b21e204393c0bd0524dfb3b1109d",
+          "role": "Cropped frame0 close-up of head/collar/tusks/segments/appendages only; not full-body proof",
+          "frameIndex": 0,
+          "actuallyViewed": true
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "promo-antigravitesla",
+      "sourceFile": "assets/source-art/antigravitesla-source-9009-original.jpg",
+      "sourceSha256": "d6d6faaec97f5700a8008c48af0f43a64a3c261a3dc8af76bebedcab472ee957",
+      "maskFile": "assets/source-art/antigravitesla-promo-reference-edit.png",
+      "maskSha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+      "sourceUrl": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+      "artProvenance": "AI reference redraw of original Ultimate Access advertisement content viewed in a community YouTube repost; not an official transparent asset.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed the unchanged 1265x712 browser screenshot: a complete tall mint-faced, dark-haired and moustached alien stands at center-left with both hands on hips and two wide-set green boots. His head, bent elbows and both feet are inside the video frame; the adjacent pink-clothed female character does not cover his main contour.",
+        "The source shows asymmetric green/dark clothing, a pale vertical chest stripe and small chest device, green forearm/boot regions and pale cyan-green limb ovals. The external cyan electrical arc and green haze are scene effects, not anatomy.",
+        "Actually viewed the native generated output: the full tall hands-on-hips stance remains recognizable, with mint face, large dark moustache, asymmetric green/dark torso, chest stripe/device, pale limb ovals and wide-set green boots. No other character, hallway, web UI or detached lightning arc remains.",
+        "The selected local PNG is byte-identical to the built-in imagegen output. All alpha>=128 canvas edges are empty; the solid body fits within [103,31,920,1470]. Sampled exterior green haze RGB locations have alpha0, while low-alpha edge/residual pixels remain."
+      ],
+      "limitations": [
+        "The main character occupies only approximately 200x370 pixels in the retained browser screenshot. Facial features, moustache/hair shape, collar/seam details, hand joins, boots and limb-oval geometry in the enlarged result are AI interpretation, not recovered production-model detail.",
+        "This is one reference-guided redraw using the original existing stance. It is not pixel-identical extraction or an official transparent PNG. The output sharpens and regularizes the source and makes pale forearm details more explicit.",
+        "Original advertisement identity is supported by the actual animation content and the public community video title; the upload is sidroid1000B/@ChivatoMon, not an authenticated Cartoon Network publication. No independent official-upload chain is established.",
+        "No later crew-commission or Omniverse redesign reference was used. The retained full-body commercial pose is the only image input; no hidden major anatomy was reconstructed from a different version.",
+        "Alpha range is 0-254. 31,224 pixels have alpha1-15 and 5,233 have alpha16-127; the nonzero-alpha bounds touch left/bottom canvas. No pixel cleanup or re-encoding was applied. Do not call the asset completely residue-free or treat zero-alpha colored RGB as visible background.",
+        "Current watch UI, real SillyTavern, physical phone and human acceptance are pending for this candidate."
+      ],
+      "supportingSources": [],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "reboot-chromastone",
+      "sourceFile": "assets/source-art/reboot-chromastone-source-tiermaker.png",
+      "sourceSha256": "5bdf6f1ef6ed9550cc40d2e3a9851aebf3b3469fed6c2cff5ee51a287defe2eb",
+      "maskFile": "assets/source-art/reboot-chromastone-reference-edit.png",
+      "maskSha256": "1970a84b2d57d1351147c3c319cf5b14f3bfc84d1845be9c7209ed9434a79dd5",
+      "sourceUrl": "https://spinwheelmaker.com/wheel/3465",
+      "artProvenance": "AI interpretative reference reconstruction of a community-hosted reboot-labelled action image; UAF auxiliary detail reference. Not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": "Independently viewed primary, UAF auxiliary and final saved output. The primary/output share the stocky purple-black torso, short crystal-topped head, single luminous eye, pink shoulder/chest crystals, green circular chest emblem and sideways lunge: very large image-left faceted palm, opposite arm stretched image-right, one leg extended down-left and the other bent down-right. Output isolates the action, completes cropped extremity ends, and retains the main limb bends and body configuration; foot/finger/line details are interpretative rather than authenticated production pixels.",
+      "limitations": [
+        "Primary is a small 257x255 community-hosted image labelled Ben 10 Reboot Aliens. Original animation publication/artist and explicit production edition attribution are unverified; use as reboot-design reference based on the observed chunky body, crystal/costume configuration and recorded community label, not as official transparent art.",
+        "AI reference reconstruction, not pixel-faithful extraction. Frame-clipped hand/finger ends and the bottom foot continuation were inferred; the resulting near lower foot is broader/longer than the original visible fragment. Exact missing tip geometry is not established.",
+        "UAF artwork supplies auxiliary crystalline hand/crystal construction only, not reboot pose or proportional authority. Its different edition is explicitly disclosed. No claim that the two editions have identical silhouettes or should be merged.",
+        "AI changed internal facet lines, finger construction, contour polish, shading and some colors (eye appears lime rather than the primary yellow-green). Chest/head details are interpretations of a low-resolution source.",
+        "Visible action is preserved, not a standing model-sheet pose. Low-alpha boundary pixels reach the canvas edges although alpha>=128 contour stays within [11,25,1250,1234]. Final pure-black current UI remains unviewed.",
+        "Source artwork and underlying Ben 10 remain copyrighted; redistribution permission and open licensing are unverified."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/reboot-chromastone-uaf-detail-reference.png",
+          "sha256": "0668658a82ae54038a05fc5f23b519cf269691075d7bd7378b90d84c18b45f6a",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+          "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+          "role": "Older UAF community mirror, crystalline hand/facet auxiliary only; different edition, not authority for reboot body pose or proportions.",
+          "sourceViewed": true
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    }
+  ],
+  "checks": {
+    "modes": [
+      "dial",
+      "projection",
+      "carousel"
+    ],
+    "desktop": {
+      "clientWidth": 1265,
+      "height": 720,
+      "outerWidth": 1280
+    },
+    "mobileClientWidths": [
+      375,
+      305
+    ],
+    "newContoursInspected": true,
+    "filtersClearedInFinalPreview": true,
+    "oldRuntimeImagesByteExact": 195,
+    "registeredImageHashesUnchanged": true,
+    "tests": {
+      "passed": 104,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "todo": 0,
+      "logSha256": "4272f04c81e8acdecd2f5a568bb5a173efa2a3e7bd725248aa1aedfe7ff2d94c"
+    }
+  },
+  "console": {
+    "mainErrors": [],
+    "responsiveContainerErrors": [
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'."
+    ]
+  },
+  "screenshots": [
+    "screenshots/v042-grown-dial.jpg",
+    "screenshots/v042-grown-projection.jpg",
+    "screenshots/v042-grown-ring.jpg",
+    "screenshots/v042-grown-mobile-dial.jpg",
+    "screenshots/v042-grown-mobile-projection.jpg",
+    "screenshots/v042-grown-mobile-ring.jpg",
+    "screenshots/v042-hypnotick-dial.jpg",
+    "screenshots/v042-hypnotick-projection.jpg",
+    "screenshots/v042-hypnotick-ring.jpg",
+    "screenshots/v042-hypnotick-mobile-dial.jpg",
+    "screenshots/v042-hypnotick-mobile-projection.jpg",
+    "screenshots/v042-hypnotick-mobile-ring.jpg",
+    "screenshots/v042-antigravitesla-dial.jpg",
+    "screenshots/v042-antigravitesla-projection.jpg",
+    "screenshots/v042-antigravitesla-ring.jpg",
+    "screenshots/v042-antigravitesla-mobile-dial.jpg",
+    "screenshots/v042-antigravitesla-mobile-projection.jpg",
+    "screenshots/v042-antigravitesla-mobile-ring.jpg",
+    "screenshots/v042-chromastone-dial.jpg",
+    "screenshots/v042-chromastone-projection.jpg",
+    "screenshots/v042-chromastone-ring.jpg",
+    "screenshots/v042-chromastone-mobile-dial.jpg",
+    "screenshots/v042-chromastone-mobile-projection.jpg",
+    "screenshots/v042-chromastone-mobile-ring.jpg"
+  ],
+  "screenshotEvidence": [
+    {
+      "file": "screenshots/v042-grown-dial.jpg",
+      "sha256": "0481ef2c5efdcfcde07d0d0e64ea81b4be09aaad768fe98d50be98843da51bce",
+      "bytes": 60667,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-grown-projection.jpg",
+      "sha256": "05327bd6855a8a686c2073515dd3ef405c569cb55cbd6f31dfb6cdd06b17a308",
+      "bytes": 54150,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-grown-ring.jpg",
+      "sha256": "702aba72c9f9e0612d48e2b2ec2275a556328593d142ebf50cc4e88d0b3424ce",
+      "bytes": 61387,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-grown-mobile-dial.jpg",
+      "sha256": "24e299be6f8db25f31babe92c3638e17cf8718d83a69a04fb3596c8bdb9d76d1",
+      "bytes": 66692,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-grown-mobile-projection.jpg",
+      "sha256": "d3d880a12344d85af040d528b213d9366fdeef891142ce819b7e1325ccfeef03",
+      "bytes": 66217,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-grown-mobile-ring.jpg",
+      "sha256": "3c10d130aaf475baafc71bc03dead484ff3b747038d42f6aee850f2de441b21d",
+      "bytes": 64732,
+      "formId": "humungousaur-grown"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-dial.jpg",
+      "sha256": "b8926c40bbc2ac994e806515045e965a47df25326dcd723d9c58ad10c8f54385",
+      "bytes": 56641,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-projection.jpg",
+      "sha256": "2dc3816566d29d81598078816985f1e0ac6e610d4132d49b390f761ef3294b8b",
+      "bytes": 51642,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-ring.jpg",
+      "sha256": "e6cc7fd4c89c6eff105ae888eddd7fda0348f7ea81a07400910c884fba43bcc5",
+      "bytes": 59115,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-mobile-dial.jpg",
+      "sha256": "d8c8a6153815b212bedce0862cd88a70dfff66f1dc51e59a6431261f35808e03",
+      "bytes": 65652,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-mobile-projection.jpg",
+      "sha256": "8d93ac31b9cfb19888302ce7b2dc474a4d63d4db73893256f88b544b47b57265",
+      "bytes": 62455,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-hypnotick-mobile-ring.jpg",
+      "sha256": "6ca27be7a60ddfcecdebff814450713bd75ac81c3988c4a2edd0f1e4681eeba5",
+      "bytes": 62793,
+      "formId": "nemetrix-hypnotick"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-dial.jpg",
+      "sha256": "9cf0ea9d7d81ea311ed13fde73dad1ca94bd2f4741f6c7b9df811b2290ed8c22",
+      "bytes": 57226,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-projection.jpg",
+      "sha256": "b7bf2ed70a6c980efe743750aa02ee291edcaf1efc9216ebe3bfdcb360e14d04",
+      "bytes": 52757,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-ring.jpg",
+      "sha256": "a75e15c30589508b15d00dc6eb8350509bdfb1c7b3296637a52f0429e0587595",
+      "bytes": 59454,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-mobile-dial.jpg",
+      "sha256": "81b8f467fe40bae94eb9d195d73edb917ad41e483dfcedea7cc32b17001f9878",
+      "bytes": 66542,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-mobile-projection.jpg",
+      "sha256": "067bcdaef6c301a18086f5668047fcd08daaad39aa197912ab9eb4814c0c44db",
+      "bytes": 65165,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-antigravitesla-mobile-ring.jpg",
+      "sha256": "5414128e9ba90971e6e8ac33738f152e29aeecb866b5e8b5af00a356b225ce79",
+      "bytes": 63681,
+      "formId": "promo-antigravitesla"
+    },
+    {
+      "file": "screenshots/v042-chromastone-dial.jpg",
+      "sha256": "4de92f85e083a033b91c794ac630a551f0dd7764ba49fea729d548ef04c2a730",
+      "bytes": 56727,
+      "formId": "reboot-chromastone"
+    },
+    {
+      "file": "screenshots/v042-chromastone-projection.jpg",
+      "sha256": "78cfac069f171d07e3e77c60b33c1db60451d8397ee1f40f75f83eedc585cdf7",
+      "bytes": 53205,
+      "formId": "reboot-chromastone"
+    },
+    {
+      "file": "screenshots/v042-chromastone-ring.jpg",
+      "sha256": "a363e464e4d61b0128878124c643c2d7218151f526db6ca1925dd2b6bb89e5a7",
+      "bytes": 59563,
+      "formId": "reboot-chromastone"
+    },
+    {
+      "file": "screenshots/v042-chromastone-mobile-dial.jpg",
+      "sha256": "a29c3529057e35fa962578d0a9bfa5e8f0fbc04055241d470a3ad082342a9532",
+      "bytes": 65923,
+      "formId": "reboot-chromastone"
+    },
+    {
+      "file": "screenshots/v042-chromastone-mobile-projection.jpg",
+      "sha256": "79ae33f24d1746575ad1f604281898cf5cc601497d03e317d0b10b5a116dd4b4",
+      "bytes": 66270,
+      "formId": "reboot-chromastone"
+    },
+    {
+      "file": "screenshots/v042-chromastone-mobile-ring.jpg",
+      "sha256": "d6924b36c46f3559ab67bf2a678d40a2e6a868e6d5c242f7988d788116d0ed84",
+      "bytes": 63584,
+      "formId": "reboot-chromastone"
+    }
+  ],
+  "boundaries": [
+    "Local browser/responsive evidence only; no physical-phone, real SillyTavern/SillyDroid or driver acceptance claimed.",
+    "This finalization performs no installation, chat write, model call, packaging or Git action.",
+    "Original source-stage limitations remain verbatim; current local UI review is recorded separately in uiReview.",
+    "Same-version multi-reference endpoint/join repairs and small-image detail interpretation are disclosed per asset; source screenshots need not each contain an independently complete body.",
+    "The four-angle watch sprites and transitions remain the existing implementation, not a continuously rotatable 3D mesh."
+  ],
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false
+}

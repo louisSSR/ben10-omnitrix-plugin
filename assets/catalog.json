@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 187,
-    "missing": 37
+    "reviewed": 191,
+    "missing": 33
   },
   "forms": [
     {
@@ -2511,10 +2511,21 @@
       "group": "body-variant",
       "appearance": "Alien Force; grown anatomy documented",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-humungousaur-grown",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Humungousaur_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "AI reference reconstruction from three community-hosted Alien Force animation screenshots of grown Humungousaur. Not an official transparent original or pixel-exact animation cutout.",
+      "dialFit": {
+        "scale": 0.7003,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.242186,
+        "visiblePixels": 610880
+      }
     },
     {
       "id": "swampfire-blossomed",
@@ -3185,11 +3196,22 @@
       "group": "reboot",
       "appearance": "Animated reboot season 5 specials; other/alternate/future Omnitrix users. Link to classic base; a separate silhouette is justified only after actual design comparison.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-chromastone",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Category:Reboot_Transformations",
         "https://ben10.fandom.com/wiki/Omni-Naut_Jetray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://spinwheelmaker.com/wheel/3465"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI interpretative reference reconstruction of a community-hosted reboot-labelled action image; UAF auxiliary detail reference. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.5391,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.613503,
+        "visiblePixels": 538054
+      }
     },
     {
       "id": "reboot-ripjaws",
@@ -4317,11 +4339,22 @@
       "group": "extra",
       "appearance": "Ben 10: Ultimate Access Commercial 2; actual official promo transformation, non-canon to TV.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-promo-antigravitesla",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antigravitesla",
         "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access_Commercial_2"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=2TZpEBYbuFo"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference redraw of original Ultimate Access advertisement content viewed in a community YouTube repost; not an official transparent asset.",
+      "dialFit": {
+        "scale": 0.5619,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.548177,
+        "visiblePixels": 437700
+      }
     },
     {
       "id": "promo-plantapocalypse",
@@ -4383,12 +4416,23 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-hypnotick",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/ben10-oliver10-hypnotick-big-chill-hypnosis-gif-27590765"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community animation GIF frames used for an AI multi-reference transparent redraw and one targeted wing correction. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.7533,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.154805,
+        "visiblePixels": 466256
+      }
     },
     {
       "id": "nemetrix-mucilator",

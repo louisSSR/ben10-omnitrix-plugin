@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "d9d5581515afa788e891a62998c30b6f49d6bf514c019bb54c56d2484335558c",
-  "svgSha256": "d6deac370e4aec9f8846bd31b36d24dca985197fde944e4810a74d945aac5041",
+  "catalogSha256": "e5f4fd8d384cc06078e385eb2cad790b9f2f03b98396ac0edf576996b412b59f",
+  "svgSha256": "76a70b800ce424cb611d629406861ae249eba932f5dc93d421dd76c7a11d9746",
   "coverage": {
     "total": 224,
-    "reviewed": 187,
-    "missing": 37
+    "reviewed": 191,
+    "missing": 33
   },
   "assets": [
     {
@@ -1656,6 +1656,46 @@
       "renderMode": "source-alpha",
       "sourceSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
       "maskSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "humungousaur-grown",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
+      "pageUrl": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
+      "rights": "Underlying Ben 10 artwork remains copyrighted; no open redistribution license asserted.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "931dac037211a6bbdaf30ae35b5e1c85eb5059691e17fc873aff6edf9c38a2ef",
+      "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-hypnotick",
+      "url": "https://media1.tenor.com/m/f1kx6yq8JJEAAAAd/ben10-oliver10.gif",
+      "pageUrl": "https://tenor.com/view/ben10-oliver10-hypnotick-big-chill-hypnosis-gif-27590765",
+      "rights": "Original character/video copyright retained; source redistribution license unknown; AI reference edit disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "b1f8e53a8de364754a508da035596a3f1d2158f2d673514864fa7fb4726d3107",
+      "maskSha256": "45b9e6a6e55eeda95dfa794741780e16c16a535fd8baa9ff387ff135ae435f05",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "promo-antigravitesla",
+      "url": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+      "pageUrl": "https://www.youtube.com/watch?v=2TZpEBYbuFo",
+      "rights": "Underlying Ben 10 animation remains copyrighted. The upload is a community repost, and its official upload chain and redistribution permission are unverified. Generated reference art is explicitly disclosed; no open license asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "d6d6faaec97f5700a8008c48af0f43a64a3c261a3dc8af76bebedcab472ee957",
+      "maskSha256": "9eaccfd3554943fa0a3c035485686cd85a64838b88d1511b0395c3f012eb72c1",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-chromastone",
+      "url": "https://tiermaker.com/images/chart/chart/ben-10-reboot-aliens-15767/zz1618870885chromastonepng.png",
+      "pageUrl": "https://spinwheelmaker.com/wheel/3465",
+      "rights": "Underlying franchise and source illustrations copyrighted; author/production upload chain and reuse licence unverified. Generated output is an AI reference redraw.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "5bdf6f1ef6ed9550cc40d2e3a9851aebf3b3469fed6c2cff5ee51a287defe2eb",
+      "maskSha256": "1970a84b2d57d1351147c3c319cf5b14f3bfc84d1845be9c7209ed9434a79dd5",
       "contentType": "image/png"
     }
   ],
