@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 198,
-    "missing": 26
+    "reviewed": 209,
+    "missing": 15
   },
   "forms": [
     {
@@ -2425,11 +2425,22 @@
       "group": "alternate",
       "appearance": "And Then There Was Ben",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-xlr8",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/gwen10-g10-xlr8-ben10-omniverse-gif-23996571"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference edit of an Omniverse Gwen XLR8 tumbling action, with clearer same-version head/chest support and interpreted dust-obscured hands. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.6081,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.430576,
+        "visiblePixels": 260583
+      }
     },
     {
       "id": "gwen10-diamondhead",
@@ -2463,11 +2474,22 @@
       "group": "alternate",
       "appearance": "And Then There Was Ben",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-cannonbolt",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI explanatory reference reconstruction of Omniverse Gwen Cannonbolt. Her upper design is animation-supported; the complete lower body is inferred from ordinary same-species anatomy and is not directly verified in Gwen footage. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.6375,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.364615,
+        "visiblePixels": 953657
+      }
     },
     {
       "id": "nrg-unsuited",
@@ -2568,10 +2590,21 @@
       "group": "body-variant",
       "appearance": "Omniverse; bat ability documented",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-whampire-bat",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Whampire"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community-hosted Omniverse animation still used for one built-in AI transparent reference redraw, with disclosed cropped ear and wing endpoint reconstruction. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.8047,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.081041,
+        "visiblePixels": 592309
+      }
     },
     {
       "id": "shocksquatch-ov",
@@ -4396,12 +4429,23 @@
       "group": "extra",
       "appearance": "Ben 10: Ultimate Access Commercial 3; actual official promo transformation, non-canon to TV.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-promo-plantapocalypse",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Plantapocalypse",
         "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access",
         "https://vimeo.com/188743097"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://vimeo.com/188743097"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference reconstruction from the retained original-style Ultimate Access promotional cover; the cropped right foreground vine end is interpreted. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.6763,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.286384,
+        "visiblePixels": 730727
+      }
     },
     {
       "id": "nemetrix-buglizard",
@@ -4653,12 +4697,23 @@
       "group": "alpha-evo",
       "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-alpha-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
         "https://ben10.fandom.com/wiki/Alpha-Arms",
         "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://x.com/BenTenNews/status/1993405281414660600"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference redraw of a community-posted Alpha-Arms animation crop, preserving four-arm upper-body identity and interpretatively completing hands, occluded waist, pants, legs and boots.",
+      "dialFit": {
+        "scale": 0.5371,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.619718,
+        "visiblePixels": 731408
+      }
     },
     {
       "id": "alpha-heatblast",
@@ -4667,12 +4722,23 @@
       "group": "alpha-evo",
       "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-alpha-heatblast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
         "https://ben10.fandom.com/wiki/Heatblast_(Alpha)",
         "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://x.com/Ben10FunFacts/status/1281745564061884416"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference redraw of two community-posted Alpha Heatblast animation crops, with interpretative forearm/hand and lower-body completion. Ordinary OV Heatblast was used only for general leg/foot anatomy; it is not proof of Alpha legs.",
+      "dialFit": {
+        "scale": 0.5897,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.47526,
+        "visiblePixels": 720694
+      }
     },
     {
       "id": "alpha-humungousaur",
@@ -4681,12 +4747,23 @@
       "group": "alpha-evo",
       "appearance": "Ben 10/Generator Rex: Heroes United: Alpha uses the nanite replica Ultimatrix.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-alpha-humungousaur",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimatrix_(Alpha%27s_Replica)",
         "https://ben10.fandom.com/wiki/Humungousaur_(Alpha)",
         "https://ben10.fandom.com/wiki/Ben_10/Generator_Rex:_Heroes_United"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://x.com/BenTenNews/status/1993405281414660600"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI multi-reference redraw of two community-hosted Alpha Humungousaur animation crops, with ordinary Ben Humungousaur used only for general leg/foot anatomy. Missing lower body and tail are interpretative reconstruction, not an official Alpha model.",
+      "dialFit": {
+        "scale": 0.5016,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.734352,
+        "visiblePixels": 723668
+      }
     },
     {
       "id": "eatle-ov",
@@ -4718,10 +4795,21 @@
       "group": "edition-variant",
       "appearance": "Trouble Helix",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-chromastone-ov1",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Chromastone_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/chromastone/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "dialFit": {
+        "scale": 0.5485,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.585938,
+        "visiblePixels": 439545
+      }
     },
     {
       "id": "chromastone-ov2",
@@ -4846,10 +4934,21 @@
       "group": "edition-variant",
       "appearance": "Perplexahedron / Ultimate Alien",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ripjaws-ua",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ripjaws_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10db.weebly.com/ultimate-alien.html"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "dialFit": {
+        "scale": 0.54,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.610844,
+        "visiblePixels": 657303
+      }
     },
     {
       "id": "ripjaws-ov",
@@ -4997,12 +5096,23 @@
       "group": "body-variant",
       "appearance": "Ben 10,000; Ken 10",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-heatblast-original-future",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Heatblast_(Classic)",
         "https://ben10.fandom.com/wiki/Ben_10,000",
         "https://ben10.fandom.com/wiki/Ken_10"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "dialFit": {
+        "scale": 0.5876,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.480469,
+        "visiblePixels": 771868
+      }
     },
     {
       "id": "mad-rath",
@@ -5234,11 +5344,22 @@
       "group": "alternate",
       "appearance": "Gwen 10 (2005 what-if episode)",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-max10-os-upgrade",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29",
         "https://ben10.fandom.com/wiki/Upgrade_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=TNifxBZackU"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference edit of Max Original Series Upgrade in a complete curled liquid-detachment action, from an official channel screenshot. Auxiliary-frame green surface details are interpreted. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.7084,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.228007,
+        "visiblePixels": 398258
+      }
     },
     {
       "id": "dynamite-diamondhead",

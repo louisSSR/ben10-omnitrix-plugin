@@ -1,0 +1,1088 @@
+{
+  "version": "0.4.4",
+  "checkedAt": "2026-10-09T11:39:21.081Z",
+  "previewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728",
+  "screenshotCapturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728",
+  "screenshotCaptureReviewCheckedAt": "2026-10-09T11:31:12.911Z",
+  "finalReloadPreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728",
+  "finalReloadCheckedAt": "2026-10-09T11:39:21.081Z",
+  "screenshotsRecapturedAfterFinalize": false,
+  "visualDependenciesUnchanged": {
+    "snapshotSha256": "fd39e5ffedd95b68129d94ed93c8b48e6805377b5f562a9c7428dbd85155f9fc",
+    "sourceFiles": [
+      {
+        "path": "app.js",
+        "bytes": 32782,
+        "sha256": "83f46bbc2b4f4e233c3a17f1328c30e78efa1ee474aad8cb3e24bcce249f80ae"
+      },
+      {
+        "path": "core.js",
+        "bytes": 7958,
+        "sha256": "723196d8d0649b99ffa30f1179ac04866cea7fde2c5b677a3623ff8e71a3b9cf"
+      },
+      {
+        "path": "styles.css",
+        "bytes": 52191,
+        "sha256": "437fa33be1ec86db23bdd9fa78b36ed5ef061434141cc67358d858cbb7738f2c"
+      },
+      {
+        "path": "preview.shell.html",
+        "bytes": 10842,
+        "sha256": "6479ea8e75e764871bd83c12ba6a19ec2a788640214ab1efc5e397c4bab6b43e"
+      },
+      {
+        "path": "assets/catalog.json",
+        "bytes": 199115,
+        "sha256": "738e46856af3f7f6fe34a338d1aaa17306171b4716daf00ffaeca838e090964c"
+      },
+      {
+        "path": "assets/dial-fit.json",
+        "bytes": 37968,
+        "sha256": "8d371546524fada798101017caf154512a17267c15c429aa8bcf468730fe6e93"
+      },
+      {
+        "path": "assets/silhouettes.svg",
+        "bytes": 54866,
+        "sha256": "e9a903c092daab6e5edd02c834678dbf440afdde26d0d4c0cd3f1e83a4452156"
+      },
+      {
+        "path": "assets/watches-v4/views.json",
+        "bytes": 5697,
+        "sha256": "9ccd2f2e63d95bd3e2619de8dc6435d729994c9482a5ed6f02e277b0dd2b2c00"
+      }
+    ],
+    "runtimeImageCount": 217,
+    "runtimeImageRecordsSha256": "6f4e653cec63325f4bfd8a34b8c5fd7c8f8f922d3f9e2b3b1899edfecd0e5a7b",
+    "scope": "Capture and final reload are separate build observations. Listed visual sources, full catalog/geometry and every runtime image remain byte-identical; unchanged captures are not recaptured final-build screenshots."
+  },
+  "url": "http://127.0.0.1:4191/preview.html#",
+  "surface": "Codex in-app browser; desktop and responsive iframe previews",
+  "coverage": {
+    "total": 224,
+    "reviewed": 209,
+    "missing": 15
+  },
+  "assets": [
+    {
+      "formId": "alpha-arms",
+      "sourceFile": "assets/source-art/alpha-arms-source-original.jpg",
+      "sourceSha256": "aa03b83889f8aaa3ac864f93024b456615cfaa97ecbd7561fafd237a9b7079a8",
+      "maskFile": "assets/source-art/alpha-arms-reference-edit.png",
+      "maskSha256": "532262a50e377ee1ba5225c9d0e5e06288a8da28210167134eafa689a09302ee",
+      "sourceUrl": "https://x.com/BenTenNews/status/1993405281414660600",
+      "artProvenance": "AI reference redraw of a community-posted Alpha-Arms animation crop, preserving four-arm upper-body identity and interpretatively completing hands, occluded waist, pants, legs and boots.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed generated full four-arm figure: maroon skin, long black hair, four red eyes, two correctly connected arm pairs, jagged mouth and red nanite lines/device remain. Four complete clawed hands and black/gray pants/boots are newly reconstructed, with arms brought inward to fit.",
+        "Generated output was copied byte-for-byte. Strong-alpha body is fully inside the canvas; weak fringe is quantified separately."
+      ],
+      "limitations": [
+        "The source does not establish the exact hands, full waist, legs or boots. Their shapes and gray trim are interpretative extensions of the visible body/partial waist, not verified official Alpha anatomy.",
+        "The generated arm spread, fingers, feet, teeth and line routing differ from the original action frame. No ordinary Ben Four Arms image was supplied, and no pixel-exact extraction or exact official full model is asserted.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified for this candidate."
+      ],
+      "supportingSources": [],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "alpha-heatblast",
+      "sourceFile": "assets/source-art/alpha-heatblast-source-original.png",
+      "sourceSha256": "d079bca29506de0b4a66bb52b4a22715101cfba97ccdb5f632566924902eb906",
+      "maskFile": "assets/source-art/alpha-heatblast-reference-edit.png",
+      "maskSha256": "10d0360c957c52a8fd0c6266674c7634f9650f5b27e53abcfd8bedf124266658",
+      "sourceUrl": "https://x.com/Ben10FunFacts/status/1281745564061884416",
+      "artProvenance": "AI reference redraw of two community-posted Alpha Heatblast animation crops, with interpretative forearm/hand and lower-body completion. Ordinary OV Heatblast was used only for general leg/foot anatomy; it is not proof of Alpha legs.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed the generated full figure: horned skull head, large attached head and shoulder fire, maroon molten plates/yellow fissures and red chest symbol remain; two long lowered arms and two complete three-toed legs form a new coherent pose. This is a composite reconstructed pose, not the battle-frame pose extracted.",
+        "Generated output was copied byte-for-byte. Strong-alpha body is fully inside the canvas; weak fringe is quantified separately."
+      ],
+      "limitations": [
+        "The torso/face/shoulder identity follows Alpha animation, while missing forearms, hands, waist, legs and feet are interpretative reconstruction. Ordinary OV leg anatomy is explicitly cross-version support, not a same-Alpha settled model.",
+        "The output straightens/recomposes the original cropped action into a complete forward-leaning figure and regularizes cracks, finger proportions, flame shapes and device detail. No exact production pose or recovered original pixels are claimed.",
+        "RGB display shows broad yellow haze; sampled exterior points (10,10),(100,200),(512,10),(20,800) all have alpha0. Quantified low-alpha fringe still remains, and the flame is near the top margin. Actual watch UI must judge any visible fringe.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified for this candidate."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/alpha-heatblast-battle-support-original.jpg",
+          "sha256": "bf737f0db4e41b6563d289b8e96fe06c6122d009aeaf47c538ea47d1568dc509",
+          "bytes": 94257,
+          "size": [
+            1200,
+            675
+          ],
+          "mode": "RGB",
+          "format": "JPEG",
+          "url": "https://pbs.twimg.com/media/G6n_iS6bwAE0md0.jpg",
+          "pageUrl": "https://x.com/BenTenNews/status/1993405281414660600",
+          "role": "same-Alpha upper-arm, long forearm and molten-material support",
+          "sourceViewed": true,
+          "originalBytesUnchanged": true,
+          "officialSourceVerified": false,
+          "observation": "Actually viewed battle frame with long bent molten arms, sharp face and yellow shoulder fire. Hands/appendage ends and lower legs cross the frame; incomplete contours remain interpreted."
+        },
+        {
+          "file": "assets/source-art/heatblast-ov-original.png",
+          "sha256": "2350c535f36bfc1ad6c71aaa2c643de28f524f1c269d219742561a38e936eed2",
+          "bytes": 338493,
+          "size": [
+            685,
+            1572
+          ],
+          "mode": "RGBA",
+          "format": "PNG",
+          "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/heatblast-omniverse-official_orig.png",
+          "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+          "role": "ordinary Ben Pyronite leg/ankle/three-toe anatomy ONLY; NOT Alpha-specific evidence",
+          "sourceViewed": true,
+          "officialSourceVerified": false,
+          "originalBytesUnchanged": true,
+          "observation": "Actually viewed ordinary OV Heatblast. Only general lower-leg and foot relation was supplied as cross-version anatomy support. Alpha head/chest/colors/emblem do not come from this source."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "alpha-humungousaur",
+      "sourceFile": "assets/source-art/alpha-humungousaur-source-original.jpg",
+      "sourceSha256": "77919b881325b888d302d0baf3621409f257f30d3f0c73aa2abe04f8b9554e18",
+      "maskFile": "assets/source-art/alpha-humungousaur-reference-edit.png",
+      "maskSha256": "571553d15858a549a5588d54ed3d5272f77f9a588e1e615c15b2d6a7281f91bb",
+      "sourceUrl": "https://x.com/BenTenNews/status/1993405281414660600",
+      "artProvenance": "AI multi-reference redraw of two community-hosted Alpha Humungousaur animation crops, with ordinary Ben Humungousaur used only for general leg/foot anatomy. Missing lower body and tail are interpretative reconstruction, not an official Alpha model.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed generated green dinosaur figure with raised fists: red eyes/device/nanite lines, forehead horn, black claws, gray forearm spikes and ribbed torso remain. Complete thick legs, clawed feet and a tapered tail between the legs are reconstructed and fully shown.",
+        "Generated output was copied byte-for-byte. Strong-alpha body is fully inside the canvas; weak fringe is quantified separately."
+      ],
+      "limitations": [
+        "The two Alpha sources establish the upper body and fist pose, but not lower-body plates, exact legs/feet or tail. Those are explicit interpretation; ordinary brown Ben contributes species anatomy only and is not evidence of Alpha-specific lower-body details.",
+        "The full stance and tail are new composition, and the model regularizes spikes, teeth, cracks and muscle plates. The interpretation must not be labelled official transparent artwork or a recovered full animation pose.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance are unverified for this candidate."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/alpha-humungousaur-fists-support-original.png",
+          "sha256": "b3dfeb1f67052795053befc6bf5074a098050149ac9a296cb42b00b19229e436",
+          "bytes": 315070,
+          "size": [
+            640,
+            360
+          ],
+          "mode": "RGBA",
+          "format": "PNG",
+          "url": "http://ben10hero.com/wp-content/uploads/2016/10/hu_1018.png",
+          "pageUrl": "https://ben10hero.com/additional-aliens/humungousaur/",
+          "role": "same-Alpha raised fist and arm pose support",
+          "sourceViewed": true,
+          "originalBytesUnchanged": true,
+          "officialSourceVerified": false,
+          "observation": "Actually viewed both raised clenched fists, black claws, thick green forearms and gray spikes; no lower body is visible."
+        },
+        {
+          "file": "assets/source-art/alpha-humungousaur-anatomy-support-original.png",
+          "sha256": "d58494c402fb0e9873aba2b8f4fdfc5f2961b5ac53a84b9ffe56268ab0af7c77",
+          "bytes": 153983,
+          "size": [
+            283,
+            479
+          ],
+          "mode": "RGBA",
+          "format": "PNG",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/humungousaur_uaf_render.png",
+          "pageUrl": "https://ben10hero.com/additional-aliens/humungousaur/",
+          "role": "ordinary Ben Vaxasaurian lower-leg/foot anatomy ONLY; NOT Alpha-specific evidence",
+          "sourceViewed": true,
+          "originalBytesUnchanged": true,
+          "officialSourceVerified": false,
+          "observation": "Actually viewed complete ordinary brown Humungousaur with green device, short thick legs and claws. Used only as general species lower-body support; Alpha tail and detailed leg plates remain inferred."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "chromastone-ov1",
+      "sourceFile": "assets/source-art/chromastone-ov1-source-original.png",
+      "sourceSha256": "efcaed94bbdbd73b90b4e9546caaac25e719845c77739e1ec08a4e75f08ecad4",
+      "maskFile": "assets/source-art/chromastone-ov1-reference-edit.png",
+      "maskSha256": "f8ed3cbec2623536ebff481f3fa9f4fafb36690b60ea51341bb3995ac2488129",
+      "sourceUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed 484x480 opaque animation still: angular purple head/chest, green eye slit, pink face/crystal hands and long pink shoulder/back crystals, akimbo arms. Waist/lower limbs and small finger portions are cropped.",
+        "Actually viewed complete purple faceted akimbo figure retaining early head/chest/crystal arrangement. No later green collar/vest, belt or white wrist/knee uniform imported. New pelvis/legs/angular feet and some finger/crystal/face linework are interpretation."
+      ],
+      "limitations": [
+        "Original community-hosted animation image is cropped and opaque, not an official complete transparent character sheet. Edition context is inherited from retained community/catalog/source-card information; original official upload and exact episode/time are not independently authenticated.",
+        "The whole unseen pelvis, thighs, shins and feet, plus clipped finger contours and surface cracks/facet details, are reconstructed. Ordinary AF/UAF leg anatomy is only a generic structural guide; it does not establish the exact OV1 lower body.",
+        "Visible upper identity is preserved, but this is an AI reference redraw: proportions, face/finger linework, shading, contours and exact fissure/facet/fin/fire details can differ. Generated new anatomy is not pixel-exact canon evidence.",
+        "The ordinary same-species supporting image is explicitly another edition; it supplies only generic lower-limb anatomy. Its clothing, head/chest design, emblem placement and action pose are not source proof for this candidate edition.",
+        "Transparent output retains native generated bytes/alpha unchanged. Low-alpha residue remains: 21737 pixels alpha1..15 and 5052 pixels alpha16..127; the nonzero-alpha bbox is [0, 18, 1023, 1536]. Tool RGB-preview glow/fringing must be assessed with actual alpha/UI, not treated automatically as an opaque background.",
+        "Alpha>=128 body bbox [128, 23, 921, 1524] stays inside [1024, 1536] with all four body-edge counts zero. This establishes canvas containment, not exact anatomy or final silhouette suitability.",
+        "Not a new species count or wearer-occurrence proof. Redistribution license is unknown; character/animation rights retained and AI reconstruction disclosed.",
+        "Private candidate pending root independent/current-UI review. Real phone, real SillyTavern, driver acceptance and browser acceptance are not asserted by this reviewer."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/chromastone-ov1-leg-anatomy-support.png",
+          "sha256": "0668658a82ae54038a05fc5f23b519cf269691075d7bd7378b90d84c18b45f6a",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+          "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+          "role": "Ordinary AF/UAF Chromastone; only generic leg/foot anatomy, not edition/upper-body proof. Only lower-limb anatomy is supported; other edition is not substituted."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "gwen10-cannonbolt",
+      "sourceFile": "assets/source-art/gwen10-cannonbolt-upperbody-source-original.png",
+      "sourceSha256": "47a9a3390bb6ae7ccb58ce5a77e1ed541cd976d0955f8015c77a1e6af334fda4",
+      "maskFile": "assets/source-art/gwen10-cannonbolt-reference-edit.png",
+      "maskSha256": "d5e4b046e33ac8da58ac529d9cf27bcd0e040c61182bf186173e4211cd17a46d",
+      "sourceUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+      "artProvenance": "AI explanatory reference reconstruction of Omniverse Gwen Cannonbolt. Her upper design is animation-supported; the complete lower body is inferred from ordinary same-species anatomy and is not directly verified in Gwen footage. Not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Primary 548x479 opaque PNG actually viewed: pale lavender face/upper body, pink eyes, blue lips, black patches, broad bent-up forearm and pink chest badge; lower body is absent.",
+        "New Tenor GIF and decoded frames 8/14/18 actually viewed: human Gwen transformation, bright flash, then the same Cannonbolt head/chest and blue armor; no new full lower-body source was found.",
+        "Ordinary OS species helper actually viewed complete. Output actually viewed: retains Gwen pink eyes, blue lips, chest-level pink badge, pale skin, black/blue armor, while interpreting short lower limbs and divided claw feet."
+      ],
+      "limitations": [
+        "The complete pelvis, legs, feet, lower black markings and blue lower armor are explanatory AI reconstruction. No supplied Gwen frame directly verifies that whole lower-body structure.",
+        "Ordinary OS Ben anatomy is a cross-series/species helper only. Gwen torso/body proportions, hand claws, shoulder roundness, foot count/shape and blue lower plates are interpreted and must not be presented as official exact design.",
+        "Output stance and full silhouette are newly composed around the supported Gwen upper body. This is not a recovered full official animation contour.",
+        "Subject is close to PNG edges, but principal alpha128 contour is inside all four bounds. Root must inspect display fit; no resizing/cropping/pixel removal was applied.",
+        "Both public source hosts are community reposts; upstream original author/upload chain and reuse licence are unverified."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/gwen10-cannonbolt-tenor-frame018.png",
+          "sha256": "288dc4a4337efc361928ccac05a397754dffff6790263d7ec95bc3e864cf98a7",
+          "url": "https://media1.tenor.com/m/EsN1-UNJgkAAAAAC/g10-gwen10.gif",
+          "role": "Same-version animation-derived final transformation head/chest frame, 1.620 seconds; lower body remains outside the shot."
+        },
+        {
+          "file": "assets/source-art/gwen10-cannonbolt-tenor-source-original.gif",
+          "sha256": "f500ddc8737cf1bdf4a70978b07e719c3101134dc23303f5531c6313c6a95873",
+          "url": "https://media1.tenor.com/m/EsN1-UNJgkAAAAAC/g10-gwen10.gif",
+          "role": "Unchanged original 19-frame community GIF, literal page og:image; source of the supporting PNG."
+        },
+        {
+          "file": "assets/source-art/cannonbolt-os-anatomy-reference-original.png",
+          "sha256": "d274f16de248bbb4799770318fb1f569349b0f068c1324eb6e687dbf9dda003a",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/07/cannonbolt.png",
+          "role": "Different wearer and series: ordinary OS Ben Cannonbolt, ONLY same-species compact lower-leg/foot anatomy. Not Gwen color/costume/identity or proof of her lower-body geometry."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "gwen10-xlr8",
+      "sourceFile": "assets/source-art/gwen10-xlr8-action-source-original.jpg",
+      "sourceSha256": "aed49a3e51d7c47eb8c42abec9e2302c72d7c883e4363caea403d2a9b256a4d9",
+      "maskFile": "assets/source-art/gwen10-xlr8-reference-edit.png",
+      "maskSha256": "c497512766bd72f1a0c69081243db3b783a17d1596d091938775cb77c5c603a6",
+      "sourceUrl": "https://tenor.com/view/gwen10-g10-xlr8-ben10-omniverse-gif-23996571",
+      "artProvenance": "AI reference edit of an Omniverse Gwen XLR8 tumbling action, with clearer same-version head/chest support and interpreted dust-obscured hands. Not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Primary actually viewed: upside-down tumbling XLR8 with both bent legs/roller-like feet and curving tail within the animation frame; hands blend into ground dust.",
+        "GIF frames 0 and 7 actually viewed: blue face, pink eyes/visor, tall black helmet, blue/pale-blue clothing and pink chest emblem. These identify the OV Gwen design, not ordinary Ben XLR8.",
+        "Final output actually viewed: preserves inverted head, raised bent legs and upward-curved tail. One targeted edit folded the oversized first-draft arms inward to compact contacts beside the helmet."
+      ],
+      "limitations": [
+        "Primary action is severely motion-blurred. Helmet/face, suit seams, feet and curves are AI redrawn using the clearer community support; exact official pixels and model proportions are not recovered.",
+        "Source hands are obscured by dust. Both elbow/contact-hand shapes and exact fingers are interpreted, not directly verified source anatomy.",
+        "This is a tumbling action silhouette, not a verified standing full-body model sheet.",
+        "Final PNG has substantial transparent space to the left and a right-offset subject; root must check centering/fit in the actual UI. No programmatic crop or pixel shift was applied.",
+        "Community GIF bears an off-character repost mark; upstream original uploader/artist/licence is unverified. The saved source GIF/frame retain their original content."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/gwen10-xlr8-tenor-frame000.png",
+          "sha256": "0dae64c1553136942bdb445888755fb376f445c193cc7139c64917ee071e020f",
+          "url": "https://media1.tenor.com/m/dQoLxc_3ioQAAAAC/gwen10-g10.gif",
+          "role": "Same-version animation-derived head/chest design at GIF frame 0; helmet top is cropped in this support, so use it only for visible face/costume details."
+        },
+        {
+          "file": "assets/source-art/gwen10-xlr8-tenor-source-original.gif",
+          "sha256": "0ea912c49c02f4912ac5a6cd21d35e73caf6347941c680b56ccaaaa6ab08e1e6",
+          "url": "https://media1.tenor.com/m/dQoLxc_3ioQAAAAC/gwen10-g10.gif",
+          "role": "Unchanged original 15-frame community GIF, literal page og:image; source of the decoded supporting PNG."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "heatblast-original-future",
+      "sourceFile": "assets/source-art/heatblast-original-future-source-original.png",
+      "sourceSha256": "3f825e6ed751ba1343f39e3c389e800d14aa1b209db7fa9805e6d21a76570d36",
+      "maskFile": "assets/source-art/heatblast-original-future-reference-edit.png",
+      "maskSha256": "90cb9b3af84e4d01715dd54cdf8f3a090571bc88290571d08adb5f7f331aab7f",
+      "sourceUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed 448x480 opaque animation still: very broad red rocky torso/arms, pale molten fissures, flame head/red facial mask, black-white chest badge and two separate shoulder volcano/fire vents. Hands/waist/lower body are cropped; flame tips are not a complete model sheet.",
+        "Actually viewed complete massive red-rock figure with separate head/left-shoulder/right-shoulder flames and black-white badge. Two broad hands and reconstructed rocky legs/feet are present; no ordinary skinny UA body or green chest badge imported."
+      ],
+      "limitations": [
+        "Original community-hosted animation image is cropped and opaque, not an official complete transparent character sheet. Edition context is inherited from retained community/catalog/source-card information; original official upload and exact episode/time are not independently authenticated.",
+        "Partly clipped hands, the entire unseen lower torso/pelvis/legs/feet, rocky pattern and fire-tip contours are AI interpretation. Ordinary UA Heatblast supplies only basic lower-limb structure, not exact future anatomy or attack pose.",
+        "Visible upper identity is preserved, but this is an AI reference redraw: proportions, face/finger linework, shading, contours and exact fissure/facet/fin/fire details can differ. Generated new anatomy is not pixel-exact canon evidence.",
+        "The ordinary same-species supporting image is explicitly another edition; it supplies only generic lower-limb anatomy. Its clothing, head/chest design, emblem placement and action pose are not source proof for this candidate edition.",
+        "Transparent output retains native generated bytes/alpha unchanged. Low-alpha residue remains: 40238 pixels alpha1..15 and 7417 pixels alpha16..127; the nonzero-alpha bbox is [49, 11, 1006, 1504]. Tool RGB-preview glow/fringing must be assessed with actual alpha/UI, not treated automatically as an opaque background.",
+        "Alpha>=128 body bbox [74, 14, 968, 1499] stays inside [1024, 1536] with all four body-edge counts zero. This establishes canvas containment, not exact anatomy or final silhouette suitability.",
+        "Not a new species count or wearer-occurrence proof. Redistribution license is unknown; character/animation rights retained and AI reconstruction disclosed.",
+        "Private candidate pending root independent/current-UI review. Real phone, real SillyTavern, driver acceptance and browser acceptance are not asserted by this reviewer."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/heatblast-original-future-leg-anatomy-support.png",
+          "sha256": "140c462ecf1fdda9c7144349f047a4d96750f7c6c2dd5515a4e2510fd3e0c627",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/07/heatblast_ua.png",
+          "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/",
+          "role": "Ordinary UA Heatblast; only generic pelvis/leg/foot anatomy, not original-future edition/upper-body proof. Only lower-limb anatomy is supported; other edition is not substituted."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "max10-os-upgrade",
+      "sourceFile": "assets/source-art/max10-os-upgrade-source-cn-0268510.jpg",
+      "sourceSha256": "37a788937a7c362d5288d435e706af0d33b5b2273a3b431b0116b35bdf9efb69",
+      "maskFile": "assets/source-art/max10-os-upgrade-reference-edit.png",
+      "maskSha256": "1af2ba62609fc5b54a89bdf78362bfe69c9e32a35d11a80e8b2fb00c0161c544",
+      "sourceUrl": "https://www.youtube.com/watch?v=TNifxBZackU",
+      "artProvenance": "AI reference edit of Max Original Series Upgrade in a complete curled liquid-detachment action, from an official channel screenshot. Auxiliary-frame green surface details are interpreted. Not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": true,
+      "observations": [
+        "All three local source screenshots actually viewed by this reviewer. Primary 268.510402-second frame contains the complete curled black/white liquid form beside the RV, with broad upper sweep, pointed trailing lobes and low rounded curl, separable from nearby vehicle/guardrail.",
+        "The close-up support shows black head with a green oval, green circuit lines, white chest and open white hand. Earlier RV-merging support shows green ovals/lines in stretched liquid form.",
+        "Output actually viewed: black/white swept curled silhouette, white arc bands and low white lobe retained; no invented standing legs, human body pose, road, RV or guardrail."
+      ],
+      "limitations": [
+        "Source is a browser JPEG screenshot of official animation, not an official transparent PNG, native video frame decode or model sheet. Channel verification and pause times are root CUA evidence reported to this reviewer; this reviewer independently viewed saved pixels only.",
+        "Output stretches/smooths some liquid tips and white internal arcs. It adds green circuit runs and two oval marks extrapolated from auxiliary frames; those exact placements are not visible/verified in primary 268.510402 frame.",
+        "This is a liquid curling action representation of Max Upgrade, not a distinct species or a claimed complete humanoid standing design.",
+        "The curl is adjacent to vehicle and guardrail in the source; separation and tiny junctions are AI interpreted. Root must inspect the final pure-black UI silhouette and fit."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/max10-os-upgrade-support-cn-0269390.jpg",
+          "sha256": "36afaa75933b5405762f49ce0e0ac1b737ca2cb038269be0c5f5d841592e7b5b",
+          "url": "https://www.youtube.com/watch?v=TNifxBZackU",
+          "role": "Root public-player screenshot at 269.390401 seconds: clear Max Upgrade head/chest/hand with green circuitry, bottom cropped; identity/color support only."
+        },
+        {
+          "file": "assets/source-art/max10-os-upgrade-support-cn-0268110.jpg",
+          "sha256": "55801f79fdde615f24460ba440d6e9241db4b3e08f59be84961b0e4cf16e38ff",
+          "url": "https://www.youtube.com/watch?v=TNifxBZackU",
+          "role": "Root public-player screenshot at 268.110401 seconds: liquid black/white/green covering RV; vehicle hides part of contour, continuity/circuit support only."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "promo-plantapocalypse",
+      "sourceFile": "assets/source-art/plantapocalypse-vimeo-cover-original.webp",
+      "sourceSha256": "c97149ddcd1c8d1abd95786a00bd256626cc93e3fef3142143291e5ff98fd668",
+      "maskFile": "assets/source-art/plantapocalypse-promo-reference-edit.png",
+      "maskSha256": "60082f772558092f08a2891b1ffd0e7dc1bd400dead74c190d8ec237489652a2",
+      "sourceUrl": "https://vimeo.com/188743097",
+      "artProvenance": "AI reference reconstruction from the retained original-style Ultimate Access promotional cover; the cropped right foreground vine end is interpreted. Not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Root actually viewed the retained1920x1080 public Vimeo cover: yellow olive flower face with white petals, long thick neck, black and blue gray central emblem panel, and broad thorny olive plant tentacles.",
+        "Root viewed generated output: low sprawling body, frontal left loop and raised rear vines retained. The right cropped vine has been completed as a curled taper; transparent background excludes city and ground."
+      ],
+      "limitations": [
+        "The retained image is a public promo cover attributed by the prior source receipt to Pedro Acioli, not a decoded full-video frame. Vimeo player previously required authorization; it was not bypassed or watched in this round.",
+        "The right foreground vine continues beyond the original crop. Its completed tip, the central attachment and subtle contour proportions are interpretive reconstruction; no exact unseen official model is claimed.",
+        "Output regularizes petals, wrinkles and vine thickness, slightly changes leaves and emblem details, and has a faint light edge in places. It is not a pixel-exact extraction.",
+        "Physical phone, real SillyTavern and human acceptance remain unverified."
+      ],
+      "supportingSources": [],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "ripjaws-ua",
+      "sourceFile": "assets/source-art/ripjaws-ua-source-original.png",
+      "sourceSha256": "2a10c373c3549b8f9c25746a97f59ff2bdc831302fab88f272f1a8268bc723c4",
+      "maskFile": "assets/source-art/ripjaws-ua-reference-edit.png",
+      "maskSha256": "6adf6add4ee5196e9e2af0c13e8ac0cf403b31903583dfa085007f2490a76cfa",
+      "sourceUrl": "https://ben10db.weebly.com/ultimate-alien.html",
+      "artProvenance": "Community-hosted cropped animation image used for one built-in AI transparent reference redraw, including explicitly inferred unseen lower body and hand/end contours. Not an official complete transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed 659x683 opaque still: gray broad angler-fish head/torso, green lure with pale bulb, green mouth/eye regions and side/forearm fins, layered pale abdomen and chest badge. Hands/arm ends, pelvis and legs leave the canvas.",
+        "Actually viewed complete broad gray fish figure with the same head/antenna/chest and green fins. No OV black shirt/pants/belt imported. Two hands, gray pelvis/legs and fish feet are drawn; small calf fins/palm color/claw detail are interpretation."
+      ],
+      "limitations": [
+        "Original community-hosted animation image is cropped and opaque, not an official complete transparent character sheet. Edition context is inherited from retained community/catalog/source-card information; original official upload and exact episode/time are not independently authenticated.",
+        "Unseen hands and arm-end continuations, the whole pelvis/legs/feet and calf fin details are reconstructed. Ordinary OV Ripjaws is used only for generic lower-leg/foot structure, not UA head/upper body or edition proof.",
+        "Visible upper identity is preserved, but this is an AI reference redraw: proportions, face/finger linework, shading, contours and exact fissure/facet/fin/fire details can differ. Generated new anatomy is not pixel-exact canon evidence.",
+        "The ordinary same-species supporting image is explicitly another edition; it supplies only generic lower-limb anatomy. Its clothing, head/chest design, emblem placement and action pose are not source proof for this candidate edition.",
+        "Transparent output retains native generated bytes/alpha unchanged. Low-alpha residue remains: 43326 pixels alpha1..15 and 7548 pixels alpha16..127; the nonzero-alpha bbox is [0, 19, 1068, 1457]. Tool RGB-preview glow/fringing must be assessed with actual alpha/UI, not treated automatically as an opaque background.",
+        "Alpha>=128 body bbox [30, 27, 1065, 1435] stays inside [1080, 1457] with all four body-edge counts zero. This establishes canvas containment, not exact anatomy or final silhouette suitability.",
+        "Not a new species count or wearer-occurrence proof. Redistribution license is unknown; character/animation rights retained and AI reconstruction disclosed.",
+        "Private candidate pending root independent/current-UI review. Real phone, real SillyTavern, driver acceptance and browser acceptance are not asserted by this reviewer."
+      ],
+      "supportingSources": [
+        {
+          "file": "assets/source-art/ripjaws-ua-leg-anatomy-support.png",
+          "sha256": "6df416f404908b6448a4aa6172be08af4806800c59fd5098272e4cb1d489e51c",
+          "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ripjaws-ov-official_orig.png",
+          "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+          "role": "Ordinary Omniverse Ripjaws; only generic leg/foot anatomy, not UA edition/upper-body proof. Only lower-limb anatomy is supported; other edition is not substituted."
+        }
+      ],
+      "uiReviewed": true,
+      "humanAccepted": false
+    },
+    {
+      "formId": "whampire-bat",
+      "sourceFile": "assets/source-art/whampire-bat-ben10hero-original.png",
+      "sourceSha256": "e2c9e1c8ee8152abb1aaad229fa746ea19165652c3c0784949a0abc6a5963d87",
+      "maskFile": "assets/source-art/whampire-bat-reference-edit.png",
+      "maskSha256": "3d84d8db48951a900cc86368898dcc81359b6340dd7aa5a1320139f929177b8e",
+      "sourceUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/",
+      "artProvenance": "Community-hosted Omniverse animation still used for one built-in AI transparent reference redraw, with disclosed cropped ear and wing endpoint reconstruction. Not an official transparent original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "officialSourceVerified": false,
+      "observations": [
+        "Actually viewed original 640x360 still: compact black bat body, large green face/upper projections, white eyes, yellow upper fangs, magenta open mouth, green chin tuft and two broad black wings in flight. Rook legs behind belong to another character.",
+        "Actually viewed generated 1672x941 RGBA: recognizable green face/expression and small-body extended-wing state retained; two green upper endpoints and outer wing continuation restored interpretively, with no humanoid standing legs/Rook included.",
+        "Generated image has true alpha0..255, all corner alpha0 and zero alpha>=128 body pixels at all four canvas edges. Transparent padding is present, and the source plus output raw bytes are unchanged after copying."
+      ],
+      "limitations": [
+        "Community-hosted animation still: original official upload, redistribution license and exact episode/time of this still are not independently established. The image actually matches the small green-faced bat state; no official transparent source claim.",
+        "The source crops upper green ear projections and part of the image-right wing. Their endpoints/continuations in this output are explicitly interpretive AI reconstruction from visible contours, not newly discovered official pixels.",
+        "Face, fang, mouth, chin-tuft, linework and membrane contours were redrawn; this is not a pixel-exact cutout. Do not use fine generated details as canon evidence.",
+        "Output black wings are harder to inspect against the tool black display background; root current-UI silhouette/projection review remains required. Alpha>=128 body bbox [67,12,1647,917] does not touch any canvas edge, but does not prove anatomical accuracy.",
+        "Low-alpha edge residue remains: 12387 pixels alpha1..15 and 4980 pixels alpha16..127. Original generated alpha/bytes are retained; no programmatic cleanup.",
+        "Official CN Australia tXbWI94RR90 was actually sampled by root at 0/20/36/80/90/100/110 seconds without a usable small bat reference. This is not a statement that the complete video has no such shape, and that video is not used as target pixel proof.",
+        "This is a documented bat ability/body state of Omniverse Whampire, not a new species or the ordinary humanoid body. Rook legs/background and Lord Transyl are excluded.",
+        "Private candidate only: current UI, real phone, real SillyTavern and driver acceptance are not asserted by this reviewer."
+      ],
+      "supportingSources": [],
+      "uiReviewed": true,
+      "humanAccepted": false
+    }
+  ],
+  "checks": {
+    "modes": [
+      "dial",
+      "projection",
+      "carousel"
+    ],
+    "desktop": {
+      "outerWidth": 1280,
+      "clientWidth": 1265,
+      "height": 720
+    },
+    "mobileClientWidths": [
+      375,
+      305
+    ],
+    "newContoursInspected": true,
+    "filtersClearedInFinalPreview": true,
+    "oldRuntimeImagesByteExact": 206,
+    "registeredImageHashesUnchanged": true,
+    "tests": {
+      "passed": 104,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "todo": 0,
+      "logSha256": "8f2835a313e0dbf051794e0b0129875f89e453aedffa988d828fd4319c64abe1"
+    }
+  },
+  "console": {
+    "mainErrors": [],
+    "responsiveContainerErrors": [
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'."
+    ]
+  },
+  "screenshots": [
+    "screenshots/v044-alpha-arms-dial.jpg",
+    "screenshots/v044-alpha-arms-projection.jpg",
+    "screenshots/v044-alpha-arms-ring.jpg",
+    "screenshots/v044-alpha-arms-mobile-dial.jpg",
+    "screenshots/v044-alpha-arms-mobile-projection.jpg",
+    "screenshots/v044-alpha-arms-mobile-ring.jpg",
+    "screenshots/v044-alpha-heatblast-dial.jpg",
+    "screenshots/v044-alpha-heatblast-projection.jpg",
+    "screenshots/v044-alpha-heatblast-ring.jpg",
+    "screenshots/v044-alpha-heatblast-mobile-dial.jpg",
+    "screenshots/v044-alpha-heatblast-mobile-projection.jpg",
+    "screenshots/v044-alpha-heatblast-mobile-ring.jpg",
+    "screenshots/v044-alpha-humungousaur-dial.jpg",
+    "screenshots/v044-alpha-humungousaur-projection.jpg",
+    "screenshots/v044-alpha-humungousaur-ring.jpg",
+    "screenshots/v044-alpha-humungousaur-mobile-dial.jpg",
+    "screenshots/v044-alpha-humungousaur-mobile-projection.jpg",
+    "screenshots/v044-alpha-humungousaur-mobile-ring.jpg",
+    "screenshots/v044-chromastone-ov1-dial.jpg",
+    "screenshots/v044-chromastone-ov1-projection.jpg",
+    "screenshots/v044-chromastone-ov1-ring.jpg",
+    "screenshots/v044-chromastone-ov1-mobile-dial.jpg",
+    "screenshots/v044-chromastone-ov1-mobile-projection.jpg",
+    "screenshots/v044-chromastone-ov1-mobile-ring.jpg",
+    "screenshots/v044-gwen-cannon-dial.jpg",
+    "screenshots/v044-gwen-cannon-projection.jpg",
+    "screenshots/v044-gwen-cannon-ring.jpg",
+    "screenshots/v044-gwen-cannon-mobile-dial.jpg",
+    "screenshots/v044-gwen-cannon-mobile-projection.jpg",
+    "screenshots/v044-gwen-cannon-mobile-ring.jpg",
+    "screenshots/v044-gwen-xlr-dial.jpg",
+    "screenshots/v044-gwen-xlr-projection.jpg",
+    "screenshots/v044-gwen-xlr-ring.jpg",
+    "screenshots/v044-gwen-xlr-mobile-dial.jpg",
+    "screenshots/v044-gwen-xlr-mobile-projection.jpg",
+    "screenshots/v044-gwen-xlr-mobile-ring.jpg",
+    "screenshots/v044-future-heatblast-dial.jpg",
+    "screenshots/v044-future-heatblast-projection.jpg",
+    "screenshots/v044-future-heatblast-ring.jpg",
+    "screenshots/v044-future-heatblast-mobile-dial.jpg",
+    "screenshots/v044-future-heatblast-mobile-projection.jpg",
+    "screenshots/v044-future-heatblast-mobile-ring.jpg",
+    "screenshots/v044-max-upgrade-dial.jpg",
+    "screenshots/v044-max-upgrade-projection.jpg",
+    "screenshots/v044-max-upgrade-ring.jpg",
+    "screenshots/v044-max-upgrade-mobile-dial.jpg",
+    "screenshots/v044-max-upgrade-mobile-projection.jpg",
+    "screenshots/v044-max-upgrade-mobile-ring.jpg",
+    "screenshots/v044-plant-dial.jpg",
+    "screenshots/v044-plant-projection.jpg",
+    "screenshots/v044-plant-ring.jpg",
+    "screenshots/v044-plant-mobile-dial.jpg",
+    "screenshots/v044-plant-mobile-projection.jpg",
+    "screenshots/v044-plant-mobile-ring.jpg",
+    "screenshots/v044-ripjaws-ua-dial.jpg",
+    "screenshots/v044-ripjaws-ua-projection.jpg",
+    "screenshots/v044-ripjaws-ua-ring.jpg",
+    "screenshots/v044-ripjaws-ua-mobile-dial.jpg",
+    "screenshots/v044-ripjaws-ua-mobile-projection.jpg",
+    "screenshots/v044-ripjaws-ua-mobile-ring.jpg",
+    "screenshots/v044-bat-dial.jpg",
+    "screenshots/v044-bat-projection.jpg",
+    "screenshots/v044-bat-ring.jpg",
+    "screenshots/v044-bat-mobile-dial.jpg",
+    "screenshots/v044-bat-mobile-projection.jpg",
+    "screenshots/v044-bat-mobile-ring.jpg"
+  ],
+  "screenshotEvidence": [
+    {
+      "file": "screenshots/v044-alpha-arms-dial.jpg",
+      "sha256": "660e4fbf753f69a652f3786bf73e00aa062da1aa0dabd3d380a4999bae50a06a",
+      "bytes": 100843,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-arms-projection.jpg",
+      "sha256": "59ae126addef27e7d9870c9886c3a482c28aed6ee4daf5192d339feb8c05b6a4",
+      "bytes": 99530,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-arms-ring.jpg",
+      "sha256": "8e5a81aeb1461df666a6b5b64c664149180aa46e81f010363095586718753ed4",
+      "bytes": 103491,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-arms-mobile-dial.jpg",
+      "sha256": "893f97920d22a86c157c398716afec52de333ff2719f5b502b280933712f27cc",
+      "bytes": 99535,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-arms-mobile-projection.jpg",
+      "sha256": "86c9b2ab635cc59e45f45589ca5fb6d6179e3c128d7c17f3102c4c6be3b1bf31",
+      "bytes": 99085,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-arms-mobile-ring.jpg",
+      "sha256": "8607cbc0d1fa1c13471e868122a2a737ff3c954564f5e1f8da7a7cec3d88f645",
+      "bytes": 96112,
+      "formId": "alpha-arms",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-dial.jpg",
+      "sha256": "842414bce336c3a9b8ee39f96963b7b7a4368ac1665b7cc5ecc40283933b6aba",
+      "bytes": 102735,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-projection.jpg",
+      "sha256": "38a66423c16b502606aa84f158b50569c65ad97691f68bb37b28e76678c6e13c",
+      "bytes": 100171,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-ring.jpg",
+      "sha256": "216e7bac99dd7d570ceaf1a2c32e8a776096f6ab92eb30d791184de5e0203b32",
+      "bytes": 105297,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-mobile-dial.jpg",
+      "sha256": "efeafec014ae21c37189dbc266ad07abebd66a57d797414a4cd95bdf4ba02bf4",
+      "bytes": 100811,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-mobile-projection.jpg",
+      "sha256": "39690632da461bd3387a27150e3a7af7211456c967ff5c102658029e9f31f549",
+      "bytes": 97256,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-heatblast-mobile-ring.jpg",
+      "sha256": "2ad7877698caece463bbd3e52dc975eeaa1eb03336877986c6d53b9d222d48fc",
+      "bytes": 96864,
+      "formId": "alpha-heatblast",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-dial.jpg",
+      "sha256": "d15f17471689a7c9a390d0a65793e9e11699b403c945f3143d545250dc2f3924",
+      "bytes": 103922,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-projection.jpg",
+      "sha256": "975eb313ddf187010f1d56e91dd6dc275241091a8b8066c08849ebed89513b51",
+      "bytes": 101662,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-ring.jpg",
+      "sha256": "725db25382b4ab7176ef1befea412f83117e9abf0912ccbd3905a28ab9e9d629",
+      "bytes": 107242,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-mobile-dial.jpg",
+      "sha256": "989d6c5fcdbc0e6f6122b415a8fc6ea719fd1dbce1805e62d234dcd06fadfe40",
+      "bytes": 100292,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-mobile-projection.jpg",
+      "sha256": "25aecfc3977eafdad36ed7867ff359a7ef9c5ad75ded512cba60e232a4425916",
+      "bytes": 97335,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-alpha-humungousaur-mobile-ring.jpg",
+      "sha256": "13754b52c87e7ad35cbbde3c1cb253e5d0b4ce6fe9c589c08742b247ba54a736",
+      "bytes": 97478,
+      "formId": "alpha-humungousaur",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-dial.jpg",
+      "sha256": "796bb2a41d9d0e55c9e6453cc255694ea197045942f1fac38de0bd356ef2576b",
+      "bytes": 106252,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-projection.jpg",
+      "sha256": "7aea33cbb4a85affe2d33646cdf59f396e5fec9a756685ae07a953b509a337b4",
+      "bytes": 104236,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-ring.jpg",
+      "sha256": "3f93a883d36fc1acb1a1c092419432b37ebff45c55c227d510658bcbb7810bfb",
+      "bytes": 110111,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-mobile-dial.jpg",
+      "sha256": "f746f025e504c81cfd558771f31d5d4d98416e3cff23483a98383c8725b0d8f1",
+      "bytes": 100708,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-mobile-projection.jpg",
+      "sha256": "89e4fd440d6436a9381d7734aa1d597a967135392eb490a3abf626685cb0e1eb",
+      "bytes": 95091,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-chromastone-ov1-mobile-ring.jpg",
+      "sha256": "34e9362ea990daa5f1a37a86b9fce68416766ec28cd00903f614e71c4b1e11bb",
+      "bytes": 97873,
+      "formId": "chromastone-ov1",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-dial.jpg",
+      "sha256": "2029a67755e6d5a1a0f97a30ba1c62c4eb2629733bbfb7aa7124f33474798df5",
+      "bytes": 101355,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-projection.jpg",
+      "sha256": "c2eb0bf363d3c73367bc30c6fd2a0bad7a7f0fbe07c0d916ed48f90d69bea43f",
+      "bytes": 99183,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-ring.jpg",
+      "sha256": "a6aa3af1a0b273f8acba7eefef033d437b8b46730816ac903ab440539815df69",
+      "bytes": 104393,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-mobile-dial.jpg",
+      "sha256": "a0e33bb4a09e6c0d64851930ae77ee5a897821f609ec44c05d87b90371e15f6c",
+      "bytes": 99905,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-mobile-projection.jpg",
+      "sha256": "eb57e0e16b696f3b382882011643e8b323519b77e3455974724c030818b637b1",
+      "bytes": 94497,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-cannon-mobile-ring.jpg",
+      "sha256": "7387bb713532df1b3c6c45d8110fbd691ec1605679ea729fe3a02a4f11a0e0f9",
+      "bytes": 96229,
+      "formId": "gwen10-cannonbolt",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-dial.jpg",
+      "sha256": "8408a0e244c9ef8e7506acf49b4f34e1de63b28c4b8673b2db977ed01d48c9de",
+      "bytes": 99201,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-projection.jpg",
+      "sha256": "d056eaa0aa7ae91c7633b0ecc6089db1114e425241d2f6642ece6032e1818692",
+      "bytes": 96661,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-ring.jpg",
+      "sha256": "6444c52de32f5d95e83fc48d9edb941444f49d576d78c0795aef03e3e518221d",
+      "bytes": 102586,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-mobile-dial.jpg",
+      "sha256": "728d615192d5baac502cc2add89be406d05d4c8b27b90cf1bc60a1c6da357d91",
+      "bytes": 99468,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-mobile-projection.jpg",
+      "sha256": "9dc2ecd641e8bba819d218bcb7d9593a13963c3453c83a5a3cbcf7c22525cccf",
+      "bytes": 92813,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-gwen-xlr-mobile-ring.jpg",
+      "sha256": "1a8dac34405eaf863ddcecfb168eb0306ea0534ec059f7ae78a4e349cafd5639",
+      "bytes": 95796,
+      "formId": "gwen10-xlr8",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-dial.jpg",
+      "sha256": "f89cbd9ae7bf5fc3e0e4eec35570f5a2a7aeb6ccc965ab464335829ef70e8fe5",
+      "bytes": 106073,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-projection.jpg",
+      "sha256": "67a61e7f9284932c972e80a2579ce5603079563b191456960fcb3405ca030151",
+      "bytes": 104706,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-ring.jpg",
+      "sha256": "7b4f21675065e4266a418019031ae8abfcb71f7f773c86825d499b70f6ba7551",
+      "bytes": 109297,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-mobile-dial.jpg",
+      "sha256": "21c015a5eb05e22ae587b7f63c4bd80edefb7697665f53db27b1611173bdd22e",
+      "bytes": 101125,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-mobile-projection.jpg",
+      "sha256": "6bb972d8d062124a5f0e7d2a3503f938f6a4629fd91c27c48031650882a133a7",
+      "bytes": 97693,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-future-heatblast-mobile-ring.jpg",
+      "sha256": "ec3ccdca3c6e356ceac3799588e1daf00ac6019a8ed37492a63fa725e61cfdd5",
+      "bytes": 97895,
+      "formId": "heatblast-original-future",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-dial.jpg",
+      "sha256": "c49716d765f1d4f297f52161bf54fcbb60adf2d81b682c0d11306a0e2114def3",
+      "bytes": 100319,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-projection.jpg",
+      "sha256": "f4844672476a5bc513eb0296b7c6d51b2d6343776358381afc47d7d062601c5d",
+      "bytes": 97154,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-ring.jpg",
+      "sha256": "106272183ecb5b93a68e9f7b6177577f4bae10ee1ab03dc3c9a827afd45e716b",
+      "bytes": 103613,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-mobile-dial.jpg",
+      "sha256": "f846443258915dd68ddf32db5f66722740d605501c8a9132208e2eca44da32a4",
+      "bytes": 99389,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-mobile-projection.jpg",
+      "sha256": "ec94fcf0a0ed33c164e061e2ba6fdf26fe32575bf50278aa1ae105efd7877d55",
+      "bytes": 91819,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-max-upgrade-mobile-ring.jpg",
+      "sha256": "1dd6f7b0866ecee122733846144883f70aeac8d0053cbe86f3845a4805c8b468",
+      "bytes": 96088,
+      "formId": "max10-os-upgrade",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-dial.jpg",
+      "sha256": "d2b68dddd9fe8c2ef30ab36a035f70a46063423d51237e1aae83fc4112627c72",
+      "bytes": 100899,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-projection.jpg",
+      "sha256": "b2f099e01304616fcac80b24171fb7b1bb37d2b8b674d8bfcbb830e3892d33d3",
+      "bytes": 98678,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-ring.jpg",
+      "sha256": "128a1ed2de7b970245a6370e99bdbe04cfc802767fa0f0eb6e3b156a01ffcfa0",
+      "bytes": 103498,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-mobile-dial.jpg",
+      "sha256": "cb495b838f568a4567ceb47b2ec35ed0edb4b4b80666da1e2ee030c89c566f6f",
+      "bytes": 99824,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-mobile-projection.jpg",
+      "sha256": "b2886c01cdb2d7aa933f4a0dcf8bcaf277b366990419e639eaf8186627bc1967",
+      "bytes": 94225,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-plant-mobile-ring.jpg",
+      "sha256": "4e6c0efd13500c0fe0db6fd354d607be40222a5f8970e1e349b3814b704655e9",
+      "bytes": 95786,
+      "formId": "promo-plantapocalypse",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-dial.jpg",
+      "sha256": "7d3ec77c43ed7d7f87b69892f1ccf98b3049d6dab27df0d8a94762cf90cac189",
+      "bytes": 103923,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-projection.jpg",
+      "sha256": "1aadec97844ae749fc0c48387b74e9167d531cc21fb45f4e5a123ee4348789d7",
+      "bytes": 103009,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-ring.jpg",
+      "sha256": "b0edc3f5bb9302c3ed60f35736d5b58b392d553ceee85d4e0d67ca65f71f628e",
+      "bytes": 107437,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-mobile-dial.jpg",
+      "sha256": "1043e27c2b721b74cee6c88c93613a996ec292ea20df6cbaed7aaf7b15a36b5a",
+      "bytes": 100616,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-mobile-projection.jpg",
+      "sha256": "5ede1163e0fdd0ca8643ac25b20017641a5b8183b3ec216c55de9d3fa7f89adc",
+      "bytes": 98073,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-ripjaws-ua-mobile-ring.jpg",
+      "sha256": "2dde9a983a1c029ef7c503fa121f02997cdd41b9508f40fb1068e653aa51e39e",
+      "bytes": 97719,
+      "formId": "ripjaws-ua",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-dial.jpg",
+      "sha256": "6c7483408cbd5906d09b05210cb540d7487e4d2df9cd4628a4ab78c05c70cb5c",
+      "bytes": 100209,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-projection.jpg",
+      "sha256": "d63d91a618359ca0c8e0eba7a0805caedcccbd2d7ced0534e9dd956dd36fdb8b",
+      "bytes": 97011,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-ring.jpg",
+      "sha256": "9f572703be821f929fda5f6a779f95b760d5ca2e144f197b467ccfd26f07e28f",
+      "bytes": 103160,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-mobile-dial.jpg",
+      "sha256": "f98e2550b9f20ce143f44b33b739c147f3f800cf4bc47012a0503c69cd71df4d",
+      "bytes": 99560,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-mobile-projection.jpg",
+      "sha256": "7609363802af55fcc83eaa46e94cdc9ff78a2098b4ad443bd42e458843b8c325",
+      "bytes": 92285,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    },
+    {
+      "file": "screenshots/v044-bat-mobile-ring.jpg",
+      "sha256": "6dfa9c3875ae82fced03c5524de309279116f6cbe14279419c286b782866afbd",
+      "bytes": 95997,
+      "formId": "whampire-bat",
+      "capturePreviewSha256": "dad6c279853dfac133a0c082b98c50def7a3b9a2c135b989b32de205279be728"
+    }
+  ],
+  "boundaries": [
+    "Local browser/responsive evidence only; no physical-phone, real SillyTavern/SillyDroid or driver acceptance claimed.",
+    "This finalization performs no installation, chat write, model call, packaging or Git action.",
+    "Original source-stage limitations remain verbatim; current local UI review is recorded separately in uiReview.",
+    "All selected screenshots were captured before finalization and retain their capture-build hash even if it equals the final reload hash. Final reload, filter/console observations and fresh tests bind the final build separately.",
+    "All adopted entries are AI reference reconstructions. Missing body regions and species-anatomy support are disclosed individually; unseen anatomy is not claimed to be an exact official variant model.",
+    "The four-angle watch sprites and transitions remain the existing implementation, not a continuously rotatable 3D mesh."
+  ],
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false
+}

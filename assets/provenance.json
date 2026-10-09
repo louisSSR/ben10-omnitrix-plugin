@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "eb577e91b5249aba488b2afb9bf7a8f0d1544ae21f3f70cd7b95ed35867a5bb8",
-  "svgSha256": "d3d476cbfd0163d52e1394f0c0fd4a38a17f610a6dc42c79f953862421bd39d1",
+  "catalogSha256": "738e46856af3f7f6fe34a338d1aaa17306171b4716daf00ffaeca838e090964c",
+  "svgSha256": "e9a903c092daab6e5edd02c834678dbf440afdde26d0d4c0cd3f1e83a4452156",
   "coverage": {
     "total": 224,
-    "reviewed": 198,
-    "missing": 26
+    "reviewed": 209,
+    "missing": 15
   },
   "assets": [
     {
@@ -1766,6 +1766,116 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "94b1c7dbc98075dd83713e5c423c81cc8f9e266ee753f5c1a9766495c8850805",
       "maskSha256": "9a069d589439cc6cf771e4eba48fef3d71441f4c7ecc1b8dfca92abc388ebdd3",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "promo-plantapocalypse",
+      "url": "https://i.vimeocdn.com/video/598841145-b9d8b5c0bdadf1310959d75a8e3126741fe1fc7c31c7339e0b4acd4a39e15760-d?f=webp&region=us",
+      "pageUrl": "https://vimeo.com/188743097",
+      "rights": "Underlying Ben 10 artwork remains copyrighted; no open redistribution license verified.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "c97149ddcd1c8d1abd95786a00bd256626cc93e3fef3142143291e5ff98fd668",
+      "maskSha256": "60082f772558092f08a2891b1ffd0e7dc1bd400dead74c190d8ec237489652a2",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "whampire-bat",
+      "url": "https://ben10hero.com/wp-content/uploads/2018/08/whampire_mini_bat-copy.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/",
+      "rights": "Original animation/character copyright retained; redistribution license unknown; AI redraw and endpoint reconstruction disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e2c9e1c8ee8152abb1aaad229fa746ea19165652c3c0784949a0abc6a5963d87",
+      "maskSha256": "3d84d8db48951a900cc86368898dcc81359b6340dd7aa5a1320139f929177b8e",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "alpha-heatblast",
+      "url": "https://pbs.twimg.com/media/Ecmr5YFX0AcCbWG.png",
+      "pageUrl": "https://x.com/Ben10FunFacts/status/1281745564061884416",
+      "rights": "Underlying Ben 10 / Generator Rex artwork remains copyrighted. Community reposting is not an open licence; no official upload chain or redistribution grant is asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "d079bca29506de0b4a66bb52b4a22715101cfba97ccdb5f632566924902eb906",
+      "maskSha256": "10d0360c957c52a8fd0c6266674c7634f9650f5b27e53abcfd8bedf124266658",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "alpha-arms",
+      "url": "https://pbs.twimg.com/media/G6n_iTFbwAIvuVX.jpg",
+      "pageUrl": "https://x.com/BenTenNews/status/1993405281414660600",
+      "rights": "Underlying Ben 10 / Generator Rex artwork remains copyrighted. Community reposting is not an open licence; no official upload chain or redistribution grant is asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "aa03b83889f8aaa3ac864f93024b456615cfaa97ecbd7561fafd237a9b7079a8",
+      "maskSha256": "532262a50e377ee1ba5225c9d0e5e06288a8da28210167134eafa689a09302ee",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "alpha-humungousaur",
+      "url": "https://pbs.twimg.com/media/G6n_iS6bwAIglWj.jpg",
+      "pageUrl": "https://x.com/BenTenNews/status/1993405281414660600",
+      "rights": "Underlying Ben 10 / Generator Rex artwork remains copyrighted. Community reposting is not an open licence; no official upload chain or redistribution grant is asserted.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "77919b881325b888d302d0baf3621409f257f30d3f0c73aa2abe04f8b9554e18",
+      "maskSha256": "571553d15858a549a5588d54ed3d5272f77f9a588e1e615c15b2d6a7281f91bb",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-xlr8",
+      "url": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+      "pageUrl": "https://tenor.com/view/gwen10-g10-xlr8-ben10-omniverse-gif-23996571",
+      "rights": "Underlying Ben 10 animation/character artwork remains copyrighted. No open artwork licence or permission to reuse is asserted. Generated output is AI reference art, not official original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "aed49a3e51d7c47eb8c42abec9e2302c72d7c883e4363caea403d2a9b256a4d9",
+      "maskSha256": "c497512766bd72f1a0c69081243db3b783a17d1596d091938775cb77c5c603a6",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-cannonbolt",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/gwen_10s_cannonbolt.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+      "rights": "Underlying Ben 10 animation/character artwork remains copyrighted. No open artwork licence or permission to reuse is asserted. Generated output is AI reference art, not official original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "47a9a3390bb6ae7ccb58ce5a77e1ed541cd976d0955f8015c77a1e6af334fda4",
+      "maskSha256": "d5e4b046e33ac8da58ac529d9cf27bcd0e040c61182bf186173e4211cd17a46d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "max10-os-upgrade",
+      "url": "https://www.youtube.com/watch?v=TNifxBZackU",
+      "pageUrl": "https://www.youtube.com/watch?v=TNifxBZackU",
+      "rights": "Underlying Ben 10 animation/character artwork remains copyrighted. No open artwork licence or permission to reuse is asserted. Generated output is AI reference art, not official original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "37a788937a7c362d5288d435e706af0d33b5b2273a3b431b0116b35bdf9efb69",
+      "maskSha256": "1af2ba62609fc5b54a89bdf78362bfe69c9e32a35d11a80e8b2fb00c0161c544",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "chromastone-ov1",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastoneov.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+      "rights": "Character/animation rights retained; redistribution license unknown; AI full-contour reconstruction disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "efcaed94bbdbd73b90b4e9546caaac25e719845c77739e1ec08a4e75f08ecad4",
+      "maskSha256": "f8ed3cbec2623536ebff481f3fa9f4fafb36690b60ea51341bb3995ac2488129",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ripjaws-ua",
+      "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ripjaws-ua_orig.png",
+      "pageUrl": "https://ben10db.weebly.com/ultimate-alien.html",
+      "rights": "Character/animation rights retained; redistribution license unknown; AI full-contour reconstruction disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "2a10c373c3549b8f9c25746a97f59ff2bdc831302fab88f272f1a8268bc723c4",
+      "maskSha256": "6adf6add4ee5196e9e2af0c13e8ac0cf403b31903583dfa085007f2490a76cfa",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "heatblast-original-future",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/heatblast_10k.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/",
+      "rights": "Character/animation rights retained; redistribution license unknown; AI full-contour reconstruction disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "3f825e6ed751ba1343f39e3c389e800d14aa1b209db7fa9805e6d21a76570d36",
+      "maskSha256": "90cb9b3af84e4d01715dd54cdf8f3a090571bc88290571d08adb5f7f331aab7f",
       "contentType": "image/png"
     }
   ],

@@ -40,14 +40,17 @@ for (const asset of supplemental.assets) {
   if (asset.supportingSources === undefined) continue;
   if (!Array.isArray(asset.supportingSources)) throw new Error('Invalid supporting sources');
   for (const source of asset.supportingSources) {
-    if (!source || typeof source.file !== 'string' || !/^assets\/source-art\/[a-z0-9-]+\.(?:png|jpe?g|webp)$/.test(source.file)) throw new Error('Unsafe supporting source path');
+    if (!source || typeof source.file !== 'string' || !/^assets\/source-art\/[a-z0-9-]+\.(?:png|jpe?g|webp|gif)$/.test(source.file)) throw new Error('Unsafe supporting source path');
     if (typeof source.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(source.sha256)) throw new Error(`Invalid supporting source SHA: ${source.file}`);
     let resolved = root;
     for (const part of source.file.split('/')) {
       resolved = path.join(resolved, part);
       if (lstatSync(resolved).isSymbolicLink()) throw new Error(`Unsafe supporting source link: ${source.file}`);
     }
-    if (!lstatSync(resolved).isFile() || createHash('sha256').update(readFileSync(resolved)).digest('hex') !== source.sha256) throw new Error(`Invalid supporting source hash: ${source.file}`);
+    const raw = lstatSync(resolved).isFile() ? readFileSync(resolved) : null;
+    if (!raw || createHash('sha256').update(raw).digest('hex') !== source.sha256) throw new Error(`Invalid supporting source hash: ${source.file}`);
+    const signature = raw.subarray(0, 6);
+    if (source.file.endsWith('.gif') && !signature.equals(Buffer.from('GIF87a')) && !signature.equals(Buffer.from('GIF89a'))) throw new Error(`Invalid supporting GIF signature: ${source.file}`);
     if (!files.includes(source.file)) files.push(source.file);
   }
 }

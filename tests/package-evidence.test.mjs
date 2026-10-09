@@ -9,6 +9,13 @@ import path from 'node:path';
 const packageScript = new URL('../scripts/package.mjs', import.meta.url);
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const writeJson = (file, data) => writeFileSync(file, JSON.stringify(data));
+const gif89a = Buffer.from('47494638396101000100800000000000ffffff2c00000000010001000002024401003b', 'hex');
+const gif87a = Buffer.concat([Buffer.from('GIF87a'), gif89a.subarray(6)]);
+const retainGif = (f, name, bytes = gif89a) => {
+  const file = `assets/source-art/${name}.gif`;
+  writeFileSync(path.join(f.root, file), bytes);
+  return { file, sha256: sha(bytes) };
+};
 
 function fixture(t) {
   const dir = mkdtempSync(path.join(tmpdir(), 'omni-package-evidence-'));
@@ -52,6 +59,8 @@ function fixture(t) {
 test('package copies supporting evidence bytes and lists repeated/shared files once', t => {
   const f = fixture(t);
   const body = f.asset.sourceFile;
+  const gifs = [retainGif(f, 'clip-87', gif87a), retainGif(f, 'clip-89')];
+  f.asset.supportingSources.push(...gifs, { ...gifs[0] });
   f.asset.supportingSources.push({ ...f.asset.supportingSources[0] }, { file: body, sha256: sha(readFileSync(path.join(f.root, body))) });
   f.plan.assets.push({ ...f.asset, formId: 'second-fixture' });
   const result = f.run();
@@ -63,6 +72,11 @@ test('package copies supporting evidence bytes and lists repeated/shared files o
   const retained = receipt.files.find(row => row.file === f.head);
   assert.equal(retained.sha256, f.asset.supportingSources[0].sha256);
   assert.equal(retained.bytes, readFileSync(path.join(f.output, f.head)).length);
+  for (const gif of gifs) {
+    assert.deepEqual(readFileSync(path.join(f.output, gif.file)), readFileSync(path.join(f.root, gif.file)));
+    assert.equal(receipt.files.filter(row => row.file === gif.file).length, 1);
+    assert.equal(receipt.files.find(row => row.file === gif.file).sha256, gif.sha256);
+  }
 });
 
 test('package rejects corrupted supporting evidence before any package files are copied', t => {
@@ -74,16 +88,37 @@ test('package rejects corrupted supporting evidence before any package files are
   assert.equal(existsSync(f.receipt), false);
   assert.equal(existsSync(path.join(f.output, 'manifest.json')), false);
   assert.equal(existsSync(path.join(f.output, f.head)), false);
+  for (const bytes of [Buffer.from('GIF89'), Buffer.from('GIF90a'), Buffer.from('NOTGIF-body'), Buffer.concat([Buffer.from([0xc7]), gif89a.subarray(1)])]) {
+    const gif = retainGif(f, 'invalid-clip', bytes);
+    f.asset.supportingSources = [gif];
+    const invalid = f.run();
+    assert.notEqual(invalid.status, 0);
+    assert.match(invalid.stderr, /Invalid supporting GIF signature/);
+    assert.equal(existsSync(f.receipt), false);
+    assert.equal(existsSync(path.join(f.output, 'manifest.json')), false);
+    assert.equal(existsSync(path.join(f.output, gif.file)), false);
+  }
 });
 
 test('package rejects traversal, backslash, absolute and remote supporting paths', t => {
   const f = fixture(t);
-  for (const file of ['assets/source-art/../head.png', 'assets/source-art\\head.png', path.resolve(f.root, f.head), 'https://example.test/head.png']) {
+  for (const file of ['assets/source-art/../head.png', 'assets/source-art\\head.png', path.resolve(f.root, f.head), 'https://example.test/head.png',
+    'assets/source-art/../clip.gif', 'assets/source-art\\clip.gif', path.resolve(f.root, 'assets/source-art/clip.gif'), 'https://example.test/clip.gif']) {
     f.asset.supportingSources[0].file = file;
     const result = f.run();
     assert.notEqual(result.status, 0, file);
     assert.match(result.stderr, /Unsafe supporting source path/, file);
     assert.equal(existsSync(f.receipt), false);
+  }
+  const gif = retainGif(f, 'primary-clip');
+  for (const field of ['sourceFile', 'maskFile']) {
+    const original = f.asset[field];
+    f.asset[field] = gif.file;
+    const result = f.run();
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /Unexpected supplemental path/);
+    assert.equal(existsSync(f.receipt), false);
+    f.asset[field] = original;
   }
 });
 
@@ -97,10 +132,16 @@ test('package rejects malformed or conflicting supporting SHA even for a duplica
   result = f.run();
   assert.notEqual(result.status, 0); assert.match(result.stderr, /Invalid supporting source hash/);
   assert.equal(existsSync(f.receipt), false);
+  const gif = retainGif(f, 'hash-clip');
+  f.asset.supportingSources = [gif, { ...gif, sha256: '0'.repeat(64) }];
+  result = f.run();
+  assert.notEqual(result.status, 0); assert.match(result.stderr, /Invalid supporting source hash/);
+  assert.equal(existsSync(f.receipt), false);
 });
 
 test('package rejects a real supporting-source directory junction or symlink', t => {
   const f = fixture(t);
+  const gif = retainGif(f, 'linked-clip');
   const source = path.join(f.root, 'assets/source-art');
   const outside = path.join(f.dir, 'outside-source-art');
   assert.ok(source.startsWith(f.dir + path.sep)); assert.ok(outside.startsWith(f.dir + path.sep));
@@ -111,4 +152,10 @@ test('package rejects a real supporting-source directory junction or symlink', t
   assert.match(result.stderr, /Unsafe supporting source link/);
   assert.equal(existsSync(f.receipt), false);
   assert.equal(existsSync(path.join(f.output, f.head)), false);
+  f.asset.supportingSources = [gif];
+  const gifResult = f.run();
+  assert.notEqual(gifResult.status, 0);
+  assert.match(gifResult.stderr, /Unsafe supporting source link/);
+  assert.equal(existsSync(f.receipt), false);
+  assert.equal(existsSync(path.join(f.output, gif.file)), false);
 });
