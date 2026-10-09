@@ -43,14 +43,17 @@ const symbols = localSvg.slice(localSvg.indexOf('>') + 1, localSvg.lastIndexOf('
 const portraits = JSON.parse(read('assets/portraits.json'));
 validatePortraitRegistry(portraits, catalog.forms.map(form => form.id));
 const portraitSymbols = portraits.assets.map(asset => {
-  if (asset.file !== `portraits/${asset.id}.webp` || !/^[a-f0-9]{64}$/.test(asset.sha256)) throw new Error('Invalid source portrait path or hash');
+  const type = asset.file?.endsWith('.webp') ? 'webp' : asset.file?.endsWith('.png') ? 'png' : null;
+  if (!type || asset.file !== `portraits/${asset.id}.${type}` || !/^[a-f0-9]{64}$/.test(asset.sha256)) throw new Error('Invalid source portrait path or hash');
   const file = path.join(root, 'assets', asset.file);
   if (lstatSync(file).isSymbolicLink() || !lstatSync(file).isFile()) throw new Error('Invalid portrait source');
   const bytes = readFileSync(file);
-  if (hash(bytes) !== asset.sha256 || bytes.length !== asset.bytes || bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP') throw new Error(`Invalid portrait bytes: ${asset.id}`);
-  if (bytes.length < 30 || bytes.toString('ascii', 12, 16) !== 'VP8X' || bytes.readUIntLE(24, 3) + 1 !== asset.width || bytes.readUIntLE(27, 3) + 1 !== asset.height || !(bytes[20] & 0x10)) throw new Error(`Invalid portrait dimensions or alpha: ${asset.id}`);
-  const source = storeImage(bytes, 'webp');
-  return `<symbol id="portrait-sprite-${asset.id}" viewBox="0 0 150 150"><image width="150" height="150" href="${source}" preserveAspectRatio="xMidYMid meet"/></symbol>`;
+  if (hash(bytes) !== asset.sha256 || bytes.length !== asset.bytes) throw new Error(`Invalid portrait bytes: ${asset.id}`);
+  if (type === 'webp') {
+    if (bytes.length < 30 || bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP' || bytes.toString('ascii', 12, 16) !== 'VP8X' || bytes.readUIntLE(24, 3) + 1 !== asset.width || bytes.readUIntLE(27, 3) + 1 !== asset.height || !(bytes[20] & 0x10)) throw new Error(`Invalid portrait dimensions or alpha: ${asset.id}`);
+  } else if (bytes.length < 33 || !bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10])) || bytes.toString('ascii', 12, 16) !== 'IHDR' || bytes.readUInt32BE(16) !== asset.width || bytes.readUInt32BE(20) !== asset.height || bytes[25] !== 6) throw new Error(`Invalid RGBA portrait PNG: ${asset.id}`);
+  const source = storeImage(bytes, type);
+  return `<symbol id="portrait-sprite-${asset.id}" viewBox="0 0 ${asset.width} ${asset.height}"><image width="${asset.width}" height="${asset.height}" href="${source}" preserveAspectRatio="xMidYMid meet"/></symbol>`;
 }).join('');
 const portraitRuntime = {
   schemaVersion: 1,

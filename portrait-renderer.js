@@ -25,7 +25,8 @@ export function validatePortraitRegistry(registry, formIds) {
   if (registry?.schemaVersion !== 1 || !Array.isArray(registry.assets) || !Array.isArray(registry.bindings)) throw new TypeError('Invalid portrait registry');
   const assets = new Map(), bindings = new Map(), knownForms = new Set(formIds);
   for (const asset of registry.assets) {
-    if (!asset || !/^dna-omv-[0-9]{3}$/.test(asset.id) || assets.has(asset.id) || asset.width !== 150 || asset.height !== 150) throw new TypeError('Invalid portrait resource');
+    if (!asset || !/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(asset.id) || assets.has(asset.id) ||
+      ![asset.width, asset.height].every(value => Number.isInteger(value) && value > 0 && value <= 2048)) throw new TypeError('Invalid portrait resource');
     portraitColorMatrix(asset);
     assets.set(asset.id, asset);
   }

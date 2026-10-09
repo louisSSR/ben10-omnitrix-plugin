@@ -1,0 +1,182 @@
+{
+  "version": "0.6.1",
+  "date": "2026-10-10",
+  "previewSha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
+  "portraitRegistrySha256": "497367ebae4dabc879ff8b48a0b415c4822b51237048c0e491addecd8cd58e68",
+  "runtimeManifestSha256": "a0a319de9e326673d105bfd6609257ed7623f0ff7de41136fc7de197083a1b22",
+  "coverage": {
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 34,
+    "bindings": 38,
+    "pending": 198,
+    "sourceSha256": "497367ebae4dabc879ff8b48a0b415c4822b51237048c0e491addecd8cd58e68",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 142,
+    "failed": 0,
+    "skipped": 0
+  },
+  "testLogSha256": "6c9ed5da0bb592eb055689200a519e46dcf488d769e2b230428e03bdce78d23d",
+  "finalPackageRegression": {
+    "passed": 7,
+    "failed": 0,
+    "scope": "offline-package and portrait tests after package PNG/prompt source support",
+    "logSha256": "8591abb87469cec009c99da59162fb591bb21807801fd5c763d853aacaa8eb4e"
+  },
+  "screenshots": [
+    "screenshots/v061-desktop-walkatrout.jpg",
+    "screenshots/v061-desktop-mad-way-big.jpg",
+    "screenshots/v061-mobile-mad-way-big.jpg",
+    "screenshots/v061-narrow-mad-way-big.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v061-desktop-walkatrout.jpg",
+      "sha256": "1f9c3924b2079ecf977ac9478b7f0e0a8c1972c66e38e72eae677cc6e06150af",
+      "captureBuildSha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v061-desktop-mad-way-big.jpg",
+      "sha256": "2b1f5b88708115bfb1ed883f7e4a67c750a5743618ac9bb873f1223466a1f4f9",
+      "captureBuildSha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v061-mobile-mad-way-big.jpg",
+      "sha256": "f0e16ad1dc385fa28b972601fa39f181a439b1f0b94ae527e18bbc1ff977daff",
+      "captureBuildSha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v061-narrow-mad-way-big.jpg",
+      "sha256": "63630d448f953c28639aa6e96fbb9c2a296c817eedc1d6a6a1412effc277363a",
+      "captureBuildSha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
+      "actuallyViewed": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "walkatrout",
+      "label": "Walkatrout",
+      "portrait": "dna-omv-006"
+    },
+    {
+      "id": "juryrigg-ov",
+      "label": "Juryrigg — Omniverse",
+      "portrait": "dna-omv-008"
+    },
+    {
+      "id": "spitter",
+      "label": "Spitter",
+      "portrait": "dna-omv-014"
+    },
+    {
+      "id": "bullfrag",
+      "label": "Bullfrag",
+      "portrait": "dna-omv-026"
+    },
+    {
+      "id": "alien-x",
+      "label": "Alien X",
+      "portrait": "dna-omv-058"
+    },
+    {
+      "id": "big-chill-ov",
+      "label": "Big Chill — Omniverse",
+      "portrait": "dna-omv-054"
+    },
+    {
+      "id": "skurd-whampire-armodrillo",
+      "label": "Whampire（Skurd 钻头臂）",
+      "portrait": "dna-omv-016"
+    },
+    {
+      "id": "skurd-whampire-bloxx",
+      "label": "Whampire（Skurd 双积木炮）",
+      "portrait": "dna-omv-016"
+    },
+    {
+      "id": "skurd-whampire-feedback",
+      "label": "Whampire（Skurd 吸能臂）",
+      "portrait": "dna-omv-016"
+    },
+    {
+      "id": "skurd-kickin-hawk-diamondhead-arm",
+      "label": "Kickin’ Hawk（Skurd 钻石臂与剑）",
+      "portrait": "dna-omv-007"
+    },
+    {
+      "id": "mad-way-big",
+      "label": "Mad Way Big",
+      "portrait": "reference-mad-way-big"
+    },
+    {
+      "kind": "responsive-iframe",
+      "frameWidth": 375,
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "formId": "mad-way-big",
+      "palette": "amber",
+      "watch": "omniverse",
+      "nativeAlphaEdgesInspectedAtDisplaySize": true
+    },
+    {
+      "kind": "responsive-iframe",
+      "frameWidth": 305,
+      "clientWidth": 290,
+      "scrollWidth": 290,
+      "formId": "mad-way-big",
+      "palette": "rose",
+      "watch": "omniverse",
+      "headComplete": true
+    },
+    {
+      "kind": "desktop",
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "restoredCatalogCount": 236,
+      "selectableBodies": 235,
+      "palettesVisuallyViewed": [
+        "energy",
+        "amber"
+      ],
+      "selectedFormsVisuallyViewed": [
+        "walkatrout",
+        "mad-way-big"
+      ]
+    }
+  ],
+  "console": {
+    "desktop": [],
+    "responsive": []
+  },
+  "responsive": {
+    "method": "Actual preview rendered within 375px and 305px iframes; 15px desktop scrollbar leaves client widths 360 and 290. This validates layout only. Direct iframe interaction failed; settings changed through primary preview UI and frame reload. No physical-device claim.",
+    "failedViewportOverrideAttempt": {
+      "requested": 375,
+      "actualClients": [
+        699,
+        1265
+      ]
+    },
+    "horizontalOverflow": false
+  },
+  "previousBodyResourcesUnchanged": true,
+  "previousPortraitResourcesUnchanged": true,
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "boundaries": [
+    "Only the 11 added form-to-head bindings were exercised individually this round; previous bindings remain byte-identical and covered by automated tests.",
+    "Fixed-width iframe rendering is not physical phone or SillyDroid acceptance.",
+    "Head art simplifies pose and features; Mad Way Big is a disclosed AI reference redraw.",
+    "198 catalog records still lack head icons; Crabdozer still lacks full-body art; full media/form catalog remains incomplete."
+  ]
+}

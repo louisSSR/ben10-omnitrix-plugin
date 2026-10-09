@@ -2,7 +2,9 @@
 
 这是非官方 Ben 10 同人交互界面，与 Cartoon Network、Warner Bros. Discovery 或 Man of Action 无隶属关系。
 
-0.6.0 的环形转盘头像来自用户提供的第三方应用 DNA Altering 3.5.0（Adi007，`eu.adi007.omnitrix`）资源包，不是三星官方发布的素材。只复制经身份对照的原始透明 WebP；颜色由运行时 SVG 矩阵改变，内部线条与透明边缘保留。逐个资源的包内条目、SHA-256、对照来源和具体形态绑定见 `assets/portraits.json`。素材复用许可与官方首发链未核实，未将该应用代码、完整 APK 或用户本地路径纳入运行包。
+环形转盘的 WebP 头像来自用户提供的第三方应用 DNA Altering 3.5.0（Adi007，`eu.adi007.omnitrix`）资源包，不是三星官方发布的素材。只复制经身份对照的原始透明 WebP；颜色由运行时 SVG 矩阵改变，内部线条与透明边缘保留。逐个资源的包内条目、SHA-256、对照来源和具体形态绑定见 `assets/portraits.json`。素材复用许可与官方首发链未核实，未将该应用代码、完整 APK 或用户本地路径纳入运行包。
+
+0.6.1 的 Mad Way Big PNG 头像依据用户提供的社区图稿右上橙色图标，用内置 imagegen 参考重绘；不是官方透明原图，也不是 APK 原始资源。保留生成 RGBA 字节，未做像素后处理。形状比例、管口端面和细微边缘噪点与参考有差异。提示词见 `docs/prompts/mad-way-big-portrait.txt`，源图与输出哈希见 `assets/portraits.json`。
 
 角色设计、动画画面及相关商标归各原权利方。仓库中不对这些美术素材声明开源许可。用于个人原型与兼容性测试；分发或其他用途需自行确认相应权利。
 

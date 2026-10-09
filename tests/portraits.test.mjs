@@ -22,16 +22,27 @@ test('every source portrait remains a content-addressed original with its source
     const bytes = read(`assets/${asset.file}`);
     assert.equal(sha(bytes), asset.sha256);
     assert.equal(bytes.length, asset.bytes);
-    assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
-    assert.equal(bytes.toString('ascii', 12, 16), 'VP8X');
-    assert.ok(bytes[20] & 0x10, 'source includes alpha');
-    assert.equal(bytes.readUIntLE(24, 3) + 1, 150);
-    assert.equal(bytes.readUIntLE(27, 3) + 1, 150);
-    assert.deepEqual(read(`assets/runtime/${asset.sha256}.webp`), bytes);
-    assert.ok(html.includes(`href="./assets/runtime/${asset.sha256}.webp"`));
-    assert.equal(asset.source.kind, 'user-supplied-third-party-app-resource');
-    assert.match(asset.source.archiveEntry, /^res\/drawable-mdpi-v4\/omniverse__[0-9]+_\.webp$/);
-    assert.match(asset.source.apkSha256, /^[a-f0-9]{64}$/);
+    const type = asset.file.endsWith('.webp') ? 'webp' : 'png';
+    if (type === 'webp') {
+      assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
+      assert.equal(bytes.toString('ascii', 12, 16), 'VP8X');
+      assert.ok(bytes[20] & 0x10, 'source includes alpha');
+      assert.equal(bytes.readUIntLE(24, 3) + 1, asset.width);
+      assert.equal(bytes.readUIntLE(27, 3) + 1, asset.height);
+      assert.equal(asset.source.kind, 'user-supplied-third-party-app-resource');
+      assert.match(asset.source.archiveEntry, /^res\/drawable-mdpi-v4\/omniverse__[0-9]+_\.webp$/);
+      assert.match(asset.source.apkSha256, /^[a-f0-9]{64}$/);
+    } else {
+      assert.equal(bytes.toString('ascii', 12, 16), 'IHDR');
+      assert.equal(bytes.readUInt32BE(16), asset.width);
+      assert.equal(bytes.readUInt32BE(20), asset.height);
+      assert.equal(bytes[25], 6, 'reference edit retains RGBA');
+      assert.equal(asset.source.kind, 'ai-reference-redraw');
+      assert.equal(sha(read(asset.source.referenceFile)), asset.source.referenceSha256);
+      assert.equal(asset.source.officialPublisherVerified, false);
+    }
+    assert.deepEqual(read(`assets/runtime/${asset.sha256}.${type}`), bytes);
+    assert.ok(html.includes(`href="./assets/runtime/${asset.sha256}.${type}"`));
   }
   for (const binding of registry.bindings) {
     assert.equal(binding.confirmed, true);
@@ -66,6 +77,14 @@ test('bindings reject unknown or duplicate forms rather than inferring a family 
   assert.throws(() => validatePortraitRegistry(duplicate, ids));
   const missing = copy(); missing.assets = [];
   assert.throws(() => validatePortraitRegistry(missing, ids));
+  for (const invalid of ['../outside', 'icon\" onload=\"bad', '']) {
+    const bad = copy(); bad.assets[0].id = invalid;
+    assert.throws(() => validatePortraitRegistry(bad, ids));
+  }
+  for (const width of [0, -1, 2049, 1.5, NaN]) {
+    const bad = copy(); bad.assets[0].width = width;
+    assert.throws(() => validatePortraitRegistry(bad, ids));
+  }
 });
 
 function fakeDocument() {

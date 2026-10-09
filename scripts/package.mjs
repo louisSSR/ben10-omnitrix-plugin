@@ -24,7 +24,7 @@ if (existsSync(path.join(root, 'assets/portraits.json'))) {
   const portraits = JSON.parse(readFileSync(path.join(root, 'assets/portraits.json')));
   if (!Array.isArray(portraits.assets)) throw new Error('Invalid portrait sources');
   for (const asset of portraits.assets) {
-    if (!/^portraits\/dna-omv-[0-9]{3}\.webp$/.test(asset.file || '') || !/^[a-f0-9]{64}$/.test(asset.sha256 || '')) throw new Error('Unsafe portrait source path');
+    if (!/^portraits\/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.(?:png|webp)$/.test(asset.file || '') || !/^[a-f0-9]{64}$/.test(asset.sha256 || '')) throw new Error('Unsafe portrait source path');
     const relative = `assets/${asset.file}`;
     let resolved = root;
     for (const part of relative.split('/')) {
@@ -34,6 +34,17 @@ if (existsSync(path.join(root, 'assets/portraits.json'))) {
     const bytes = readFileSync(resolved);
     if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Invalid portrait source hash');
     files.push(relative);
+    if (asset.source?.promptFile) {
+      const promptFile = asset.source.promptFile;
+      if (!/^docs\/prompts\/[a-z0-9-]+\.txt$/.test(promptFile)) throw new Error('Unsafe portrait prompt path');
+      let promptPath = root;
+      for (const part of promptFile.split('/')) {
+        promptPath = path.join(promptPath, part);
+        if (lstatSync(promptPath).isSymbolicLink()) throw new Error('Unsafe portrait prompt link');
+      }
+      if (!lstatSync(promptPath).isFile()) throw new Error('Invalid portrait prompt file');
+      if (!files.includes(promptFile)) files.push(promptFile);
+    }
   }
 }
 if (existsSync(path.join(root, 'docs/catalog-scope.md'))) files.push('docs/catalog-scope.md');

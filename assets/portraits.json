@@ -96,6 +96,29 @@
       }
     },
     {
+      "id": "dna-omv-006",
+      "file": "portraits/dna-omv-006.webp",
+      "sha256": "3c829b13a2d30228cc7973e5693e6249dbafc78a4abc50b59f93be397f91ac0d",
+      "bytes": 5056,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5070353479959206,
+      "light": 0.8687792229005451,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__6_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
       "id": "dna-omv-007",
       "file": "portraits/dna-omv-007.webp",
       "sha256": "70541775439424da73f68475b7937ee75cfb0e4def0cab7994a75d19d17430e3",
@@ -113,6 +136,29 @@
         "apkEntry": "config.mdpi.apk",
         "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
         "archiveEntry": "res/drawable-mdpi-v4/omniverse__7_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-008",
+      "file": "portraits/dna-omv-008.webp",
+      "sha256": "6b9e6f387090c5a70ae71db93050c969c70309775d430e902dcc5a7f41e55a7b",
+      "bytes": 6522,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5119611804317686,
+      "light": 0.8599376970519149,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__8_.webp",
         "originalBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false
@@ -182,6 +228,29 @@
         "apkEntry": "config.mdpi.apk",
         "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
         "archiveEntry": "res/drawable-mdpi-v4/omniverse__13_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-014",
+      "file": "portraits/dna-omv-014.webp",
+      "sha256": "4dbedfdc63808ff88a8d77e416655fbd6d549a4bda0fa22eed2b6a397f312fb8",
+      "bytes": 7664,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5083253445262997,
+      "light": 0.8674044703205515,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__14_.webp",
         "originalBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false
@@ -297,6 +366,29 @@
         "apkEntry": "config.mdpi.apk",
         "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
         "archiveEntry": "res/drawable-mdpi-v4/omniverse__25_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-026",
+      "file": "portraits/dna-omv-026.webp",
+      "sha256": "0b0aa533335c529b8ddec4548b752cb2d1501dd17a746aeb1b3649dfce98d6b4",
+      "bytes": 6442,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5058172297980394,
+      "light": 0.8682598325344614,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__26_.webp",
         "originalBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false
@@ -602,6 +694,29 @@
       }
     },
     {
+      "id": "dna-omv-054",
+      "file": "portraits/dna-omv-054.webp",
+      "sha256": "052ae2ac7bfad77a9e9fb768d0635ed25349a9596d9d1b400f4360cdcabad41f",
+      "bytes": 7760,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5101937430950392,
+      "light": 0.8741233877464097,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__54_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
       "id": "dna-omv-057",
       "file": "portraits/dna-omv-057.webp",
       "sha256": "f9de08229f1026b606f8e45533f9cd60adee11b5e0020ff3fe21c87c227ee193",
@@ -622,6 +737,52 @@
         "originalBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-058",
+      "file": "portraits/dna-omv-058.webp",
+      "sha256": "bb2c59358befd19023d059c36da420b7501625d7bd51b9351b9a1a3a35d3d610",
+      "bytes": 4996,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5034434761558945,
+      "light": 0.8724772505687358,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__58_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "reference-mad-way-big",
+      "file": "portraits/reference-mad-way-big.png",
+      "sha256": "f9d8d0a5fa91b36387ace76091395f0f4cb9aef9b006705a79319fdf611e504a",
+      "bytes": 446653,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.47534352941176466,
+      "light": 0.8672172549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/mad-way-big-community-original.jpg",
+        "referenceSha256": "4e0ea74c647e2a3c44bb1dfc8265293cc97dc0725a9646d9194737d5260ded58",
+        "referencePageUrl": "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/mad-way-big-portrait.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "extractionTarget": "The small orange head icon in the top-right corner of the user-provided community artwork.",
+        "alpha": "Native generated RGBA retained. Minor translucent edge noise remains; no post-generation pixel cleanup."
       }
     }
   ],
@@ -963,6 +1124,192 @@
         "sha256": "dff2fd039e80a7113a7e2b4cbf645b4edd9ec1e0d2b34e20a762e3cdf483c0ca"
       },
       "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "walkatrout",
+      "portraitId": "dna-omv-006",
+      "confirmed": true,
+      "reason": "原始头像与彩色参考均有头顶单一背鳍、圆球形头、两侧圆眼和不规则缺口的牙列；这些组合特征明确对应 Walkatrout。只绑定现有 walkatrout，不由编号位置推断身份。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/08/ben_10_omniverse-_walkatrout.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/walkatrout/",
+        "sha256": "ba4fdaad59e161319c897c6678acea51c92c0bcaec2043df48c4a23f07313a88"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "Two green tones replace the blue source coloring.",
+        "Dorsal fin and mouth are simplified to front-facing graphic contours."
+      ],
+      "publicDisclosure": "来自 DNA Altering 的第三方简化头像；双色与线条经过图标化处理，并非官方图标或同作品逐帧原画。",
+      "scope": "Only walkatrout. No automatic variants, aliases, transformations, alternate wearers or family propagation."
+    },
+    {
+      "formId": "juryrigg-ov",
+      "portraitId": "dna-omv-008",
+      "confirmed": true,
+      "reason": "原始头像与 OV 彩色参考共有飞行帽及两侧下垂帽带、突出的长尖鼻、尖耳外侧多枚尖刺、斜眼和露出的尖牙。帽带将它与无帽的基础 UA Juryrigg 区分，明确绑定已有 juryrigg-ov；这是第三方简化头像，未声称帽顶护目镜或每条面部线均逐帧复现。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/04/jury_rigg_ov_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+        "sha256": "9a82aa96b2293aed921bcd1fa9004a4b83344a7eb528af6ef5a2ae5b84e1cd9a"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "The head-top goggles visible in the full-color reference are omitted in the simplified icon.",
+        "Nose projects downward in the front-facing graphic instead of to the side in the three-quarter reference.",
+        "Two green tones replace source red skin and green aviator cap."
+      ],
+      "publicDisclosure": "来自 DNA Altering 的第三方简化头像；双色与线条经过图标化处理，并非官方图标或同作品逐帧原画。",
+      "scope": "Only juryrigg-ov. No automatic variants, aliases, transformations, alternate wearers or family propagation."
+    },
+    {
+      "formId": "spitter",
+      "portraitId": "dna-omv-014",
+      "confirmed": true,
+      "reason": "原始14号具头顶三枚向后弯曲尖刺、占面部大半的尖齿宽口、嘴角两枚独立圆眼以及下唇尖突。已实看Spitter彩色图，四组特征逐项对应；这比此前仅凭外形提出的Ripjaws或Toepick候选充分。只绑定基础spitter，不宣称来源头像是一张官方OV原画。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-spitter.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "024c3dc807d611108fe84408000c385657ea3b69f50c98141040a2400228a4cd"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "Icon adds an Omnitrix mark to the upper head area; the compared full-color original has the emblem lower on the body.",
+        "Green two-tone front-facing graphic simplifies teeth and spines."
+      ],
+      "publicDisclosure": "来自 DNA Altering 的第三方简化头像；图标化双色和线条不是官方逐帧原画。",
+      "scope": "Only spitter. No automatic variant/age/alternate wearer/Ultimate/fusion/Skurd binding."
+    },
+    {
+      "formId": "bullfrag",
+      "portraitId": "dna-omv-026",
+      "confirmed": true,
+      "reason": "原始26号额部弧线、向左右伸尖的连体眼镜、大而平直的蛙形下颌与当前彩色Bullfrag参考一致。已分别实看两份原图；不因图标号相邻或物种共性自动扩展到普通Incursean或其他佩戴者。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/12/bullfrag_ov_4.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bullfrag/",
+        "sha256": "3a17e8812904580357ded761738347db1e64eea5b4ff72c634e2fe660b9944af"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "The green two-tone frontal icon simplifies the source three-quarter jaw contours and eye-glass thickness.",
+        "Only the head is represented; suit and breathing tubes are intentionally outside portrait scope."
+      ],
+      "publicDisclosure": "来自 DNA Altering 的第三方简化头像；图标化双色和线条不是官方逐帧原画。",
+      "scope": "Only bullfrag. No automatic variant/age/alternate wearer/Ultimate/fusion/Skurd binding."
+    },
+    {
+      "formId": "alien-x",
+      "portraitId": "dna-omv-058",
+      "confirmed": true,
+      "reason": "实际查看原始 58 号和 Alien X 彩色图：单个中央高尖加两侧斜尖构成三尖冠，冠下狭小斜眼、无外露嘴和较平直下颌组合吻合。仅支持基础 Alien X 的第三方图标用途，不由纯头像推定任何身体年龄或版本。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/12/alienx.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/alien-x/",
+        "sha256": "2adbde11b04d191cee924baa2d754ff06e65267553d3009dfee19a381e762116"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "统一双色绿替换黑色星空皮肤，星点纹理未保留。",
+        "脸部变为较长、底部圆角的简化几何面。",
+        "冠和眼采用对称图标线条，不是彩色原图的精确投影。"
+      ],
+      "publicDisclosure": "第三方简化 Alien X 头像：保留三尖冠和狭眼识别特征，星空纹理及头部比例经过图标化处理；不是官方透明原画，仅绑定基础 Alien X。",
+      "scope": "Only explicit catalog entry alien-x; no automatic binding to other era, age, wearer, fusion, Ultimate, Skurd, reboot or alias family."
+    },
+    {
+      "formId": "big-chill-ov",
+      "portraitId": "dna-omv-054",
+      "confirmed": true,
+      "reason": "实际查看原始 54 号、UAF Big Chill 彩色图和单独登记的 OV 彩色图。54 号的向外上挑眼壳、额部中央分区、宽大分节口罩更贴近 OV 原图的宽脸与口罩，UAF 原图口部较小。只提议 OV 条目，等待 root 再看，不自动继承 UAF 或 Ultimate。",
+      "reference": {
+        "url": "https://www.pinclipart.com/picdir/big/9-90901_ben-10-clip-art-ben-10-omniverse-big.png",
+        "pageUrl": "https://www.pinclipart.com/maxpin/bTxxo/",
+        "sha256": "1a58f1fb9ea122a65ef0f8278aad0d9bbd1253d36eb60c1214aa31b01bd23d4e"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "头像眼内网格、中央盾形额纹比全身参考更概括。",
+        "口部栅格与颊部被对称放大，蓝黑配色改为统一双色绿。",
+        "150px 图标并非 OV 动画逐帧截取，角度和细节有简化。"
+      ],
+      "publicDisclosure": "第三方简化 OV Big Chill 头像：宽脸、外挑眼壳和分节口部与 OV 彩色参考对应，眼内网格与额纹经过概括；不是官方透明原画。",
+      "scope": "Only explicit catalog entry big-chill-ov; no automatic binding to other era, age, wearer, fusion, Ultimate, Skurd, reboot or alias family."
+    },
+    {
+      "formId": "skurd-whampire-armodrillo",
+      "portraitId": "dna-omv-016",
+      "confirmed": true,
+      "reason": "55秒补充画面中可见高耸向外弯曲的双耳、深色额顶、斜眼及尖下颌；52秒主画面显示变化集中在钻臂。保留吸血鬼本体头像，未用钻钻金刚头像代替宿主。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=55s",
+        "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=55s",
+        "sha256": "60ff00b905f4eff9fc23b0507370ca6f18b37da5b5cf41a40d176658d765d9b5"
+      },
+      "bindingKind": "explicit-reviewed-host-head-reuse",
+      "scope": "Only this named Skurd limb state after direct screenshot comparison; never infer other editions, wearers, body states or fusions.",
+      "visualDifferences": "Third-party front-facing simplified UI portrait; pose and expression differ from the animation screenshot. Limb changes are represented by the full-body art and form label, not the head icon."
+    },
+    {
+      "formId": "skurd-whampire-bloxx",
+      "portraitId": "dna-omv-016",
+      "confirmed": true,
+      "reason": "56秒画面双臂成为积木炮，二炮之间仍是吸血鬼双尖耳、额顶和斜眼面罩。炮口遮住部分下颌；只复用已有宿主简化头像，不声称此帧能还原被遮挡线条。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+        "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=56s",
+        "sha256": "56d0cbb3e3a44c7064510437772d3d3fdd3769cb528e2429ec1d5a9b17fb98bf"
+      },
+      "bindingKind": "explicit-reviewed-host-head-reuse",
+      "scope": "Only this named Skurd limb state after direct screenshot comparison; never infer other editions, wearers, body states or fusions.",
+      "visualDifferences": "Third-party front-facing simplified UI portrait; pose and expression differ from the animation screenshot. Limb changes are represented by the full-body art and form label, not the head icon."
+    },
+    {
+      "formId": "skurd-whampire-feedback",
+      "portraitId": "dna-omv-016",
+      "confirmed": true,
+      "reason": "70秒画面头面清晰：双尖耳、黑色顶区、浅色脸和下颌均与本体相符；反馈能力改变的是前伸双臂。为此具体状态显式复用宿主头像。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+        "pageUrl": "https://www.youtube.com/watch?v=f834Oud6Vck&t=70s",
+        "sha256": "e09d58d5cf4ca5f0cd3292191a81a19fa4187ea6fde89af6c92b010d15e83ef8"
+      },
+      "bindingKind": "explicit-reviewed-host-head-reuse",
+      "scope": "Only this named Skurd limb state after direct screenshot comparison; never infer other editions, wearers, body states or fusions.",
+      "visualDifferences": "Third-party front-facing simplified UI portrait; pose and expression differ from the animation screenshot. Limb changes are represented by the full-body art and form label, not the head icon."
+    },
+    {
+      "formId": "skurd-kickin-hawk-diamondhead-arm",
+      "portraitId": "dna-omv-007",
+      "confirmed": true,
+      "reason": "55秒画面保留直立中央羽冠、两侧眼罩、鸟喙和胡须状下颌；钻石化部位是持剑手臂。为这个精确状态复用小鸡头部图标，不切换成钻石战神头像。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+        "pageUrl": "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
+        "sha256": "b7c011656c86b3fbb06ef743938a9b44eadca0da62e8d4da9ac490e4147245dc"
+      },
+      "bindingKind": "explicit-reviewed-host-head-reuse",
+      "scope": "Only this named Skurd limb state after direct screenshot comparison; never infer other editions, wearers, body states or fusions.",
+      "visualDifferences": "Third-party front-facing simplified UI portrait; pose and expression differ from the animation screenshot. Limb changes are represented by the full-body art and form label, not the head icon."
+    },
+    {
+      "formId": "mad-way-big",
+      "portraitId": "reference-mad-way-big",
+      "confirmed": true,
+      "reason": "按用户原图右上橙色头像参考重绘，保留单片锯齿高冠、斜眼、面颊分线、下颌和两侧短管；没有套用原版超巨人或APK近似头像。",
+      "reference": {
+        "url": "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/",
+        "pageUrl": "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/",
+        "sha256": "4e0ea74c647e2a3c44bb1dfc8265293cc97dc0725a9646d9194737d5260ded58"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "scope": "Only mad-way-big; no automatic Way Big, ultimate, reboot or wearer sharing.",
+      "visualDifferences": [
+        "AI参考重绘，冠部与脸部比例较原图修长。",
+        "两侧管口成为椭圆开口，灰阶有轻微明暗变化。",
+        "原生透明边缘存在少量噪点，保留生成原字节。"
+      ],
+      "publicDisclosure": "依据用户提供的社区头像制作的AI参考重绘，不是官方透明原图。"
     }
   ]
 }
