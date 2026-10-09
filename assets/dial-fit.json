@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "76a70b800ce424cb611d629406861ae249eba932f5dc93d421dd76c7a11d9746",
-  "shapeCount": 191,
+  "sourceSvgSha256": "d3d476cbfd0163d52e1394f0c0fd4a38a17f610a6dc42c79f953862421bd39d1",
+  "shapeCount": 198,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -580,6 +580,12 @@
       "diamondExtent": 1.162525,
       "visiblePixels": 490157
     },
+    "nega-gutrot": {
+      "scale": 0.6057,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.436271,
+      "visiblePixels": 899929
+    },
     "gwen10-wildvine": {
       "scale": 0.6214,
       "method": "native-png-alpha-diamond-envelope",
@@ -1012,6 +1018,18 @@
       "diamondExtent": 1.370282,
       "visiblePixels": 556595
     },
+    "stage-squidstrictor": {
+      "scale": 0.5882,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.479072,
+      "visiblePixels": 3486612
+    },
+    "promo-bob-the-blob": {
+      "scale": 0.5742,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.514964,
+      "visiblePixels": 642219
+    },
     "promo-antigravitesla": {
       "scale": 0.5619,
       "method": "native-png-alpha-diamond-envelope",
@@ -1059,6 +1077,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.043837,
       "visiblePixels": 508112
+    },
+    "nemetrix-vicetopus": {
+      "scale": 0.5786,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.503531,
+      "visiblePixels": 1161867
     },
     "nemetrix-ultimate-panuncian": {
       "scale": 0.6744,
@@ -1162,17 +1186,35 @@
       "diamondExtent": 1.374592,
       "visiblePixels": 110452
     },
+    "mad-way-big": {
+      "scale": 0.575,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.513021,
+      "visiblePixels": 482046
+    },
     "gwen10-os-heatblast": {
       "scale": 0.522,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.666667,
       "visiblePixels": 313930
     },
+    "gwen10-os-grey-matter": {
+      "scale": 0.5424,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.603733,
+      "visiblePixels": 405406
+    },
     "gwen10-os-diamondhead": {
       "scale": 0.647,
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.344646,
       "visiblePixels": 620996
+    },
+    "gwen10-os-four-arms": {
+      "scale": 0.5609,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.550902,
+      "visiblePixels": 602702
     },
     "dynamite-diamondhead": {
       "scale": 0.5983,

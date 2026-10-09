@@ -4096,6 +4096,697 @@
         "sourceLimitationsPreserved": true,
         "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
       }
+    },
+    {
+      "formId": "promo-bob-the-blob",
+      "sourceFile": "assets/source-art/bob-source-15015-original.jpg",
+      "sourceSha256": "66622e66b6d93c1aac41c8ec5581a3653e1caebd4f49fe7cd369b412c0c4eeab",
+      "maskFile": "assets/source-art/bob-promo-reference-edit.png",
+      "maskSha256": "39068431f9485a467a59d7067ac6d3546fdd2d86907dc285412204b42ac8e862",
+      "pageUrl": "https://www.youtube.com/watch?v=p2NV3qp3Q6o",
+      "url": "https://www.youtube.com/watch?v=p2NV3qp3Q6o",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent reference redraw of Bob the Blob from an actually viewed Ultimate Access promotional animation repost. Not official transparent art or a pixel-exact extraction.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted; the community repost does not establish redistribution permission.",
+      "observations": [
+        "Actually viewed the paused full-body Bob at player time15.015 seconds: two pale-blue rounded heads with one eye each, tiny bent arms/hands resting on the belly, black V chest garment with green emblem, folded broad slug body and scalloped legless bottom.",
+        "Viewed the unchanged generated output against that actual screenshot: the two heads, small arms, V garment and full legless body remain recognizable. The other character and environment are excluded."
+      ],
+      "limitations": [
+        "Uploader Tron Travolta is a community repost, not an independently authenticated official channel. Native player dimensions1280x720; the retained source is a browser screenshot, not a decoded native video frame.",
+        "AI redraw slightly widens and regularizes the heads, hands, folded belly and lower scallops; small mouth/digit/emblem lines are interpreted. No new legs or pose are claimed.",
+        "Faint cyan/white edge residue exists in the native output and is measured separately. No raster cleanup or re-encoding was performed.",
+        "Physical phone, real SillyTavern and human acceptance remain unverified."
+      ],
+      "adoptionBasis": "Root watched the actual full-body animation frame and compared the unchanged output; same two-headed legless design retained with disclosed redraw differences.",
+      "sourceCapture": {
+        "kind": "browser-screenshot-of-paused-public-video",
+        "title": "Ben 10 Obscure Aliens: Bob the Blob (Ultimate Access/Acceso Total)",
+        "uploader": "Tron Travolta",
+        "playerTimeSeconds": 15.015,
+        "nativeVideoDimensions": [
+          1280,
+          720
+        ],
+        "screenshotDimensions": [
+          1721,
+          927
+        ]
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "fullPrompt": "Use the supplied actual cartoon frame as the visual reference. Isolate ONLY the pale blue two-headed soft-bodied alien on the LEFT (Bob the Blob), removing the human on the right and the entire environment. Produce a faithful transparent-background full-body character cutout for an alien-selection interface. Preserve this exact floating frontal three-quarter pose, relative proportions and original simple animated line style: two separate rounded stalk-like heads joined to one broad wobbly body, each with a single black-rimmed pale eye and small tense mouth, two small visible hands curled over the upper belly, black V-shaped chest garment connecting the shoulders to the central round green hourglass emblem, and the stacked soft folds and scalloped legless lower edge. Preserve the asymmetry of the heads and the small valley between them. Do not turn the body into a humanoid, do not add legs, boots, tentacles, more heads or extra arms. Keep the same soft blue/white colors and black garment; lightly clarify blurred contour edges and retain the internal fold lines without inventing armor or ornate details. The whole alien is already visible in the source: no pose redesign or new anatomy is needed. Center the complete isolated alien on a truly transparent canvas with generous transparent padding on every side. No background color, glow, smoke, shadow, watermark, text, frame or other character.\n",
+        "promptSha256": "9c43cfefcd39f006cbb6a288bde59d60e22d43f3ea19ef0cfd6c67943bff996b",
+        "transparentBackgroundRequested": true,
+        "rawOutputSha256": "39068431f9485a467a59d7067ac6d3546fdd2d86907dc285412204b42ac8e862",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "alphaInspection": {
+        "size": [
+          1214,
+          1295
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroAlphaBbox": [
+          98,
+          69,
+          1168,
+          1271
+        ],
+        "alpha128Bbox": [
+          207,
+          148,
+          1022,
+          1181
+        ],
+        "alpha1to15": 12039,
+        "alpha16to127": 2681,
+        "alpha128EdgesTopBottomLeftRight": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "readOnlyInspection": true,
+        "rasterReencodingPerformed": false
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "66622e66b6d93c1aac41c8ec5581a3653e1caebd4f49fe7cd369b412c0c4eeab",
+        "maskSha256": "39068431f9485a467a59d7067ac6d3546fdd2d86907dc285412204b42ac8e862",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "stage-squidstrictor",
+      "sourceFile": "assets/source-art/squidstrictor-hawkdown-original.png",
+      "sourceSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+      "maskFile": "assets/source-art/squidstrictor-hawkdown-original.png",
+      "maskSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+      "pageUrl": "https://www.thehawkdown.com/squidstrictor",
+      "url": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/2d463f4e-3de8-498e-8c5c-adbe94901449/Squidstrictor.PNG",
+      "renderMode": "source-alpha",
+      "artProvenance": "Unchanged transparent community illustration by TheHawkDown; stage character identity corroborated by Man of Action, but this drawing is not an authenticated stage production model.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "TheHawkDown illustration and underlying Ben 10 character remain copyrighted; no open license or redistribution grant verified.",
+      "observations": [
+        "Root actually viewed the entire2500x3536 transparent illustration: long swept red-brown mantle/head, huge green eyes, black-and-gray chest garment, yellow-orange tentacles with suction cups and complete curled ends.",
+        "Man of Action creator article dated November10,2011 identifies Squidstrictor and Rocks as new aliens for Ben10:Live – Power of the Omnitrix. This establishes the stage character identity, not every detail of this later community illustration."
+      ],
+      "limitations": [
+        "This is TheHawkDown community artwork and may reinterpret anatomy, outfit, proportions and coloring. It is not certified as the original stage model or an animation frame.",
+        "Powers, planet and species text from the community page were not imported as authenticated canon.",
+        "Original downloaded transparent PNG bytes are used directly, with no generative or programmatic pixel edits.",
+        "Physical phone, real SillyTavern and human acceptance remain unverified."
+      ],
+      "adoptionBasis": "Complete transparent community rendition of the identified stage transformation; accurate attribution replaces a missing selector image while retaining its stage category.",
+      "identitySourceUrls": [
+        "https://manofaction.tv/blog/its-hong-kong-hero-time-ben-10-style/"
+      ],
+      "supportingSources": [],
+      "sourceCapture": {
+        "kind": "direct-community-png-download",
+        "httpStatus": 200,
+        "rawBytesPreserved": true
+      },
+      "alphaInspection": {
+        "size": [
+          2500,
+          3536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroAlphaBbox": [
+          42,
+          233,
+          2483,
+          3210
+        ],
+        "alpha128Bbox": [
+          45,
+          236,
+          2479,
+          3207
+        ],
+        "alpha1to15": 25693,
+        "alpha16to127": 13412,
+        "alpha128EdgesTopBottomLeftRight": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "readOnlyInspection": true,
+        "rasterReencodingPerformed": false
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+        "maskSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "nega-gutrot",
+      "sourceFile": "assets/source-art/nega-gutrot-source-original.png",
+      "sourceSha256": "499f67ae83d269967d2d0485d953f25598151a241aee7fc55651b7b8ae690810",
+      "maskFile": "assets/source-art/nega-gutrot-reference-edit.png",
+      "maskSha256": "f91309a4f6f2449640a0cf7152394137fcb654ccb03cea3c4eb679dd91c534bf",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gutrot/",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/09/nega_gutrot.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference redraw of a community-hosted Nega Gutrot animation frame, with conservative reconstruction of two cropped short exhaust-pipe ends. Not official transparent artwork or a pixel-exact cutout.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork is copyrighted; community hosting is not an open license or a redistribution grant.",
+      "observations": [
+        "Actually viewed the retained 481x479 opaque source: pale lavender head and shoulder barrels, gray/charcoal torso, narrow eyes, respirator mask, purple abdomen chamber, both lowered arms and both boots are visible in an elevated three-quarter standing pose.",
+        "The source image-right forearm has two short cylindrical exhausts whose outer terminals extend through the right crop boundary. The opposite forearm visibly supports the paired short-pipe construction; exact unseen far-side rims remain inferred.",
+        "Actually viewed the new output: same overall high-angle body pose, gray/lavender Nega design, round chest and short legs retained; both right-side tube terminals are now contained. Original rocky background and free-standing gas are removed.",
+        "The new result is byte-identical to the built-in imagegen output. Alpha>=128 body bounds [39,37,1215,1223] are fully inside 1237x1271, with zero strong-alpha pixels on all four edges."
+      ],
+      "limitations": [
+        "Ben10Hero labels the source Nega Gutrot, but this is a community mirror. Original official upload, exact episode timestamp, artist and rights chain are not independently authenticated.",
+        "Two cropped image-right exhaust-pipe ends were interpreted from the visible same-body pipe construction. Their exact rim angle and length are not recovered production pixels; this output must not be described as a faithful complete original-frame extraction.",
+        "AI redraw regularizes valves, facial lines, body highlights and abdomen gas texture, and slightly alters contour proportions. No regular green Gutrot reference was used.",
+        "The older held output was inspected only for comparison and was not supplied to this generation. The old receipt remains unchanged; its narrow no-endpoint-repair gate is superseded for this candidate by the current authorization for disclosed small repairs.",
+        "Low-alpha residue remains: alpha1-15=11979 and alpha16-127=3988. Nonzero alpha reaches the bottom canvas although the strong body is contained. No pixel cleanup or re-encoding was performed.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance remain unverified for this candidate."
+      ],
+      "adoptionBasis": "Identity-preserving same-pose reconstruction with only small pipe-terminal completion disclosed; source and output actually viewed, ready for root current-UI review.",
+      "sourceCapture": {
+        "kind": "retained-community-animation-mirror",
+        "nativeSize": [
+          481,
+          479
+        ],
+        "newNetworkFetchThisRound": false
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "fullPrompt": "Use case: background-extraction with explicitly disclosed small endpoint reconstruction.\nAsset type: transparent character art for an Omnitrix silhouette selector.\nInput image 1 is the original low-resolution animation-frame reference, the ONLY image source. Isolate its Nega Gutrot character and redraw a clear full figure on a genuinely transparent RGBA background, keeping the existing elevated three-quarter view and pose: huge round torso, low head between cylindrical shoulders, two downturned arms, short bent legs and both pointed boots. Preserve this exact Nega design: pale gray and charcoal armor, lavender/purple head and shoulder panels under the scene lighting, narrow pale eyes, respirator face, gray/black chest badge, circular valves, barrel forearms, and the purple abdomen gas window. Do not change to the regular green Gutrot, invent a new stance, add extra fingers, or expose naturally hidden far-hand anatomy.\nThe source cuts only the far ends of the TWO short exhaust tubes protruding from the image-right forearm. Allow a small, conservative interpretative completion of these cylindrical pipe mouths based on the matching already-visible tubes of the image-left forearm; keep their source direction and short length. Do not elongate the arm or add new machinery. All other visible body contours should closely follow the source. Preserve its flat animated drawing style and simplify only unreadable tiny details; avoid glossy 3D remodeling.\nRemove every piece of rocky ground, cast shadow, background smoke, surrounding purple gas and detached glow. Retain gas texture only inside the enclosed abdomen window. Center the entire character at about 80 percent of the canvas, with generous completely transparent margin on every side, especially beyond both right forearm nozzles and the boots. No cropped body parts, no background plane, no text, no checkerboard drawn into the image, no halo. The output is an interpretative reference redraw, not recovered official transparent artwork or a pixel-exact cutout.",
+        "promptSha256": "27e27e348c812a90e313431f3b260586344119d9c6500d017cf6c528595682df",
+        "transparentBackgroundRequested": true,
+        "rawOutputSha256": "f91309a4f6f2449640a0cf7152394137fcb654ccb03cea3c4eb679dd91c534bf",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "alphaInspection": {
+        "size": [
+          1237,
+          1271
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroAlphaBbox": [
+          33,
+          23,
+          1220,
+          1271
+        ],
+        "alpha128Bbox": [
+          39,
+          37,
+          1215,
+          1223
+        ],
+        "alpha1to15": 11979,
+        "alpha16to127": 3988,
+        "alpha128EdgesTopBottomLeftRight": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "readOnlyInspection": true,
+        "rasterReencodingPerformed": false
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "499f67ae83d269967d2d0485d953f25598151a241aee7fc55651b7b8ae690810",
+        "maskSha256": "f91309a4f6f2449640a0cf7152394137fcb654ccb03cea3c4eb679dd91c534bf",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "mad-way-big",
+      "sourceFile": "assets/source-art/mad-way-big-community-original.jpg",
+      "sourceSha256": "4e0ea74c647e2a3c44bb1dfc8265293cc97dc0725a9646d9194737d5260ded58",
+      "maskFile": "assets/source-art/mad-way-big-reference-edit.png",
+      "maskSha256": "8af769c778984c75856cc21b63be5671d4fa79400e2d55fc008a84cf6c13e203",
+      "pageUrl": "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/",
+      "url": "https://i.pinimg.com/736x/03/8d/d9/038dd90b68e9a4e764248bfe27f6869e.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference redraw of a complete community illustration credited to RZGmon200, compared with a cropped Mad Way Big animation mirror. Not official transparent artwork; full lower-body and small design details follow the community illustration.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Community image credited to RZGmon200 and underlying Ben 10 artwork remain copyrighted; original artist publication and redistribution permission are unverified.",
+      "observations": [
+        "Actually viewed the complete community illustration: tall orange serrated head fin, masked white/orange face, gray shoulder plates with orange spikes, white chest with orange center/device, hanging arms, paired serrated forearm fins, orange shins and complete gray/white feet with orange ankle studs.",
+        "Actually compared the retained animation crop. It shares the Mad white/orange body, spiked gray shoulder plates, orange wrapped forearms, dark neck and serrated fins. Unlike the community pose, the animation stance is wider and its long head fin and feet are cropped.",
+        "Actually viewed the generated output: full community-reference standing pose is retained; the detached head icon, black creator emblem and white page are excluded. This is a redraw of the full community figure, not an extension of the animation pose.",
+        "RGB preview displays an orange/gray haze. Sampled exterior points (230,210),(110,715),(821,400),(491,1510),(530,1250),(20,20) have alpha0. They do not establish visible opaque background; low-alpha residue is separately quantified.",
+        "Output is byte-identical to the built-in imagegen PNG. Alpha>=128 body bounds [156,20,898,1482] are inside 1024x1536 and all four strong-alpha edge counts are zero."
+      ],
+      "limitations": [
+        "The source pin title credits RZGmon200 and names Into the Omniverse - Mad Way Big. The artist original DeviantArt post and permission chain were not recovered; the illustration is a community fan drawing, not an authenticated production model.",
+        "The animation support verifies visible costume/armor correspondences, not the entire community reconstruction. Complete crest tip, feet, ankle studs and exact fine geometry rely on the community artwork and are not independently established by the cropped animation image.",
+        "The community stance is used directly. It differs from the wider stance of the animation crop; no claim is made that the result reproduces a specific original frame or camera.",
+        "AI adjusts line weight, shading, fingers, spike shapes and proportions. The complete community outline is recognizable, but this is not a pixel-faithful cutout or an official recovered silhouette.",
+        "Alpha range0-254; alpha1-15=26544 and alpha16-127=6252. Nonzero alpha reaches the bottom edge; the strong body is contained. Colored zero-alpha RGB outside the body is invisible, while faint alpha residue may remain. No programmatic raster cleanup or re-encoding occurred.",
+        "Current watch UI, physical phone, real SillyTavern and human acceptance remain unverified for this candidate."
+      ],
+      "adoptionBasis": "Complete same-design community figure with actual comparison to animation costume evidence; explicit fan-art/AI interpretation accepted as a candidate, not official final-model authentication.",
+      "sourceCapture": {
+        "kind": "public-community-illustration-repost",
+        "creditedArtist": "RZGmon200",
+        "httpStatus": 200,
+        "downloadedBytes": 92018
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/mad-way-big-animation-support-original.png",
+          "sha256": "ea2c02f20221b8cf7655aa76f4abf034ec1366941cefd7561a107146f5a62df1",
+          "bytes": 292972,
+          "url": "http://ben10hero.com/wp-content/uploads/2016/09/mad_way_big.png",
+          "role": "Cropped animation mirror supporting the Mad white/orange costume, gray spiked armor, mask and serrated fin identity; it does not show the full crest or feet.",
+          "actuallyViewed": true
+        }
+      ],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "attempt": 1,
+        "fullPrompt": "Use case: background-extraction, reference-preserving redraw.\nAsset type: transparent full-body Mad Way Big character art for an Omnitrix selector.\nImage 1 is the main full-body community illustration credited to RZGmon200, not an official production model. Its standing three-quarter pose and visible complete outline are the pose authority. Image 2 is a cropped animation-frame mirror of the same Mad Way Big design, supplied ONLY to check the white/orange costume, gray spiked shoulder armor, mask and long serrated fin language; do not extend Image 2 into a newly invented action pose.\nRedraw only the large main character from Image 1 with a genuinely transparent RGBA background. Keep the same narrow tall body, entire long orange serrated head crest, two gray shoulder plates with orange studs, white chest with orange center and dark chest device, black neck, orange wrapped forearm plates, paired large jagged orange forearm fins, hanging pale fingers, orange shin guards and both gray/white broad feet with their visible orange ankle studs. Preserve all main proportions, limb angles, mechanical/cartoon line shapes, small asymmetries and the existing stance. Do not use ordinary red/white Way Big or Perkins Big Chuck; these are different designs. Keep the flat cel-shaded illustration style and the existing muted orange, pale gray and dark gray palette; do not add realistic metallic gloss.\nRemove the white page, detached orange head icon, small black artist emblem, all text and any ground shadow from the output. Keep only the main complete character. Scale it down within the canvas so its head fin, both forearm blades, fingers and both soles have clear transparent margin. Do not crop any appendage, add a cape/tail, add extra spikes, or create a background/halo/checkerboard. Minor contour cleanup is interpretative: this is an AI reference redraw of community artwork whose lower-body and tiny spike details are not certified by the cropped animation support, not an official transparent asset or exact production reconstruction.",
+        "promptSha256": "6c03802cc435a8458fc511635ea6a3bb0af5c3d7ce84243bd47750d42fe2868f",
+        "transparentBackgroundRequested": true,
+        "rawOutputSha256": "8af769c778984c75856cc21b63be5671d4fa79400e2d55fc008a84cf6c13e203",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "alphaInspection": {
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "nonzeroAlphaBbox": [
+          65,
+          17,
+          1004,
+          1536
+        ],
+        "alpha128Bbox": [
+          156,
+          20,
+          898,
+          1482
+        ],
+        "alpha1to15": 26544,
+        "alpha16to127": 6252,
+        "alpha128EdgesTopBottomLeftRight": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "readOnlyInspection": true,
+        "rasterReencodingPerformed": false
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "4e0ea74c647e2a3c44bb1dfc8265293cc97dc0725a9646d9194737d5260ded58",
+        "maskSha256": "8af769c778984c75856cc21b63be5671d4fa79400e2d55fc008a84cf6c13e203",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "nemetrix-vicetopus",
+      "sourceFile": "assets/source-art/vicetopus-ben10hero-original.png",
+      "sourceSha256": "14eccd4b00db0ee0ba1c43c82ee3a0eb447661920af56ffa6eb3e536d98919eb",
+      "maskFile": "assets/source-art/vicetopus-reference-edit.png",
+      "maskSha256": "414c35801f22ba4616fc1585807f1d9bb7359a73ba0c7f23889aa4b6e6855cca",
+      "pageUrl": "https://ben10hero.com/additional-aliens/brainstorm/",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/11/vicetopusb10ov21.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "Community-hosted Omniverse animation image used for one built-in AI transparent reference redraw, with disclosed small image-edge contour reconstruction. Not an official transparent original.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Original animation/character copyright retained; redistribution license unknown; AI redraw disclosed.",
+      "observations": [
+        "Actually viewed raw source: maroon beaked head and visible red eye, horned brow, complete red collar with gray conical studs, humped mantle with brown patches, two thick rounded front tentacle loops, and smaller right/rear coiled tentacles. Source alpha is255 throughout and includes scene surroundings.",
+        "Actually viewed native generated output and byte-identical local copy: seated/crouched body proportions, forward-left head, huge rounded front tentacles, collar spikes and curled rear tips remain recognizable and contained. No standing pose, long invented extended tentacles or extra separated eight-arm star pose.",
+        "Image-right short rear contour/end completion and finer face/teeth/stud/tentacle lines are AI reconstruction. Green window, wall, floor and partial other-character fragments are removed; no opaque rectangular scene background is visible."
+      ],
+      "limitations": [
+        "The 425x480 source is a community-hosted animation image, retrieved from the actual Ben10Hero Brainstorm gallery item captioned Brainstorm's weaknesses 34 (Vicetopus). Its original official upload chain and exact episode timestamp are not verified; it is not an official transparent asset.",
+        "The pose retains source self-overlap: large head and collar, two massive rounded fore tentacles and compact/coiled rear tentacles. Hidden appendages were not spread into eight independent limbs. The source image-right back/rear curve was tight to the canvas; the small outer arc and curl ends were reconstructed and are interpretative.",
+        "The larger alpha output is a built-in imagegen reference redraw, not pixel-exact extraction. Facial lines, eye/beak detail, teeth, stud/spine contours, brown patches and small tentacle-end shapes can differ from the low-resolution animation reference.",
+        "Native output bytes are retained without raster cleanup. Alpha1-15=10721 pixels and alpha16-127=3667 remain; nonzero bbox[0,8,1166,1333] touches left/bottom. Strong-alpha bbox>=128[8,11,1161,1323] and all four strong-alpha edge counts0. Do not claim residue-free alpha or infer a cropped body from faint edge residue.",
+        "The source supports the regular Omniverse Vicetopus body. The catalog A Fistful of Brains Panuncian-copy occurrence is not separately observed in this image; no exact wearer/episode or separate-species claim is made.",
+        "Copyright and redistribution license unknown. Current watch UI, physical phone/SillyTavern and driver acceptance remain separate and are not asserted here."
+      ],
+      "adoptionBasis": "The larger new source actually supplies the recognizable compact Vicetopus head/collar/body/tentacle pose; source-supported main structures retained, short edge reconstruction disclosed. Candidate pending root independent material/current-UI review.",
+      "sourceCapture": {
+        "method": "Raw bytes downloaded from actual captioned Ben10Hero gallery image; not a browser screenshot or decoded original episode frame",
+        "sourceSize": [
+          425,
+          480
+        ],
+        "actualFormat": "PNG",
+        "sourceMode": "RGBA, entirely opaque source alpha",
+        "actualCaption": "Brainstorm's weaknesses 34 (Vicetopus)",
+        "literalPageImageUrl": "http://ben10hero.com/wp-content/uploads/2016/11/vicetopusb10ov21.png",
+        "requestedImageUrl": "https://ben10hero.com/wp-content/uploads/2016/11/vicetopusb10ov21.png",
+        "transportNote": "Same host/path requested over HTTPS before any request to insecure HTTP scheme; not an alternate route after refusal."
+      },
+      "editionEvidence": {
+        "body": "Vicetopus, regular Omniverse Nemetrix predator body",
+        "pageCaption": "Brainstorm's weaknesses 34 (Vicetopus)",
+        "observedFeatures": "Maroon spotted mantle, beaked head/red eye, red studded collar and huge compact octopus-like tentacles.",
+        "catalogAppearanceBoundary": "The source supports the regular Omniverse Vicetopus body. The catalog A Fistful of Brains Panuncian-copy occurrence is not separately observed in this image; no exact wearer/episode or separate-species claim is made."
+      },
+      "supportingSources": [],
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction\nAsset type: transparent Ben 10 Omniverse Vicetopus reference redraw for a transformation silhouette selector.\nPrimary request: extract and faithfully redraw only the large maroon octopus-like alien shown in the supplied animation reference, in its existing seated/crouched three-quarter pose. Output one complete character on genuine transparent alpha, with clean padding.\nIdentity and pose: retain the large forward-left beaked head, visible glowing red eye, black eye/beak patches and teeth, thick red neck collar with gray conical studs, and the long humped dark-red mantle with irregular brown patches. Preserve the original massive rounded body proportions and low seated position.\nTentacles: preserve the two very thick fore tentacles curving down into rounded ground-level loops, their interior curl cuts, and the smaller overlapping/coiled tentacles visible behind and to the right. Keep the source self-overlap and the particular curled/compact posture. Do not spread it into an eight-armed star, add extra independent limbs, or unroll hidden tentacles. This is the shown body, not a new action pose.\nCompleteness: the head, collar and front tentacle loops are visible in the source; keep them. The far image-right back/body and small rear curl are tight to the reference edge; complete only the short local outer arc/end needed to follow the visible existing curve, then add transparent margin. Do not invent long missing tentacles or large unseen anatomy.\nStyle: maintain the animation's maroon skin, brown patches, red collar, gray studs, black outlines, horns and beak structure. Fine lines and the small edge completion are AI interpretation, not official high-resolution detail or exact tracing.\nRemove only non-character surroundings: green window panels, gray-brown wall, floor/water, reflections, background outlines, tiny foreground objects and any partial other character at the far right. No props, text, logos or other aliens.\nBackground and padding: real alpha-zero empty background with comfortable clean margins around every collar spike, tentacle and body curve. No opaque color rectangle, shadow, glow, floor contact patch, haze or isolated background fragments. Preserve all supported outer contours and internal transparent curl gaps.",
+        "promptSha256": "918aaa6f3eff5b3256df70b45e55b580e6c501baabba83daefec51423172dd87",
+        "attempt": 1,
+        "rawOutputSha256": "414c35801f22ba4616fc1585807f1d9bb7359a73ba0c7f23889aa4b6e6855cca",
+        "rawBytesMatch": true,
+        "archivedPromptFileSha256": "918aaa6f3eff5b3256df70b45e55b580e6c501baabba83daefec51423172dd87",
+        "promptStorageNote": "Archived UTF-8 LF prompt matches the inline built-in tool prompt."
+      },
+      "alphaInspection": {
+        "size": [
+          1180,
+          1333
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBbox": [
+          0,
+          8,
+          1166,
+          1333
+        ],
+        "alpha128Bbox": [
+          8,
+          11,
+          1161,
+          1323
+        ],
+        "alpha128EdgeCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "alpha1to15": 10721,
+        "alpha16to127": 3667,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "14eccd4b00db0ee0ba1c43c82ee3a0eb447661920af56ffa6eb3e536d98919eb",
+        "maskSha256": "414c35801f22ba4616fc1585807f1d9bb7359a73ba0c7f23889aa4b6e6855cca",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "gwen10-os-four-arms",
+      "sourceFile": "assets/source-art/gwen10-os-four-arms-source-original.png",
+      "sourceSha256": "67c4d398013eb5572dae232e8a49be965eea4f57a2906052abc3eda1e7c34783",
+      "maskFile": "assets/source-art/gwen10-os-four-arms-reference-edit.png",
+      "maskSha256": "6e88d1953f666b191c41b7acfca44a30a351dfea355f1042a125d3e9eb8a2fa4",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/four-arms/",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/fourarms_gwen_os.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference reconstruction of cropped community-mirrored Original Series Gwen 10 character art; lower limbs interpreted. Not official transparent artwork.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 character/animation and community source copyrighted; original uploader permission and open licensing unverified. Generated transparent reference is AI art, not official original.",
+      "observations": "Actually viewed source and saved output. Orange bob hair, four small yellow eyes, red Tetramand face/body, FOUR connected muscular arms (upper fists raised, lower hands down), pale-blue/dark-blue top, image-right shoulder Omnitrix badge and grey trousers match the visible OS Gwen identity. Output continues the cropped trousers through two shins into bare red divided-toe feet and preserves the standing arm pose; those unseen feet and lower-leg proportions are interpretative.",
+      "limitations": [
+        "Original input is a cropped Ben10Hero community mirror of an OS Gwen 10 animation image. Official upload chain, original artist and reuse licensing are unverified; output is AI reference reconstruction, never official transparent original or exact model reproduction.",
+        "Unseen lower limbs were expressly reconstructed, not recovered source pixels. Main visible identity, costume and action govern the redraw; no claim of exact original foot contour.",
+        "AI redraw changed facial/hand linework, shading, proportions and fine outlines. Generated PNG bytes were copied unchanged; no programmatic pixel editing.",
+        "Alpha-positive faint pixels extend beyond the alpha>=128 contour. Strong blue lower-body fringe samples have A1 and zero A>=128 pixels, not an opaque outside scene. Final pure-black current UI inspection remains pending.",
+        "No actual complete same-version foot image was acquired. The prompt invoked Original Series Tetramand conventions, but the generated feet are red/bare rather than the requested dark feet. Exact color, toe count, length and original footwear cannot be authenticated from this source.",
+        "Ordinary Four Arms AVIF anatomy reference could not be processed by view_image (unsupported data), was not used as imagegen input and is not presented as an actually viewed supporting image."
+      ],
+      "adoptionBasis": "Identity-preserving OS Gwen body reference reconstruction using the visible grey trousers/stance; unseen lower ends inferred under root authorization, not an ordinary Ben or OV Gwen substitute.",
+      "sourcePageLabel": "Gwen 10 as Four Arms OS",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent character reference for a Ben 10 transformation silhouette selector.\nEdit target: the supplied local Gwen Four Arms image, a 299x458 community mirror of the ORIGINAL 2005 Gwen 10 what-if animation. It is not the Omniverse Gwen design.\nKeep the visible character's identity, costume and action: short orange bob hair, red face with FOUR small yellow eyes, broad Tetramand upper body, a pale light-blue torso panel with dark-blue sleeves/side panels, round black-and-white Omnitrix badge on the shoulder at image-right (never move it to the chest), grey trousers, FOUR muscular red arms. The upper pair have fists raised in front of the chest, the lower pair hang down with the same relaxed curled hand directions. Preserve all four shoulder connections, the existing hand proportions, torso width, waist and leg spacing. Keep the source's expression and facing direction. No black Ben forehead/chin stripe, no OV hair, no black sleeveless OV outfit.\nThe image cuts both trouser legs near the lower frame edge. Reconstruct only the continuation needed to finish this same wide standing stance: proportional short lower shins under the already visible trouser legs and simple dark, broad Tetramand feet following the Original Series species design convention. The exact feet are absent from this source and this is an explicitly interpretative reference reconstruction, not authenticated animation anatomy. Do not add a new costume, a tail, extra limbs, weapons or a different pose. Keep this Gwen version's grey trousers and female character identity; do not replace the whole body with ordinary Ben Four Arms.\nRemove all industrial scenery and objects. Keep flat 2D animation styling with clear dark outlines and the original red/orange/light-blue/dark-blue/grey colors. Preserve the visible silhouette and costume as closely as possible; clean reconstruction of the missing lower ends is the only permitted anatomical expansion.\nOutput ONE complete visible figure centered on an actual transparent RGBA canvas, generous clear margins all around, including the hair, four hands and both feet. No backdrop, glow, floor, cast shadow, text, labels, watermark, grid, checkerboard or extra character. This is a reference redraw, not official transparent artwork or a pixel-exact extraction.",
+        "promptSha256": "1a60f1b64a11ea9e482463d7beae8e988b49223a6c0d0941e20e69c045e9aced",
+        "outputBytesUnchanged": true,
+        "iterations": 1,
+        "programmaticPixelEdits": 0
+      },
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "67c4d398013eb5572dae232e8a49be965eea4f57a2906052abc3eda1e7c34783",
+        "maskSha256": "6e88d1953f666b191c41b7acfca44a30a351dfea355f1042a125d3e9eb8a2fa4",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
+    },
+    {
+      "formId": "gwen10-os-grey-matter",
+      "sourceFile": "assets/source-art/gwen10-os-grey-matter-source-original.png",
+      "sourceSha256": "94b1c7dbc98075dd83713e5c423c81cc8f9e266ee753f5c1a9766495c8850805",
+      "maskFile": "assets/source-art/gwen10-os-grey-matter-reference-edit.png",
+      "maskSha256": "9a069d589439cc6cf771e4eba48fef3d71441f4c7ecc1b8dfca92abc388ebdd3",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/grey_matter_gwen_os.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference reconstruction of cropped community-mirrored Original Series Gwen 10 character art; lower limbs interpreted. Not official transparent artwork.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 character/animation and community source copyrighted; original uploader permission and open licensing unverified. Generated transparent reference is AI art, not official original.",
+      "observations": "Actually viewed primary, the ordinary OS Grey Matter anatomy helper and the saved output. Gwen orange hair, huge grey head/oval yellow-green eyes, jagged anxious mouth, pale-blue jumpsuit/dark-blue sleeves and the two forward-curled raised hands match the primary. Missing lower trousers/shins and grey flattened splayed feet were reconstructed from the OS Galvan anatomy helper; the helper's Ben forehead/suit stripes, arm-down pose and costume were not copied.",
+      "limitations": [
+        "Original input is a cropped Ben10Hero community mirror of an OS Gwen 10 animation image. Official upload chain, original artist and reuse licensing are unverified; output is AI reference reconstruction, never official transparent original or exact model reproduction.",
+        "Unseen lower limbs were expressly reconstructed, not recovered source pixels. Main visible identity, costume and action govern the redraw; no claim of exact original foot contour.",
+        "AI redraw changed facial/hand linework, shading, proportions and fine outlines. Generated PNG bytes were copied unchanged; no programmatic pixel editing.",
+        "Alpha-positive faint pixels extend beyond the alpha>=128 contour. Strong blue lower-body fringe samples have A1 and zero A>=128 pixels, not an opaque outside scene. Final pure-black current UI inspection remains pending.",
+        "Ordinary OS Ben Grey Matter is a different wearer. It only supports generic lower-shin/ankle/flattened-foot construction; it cannot prove Gwen-specific leg lengths, exact foot shape or unseen clothing boundaries. Lower legs and feet are a substantial disclosed inferred continuation, not merely already visible pixels."
+      ],
+      "adoptionBasis": "Identity-preserving OS Gwen reference reconstruction with a separately disclosed same-species/same-series ordinary Ben anatomy helper; no identity or costume merge.",
+      "sourcePageLabel": "Gwen as Grey Matter OS",
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "performed": true,
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: one transparent character reference for a Ben 10 transformation silhouette selector.\nPrimary edit target: Image 1, Gwen Grey Matter from the ORIGINAL 2005 Gwen 10 what-if episode, a cropped 278x343 community mirror. Preserve this specific Gwen appearance, not ordinary Ben or Omniverse Gwen.\nKeep the huge grey Galvan head, very large oval yellow-green eyes with small black pupils, open anxious jagged mouth, orange hair behind the head, and the source's pale blue one-piece jumpsuit with dark-blue sleeves and small pale collar. Keep the existing forward-curled hands raised near the chest, their orientation and proportions, thin torso, shoulder/arm connections, head tilt and the same sideways facing direction. No Ben-style black forehead stripe or torso stripe, no green Omniverse uniform, no human Gwen body.\nInput roles: Image 1 governs identity, clothing, head/body proportions, expression and pose. Image 2, the complete Original Series ordinary Ben Grey Matter PNG, supplies ONLY Galvan lower-shin, ankle and flattened three-part foot anatomy as a same-species/same-series construction reference. Do not copy its different costume, forehead stripe, eye shape, arm-down pose, chest/back emblem placement or tall narrow head.\nImage 1's trouser legs run below its bottom edge. Reconstruct the missing lower leg continuations in the same pale blue jumpsuit, using the short thin Galvan lower legs, narrow ankles and flattened grey splayed feet shown by Image 2. Preserve the primary figure's slight lean and leg separation; no leap, new limb pose, extra arm, tail or accessory. These unseen Gwen lower limbs are an explicitly interpretative reference reconstruction; the source does not authenticate their exact contour.\nRemove the whole environment and nearby human/objects. Keep a clean flat 2D Original Series animation look with dark outlines. Source colors, hair and big eye proportions matter more than polishing.\nOutput ONE complete isolated figure centered on an actual transparent RGBA canvas, with ample clear margins around all hair, fingers and both feet. No white rectangle, scenery, glow, floor, shadow, text, label, watermark, grid or drawn checkerboard. Do not invent a chest Omnitrix emblem when it is not visible in the primary front view. This is a faithful identity-preserving reference redraw with disclosed lower-limb interpretation, not official pixel-exact art.",
+        "promptSha256": "3473a678f6525163456ab7e8a956ce9326a3f4ab1ee7ec5b2b7d14c1ed53100a",
+        "outputBytesUnchanged": true,
+        "iterations": 1,
+        "programmaticPixelEdits": 0
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/grey-matter-os-anatomy-reference-original.png",
+          "sha256": "c53bd81fed195cb0160d8395b9f209e70d786d7ca0061ba2f2b9e5174e13c34c",
+          "url": "https://ben10hero.com/wp-content/uploads/2016/07/grey_matter_profile.png",
+          "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+          "role": "Actually viewed ordinary Ben OS Grey Matter, lower-shin/ankle/foot anatomy helper only; different wearer/costume, not Gwen-specific authenticated lower body.",
+          "sourceViewed": true
+        }
+      ],
+      "uiReview": {
+        "version": "0.4.3",
+        "checkedAt": "2026-10-09T10:44:31.772Z",
+        "surface": "Codex in-app browser; desktop and responsive iframe previews",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "mobileClientWidths": [
+          375,
+          305
+        ],
+        "desktop": {
+          "outerWidth": 1280,
+          "clientWidth": 1265,
+          "height": 720
+        },
+        "sourceSha256": "94b1c7dbc98075dd83713e5c423c81cc8f9e266ee753f5c1a9766495c8850805",
+        "maskSha256": "9a069d589439cc6cf771e4eba48fef3d71441f4c7ecc1b8dfca92abc388ebdd3",
+        "inspectedPreviewSha256": "14723049e924b066cdcce810f38dfb4897d42e74c56ae8bf04f078ea8cca02f7",
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "scopeNote": "Original source-stage limitations are retained verbatim. Any earlier candidate-stage pending UI wording is superseded only for the local preview by this uiReview; real host, physical phone and human acceptance remain unverified."
+      }
     }
   ],
   "mergedForms": [

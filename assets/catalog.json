@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 191,
-    "missing": 33
+    "reviewed": 198,
+    "missing": 26
   },
   "forms": [
     {
@@ -2376,11 +2376,22 @@
       "group": "alternate",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nega-gutrot",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gutrot/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference redraw of a community-hosted Nega Gutrot animation frame, with conservative reconstruction of two cropped short exhaust-pipe ends. Not official transparent artwork or a pixel-exact cutout.",
+      "dialFit": {
+        "scale": 0.6057,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.436271,
+        "visiblePixels": 899929
+      }
     },
     {
       "id": "gwen10-wildvine",
@@ -4312,11 +4323,22 @@
       "group": "extra",
       "appearance": "Ben 10 Live: Power of the Omnitrix. Official stage alien; TV-canon status disputed among crew, not an animated-series appearance.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-stage-squidstrictor",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Squidstrictor",
         "https://www.prlog.org/10720300-cartoon-networks-ben-10-live-power-of-the-omnitrix-touring-australia-septemberoctober-2010.pdf"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.thehawkdown.com/squidstrictor"
+      ],
+      "artSourceLabel": "Community reference; source and silhouette inspected",
+      "artProvenance": "Unchanged transparent community illustration by TheHawkDown; stage character identity corroborated by Man of Action, but this drawing is not an authenticated stage production model.",
+      "dialFit": {
+        "scale": 0.5882,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.479072,
+        "visiblePixels": 3486612
+      }
     },
     {
       "id": "promo-bob-the-blob",
@@ -4325,12 +4347,23 @@
       "group": "extra",
       "appearance": "Ben 10: Ultimate Access Commercial 1; actual official promo transformation, non-canon to TV. Later crew commission is a distinct non-production redesign.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-promo-bob-the-blob",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Bob_the_Blob",
         "https://ben10.fandom.com/wiki/Ben_10:Ultimate_Access",
         "https://vimeo.com/188743096"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=p2NV3qp3Q6o"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent reference redraw of Bob the Blob from an actually viewed Ultimate Access promotional animation repost. Not official transparent art or a pixel-exact extraction.",
+      "dialFit": {
+        "scale": 0.5742,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.514964,
+        "visiblePixels": 642219
+      }
     },
     {
       "id": "promo-antigravitesla",
@@ -4569,13 +4602,24 @@
       "group": "nemetrix",
       "appearance": "A Fistful of Brains: Khyber's Panuncian copies use all nine regular predator forms.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-nemetrix-vicetopus",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/A_Fistful_of_Brains",
         "https://ben10.fandom.com/wiki/Omnivoracious_(Transformation)",
         "https://ben10.fandom.com/wiki/Nemetrix",
         "https://ben10.fandom.com/wiki/Vicetopus_(Transformation)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/additional-aliens/brainstorm/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "Community-hosted Omniverse animation image used for one built-in AI transparent reference redraw, with disclosed small image-edge contour reconstruction. Not an official transparent original.",
+      "dialFit": {
+        "scale": 0.5786,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.503531,
+        "visiblePixels": 1161867
+      }
     },
     {
       "id": "nemetrix-ultimate-panuncian",
@@ -5071,13 +5115,24 @@
       "group": "alternate",
       "appearance": "It's a Mad, Mad, Mad Ben World: Part 2",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-mad-way-big",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Way_Big_(Classic)",
         "https://ben10.fandom.com/wiki/Power_Watch",
         "https://ben10.fandom.com/wiki/Mad_Ben",
         "https://ben10.fandom.com/wiki/It%27s_a_Mad%2C_Mad%2C_Mad_Ben_World%3A_Part_2"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference redraw of a complete community illustration credited to RZGmon200, compared with a cropped Mad Way Big animation mirror. Not official transparent artwork; full lower-body and small design details follow the community illustration.",
+      "dialFit": {
+        "scale": 0.575,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.513021,
+        "visiblePixels": 482046
+      }
     },
     {
       "id": "gwen10-os-heatblast",
@@ -5110,10 +5165,21 @@
       "group": "alternate",
       "appearance": "Gwen 10 (2005 what-if episode)",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-os-grey-matter",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference reconstruction of cropped community-mirrored Original Series Gwen 10 character art; lower limbs interpreted. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.5424,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.603733,
+        "visiblePixels": 405406
+      }
     },
     {
       "id": "gwen10-os-diamondhead",
@@ -5145,10 +5211,21 @@
       "group": "alternate",
       "appearance": "Gwen 10 (2005 what-if episode)",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-os-four-arms",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://ben10hero.com/omnitrix-alien-heroes-1/four-arms/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference reconstruction of cropped community-mirrored Original Series Gwen 10 character art; lower limbs interpreted. Not official transparent artwork.",
+      "dialFit": {
+        "scale": 0.5609,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.550902,
+        "visiblePixels": 602702
+      }
     },
     {
       "id": "max10-os-upgrade",

@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "5121a450acfef3f4ddb2aedd5beaa4f9ace51f4fc915d77730dbedabc0e4fcfc",
-  "svgSha256": "76a70b800ce424cb611d629406861ae249eba932f5dc93d421dd76c7a11d9746",
+  "catalogSha256": "eb577e91b5249aba488b2afb9bf7a8f0d1544ae21f3f70cd7b95ed35867a5bb8",
+  "svgSha256": "d3d476cbfd0163d52e1394f0c0fd4a38a17f610a6dc42c79f953862421bd39d1",
   "coverage": {
     "total": 224,
-    "reviewed": 191,
-    "missing": 33
+    "reviewed": 198,
+    "missing": 26
   },
   "assets": [
     {
@@ -1696,6 +1696,76 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "5bdf6f1ef6ed9550cc40d2e3a9851aebf3b3469fed6c2cff5ee51a287defe2eb",
       "maskSha256": "1970a84b2d57d1351147c3c319cf5b14f3bfc84d1845be9c7209ed9434a79dd5",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "promo-bob-the-blob",
+      "url": "https://www.youtube.com/watch?v=p2NV3qp3Q6o",
+      "pageUrl": "https://www.youtube.com/watch?v=p2NV3qp3Q6o",
+      "rights": "Underlying Ben 10 artwork remains copyrighted; the community repost does not establish redistribution permission.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "66622e66b6d93c1aac41c8ec5581a3653e1caebd4f49fe7cd369b412c0c4eeab",
+      "maskSha256": "39068431f9485a467a59d7067ac6d3546fdd2d86907dc285412204b42ac8e862",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "stage-squidstrictor",
+      "url": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/2d463f4e-3de8-498e-8c5c-adbe94901449/Squidstrictor.PNG",
+      "pageUrl": "https://www.thehawkdown.com/squidstrictor",
+      "rights": "TheHawkDown illustration and underlying Ben 10 character remain copyrighted; no open license or redistribution grant verified.",
+      "renderMode": "source-alpha",
+      "sourceSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+      "maskSha256": "c0d0ddbcf5553deb172f5b1d0e86511930129f9d741da6d4a21febf1477a8228",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nega-gutrot",
+      "url": "https://ben10hero.com/wp-content/uploads/2017/09/nega_gutrot.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gutrot/",
+      "rights": "Underlying Ben 10 artwork is copyrighted; community hosting is not an open license or a redistribution grant.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "499f67ae83d269967d2d0485d953f25598151a241aee7fc55651b7b8ae690810",
+      "maskSha256": "f91309a4f6f2449640a0cf7152394137fcb654ccb03cea3c4eb679dd91c534bf",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "mad-way-big",
+      "url": "https://i.pinimg.com/736x/03/8d/d9/038dd90b68e9a4e764248bfe27f6869e.jpg",
+      "pageUrl": "https://www.pinterest.com/pin/into-the-omniverse-mad-way-big-by-rzgmon200-on-deviantart--613685886714853167/",
+      "rights": "Community image credited to RZGmon200 and underlying Ben 10 artwork remain copyrighted; original artist publication and redistribution permission are unverified.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "4e0ea74c647e2a3c44bb1dfc8265293cc97dc0725a9646d9194737d5260ded58",
+      "maskSha256": "8af769c778984c75856cc21b63be5671d4fa79400e2d55fc008a84cf6c13e203",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "nemetrix-vicetopus",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/11/vicetopusb10ov21.png",
+      "pageUrl": "https://ben10hero.com/additional-aliens/brainstorm/",
+      "rights": "Original animation/character copyright retained; redistribution license unknown; AI redraw disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "14eccd4b00db0ee0ba1c43c82ee3a0eb447661920af56ffa6eb3e536d98919eb",
+      "maskSha256": "414c35801f22ba4616fc1585807f1d9bb7359a73ba0c7f23889aa4b6e6855cca",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-os-four-arms",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/fourarms_gwen_os.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/four-arms/",
+      "rights": "Underlying Ben 10 character/animation and community source copyrighted; original uploader permission and open licensing unverified. Generated transparent reference is AI art, not official original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "67c4d398013eb5572dae232e8a49be965eea4f57a2906052abc3eda1e7c34783",
+      "maskSha256": "6e88d1953f666b191c41b7acfca44a30a351dfea355f1042a125d3e9eb8a2fa4",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-os-grey-matter",
+      "url": "http://ben10hero.com/wp-content/uploads/2016/07/grey_matter_gwen_os.png",
+      "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+      "rights": "Underlying Ben 10 character/animation and community source copyrighted; original uploader permission and open licensing unverified. Generated transparent reference is AI art, not official original.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "94b1c7dbc98075dd83713e5c423c81cc8f9e266ee753f5c1a9766495c8850805",
+      "maskSha256": "9a069d589439cc6cf771e4eba48fef3d71441f4c7ecc1b8dfca92abc388ebdd3",
       "contentType": "image/png"
     }
   ],
