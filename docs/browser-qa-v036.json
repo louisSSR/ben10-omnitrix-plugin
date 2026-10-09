@@ -1,0 +1,78 @@
+{
+  "version": "0.3.6",
+  "checkedAt": "2026-10-09T07:04:30.954Z",
+  "previewSha256": "9f58d30b9dfe7998aa9df6599a4970c766026c880177778d5cc0a4df9fab5c55",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; mobile widths are responsive-preview iframes, not physical phones",
+  "coverage": {
+    "total": 224,
+    "reviewed": 183,
+    "missing": 41
+  },
+  "added": [
+    "benzarro-frankenstrike",
+    "reboot-skunkmoth"
+  ],
+  "checks": {
+    "rootSourceAndOutputViewed": [
+      "benzarro-frankenstrike",
+      "reboot-skunkmoth"
+    ],
+    "rootCurrentDialAndProjectionViewed": [
+      "benzarro-frankenstrike",
+      "reboot-skunkmoth"
+    ],
+    "mobileDialAndProjectionViewed": [
+      {
+        "formId": "reboot-skunkmoth",
+        "targetWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375
+      },
+      {
+        "formId": "benzarro-frankenstrike",
+        "targetWidth": 320,
+        "clientWidth": 305,
+        "scrollWidth": 305
+      }
+    ],
+    "oldRuntimeImagesByteExact": 185,
+    "filterReset": {
+      "before": "1 / 224",
+      "after": "224 / 224",
+      "finalQuery": "",
+      "readyOnly": false
+    },
+    "finalSelection": {
+      "hero": "Heatblast",
+      "watch": "original",
+      "mode": "carousel"
+    },
+    "projectionKind": "2.5D layered silhouettes; not complete 3D models"
+  },
+  "screenshots": [
+    "screenshots/v036-benzarro-frankenstrike-dial.png",
+    "screenshots/v036-benzarro-frankenstrike-projection.png",
+    "screenshots/v036-skunkmoth-dial.png",
+    "screenshots/v036-skunkmoth-projection.png",
+    "screenshots/v036-mobile-dial.png",
+    "screenshots/v036-mobile-projection.png",
+    "screenshots/v036-final-preview.png"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": {
+    "count": 1,
+    "message": "MutationObserver.observe parameter 1 is not of type Node",
+    "source": "unattributed; same class observed in previous harness runs"
+  },
+  "automated": {
+    "tests": 93,
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0
+  },
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

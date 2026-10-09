@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 181,
-    "missing": 43
+    "reviewed": 183,
+    "missing": 41
   },
   "forms": [
     {
@@ -2317,11 +2317,22 @@
       "group": "alternate",
       "appearance": "And Then There Were None; And Then There Was Ben",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-benzarro-frankenstrike",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=taFnTJXO7LI"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-official-ben10-animation-frame",
+      "dialFit": {
+        "scale": 0.6274,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.386618,
+        "visiblePixels": 592157
+      }
     },
     {
       "id": "benzarro-snare-oh",
@@ -4025,10 +4036,21 @@
       "group": "antitrix",
       "appearance": "Animated reboot/Antitrix transformation; appeared in the series; exact debut not independently checked in this task.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-reboot-skunkmoth",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Antitrix"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=c-RzwyY0ovY"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-multi-reference-interpretative-redraw-of-official-cn-animation-frames",
+      "dialFit": {
+        "scale": 0.645,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.348772,
+        "visiblePixels": 389869
+      }
     },
     {
       "id": "reboot-thornblade",

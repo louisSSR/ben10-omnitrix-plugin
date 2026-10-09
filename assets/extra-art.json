@@ -2854,6 +2854,249 @@
         "observation": "Actually viewed desktop black diamond dial and green projection after selection settled; also reviewed the same modes at the stated iframe width. All visible limbs/crown remain inside the diamond, no visible detached background silhouette. No horizontal overflow.",
         "realPhone": false
       }
+    },
+    {
+      "formId": "benzarro-frankenstrike",
+      "sourceFile": "assets/source-art/benzarro-frankenstrike-source-990560.png",
+      "sourceSha256": "294db5107d3f20ec387a417908ea6440177e7a9601a006904bae78e5b4cd7e63",
+      "maskFile": "assets/source-art/benzarro-frankenstrike-reference-edit.png",
+      "maskSha256": "e89cf2ba4e904bc9867ba908d807cb9dfd8c62b9ce045b0517975ab46de43f4b",
+      "pageUrl": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+      "url": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-official-ben10-animation-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Official Ben 10 YouTube screenshot provenance; no open license asserted. Generated transparent output is not official transparent production art.",
+      "observations": "Actually viewed the root-saved official Ben 10 animation video-region screenshot at playback 990.56 seconds: complete large standing three-quarter Benzarro Frankenstrike, both closed fists, grey stitched chest/shoulders, black hair and trousers, purple twin upright Tesla coils and layered wrist rings, purple-grey boot toe plates. All coil tops, fists and both boots are inside the frame. The older 156 community close-up was viewed only for purple/grey/black version comparison, not used as a generation input. The generated output preserves the same standing body structure and all visible principal contours; the unrelated green vine at far upper-right and night street have been removed.",
+      "limitations": [
+        "Source file is a 980 x 551 CUA screenshot of the video region, not an original decoded frame. Native playback was 1280 x 720. Root actually observed official @Ben10 verified uploader and full episode; this agent inspected the saved pixels rather than independently controlling the browser.",
+        "Transparent artwork is a built-in imagegen reference redraw, not official production alpha or a pixel-identical cutout. Face/teeth, stitch lines, coil-disc contours, small wrist details, finger divisions and boot toe marks are reinterpreted. Source pose and major anatomy stay the basis; no unseen limbs or ordinary green Ben version are supplied.",
+        "Source pose naturally overlaps the far shoulder/arm surfaces; those hidden surfaces are not recovered. This is a standing action pose from the episode, not an orthographic model sheet.",
+        "Output nonzero alpha bounds [0,12,1207,1273] include faint edge residue; alpha >=128 bounds [112,15,1112,1270] and no >=128 pixels touch any edge. 17966 alpha1..15 pixels remain. Do not mistake RGB values beneath alpha=0 for an opaque scene. Root subsequently viewed the current black dial/projection; no visibly detached exterior residue at delivery sizes.",
+        "Underlying Ben 10 animation remains copyrighted and no open reuse license is asserted. Official source provenance does not make the generated transparent image official artwork."
+      ],
+      "adoptionBasis": "Root actually compared source and raw AI reference output, then reviewed settled black dial and green projection at desktop and mobile widths. Source-supported action contour accepted with fine-detail interpretation explicitly retained.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+        "playbackSeconds": 990.56,
+        "paused": true,
+        "uploader": "Ben 10",
+        "uploaderHandle": "@Ben10",
+        "officialUploaderObserved": true,
+        "captureObservedBy": "root",
+        "displayedEpisodeDuration": "21:40",
+        "sourceSize": [
+          980,
+          551
+        ],
+        "nativeVideoSize": [
+          1280,
+          720
+        ],
+        "captureMethod": "CUA video-region screenshot; no downloaded media or programmatic pixel modification",
+        "originalDecodedFrameObtained": false,
+        "allVisibleContourInsideSource": true,
+        "pose": "large standing three-quarter stance, both fists closed, feet apart"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Edit the supplied official animation screenshot to isolate ONLY Benzarro's Frankenstrike as a full-body transparent cutout. Preserve the exact existing large standing three-quarter pose facing image-right: feet apart, knees slightly bent, both closed fists held outward and down beside the torso. The whole visible character is already inside the screenshot. Preserve both tall purple Tesla coils with their grey stacked discs and lavender caps, shaggy black hair and the existing stitched grey zombie face, grey-green stitched chest and shoulders, the purple chest Omnitrix badge, purple circular shoulder details, broad layered purple forearm/wrist rings, grey closed fists, purple belt and buckle, black trousers with the existing zigzag seam pattern, and both grey-purple boots with their visible vertical toe plates. Keep the original proportions, wide shoulder mass, asymmetry, source camera angle, naturally overlapping hands, complete coil caps and complete boot contours. This is Benzarro's purple/grey/black zombie alternate, not ordinary Ben's green Frankenstrike. Do not recolor to green, open the fists, add extra fingers or arms, change the stance or rebuild hidden surfaces. Remove the night sky, buildings, roof, street, floor shadows and everything outside the single character. The green vine entering at the far upper-right of the screenshot is another character's appendage: exclude it completely. No other character, detached vine, background, floor, glow, electrical bolts, haze, text, logo, checkerboard or cast shadow. Use a genuinely transparent RGBA background with comfortable clear padding around all coil tops, both fists and both complete boots. Preserve the animation's stylized major linework and supported details; this is a reference-guided transparent redraw, not recovered original production alpha or pixel-identical detail. Do not crop or extend any body part.",
+        "promptSha256": "86f09aff6b8ede5bb7b8897dc14201f15ce08e54f0b074b68f22c46f73797be2",
+        "rawOutputSha256": "e89cf2ba4e904bc9867ba908d807cb9dfd8c62b9ce045b0517975ab46de43f4b",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1223,
+          1286
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          0,
+          12,
+          1207,
+          1273
+        ],
+        "alpha128BBox": [
+          112,
+          15,
+          1112,
+          1270
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "zeroAlphaPixels": 980621,
+        "alpha1To15Pixels": 17966
+      },
+      "currentUIReview": {
+        "version": "0.3.6",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          320
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed settled black diamond dial and green projection on desktop and a 320px target iframe (305px client width). Both coil tips, fists and boots remain inside the diamond; no visibly detached scene residue or horizontal overflow.",
+        "realPhone": false
+      }
+    },
+    {
+      "formId": "reboot-skunkmoth",
+      "sourceFile": "assets/source-art/skunkmoth-source-185726.png",
+      "sourceSha256": "0ab0896637519bc5fdc637239522308c12c6805e5dae32b0b5599857d7d2f0d8",
+      "maskFile": "assets/source-art/reboot-skunkmoth-multireference-edit.png",
+      "maskSha256": "6bbea0d0a0f1c836490f46868a7ce74cd12d2a16d05c6aa478f2ac5860862718",
+      "pageUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-multi-reference-interpretative-redraw-of-official-cn-animation-frames",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Root observed official verified @cartoonnetwork upload. Generated transparent asset is AI interpretative reference art, not official transparent artwork or exact extraction. Supporting community repost has no established open license.",
+      "observations": "Actually viewed all three root-captured frames and existing community body reference. Primary 185.726737 second shot shows airborne Skunkmoth, one arm extended image-left in contact with Ben, opposite arm down, one leg kicked toward image-left and other down, horn and claws inside the frame. Root identified eight radial shapes as rapid-wingbeat motion streaks, not eight anatomical wings. Output preserves this asymmetric action, removes Ben/environment, retains stylized wingbeat motion behind the body, and uses the closeups to interpret golden segmented armor, gray serrated horn, red head/limbs, claws and dark red wing bases.",
+      "limitations": [
+        "Multi-reference interpretative AI enlargement from a small primary figure, not pixel-identical extraction. Fine fingers, linework, armor seams and proportions are reinterpreted.",
+        "The reaching left hand has small original contact/occlusion with Ben. The output completes that small area using observed claw design from supporting views; it does not preserve invisible pixels.",
+        "Wingbeat motion remains part of the output silhouette. Radial streaks are visual motion effects and must not be described as eight anatomical wings. This is an airborne animation action asset, not a static model sheet.",
+        "The body closeup clips the end of one wing motion streak, wing-detail closeup crops outer membrane, and the old community support crops a wing. These supporting images supply details only; none is asserted to be a complete standalone silhouette.",
+        "Root subsequently viewed desktop and mobile-width black dial and projection: complete action contour and no visibly detached exterior residue at delivery sizes."
+      ],
+      "adoptionBasis": "Root actually compared source and raw AI reference output, then reviewed settled black dial and green projection at desktop and mobile widths. Source-supported action contour accepted with fine-detail interpretation explicitly retained.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+        "playbackSeconds": 185.726737,
+        "paused": true,
+        "uploader": "Cartoon Network",
+        "channelHandle": "@cartoonnetwork",
+        "officialUploaderObserved": true,
+        "observedBy": "root CUA; local source image independently viewed by subagent",
+        "sourceSize": [
+          980,
+          551
+        ],
+        "nativeVideoSize": [
+          1280,
+          720
+        ],
+        "allVisibleContourInsideSource": true,
+        "smallOverlap": "extended left hand / Ben contact"
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/skunkmoth-support-body-188476.png",
+          "sha256": "d185d86b6317078c8e5ac8db73750597976c92527bc7df44d2eefa746ed63519",
+          "bytes": 43476,
+          "playbackSeconds": 188.476706,
+          "role": "Complete body detail, curled pose; upper-right motion streak crosses frame, not used as output pose",
+          "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+          "sourceKind": "official-animation-frame",
+          "sourceViewed": true
+        },
+        {
+          "file": "assets/source-art/skunkmoth-support-wings-181976.png",
+          "sha256": "7d55891cc9e4f885c3b981acd48cb808ce39f278b0af3b543e4e812b61c86c33",
+          "bytes": 67483,
+          "playbackSeconds": 181.9768,
+          "role": "Dark red wing membrane/head/arm detail; food-holding crop, not used as output pose",
+          "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+          "sourceKind": "official-animation-frame",
+          "sourceViewed": true
+        },
+        {
+          "file": "assets/source-art/skunkmoth-support-community-cropped.png",
+          "sha256": "a347f9699c18249eb8977c397cc7b602995a6ac70f3999f29ec1392332b22b02",
+          "bytes": 303258,
+          "playbackSeconds": null,
+          "role": "Previously viewed community repost, supplementary body/wing design only; right upper wing visibly cropped",
+          "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/skunkmoth2-png-orig_orig.png",
+          "sourceKind": "community-repost-with-incomplete-wing",
+          "sourceViewed": true
+        }
+      ],
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Create ONE transparent character asset through a faithful multi-reference interpretative redraw of Skunkmoth from the Ben 10 Reboot animation. This is not a new creature design.\nInput roles:\nImage 1, skunkmoth-source-185726: PRIMARY POSE AND COMPOSITION. Keep the golden/red insect character's exact airborne asymmetric action pose from this frame: body angled down-right; horned red head in the same angle; arm reaching out to image-left; opposite arm hanging down-right; one leg kicked straight toward image-left; the other leg hanging down with its segmented boot and black claw visible. Preserve the relative limb lengths, connections, shoulder armor and body proportions. Remove the separate human boy Ben, sky, clouds, park, buildings and all environmental elements. At the small contact between the reaching arm and Ben, preserve the visible claw/hand direction and use the same black/red claw design shown in the support references only for the obscured small contact area. Do not relocate or invent a new arm.\nImage 2, skunkmoth-support-body-188476: BODY DETAIL reference only. Use the observed golden segmented exoskeleton, tall gray horn with small serrations, red insect face and eyes, curved golden shoulder plates, red upper limbs, golden segmented forearms/shins, black tapered claws, and red/black Antitrix chest emblem. Do not adopt its curled-up pose.\nImage 3, skunkmoth-support-wings-181976: WING MEMBRANE, HEAD AND ARM detail reference only. Dark red membranous wings with dark edging belong behind the golden shoulder armor. Do not include food, text, banner or its food-holding pose.\nImage 4, existing Skunkmoth transparent reference: supporting body/wing design reference only; its right upper wing is cropped. Do not copy that crop or treat it as a complete pose reference.\nThe radial dark shapes behind the primary pose are ANIMATED RAPID-WINGBEAT MOTION STREAKS, NOT eight real wings. Preserve the observed simple tapered wingbeat visual behind the primary pose, within the output frame, as a small faithful animation effect. Keep its central dark red wing bases connected behind the shoulders; do not turn the streaks into eight anatomical wings or spikes, do not invent elaborate new wing anatomy, and do not replace the primary action with an imagined static spread-wing pose.\nStyle: clean enlarged flat 2D animation linework and colors, no realism, no metallic rendering, no redesign. Complete visible action silhouette entirely inside comfortable transparent margins. Genuine alpha-transparent background. No ground, shadows, glow, halo, white backdrop, checkerboard texture, text, watermark or extra characters. One coherent body only.",
+        "attempt": 1,
+        "rawOutputSha256": "6bbea0d0a0f1c836490f46868a7ce74cd12d2a16d05c6aa478f2ac5860862718",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1371,
+          1148
+        ],
+        "range": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          21,
+          28,
+          1351,
+          1148
+        ],
+        "zeroPixels": 1184039,
+        "oneTo15Pixels": 31871,
+        "sixteenTo127Pixels": 26733,
+        "atLeast128Pixels": 331265,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "thresholdBBoxes": {
+          "16": [
+            59,
+            33,
+            1346,
+            1118
+          ],
+          "128": [
+            60,
+            40,
+            1336,
+            1116
+          ],
+          "240": [
+            64,
+            53,
+            1323,
+            1115
+          ]
+        }
+      },
+      "currentUIReview": {
+        "version": "0.3.6",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          390
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed settled black diamond dial and green projection on desktop and the stated mobile-width iframe. Complete visible coil tips, claws, limbs and wingbeat effects fit inside the diamond. No visible detached scene residue and no horizontal overflow. Wingbeat strokes remain part of Skunkmoth action silhouette, not anatomical wings.",
+        "realPhone": false
+      }
     }
   ],
   "mergedForms": [

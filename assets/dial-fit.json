@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "d818d9ce3b33f079f4f6909ecff0359eb5843b8e677566840bd3f9d30960bc27",
-  "shapeCount": 181,
+  "sourceSvgSha256": "1080559404068533dc1292e049d363a910ada544dcfa2e25805f80fe102e7726",
+  "shapeCount": 183,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -562,6 +562,12 @@
       "diamondExtent": 1.398003,
       "visiblePixels": 505622
     },
+    "benzarro-frankenstrike": {
+      "scale": 0.6274,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.386618,
+      "visiblePixels": 592157
+    },
     "benzarro-snare-oh": {
       "scale": 0.7483,
       "method": "native-png-alpha-diamond-envelope",
@@ -945,6 +951,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.624378,
       "visiblePixels": 103466
+    },
+    "reboot-skunkmoth": {
+      "scale": 0.645,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.348772,
+      "visiblePixels": 389869
     },
     "reboot-thornblade": {
       "scale": 0.726,

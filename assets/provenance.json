@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "430d5b7dabda96aeef68a01b26b3dcd459de94ce13f14af9787733148d290418",
-  "svgSha256": "d818d9ce3b33f079f4f6909ecff0359eb5843b8e677566840bd3f9d30960bc27",
+  "catalogSha256": "7a3a967a643ccf42edcdcaf4b10e06d0582a50ea997a11b01e86f6c580b4ef88",
+  "svgSha256": "1080559404068533dc1292e049d363a910ada544dcfa2e25805f80fe102e7726",
   "coverage": {
     "total": 224,
-    "reviewed": 181,
-    "missing": 43
+    "reviewed": 183,
+    "missing": 41
   },
   "assets": [
     {
@@ -1596,6 +1596,26 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "7c70aca215abced724adfde5ea244d4cbc5e588c2835ac41a32358eb2240144f",
       "maskSha256": "a4538d1f11ce796299af3c20ccd0db6831ec694c09db9163f92b8a0687fe40aa",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "benzarro-frankenstrike",
+      "url": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+      "pageUrl": "https://www.youtube.com/watch?v=taFnTJXO7LI",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Official Ben 10 YouTube screenshot provenance; no open license asserted. Generated transparent output is not official transparent production art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "294db5107d3f20ec387a417908ea6440177e7a9601a006904bae78e5b4cd7e63",
+      "maskSha256": "e89cf2ba4e904bc9867ba908d807cb9dfd8c62b9ce045b0517975ab46de43f4b",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "reboot-skunkmoth",
+      "url": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "pageUrl": "https://www.youtube.com/watch?v=c-RzwyY0ovY",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Root observed official verified @cartoonnetwork upload. Generated transparent asset is AI interpretative reference art, not official transparent artwork or exact extraction. Supporting community repost has no established open license.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "0ab0896637519bc5fdc637239522308c12c6805e5dae32b0b5599857d7d2f0d8",
+      "maskSha256": "6bbea0d0a0f1c836490f46868a7ce74cd12d2a16d05c6aa478f2ac5860862718",
       "contentType": "image/png"
     }
   ],
