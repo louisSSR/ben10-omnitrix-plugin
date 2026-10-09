@@ -671,8 +671,8 @@ test('mode, filter, reduced-motion and page-exit interrupts leave the latest sel
     assert.equal(h.elements.get('dial-shape').style.visibility, '', interrupt);
     assert.equal(h.timers.size, 0, interrupt); assert.equal(h.frames.size, 0, interrupt);
     if (interrupt === 'filter') {
-      assert.equal(h.elements.get('confirm').disabled, true);
-      assert.equal(h.elements.get('dial-shape').querySelector('use'), null);
+      assert.equal(h.elements.get('confirm').disabled, false);
+      assert.equal(h.elements.get('dial-shape').querySelector('use').attributes.href, `#${h.fixture[1].asset}`);
       assert.equal(h.elements.get('empty-state').hidden, false);
     } else assert.equal(h.elements.get('dial-shape').querySelector('use').attributes.href, `#${h.fixture[1].asset}`, interrupt);
   }
@@ -711,6 +711,66 @@ test('keyboard navigation works from a ring button and a swipe is not overwritte
   assert.equal(h.preferences.selectedId, h.fixture[2].id);
   h.advance(400); h.action('select', h.fixture[0].id);
   assert.equal(h.preferences.selectedId, h.fixture[0].id);
+});
+
+test('catalog searches never narrow watch navigation in any summon mode', () => {
+  for (const mode of ['projection', 'carousel', 'dial']) {
+    const h = boot({ mode }), target = h.fixture[4];
+    const selected = h.preferences.selectedId;
+    const search = h.elements.get('search'); search.value = target.id; search.emit('input');
+    assert.equal(h.elements.get('catalog-grid').children.length, 1, mode);
+    assert.equal(h.preferences.selectedId, selected, 'search does not choose a hero automatically');
+    assert.match(h.elements.get('filter-summary').textContent, /档案搜索 1 \/ 13 · 手表可切换 12 个/);
+    h.action('select', target.id);
+    assert.equal(h.preferences.selectedId, target.id, mode);
+    h.click('next'); h.advance(1000);
+    assert.notEqual(h.preferences.selectedId, target.id, 'next leaves the single search result');
+    assert.ok(h.fixture.find(form => form.id === h.preferences.selectedId)?.asset);
+    assert.equal(search.value, target.id, 'navigation preserves the search text');
+    assert.equal(h.elements.get('catalog-grid').children.length, 1);
+    const slots = h.elements.get('carousel').children.filter(node => !node.hidden);
+    assert.equal(slots.length, 8, mode);
+    assert.equal(new Set(slots.map(node => node.dataset.value)).size, 8);
+  }
+});
+
+test('empty catalog results keep the current hero and next/previous controls usable', () => {
+  const h = boot({ mode: 'carousel' });
+  const before = h.preferences.selectedId;
+  const search = h.elements.get('search'); search.value = 'no matching form 987654321'; search.emit('input');
+  assert.equal(h.elements.get('catalog-grid').children.length, 0);
+  assert.equal(h.elements.get('empty-state').hidden, false);
+  assert.equal(h.preferences.selectedId, before);
+  for (const id of ['previous', 'next', 'confirm']) assert.equal(h.elements.get(id).disabled, false, id);
+  h.click('next');
+  assert.notEqual(h.preferences.selectedId, before);
+  h.click('previous');
+  assert.equal(h.preferences.selectedId, before);
+  assert.equal(h.elements.get('carousel').children.filter(node => !node.hidden).length, 8);
+});
+
+test('pending catalog selections remain honest while watch neighbors and eight slots prefer ready bodies', () => {
+  for (const arrow of ['previous', 'next']) {
+    const h = boot({ mode: 'carousel' }), missing = h.fixture.at(-1);
+    assert.ok(!missing.asset);
+    assert.equal(h.elements.get('catalog-grid').children.length, 13, 'all records are shown initially');
+    h.action('select', missing.id);
+    assert.equal(h.preferences.selectedId, missing.id);
+    assert.equal(h.elements.get('stage-notice').hidden, false, 'missing artwork is not impersonated');
+    const readyOnly = h.elements.get('ready-only'); readyOnly.checked = true; readyOnly.emit('change');
+    assert.equal(h.elements.get('catalog-grid').children.length, 12);
+    assert.equal(h.preferences.selectedId, missing.id, 'archive readiness filtering does not force the selected hero');
+    const carousel = h.elements.get('carousel'), originalSlots = [...carousel.children];
+    let slots = carousel.children.filter(node => !node.hidden);
+    assert.equal(slots.length, 8);
+    assert.equal(slots.filter(node => node.dataset.value === missing.id).length, 1);
+    h.click(arrow);
+    assert.ok(h.fixture.find(form => form.id === h.preferences.selectedId)?.asset, arrow);
+    slots = carousel.children.filter(node => !node.hidden);
+    assert.equal(slots.length, 8);
+    assert.ok(slots.every(node => !!h.fixture.find(form => form.id === node.dataset.value)?.asset));
+    originalSlots.forEach((node, index) => assert.equal(carousel.children[index], node, 'ring nodes remain stable'));
+  }
 });
 
 test('unsupported shutter animation degrades to an immediate visible selection', () => {

@@ -9,6 +9,16 @@
 </head>
 <body>
   <!-- ART_SYMBOLS -->
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden"><defs>
+    <filter id="omni-holo-relief" x="-20%" y="-15%" width="140%" height="130%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.6" result="bump"/>
+      <feDiffuseLighting in="bump" surfaceScale="14" diffuseConstant="1.3" lighting-color="#8cfc40" result="body-light"><fePointLight x="-40" y="-50" z="160"/></feDiffuseLighting>
+      <feComposite in="body-light" in2="SourceAlpha" operator="in" result="body"/>
+      <feSpecularLighting in="bump" surfaceScale="11" specularConstant=".8" specularExponent="18" lighting-color="#ecffcc" result="edge-light"><fePointLight x="150" y="-60" z="100"/></feSpecularLighting>
+      <feComposite in="edge-light" in2="SourceAlpha" operator="in" result="edge"/>
+      <feMerge><feMergeNode in="body"/><feMergeNode in="edge"/></feMerge>
+    </filter>
+  </defs></svg>
   <div class="omni-app" id="omni-app" data-mode="projection" data-watch="original">
     <header class="topbar">
       <a class="brand" href="#" aria-label="Omnitrix 变身档案首页"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 100 100" width="24" height="24"><path d="M10 10h80L64 50l26 40H10l26-40z" fill="currentColor"/></svg></span><span>OMNITRIX<small>变 身 档 案</small></span></a>
@@ -32,10 +42,10 @@
             <p class="stage-coordinate" aria-hidden="true">DNA SEQUENCE<br><b id="sequence-id">001</b></p>
             <div class="hologram" id="hologram" aria-hidden="true"><div class="holo-light" id="holo-light"></div><div class="holo-volume" id="holo-volume"><div class="holo-depth depth-back" id="holo-depth-back"></div><div class="holo-depth depth-mid" id="holo-depth-mid"></div><div class="holo-depth depth-front" id="holo-depth-front"></div><div class="holo-echo" id="holo-echo"></div><div class="holo-shape" id="holo-shape"></div></div><div class="holo-scan" id="holo-scan"></div><div class="scanline"></div><div class="holo-base"></div><div class="holo-base holo-base-outer"></div><div class="holo-particles"></div></div>
             <div class="projection-emitter" id="projection-emitter" aria-hidden="true"><div class="emitter-foot"></div><div class="emitter-shaft"><i></i><i></i><i></i><i></i><i></i></div><div class="emitter-cap"></div></div>
-            <div class="selection-ring" aria-hidden="true"><div class="ring-band"></div><div class="ring-index"></div></div>
+            <div class="selection-ring" aria-hidden="true"><div class="ring-underlay"></div><div class="ring-band" id="ring-band"></div><div class="ring-core"><svg viewBox="0 0 100 100"><path d="M13 8H87L62 50L87 92H13L38 50Z"/></svg></div><div class="ring-index"></div></div>
             <div class="carousel" id="carousel" aria-label="环形形态列表"></div>
             <button class="watch-device" id="watch-device" type="button" aria-label="锁定当前外星人">
-              <span class="watch-ground-shadow"></span>
+              <span class="watch-ground-shadow"></span><span class="watch-body-depth"></span>
               <img class="watch-art original" src="./assets/watches-v3/original.png" alt="" draggable="false">
               <img class="watch-art recalibrated" src="./assets/watches-v3/recalibrated.png" alt="" draggable="false">
               <img class="watch-art ultimatrix" src="./assets/watches-v3/ultimatrix.png" alt="" draggable="false">

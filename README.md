@@ -11,7 +11,13 @@ SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材�
 - 一份共享档案：224 条记录，184 条已接入剪影，40 条素材待补。0.3.2 新增 Diamond Matter：依据社区角色介绍视频的完整身体面板做 AI 参考编辑，原面板作者未知；脸部、手脚、胸章和晶面有重绘，非官方透明原图。来源、原始字节、完整提示词和差异见 `assets/extra-art.json`。记录含作品版本、融合和身体状态，不等于独立物种数量。
 - 可搜索中文/英文名称和筛选作品。缺图会明确显示“素材待补”。
 
-## 0.3.7 素材更新
+## 0.3.8 选择器与动效修正
+
+修复“搜索只剩一个英雄，手表也只剩一个”的问题：档案搜索与手表选择池分开，搜索单条或空结果时，手表仍可切换全部 184 个已接入形态。没有新增或删减素材，仍为 **184/224 条已有剪影，40 条待补**。
+
+环形转盘改成表芯正中央的大沙漏与发光环面，分区随拨动转动，英雄沿环面缩放。菱形表盘依据参考视频中实际观察到的双挡片交错收拢结构重做，在完全遮挡时换影，再展开；760ms 时序与 364.8ms 换图点是插件的交互设计。投影增加水平表身、弹出圆芯、厚度侧面与浮雕光照，仍为 **2.5D**，并非三维角色模型。Ultimatrix 长护臂在手机窄屏单独适配。验证与边界见 [0.3.8 记录](docs/review-v038.md)。
+
+## 0.3.7 素材更新（历史）
 
 新增《Which Watch》的 Monster Kevin，现为 **184/224 条已有剪影，40 条待补**。依据实际查看的官方动画镜头及相邻细节做 AI 参考编辑，保留六臂、双翼与绿色盘尾；中央接触处有少量补绘，非官方透明原图。未将它混用为《Tales from the Omnitrix》的版本。原有 187 张运行图片保持原字节；新增剪影的表盘与投影已在桌面及两种手机宽度核对，见 [0.3.7 记录](docs/review-v037.md)。
 
@@ -49,9 +55,9 @@ npm run dev
 
 ## 安装到 SillyTavern
 
-当前是 0.3.7 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
+当前是 0.3.8 测试版。公开仓库位于 [louisSSR/ben10-omnitrix-plugin](https://github.com/louisSSR/ben10-omnitrix-plugin)，Git 安装地址为 `https://github.com/louisSSR/ben10-omnitrix-plugin.git`，无需 GitHub 登录。
 
-1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.3.7` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
+1. 在扩展管理器中使用上述 Git 地址安装；也可将发布包的 `ben10-omnitrix-0.3.8` 文件夹放入 SillyTavern 的第三方扩展目录（目录内直接包含 `manifest.json`）。
 2. 重载酒馆，在扩展设置里打开 **Omnitrix**。
 3. 选择手表和召唤界面，选择外星人并点击“锁定形态”。
 4. 需要使用时点击“写入酒馆输入框”。原有草稿保留，插件不会自动发送或调用模型。

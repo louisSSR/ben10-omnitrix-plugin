@@ -2,6 +2,7 @@ import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringI
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
+const readyForms = forms.filter(form => !!form.asset);
 const byId = new Map(forms.map(form => [form.id, form]));
 const $ = id => document.getElementById(id);
 const app = $('omni-app');
@@ -12,8 +13,9 @@ const systemMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let stored = {};
 try { stored = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch { /* Local preview also works with storage disabled. */ }
 let preferences = normalizePreferences(stored, forms);
-let query = '', group = 'all', readyOnly = !!byId.get(preferences.selectedId)?.asset;
-let visible = filterForms(forms, { query, group, readyOnly });
+let query = '', group = 'all', readyOnly = false;
+let catalogVisible = filterForms(forms, { query, group, readyOnly });
+let visible = watchSelectionPool();
 let host = null;
 let toastTimer, lastConfirm = 0, motionHandles = [];
 let pointerStart = null;
@@ -24,6 +26,14 @@ const motionTimers = new Set();
 const ringNodes = [], ringEntries = [];
 const turn = Math.PI * 2;
 const modulo = (n, length) => ((n % length) + length) % length;
+
+function watchSelectionPool() {
+  if (!readyForms.length) return forms;
+  const selected = byId.get(preferences.selectedId);
+  return selected && !selected.asset
+    ? forms.filter(form => !!form.asset || form.id === selected.id)
+    : readyForms;
+}
 
 function textElement(tag, text, className = '') {
   const node = document.createElement(tag);
@@ -87,9 +97,10 @@ function alignProjection() {
     emitter.style.left = `${x}px`; emitter.style.top = `${y - lift}px`;
     emitter.style.width = `${face.width * 1.06}px`; emitter.style.height = `${lift + 16}px`;
   }
-  const top = Math.max(92, y - lift - 240), height = Math.max(100, y - lift - top + 5);
+  const top = Math.max(78, y - lift - 285), height = Math.max(100, y - lift - top + 5);
   hologram.style.left = `${x}px`; hologram.style.top = `${top}px`;
-  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(210, height * .82)}px`;
+  const room = Number.isFinite(stage.width) ? Math.max(60, 2 * Math.min(x, stage.width - x) - 16) : 236;
+  hologram.style.height = `${height}px`; hologram.style.width = `${Math.min(236, height * .82, room)}px`;
   return true;
 }
 function trackProjection(transition = false) {
@@ -223,6 +234,7 @@ function positionRing(rotation) {
   const count = ringEntries.length;
   const width = $('stage').clientWidth || 400;
   $('stage').style.setProperty('--ring-radius', `${Math.abs(ringPlacement(Math.PI / 2, width).x)}px`);
+  $('stage').style.setProperty('--ring-turn', `${rotation * 180 / Math.PI}deg`);
   ringNodes.forEach((node, index) => {
     if (index >= count) return;
     const pose = ringPlacement(index / count * turn + rotation, width);
@@ -292,7 +304,7 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
   $('selected-group').textContent = form ? (data.groups[form.group] || '') : '';
   $('sequence-id').textContent = form ? String(forms.indexOf(form) + 1).padStart(3, '0') : '---';
   setFigures(form);
-  $('stage-notice').textContent = !visible.length ? '当前筛选没有形态，请调整搜索或分类' : '这个形态的素材还在整理中';
+  $('stage-notice').textContent = !visible.length ? '暂时没有可选形态' : '这个形态的素材还在整理中';
   $('stage-notice').hidden = !!form?.asset;
   $('watch-device').setAttribute('aria-label', `锁定 ${form?.name || form?.en || '形态'}`);
   const disabled = !visible.length;
@@ -302,10 +314,10 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
   if (withMotion) selectionMotion(direction, previousForm);
 }
 function renderCatalog() {
-  $('result-count').textContent = `${visible.length} / ${forms.length}`;
+  $('result-count').textContent = `${catalogVisible.length} / ${forms.length}`;
   renderFilterSummary();
-  $('empty-state').hidden = visible.length !== 0;
-  $('catalog-grid').replaceChildren(...visible.map(form => {
+  $('empty-state').hidden = catalogVisible.length !== 0;
+  $('catalog-grid').replaceChildren(...catalogVisible.map(form => {
     const node = button('', 'alien-card', 'select', form.id);
     node.setAttribute('aria-pressed', String(form.id === preferences.selectedId));
     node.setAttribute('aria-label', `选择 ${form.name || form.en}${form.asset ? '' : '，素材待补'}`);
@@ -323,10 +335,8 @@ function renderFilters() {
 }
 function refreshFilter() {
   stopMotion();
-  visible = filterForms(forms, { query, group, readyOnly });
-  if (visible.length && !visible.some(form => form.id === preferences.selectedId)) {
-    preferences.selectedId = visible[0].id; save();
-  }
+  catalogVisible = filterForms(forms, { query, group, readyOnly });
+  visible = watchSelectionPool();
   $('confirmation').hidden = true;
   renderFilters(); renderCatalog(); renderStage();
 }
@@ -335,7 +345,7 @@ function renderFilterSummary() {
   if (query.trim()) filters.push(`搜索「${query.trim()}」`);
   if (group !== 'all') filters.push(data.groups[group] || group);
   if (readyOnly) filters.push('仅已有剪影');
-  $('filter-summary').textContent = `显示 ${visible.length} / ${forms.length} 个英雄 · ${filters.join(' · ') || '全部形态'}`;
+  $('filter-summary').textContent = `档案搜索 ${catalogVisible.length} / ${forms.length} · 手表可切换 ${readyForms.length || forms.length} 个 · ${filters.join(' · ') || '全部形态'}`;
 }
 function resetFilters() {
   query = ''; group = 'all'; readyOnly = false;
@@ -344,10 +354,11 @@ function resetFilters() {
   refreshFilter();
 }
 function select(id, direction = 1) {
-  if (!byId.has(id) || !visible.some(form => form.id === id)) return;
+  if (!byId.has(id)) return;
   const previousForm = byId.get(displayedId);
   stopMotion(false);
   preferences.selectedId = id;
+  visible = watchSelectionPool();
   $('confirmation').hidden = true;
   const focused = document.activeElement?.dataset?.action === 'select' ? document.activeElement.dataset.value : null;
   renderStage(true, previousForm, direction);
@@ -435,7 +446,6 @@ listen(window, 'message', event => {
     stopMotion();
     host = message.payload;
     preferences = normalizePreferences(host.preferences, forms);
-    readyOnly = !!byId.get(preferences.selectedId)?.asset;
     $('ready-only').checked = readyOnly;
     $('draft-button').textContent = host.capabilities?.draftInput ? '写入酒馆输入框' : '复制形态名称';
     renderControls(); refreshFilter();

@@ -134,9 +134,9 @@ test('the ellipse matches the CSS ring and upright 40 to 58px icons stay inside 
   for (const width of [81, 160, 240, 277, 320, 343, 390, 599, 600, 720, 1024]) {
     const radiusX = ringPlacement(Math.PI / 2, width).x;
     const radiusY = -ringPlacement(0, width).y;
-    assert.ok(radiusX <= width * .34 && radiusX <= 220);
+    assert.ok(radiusX <= width * .34 && radiusX <= 165);
     assert.equal(radiusY, radiusX * .8);
-    if (width >= 277) assert.equal(radiusX, Math.min(220, width * .34));
+    if (width >= 277) assert.equal(radiusX, Math.min(165, width * .34));
     for (let step = 0; step < 48; step++) {
       const pose = ringPlacement(step * Math.PI / 24, width);
       assert.ok(Math.abs((pose.x / radiusX) ** 2 + (pose.y / radiusY) ** 2 - 1) < 1e-9);
@@ -189,18 +189,35 @@ const effectProgress = (easing, time) => {
 };
 
 test('dial swap stays inside actual wall clock coverage after global WAAPI easing', () => {
-  const motion = dialSelectionFrames(1);
-  for (const delta of [-20, 0, 20]) {
-    const progress = effectProgress(motion.easing, (motion.swapAt + delta) / motion.duration);
-    assert.ok(progress >= motion.a[2].offset && progress <= motion.a[3].offset, `both leaves remain closed at ${motion.swapAt + delta}ms`);
-    assert.ok(progress >= motion.rotor[2].offset && progress <= motion.rotor[3].offset, 'the rotor remains at the covered angle');
+  for (const direction of [-1, 1]) {
+    const motion = dialSelectionFrames(direction);
+    for (const delta of [-50, 0, 50]) {
+      const progress = effectProgress(motion.easing, (motion.swapAt + delta) / motion.duration);
+      const held = [motion.a, motion.b].map(frames => {
+        const next = frames.findIndex(frame => frame.offset > progress);
+        assert.ok(next > 0, 'swap has an enclosing transition segment');
+        const before = frames[next - 1], after = frames[next];
+        assert.equal(before.clipPath, after.clipPath, 'coverage does not change in the swap segment');
+        assert.equal(before.transform, after.transform, 'neither leaf moves in the swap segment');
+        assert.equal(before.transform, 'translate(0%,0%) rotate(0deg)');
+        return before;
+      });
+      // Scan the entire face, not just the centre: a visible leg or tail must not
+      // leak through an edge while its image is replaced. The leaves overlap.
+      for (const y of [.1, 5, 25, 50, 75, 95, 99.9]) {
+        const left = horizontalBounds(held[0].clipPath, y), right = horizontalBounds(held[1].clipPath, y);
+        assert.equal(left[0], 0);
+        assert.equal(right[1], 100);
+        assert.ok(left[1] > right[0], `overlapping full coverage at y=${y}, time=${motion.swapAt + delta}ms`);
+      }
+    }
   }
 });
 
-test('dial leaves visibly form an hourglass then fully cover the swap before reopening', () => {
+test('dial leaves independently cross, expose a small central aperture and settle back to the original diamond', () => {
   const motion = dialSelectionFrames(1), swapOffset = motion.swapAt / motion.duration;
   assert.ok(motion.duration > 0 && motion.duration <= 760);
-  assert.ok(swapOffset > .30 && swapOffset < .55);
+  assert.ok(swapOffset > 0 && swapOffset < 1);
   for (const frames of [motion.a, motion.b, motion.rotor]) {
     assert.equal(frames[0].offset, 0);
     assert.equal(frames.at(-1).offset, 1);
@@ -208,30 +225,36 @@ test('dial leaves visibly form an hourglass then fully cover the swap before reo
   }
   for (const frames of [motion.a, motion.b]) {
     assert.equal(frames[0].clipPath, frames.at(-1).clipPath);
-    assert.ok(frames.every(frame => polygonPoints(frame.clipPath).length === 5));
-    assert.ok(frames.every(frame => !('opacity' in frame) && !('transform' in frame)), 'permanent leaves morph their structure');
-    assert.equal(frames[2].clipPath, frames[3].clipPath, 'coverage stays fixed throughout the swap window');
+    assert.equal(frames[0].transform, 'translate(0%,0%) rotate(0deg)');
+    assert.equal(frames.at(-1).transform, frames[0].transform, 'finish and cancellation can return to resting CSS without a jump');
+    assert.ok(frames.every(frame => polygonPoints(frame.clipPath).length === 7), 'matching vertex counts allow continuous polygon interpolation');
+    assert.ok(frames.every(frame => !('opacity' in frame)), 'the metal plates never fade away');
+    assert.ok(frames.every(frame => Math.abs(Number(frame.transform.match(/translate\(([-\d.]+)%/)[1])) <= 2.5), 'plates stay in the dial rather than flying off screen');
+    assert.ok(frames.some(frame => frame.transform !== frames[0].transform), 'each plate has its own motion');
   }
-  const opening = y => horizontalBounds(motion.b[1].clipPath, y)[0] - horizontalBounds(motion.a[1].clipPath, y)[1];
-  assert.ok(opening(50) > 0 && opening(5) > opening(50) && opening(95) > opening(50), 'the waist narrows while both ends remain open');
-  for (const y of [.1, 5, 25, 50, 75, 95, 99.9]) {
-    const left = horizontalBounds(motion.a[2].clipPath, y), right = horizontalBounds(motion.b[2].clipPath, y);
-    assert.equal(left[0], 0);
-    assert.equal(right[1], 100);
-    assert.equal(left[1], right[0], 'the two half-screen leaves meet without a gap');
+  const opening = (index, y) => horizontalBounds(motion.b[index].clipPath, y)[0] - horizontalBounds(motion.a[index].clipPath, y)[1];
+  const pinhole = motion.a.findIndex((frame, index) => frame.offset < swapOffset && frame.transform === motion.a[0].transform && opening(index, 50) > 0 && opening(index, 50) < 20);
+  assert.ok(pinhole > 0, 'a visible small central opening precedes total coverage');
+  assert.ok(opening(pinhole, 40) <= 0 && opening(pinhole, 60) <= 0, 'the small opening stays central, not a full-height slit');
+  assert.ok(motion.a.some((frame, index) => frame.transform !== motion.b[index].transform), 'opposing plates have different transforms, not one shared screen rotation');
+  for (const frame of motion.rotor) assert.equal(frame.transform, 'rotate(0deg)', 'the circular case and screen carrier remain fixed');
+  // The first and last geometry must match the permanent CSS diamond.
+  for (const y of [5, 25, 50, 75, 95]) {
+    assert.equal(opening(0, y), 100 - Math.abs(y - 50) * 2);
+    assert.equal(opening(motion.a.length - 1, y), opening(0, y));
   }
-  assert.equal(motion.rotor[2].transform, motion.rotor[3].transform, 'rotation also holds at the covered swap');
-  assert.equal(motion.rotor[0].transform, 'rotate(0deg)');
-  assert.equal(motion.rotor[2].transform, 'rotate(90deg)');
-  assert.equal(motion.rotor.at(-1).transform, 'rotate(180deg)');
 });
 
-test('dial rotation reverses with direction and calls do not share mutable keyframes', () => {
+test('dial plate twists reverse with direction while its carrier stays fixed and calls do not share mutable keyframes', () => {
   const next = dialSelectionFrames(1), previous = dialSelectionFrames(-1);
-  assert.deepEqual(previous.a, next.a);
-  assert.deepEqual(previous.b, next.b);
-  assert.equal(previous.rotor[2].transform, 'rotate(-90deg)');
-  assert.equal(previous.rotor.at(-1).transform, 'rotate(-180deg)');
+  for (const key of ['a', 'b']) for (let n = 0; n < next[key].length; n++) {
+    const forward = next[key][n], reverse = previous[key][n];
+    assert.equal(reverse.clipPath, forward.clipPath);
+    assert.equal(reverse.offset, forward.offset);
+    const angle = frame => Number(frame.transform.match(/rotate\(([-\d.]+)deg\)/)[1]);
+    assert.equal(angle(reverse) + angle(forward), 0);
+  }
+  assert.deepEqual(previous.rotor, next.rotor);
   assert.equal(previous.swapAt, next.swapAt);
   for (const direction of [undefined, 0, NaN, Infinity, -Infinity, '-1']) assert.deepEqual(dialSelectionFrames(direction), next);
   next.a[0].clipPath = 'none'; next.rotor[0].transform = 'none';

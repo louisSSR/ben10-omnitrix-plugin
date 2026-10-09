@@ -14,7 +14,7 @@ function appFunction(name) {
   return match[0];
 }
 
-function filterSession({ query = '', group = 'all', readyOnly = true, selectedId = data.forms[0].id } = {}) {
+function filterSession({ query = '', group = 'all', readyOnly = false, selectedId = data.forms[0].id } = {}) {
   const nodes = {
     search: { value: query },
     'ready-only': { checked: readyOnly },
@@ -25,7 +25,9 @@ function filterSession({ query = '', group = 'all', readyOnly = true, selectedId
   const preferences = normalizePreferences({ selectedId, watch: 'ultimatrix', mode: 'dial', reducedMotion: true }, data.forms);
   const context = vm.createContext({
     data, forms: data.forms, query, group, readyOnly, preferences,
-    visible: filterForms(data.forms, { query, group, readyOnly }),
+    readyForms: data.forms.filter(form => !!form.asset),
+    byId: new Map(data.forms.map(form => [form.id, form])),
+    catalogVisible: filterForms(data.forms, { query, group, readyOnly }),
     $: id => nodes[id], filterForms,
     stopMotion: () => calls.stopped++,
     save: () => calls.saved.push(structuredClone(preferences)),
@@ -33,7 +35,8 @@ function filterSession({ query = '', group = 'all', readyOnly = true, selectedId
     renderCatalog: () => { calls.catalog++; context.renderFilterSummary(); },
     renderStage: () => calls.stage++,
   });
-  vm.runInContext(['refreshFilter', 'renderFilterSummary', 'resetFilters'].map(appFunction).join('\n'), context);
+  vm.runInContext(['watchSelectionPool', 'refreshFilter', 'renderFilterSummary', 'resetFilters'].map(appFunction).join('\n'), context);
+  context.visible = context.watchSelectionPool();
   return { context, nodes, calls };
 }
 
@@ -41,10 +44,12 @@ test('clearing the observed Diamond Matter search restores the entire catalog an
   const match = data.forms.find(form => form.id === 'diamond-matter');
   assert.ok(match?.asset);
   const { context, nodes, calls } = filterSession({ query: 'Diamond Matter', selectedId: match.id });
-  assert.equal(context.visible.length, 1, 'reproduce the reported one-hero filter');
+  assert.equal(context.catalogVisible.length, 1, 'the archive search finds one record');
+  assert.equal(context.visible.length, data.coverage.reviewed, 'watch navigation remains independent of the search');
   const before = structuredClone(context.preferences);
   context.resetFilters();
-  assert.equal(context.visible.length, data.forms.length);
+  assert.equal(context.catalogVisible.length, data.forms.length);
+  assert.equal(context.visible.length, data.coverage.reviewed);
   assert.equal(context.query, '');
   assert.equal(context.group, 'all');
   assert.equal(context.readyOnly, false);
@@ -60,10 +65,12 @@ test('clearing the observed Diamond Matter search restores the entire catalog an
 
 test('one reset clears search, group and ready-only together, including an empty result set', () => {
   const { context, nodes } = filterSession({ query: 'no-such-alien-000', group: 'ultimate', readyOnly: true });
-  assert.equal(context.visible.length, 0);
+  assert.equal(context.catalogVisible.length, 0);
+  assert.equal(context.visible.length, data.coverage.reviewed);
   context.resetFilters();
-  assert.deepEqual(Array.from(context.visible, form => form.id), data.forms.map(form => form.id));
-  assert.ok(context.visible.some(form => !form.asset), 'pending forms remain honest catalog entries');
+  assert.deepEqual(Array.from(context.catalogVisible, form => form.id), data.forms.map(form => form.id));
+  assert.ok(context.catalogVisible.some(form => !form.asset), 'pending forms remain honest catalog entries');
+  assert.ok(context.visible.every(form => !!form.asset), 'watch neighbors prefer ready artwork');
   assert.equal(nodes['ready-only'].checked, false);
 });
 
@@ -72,7 +79,7 @@ test('resetting repeatedly is stable and leaves watch, mode and motion preferenc
   context.resetFilters();
   const selected = context.preferences.selectedId;
   context.resetFilters();
-  assert.equal(context.visible.length, data.forms.length);
+  assert.equal(context.catalogVisible.length, data.forms.length);
   assert.equal(context.preferences.selectedId, selected);
   assert.equal(context.preferences.watch, 'ultimatrix');
   assert.equal(context.preferences.mode, 'dial');
@@ -82,7 +89,8 @@ test('resetting repeatedly is stable and leaves watch, mode and motion preferenc
 test('visible filter summary explains the restricted count and does not insert HTML', () => {
   const { context, nodes } = filterSession({ query: '<img onerror=alert(1)>', group: 'ultimate', readyOnly: true });
   context.renderFilterSummary();
-  assert.match(nodes['filter-summary'].textContent, /显示 0 \/ \d+ 个英雄/);
+  assert.match(nodes['filter-summary'].textContent, /档案搜索 0 \/ \d+/);
+  assert.match(nodes['filter-summary'].textContent, new RegExp(`手表可切换 ${data.coverage.reviewed} 个`));
   assert.ok(nodes['filter-summary'].textContent.includes('<img onerror=alert(1)>'));
   assert.ok(nodes['filter-summary'].textContent.includes(data.groups.ultimate));
   assert.match(nodes['filter-summary'].textContent, /仅已有剪影/);

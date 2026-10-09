@@ -22,7 +22,7 @@ files.push('assets/extra-art.json', 'docs/build-receipt.json', `docs/review-v${r
 if (existsSync(path.join(root, `docs/asset-migration-v${reviewKey}.json`))) files.push(`docs/asset-migration-v${reviewKey}.json`);
 const browserQa = JSON.parse(readFileSync(path.join(root, `docs/browser-qa-v${reviewKey}.json`)));
 for (const image of browserQa.screenshots) {
-  if (!/^screenshots\/v[0-9]+-[a-z0-9-]+\.png$/.test(image)) throw new Error(`Unexpected evidence path: ${image}`);
+  if (!/^screenshots\/v[0-9]+-[a-z0-9-]+\.(?:png|jpg)$/.test(image)) throw new Error(`Unexpected evidence path: ${image}`);
   files.push(`docs/${image}`);
 }
 for (const file of new Set(supplemental.assets.flatMap(asset => [asset.sourceFile, asset.maskFile]))) {

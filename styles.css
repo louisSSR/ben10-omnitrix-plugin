@@ -36,95 +36,99 @@
 .reduced-motion *,.reduced-motion *::before,.reduced-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media(max-width:600px){.selection-bar{display:grid;grid-template-columns:42px minmax(0,1fr) 42px;gap:12px}.selection-bar .confirm{grid-column:1/-1;width:100%;margin:0}.selection-name h3{font-size:20px;overflow-wrap:break-word}.selection-name>span{letter-spacing:.6px}}
 
-/* Device scenes: all coordinates originate at the actual face centre. */
-.stage{--ring-radius:min(220px,34cqw);container-type:inline-size;isolation:isolate}
+/* Device scenes share the actual face centre in every watch generation. */
+.stage{--ring-radius:min(165px,34cqw);container-type:inline-size;isolation:isolate}
 .watch-device{transform-origin:var(--face-x) var(--face-y);left:50%;border:0;background:transparent;padding:0}
-[data-mode=projection] .watch-device{top:76%;width:430px;height:430px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(64deg) rotateZ(90deg);filter:drop-shadow(0 18px 3px #081009) drop-shadow(0 26px 18px #000b)}
-[data-mode=projection] .watch-screen{background:#172814;box-shadow:inset 0 0 14px #000}
-[data-mode=projection] .hourglass{opacity:.25}
-[data-mode=projection] .orbit-line{top:77%;height:94px;width:380px;opacity:.5}
-[data-mode=projection] .orbit-b{width:470px;height:138px;opacity:.2}
-.projection-emitter{display:none;position:absolute;z-index:10;transform:translateX(-50%);transform-origin:50% 100%;pointer-events:none;filter:drop-shadow(0 5px 5px #0009)}
+.watch-body-depth{display:none;position:absolute;left:var(--face-x);top:var(--face-y);width:calc(var(--face-size) + 15%);height:calc(var(--face-size) + 15%);border-radius:50%;background:linear-gradient(90deg,#0a100e,#677363 28%,#151b15 65%,#060c09);transform:translate(-50%,-50%) translateZ(-14px);box-shadow:0 5px 0 #111a12,0 11px 0 #0a100b,0 18px 0 #182019,0 22px 10px #0009}
+[data-mode=projection] .watch-body-depth{display:block}
+[data-mode=projection] .watch-device{top:77%;width:min(470px,94cqw);height:min(470px,94cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(62deg) rotateZ(90deg);filter:drop-shadow(0 18px 3px #081009) drop-shadow(0 30px 20px #000b)}
+[data-mode=projection] .watch-screen{background:#122313;box-shadow:inset 0 0 14px #000}
+[data-mode=projection] .hourglass{opacity:.16}
+[data-mode=projection] .orbit-line{top:80%;height:110px;width:min(490px,97cqw);opacity:.32}
+[data-mode=projection] .orbit-b{width:min(560px,110cqw);height:157px;opacity:.12}
+.projection-emitter{display:none;position:absolute;z-index:10;transform:translateX(-50%);transform-origin:50% 100%;pointer-events:none;filter:drop-shadow(0 8px 5px #0009)}
 [data-mode=projection] .projection-emitter{display:block}
-.emitter-foot{position:absolute;inset:auto -6% -8px;height:44%;border:3px solid #3b4939;border-radius:50%;background:#131b15;box-shadow:0 0 0 2px #030906}
-.emitter-shaft{position:absolute;inset:12px 0 4px;border-radius:0 0 45% 45% / 0 0 32% 32%;border:2px solid #101810;background:linear-gradient(90deg,#080d0a,#354137 22%,#18251c 57%,#080d0a);display:flex;align-items:center;justify-content:space-evenly;overflow:hidden}
-.emitter-shaft i{width:5px;height:45%;min-height:8px;background:#aaff2c;box-shadow:0 0 7px #adff3866;transform:skewY(-12deg);border-radius:1px}
-.emitter-shaft i:nth-child(even){height:28%;transform:skewY(12deg)}
-.emitter-cap{position:absolute;inset:-15px -2% auto;height:38px;border-radius:50%;border:4px solid #5c704c;background:radial-gradient(ellipse,#f1ffc8,#b9ff57 38%,#71b93e 66%,#102215 70%);box-shadow:0 0 0 2px #0e1c0d,0 0 22px #aaff3244,inset 0 -4px 0 #17281c}
-.hologram{z-index:12;transform:translateX(-50%);perspective:680px;pointer-events:none}
-.holo-volume{position:absolute;inset:0 0 22px;transform-style:preserve-3d;transform-origin:50% 100%;animation:volume-drift 7s ease-in-out infinite}
+.emitter-foot{position:absolute;inset:auto -7% -8px;height:47%;border:3px solid #4c5c46;border-radius:50%;background:radial-gradient(ellipse,#202e20 35%,#091008 70%);box-shadow:0 0 0 2px #030906,0 4px 0 #0008,inset 0 -4px 4px #000}
+.emitter-shaft{position:absolute;inset:8px 0 3px;border-radius:0 0 48% 48% / 0 0 32% 32%;border:2px solid #101810;background:repeating-linear-gradient(90deg,transparent 0 13px,#b1d49116 14px,transparent 15px),linear-gradient(90deg,#050b07,#56694a 19%,#1c3220 43%,#0c180f 80%,#050806);display:flex;align-items:center;justify-content:space-evenly;overflow:hidden;box-shadow:inset 0 -7px 8px #0007}
+.emitter-shaft i{width:5px;height:48%;min-height:8px;background:#a6ff42;box-shadow:0 0 7px #adff3888;transform:skewY(-12deg);border-radius:1px}
+.emitter-shaft i:nth-child(even){height:30%;transform:skewY(12deg)}
+.emitter-cap{position:absolute;inset:-14px -2% auto;height:37px;border-radius:50%;border:4px solid #849a69;background:repeating-conic-gradient(from 0deg,#dbff8a20 0deg 4deg,transparent 4deg 30deg),radial-gradient(ellipse,#e6ffb4,#8dec36 42%,#234d19 66%,#0b1b0b 71%);box-shadow:0 0 0 2px #162511,0 -2px 0 #e3ffa170,0 0 26px #aaff3244,inset 0 -4px 0 #17281c}
+.emitter-cap::after{content:"";position:absolute;inset:18% 16%;border:1px solid #d9ffa470;border-radius:50%;box-shadow:0 0 8px #ccff89,0 0 15px #aaff43a0}
+.hologram{z-index:12;transform:translateX(-50%);perspective:780px;pointer-events:none}
+.holo-volume{position:absolute;inset:0 0 -4px;transform-style:preserve-3d;transform-origin:50% 100%;animation:volume-drift 8s ease-in-out infinite}
 .holo-shape,.holo-depth,.holo-echo{position:absolute;inset:0;height:auto;transform-origin:50% 100%;pointer-events:none}
-.holo-shape{animation:none;opacity:.86;transform:translateZ(8px);mask-image:repeating-linear-gradient(0deg,#000 0 2px,#000b 2px 3px);filter:drop-shadow(0 0 1px #efffc9) drop-shadow(0 0 7px #aaff3e66)}
-.holo-depth svg,.holo-shape svg{width:100%;height:100%}
-.holo-shape svg{filter:brightness(0) saturate(100%) invert(90%) sepia(65%) saturate(850%) hue-rotate(25deg)}
-.holo-depth{mask-image:repeating-linear-gradient(0deg,#000 0 1px,#0006 1px 3px)}
-.holo-depth svg{filter:brightness(0) saturate(100%) invert(65%) sepia(90%) saturate(800%) hue-rotate(30deg)}
-.depth-back{transform:translate3d(-9px,3px,-16px);opacity:.18;filter:blur(1px)}
-.depth-mid{transform:translate3d(-5px,2px,-7px);opacity:.38}
-.depth-front{transform:translate3d(-2px,1px,1px);opacity:.62}
+.holo-shape{animation:none;opacity:.96;transform:translateZ(7px);mask-image:repeating-linear-gradient(0deg,#000 0 3px,#000d 3px 4px);filter:drop-shadow(0 0 1px #e3ffae) drop-shadow(0 0 9px #8bff4140)}
+.holo-shape svg,.holo-depth svg{width:100%;height:100%}
+.holo-shape svg{filter:url(#omni-holo-relief)}
+.holo-depth{mask-image:repeating-linear-gradient(0deg,#000 0 3px,#000a 3px 4px)}
+.holo-depth svg{filter:brightness(0) saturate(100%) invert(49%) sepia(85%) saturate(900%) hue-rotate(40deg)}
+.depth-back{transform:translate3d(-4px,1px,-12px);opacity:.32;filter:none}
+.depth-mid{transform:translate3d(-2px,0,-5px);opacity:.65}
+.depth-front{transform:translate3d(-1px,0,2px);opacity:.8}
 .holo-echo{z-index:3}
-.holo-light{inset:25% -7% 0;opacity:.24;clip-path:polygon(3% 0,97% 0,70% 100%,30% 100%);background:linear-gradient(0deg,#d9ff9777,#acff3818 65%,transparent);animation:beam-breathe-soft 4s ease-in-out infinite;filter:none}
-.holo-base{bottom:0;height:20px;left:20%;right:20%;transform:none;opacity:.8}
+.holo-light{inset:5% -15% 0;opacity:.25;clip-path:polygon(0 0,100% 0,64% 100%,36% 100%);background:repeating-conic-gradient(from -21deg at 50% 100%,transparent 0 5deg,#caff8010 6deg 7deg,transparent 8deg 12deg),linear-gradient(0deg,#d9ff9777,#acff3818 65%,transparent);animation:beam-breathe-soft 4s ease-in-out infinite;filter:none}
+.holo-base{bottom:0;height:20px;left:20%;right:20%;transform:none;opacity:.65;background:radial-gradient(ellipse,#e5ffbb60,transparent 65%);border-color:#cbff8666}
 .holo-base-outer{bottom:-4px;height:29px;left:5%;right:5%;opacity:.3;border-width:1px;background:none;box-shadow:none}
-.holo-particles{opacity:.18}.scanline{opacity:.22}
+.holo-particles{opacity:.13}.scanline{opacity:.18}
 .holo-scan{left:8%;right:8%;height:2px;z-index:5;box-shadow:0 0 12px #d5ff81;background:#e2ffb5}
-@keyframes volume-drift{0%,100%{transform:rotateY(-19deg) rotateX(2deg) translateY(0)}50%{transform:rotateY(17deg) rotateX(-2deg) translateY(-7px)}}
-@keyframes beam-breathe-soft{0%,100%{opacity:.16}50%{opacity:.29}}
+@keyframes volume-drift{0%,100%{transform:rotateY(-11deg) rotateX(1deg) translateY(0)}50%{transform:rotateY(13deg) rotateX(-1deg) translateY(-6px)}}
+@keyframes beam-breathe-soft{0%,100%{opacity:.18}50%{opacity:.31}}
 
-/* A luminous annular surface, with the watch in its centre and selection at twelve o'clock. */
-.selection-ring{display:none;position:absolute;left:50%;top:55%;width:calc(var(--ring-radius) * 2 + 64px);height:calc(var(--ring-radius) * 1.6 + 64px);transform:translate(-50%,-50%);pointer-events:none;z-index:9}
+/* The selection ring and its large central core are one raised circular unit. */
+.selection-ring{display:none;position:absolute;left:50%;top:55%;width:calc(var(--ring-radius) * 2 + 68px);height:calc(var(--ring-radius) * 1.6 + 68px);transform:translate(-50%,-50%);pointer-events:none;z-index:9}
 [data-mode=carousel] .selection-ring{display:block}
-.ring-band{position:absolute;inset:0;border:2px solid #d5ff75bb;border-radius:50%;background:repeating-conic-gradient(from -22.5deg,#baff40aa 0deg 1deg,#a0f53148 1deg 44deg,#baff40cc 44deg 45deg);mask-image:radial-gradient(ellipse at center,transparent 0 52%,#000 53%);box-shadow:inset 0 0 22px #aeff6180,0 0 20px #b2ff3460}
-.selection-ring::after{content:"";position:absolute;inset:18%;border:2px solid #baff36a0;border-radius:50%;box-shadow:0 0 12px #a4ff3430}
-.ring-index{position:absolute;width:12px;height:12px;background:#efffc4;left:calc(50% - 6px);top:-12px;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 0 8px #c3ff61)}
-[data-mode=carousel] .watch-device{top:55%;width:300px;height:300px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(18deg);z-index:8;filter:drop-shadow(0 13px 9px #000b)}
-[data-mode=carousel] .watch-screen{background:#060d09;color:#b0ff30;box-shadow:inset 0 0 16px #000,0 0 12px #adff3333}
-[data-mode=carousel] .hourglass{width:88%;height:88%;filter:drop-shadow(0 0 4px #baff5880)}
+.ring-underlay{position:absolute;inset:8px 0 -12px;border-radius:50%;background:#4e9c1580;border:2px solid #8ee84080;box-shadow:0 10px 20px #0006}
+.ring-band{position:absolute;inset:0;border:3px solid #d2ff84c9;border-radius:50%;background:repeating-conic-gradient(from calc(-22.5deg + var(--ring-turn,0deg)),#d0ff6bcc 0deg .6deg,#b9ff5638 1deg 44deg,#d0ff6bbb 44.3deg 45deg),radial-gradient(ellipse,#76d728 50%,#a0ee3055 72%,#d4ff8a99 98%);box-shadow:inset 0 0 14px #c9ff9570,0 0 28px #a7ff302c;transform:none}
+.selection-ring::after{content:"";position:absolute;inset:3%;border:1px solid #d5ff8580;border-radius:50%;box-shadow:inset 0 -3px 0 #ccffae44}
+.ring-core{position:absolute;inset:20%;border-radius:50%;background:radial-gradient(ellipse at 35% 15%,#183812,#061306 65%);border:3px solid #a7ef4470;box-shadow:0 0 0 3px #254819,inset 0 3px 10px #000b,0 10px 15px #31581790,0 0 18px #b4ff4240;display:grid;place-items:center;overflow:hidden}
+.ring-core::after{content:"";position:absolute;inset:0;background:linear-gradient(130deg,#dcff7c10,transparent 35%,transparent 63%,#b7ff2920)}
+.ring-core svg{width:87%;height:88%;fill:#aef039;filter:drop-shadow(0 0 5px #b8ff5860);transform:rotate(-5deg)}
+.ring-index{position:absolute;width:12px;height:10px;background:#efffc4;left:calc(50% - 6px);top:-16px;clip-path:polygon(0 0,100% 0,50% 100%);filter:drop-shadow(0 0 8px #c3ff61)}
+[data-mode=carousel] .watch-device{top:55%;width:min(480px,108cqw);height:min(480px,108cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(26deg) rotateZ(90deg);z-index:8;filter:drop-shadow(0 15px 9px #000b)}
+[data-mode=carousel] .watch-screen{background:#060d09;color:#b0ff30;box-shadow:inset 0 0 16px #000}
+[data-mode=carousel] .hourglass{opacity:0}
 [data-mode=carousel] .orbit-line{display:none}
 .carousel{inset:0;perspective:none;transform-style:flat;z-index:14;pointer-events:none}
-.ring-item{left:50%;top:55%;width:58px;height:68px;margin:-34px 0 0 -29px;min-width:0;border:1px solid transparent;border-radius:5px;background:none;box-shadow:none;backdrop-filter:none;pointer-events:auto;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;padding:4px;transition:background .25s,border-color .25s;touch-action:pan-y}
+.ring-item{left:50%;top:55%;width:58px;height:68px;margin:-34px 0 0 -29px;min-width:0;border:1px solid transparent;border-radius:3px;background:none;box-shadow:none;backdrop-filter:none;pointer-events:auto;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;padding:4px;transition:background .25s,border-color .25s;touch-action:pan-y}
 .ring-item::after{display:none}
-.ring-item svg{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(18%) sepia(35%) saturate(900%) hue-rotate(40deg);opacity:.95}
+.ring-item svg{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(19%) sepia(38%) saturate(1200%) hue-rotate(42deg);opacity:1}
 .ring-item span:not(.pending-figure){display:none}
-.ring-item.is-selected{border-color:#dcff92;background:#b0fa4644;box-shadow:0 0 0 3px #adff3025,0 0 22px #aaff3433;border-radius:3px}
-.ring-item.is-selected svg{filter:brightness(0) saturate(100%) invert(94%) sepia(80%) saturate(400%) hue-rotate(25deg)}
-.ring-item.is-selected span:not(.pending-figure){display:block;position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:#d9fba4;background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.ring-item.is-selected{border:2px solid #e8ffb0;background:#bcff5a60;box-shadow:0 0 0 3px #acfc3450,inset 0 0 12px #d5ff8250,0 0 18px #aaff3440;border-radius:2px}
+.ring-item.is-selected svg{filter:brightness(0) saturate(100%) invert(17%) sepia(52%) saturate(700%) hue-rotate(39deg)}
+.ring-item.is-selected span:not(.pending-figure){display:block;position:absolute;bottom:calc(100% + 14px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:#d9fba4;background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
 .ring-item.is-front,.ring-item.is-back{filter:none}
 .ring-item .pending-figure{font-size:8px;color:#d6ff8b;line-height:1.4}
 
-/* Permanent opposing leaves make the diamond aperture a physical part of the dial. */
-[data-mode=dial] .watch-device{top:56%;width:520px;height:520px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y)));filter:drop-shadow(0 15px 10px #000a)}
+/* A bevelled aperture and two independent leaves, rather than a flat diamond sticker. */
+[data-mode=dial] .watch-device{top:55%;width:540px;height:540px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y)));filter:drop-shadow(0 15px 10px #000a)}
 [data-mode=dial] .watch-screen{background:#b6fb24;box-shadow:inset 0 0 0 4px #0b130b,inset 0 0 24px #365409,0 0 20px #acff251a}
-[data-mode=dial] .dial-shape{inset:2%;background:#b7fa20;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+[data-mode=dial] .dial-shape{inset:2%;background:radial-gradient(ellipse at 45% 25%,#d0ff47,#a4e71d 75%);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 [data-mode=dial] .dial-shape::before{display:none}
 [data-mode=dial] .dial-shape svg{filter:brightness(0);transform:scale(var(--dial-scale,.55));width:100%;height:100%}
-.screen-rotor{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:50%;transform-origin:center;overflow:hidden;filter:drop-shadow(0 0 2px #071009)}
-.dial-shutter{inset:0;background:linear-gradient(112deg,#e3e7d9,#869180 43%,#566451);box-shadow:none;transform:none;pointer-events:none}
+.screen-rotor{position:absolute;inset:0;z-index:5;pointer-events:none;border-radius:50%;transform-origin:center;overflow:hidden;filter:drop-shadow(0 2px 2px #071009)}
+.dial-shutter{inset:0;background:linear-gradient(120deg,#d0d7c9,#778571 30%,#b4c0aa 47%,#53674e 50%,#152411 53%,#819176 87%);box-shadow:inset 0 0 0 3px #081009;transform:none;transform-origin:50% 50%;pointer-events:none}
 .shutter-a{clip-path:polygon(0 0,50% 0,0 50%,50% 100%,0 100%)}
-.shutter-b{clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%,100% 50%)}
-.dial-shutter::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0001,transparent 40%,#0005);border:3px solid #0e190d;border-radius:50%}
+.shutter-b{clip-path:polygon(50% 0,100% 0,100% 100%,50% 100%,100% 50%);background:linear-gradient(290deg,#ccd3c7,#7b8d6d 34%,#c5cfb6 48%,#526347 51%,#20301a 54%,#718168 88%)}
+.dial-shutter::after{content:"";position:absolute;inset:0;border:4px solid #152110;border-radius:50%;background:linear-gradient(90deg,#0002,transparent 40%,#0003);box-shadow:inset 0 1px 2px #fff9}
 .screen-rim{border:3px solid #18251a;box-shadow:inset 0 0 0 1px #82976c80;inset:0;z-index:10}
-[data-mode=dial] .screen-glass{opacity:.25}
+[data-mode=dial] .screen-glass{opacity:.16}
 .filter-recovery{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:12px 20px;color:#a9bd9b;background:#101a11;border-top:1px solid #293f25;font-size:11px}
 .filter-recovery button{min-height:38px;border:1px solid #a1ce5860;border-radius:5px;padding:6px 12px;color:#ccf791}
 .filter-recovery[hidden]{display:none!important}
-[data-watch=ultimatrix][data-mode=projection] .watch-device{top:68.5%;width:min(380px,90cqw);height:min(380px,90cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(68deg) rotateZ(-12deg)}
-[data-watch=ultimatrix][data-mode=dial] .watch-device{width:min(370px,100cqw);height:min(370px,100cqw);top:38%}
+[data-watch=ultimatrix][data-mode=projection] .watch-device{left:64%;top:77%;width:min(340px,65cqw);height:min(340px,65cqw);transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y))) rotateX(62deg) rotateZ(90deg)}
+[data-watch=ultimatrix][data-mode=carousel] .watch-device{width:min(330px,58cqw);height:min(330px,58cqw)}
+[data-watch=ultimatrix][data-mode=dial] .watch-device{width:min(400px,102cqw);height:min(400px,102cqw);top:38%}
+[data-watch=omniverse][data-mode=projection] .watch-device{left:55%;width:min(400px,74cqw);height:min(400px,74cqw)}
 @media(max-width:760px){
-  .stage{height:475px}.experience-head{padding:18px 17px 0}.stage-coordinate{top:86px;opacity:.55}
-  [data-mode=projection] .watch-device{width:330px;height:330px;top:77%}
-  [data-mode=carousel] .watch-device{width:240px;height:240px}
-  [data-mode=dial] .watch-device{width:395px;height:395px}
-  .ring-item{width:48px;height:58px;margin:-29px 0 0 -24px}
-  .selection-ring{width:calc(var(--ring-radius) * 2 + 48px);height:calc(var(--ring-radius) * 1.6 + 48px)}
-  .emitter-cap{height:30px;top:-11px;border-width:3px}
-  .filter-recovery{padding:10px 13px;font-size:10px}.stage-bottom{font-size:9px}
+ .stage{height:485px}.experience-head{padding:18px 17px 0}.stage-coordinate{top:88px;opacity:.55}
+ [data-mode=dial] .watch-device{width:min(440px,116cqw);height:min(440px,116cqw)}
+ .ring-item{width:48px;height:58px;margin:-29px 0 0 -24px}
+ .selection-ring{width:calc(var(--ring-radius) * 2 + 48px);height:calc(var(--ring-radius) * 1.6 + 48px)}
+ .ring-core{inset:21%;border-width:2px}
+ .emitter-cap{height:30px;top:-11px;border-width:3px}
+ .filter-recovery{padding:10px 13px;font-size:10px}.stage-bottom{font-size:9px}
 }
 @media(max-width:380px){
-  .stage{height:445px}[data-mode=projection] .watch-device{width:295px;height:295px}
-  [data-mode=carousel] .watch-device{width:210px;height:210px}
-  [data-mode=dial] .watch-device{width:340px;height:340px}
-  .ring-item{width:42px;height:52px;margin:-26px 0 0 -21px}
+ .stage{height:455px}
+ .ring-item{width:42px;height:52px;margin:-26px 0 0 -21px}
 }
-[data-mode=projection] .watch-device{width:min(430px,88cqw);height:min(430px,88cqw)}
-[data-watch=omniverse][data-mode=projection] .watch-device{width:min(360px,78cqw);height:min(360px,78cqw)}

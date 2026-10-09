@@ -1,0 +1,43 @@
+{
+  "version": "0.3.8",
+  "checkedAt": "2026-10-09T08:20:00Z",
+  "previewSha256": "490a12ca844a76c94c490f3e7bc15f8c7b4aef9f8d369f08fa6b6334f03f4397",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; responsive iframe checks, not physical phones",
+  "coverage": {"total": 224, "reviewed": 184, "missing": 40},
+  "checks": {
+    "desktopOuterViewportWidth": 1280,
+    "mobile": [
+      {"outerLabelWidth": 390, "clientWidth": 375, "scrollWidth": 375},
+      {"outerLabelWidth": 320, "clientWidth": 305, "scrollWidth": 305}
+    ],
+    "singleResult": {"query": "Diamond Matter", "catalogCount": 1, "ringSlots": 8, "nextHero": "Heat Jaws"},
+    "emptyResult": {"query": "不存在的英雄123", "catalogCount": 0, "nextEnabled": true, "nextHero": "Fourmungousaur"},
+    "ringCenterClick": "locked Wildmutt",
+    "ringIntermediate": {"angleDeg": -263.187323764488, "observedScaleMin": 0.703917, "observedScaleMax": 1.24608},
+    "dialIntermediate": "opposing transform matrices; old figure visible before swap; both transforms clear after settle",
+    "projectionKind": "2.5D alpha relief, layered silhouette depth and parallax; not full 3D character geometry",
+    "mobileProjectionWatchesViewed": ["original", "recalibrated", "ultimatrix", "omniverse"],
+    "oldRuntimeImagesByteExact": 188,
+    "finalSelection": {"hero": "Heatblast", "watch": "original", "mode": "carousel", "query": "", "readyOnly": false}
+  },
+  "screenshots": [
+    "screenshots/v038-mobile-projection-ring.jpg",
+    "screenshots/v038-mobile-dial.jpg",
+    "screenshots/v038-desktop-dial.jpg",
+    "screenshots/v038-desktop-projection.jpg",
+    "screenshots/v038-final-preview.jpg"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": {
+    "count": 3,
+    "message": "MutationObserver.observe parameter 1 is not of type Node",
+    "timestamps": ["2026-10-09T08:05:29.335Z", "2026-10-09T08:09:05.098Z", "2026-10-09T08:16:53.896Z"],
+    "source": "unattributed; no source URL supplied by log tool"
+  },
+  "automated": {"tests": 96, "passed": 96, "failed": 0, "skipped": 0},
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}
