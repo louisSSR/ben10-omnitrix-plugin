@@ -361,6 +361,8 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
     if (image) { image.complete = imageState !== 'loading'; image.naturalWidth = imageState === 'ready' ? 2400 : 0; }
   }
   elements.get('stage').clientWidth = 390;
+  // These are actual stage descendants; click-scope tests must not use detached stand-ins.
+  elements.get('stage').append(elements.get('carousel'), elements.get('watch-device'));
   let saved = JSON.stringify({ mode, watch: 'original', selectedId: fixture[0].id, reducedMotion });
   const window = makeNode('window'), systemMotion = makeNode('media'); window.parent = window; systemMotion.matches = systemReduced;
   const context = vm.createContext({ document, window, matchMedia: () => systemMotion, AbortController,
@@ -856,10 +858,58 @@ test('keyboard navigation works from a ring button and a swipe is not overwritte
   stage.emit('pointerdown', { pointerId: 1, clientX: 250, clientY: 80, button: 0, pointerType: 'touch' });
   stage.emit('pointerup', { pointerId: 1, clientX: 150, clientY: 83 });
   assert.equal(h.preferences.selectedId, h.fixture[2].id);
-  h.action('select', h.fixture[0].id);
+  const followup = h.elements.get('carousel').querySelector(`[data-value="${h.fixture[0].id}"]`);
+  h.elements.get('omni-app').emit('click', { target: followup, detail: 1 });
   assert.equal(h.preferences.selectedId, h.fixture[2].id);
-  h.advance(400); h.action('select', h.fixture[0].id);
+  h.advance(400); h.elements.get('omni-app').emit('click', { target: followup, detail: 1 });
   assert.equal(h.preferences.selectedId, h.fixture[0].id);
+});
+
+function swipeStage(h) {
+  const stage = h.elements.get('stage');
+  stage.emit('pointerdown', { pointerId: 1, clientX: 250, clientY: 80, button: 0, pointerType: 'touch' });
+  stage.emit('pointerup', { pointerId: 1, clientX: 150, clientY: 83 });
+}
+
+test('swipe cooldown does not block immediate mode, watch or catalog controls outside the stage', () => {
+  for (const action of ['mode', 'watch', 'select']) {
+    const h = boot({ mode: 'projection' });
+    swipeStage(h);
+    const value = action === 'mode' ? 'dial' : action === 'watch' ? 'recalibrated' : h.fixture[4].id;
+    const container = h.elements.get(action === 'mode' ? 'mode-options' : action === 'watch' ? 'watch-options' : 'catalog-grid');
+    const control = container.querySelector(`[data-value="${value}"]`);
+    assert.ok(control, action);
+    h.elements.get('omni-app').emit('click', { target: control, detail: 1 });
+    assert.equal(h.preferences[action === 'select' ? 'selectedId' : action], value, action);
+  }
+});
+
+test('swipe follow-up pointer click cannot confirm the watch, while later pointer input can', () => {
+  const h = boot({ mode: 'projection' }), watch = h.elements.get('watch-device');
+  swipeStage(h);
+  let prevented = false;
+  watch.emit('click', { detail: 1, preventDefault() { prevented = true; } });
+  assert.equal(prevented, true);
+  assert.equal(h.elements.get('confirmation').hidden, true);
+  h.advance(351);
+  watch.emit('click', { detail: 1 });
+  assert.equal(h.elements.get('confirmation').hidden, false);
+});
+
+test('swipe cooldown preserves keyboard ring selection, watch activation and stage confirmation', () => {
+  for (const target of ['ring', 'watch', 'stage']) {
+    const h = boot({ mode: 'carousel' });
+    swipeStage(h);
+    if (target === 'ring') {
+      const ring = h.elements.get('carousel').querySelector(`[data-value="${h.fixture[0].id}"]`);
+      h.elements.get('omni-app').emit('click', { target: ring, detail: 0 });
+      assert.equal(h.preferences.selectedId, h.fixture[0].id);
+    } else {
+      if (target === 'watch') h.elements.get('watch-device').emit('click', { detail: 0 });
+      else h.elements.get('stage').emit('keydown', { key: 'Enter' });
+      assert.equal(h.elements.get('confirmation').hidden, false, target);
+    }
+  }
 });
 
 test('catalog searches never narrow watch navigation in any summon mode', () => {

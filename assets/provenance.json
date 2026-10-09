@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "164bb6200af085df4c42ded956baf676b69c9ad72a357179570a9e1697421914",
-  "svgSha256": "ac6d0b10965401e31469b73f8ee4f1c132c74064025b4d024a23d0ab451c19d7",
+  "catalogSha256": "3b1e469c14684874f500694e6bac5195a864d864b6d40bcc021670ed244e73c0",
+  "svgSha256": "bb96396714c2cd75c0b501ab267ee3bb80d6cff90e64773a0aa69e9eff23a5ee",
   "coverage": {
-    "total": 226,
-    "reviewed": 224,
+    "total": 228,
+    "reviewed": 226,
     "missing": 2
   },
   "assets": [
@@ -2026,6 +2026,26 @@
       "renderMode": "source-alpha",
       "sourceSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
       "maskSha256": "813f95abaea4211f79a4ac199cd9fafb9a891e297c51f3eb9fdca3b3a3708a5b",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-kevin-ua-amalgam",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-3rd-mutation.png",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Ben10Hero is a community reference site, not an authenticated official frame publisher. Original frame attribution and reuse permission are unverified. AI redraw is explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "340771b93ec23e763a39dca6e5454f1e3bb2c83e5e4ccc6390bcc6e98f7aaf8b",
+      "maskSha256": "2b5a5b94c9430d1618e3118ab17ccf4be82680ec50c5ae9cd7ebf301eb8c6cd2",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "kevin-ov-flashback-amalgam",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-4th-mutation.png",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "rights": "Underlying Ben 10 character and animation remain copyrighted. The source is a community-rehosted animation screenshot; original production-file chain, individual artist and redistribution permission are unknown. The generated alpha is a disclosed AI reference redraw, not official transparent original artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "7d63874051d448c85110073701698c615e224a44c1ed7f5ce8fd02f3730cb294",
+      "maskSha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
       "contentType": "image/png"
     }
   ],

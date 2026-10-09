@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-10-09T13:56:56.087Z",
-  "sha256": "53f200fc5cd99f384efca616b65760cd81402ba34b6d63d9fe12208cbc4469af",
-  "bytes": 324783,
+  "builtAt": "2026-10-09T15:47:01.965Z",
+  "sha256": "52ab8166fb29d318a9ddde8e0ac7e8d2105ba399f53ba42b584d32b19566e349",
+  "bytes": 328351,
   "coverage": {
-    "total": 226,
-    "reviewed": 224,
+    "total": 228,
+    "reviewed": 226,
     "missing": 2
   },
   "watchArt": [
@@ -80,7 +80,7 @@
   "realHostVerified": false,
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 237,
-  "runtimeBytes": 106323662,
-  "runtimeManifestSha256": "c05ad350487ef9c786c175a1a441971f044c151a9fa323fe447b4d0fe60c1a1e"
+  "runtimeFiles": 239,
+  "runtimeBytes": 108756189,
+  "runtimeManifestSha256": "1f453effbef2c08df6c32a6fd57dd315c252607d38c6b8be86bd8173b239f61c"
 }

@@ -453,9 +453,13 @@ function confirm() {
   post('select', { formId: form.id, name: form.name || form.en });
   notice(`已锁定 ${form.name || form.en}`);
 }
+function suppressesStageClick(event) {
+  // Ignore only the pointer click left over from a stage swipe, never keyboard activation or outside controls.
+  return Date.now() < suppressClickUntil && event.detail !== 0 && !!event.target.closest('#stage');
+}
 listen(app, 'click', event => {
   const control = event.target.closest('[data-action]'); if (!control) return;
-  if (Date.now() < suppressClickUntil) { event.preventDefault(); return; }
+  if (suppressesStageClick(event)) { event.preventDefault(); return; }
   const { action, value } = control.dataset;
   if (action === 'select') select(value);
   else if (action === 'watch' && WATCHES.some(watch => watch.id === value)) {
@@ -491,7 +495,11 @@ for (const watch of WATCHES) {
   listen(image, 'error', () => update('fallback'));
 }
 listen($('previous'), 'click', () => step(-1)); listen($('next'), 'click', () => step(1));
-listen($('confirm'), 'click', confirm); listen($('watch-device'), 'click', confirm);
+listen($('confirm'), 'click', confirm);
+listen($('watch-device'), 'click', event => {
+  if (suppressesStageClick(event)) { event.preventDefault(); return; }
+  confirm();
+});
 listen($('search'), 'input', event => { query = event.target.value; refreshFilter(); });
 listen($('ready-only'), 'change', event => { readyOnly = event.target.checked; refreshFilter(); });
 listen($('motion-toggle'), 'click', () => {
@@ -512,7 +520,7 @@ listen($('stage'), 'pointerup', event => {
   if (!pointerStart || pointerStart.id !== event.pointerId) return;
   const dx = event.clientX - pointerStart.x, dy = event.clientY - pointerStart.y; pointerStart = null;
   if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.4) {
-    step(dx > 0 ? -1 : 1); lastConfirm = Date.now(); suppressClickUntil = Date.now() + 350;
+    step(dx > 0 ? -1 : 1); suppressClickUntil = Date.now() + 350;
   }
 });
 listen($('stage'), 'pointercancel', () => { pointerStart = null; });

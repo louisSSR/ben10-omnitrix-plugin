@@ -7878,6 +7878,348 @@
         "sourceLimitationsPreserved": true,
         "observation": "Root viewed full silhouettes in the diamond, hologram and ring on desktop and both narrow iframe layouts. No horizontal overflow in recorded views. Community-source attribution limits remain unchanged."
       }
+    },
+    {
+      "formId": "ultimate-kevin-ua-amalgam",
+      "sourceFile": "assets/source-art/ultimate-kevin-ua-amalgam-source-original.png",
+      "sourceSha256": "340771b93ec23e763a39dca6e5454f1e3bb2c83e5e4ccc6390bcc6e98f7aaf8b",
+      "maskFile": "assets/source-art/ultimate-kevin-ua-amalgam-reference-edit.png",
+      "maskSha256": "2b5a5b94c9430d1618e3118ab17ccf4be82680ec50c5ae9cd7ebf301eb8c6cd2",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-3rd-mutation.png",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided redraw of a community-hosted Ultimate Kevin animation still. The original crouched pose and major composite anatomy are retained while the background is removed. Fine lines, fingers, cape folds and tail details are interpretations; this is not an official transparent original or exact pixel extraction.",
+      "rights": "Underlying Ben 10 character and animation rights remain with their owners. Ben10Hero is a community reference site, not an authenticated official frame publisher. Original frame attribution and reuse permission are unverified. AI redraw is explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "sourceCapture": {
+        "kind": "community-hosted-animation-still",
+        "literalSource": "Original 403w srcset URL in the actually read Ben10Hero Kevin page",
+        "sourceWidth": 403,
+        "sourceHeight": 307,
+        "sourceAlphaRange": [
+          255,
+          255
+        ],
+        "sourceBytesUnchanged": true,
+        "exactEpisodeOfStillVerified": false
+      },
+      "editionEvidence": {
+        "series": "Ben 10: Ultimate Alien",
+        "communityIdentity": "Page body names the third mutation Ultimate Kevin and links the alien-DNA absorption to The Forge of Creation.",
+        "officialEpisodeMetadataUrl": "https://tv.apple.com/us/episode/the-forge-of-creation/umc.cmc.1ryx54imr0i23maa4w530g3sv?showId=umc.cmc.1tx3oatiqpah2carccx4ncqq2",
+        "officialMetadataActuallyRead": true,
+        "officialMetadataLimits": "Apple TV confirms The Forge of Creation, S1 E16 and Kevin losing control after Aggregor is defeated. It does not independently establish the body design, official transformation name, or the episode of the viewed night-time still."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Image 1 is the edit target: the complete crouching Ultimate Kevin alien amalgam from the Ben 10 Ultimate Alien animation frame. Create ONE clean full-body RGBA transparent character sprite preserving this exact pose and body outline. Keep the blue hood and broad folded cape, red and olive-green facial structure, left cyan crystal forearm with its curved claw and magenta shoulder crystals, right green organic arm and hand with pointed gold-and-black shoulder horn, segmented tan chest, ragged blue trousers, mismatched red feet and brown tail visible behind the cape. Preserve the original anatomy and perspective, do not substitute a standing model sheet. Remove ONLY the building, trees, lawn and scenery. Include the entirety of both hands, shoulder tips, cape hem, tail and feet; add transparent padding around all edges so no body pixel touches the canvas edge. Match the frame's cel shading and bold outline; subtle improvements in line clarity are acceptable but do not invent extra limbs, armour, wings, symbols, props or costume parts. No text, watermark, ground shadow, decorative glow or checkerboard. Genuine transparent background. The original blue clothing and asymmetric arms are essential.",
+        "promptSha256": "587e552fec4557c8c13b17406ff98c05e2fc9342129f808a70c4cabfa881fe1c",
+        "attempts": 2,
+        "successfulSavedOutputs": 1,
+        "firstAttemptOutcome": "Code-mode host closed stdout; root revalidation found no running handle or output file.",
+        "secondAttemptOutcome": "One output saved successfully and independently viewed.",
+        "rawOutputSha256": "2b5a5b94c9430d1618e3118ab17ccf4be82680ec50c5ae9cd7ebf301eb8c6cd2",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0
+      },
+      "observations": [
+        "Actual 403x307 source view shows a complete crouched figure, blue hood and cape, yellow shoulder horn, magenta crystals, asymmetrical cyan claw and green organic arm, beige chest plates, blue bent legs, red lower legs/feet and brown tail.",
+        "Actual 1437x1095 output view preserves the same crouching pose and major anatomy with both large arms, shoulder points, blue cape hem, red feet and curved brown tail inside the strong-alpha silhouette. No building, trees, grass or unrelated character is retained."
+      ],
+      "limitations": [
+        "The community original is an opaque 403x307 animation still, not official transparent art. Its exact episode/frame time and upstream publication remain unverified.",
+        "Face lines, small claws/fingers, toe shapes, tail segments, cape folds, junctions and shading are AI interpretations from a low-resolution frame. The output must not become independent evidence for those details.",
+        "The form is a classic-continuity Ultimate Alien amalgam, separate from OS Kevin11 and reboot Antitrix fusions; it is not counted as a new alien species or ordinary human Kevin.",
+        "Generated alpha>=128 bbox [39,18,1405,1085] lies inside the 1437x1095 canvas. Faint alpha1 residue reaches the bottom edge; 15483 pixels have alpha1..15 and 5040 have alpha16..127. No programmatic cleanup or padding was applied.",
+        "Current black watch UI, real phone, real SillyTavern and user acceptance have not been verified for this candidate. Parent must inspect all delivery modes before marking UI reviewed."
+      ],
+      "alphaInspection": {
+        "sha256": "2b5a5b94c9430d1618e3118ab17ccf4be82680ec50c5ae9cd7ebf301eb8c6cd2",
+        "bytes": 1165819,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1437,
+          1095
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "positiveAlphaBBox": [
+          33,
+          15,
+          1409,
+          1095
+        ],
+        "strongAlphaBBox": [
+          39,
+          18,
+          1405,
+          1085
+        ],
+        "edgeMax": {
+          "top": 0,
+          "bottom": 1,
+          "left": 0,
+          "right": 0
+        },
+        "weakAlpha1to15": 15483,
+        "midAlpha16to127": 5040,
+        "alpha0Pixels": 764366,
+        "alpha255Pixels": 2369,
+        "programmaticPixelEdits": false,
+        "actualViewedByReviewer": true
+      },
+      "adoptionBasis": "Independent source/output comparison supports a recognizable disclosed reference reconstruction. Seven-field identity has no matching current catalog row; root integration and UI verification remain separate.",
+      "uiReview": {
+        "version": "0.4.8",
+        "checkedAt": "2026-10-09T15:45:32.720Z",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "desktopClientWidths": [
+          1265
+        ],
+        "mobileFrameWidths": [
+          390,
+          320
+        ],
+        "observedMobileClientWidths": [
+          375,
+          305
+        ],
+        "sourceSha256": "340771b93ec23e763a39dca6e5454f1e3bb2c83e5e4ccc6390bcc6e98f7aaf8b",
+        "maskSha256": "2b5a5b94c9430d1618e3118ab17ccf4be82680ec50c5ae9cd7ebf301eb8c6cd2",
+        "inspectedPreviewSha256": "b7622ff9a3bbbb1d5b245c8c7d8c8ea29e9cba456a5bf6dc99377099579a74ce",
+        "physicalPhoneVerified": false,
+        "realSillyTavernVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "observation": "Root actually viewed this selected form in the diamond dial, holographic projection and ring on desktop and two narrow iframe layouts. Recorded final selections and modes match the intended form; recorded document widths show no horizontal overflow. Source-stage AI redraw limitations are retained and are not superseded by local UI review."
+      }
+    },
+    {
+      "formId": "kevin-ov-flashback-amalgam",
+      "sourceFile": "assets/source-art/kevin-ov-flashback-amalgam-original.png",
+      "sourceSha256": "7d63874051d448c85110073701698c615e224a44c1ed7f5ce8fd02f3730cb294",
+      "maskFile": "assets/source-art/kevin-ov-flashback-amalgam-reference-edit.png",
+      "maskSha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
+      "pageUrl": "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+      "url": "https://ben10hero.com/wp-content/uploads/2016/07/kevins-4th-mutation.png",
+      "rights": "Underlying Ben 10 character and animation remain copyrighted. The source is a community-rehosted animation screenshot; original production-file chain, individual artist and redistribution permission are unknown. The generated alpha is a disclosed AI reference redraw, not official transparent original artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "One built-in image_gen reference edit removes the scenery from the small, opaque Ben10Hero animation repost and redraws the Omniverse flashback Kevin alien-DNA amalgam. The low crouch, crossed bands and high ribbon loops, rounded rear shell, shoulder eye details, pale extended forearms, green image-right hand, curled tail and striped feet follow the provided scene. AI enlargement interprets fine anatomy and surface details. Root separately observed the matching flashback upper body in a Cartoon Network official-channel video, which supports identity but does not authenticate this generated cutout or unseen details.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "sourceCapture": {
+        "kind": "community-rehosted-animation-screenshot",
+        "sourceHost": "Ben10Hero",
+        "originalBytesUnchanged": true,
+        "sourceInspection": {
+          "sha256": "7d63874051d448c85110073701698c615e224a44c1ed7f5ce8fd02f3730cb294",
+          "bytes": 220122,
+          "format": "PNG",
+          "mode": "RGBA",
+          "size": [
+            403,
+            331
+          ],
+          "alphaRange": [
+            255,
+            255
+          ],
+          "nonzeroAlphaBBox": [
+            0,
+            0,
+            403,
+            331
+          ],
+          "strongAlphaThreshold": 128,
+          "strongAlphaBBox": [
+            0,
+            0,
+            403,
+            331
+          ],
+          "strongAlphaMarginsPx": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "strongAlphaMarginPercent": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "strongAlphaBoundaryPixelCounts": {
+            "top": 403,
+            "bottom": 403,
+            "left": 331,
+            "right": 331
+          },
+          "lowAlphaPixelCount": 0,
+          "cornerAlpha": [
+            255,
+            255,
+            255,
+            255
+          ]
+        },
+        "nativeTransparentSource": false,
+        "originalProductionFileVerified": false,
+        "officialVideoIdentitySupportObservedByRoot": true
+      },
+      "identitySources": [
+        {
+          "url": "https://tv.apple.com/gb/episode/weapon-xi-part-2/umc.cmc.613nxkky874rqdci3u27vzwhx?showId=umc.cmc.3lfb2l0fbgvea7ktuah4zpr3c",
+          "kind": "licensed-distributor-episode-metadata",
+          "support": "The licensed listing confirms episode title/series/season and Rooters/Kevin/Amalgam Kids premise. Its synopsis does not independently verify this exact image or Kevin age.",
+          "readByIdentityResearcher": true,
+          "episodePlaybackByProposalAuthor": false
+        },
+        {
+          "url": "https://ben10.fandom.com/wiki/Weapon_XI:_Part_2",
+          "kind": "community-episode-index",
+          "support": "Separately lists Kevin Omniverse Flashback Mutation and present mutation as debuts, labels flashback Kevin12 and Ben11. This is secondary indexing, not independently replayed episode pixels.",
+          "readByIdentityResearcher": true,
+          "episodePlaybackByProposalAuthor": false
+        }
+      ],
+      "additionalVideoObservation": {
+        "url": "https://www.youtube.com/watch?v=sRkFTXxNkIs",
+        "channel": "Cartoon Network",
+        "officialChannelObservedByRoot": true,
+        "descriptionEpisode": "Weapon XI Part 2",
+        "observedAtSeconds": 57.933333,
+        "readyState": 4,
+        "paused": true,
+        "actuallyViewedByRoot": true,
+        "actuallyViewedByProposalAuthor": false,
+        "observation": "Root reported actual paused playback of the same flashback amalgam upper body. This supports identity and the visible upper-body design only; it does not certify exact generated fine details or a complete original transparent file."
+      },
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Asset type: one full-body transparent character sprite for an alien selection watch UI. Image 1 is the edit target: the Ben 10 Omniverse flashback Kevin amalgam animation frame. Isolate ONLY this exact crouching alien amalgam, preserving its pose, proportions, visible limb count and cel-animation colors. Preserve the central red head spike, black hair and gray face, shoulder eye details, beige crossed torso bandages with two high loose ribbon loops, rounded blue/black shell behind the shoulders, long pale forearms and green segmented hand on image-right, dark legs with red circular patches, white striped feet, and curved gray-green tail on image-left. Preserve all visible tips and keep the body, ribbons and tail one coherent cutout. Remove the forest, ground, broadcast graphics and all other background content. Keep the silhouette grounded in the provided frame; do not combine it with the original-series red Kevin or the later yellow-armored Omniverse mutation. Add transparent breathing room of at least 8% around the ENTIRE figure. Maintain crisp black outlines and flat shaded colors suitable for a black silhouette mask. Do not add a watch, text, labels, glow, shadow, separate anatomy or extra figures. Output genuine RGBA transparency, not a checkerboard or solid backdrop. Do not creatively redesign the character; preserve the exact broad outer contour, including crossed bandage loops and the distinctive crouch.",
+        "promptSha256": "f83af4bc822869aba3aaeb35c60f2e4d3c0bd5ea114ad4cccd16eeed43963246",
+        "attempt": 1,
+        "rawOutputSha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
+        "rawBytesMatch": true,
+        "originalOutputBytesPreserved": true,
+        "programmaticPixelEdits": false,
+        "sourceReferences": [
+          "assets/source-art/kevin-ov-flashback-amalgam-original.png"
+        ]
+      },
+      "observations": [
+        "Proposal author actually viewed both raw source and generated PNG with view_image. Both show one crouched composite alien, with two striped foot ends, an image-left curled tail, rounded dark rear shell with blue protrusions, eye-bearing shoulders, crossed chest bands and two tall loose ribbon loops.",
+        "The generated image retains the source red central head spike, dark hair, pale image-right forearm with green clustered hand, and long foreground component with two red circles. No extra free limb, detached character or new wing assembly is visible.",
+        "The forest, ground and CN corner graphic are absent in the generated output. Source and output have different pixel dimensions; enlarged face, fingers, seams, band thickness and frayed tips are visibly redrawn.",
+        "Read-only alpha inspection by the independent reviewer records real RGBA transparency and positive strong-alpha margins. The proposal preserves those exact reviewed bytes; browser appearance remains pending root review."
+      ],
+      "limitations": [
+        "The 403x331 source is an opaque community-rehosted animation frame, not an official full-resolution production file or native transparent sprite. Its individual artist, original publication chain and reuse licence remain unknown.",
+        "AI reference redraw, not pixel-exact background removal: face, teeth, eyes, green hand segmentation, band/ribbon bends and frayed tips, surface seams, red circles and blue fin contours contain interpretation. The small source cannot authenticate exact enlarged finger or fin counts.",
+        "The requested minimum 8 percent transparent margin was not achieved. At alpha>=128 the actual margins are approximately left 2.0954%, top 2.1127%, right 0.9393%, bottom 3.8732%; all four remain positive and the strong-alpha contour does not touch the canvas.",
+        "The generated output retains 30432 pixels with alpha 1..127, which can affect low-threshold fitting or visible edge haze. No mathematical pristine-cutout or zero-halo claim is made before actual UI inspection.",
+        "Official video observation was performed by root only and covers a paused flashback upper-body image; this proposal author did not play the episode. No exact Kevin age is asserted in the catalog identity.",
+        "This is a separate alien-DNA amalgam body/state, not a new species or ordinary human Kevin. It must not be conflated with the Original Series red four-armed Kevin 11 body, the later Omniverse present-day mutation, or reboot Antitrix amalgams.",
+        "Current dial, projection and ring rendering, physical phone, real SillyTavern and driver acceptance remain unverified for this new entry."
+      ],
+      "alphaInspection": {
+        "sha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
+        "bytes": 1263140,
+        "format": "PNG",
+        "mode": "RGBA",
+        "size": [
+          1384,
+          1136
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "nonzeroAlphaBBox": [
+          26,
+          17,
+          1374,
+          1106
+        ],
+        "strongAlphaThreshold": 128,
+        "strongAlphaBBox": [
+          29,
+          24,
+          1371,
+          1092
+        ],
+        "strongAlphaMarginsPx": [
+          29,
+          24,
+          13,
+          44
+        ],
+        "strongAlphaMarginPercent": [
+          2.0954,
+          2.1127,
+          0.9393,
+          3.8732
+        ],
+        "strongAlphaBoundaryPixelCounts": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "lowAlphaPixelCount": 30432,
+        "cornerAlpha": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "adoptionBasis": "Reviewed identity and source-guided generated silhouette candidate ready for root UI review; no production or driver acceptance implied.",
+      "browserAccepted": false,
+      "driverAccepted": false,
+      "uiReview": {
+        "version": "0.4.8",
+        "checkedAt": "2026-10-09T15:45:32.720Z",
+        "modes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "desktopClientWidths": [
+          1265
+        ],
+        "mobileFrameWidths": [
+          390,
+          320
+        ],
+        "observedMobileClientWidths": [
+          375,
+          305
+        ],
+        "sourceSha256": "7d63874051d448c85110073701698c615e224a44c1ed7f5ce8fd02f3730cb294",
+        "maskSha256": "6200ad44f0126eb02f39c8e5e97aca8bcd60d7273ea98593b6e6daf4155d4e71",
+        "inspectedPreviewSha256": "b7622ff9a3bbbb1d5b245c8c7d8c8ea29e9cba456a5bf6dc99377099579a74ce",
+        "physicalPhoneVerified": false,
+        "realSillyTavernVerified": false,
+        "humanAccepted": false,
+        "sourceLimitationsPreserved": true,
+        "observation": "Root actually viewed this selected form in the diamond dial, holographic projection and ring on desktop and two narrow iframe layouts. Recorded final selections and modes match the intended form; recorded document widths show no horizontal overflow. Source-stage AI redraw limitations are retained and are not superseded by local UI review."
+      }
     }
   ],
   "mergedForms": [
@@ -7915,6 +8257,38 @@
       ],
       "sourceUrls": [
         "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/"
+      ]
+    },
+    {
+      "id": "ultimate-kevin-ua-amalgam",
+      "name": "终极凯文（UA 融合体）",
+      "en": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Ultimate Alien; Kevin's alien-DNA amalgam in The Forge of Creation storyline. The community reference identifies the form as Ultimate Kevin; the exact episode of the viewed night-time still is unverified.",
+      "aliases": [
+        "Ultimate Kevin",
+        "Ultimate Kevin 11",
+        "Kevin Ultimate Alien Mutation"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://tv.apple.com/us/episode/the-forge-of-creation/umc.cmc.1ryx54imr0i23maa4w530g3sv?showId=umc.cmc.1tx3oatiqpah2carccx4ncqq2"
+      ]
+    },
+    {
+      "id": "kevin-ov-flashback-amalgam",
+      "name": null,
+      "en": "Kevin (Omniverse Flashback Amalgam)",
+      "group": "fusion",
+      "appearance": "Weapon XI: Part 2 (Ben 10: Omniverse, Season 6 Episode 10), flashback; alien-DNA amalgam.",
+      "aliases": [
+        "Weapon XI (Flashback)",
+        "Kevin's Omniverse Flashback Mutation"
+      ],
+      "sourceUrls": [
+        "https://tv.apple.com/gb/episode/weapon-xi-part-2/umc.cmc.613nxkky874rqdci3u27vzwhx?showId=umc.cmc.3lfb2l0fbgvea7ktuah4zpr3c",
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://ben10.fandom.com/wiki/Weapon_XI:_Part_2"
       ]
     }
   ]

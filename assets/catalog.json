@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 226,
-    "reviewed": 224,
+    "total": 228,
+    "reviewed": 226,
     "missing": 2
   },
   "forms": [
@@ -5671,6 +5671,62 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.447917,
         "visiblePixels": 110733
+      }
+    },
+    {
+      "id": "ultimate-kevin-ua-amalgam",
+      "name": "终极凯文（UA 融合体）",
+      "en": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Ultimate Alien; Kevin's alien-DNA amalgam in The Forge of Creation storyline. The community reference identifies the form as Ultimate Kevin; the exact episode of the viewed night-time still is unverified.",
+      "aliases": [
+        "Ultimate Kevin",
+        "Ultimate Kevin 11",
+        "Kevin Ultimate Alien Mutation"
+      ],
+      "sourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://tv.apple.com/us/episode/the-forge-of-creation/umc.cmc.1ryx54imr0i23maa4w530g3sv?showId=umc.cmc.1tx3oatiqpah2carccx4ncqq2"
+      ],
+      "asset": "alien-ultimate-kevin-ua-amalgam",
+      "visualSourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI reference-guided redraw of a community-hosted Ultimate Kevin animation still. The original crouched pose and major composite anatomy are retained while the background is removed. Fine lines, fingers, cape folds and tail details are interpretations; this is not an official transparent original or exact pixel extraction.",
+      "dialFit": {
+        "scale": 0.6655,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.307121,
+        "visiblePixels": 809149
+      }
+    },
+    {
+      "id": "kevin-ov-flashback-amalgam",
+      "name": null,
+      "en": "Kevin (Omniverse Flashback Amalgam)",
+      "group": "fusion",
+      "appearance": "Weapon XI: Part 2 (Ben 10: Omniverse, Season 6 Episode 10), flashback; alien-DNA amalgam.",
+      "aliases": [
+        "Weapon XI (Flashback)",
+        "Kevin's Omniverse Flashback Mutation"
+      ],
+      "sourceUrls": [
+        "https://tv.apple.com/gb/episode/weapon-xi-part-2/umc.cmc.613nxkky874rqdci3u27vzwhx?showId=umc.cmc.3lfb2l0fbgvea7ktuah4zpr3c",
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/",
+        "https://ben10.fandom.com/wiki/Weapon_XI:_Part_2"
+      ],
+      "asset": "alien-kevin-ov-flashback-amalgam",
+      "visualSourceUrls": [
+        "https://ben10hero.com/ben-tennyson-and-his-team/origins-kevin-ethan-levin/"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "One built-in image_gen reference edit removes the scenery from the small, opaque Ben10Hero animation repost and redraws the Omniverse flashback Kevin alien-DNA amalgam. The low crouch, crossed bands and high ribbon loops, rounded rear shell, shoulder eye details, pale extended forearms, green image-right hand, curled tail and striped feet follow the provided scene. AI enlargement interprets fine anatomy and surface details. Root separately observed the matching flashback upper body in a Cartoon Network official-channel video, which supports identity but does not authenticate this generated cutout or unseen details.",
+      "dialFit": {
+        "scale": 0.6055,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.436657,
+        "visiblePixels": 824410
       }
     }
   ]

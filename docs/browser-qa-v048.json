@@ -1,0 +1,319 @@
+{
+  "version": "0.4.8",
+  "checkedAt": "2026-10-09T15:45:32.720Z",
+  "previewSha256": "b7622ff9a3bbbb1d5b245c8c7d8c8ea29e9cba456a5bf6dc99377099579a74ce",
+  "rootActuallyViewed": true,
+  "shots": [
+    {
+      "file": "screenshots/v048-ultimate-kevin-dial.jpg",
+      "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "mode": "dial",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-ultimate-kevin-projection.jpg",
+      "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "mode": "projection",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-ultimate-kevin-ring.jpg",
+      "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "mode": "carousel",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-dial.jpg",
+      "selected": "Kevin (Omniverse Flashback Amalgam)",
+      "mode": "dial",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-projection.jpg",
+      "selected": "Kevin (Omniverse Flashback Amalgam)",
+      "mode": "projection",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-ring.jpg",
+      "selected": "Kevin (Omniverse Flashback Amalgam)",
+      "mode": "carousel",
+      "surface": "desktop",
+      "dimensions": {
+        "clientHeight": 720,
+        "clientWidth": 1265,
+        "scrollWidth": 1265
+      }
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-mobile-dial.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-mobile-projection.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v048-kevin-flashback-mobile-ring.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Kevin (Omniverse Flashback Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v048-ultimate-kevin-mobile-ring.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "carousel",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v048-ultimate-kevin-mobile-projection.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "projection",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    },
+    {
+      "file": "screenshots/v048-ultimate-kevin-mobile-dial.jpg",
+      "surface": "mobile-composite",
+      "observations": [
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 375,
+            "scrollWidth": 375
+          }
+        },
+        {
+          "selected": "Ultimate Kevin (Ultimate Alien Amalgam)",
+          "mode": "dial",
+          "dimensions": {
+            "clientHeight": 900,
+            "clientWidth": 305,
+            "scrollWidth": 305
+          }
+        }
+      ]
+    }
+  ],
+  "console": {
+    "desktop": [],
+    "mobile": [
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-09T15:41:26.262Z"
+      }
+    ],
+    "assessment": "Desktop log query returned no errors. The mobile composite recorded one MutationObserver.observe parameter-not-Node error without a source URL; attribution unresolved. One rapid desktop catalog-select then mode click left projection active; after observing state, a separate semantic mode click succeeded and the mislabeled provisional capture was replaced. This event is not established to be caused by the separately reproduced stage-swipe suppression defect. All 12 retained captures have verified selection, mode and no horizontal overflow."
+  },
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "humanAccepted": false,
+  "realSillyTavernVerified": false,
+  "interactionNote": "一次连续目录选择后点击模式未切换，检查实际状态后单独点击成功，已替换临时错误命名截图。没有据此证明根因；另外在实际 app.js 的内存回归中确认横滑后的全局点击抑制会阻挡舞台外按钮，发布前单独修复并补验证。",
+  "coverage": {
+    "total": 228,
+    "reviewed": 226,
+    "missing": 2
+  },
+  "selectedIds": [
+    "ultimate-kevin-ua-amalgam",
+    "kevin-ov-flashback-amalgam"
+  ],
+  "screenshots": [
+    "screenshots/v048-ultimate-kevin-dial.jpg",
+    "screenshots/v048-ultimate-kevin-projection.jpg",
+    "screenshots/v048-ultimate-kevin-ring.jpg",
+    "screenshots/v048-kevin-flashback-dial.jpg",
+    "screenshots/v048-kevin-flashback-projection.jpg",
+    "screenshots/v048-kevin-flashback-ring.jpg",
+    "screenshots/v048-kevin-flashback-mobile-dial.jpg",
+    "screenshots/v048-kevin-flashback-mobile-projection.jpg",
+    "screenshots/v048-kevin-flashback-mobile-ring.jpg",
+    "screenshots/v048-ultimate-kevin-mobile-ring.jpg",
+    "screenshots/v048-ultimate-kevin-mobile-projection.jpg",
+    "screenshots/v048-ultimate-kevin-mobile-dial.jpg",
+    "screenshots/v048-final-swipe-mode.jpg",
+    "screenshots/v048-final-mobile-dial.jpg"
+  ],
+  "consoleAssessment": "Desktop log query returned no errors. The mobile composite recorded one MutationObserver.observe parameter-not-Node error without a source URL; attribution unresolved. One rapid desktop catalog-select then mode click left projection active; after observing state, a separate semantic mode click succeeded and the mislabeled provisional capture was replaced. This event is not established to be caused by the separately reproduced stage-swipe suppression defect. All 12 retained captures have verified selection, mode and no horizontal overflow.",
+  "sourceType": "Two community-rehosted opaque animation references and two disclosed AI transparent reference redraws; not native transparent originals.",
+  "watchLimitations": "Four generations and 32 pre-rendered closed/raised watch frames remain unchanged. Fixed-angle images still show body/structural inconsistency between views, and the transition remains an approximately 180ms fade rather than coherent mechanical motion. No new watch drawing, continuous arbitrary-angle mesh or resolution of those visual shortcomings is claimed by this asset update.",
+  "finalBuildSmoke": {
+    "previewSha256": "52ab8166fb29d318a9ddde8e0ac7e8d2105ba399f53ba42b584d32b19566e349",
+    "checkedAt": "2026-10-09T15:48:25.057Z",
+    "desktopSwipe": {
+      "from": "Ultimate Kevin (Ultimate Alien Amalgam)",
+      "to": "Kevin (Omniverse Flashback Amalgam)",
+      "input": "Documented tab.drag from [835,431] to [628,432] in the visible stage",
+      "nextMode": "dial",
+      "under350msBrowserTimingProven": false,
+      "sub350msBehavior": "Separate automated actual-app regression only"
+    },
+    "mobile": [
+      {
+        "selected": "Kevin (Omniverse Flashback Amalgam)",
+        "mode": "dial",
+        "dimensions": {
+          "clientHeight": 900,
+          "clientWidth": 375,
+          "scrollWidth": 375
+        }
+      },
+      {
+        "selected": "Kevin (Omniverse Flashback Amalgam)",
+        "mode": "dial",
+        "dimensions": {
+          "clientHeight": 900,
+          "clientWidth": 305,
+          "scrollWidth": 305
+        }
+      }
+    ],
+    "desktopErrors": [],
+    "mobileErrors": [
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-09T15:41:26.262Z"
+      },
+      {
+        "level": "error",
+        "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+        "timestamp": "2026-10-09T15:48:08.033Z"
+      }
+    ],
+    "screenshots": [
+      "screenshots/v048-final-swipe-mode.jpg",
+      "screenshots/v048-final-mobile-dial.jpg"
+    ],
+    "rootActuallyViewed": true,
+    "note": "The 12 asset-layout captures precede the click-suppression code fix. The final build changes only click handling, not art, fit or layout. These two additional captures and the actual desktop drag verify the final build; sub-350ms behavior is established by automated actual-app tests, not timed browser observation."
+  },
+  "automatedTests": {
+    "total": 111,
+    "passed": 111,
+    "failed": 0,
+    "skipped": 0
+  }
+}
