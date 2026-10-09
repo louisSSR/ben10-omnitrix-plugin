@@ -98,7 +98,7 @@ async function runtimePlan(fetchImpl) {
     let totalBytes = indexBytes.length;
     for (const item of index.files) {
         if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error('运行资源清单条目无效');
-        const image = typeof item.path === 'string' && item.path.match(/^assets\/runtime\/([a-f0-9]{64})\.(png|avif)$/);
+        const image = typeof item.path === 'string' && item.path.match(/^assets\/runtime\/([a-f0-9]{64})\.(png|avif|webp)$/);
         if ((!RUNTIME_FILES.includes(item.path) && !image) || names.has(item.path) || !/^[a-f0-9]{64}$/.test(item.sha256 || '') || (image && image[1] !== item.sha256)) throw new Error('运行资源清单包含非法路径、重复项或哈希');
         if (!Number.isSafeInteger(item.bytes) || item.bytes <= 0 || item.bytes > FILE_LIMIT) throw new Error('下载文件超过大小限制或清单大小无效');
         names.add(item.path); totalBytes += item.bytes;
@@ -181,7 +181,7 @@ export async function validateRuntime(files, listedPaths = new Set()) {
     }
     const html = (await read('preview.html')).toString('utf8');
     if (!/<!doctype html>/i.test(html) || !/id=["']omni-app["']/.test(html) || /APP_STYLES|CATALOG_DATA|ART_SYMBOLS|APP_CODE/.test(html)) throw new Error('preview.html 尚未构建或不是 Omnitrix 页面');
-    const allowedReference = value => /^#[a-zA-Z0-9_-]+$/.test(value) || /^data:image\/(png|avif);base64,[a-zA-Z0-9+/=]+$/.test(value) || (/^(?:\.\/)?assets\/runtime\/[a-f0-9]{64}\.(png|avif)$/.test(value) && listedPaths.has(value.replace(/^\.\//, '')));
+    const allowedReference = value => /^#[a-zA-Z0-9_-]+$/.test(value) || /^data:image\/(png|avif|webp);base64,[a-zA-Z0-9+/=]+$/.test(value) || (/^(?:\.\/)?assets\/runtime\/[a-f0-9]{64}\.(png|avif|webp)$/.test(value) && listedPaths.has(value.replace(/^\.\//, '')));
     for (const match of html.matchAll(/<(?:script|img|link|iframe|video|audio|source|image|use)\b([^>]*)>/gi)) {
         for (const attribute of match[1].matchAll(/\b(?:src|href|xlink:href|srcset)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)) {
             const value = attribute[1] ?? attribute[2] ?? attribute[3];

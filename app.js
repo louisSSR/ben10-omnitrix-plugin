@@ -1,5 +1,6 @@
 import { WATCHES, MODES, normalizePreferences, filterForms, stepSelection, ringItems, ringPlacement, dialSelectionFrames, watchFrameLayout } from './core.js';
 import { createWatchModel } from './watch-model.js';
+import { createPortraitRenderer, PORTRAIT_PALETTES } from './portrait-renderer.js';
 
 const data = JSON.parse(document.getElementById('catalog-data').textContent);
 const forms = data.forms;
@@ -7,6 +8,7 @@ const readyForms = forms.filter(form => !!form.asset);
 const byId = new Map(forms.map(form => [form.id, form]));
 const $ = id => document.getElementById(id);
 const app = $('omni-app');
+const portraits = createPortraitRenderer(JSON.parse($('portrait-data').textContent), forms.map(form => form.id));
 const lifetime = new AbortController();
 const listen = (node, event, fn, options = {}) => node.addEventListener(event, fn, { ...options, signal: lifetime.signal });
 const storageKey = 'ben10-omnitrix.preview.v1';
@@ -157,7 +159,7 @@ function renderWatchView(withMotion = false) {
   }
   if (modeled) {
     watchModel.setState({ watch: preferences.watch, view: viewOptions[watchViewIndex].id, mode: preferences.mode,
-      raised: !isDial && raisedByMode[preferences.mode] === true, reducedMotion: reduced(), visible: !document.hidden });
+      raised: !isDial && raisedByMode[preferences.mode] === true, reducedMotion: reduced(), visible: !document.hidden, palette: preferences.palette || 'energy' });
     if (modelAnchor) placeModelFace(modelAnchor);
   } else if (withMotion && ready) animate(viewport, [{ opacity: .25 }, { opacity: 1 }], { duration: 180, easing: 'ease-out' });
 }
@@ -307,10 +309,18 @@ function renderControls() {
     node.append(textElement('span', mode.code)); return node;
   }));
   $('motion-toggle').setAttribute('aria-pressed', String(reduced()));
+  const palette = portraits.setPalette(preferences.palette || 'energy');
+  app.style.setProperty('--accent', palette.accent);
+  app.style.setProperty('--signal-hue', `${palette.hue}deg`);
+  $('palette-options').replaceChildren(...Object.entries(PORTRAIT_PALETTES).map(([id, entry]) => {
+    const node = button(entry.name, 'palette-option', 'palette', id);
+    node.setAttribute('aria-pressed', String(id === (preferences.palette || 'energy')));
+    node.style.setProperty('--swatch', entry.accent); return node;
+  }));
   $('motion-toggle').textContent = systemMotion.matches ? '系统减少动态' : preferences.reducedMotion ? '动态已减少' : '减少动态';
   app.classList.toggle('reduced-motion', reduced());
-  if (['watch', 'mode'].includes(focusAction)) {
-    const container = $(focusAction === 'watch' ? 'watch-options' : 'mode-options');
+  if (['watch', 'mode', 'palette'].includes(focusAction)) {
+    const container = $(focusAction === 'watch' ? 'watch-options' : focusAction === 'palette' ? 'palette-options' : 'mode-options');
     [...container.children].find(node => node.dataset.value === focusValue)?.focus({ preventScroll: true });
   }
 }
@@ -349,7 +359,8 @@ function renderRing(withMotion = false) {
     if (!form) { node.dataset.value = ''; return; }
     if (node.dataset.value !== form.id) {
       node.dataset.value = form.id;
-      node.replaceChildren(figure(form), textElement('span', form.name || form.en));
+      node.replaceChildren(portraits.figure(form.id, form.name || form.en), textElement('span', form.name || form.en, 'ring-name'));
+      node.dataset.portraitState = portraits.has(form.id) ? 'ready' : 'pending';
     }
     node.setAttribute('aria-pressed', String(form.id === preferences.selectedId));
     node.setAttribute('aria-label', `选择 ${form.name || form.en}`);
@@ -390,8 +401,9 @@ function renderStage(withMotion = false, previousForm = null, direction = 1) {
   $('selected-group').textContent = form ? (data.groups[form.group] || '') : '';
   $('sequence-id').textContent = form ? String(forms.indexOf(form) + 1).padStart(3, '0') : '---';
   setFigures(form);
-  $('stage-notice').textContent = !visible.length ? '暂时没有可选形态' : '这个形态的素材还在整理中';
-  $('stage-notice').hidden = !!form?.asset;
+  const portraitPending = preferences.mode === 'carousel' && form && !portraits.has(form.id);
+  $('stage-notice').textContent = !visible.length ? '暂时没有可选形态' : portraitPending ? '这个形态的头像待补，仍可选择与锁定' : '这个形态的素材还在整理中';
+  $('stage-notice').hidden = !!form?.asset && !portraitPending;
   $('watch-device').setAttribute('aria-label', `锁定 ${form?.name || form?.en || '形态'}`);
   const disabled = !visible.length;
   for (const id of ['previous', 'next', 'confirm', 'watch-device']) $(id).disabled = disabled;
@@ -486,6 +498,8 @@ listen(app, 'click', event => {
     stopMotion();
     const previousForm = byId.get(displayedId);
     preferences.mode = value; renderControls(); renderStage(true, previousForm); save();
+  } else if (action === 'palette' && Object.hasOwn(PORTRAIT_PALETTES, value)) {
+    preferences.palette = value; renderControls(); renderWatchView(); save();
   } else if (action === 'watch-view' && preferences.mode !== 'dial' && ['atlas', 'model'].includes(app.dataset.watchArt)) {
     const index = viewOptions.findIndex(view => view.id === value);
     if (index < 0 || index === watchViewIndex) return;
@@ -584,8 +598,9 @@ watchModel = createWatchModel($('watch-model'), {
   },
 });
 if (document.addEventListener) listen(document, 'visibilitychange', () => renderWatchView());
-listen(window, 'pagehide', () => { stopMotion(); watchModel?.dispose(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
+listen(window, 'pagehide', () => { stopMotion(); watchModel?.dispose(); portraits.dispose(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
 $('material-summary').textContent = `${data.coverage.reviewed} 个剪影已接入 / ${data.coverage.total} 条形态记录`;
 $('coverage-note').textContent = `当前有 ${data.coverage.total} 条形态记录，其中 ${data.coverage.reviewed} 条已接入核对过的剪影，${data.coverage.missing} 条素材待补。目录同时保留不同作品版本、身体状态、融合及扩展形态，不等于独立物种数量。`;
+$('portrait-coverage').textContent = `环形转盘已接入 ${portraits.count} 条形态的独立头像，其余显示“头像待补”，仍可选择。头像取自用户提供的第三方 DNA Altering 素材包，保留原始透明图；不是三星官方素材。配色只改变显示颜色，不改变角色身份。`;
 $('ready-only').checked = readyOnly;
 renderControls(); refreshFilter(); post('ready');

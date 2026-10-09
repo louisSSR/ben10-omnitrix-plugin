@@ -443,7 +443,7 @@ uniform mat4 uViewProjection; uniform vec3 uOffset;
 varying vec3 vWorld; varying vec3 vNormal; varying vec4 vColor;
 void main(){vWorld=aPosition+uOffset;vNormal=aNormal;vColor=aColor;gl_Position=uViewProjection*vec4(vWorld,1.0);}`;
 const FRAGMENT=`precision mediump float;
-varying vec3 vWorld;varying vec3 vNormal;varying vec4 vColor;uniform vec3 uEye;
+varying vec3 vWorld;varying vec3 vNormal;varying vec4 vColor;uniform vec3 uEye;uniform vec3 uEnergyTint;
 // Fixed studio panels are an analytic lighting approximation, not a sampled environment map.
 // No textures, noise, frame time, extra draw passes or continuously running animation are needed.
 vec3 linearToDisplay(vec3 c){
@@ -452,6 +452,10 @@ vec3 linearToDisplay(vec3 c){
 }
 void main(){
   vec3 n=normalize(vNormal),v=normalize(uEye-vWorld),base=vColor.rgb;
+  // Recolor green signal/paint only. A zero tint preserves the original palette exactly.
+  float tintEnabled=step(0.001,max(uEnergyTint.r,max(uEnergyTint.g,uEnergyTint.b)));
+  float greenSignal=smoothstep(0.035,0.18,base.g-max(base.r,base.b))*tintEnabled;
+  base=mix(base,uEnergyTint*max(base.r,max(base.g,base.b)),greenSignal);
   float metal=step(1.5,vColor.a)*(1.0-step(2.5,vColor.a));
   float glass=step(2.5,vColor.a)*(1.0-step(3.5,vColor.a));
   float lamp=step(3.5,vColor.a),rubber=1.0-step(0.5,vColor.a);
@@ -495,7 +499,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
   try{vertex=shader(gl.VERTEX_SHADER,VERTEX);fragment=shader(gl.FRAGMENT_SHADER,FRAGMENT);program=gl.createProgram();gl.attachShader(program,vertex);gl.attachShader(program,fragment);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Watch program link failed');}
   catch{if(program)gl.deleteProgram(program);if(vertex)gl.deleteShader(vertex);if(fragment)gl.deleteShader(fragment);return null;}
   gl.deleteShader(vertex);gl.deleteShader(fragment);
-  const locations={position:gl.getAttribLocation(program,'aPosition'),normal:gl.getAttribLocation(program,'aNormal'),color:gl.getAttribLocation(program,'aColor'),matrix:gl.getUniformLocation(program,'uViewProjection'),offset:gl.getUniformLocation(program,'uOffset'),eye:gl.getUniformLocation(program,'uEye')};
+  const locations={position:gl.getAttribLocation(program,'aPosition'),normal:gl.getAttribLocation(program,'aNormal'),color:gl.getAttribLocation(program,'aColor'),matrix:gl.getUniformLocation(program,'uViewProjection'),offset:gl.getUniformLocation(program,'uOffset'),eye:gl.getUniformLocation(program,'uEye'),tint:gl.getUniformLocation(program,'uEnergyTint')};
   let state={watch:'original',view:'left',raised:false,reducedMotion:false,visible:true,mode:'projection'};
   let geometry=null,current=watchPose(state),transition=null;
   let lastW=0,lastH=0;
@@ -531,6 +535,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
     const aspect=width/height,c=camera(current,aspect);
     gl.viewport(0,0,width,height);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.disable(gl.CULL_FACE);gl.disable(gl.BLEND);gl.useProgram(program);
     gl.uniformMatrix4fv(locations.matrix,false,c.matrix);gl.uniform3fv(locations.eye,c.eye);
+    gl.uniform3fv(locations.tint,state.palette==='amber'?[1,.38,.08]:state.palette==='rose'?[1,.16,.52]:[0,0,0]);
     for(const b of buffers){
       gl.bindBuffer(gl.ARRAY_BUFFER,b.buffer);
       for(const [location,size,offset] of [[locations.position,3,0],[locations.normal,3,12],[locations.color,4,24]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,40,offset);}

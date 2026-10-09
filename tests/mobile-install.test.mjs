@@ -5,7 +5,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { install, downloadRuntime, RUNTIME_FILES } from '../scripts/mobile-install.mjs';
+import { install, downloadRuntime, validateRuntime, RUNTIME_FILES } from '../scripts/mobile-install.mjs';
 
 const commit = 'a'.repeat(40);
 const blob = bytes => createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
@@ -267,11 +267,11 @@ test('mobile installer CLI starts through a real directory alias as well as its 
     assert.equal(linked.stdout, direct.stdout, 'a path alias must execute the CLI instead of silently exiting');
     assert.deepEqual((await fs.readdir(f.root)).sort(), ['alias', 'physical'], '--help does not install runtime files');
 });
-function directoryBundle(count = 2) {
+function directoryBundle(count = 2, format = 'png') {
     const files = { ...runtime }, assets = [];
     for (let index = 0; index < count; index++) {
         const bytes = Buffer.from(`fixture image bytes ${index}`);
-        const name = `assets/runtime/${createHash('sha256').update(bytes).digest('hex')}.png`;
+        const name = `assets/runtime/${createHash('sha256').update(bytes).digest('hex')}.${format}`;
         assets.push(name); files[name] = bytes;
     }
     files['preview.html'] = Buffer.from(`<!doctype html><main id="omni-app"><svg>${assets.map((name, index) => `<image href="${index ? "./" : ""}${name}"/>`).join('')}</svg></main>`);
@@ -293,6 +293,24 @@ test('directory bundle installs exact asset bytes before entry points and reuses
     assert.deepEqual(again.changed, []);
     assert.equal(again.backup, null);
     assert.equal(requests.length, 3, 'only ref, tree and manifest; verified runtime files use disk copies');
+});
+
+test('WebP head bundles repair an existing mobile installation and stay idempotent', async t => {
+    const f = await fixture(t), { files, assets } = directoryBundle(2, 'webp');
+    await fs.mkdir(f.target, { recursive: true });
+    await fs.writeFile(path.join(f.target, 'preview.html'), 'old partial installation');
+    const first = await f.run({ apply: true, fetchImpl: remote({ files }) });
+    assert.ok(first.changed.includes('preview.html'));
+    for (const name of assets) assert.deepEqual(await fs.readFile(path.join(f.target, name)), files[name]);
+    assert.deepEqual((await f.run({ apply: true, fetchImpl: remote({ files }) })).changed, []);
+});
+
+test('the actual built head-selector page passes the same mobile resource-reference gate', async () => {
+    const root = new URL('../', import.meta.url);
+    const index = JSON.parse(await fs.readFile(new URL('runtime-manifest.json', root)));
+    const files = Object.fromEntries(await Promise.all(index.files.filter(entry => !entry.path.startsWith('assets/')).map(async entry => [entry.path, await fs.readFile(new URL(entry.path, root))])));
+    const result = await validateRuntime(files, new Set(index.files.map(entry => entry.path)));
+    assert.equal(result.display_name, 'Ben 10 · Omnitrix');
 });
 
 test('runtime download returns disk paths and removes only its temporary staging on dispose or error', async t => {

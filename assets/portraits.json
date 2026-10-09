@@ -1,0 +1,968 @@
+{
+  "schemaVersion": 1,
+  "scope": "Only visually reviewed named forms. No automatic propagation to editions, wearers, body states or fusions.",
+  "sourceResourceCount": 83,
+  "assets": [
+    {
+      "id": "dna-omv-001",
+      "file": "portraits/dna-omv-001.webp",
+      "sha256": "153ca58e29bd194ff949b6f4fa359a47fc1e218e289fb8987770e97091a285e3",
+      "bytes": 5778,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5088923725158422,
+      "light": 0.876401261506033,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__1_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-002",
+      "file": "portraits/dna-omv-002.webp",
+      "sha256": "c6cc43675297135d7ea384872a62b5b6d227df9cd3d1f1b5e4a49f44004ef433",
+      "bytes": 4896,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5106027264920567,
+      "light": 0.8512517462136059,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__2_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-003",
+      "file": "portraits/dna-omv-003.webp",
+      "sha256": "321b20620e1e6d5e54590f850e0942546b5c3988b834ecebfa7277b9a2e333f0",
+      "bytes": 4830,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5133447705890186,
+      "light": 0.8812447887248177,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__3_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-004",
+      "file": "portraits/dna-omv-004.webp",
+      "sha256": "8fb64722e1ee4a4907f03b49a9433d27900f78c4c6578e1160c663e9b968da78",
+      "bytes": 5026,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5078829114727461,
+      "light": 0.8703520691785052,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__4_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-007",
+      "file": "portraits/dna-omv-007.webp",
+      "sha256": "70541775439424da73f68475b7937ee75cfb0e4def0cab7994a75d19d17430e3",
+      "bytes": 6666,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5144139732288606,
+      "light": 0.8551292602317409,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__7_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-010",
+      "file": "portraits/dna-omv-010.webp",
+      "sha256": "cbaaf835a9224e7cb19fd9b05e28fa457dbf9e1ca7caa32da405601165feced4",
+      "bytes": 6204,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5116477027334763,
+      "light": 0.8675982830943323,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__10_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-012",
+      "file": "portraits/dna-omv-012.webp",
+      "sha256": "757aa358baa03ad9a2ade263a11621d63e6cbe234b08e7911f0598ea3164be37",
+      "bytes": 6664,
+      "width": 150,
+      "height": 150,
+      "dark": 0.510506124646655,
+      "light": 0.8613109556090094,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__12_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-013",
+      "file": "portraits/dna-omv-013.webp",
+      "sha256": "7ba9d22b8c5aeaecdccbadd1079ffa9afe49dd9f15145eb2cb6e217101cc2c8e",
+      "bytes": 3954,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5080029570176364,
+      "light": 0.8740973464159698,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__13_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-016",
+      "file": "portraits/dna-omv-016.webp",
+      "sha256": "9c71e090672490fed12b490d8e4dc6650f4e9faf50614365890e8b79cf645e85",
+      "bytes": 6968,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5175352137289854,
+      "light": 0.8673499605791973,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__16_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-018",
+      "file": "portraits/dna-omv-018.webp",
+      "sha256": "50505a3ec9abf955281a87f9e28e303e1fb3bcc6b34e10d9a16a85eea58ba44e",
+      "bytes": 4874,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5117431035955249,
+      "light": 0.8717370531114705,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__18_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-020",
+      "file": "portraits/dna-omv-020.webp",
+      "sha256": "53e1dc6dc8729300cc057348f372e525dbee661e8b9c951aaab941717eb6da77",
+      "bytes": 6468,
+      "width": 150,
+      "height": 150,
+      "dark": 0.51321740753414,
+      "light": 0.8737816775385326,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__20_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-022",
+      "file": "portraits/dna-omv-022.webp",
+      "sha256": "770a2ae54360f99506494617cefe65cbce9836536ba22d86b3262783c252e275",
+      "bytes": 6082,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5047218185235481,
+      "light": 0.8771321166810173,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__22_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-025",
+      "file": "portraits/dna-omv-025.webp",
+      "sha256": "51fb94c3f36574361a254002279b71e06a78f7477c2fa4a53bedc87904537e4d",
+      "bytes": 4948,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5152114845938375,
+      "light": 0.8693236664067275,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__25_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-028",
+      "file": "portraits/dna-omv-028.webp",
+      "sha256": "146dddef961cfe46f7604e42bf079bf4ef14ab730104ada37dd83be2b23927b2",
+      "bytes": 7432,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5162800569182162,
+      "light": 0.8700739182999973,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__28_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-029",
+      "file": "portraits/dna-omv-029.webp",
+      "sha256": "8c53f86231a37c1283594a0de0bc3ebd88897bd5f8f98d51f364621c62c1e98e",
+      "bytes": 8810,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5074495762100344,
+      "light": 0.871080205302869,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__29_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-030",
+      "file": "portraits/dna-omv-030.webp",
+      "sha256": "6cd434994db89e54b456bf2f7016e0f7dce8666ee23969ca737c22c288232df2",
+      "bytes": 4714,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5077369695763245,
+      "light": 0.8610630383901952,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__30_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-031",
+      "file": "portraits/dna-omv-031.webp",
+      "sha256": "18190702cefd26af94daf724658746cbbcdd21bf956ce448f07617caa974536d",
+      "bytes": 5676,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5123005825815492,
+      "light": 0.8508086972831811,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__31_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-033",
+      "file": "portraits/dna-omv-033.webp",
+      "sha256": "e782c1b997e0afbcdf8b60ecb506843a80f1815d32d4d52f42385b47fb706b3a",
+      "bytes": 6226,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5087350407359763,
+      "light": 0.8628417032709927,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__33_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-034",
+      "file": "portraits/dna-omv-034.webp",
+      "sha256": "fc41835d92edac47dff7eb2fad0d7ce43888aec49614636d99a43999b2f6a98e",
+      "bytes": 4460,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5047621145051057,
+      "light": 0.8653460798667929,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__34_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-036",
+      "file": "portraits/dna-omv-036.webp",
+      "sha256": "d931a0f45ab5b1bde1e82052e487a005cc5a9e5498f3980b245f17c60555f8ce",
+      "bytes": 6292,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5179531087752537,
+      "light": 0.8663877343169368,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__36_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-038",
+      "file": "portraits/dna-omv-038.webp",
+      "sha256": "3f6332ff431b91f603d73a94695c2a61a30c83b935e6f29fd5cd4ca731b7bf23",
+      "bytes": 6838,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5103589131083905,
+      "light": 0.8666644429248876,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__38_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-043",
+      "file": "portraits/dna-omv-043.webp",
+      "sha256": "dfc2b41c4d6bf5010fb269a08eed6306bc6585884a933d4f6d174866d3c29b7a",
+      "bytes": 5284,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5044019607843138,
+      "light": 0.875173469236141,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__43_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-044",
+      "file": "portraits/dna-omv-044.webp",
+      "sha256": "911da61bd6caf90c5919b11e9661c26cb7c021e2299b3c40c22a6a3e250d203c",
+      "bytes": 7982,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5190743049521243,
+      "light": 0.866957009852312,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__44_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-047",
+      "file": "portraits/dna-omv-047.webp",
+      "sha256": "85957c64f132a210c32fe48e8101953db0263aee97e666c3432db7cc83cc53ff",
+      "bytes": 7000,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5101467352293988,
+      "light": 0.8718274737361096,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__47_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-049",
+      "file": "portraits/dna-omv-049.webp",
+      "sha256": "9261ec3bc546b55ba0eb6ce4bf7abee50ae2fff76d44a147d17c17e34eaa75b3",
+      "bytes": 4638,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5040928992956406,
+      "light": 0.8784804432721994,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__49_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-053",
+      "file": "portraits/dna-omv-053.webp",
+      "sha256": "3ad53dd7c2d226f98db2178c96623699a4befa33c83f66e1e099f9ae96cc6589",
+      "bytes": 5740,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5035235276811519,
+      "light": 0.8720702377867446,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__53_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-057",
+      "file": "portraits/dna-omv-057.webp",
+      "sha256": "f9de08229f1026b606f8e45533f9cd60adee11b5e0020ff3fe21c87c227ee193",
+      "bytes": 6874,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5120226953635788,
+      "light": 0.8661546423929234,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__57_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    }
+  ],
+  "bindings": [
+    {
+      "formId": "ditto",
+      "portraitId": "dna-omv-001",
+      "confirmed": true,
+      "reason": "中央额部标记、单一小头鳍、两侧圆结与尖耳、圆脸和小嘴；与本轮实看 Ditto 彩色图的头部结构相符。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/08/ditto_os_render.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/ditto/",
+        "sha256": "fd9160973f83030dd2f7d400a59d0d79150e173c8a3c57282a35d3266358ab47"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "swampfire",
+      "portraitId": "dna-omv-002",
+      "confirmed": true,
+      "reason": "并排实看2号、普通Swampfire彩色原图和开花状态：2号有狭长花瓣轮廓、尖叶额冠、狭眼和尖下颌，符合未开花Swampfire；开花状态宽脸、黄色外展三叉角和厚方下颌不同。此前2=Heatblast家族猜测撤销。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/09/swampfire_uaf_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/swampfire/",
+        "sha256": "1a2fead78641cdb7fff0e5e1513a338e6da67b91c0a5c7729534a5f06405b527"
+      },
+      "scope": "Only the named catalog entry as a stylized UI portrait; no automatic alias, family, alternate, reboot, fusion or ultimate expansion."
+    },
+    {
+      "formId": "upgrade",
+      "portraitId": "dna-omv-003",
+      "confirmed": true,
+      "reason": "实际并列复看 3 号原始头像与官方经典版 Upgrade 彩色参考：细长液态头、圆形单目位置、下延中心电路线足以明确物种。允许作为基础 upgrade 的第三方简化 UI 头像；图标把普通圆眼换成 Omnitrix 徽记，侧面电路线也做了分离简化，因此不是同作品逐帧原画或精确头模。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/3b0ee6b44578423a979555674a394283/06.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "7e057ee131b8c55c8add48955129a7aeddf31c048795979ae3dc2beba79c7ce1"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "Plain circular eye in the official original-series reference is replaced with an Omnitrix emblem inside a circle.",
+        "Continuous side circuit traces are simplified into separate short marks.",
+        "Two green tones replace original black-and-green coloring for themed UI use."
+      ],
+      "publicDisclosure": "第三方简化头像，绑定基础变形怪（Upgrade）。图中 Omnitrix 徽记替代原作圆眼，脸侧线路经过图标化处理；并非同作品逐帧原画。",
+      "scope": "Only the explicitly named base catalog form upgrade. No automatic inheritance to another era, age, fusion, Ultimate, Skurd, Reboot, game or alternate wearer."
+    },
+    {
+      "formId": "heatblast",
+      "portraitId": "dna-omv-004",
+      "confirmed": true,
+      "reason": "实际并列复看 4 号原始头像与官方经典版 Heatblast 彩色参考：头部火焰外轮廓、眼眶、双颊缺口和下颌分区足以明确物种。允许作为基础 heatblast 的第三方简化 UI 头像；尖焰轮廓和五官线是统一图标设计，不据此声称经典版逐帧形状，也不绑定 UA、OV 等独立条目。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/b502e0c769594c4a914e7ed5d73244b3/00.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "c19d0cc79582e899d1547f3cd30bd4dcdc61f8d515e0f56d3ff9ba64335a3fba"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "Flame crown is a clean pointed graphic rather than the exact irregular flame contour in the official reference.",
+        "Eye sockets, cheek divisions and jaw are stylized linework.",
+        "Two green tones replace original red-and-yellow coloring for themed UI use."
+      ],
+      "publicDisclosure": "第三方简化头像，绑定基础火焰人（Heatblast）。火焰冠、眼眶和下颌保留物种识别特征，线条与双色配色为图标化处理；并非同作品逐帧原画。",
+      "scope": "Only the explicitly named base catalog form heatblast. No automatic inheritance to another era, age, fusion, Ultimate, Skurd, Reboot, game or alternate wearer."
+    },
+    {
+      "formId": "kickin-hawk",
+      "portraitId": "dna-omv-007",
+      "confirmed": true,
+      "reason": "高耸分叉羽冠、向外上扬的眉羽及中央短喙，符合实看 Kickin Hawk 的羽冠和鸟面。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/07/kicken_hawk_omniverse_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/kickin-hawk/",
+        "sha256": "910f0c17dafff271053905849d4402ae2d473e273e44fe063bb06d5deea3b952"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "gutrot",
+      "portraitId": "dna-omv-010",
+      "confirmed": true,
+      "reason": "正面呼吸罩和下方中央徽记、围绕脸的分区面罩，符合实看 Gutrot 的口鼻呼吸器；不是把额部徽记当身份。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-gutrot.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "f61962ebb45533fd51e656c657eceb9001a60f0dae3b8205c566d512c17dcf62"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "ball-weevil",
+      "portraitId": "dna-omv-012",
+      "confirmed": true,
+      "reason": "巨大分叉鹿角状触角、左右黑眼斑和圆形折线口器；与实看 Ball Weevil 同一组特征逐项对应。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/06/ball_weevil_omniverse_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/ball-weevil/",
+        "sha256": "48cc4d64e5cb58a1747ded11430728a168342d8c185756c988117d3a0e3b3d89"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "goop",
+      "portraitId": "dna-omv-013",
+      "confirmed": true,
+      "reason": "细长向上扭曲且带孔的胶状顶端、光滑水滴脸和两枚菱形眼，辨识为 Goop 的胶质头部。 本轮已实际查看保存的彩色源，并校验原始文件哈希；不是用黑剪影代替面部对照。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/11/goop.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/goop/",
+        "sha256": "957a3f2eea939bd81d11d82ee13b41b69d65f9e1dc224b7f2103b1abf54b8ebb"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "whampire",
+      "portraitId": "dna-omv-016",
+      "confirmed": true,
+      "reason": "再次并排实看原始16头像、Whampire彩色原图和Jetray排除参考：16具有长翼状双耳、耳内分叉刻线和向颊部延续的尖锐面罩，符合Whampire；Jetray是额部双角和横向口鼻结构，未匹配该耳内分线。此结论经独立代理提示后由本代理重新实际看图确认，不只转述。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2018/07/whampire_facebook_profilet.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/whampire/",
+        "sha256": "9ff4b4c98cff0420ecc02a72f2a6b87e6bdff10529eca7f088e46437a250c150"
+      },
+      "scope": "Whampire base only. Bat, Skurd body variants and other wearers are not implicitly bound."
+    },
+    {
+      "formId": "grey-matter",
+      "portraitId": "dna-omv-018",
+      "confirmed": true,
+      "reason": "Large lateral circular eyes, broad flat upper face, narrow lower jaw match the viewed Grey Matter reference; iris and forehead detail are graphically simplified.",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/07/grey_matter_profile.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/grey-matter/",
+        "sha256": "c53bd81fed195cb0160d8395b9f209e70d786d7ca0061ba2f2b9e5174e13c34c"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "rath",
+      "portraitId": "dna-omv-020",
+      "confirmed": true,
+      "reason": "Long upward eyebrow extensions, three forehead tiger stripes, broad muzzle and pointed chin match the viewed Rath base reference. Do not share to Mad Rath or Ultimate Rath.",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/12/rath_af.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/rath/",
+        "sha256": "542766919db6879c167c7e23ec02faa73cd3d979b36fece582fd02f6d46ebe6f"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "wildmutt",
+      "portraitId": "dna-omv-022",
+      "confirmed": true,
+      "reason": "实看官方经典Wildmutt彩色图：头部没有眼睛、嘴沿突牙、下巴放射毛束，与22无眼大嘴及分叉下颏毛的结构一致；仅基础Wildmutt，不绑定终极。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/26e388a84c47448ebb33c3b0ccb9185c/03.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "e2ac370109bb742b6a23f3b6b19341d7027033e6e7f34c473501bac51e7f9973"
+      },
+      "scope": "Only the named catalog entry as a stylized UI portrait; no automatic alias, family, alternate, reboot, fusion or ultimate expansion."
+    },
+    {
+      "formId": "way-big",
+      "portraitId": "dna-omv-025",
+      "confirmed": true,
+      "reason": "Tall single central blade, slanted almond eyes, angular lower face and bilateral jaw detail correspond to the viewed base Way Big reference; no serrated Mad Way Big blade or horned Ultimate head is asserted.",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/09/way_big_render.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/way-big/",
+        "sha256": "651859cc945bcc6d245c5b0bd07340dffa0d30ed377b1aca9cb2c677e1909478"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "blitzwolfer",
+      "portraitId": "dna-omv-028",
+      "confirmed": true,
+      "reason": "Tall pointed ridged ears, diamond-like nose and open segmented wolf maw match the viewed Blitzwolfer reference; flattened icon is an abstraction of that head.",
+      "reference": {
+        "url": "https://www.pngitem.com/pimgs/b/522-5225325_ovni-png.png",
+        "pageUrl": "https://www.pngitem.com/middle/hmhJTRo_ben-10-ultimate-alien-benwolf-hd-png-download/",
+        "sha256": "10d33127dc993e04f341f6494735ba02128bf4a136e72c04664f2cf100d3fa3f"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "feedback",
+      "portraitId": "dna-omv-029",
+      "confirmed": true,
+      "reason": "两条弯曲插头状长触须包围头部，末段有分节环，中央单眼与口，辨识为 Feedback。 本轮已实际查看保存的彩色源，并校验原始文件哈希；不是用黑剪影代替面部对照。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/05/feedback_art_ov.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/feedback/",
+        "sha256": "7578a276f3bf6e93f1a114362c70b6d531dc2288f42028123fe85d94b653b640"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "diamondhead",
+      "portraitId": "dna-omv-030",
+      "confirmed": true,
+      "reason": "单一高尖晶体头冠、分面多边形头和窄眼线，辨识为 Diamondhead；不绑定 Dynamite/Gwen/重启或融合。 本轮已实际查看保存的彩色源，并校验原始文件哈希；不是用黑剪影代替面部对照。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/5de741f9130f4df682c5f5844f6d229e/04.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "bc100f6151576dcc02d4952d5e339831f45c9d51a7d0ac4f5ea50b31956f7357"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "gravattack",
+      "portraitId": "dna-omv-031",
+      "confirmed": true,
+      "reason": "低宽岩石头、两侧岩块突角、额章与横跨面部的块状牙列，和实看 Gravattack 头部逐项相符。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/06/gravattack_pose.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+        "sha256": "3c03681f3e2639f9feef2d43eae2c8d7a279ae0a1ee30794eeb2509d8abfdd5f"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "eatle-ov",
+      "portraitId": "dna-omv-033",
+      "confirmed": true,
+      "reason": "高耸前角末端为叉口，脸下半部是半球状装甲大颚和上缘锯齿；与实看 Eatle OV 一致，明显不同 Eatle UA 细长直角，也不是 Ripjaws 灯笼。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/04/eatle_omniverse.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+        "sha256": "4fdde9b551bc9dcb2da78dd334ad51a41bb19a6b4b8a780202c92c9d66e7a4d9"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "nrg",
+      "portraitId": "dna-omv-034",
+      "confirmed": true,
+      "reason": "已实际对照 UA 与 OV 穿防护服 NRG 彩色图：宽扁头盔、三个窄竖槽和帽顶握柄与34一致；本条只绑定已有基础nrg，不是裸身/Mad。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/02/nrg_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/nrg/",
+        "sha256": "b2dfde4938dba61e042e12fbdc8c8e53380116fa96d19131a87d118517be7ce3"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "stinkfly",
+      "portraitId": "dna-omv-036",
+      "confirmed": true,
+      "reason": "两侧各两根带圆端的眼柄、中央尖脸和头顶标记，是原连续性 Stinkfly 特征；不绑定重启人形设计。 本轮已实际查看保存的彩色源，并校验原始文件哈希；不是用黑剪影代替面部对照。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/425d9dcfe00548f6918e7a5bcf7fc581/07.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "ea0b9c8d7ff64a486c3b2fc192dee0771416dbd35866e47b2de796f7d0de8c99"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "shocksquatch-ov",
+      "portraitId": "dna-omv-038",
+      "confirmed": true,
+      "reason": "额顶和眉部闪电形突起、宽猿脸和下颌尖毛；与实看 OV Shocksquatch 的黑黄毛区和额冠对应，不绑定 Heroes United 设计。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/05/shocksquatch_omniverse_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+        "sha256": "d8e15a1d67de0070ac51a1825503a06beee85a7f24524ba505c7b67b6ca1b8a3"
+      },
+      "scope": "Only the named base/explicit-edition catalog entry; no alias/family/reboot/fusion/ultimate automatic expansion."
+    },
+    {
+      "formId": "ghostfreak-ov",
+      "portraitId": "dna-omv-043",
+      "confirmed": true,
+      "reason": "长而弯曲的头部、头顶向侧方回勾、纵向裂纹中的单侧眼；与实际查看的 Omniverse 原角色彩色图对应。只绑定已独立登记的 OV 版本。",
+      "reference": {
+        "url": "http://ben10hero.com/wp-content/uploads/2016/07/ghostfreak_ov_official.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ghostfreak/",
+        "sha256": "090c643ea826a10b45af37942ff2f1fd2e62aae3a7651e60253ff651b8a5550b"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "toepick",
+      "portraitId": "dna-omv-044",
+      "confirmed": true,
+      "reason": "头盔顶端五边形凸起、正面竖向笼条、侧面分节弯角和锁孔；与戴笼盔 Toepick 彩色原图对应。没有将另一张无笼条头像自动解释为同状态。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-toepick.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "cd83a40581e30896f6a1d2b71d0a1ec1ada8b3ce173f7a499298b96015a26270"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "clockwork-ov16",
+      "portraitId": "dna-omv-047",
+      "confirmed": true,
+      "reason": "双孔上弦钥匙与下方矮小梯形头部间有分离空隙，眼睛和口部位置匹配已查看的 OV 十六岁图；与 OV 十一岁版本更圆、较高的脸区分。",
+      "reference": {
+        "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/20229_orig.png",
+        "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "sha256": "c45cb2f9224da23059b65a5180ccadf8d29f0a603c4ee8284737b3ecadedd34d"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "the-worst",
+      "portraitId": "dna-omv-049",
+      "confirmed": true,
+      "reason": "下垂圆颊、上部弧形额纹、圆小眼和稀疏牙齿的宽口；与已查看的 The Worst 彩色图对应，简化不改变主要头形。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/09/omniversetheworst.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/the-worst/",
+        "sha256": "9d0666653813ef383aa10cc6ad2063731f7377d4bc242c114d46a764cf0a05e5"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "atomix",
+      "portraitId": "dna-omv-053",
+      "confirmed": true,
+      "reason": "上窄下宽的反应堆式锥形头、顶部小尖锥、两侧节点和心形双眼窗，与已查看 Atomix 原图相符；不扩展至 Atomic-X 融合形态。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2018/02/omniverseatomix.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/atomix/",
+        "sha256": "0a7c4ca336e449b3744d835d408105db59db095a8b7ed87c1852d080ae7f73a1"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    },
+    {
+      "formId": "mole-stache",
+      "portraitId": "dna-omv-057",
+      "confirmed": true,
+      "reason": "两只窄长耳、圆眼、两颊点状细节和向下分叉的大胡须，与 Mole-Stache 彩色图相符；编号61的横向胡须头不能据此自动视为同一角色。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/08/mole-stache_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/mole-stache/",
+        "sha256": "dff2fd039e80a7113a7e2b4cbf645b4edd9ec1e0d2b34e20a762e3cdf483c0ca"
+      },
+      "scope": "Only this explicit catalog entry; no alias, species family, reboot, fusion, ultimate or wearer expansion."
+    }
+  ]
+}

@@ -13,12 +13,29 @@ for (const watch of ['original','recalibrated','ultimatrix','omniverse']) files.
 if (runtime.schemaVersion !== 1 || !Array.isArray(runtime.files)) throw new Error('Invalid runtime manifest');
 files.push('runtime-manifest.json');
 for (const entry of runtime.files) {
-  if (!/^(?:extension\.js|host-adapter\.js|extension\.css|preview\.html|manifest\.json|assets\/runtime\/[a-f0-9]{64}\.(?:png|avif))$/.test(entry.path)) throw new Error('Unsafe runtime path');
+  if (!/^(?:extension\.js|host-adapter\.js|extension\.css|preview\.html|manifest\.json|assets\/runtime\/[a-f0-9]{64}\.(?:png|avif|webp))$/.test(entry.path)) throw new Error('Unsafe runtime path');
   const raw = readFileSync(path.join(root, entry.path));
   if (raw.length !== entry.bytes || createHash('sha256').update(raw).digest('hex') !== entry.sha256) throw new Error(`Stale runtime file: ${entry.path}`);
   if (!files.includes(entry.path)) files.push(entry.path);
 }
 const supplemental = JSON.parse(readFileSync(path.join(root, 'assets/extra-art.json')));
+if (existsSync(path.join(root, 'assets/portraits.json'))) {
+  files.push('assets/portraits.json');
+  const portraits = JSON.parse(readFileSync(path.join(root, 'assets/portraits.json')));
+  if (!Array.isArray(portraits.assets)) throw new Error('Invalid portrait sources');
+  for (const asset of portraits.assets) {
+    if (!/^portraits\/dna-omv-[0-9]{3}\.webp$/.test(asset.file || '') || !/^[a-f0-9]{64}$/.test(asset.sha256 || '')) throw new Error('Unsafe portrait source path');
+    const relative = `assets/${asset.file}`;
+    let resolved = root;
+    for (const part of relative.split('/')) {
+      resolved = path.join(resolved, part);
+      if (lstatSync(resolved).isSymbolicLink()) throw new Error('Unsafe portrait source link');
+    }
+    const bytes = readFileSync(resolved);
+    if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Invalid portrait source hash');
+    files.push(relative);
+  }
+}
 if (existsSync(path.join(root, 'docs/catalog-scope.md'))) files.push('docs/catalog-scope.md');
 if (existsSync(path.join(root, 'docs/watch-model.md'))) files.push('docs/watch-model.md');
 const reviewKey = version.replaceAll('.', '');

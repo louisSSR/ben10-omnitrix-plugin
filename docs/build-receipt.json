@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-09T18:28:16.717Z",
-  "sha256": "d069f37db927d5e48605cbed2c4bba51d705fb1cfd67c5a5bba4da47f26e4fb3",
-  "bytes": 385418,
+  "builtAt": "2026-10-09T19:21:47.746Z",
+  "sha256": "6bd0829bbcfc86a4c8d0073d4cc429777c74670356028dbe9ef6bdca62a9c7d5",
+  "bytes": 403905,
   "coverage": {
     "total": 236,
     "reviewed": 235,
@@ -76,21 +76,28 @@
     }
   ],
   "standalone": true,
-  "browserVerified": true,
+  "browserVerified": false,
   "realHostVerified": false,
   "watchModel": {
     "renderer": "local-webgl-geometry",
     "source": "watch-model.js",
-    "sha256": "ef0f5fd6f46413e0f76cde88229309d7ba634ac9291d37e1073066dec5c6387b",
+    "sha256": "b574f7db9c5d1c4fa2c01ae2de5c69d9fb4280c810d6d55e5342948cda729125",
     "generations": 4,
     "sharedGeometryAcrossViews": true,
     "artFallbackRetained": true,
     "officialModel": false
   },
+  "portraits": {
+    "assets": 27,
+    "bindings": 27,
+    "pending": 209,
+    "sourceSha256": "a39cf0b631781d244b4487d2bbd4ea5419371516285df28c088577f13c024b4d",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 248,
-  "runtimeBytes": 116856354,
-  "runtimeManifestSha256": "d15b5900cbdbedba14c609d226f0bb087b91b0e1124d0f8ec7280d84e2723b28",
-  "browserEvidence": "docs/browser-qa-v054.json"
+  "runtimeFiles": 275,
+  "runtimeBytes": 117036258,
+  "runtimeManifestSha256": "1b8e9c803351978a4b6b9b8a4ef22641b5caf8a1a4e0184c7c64aea184f12387"
 }

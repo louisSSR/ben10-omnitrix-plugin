@@ -12,6 +12,7 @@ export function sanitizePreferences(value) {
     if (MODES.has(value.mode)) result.mode = value.mode;
     else if (value.mode === 'archive') result.mode = 'projection';
     if (typeof value.reducedMotion === 'boolean') result.reducedMotion = value.reducedMotion;
+    if (['energy', 'amber', 'rose'].includes(value.palette)) result.palette = value.palette;
     if (typeof value.selectedId === 'string' && /^[a-z0-9][a-z0-9-]{0,119}$/.test(value.selectedId)) {
         result.selectedId = value.selectedId;
     }

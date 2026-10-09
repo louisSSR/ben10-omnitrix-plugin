@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { Script } from 'node:vm';
+import { validatePortraitRegistry } from './portrait-renderer.js';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const read = file => readFileSync(path.join(root, file), 'utf8');
 const catalog = JSON.parse(read('assets/catalog.json'));
@@ -11,8 +12,9 @@ if (watchViews.columns !== 4 || watchViews.rows !== 2 || watchViews.views?.lengt
 const css = read('styles.css');
 const core = read('core.js').replace(/^export /gm, '');
 const model = read('watch-model.js').replace(/^export /gm, '');
+const portraitModule = read('portrait-renderer.js').replace(/^export /gm, '');
 const code = read('app.js').replace(/^import[^\n]+\n/gm, '');
-const applicationCode = `(() => {\n'use strict';\n${core}\n${model}\n${code}\n})();`;
+const applicationCode = `(() => {\n'use strict';\n${core}\n${model}\n${portraitModule}\n${code}\n})();`;
 new Script(applicationCode, { filename: 'preview-inline.js' });
 const svg = read('assets/silhouettes.svg');
 if (/<script\b|\bon\w+\s*=/i.test(svg) || /(?:href|src)=["']https?:/i.test(svg)) throw new Error('Unsafe image library');
@@ -38,10 +40,29 @@ const localSvg = svg.replace(/(<image\b[^>]*\bhref=")([^"]+)(")/g, (_all, before
   return before + storeImage(bytes, match[2]) + after;
 });
 const symbols = localSvg.slice(localSvg.indexOf('>') + 1, localSvg.lastIndexOf('</svg>'));
+const portraits = JSON.parse(read('assets/portraits.json'));
+validatePortraitRegistry(portraits, catalog.forms.map(form => form.id));
+const portraitSymbols = portraits.assets.map(asset => {
+  if (asset.file !== `portraits/${asset.id}.webp` || !/^[a-f0-9]{64}$/.test(asset.sha256)) throw new Error('Invalid source portrait path or hash');
+  const file = path.join(root, 'assets', asset.file);
+  if (lstatSync(file).isSymbolicLink() || !lstatSync(file).isFile()) throw new Error('Invalid portrait source');
+  const bytes = readFileSync(file);
+  if (hash(bytes) !== asset.sha256 || bytes.length !== asset.bytes || bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP') throw new Error(`Invalid portrait bytes: ${asset.id}`);
+  if (bytes.length < 30 || bytes.toString('ascii', 12, 16) !== 'VP8X' || bytes.readUIntLE(24, 3) + 1 !== asset.width || bytes.readUIntLE(27, 3) + 1 !== asset.height || !(bytes[20] & 0x10)) throw new Error(`Invalid portrait dimensions or alpha: ${asset.id}`);
+  const source = storeImage(bytes, 'webp');
+  return `<symbol id="portrait-sprite-${asset.id}" viewBox="0 0 150 150"><image width="150" height="150" href="${source}" preserveAspectRatio="xMidYMid meet"/></symbol>`;
+}).join('');
+const portraitRuntime = {
+  schemaVersion: 1,
+  assets: portraits.assets.map(({ id, width, height, dark, light }) => ({ id, width, height, dark, light })),
+  bindings: portraits.bindings.map(({ formId, portraitId }) => ({ formId, portraitId })),
+};
 let html = read('preview.shell.html');
 const replacements = {
   '/* APP_STYLES */': css,
   '<!-- ART_SYMBOLS -->': `<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">${symbols}</svg>`,
+  '<!-- PORTRAIT_SYMBOLS -->': `<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">${portraitSymbols}</svg>`,
+  '<!-- PORTRAIT_DATA -->': JSON.stringify(portraitRuntime).replace(/</g, '\\u003c'),
   '<!-- CATALOG_DATA -->': JSON.stringify(catalog).replace(/</g, '\\u003c'),
   '<!-- WATCH_VIEWS_DATA -->': JSON.stringify(watchViews).replace(/</g, '\\u003c'),
   '/* APP_CODE */': applicationCode,
@@ -84,6 +105,7 @@ writeFileSync(path.join(root, 'preview.html'), html);
 mkdirSync(path.join(root, 'docs'), { recursive: true });
 const receipt = { builtAt: new Date().toISOString(), sha256: createHash('sha256').update(html).digest('hex'), bytes: Buffer.byteLength(html), coverage: catalog.coverage, watchArt, watchAtlases, standalone: true, browserVerified: false, realHostVerified: false };
 receipt.watchModel = { renderer: 'local-webgl-geometry', source: 'watch-model.js', sha256: hash(Buffer.from(read('watch-model.js'))), generations: 4, sharedGeometryAcrossViews: true, artFallbackRetained: true, officialModel: false };
+receipt.portraits = { assets: portraits.assets.length, bindings: portraits.bindings.length, pending: catalog.forms.length - portraits.bindings.length, sourceSha256: hash(Buffer.from(read('assets/portraits.json'))), sourceBytesPreserved: true, changesSelectionPool: false };
 const entryFiles = ['extension.js', 'host-adapter.js', 'extension.css', 'preview.html', 'manifest.json'];
 const files = [...entryFiles.map(file => {
   const bytes = readFileSync(path.join(root, file));

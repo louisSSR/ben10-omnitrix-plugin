@@ -11,7 +11,7 @@ const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 test('offline manifest exactly covers entry files and all local image references', () => {
   const manifest = JSON.parse(read('runtime-manifest.json'));
   const html = read('preview.html').toString('utf8');
-  const refs = [...html.matchAll(/(?:href|src)="\.\/(assets\/runtime\/[a-f0-9]{64}\.(?:png|avif))"/g)].map(x => x[1]);
+  const refs = [...html.matchAll(/(?:href|src)="\.\/(assets\/runtime\/[a-f0-9]{64}\.(?:png|avif|webp))"/g)].map(x => x[1]);
   const expected = new Set(['extension.js','host-adapter.js','extension.css','preview.html','manifest.json',...refs]);
   assert.equal(manifest.schemaVersion,1);assert.equal(manifest.files.length,expected.size);
   assert.deepEqual(new Set(manifest.files.map(x=>x.path)),expected);

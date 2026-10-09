@@ -1,0 +1,392 @@
+{
+  "version": "0.6.0",
+  "date": "2026-10-10",
+  "previewSha256": "6bd0829bbcfc86a4c8d0073d4cc429777c74670356028dbe9ef6bdca62a9c7d5",
+  "modelSha256": "b574f7db9c5d1c4fa2c01ae2de5c69d9fb4280c810d6d55e5342948cda729125",
+  "portraitRegistrySha256": "a39cf0b631781d244b4487d2bbd4ea5419371516285df28c088577f13c024b4d",
+  "runtimeManifestSha256": "1b8e9c803351978a4b6b9b8a4ef22641b5caf8a1a4e0184c7c64aea184f12387",
+  "coverage": {
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 27,
+    "bindings": 27,
+    "pending": 209,
+    "sourceSha256": "a39cf0b631781d244b4487d2bbd4ea5419371516285df28c088577f13c024b4d",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 142,
+    "failed": 0,
+    "skipped": 0
+  },
+  "testLogSha256": "9b004f16ca5378ca52f7891a2dc7a9dfe59ab3847b99c51b661348db04c9e79c",
+  "finalCssRegression": {
+    "passed": 68,
+    "failed": 0,
+    "logSha256": "412337f5406c87753e7c48340b8dc7b4b3b8dcda25c41c5ca7db691f3c44ca94",
+    "reason": "Only the Ultimatrix dial canvas width changed after the full 142-test run."
+  },
+  "screenshots": [
+    "screenshots/v060-desktop-rose.jpg",
+    "screenshots/v060-mobile-amber-ov.jpg",
+    "screenshots/v060-mobile-pending.jpg",
+    "screenshots/v060-mobile-projection.jpg",
+    "screenshots/v060-narrow-carousel.jpg",
+    "screenshots/v060-narrow-dial-fixed.jpg",
+    "screenshots/v060-desktop-green.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v060-desktop-rose.jpg",
+      "sha256": "75e019ad7e0d1620c49342efc8e97d056d41094a8970f32a0fde4c2fc4af2fc5",
+      "captureBuildSha256": "042fac3968bc853c207d8b904470a0b3756127dfac4cf2af12d27ca36ad0f38d",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-mobile-amber-ov.jpg",
+      "sha256": "7bc5a0eb322c27afc6dab2f9a66d15424b18ba6c95764f237adf873daaea0f23",
+      "captureBuildSha256": "042fac3968bc853c207d8b904470a0b3756127dfac4cf2af12d27ca36ad0f38d",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-mobile-pending.jpg",
+      "sha256": "2bc3fcf64ae3856da2b6b14c58a6854a8c8180490ebaf9e3d6430a3f9dafa0c0",
+      "captureBuildSha256": "042fac3968bc853c207d8b904470a0b3756127dfac4cf2af12d27ca36ad0f38d",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-mobile-projection.jpg",
+      "sha256": "f06f9b7e7110fcf6d1f03db8d4cd53fe188fefcd394e23858d529e8c246d319e",
+      "captureBuildSha256": "042fac3968bc853c207d8b904470a0b3756127dfac4cf2af12d27ca36ad0f38d",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-narrow-carousel.jpg",
+      "sha256": "4240ec7a4f5351674089a35293df583283546fefa1362976b879f1570dc53ada",
+      "captureBuildSha256": "6bd0829bbcfc86a4c8d0073d4cc429777c74670356028dbe9ef6bdca62a9c7d5",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-narrow-dial-fixed.jpg",
+      "sha256": "ba748bcd488fd7f6bca54de7bb08c69de84a3fb8f5898b96bd79322a8a140fae",
+      "captureBuildSha256": "6bd0829bbcfc86a4c8d0073d4cc429777c74670356028dbe9ef6bdca62a9c7d5",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v060-desktop-green.jpg",
+      "sha256": "28f71f18b2f74cacf0b719640f311ee449e648bbddc4746aa36a6b0de55301d5",
+      "captureBuildSha256": "6bd0829bbcfc86a4c8d0073d4cc429777c74670356028dbe9ef6bdca62a9c7d5",
+      "actuallyViewed": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "narrow-reduced-motion-navigation",
+      "reduced": "true",
+      "ringCount": 8,
+      "scrollWidth": 305,
+      "selected": "四手霸王",
+      "width": 305
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "ditto",
+      "expectedPortrait": "dna-omv-001",
+      "catalog": 236,
+      "form": "ditto",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-001"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "swampfire",
+      "expectedPortrait": "dna-omv-002",
+      "catalog": 236,
+      "form": "swampfire",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-002"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "upgrade",
+      "expectedPortrait": "dna-omv-003",
+      "catalog": 236,
+      "form": "upgrade",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-003"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "heatblast",
+      "expectedPortrait": "dna-omv-004",
+      "catalog": 236,
+      "form": "heatblast",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-004"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "kickin-hawk",
+      "expectedPortrait": "dna-omv-007",
+      "catalog": 236,
+      "form": "kickin-hawk",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-007"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "gutrot",
+      "expectedPortrait": "dna-omv-010",
+      "catalog": 236,
+      "form": "gutrot",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-010"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "ball-weevil",
+      "expectedPortrait": "dna-omv-012",
+      "catalog": 236,
+      "form": "ball-weevil",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-012"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "goop",
+      "expectedPortrait": "dna-omv-013",
+      "catalog": 236,
+      "form": "goop",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-013"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "whampire",
+      "expectedPortrait": "dna-omv-016",
+      "catalog": 236,
+      "form": "whampire",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-016"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "grey-matter",
+      "expectedPortrait": "dna-omv-018",
+      "catalog": 236,
+      "form": "grey-matter",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-018"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "rath",
+      "expectedPortrait": "dna-omv-020",
+      "catalog": 236,
+      "form": "rath",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-020"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "wildmutt",
+      "expectedPortrait": "dna-omv-022",
+      "catalog": 236,
+      "form": "wildmutt",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-022"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "way-big",
+      "expectedPortrait": "dna-omv-025",
+      "catalog": 236,
+      "form": "way-big",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-025"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "blitzwolfer",
+      "expectedPortrait": "dna-omv-028",
+      "catalog": 236,
+      "form": "blitzwolfer",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-028"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "feedback",
+      "expectedPortrait": "dna-omv-029",
+      "catalog": 236,
+      "form": "feedback",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-029"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "diamondhead",
+      "expectedPortrait": "dna-omv-030",
+      "catalog": 236,
+      "form": "diamondhead",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-030"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "gravattack",
+      "expectedPortrait": "dna-omv-031",
+      "catalog": 236,
+      "form": "gravattack",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-031"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "eatle-ov",
+      "expectedPortrait": "dna-omv-033",
+      "catalog": 236,
+      "form": "eatle-ov",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-033"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "nrg",
+      "expectedPortrait": "dna-omv-034",
+      "catalog": 236,
+      "form": "nrg",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-034"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "stinkfly",
+      "expectedPortrait": "dna-omv-036",
+      "catalog": 236,
+      "form": "stinkfly",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-036"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "shocksquatch-ov",
+      "expectedPortrait": "dna-omv-038",
+      "catalog": 236,
+      "form": "shocksquatch-ov",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-038"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "ghostfreak-ov",
+      "expectedPortrait": "dna-omv-043",
+      "catalog": 236,
+      "form": "ghostfreak-ov",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-043"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "toepick",
+      "expectedPortrait": "dna-omv-044",
+      "catalog": 236,
+      "form": "toepick",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-044"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "clockwork-ov16",
+      "expectedPortrait": "dna-omv-047",
+      "catalog": 236,
+      "form": "clockwork-ov16",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-047"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "the-worst",
+      "expectedPortrait": "dna-omv-049",
+      "catalog": 236,
+      "form": "the-worst",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-049"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "atomix",
+      "expectedPortrait": "dna-omv-053",
+      "catalog": 236,
+      "form": "atomix",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-053"
+    },
+    {
+      "check": "portrait-binding",
+      "expectedForm": "mole-stache",
+      "expectedPortrait": "dna-omv-057",
+      "catalog": 236,
+      "form": "mole-stache",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "portrait": "dna-omv-057"
+    },
+    {
+      "catalog": 1,
+      "check": "search-keeps-watch-pool",
+      "pool": "档案搜索 1 / 236 · 手表可切换 235 个 · 搜索「Diamond Matter」",
+      "ringCount": 8
+    },
+    {
+      "check": "wrap-before-first",
+      "pool": "档案搜索 236 / 236 · 手表可切换 235 个 · 全部形态",
+      "selected": "skurd-kickin-hawk-diamondhead-arm"
+    },
+    {
+      "check": "wrap-to-first",
+      "portrait": "dna-omv-004",
+      "selected": "heatblast"
+    },
+    {
+      "check": "final-desktop",
+      "palette": "能量绿",
+      "portrait": "dna-omv-004",
+      "reduced": "false",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "width": 1265
+    }
+  ],
+  "console": [],
+  "responsive": {
+    "desktopClientWidth": 1265,
+    "mobileClientWidth": 375,
+    "narrowClientWidth": 305,
+    "horizontalOverflow": false
+  },
+  "narrowDialFix": {
+    "stage": {
+      "left": 11.666667,
+      "right": 293.00001
+    },
+    "watch": {
+      "left": 17.296875,
+      "right": 287.369812
+    },
+    "fullyWithinStage": true
+  },
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "boundaries": [
+    "27 reviewed head bindings; 209 catalog entries still need portraits.",
+    "235 full-body silhouettes retained; registered Crabdozer remains missing.",
+    "Not an exhaustive catalog of every work.",
+    "Supplied printable meshes remain private assembly references.",
+    "Projection remains layered 2D character art."
+  ]
+}

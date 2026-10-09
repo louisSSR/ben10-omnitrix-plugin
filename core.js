@@ -6,7 +6,7 @@ export const WATCHES = Object.freeze([
 ]);
 export const MODES = Object.freeze([
   { id: 'projection', name: '全息投影', code: '01', hint: '滑动切换 · 点击表盘锁定', description: '从表盘升起你的下一种形态。' },
-  { id: 'carousel', name: '环形转盘', code: '02', hint: '拨动转盘 · 点选轮廓 · 点击表盘锁定', description: '旋转、瞄准，然后选定。' },
+  { id: 'carousel', name: '环形转盘', code: '02', hint: '拨动转盘 · 点选头像 · 点击表盘锁定', description: '旋转、瞄准，然后选定。' },
   { id: 'dial', name: '表盘剪影', code: '03', hint: '滑动切换 · 点击菱形表盘锁定', description: '经典黑色剪影，回到最初的变身时刻。' },
 ]);
 export function normalizePreferences(value, forms = []) {
@@ -17,6 +17,7 @@ export function normalizePreferences(value, forms = []) {
     mode: MODES.some(x => x.id === v.mode) ? v.mode : 'projection',
     reducedMotion: v.reducedMotion === true,
     selectedId: selected?.id || forms[0]?.id || '',
+    ...(['energy', 'amber', 'rose'].includes(v.palette) ? { palette: v.palette } : {}),
   };
 }
 export function filterForms(forms, { query = '', group = 'all', readyOnly = true } = {}) {

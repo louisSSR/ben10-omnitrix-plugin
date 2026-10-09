@@ -8,6 +8,7 @@ import vm from 'node:vm';
 import { inflateSync } from 'node:zlib';
 import { execFileSync } from 'node:child_process';
 import { WATCHES, MODES, dialSelectionFrames } from '../core.js';
+import { PORTRAIT_PALETTES } from '../portrait-renderer.js';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => readFileSync(path.join(root, file), 'utf8');
@@ -15,7 +16,7 @@ const html = read('preview.html');
 const css = read('styles.css');
 const app = read('app.js');
 const sourceSvg = read('assets/silhouettes.svg');
-const inlineSvg = sourceSvg.replace(/href="runtime\/([a-f0-9]{64})\.(png|avif)"/g, (_all, sha, type) => {
+const inlineSvg = sourceSvg.replace(/href="runtime\/([a-f0-9]{64})\.(png|avif|webp)"/g, (_all, sha, type) => {
   const raw = readFileSync(path.join(root, 'assets/runtime', `${sha}.${type}`));
   assert.equal(createHash('sha256').update(raw).digest('hex'), sha);
   return `href="data:image/${type};base64,${raw.toString('base64')}"`;
@@ -39,7 +40,7 @@ test('offline directory build keeps the baseline and every individually reviewed
   const missing = catalog.forms.filter(form => !form.asset);
   assert.equal(ready.length, expectedReviewed);
   assert.equal(missing.length, expectedTotal - expectedReviewed);
-  const symbolIds = [...html.matchAll(/<symbol\b[^>]*\bid=["']([^"']+)["']/gi)].map(match => match[1]);
+  const symbolIds = [...html.matchAll(/<symbol\b[^>]*\bid=["'](alien-[^"']+)["']/gi)].map(match => match[1]);
   assert.equal(symbolIds.length, expectedReviewed);
   assert.equal(new Set(symbolIds).size, expectedReviewed);
   for (const form of ready) {
@@ -197,7 +198,7 @@ test('built preview has no runtime remote resource or unresolved build marker', 
   for (const [, tag, attributes] of resourceTags) {
     for (const match of attributes.matchAll(/\b(?:src|href|xlink:href|srcset)\s*=\s*(["'])(.*?)\1/gi)) {
       const value = match[2].trim();
-      assert.ok(value.startsWith('#') || /^\.\/assets\/runtime\/[a-f0-9]{64}\.(png|avif)$/.test(value), `${tag} requires an undeclared resource: ${value.slice(0, 100)}`);
+      assert.ok(value.startsWith('#') || /^\.\/assets\/runtime\/[a-f0-9]{64}\.(png|avif|webp)$/.test(value), `${tag} requires an undeclared resource: ${value.slice(0, 100)}`);
     }
   }
   assert.doesNotMatch(css, /@import\b|url\(\s*["']?\s*(?:https?:|\/\/)/i);
@@ -293,6 +294,7 @@ function node(tag, namespaceURI = null) {
     getAttribute(name) { return this.attributes[name]; },
     append(...children) { for (const child of children) { child.parentNode = this; this.children.push(child); } },
     replaceChildren(...children) { this.children = []; this.append(...children); },
+    remove() { if (this.parentNode) this.parentNode.children = this.parentNode.children.filter(child => child !== this); },
     matches(selector) {
       return selector.split(',').some(part => {
         part = part.trim();
@@ -351,11 +353,14 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
     if (id) { result.id = id; elements.set(id, result); } else anonymous.push(result);
   }
   document.createElement = tag => makeNode(tag);
+  document.body = makeNode('body');
   document.createElementNS = (namespace, tag) => makeNode(tag, namespace);
   document.getElementById = id => elements.get(id) || null;
   document.querySelector = selector => [...elements.values(), ...anonymous].find(value => value.matches(selector)) || null;
   const fixture = [...sourceCatalog.forms.filter(form => form.asset).slice(0, 12), sourceCatalog.forms.find(form => !form.asset)];
   elements.get('catalog-data').textContent = JSON.stringify({ ...sourceCatalog, forms: fixture });
+  const portraitData = JSON.parse(read('assets/portraits.json'));
+  elements.get('portrait-data').textContent = JSON.stringify({ ...portraitData, bindings: portraitData.bindings.filter(binding => fixture.some(form => form.id === binding.formId)) });
   if (elements.has('watch-views')) elements.get('watch-views').textContent = JSON.stringify(atlas);
   for (const watch of WATCHES) {
     const image = elements.get(`watch-atlas-${watch.id}`);
@@ -380,7 +385,8 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
   });
   const core = read('core.js').replace(/^export /gm, '');
   const model = modelFactory ? '' : read('watch-model.js').replace(/^export /gm, '');
-  vm.runInContext(`(() => { ${core}\n${model}\n${app.replace(/^import[^\n]+\n/gm, '')}\n})();`, context);
+  const portraitModule = read('portrait-renderer.js').replace(/^export /gm, '');
+  vm.runInContext(`(() => { ${core}\n${model}\n${portraitModule}\n${app.replace(/^import[^\n]+\n/gm, '')}\n})();`, context);
   const advance = ms => {
     const end = now + ms;
     for (;;) {
@@ -802,8 +808,8 @@ test('projection anchor reduced motion aligns immediately and page exit cancels 
   }
 });
 
-test('rebuilding watch and mode controls restores the active replacement button', () => {
-  const elements = new Map(['watch-options', 'mode-options', 'motion-toggle'].map(id => [id, node('div')]));
+test('rebuilding watch, mode and palette controls restores the active replacement button', () => {
+  const elements = new Map(['watch-options', 'mode-options', 'palette-options', 'motion-toggle'].map(id => [id, node('div')]));
   const document = { activeElement: null };
   document.createElement = tag => {
     const created = node(tag);
@@ -811,13 +817,14 @@ test('rebuilding watch and mode controls restores the active replacement button'
     return created;
   };
   document.createElementNS = (namespace, tag) => node(tag, namespace);
-  const context = vm.createContext({ document, WATCHES, MODES,
-    $: id => elements.get(id), app: { classList: { toggle() {} } },
-    preferences: { watch: 'omniverse', mode: 'dial', reducedMotion: false },
+  const context = vm.createContext({ document, WATCHES, MODES, PORTRAIT_PALETTES,
+    portraits: { setPalette: id => PORTRAIT_PALETTES[id] },
+    $: id => elements.get(id), app: node('main'),
+    preferences: { watch: 'omniverse', mode: 'dial', reducedMotion: false, palette: 'amber' },
     systemMotion: { matches: false }, reduced: () => false,
   });
   vm.runInContext(`${functionSection('textElement', 'post')}${functionSection('renderControls', 'renderRing')}globalThis.controlsForTest = renderControls;`, context);
-  for (const [action, value, container] of [['watch', 'omniverse', 'watch-options'], ['mode', 'dial', 'mode-options']]) {
+  for (const [action, value, container] of [['watch', 'omniverse', 'watch-options'], ['mode', 'dial', 'mode-options'], ['palette', 'amber', 'palette-options']]) {
     const oldControl = { dataset: { action, value } };
     document.activeElement = oldControl;
     context.controlsForTest();

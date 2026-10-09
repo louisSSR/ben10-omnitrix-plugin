@@ -91,13 +91,19 @@
 .carousel{inset:0;perspective:none;transform-style:flat;z-index:14;pointer-events:none}
 .ring-item{left:50%;top:55%;width:58px;height:68px;margin:-34px 0 0 -29px;min-width:0;border:1px solid transparent;border-radius:3px;background:none;box-shadow:none;backdrop-filter:none;pointer-events:auto;transform-origin:center;will-change:transform;display:flex;align-items:center;justify-content:center;padding:4px;transition:background .25s,border-color .25s;touch-action:pan-y}
 .ring-item::after{display:none}
-.ring-item svg{width:100%;height:100%;filter:brightness(0) saturate(100%) invert(19%) sepia(38%) saturate(1200%) hue-rotate(42deg);opacity:1}
-.ring-item span:not(.pending-figure){display:none}
+.ring-item svg{width:100%;height:100%;filter:none;opacity:1}
+.ring-item .ring-name{display:none}
 .ring-item.is-selected{border:2px solid #e8ffb0;background:#bcff5a60;box-shadow:0 0 0 3px #acfc3450,inset 0 0 12px #d5ff8250,0 0 18px #aaff3440;border-radius:2px}
-.ring-item.is-selected svg{filter:brightness(0) saturate(100%) invert(17%) sepia(52%) saturate(700%) hue-rotate(39deg)}
-.ring-item.is-selected span:not(.pending-figure){display:block;position:absolute;bottom:calc(100% + 14px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:#d9fba4;background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.ring-item.is-selected svg{filter:none}
+.ring-item.is-selected .ring-name{display:block;position:absolute;bottom:calc(100% + 14px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:9px;letter-spacing:1px;color:var(--accent);background:#152515e6;border:1px solid #84b94355;padding:4px 9px;border-radius:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis}
 .ring-item.is-front,.ring-item.is-back{filter:none}
 .ring-item .pending-figure{font-size:8px;color:#d6ff8b;line-height:1.4}
+.ring-item .portrait-pending{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;max-height:3.9em;font-size:8px;color:#24331b;background:#edffd596;border-radius:3px;padding:2px;line-height:1.3;text-align:center;white-space:pre-line;overflow-wrap:anywhere}
+.ring-item .portrait-icon{width:50px;height:50px;flex:none}
+.palette-options{display:flex;gap:6px;flex-wrap:wrap}.palette-option{display:flex;align-items:center;gap:6px;background:#152017;border:1px solid #34422b;border-radius:6px;padding:8px;font-size:11px;min-height:40px}.palette-option::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--swatch)}.palette-option[aria-pressed=true]{border-color:var(--swatch);color:var(--swatch)}
+.selection-ring,.watch-screen,.hologram,.watch-art,.watch-atlas{filter:hue-rotate(var(--signal-hue,0deg))}
+.projection-emitter{filter:hue-rotate(var(--signal-hue,0deg)) drop-shadow(0 8px 5px #0009)}
+.ring-item.is-selected{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 22%,transparent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent),0 0 18px color-mix(in srgb,var(--accent) 20%,transparent)}
 
 /* A bevelled aperture and two independent leaves, rather than a flat diamond sticker. */
 [data-mode=dial] .watch-device{top:55%;width:540px;height:540px;transform:translate(calc(0% - var(--face-x)),calc(0% - var(--face-y)));filter:drop-shadow(0 15px 10px #000a)}
@@ -188,5 +194,6 @@
 .omni-app[data-watch-art=model]:not([data-mode=dial]) .watch-screen>*{display:none}
 .omni-app[data-watch-art=model][data-mode=carousel] .watch-device{top:57%;width:min(510px,100cqw)}
 .omni-app[data-watch-art=model][data-mode=dial] .watch-device{top:53%;width:min(650px,114cqw)}
+.omni-app[data-watch-art=model][data-mode=dial][data-watch=ultimatrix] .watch-device{width:min(650px,96cqw)}
 .omni-app[data-watch-art=model][data-mode=dial] .watch-screen{opacity:1;background:#93a083;overflow:hidden}
 .omni-app[data-watch-art=model][data-mode=dial] .screen-rim,.omni-app[data-watch-art=model][data-mode=dial] .screen-glass{display:none}
