@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-09T10:00:58.909Z",
-  "sha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
-  "bytes": 299777,
+  "builtAt": "2026-10-09T10:06:55.692Z",
+  "sha256": "3e16ca04b1c407353aef47e9545b1d47f612897dad2e675c1e082b402f048184",
+  "bytes": 299765,
   "coverage": {
     "total": 224,
     "reviewed": 191,
@@ -81,6 +81,6 @@
   "delivery": "offline-directory",
   "selfContainedHtml": false,
   "runtimeFiles": 204,
-  "runtimeBytes": 70201785,
-  "runtimeManifestSha256": "3d5f08ceb1a544b8ab0a68b511bbeb3fa25cc7b0e5a76929728a084ecbce682e"
+  "runtimeBytes": 70201773,
+  "runtimeManifestSha256": "4a571672070f98144c1cca37fe72626b57f762278493100bcd7a719a9490571b"
 }

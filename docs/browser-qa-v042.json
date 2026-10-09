@@ -1,7 +1,7 @@
 {
   "version": "0.4.2",
-  "checkedAt": "2026-10-09T10:02:03.615Z",
-  "previewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+  "checkedAt": "2026-10-09T10:09:06.724Z",
+  "previewSha256": "3e16ca04b1c407353aef47e9545b1d47f612897dad2e675c1e082b402f048184",
   "url": "http://127.0.0.1:4191/preview.html",
   "surface": "Codex in-app browser; desktop and two responsive iframes",
   "coverage": {
@@ -18,7 +18,7 @@
       "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
       "sourceUrl": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
       "artProvenance": "AI reference reconstruction from three community-hosted Alien Force animation screenshots of grown Humungousaur. Not an official transparent original or pixel-exact animation cutout.",
-      "renderMode": "source-alpha",
+      "renderMode": "reference-guided-edit-alpha",
       "officialSourceVerified": false,
       "observations": "Three actual local source images show the grown head crest, layered shoulder/back armor, bulky torso, bent upraised fists, short thick legs, pointed tail ridges and three dark short toe claws. The generated complete black silhouette retains the raised-fist wide-legged main pose, crown and plated shoulders. Output alpha is 0..255, 1333x1180, bbox [54,16,1290,1143], with every canvas edge fully transparent.",
       "limitations": [
@@ -176,14 +176,12 @@
       "skipped": 0,
       "cancelled": 0,
       "todo": 0,
-      "logSha256": "4272f04c81e8acdecd2f5a568bb5a173efa2a3e7bd725248aa1aedfe7ff2d94c"
+      "logSha256": "f187c345cc9697a163350a863896cbdce9971b9f0f7763fdc339961e43444bb4"
     }
   },
   "console": {
     "mainErrors": [],
-    "responsiveContainerErrors": [
-      "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'."
-    ]
+    "responsiveContainerErrors": null
   },
   "screenshots": [
     "screenshots/v042-grown-dial.jpg",
@@ -366,5 +364,108 @@
   ],
   "realPhoneValidated": false,
   "realSillyTavernValidated": false,
-  "driverAccepted": false
+  "driverAccepted": false,
+  "originalContourReview": {
+    "checkedAt": "2026-10-09T10:02:03.615Z",
+    "previewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+    "surface": "Codex in-app browser; desktop and two responsive iframes",
+    "checks": {
+      "modes": [
+        "dial",
+        "projection",
+        "carousel"
+      ],
+      "desktop": {
+        "clientWidth": 1265,
+        "height": 720,
+        "outerWidth": 1280
+      },
+      "mobileClientWidths": [
+        375,
+        305
+      ],
+      "newContoursInspected": true,
+      "filtersClearedInFinalPreview": true,
+      "oldRuntimeImagesByteExact": 195,
+      "registeredImageHashesUnchanged": true,
+      "tests": {
+        "passed": 104,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0,
+        "logSha256": "4272f04c81e8acdecd2f5a568bb5a173efa2a3e7bd725248aa1aedfe7ff2d94c"
+      }
+    },
+    "console": {
+      "mainErrors": [],
+      "responsiveContainerErrors": [
+        "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'."
+      ]
+    },
+    "note": "The existing desktop/375/305 contour checks and 24 screenshots belong to this original review, before the label-only correction."
+  },
+  "screenshotCapturePreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+  "screenshotsRecapturedForMetadataCorrection": false,
+  "metadataCorrections": [
+    {
+      "kind": "ai-source-label-metadata-correction",
+      "formId": "humungousaur-grown",
+      "checkedAt": "2026-10-09T10:09:06.724Z",
+      "previousRenderMode": "source-alpha",
+      "renderMode": "reference-guided-edit-alpha",
+      "artSourceLabelObserved": "AI reference edit; not official original",
+      "labelReadFrom": "loaded preview DOM catalog-data record",
+      "previousPreviewSha256": "79f4a78a4970d5fd5eee94aafa1f1458693da2b7235e119b1bb1a2e7ffbb8b3a",
+      "previewSha256": "3e16ca04b1c407353aef47e9545b1d47f612897dad2e675c1e082b402f048184",
+      "originalContourReviewCheckedAt": "2026-10-09T10:02:03.615Z",
+      "screenshotsRecaptured": false,
+      "screenshotScope": "The 24 JPEGs were captured before this metadata-label correction and remain bound to the previous preview. All image bytes and geometry implementation are unchanged; these are not fresh captures of the corrected label.",
+      "currentObservationScope": "Root actually reloaded the rebuilt preview and inspected the corrected AI label, final filter state and the reported console scope. This is not a repeated 24-shot contour review or physical-phone/host acceptance.",
+      "unchangedRuntimeImages": 199,
+      "runtimeImageRecordsDigest": "023a36e9493be01f51c0fd9535c38478f59af4fb6dd97fc3f66fb5c8c7aef5bf",
+      "unchangedGeometry": [
+        {
+          "file": "app.js",
+          "sha256": "83f46bbc2b4f4e233c3a17f1328c30e78efa1ee474aad8cb3e24bcce249f80ae"
+        },
+        {
+          "file": "core.js",
+          "sha256": "723196d8d0649b99ffa30f1179ac04866cea7fde2c5b677a3623ff8e71a3b9cf"
+        },
+        {
+          "file": "styles.css",
+          "sha256": "437fa33be1ec86db23bdd9fa78b36ed5ef061434141cc67358d858cbb7738f2c"
+        },
+        {
+          "file": "preview.shell.html",
+          "sha256": "6479ea8e75e764871bd83c12ba6a19ec2a788640214ab1efc5e397c4bab6b43e"
+        },
+        {
+          "file": "assets/dial-fit.json",
+          "sha256": "414d0fdb324578a4228e728a7e22a6932721267d18342df50855bf3e1e00f16e"
+        },
+        {
+          "file": "assets/watches-v4/views.json",
+          "sha256": "9ccd2f2e63d95bd3e2619de8dc6435d729994c9482a5ed6f02e277b0dd2b2c00"
+        }
+      ],
+      "priorTests": {
+        "passed": 104,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0,
+        "logSha256": "4272f04c81e8acdecd2f5a568bb5a173efa2a3e7bd725248aa1aedfe7ff2d94c"
+      },
+      "tests": {
+        "passed": 104,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0,
+        "logSha256": "f187c345cc9697a163350a863896cbdce9971b9f0f7763fdc339961e43444bb4"
+      }
+    }
+  ]
 }

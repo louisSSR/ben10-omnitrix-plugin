@@ -3627,7 +3627,7 @@
       "maskSha256": "b7611e53d0b6d8434cb81f9ed272866786c6e52e9d5fad20532e74821541d11b",
       "pageUrl": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
       "url": "https://ben10hero.com/wp-content/uploads/2016/10/af_humungousaur_003.png",
-      "renderMode": "source-alpha",
+      "renderMode": "reference-guided-edit-alpha",
       "sourceViewed": true,
       "maskViewed": true,
       "currentUIViewed": true,
