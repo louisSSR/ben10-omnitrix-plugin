@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "d6d32c711ccd72286022b2312bf97d23ac65b8cdf8e73e58f83ad9c73fa9aab7",
-  "shapeCount": 179,
+  "sourceSvgSha256": "d818d9ce3b33f079f4f6909ecff0359eb5843b8e677566840bd3f9d30960bc27",
+  "shapeCount": 181,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -526,6 +526,12 @@
       "diamondExtent": 1.533854,
       "visiblePixels": 751770
     },
+    "crashocker": {
+      "scale": 0.5633,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.544271,
+      "visiblePixels": 506982
+    },
     "uprigg": {
       "scale": 0.5612,
       "method": "native-png-alpha-diamond-envelope",
@@ -555,6 +561,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.398003,
       "visiblePixels": 505622
+    },
+    "benzarro-snare-oh": {
+      "scale": 0.7483,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.162525,
+      "visiblePixels": 490157
     },
     "gwen10-wildvine": {
       "scale": 0.6214,

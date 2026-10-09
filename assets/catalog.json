@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 179,
-    "missing": 45
+    "reviewed": 181,
+    "missing": 43
   },
   "forms": [
     {
@@ -2150,10 +2150,21 @@
       "group": "fusion",
       "appearance": "Let's Do the Time War Again",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-crashocker",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Let's_Do_the_Time_War_Again"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=QuVkcAJsyXk"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation",
+      "dialFit": {
+        "scale": 0.5633,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.544271,
+        "visiblePixels": 506982
+      }
     },
     {
       "id": "uprigg",
@@ -2319,11 +2330,22 @@
       "group": "alternate",
       "appearance": "And Then There Were None",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-benzarro-snare-oh",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/And_Then_There_Were_None",
         "https://ben10.fandom.com/wiki/And_Then_There_Was_Ben"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://tenor.com/view/benzarro-benzarro-10-ben-10-oliver-10-snare-oh-gif-9279218749286041843"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-animation-gif-frame",
+      "dialFit": {
+        "scale": 0.7483,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.162525,
+        "visiblePixels": 490157
+      }
     },
     {
       "id": "nega-gutrot",

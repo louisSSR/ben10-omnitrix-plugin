@@ -2694,6 +2694,166 @@
         "observations": "Actually inspected source and generated art, then black dial and projection in the real local browser. The visible action contour stays inside the diamond, with no detached background block. Reference-guided redraw remains distinct from official transparent art.",
         "realPhone": false
       }
+    },
+    {
+      "formId": "crashocker",
+      "sourceFile": "assets/source-art/crashocker-source-342500.png",
+      "sourceSha256": "d86956f52118d0e83695541a9f9e061448dd759bc617e7f549fb5db64638e06a",
+      "maskFile": "assets/source-art/crashocker-reference-edit.png",
+      "maskSha256": "5c154243d6ab7acfd3eb6a5841cb38f0de1e315dc138d43d83358e5f77a00498",
+      "pageUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-reposted-animation",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 animation remains copyrighted; community commentary video by UB CRASH, no open license asserted. Generated transparent artwork is a fan reference redraw, not official transparent art.",
+      "observations": "Root actually viewed paused animation repost at 342.5 seconds: complete airborne Crashocker with outward bent fists, olive arms, green/black torso and dangling insect legs, all visible body contained in frame. A 339.999987 second close-up confirms swept segmented crest, gray face, black neck ruff with white zigzag edge and neck bolt. Exterior electricity is omitted from generated silhouette.",
+      "limitations": [
+        "The full-body source is small, roughly 180 pixels tall inside a 980x551 browser video-region capture. Fine anatomy, knuckles, bolts, toes and face are enlarged interpretation.",
+        "The second close-up supplements head and neck details only; it is not a complete alternate body. No hidden limbs are added.",
+        "RGB preview has colored haze in transparent exterior samples; nonzero antialiasing remains, actual black UI viewed; no visible detached exterior blob. Alpha range 0..254.",
+        "The channel is a community commentator; footage looks like the episode but the official upstream upload and exact episode time were not independently established."
+      ],
+      "adoptionBasis": "Root actually viewed source and generated output, then the settled black dial and projection in desktop and mobile-width iframe. Complete visible action contours retained; fine enlarged detail remains AI interpretation.",
+      "supportingSources": [
+        {
+          "file": "assets/source-art/crashocker-face-source-339999.png",
+          "sha256": "3b53fa32daa535d7ef966560ecd97687b5e60d57e4f26286338fc50a72faa0d2",
+          "url": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+          "playbackSeconds": 339.999987,
+          "purpose": "head crest, neck ruff and bolt detail only"
+        }
+      ],
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=QuVkcAJsyXk",
+        "playbackSeconds": 342.5,
+        "paused": true,
+        "uploader": "UB CRASH",
+        "officialUploaderObserved": false,
+        "nativeVideoSize": [
+          1280,
+          720
+        ],
+        "sourceSize": [
+          980,
+          551
+        ],
+        "allVisibleContourInsideSource": true
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: reference-guided background removal and enlargement for a Ben 10 fan selector. Produce ONE full-body Crashocker on actual transparent background. First reference is the pose and silhouette authority: the small olive-green alien floating at upper left-center, both muscular arms bent outward with clenched fists, narrow bright green/black torso, two long bent insect-like legs hanging with pointed toe claws, and a swept segmented conical head crest. Preserve that exact airborne pose, limb proportions, both hand positions and complete visible feet. Second reference is ONLY a detail reference for the same character's head and black white-zigzag neck ruff: olive swept segmented crest with small serrations, pale gray muzzle/chin, dark eye outline with green eye, silver bolt on black neck fur. Do not use its cropped body pose. Make a clean enlarged flat animation-style reference drawing, with the same olive green arms, green/black abdomen and black neck ruff; retain visible silver bolts. Remove buildings, night sky, all yellow lightning and green energy ribbons, all video-player controls, watermark, and entire background. No electricity attached to hands, no halo, no ground/shadow. Do not substitute ordinary Crashhopper or Shocksquatch; no extra arms, no added wings, no antennae, no added accessories or invented stance. Keep generous transparent margin around all claws, fists and crest. Honest enlarged reference rendering; preserve silhouette despite the small source. Only one character on transparent background.",
+        "rawOutputSha256": "5c154243d6ab7acfd3eb6a5841cb38f0de1e315dc138d43d83358e5f77a00498",
+        "rawBytesMatch": true
+      },
+      "currentUIReview": {
+        "version": "0.3.5",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          390
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed desktop black diamond dial and green projection after selection settled; also reviewed the same modes at the stated iframe width. All visible limbs/crown remain inside the diamond, no visible detached background silhouette. No horizontal overflow.",
+        "realPhone": false
+      }
+    },
+    {
+      "formId": "benzarro-snare-oh",
+      "sourceFile": "assets/source-art/benzarro-snare-oh-tenor-source-frame008.png",
+      "sourceSha256": "7c70aca215abced724adfde5ea244d4cbc5e588c2835ac41a32358eb2240144f",
+      "maskFile": "assets/source-art/benzarro-snare-oh-tenor-reference-edit.png",
+      "maskSha256": "a4538d1f11ce796299af3c20ccd0db6831ec694c09db9163f92b8a0687fe40aa",
+      "pageUrl": "https://tenor.com/view/benzarro-benzarro-10-ben-10-oliver-10-snare-oh-gif-9279218749286041843",
+      "url": "https://media1.tenor.com/m/gMZoSgBWyPMAAAAd/benzarro-benzarro-10.gif",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-animation-gif-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 animation remains copyrighted; community mirror provenance, unknown reuse license. Generated transparent output is not official production artwork.",
+      "observations": "Actually viewed Tenor GIF decoded frames 0, 5, 8 and 15. Frame 8 alone contains the complete visible crouched Benzarro Snare-Oh action contour: angular crown/collar, raised image-left gauntlet and hanging finger strips, lowered image-right gauntlet/hand strips, slim wrapped torso, belt and hanging bandage strips, both bent legs and splayed bandage feet. Frames 0 and 15 are not extraction references because their contours meet/cross the canvas. The purple/black/silver design agrees with the existing community Ben10Hero Benzarro caption/reference, and the new GIF page explicitly tags Benzarro and Snare Oh. Generated output retains this major action structure and all visible limbs; exact lines, bandage lengths and small hand/foot connections are redrawn.",
+      "limitations": [
+        "Low-resolution 426 x 240 community-uploaded animation GIF; uploader blackvenomsymbiote. Official episode, original broadcast time and original uncompressed frame are not independently authenticated. The catalog appearance is a catalog pointer, not proven by the GIF tags.",
+        "Transparent output is an AI reference edit, not official alpha artwork or a pixel-identical extraction. Crown/facial lines, grey wrap lines, fingers/toes, ribbon lengths and small contours are reinterpreted. No ordinary green/gold Ben Snare-Oh replacement is used.",
+        "Crouched asymmetric action pose. Natural self-overlap remains; no hidden limb or unseen surface is supplied. Only frame 8 is used for generation, not a composite of different animation poses.",
+        "Generated nonzero-alpha bounds [0,18,1493,1028] include faint isolated edge residue reaching left/bottom canvas. Alpha >=128 body bounds [201,20,1392,1023]; all four canvas edges have zero alpha>=128 samples. Main feet have a narrow five-pixel bottom margin; source/output have been viewed, but current black dial/projection were subsequently viewed and showed no visible detached residue at delivery sizes.",
+        "Underlying animation and characters remain copyrighted; no open redistribution or edit license is asserted. Community GIF watermark is outside the character and removed with the background."
+      ],
+      "adoptionBasis": "Root actually viewed source and generated output, then the settled black dial and projection in desktop and mobile-width iframe. Complete visible action contours retained; fine enlarged detail remains AI interpretation.",
+      "sourceFrame": {
+        "containerFormat": "GIF",
+        "containerSha256": "ab0778c977825f42377bf51f4ef47721c5bbb3b76eda2b2ec405f4ccaaba799d",
+        "containerUrl": "https://media1.tenor.com/m/gMZoSgBWyPMAAAAd/benzarro-benzarro-10.gif",
+        "frameIndex": 8,
+        "gifRelativeTimestampMS": 530,
+        "frameSize": [
+          426,
+          240
+        ],
+        "decodedRGBAsha256": "97f0289e60ea2aab1bea46e4d9b2d09918b0131971a501edbfe37e8960850aea",
+        "operation": "Lossless decoded-frame PNG export only; no crop, resize, mask or pixel edit.",
+        "sourcePageSha256": "095958aa59054053edab0a260a6e1360ee6d547fb5985838a139b57b569b2189",
+        "sourcePageHTTPStatus": 200,
+        "containerFile": "assets/source-art/benzarro-snare-oh-tenor-original.gif"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Create a transparent-background cutout by editing the SINGLE supplied animation frame, showing ONLY Benzarro's Snare-Oh. This exact frame is the target, not a request to design a new character. Preserve the existing crouched frontal three-quarter pose: the image-left forearm is lifted outward, the image-right forearm and long bandage fingers are lowered, the two bent legs and spread bandage toes are already visible. Keep the entire existing head crown and black-and-silver Egyptian collar, angular black gauntlets and greaves with pale lavender zigzags, grey mummy wraps, slim wrapped torso, purple/black belt and its badge, the existing hanging waist and shoulder bandage strips, and all visible hand and foot strip tips. Keep the silhouette, proportions, asymmetry, limb connections, natural self-overlap and camera angle from this frame. Preserve the Benzarro lavender/black/silver design; do not substitute normal Ben's green-and-gold Snare-Oh. Do not change the stance, add unseen limbs or finger/toe strips, unfold hidden surfaces, add a weapon, alter the crown, enlarge the shoulders, or invent extra bandage ribbons. Remove only the blue rocky scene, floor and scene shadow, distant text/watermark and everything outside the single character. Use true transparent alpha, not a colored or checkerboard background. Include the complete existing character with comfortable transparent padding on all sides, including above the raised gauntlet and below both feet. The reference is a low-resolution community mirror of animation: preserve supported major contours and do not claim recovered official detail. Keep the source's stylized animation linework, with no new lighting halo, glow, mist, drop shadow, lettering or decorative elements.",
+        "promptSha256": "cfe55462d0089b22f2e7a2adf8e72209e4a1e8f11703f0851b9afcec6af7b395",
+        "rawOutputSha256": "a4538d1f11ce796299af3c20ccd0db6831ec694c09db9163f92b8a0687fe40aa",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1529,
+          1028
+        ],
+        "range": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          0,
+          18,
+          1493,
+          1028
+        ],
+        "alpha128BBox": [
+          201,
+          20,
+          1392,
+          1023
+        ],
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "currentUIReview": {
+        "version": "0.3.5",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          320
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed desktop black diamond dial and green projection after selection settled; also reviewed the same modes at the stated iframe width. All visible limbs/crown remain inside the diamond, no visible detached background silhouette. No horizontal overflow.",
+        "realPhone": false
+      }
     }
   ],
   "mergedForms": [

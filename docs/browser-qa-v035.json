@@ -1,0 +1,37 @@
+{
+  "version": "0.3.5",
+  "checkedAt": "2026-10-09T06:36:00Z",
+  "previewSha256": "819855cbf03e45f3253e92446f4a589bd2d818be073cf163e26fe2ab2498ace9",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; mobile widths are responsive-preview iframes, not physical phones",
+  "coverage": {"total":224,"reviewed":181,"missing":43},
+  "added": ["crashocker","benzarro-snare-oh"],
+  "checks": {
+    "rootSourceAndOutputViewed": ["crashocker","benzarro-snare-oh"],
+    "rootCurrentDialAndProjectionViewed": ["crashocker","benzarro-snare-oh"],
+    "mobileDialAndProjectionViewed": [
+      {"formId":"crashocker","targetWidth":390,"clientWidth":375,"scrollWidth":375},
+      {"formId":"benzarro-snare-oh","targetWidth":320,"clientWidth":305,"scrollWidth":305}
+    ],
+    "oldRuntimeImagesByteExact":183,
+    "filterReset":{"before":"1 / 224","after":"224 / 224","finalQuery":"","readyOnly":false},
+    "finalSelection":{"hero":"Heatblast","watch":"original","mode":"carousel"},
+    "projectionKind":"2.5D layered silhouettes; not complete 3D models"
+  },
+  "screenshots":[
+    "screenshots/v035-crashocker-dial.png",
+    "screenshots/v035-crashocker-projection.png",
+    "screenshots/v035-snare-oh-dial.png",
+    "screenshots/v035-snare-oh-projection.png",
+    "screenshots/v035-mobile-dial.png",
+    "screenshots/v035-mobile-projection.png",
+    "screenshots/v035-final-preview.png"
+  ],
+  "productionConsoleErrors":[],
+  "harnessErrors":{"count":1,"message":"MutationObserver.observe parameter 1 is not of type Node","source":"unattributed; same class observed in previous harness runs"},
+  "automated":{"tests":93,"passed":93,"failed":0,"skipped":0},
+  "realPhoneValidated":false,
+  "realSillyTavernValidated":false,
+  "driverAccepted":false,
+  "allSilhouettesComplete":false
+}
