@@ -2236,6 +2236,464 @@
         "pixelEditsOutsideImageGen": false
       },
       "currentUIEvidence": "docs/browser-qa-v032.json"
+    },
+    {
+      "formId": "ultimate-way-big",
+      "sourceFile": "assets/source-art/ultimate-way-big-source-korea-0118502.png",
+      "sourceSha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+      "maskFile": "assets/source-art/ultimate-way-big-action-reference-edit.png",
+      "maskSha256": "b03d09cbd1bc6277b7c2bd9a4a92ebc2d50c8a70eb28659b49c3c4cf31bcd676",
+      "pageUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+      "url": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-official-cn-korea-animation-action-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. The reference is a root-inspected official Cartoon Network Korea upload; no open license is asserted. The generated transparent drawing is not official transparent artwork.",
+      "observations": "Independently viewed the saved 816x459 source frame and the v2 candidate. The source shows a blue/silver and red Ultimate Way Big flying/punching directly toward the viewer: three head crown fins, one very large foreground fist, a smaller rear fist, green eyes and a compact foreshortened shoulder/chest area. Every visible part of this chosen action contour is inside the source frame. v2 retains the three crowns, two fists and gross red/blue chest arrangement without adding legs or feet. It removes the storm background, debris and corner broadcast marks. It is an enlarged and redrawn reference draft, not pixel-exact extraction.",
+      "limitations": [
+        "This is an extreme-perspective flying-punch action, not a complete standing model sheet or a demonstration of all limbs. The source does not expose identifiable legs/feet; they must not be reconstructed or claimed visible.",
+        "The three crown shapes, fist knuckles, small rear hand, face, green eyes, chest insignia, internal colour regions and curves are visibly enlarged/redrawn. They are not exact official fine details or a high-definition animation reproduction.",
+        "The original visible character region is approximately x207..481/y106..384 in an 816x459 browser capture of a 1280x720 video. No hidden anatomy or body beyond this visible contour is supplied.",
+        "The output RGB preview displays coloured haze in fully transparent areas. The three requested haze probes have alpha zero, so RGB alone does not establish an opaque halo. Separately, low-alpha pixels remain: 11437 at alpha1..15 and 2744 at alpha16..127; root has inspected the current black dial and projection; no detached halo was visible at normal UI scale.",
+        "The generated output alpha range is 0..254. Its opaque-enough action contour is clear in the saved colour draft, and root inspected edge rendering in the current black dial and projection.",
+        "Shape-only identity is weakened by the large foreground fist and very small foreshortened torso. Three crowns plus the official blue/red animation source support the identity, with a shape label recommended in the watch UI.",
+        "The reviewer actually viewed saved source/output images, not remote video playback. Official-uploader provenance and the 118.502343-second playback state were supplied by root actual CUA inspection; the saved still retains a CN broadcast mark, which alone would not authenticate an uploader.",
+        "v1 is superseded by the cleanup edit; v3 white-mask output was rejected by root for stray edges and is not proposed. Neither rejected/private image is included in copyMap.",
+        "No generator-native temporary output path or raw-generator file receipt was supplied to this reviewer. This proposal binds the existing v2 candidate bytes; it does not invent an independently verified generator-temp-file match."
+      ],
+      "adoptionBasis": "Visible foreshortened action-pose contour from the official source. Root reviewed source, output and current black dial/projection; the shape label remains necessary to support the small torso and dominant foreground fist. No hidden limbs are reconstructed.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+        "uploader": "Cartoon Network Korea (root actual browser inspection)",
+        "videoTitle": null,
+        "rootReportedVideoDurationSeconds": 612.381,
+        "rootReportedPlaybackSeconds": 118.502343,
+        "rootReportedPaused": true,
+        "rootReportedNativeVideoSize": [
+          1280,
+          720
+        ],
+        "sourceSize": [
+          816,
+          459
+        ],
+        "captureViewportRegion": {
+          "height": 459,
+          "width": 816,
+          "x": 17,
+          "y": 68
+        },
+        "selectionRegionApprox": [
+          207,
+          106,
+          481,
+          384
+        ],
+        "pose": "flying directly toward camera with large foreground fist and smaller rear fist",
+        "allVisibleContourInsideSource": true,
+        "legsFeetVisible": false,
+        "standingFullBodyClaimed": false,
+        "officialAnimationSourceAuthenticatedBy": "root actual CUA playback/channel inspection",
+        "sourceBytesUnchanged": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1536,
+          1024
+        ],
+        "range": [
+          0,
+          254
+        ],
+        "nonzeroBBox": [
+          25,
+          39,
+          1490,
+          1000
+        ],
+        "atLeast128BBox": [
+          204,
+          42,
+          1422,
+          994
+        ],
+        "zeroPixels": 1145229,
+        "oneTo15Pixels": 11437,
+        "sixteenTo127Pixels": 2744,
+        "atLeast128Pixels": 413454,
+        "rgbaSamples": [
+          {
+            "xy": [
+              800,
+              120
+            ],
+            "rgba": [
+              27,
+              33,
+              43,
+              0
+            ]
+          },
+          {
+            "xy": [
+              600,
+              150
+            ],
+            "rgba": [
+              58,
+              63,
+              75,
+              0
+            ]
+          },
+          {
+            "xy": [
+              200,
+              420
+            ],
+            "rgba": [
+              13,
+              17,
+              20,
+              0
+            ]
+          },
+          {
+            "xy": [
+              0,
+              0
+            ],
+            "rgba": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "xy": [
+              1535,
+              1023
+            ],
+            "rgba": [
+              0,
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "xy": [
+              450,
+              600
+            ],
+            "rgba": [
+              96,
+              146,
+              194,
+              254
+            ]
+          },
+          {
+            "xy": [
+              770,
+              400
+            ],
+            "rgba": [
+              98,
+              146,
+              194,
+              254
+            ]
+          }
+        ]
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "INITIAL REFERENCE EXTRACTION\nUse case: background-extraction. Edit the supplied animation screenshot as the only visual reference. Extract ONLY Ultimate Way Big, the small blue/red/silver character flying toward the camera in the middle-left of the frame. This is a faithful foreshortened action cutout for an alien selector, not a standing full-body model sheet.\n\nKeep the exact visible pose, orientation, proportions and contour: an enormous silver-grey clenched foreground fist at image-left, his blue face and green eyes behind it, the tall central silver-edged red crest plus two curved silver side horns, red shoulder armor, silver-grey chest with the small visible green-and-black emblem, and the smaller clenched hand with its curved forearm blade at image-right. Preserve the original relationship and size contrast between both fists and the head. Preserve the simple flat animation colors and black linework; avoid glossy 3D rendering.\n\nThe legs and lower body are self-occluded by this extreme forward perspective in the supplied shot. Do NOT invent, reveal, reconstruct or add legs, feet, a standing torso, a tail or extra arms. Retain only the character contours actually visible in the screenshot. Do not change the action into an upright pose or make the fists symmetrical.\n\nRemove the rocky scenery, sky, motion background, corner television logos and all text. Do not retain background fragments or add shadows, glow, particles, props or a floor. Output one clean opaque-color character cutout on genuinely transparent RGBA background, centered with generous transparent padding around all three horn tips, the large front fist and the other arm blade. Enlarge the visible original action enough for clear UI use while keeping its silhouette and anatomy faithful.\n\n\nFINAL CLEANUP EDIT\nEdit this supplied character cutout only to clean the transparency and framing. Preserve the exact existing flying-punch character drawing, pose, colors, facial expression, horn shapes, huge left foreground fist, smaller right fist, chest emblem and curved arm blade. Do not redraw the anatomy, change proportions, invent legs/feet, or change the crop relationship between visible body parts.\n\nRemove every bit of the soft grey-blue/red halo and haze surrounding the character. Every pixel outside the inked character boundary must be fully transparent, including gaps between the horns and around the fists. The colored character itself should be opaque, with antialiasing only at its contour edges. No glow, blur, shadow, gradient backdrop, smoke, floor or new visual effects.\n\nReframe the unchanged drawing slightly smaller on the canvas to leave at least 8 percent clear transparent padding on every side. In particular the tall central horn and the bottom of the huge fist must not touch the canvas edges. The output must be a clean transparent RGBA cutout, suitable for use as an alpha-mask silhouette in a watch UI.\n",
+        "inputReferences": [
+          {
+            "file": "assets/source-art/ultimate-way-big-source-korea-0118502.png",
+            "sha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+            "role": "Actual-viewed original official-animation action frame; no hidden anatomy completion"
+          }
+        ],
+        "outputSha256": "b03d09cbd1bc6277b7c2bd9a4a92ebc2d50c8a70eb28659b49c3c4cf31bcd676",
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false,
+        "rawGeneratorFileVerification": "unknown; not supplied to independent reviewer",
+        "attempts": [
+          {
+            "id": "v1",
+            "status": "superseded-private",
+            "fullPrompt": "Use case: background-extraction. Edit the supplied animation screenshot as the only visual reference. Extract ONLY Ultimate Way Big, the small blue/red/silver character flying toward the camera in the middle-left of the frame. This is a faithful foreshortened action cutout for an alien selector, not a standing full-body model sheet.\n\nKeep the exact visible pose, orientation, proportions and contour: an enormous silver-grey clenched foreground fist at image-left, his blue face and green eyes behind it, the tall central silver-edged red crest plus two curved silver side horns, red shoulder armor, silver-grey chest with the small visible green-and-black emblem, and the smaller clenched hand with its curved forearm blade at image-right. Preserve the original relationship and size contrast between both fists and the head. Preserve the simple flat animation colors and black linework; avoid glossy 3D rendering.\n\nThe legs and lower body are self-occluded by this extreme forward perspective in the supplied shot. Do NOT invent, reveal, reconstruct or add legs, feet, a standing torso, a tail or extra arms. Retain only the character contours actually visible in the screenshot. Do not change the action into an upright pose or make the fists symmetrical.\n\nRemove the rocky scenery, sky, motion background, corner television logos and all text. Do not retain background fragments or add shadows, glow, particles, props or a floor. Output one clean opaque-color character cutout on genuinely transparent RGBA background, centered with generous transparent padding around all three horn tips, the large front fist and the other arm blade. Enlarge the visible original action enough for clear UI use while keeping its silhouette and anatomy faithful.\n",
+            "promptSha256": "8d3f8eeac9323ae05674755c8b3670bebf27d6eebfd711367a0e938897a72acb",
+            "inputSha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+            "outputSha256": "95e00f9d4079da2640d6e31758debf3b9137b232400a54211b844e72fa9d49b6",
+            "outputSize": [
+              1536,
+              1024
+            ],
+            "reason": "Root requested a further transparency/framing cleanup. No new independent v1 alpha failure is claimed."
+          },
+          {
+            "id": "v2",
+            "status": "proposed-final",
+            "fullPrompt": "Edit this supplied character cutout only to clean the transparency and framing. Preserve the exact existing flying-punch character drawing, pose, colors, facial expression, horn shapes, huge left foreground fist, smaller right fist, chest emblem and curved arm blade. Do not redraw the anatomy, change proportions, invent legs/feet, or change the crop relationship between visible body parts.\n\nRemove every bit of the soft grey-blue/red halo and haze surrounding the character. Every pixel outside the inked character boundary must be fully transparent, including gaps between the horns and around the fists. The colored character itself should be opaque, with antialiasing only at its contour edges. No glow, blur, shadow, gradient backdrop, smoke, floor or new visual effects.\n\nReframe the unchanged drawing slightly smaller on the canvas to leave at least 8 percent clear transparent padding on every side. In particular the tall central horn and the bottom of the huge fist must not touch the canvas edges. The output must be a clean transparent RGBA cutout, suitable for use as an alpha-mask silhouette in a watch UI.\n",
+            "promptSha256": "d1eec75966777dee36eeb97f2ff9f76bd50ed946ca4bfda9e95bdab327d6de09",
+            "inputSha256": "95e00f9d4079da2640d6e31758debf3b9137b232400a54211b844e72fa9d49b6",
+            "outputSha256": "b03d09cbd1bc6277b7c2bd9a4a92ebc2d50c8a70eb28659b49c3c4cf31bcd676",
+            "outputSize": [
+              1536,
+              1024
+            ],
+            "reason": "Preserves visible action contour. Actual source/output comparison and alpha samples recorded; root UI gate pending."
+          },
+          {
+            "id": "v3",
+            "status": "rejected-private",
+            "fullPrompt": "Use case: background-extraction and silhouette conversion. From the supplied original animation screenshot, make ONE flat opaque WHITE silhouette of ONLY the blue/red alien Ultimate Way Big flying toward the viewer near the middle-left. Keep his entire visible external contour and exactly the same extreme foreshortened punch pose: huge image-left front fist; head behind it with three long horns; shoulder/chest silhouette; smaller image-right clenched fist and curved arm blade. The full visible contour is inside this screenshot. Do not straighten the pose, add legs or feet, invent hidden anatomy, include rock fragments, or copy the television logos.\n\nThis is a graphic mask, not a colored illustration. All character pixels are solid white, with no eyes, facial marks, color patches or interior outlines. Everywhere outside the character is fully transparent. Keep the contour crisp with ordinary edge antialiasing only. Absolutely no glow, soft halo, fog, blur, shadow, gradient, black background, outline stroke, texture or lighting effects. Negative space between the head horns remains transparent. Center this exact visible silhouette on a square canvas with generous transparent margins on every side; preserve the big front fist and all horn tips without cropping.\n",
+            "promptSha256": "9c254537c629921bd1635199fa918b8dc99d3222e4e2077e443f739101ac96af",
+            "inputSha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+            "outputSha256": "24c0ea9cb47e18dfb19888bce6cada23b14cf50cd3a6c6fc8bf95a3718ba708f",
+            "outputSize": [
+              1254,
+              1254
+            ],
+            "reason": "Root reported stray edges in the generated white-mask attempt; this independent reviewer did not view v3 and does not adopt it."
+          }
+        ]
+      },
+      "currentUIReview": {
+        "version": "0.3.4",
+        "date": "2026-10-09",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "observation": "Root inspected the actual current preview. All three crown tips, large front fist and small rear-arm contour are contained in the diamond; no visible detached halo at normal scale. Projection retains the action silhouette. This remains a foreshortened action, not a standing full-body pose.",
+        "realPhone": false,
+        "reviewedBy": "root",
+        "observations": "Actually inspected source and generated art, then black dial and projection in the real local browser. The visible action contour stays inside the diamond, with no detached background block. Reference-guided redraw remains distinct from official transparent art."
+      }
+    },
+    {
+      "formId": "gwen10-os-heatblast",
+      "sourceFile": "assets/source-art/gwen10-os-heatblast-source-cn-asia-0090000.png",
+      "sourceSha256": "7774e1c925a9ea20b597a868122761bc0f3f98b424dcde11be45e1d0706adb44",
+      "maskFile": "assets/source-art/gwen10-os-heatblast-reference-edit-v1.png",
+      "maskSha256": "a48223fb08d888a37966d5f0b1b9ac48ec99de023c122581084a61706f8f441d",
+      "pageUrl": "https://www.youtube.com/watch?v=WZf44kZPXQY",
+      "url": "https://www.youtube.com/watch?v=WZf44kZPXQY",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-official-cn-animation-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official YouTube animation frame; no open license asserted. Generated transparent output is not official transparent art.",
+      "observations": "Actually viewed official CN Asia Gwen 10 Part 1 at 90.000 seconds. Full Gwen Heatblast stands with one arm raised diagonally right with attached palm flame, the opposite arm down, slim rock torso and long legs, both fiery feet visible. Small human Ben is separate at left. Generated v1 preserves this asymmetric visible body and removes the environment and Ben.",
+      "limitations": [
+        "AI-enlarged reference edit, not pixel-identical extraction. Source figure is approximately 205 x 334 pixels in the 816 x 459 browser capture of 854 x 480 native video; fine anatomy, rock contours, fingers and flame tips are generated interpretation.",
+        "RGB preview shows bright colored haze outside the body, while selected exterior samples are alpha zero. Nonzero low-alpha pixels remain; root inspected the black dial and projection with no detached halo visible at normal UI scale; alpha range is 0..254.",
+        "v2 white-mask conversion is retained privately as an alternative, not in copyMap, to avoid an additional redraw generation in the selected candidate.",
+        "This is the Original Series what-if Gwen body, not regular Ben or reboot Heatblast. No source-body crop is completed."
+      ],
+      "adoptionBasis": "Complete visible animation action contour from the exact Gwen/Max transformation. Root reviewed source, generated art and actual black-dial/projection rendering.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=WZf44kZPXQY",
+        "playbackSeconds": 90,
+        "paused": true,
+        "uploader": "Cartoon Network Asia",
+        "officialUploaderObserved": true,
+        "allVisibleContourInsideSource": true
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Edit target: this actual Cartoon Network Asia animation still of Gwen 10 as Heatblast in the Original Series. Extract ONLY the single tall flame-bodied Gwen Heatblast character in the center-right. Keep her entire exact visible action pose and proportions: one arm extended diagonally upward to image-right with flames at its palm, the other arm down to image-left, slim asymmetric rock-covered torso, long slim legs, both flared fiery feet, flame crown and small chest Omnitrix. Keep the longer curved face and slim forearms of this Gwen-specific body; do not replace with regular Ben Heatblast or reboot design. Remove Ben (the small human left), the forest/rocks/ground, CN logo, detached fire specks floating above, and all environmental shadows. Preserve only character body and attached flames, no external glow haze. Full body, both hands and feet and upper hand flame entirely inside output with small transparent margins. Preserve source colors and rock pattern. Faithful enlarged reference drawing/cutout, no new limbs, no changed stance, no invented ornament, no added text. Actual transparent background, no checkerboard.",
+        "rawOutputSha256": "a48223fb08d888a37966d5f0b1b9ac48ec99de023c122581084a61706f8f441d",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1536
+        ],
+        "range": [
+          0,
+          254
+        ],
+        "nonzeroBBox": [
+          0,
+          16,
+          1024,
+          1536
+        ],
+        "zeroPixels": 1258934,
+        "oneTo15Pixels": 29607,
+        "sixteenTo127Pixels": 5812,
+        "atLeast128Pixels": 278511
+      },
+      "currentUIReview": {
+        "version": "0.3.4",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          390,
+          320
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed desktop black dial and 390/320 iframe dial plus projection. Visible body, hands, feet and attached crown/flame stay inside the diamond, with no detached background silhouette. No horizontal overflow.",
+        "realPhone": false,
+        "observations": "Actually inspected source and generated art, then black dial and projection in the real local browser. The visible action contour stays inside the diamond, with no detached background block. Reference-guided redraw remains distinct from official transparent art."
+      }
+    },
+    {
+      "formId": "game-shock-blast",
+      "sourceFile": "assets/source-art/game-shock-blast-source-015262.png",
+      "sourceSha256": "e6ce654a7d19b9c44a787e4899d646d79886ce6df6d82be724a28a7eaef69350",
+      "maskFile": "assets/source-art/game-shock-blast-reference-edit.png",
+      "maskSha256": "6ee2af3e12c6f734af09a5053f4056a97e55993eef986a1f621edb20a697027e",
+      "pageUrl": "https://www.youtube.com/watch?v=GQq3OK7ed90",
+      "url": "https://www.youtube.com/watch?v=GQq3OK7ed90",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-captured-licensed-game-footage",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 Heroes character and game art remain copyrighted. Community gameplay capture, no open license asserted. Generated transparent drawing is not official transparent art.",
+      "observations": "Actually viewed paused gameplay montage at 15.26213 seconds: named MOLTEN SHOCK BLAST, large running body on right and duplicate complete flame head at lower left. Red/yellow torso, image-right cyan fist, image-left rock/cyan lower leg. Jointly visible matching parts guide this single full-body redraw.",
+      "limitations": [
+        "AI reference redraw, not a pixel-identical extraction. Source is a community gameplay upload by Somewhat Gaming Channel, not an official uploader.",
+        "Top flame of large right body is clipped in montage; its complete matching head is visible at lower left. Generated drawing assembles these jointly observed contours. Fine knuckles, flame tips and rock lines are generated interpretation.",
+        "No claim of official transparent art, 3D model, or exact animation-frame tracing."
+      ],
+      "adoptionBasis": "Distinct asymmetric game fusion proved by named gameplay montage and complete jointly visible contour; root reviewed source, generated art and actual black-dial/projection rendering.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=GQq3OK7ed90",
+        "playbackSeconds": 15.26213,
+        "paused": true,
+        "uploader": "Somewhat Gaming Channel",
+        "officialUploaderObserved": false,
+        "allVisibleContourInsideSingleFigure": false,
+        "jointlyVisibleAcrossDuplicatePanels": true
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: reference-guided character cutout for a fan-made silhouette selector. Create one transparent full-body drawing of Molten Shock Blast from this actual Ben 10 Heroes gameplay montage. Use the large character on the RIGHT for the exact running action pose: image-left fist bent down, image-right massive pale cyan clenched fist raised; yellow/red molten chest and image-right leg; the image-left lower leg has chunky dark grey rock armor around cyan energy, its foot thrust forward. Preserve the grey shoulder plates and pointed cyan spikes on image-right shoulder. The top flame of the RIGHT figure is clipped by the montage: use the matching duplicate complete head shown at LOWER LEFT to reproduce that same flame crown, swept orange tip curling right and the deep dark notch, with the same red face/white flame arrangement. This is the SAME game character duplicated in the montage; do not combine different characters. Both hands and feet must remain completely visible with generous transparent margin. Preserve asymmetric limb colors and exact pose; do not turn it into ordinary Heatblast or ordinary Shock Rock. Remove ALL game UI, text, borders, duplicate lower-left body, black background, currency and panels. No cast shadow or floating glow cloud, clean antialiased edge on actual transparent background. Only one character. Faithfully redraw from jointly visible contours, don't add extra limbs, accessories or anatomy. Not a 3D render.",
+        "rawOutputSha256": "6ee2af3e12c6f734af09a5053f4056a97e55993eef986a1f621edb20a697027e",
+        "rawBytesMatch": true
+      },
+      "currentUIReview": {
+        "version": "0.3.4",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "targetWidths": [
+          390,
+          320
+        ],
+        "reviewedBy": "root",
+        "observation": "Actually viewed desktop black dial and 390/320 iframe dial plus projection. Visible body, hands, feet and attached crown/flame stay inside the diamond, with no detached background silhouette. No horizontal overflow.",
+        "realPhone": false,
+        "observations": "Actually inspected source and generated art, then black dial and projection in the real local browser. The visible action contour stays inside the diamond, with no detached background block. Reference-guided redraw remains distinct from official transparent art."
+      }
+    },
+    {
+      "formId": "gwen10-os-diamondhead",
+      "sourceFile": "assets/source-art/gwen10-os-diamondhead-source-cn-asia-0101978.png",
+      "sourceSha256": "7d05e222abf7b5308457ab8af8ce9ce7061c73ba4832c3a1a4b8bb9ff810ca73",
+      "maskFile": "assets/source-art/gwen10-os-diamondhead-kneeling-reference-edit.png",
+      "maskSha256": "3023d0e451c57a7a6a8819e2291c50bb5ce6786b09f4959bb6e85ec47c7da25e",
+      "pageUrl": "https://www.youtube.com/watch?v=p8Ufg8oe0_o",
+      "url": "https://www.youtube.com/watch?v=p8Ufg8oe0_o",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-official-cn-animation-frame",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official YouTube animation frame; no open license asserted. Generated transparent output is not official transparent art.",
+      "observations": "Actually viewed CN Asia Gwen 10 Part 2 at 101.978243 seconds: Gwen Diamondhead has just finished a somersault and kneels with image-right palm on the ground, left hand hanging, forward blue leg bent and foot planted, lavender rear leg folded underneath. Tiny visible rear foot sits behind the forward shin. All visible parts of this kneeling pose are within the animation frame. Green angular head/shoulders and blue/lavender suit match OS Gwen, not OV or Ben. Generated output preserves the same pose and separates all visible body from the forest/ground.",
+      "limitations": [
+        "Reference-guided enlarged drawing, not official transparent artwork or pixel-identical extraction. Fine facial facets, fingers, cloth lines and outlines are reinterpreted from 854 x 480 native animation.",
+        "Kneeling action silhouette, not a standing model sheet. Rear leg is folded and self-occluded; no hidden foot, additional leg or standing pose is supplied.",
+        "Nonzero-alpha bbox reaches the bottom because of faint low-alpha edge pixels; the visibly solid kneeling body and supporting fingers remain within margins. Root has inspected the current black dial and projection; the supporting fingers and visible kneeling outline remain inside the display."
+      ],
+      "adoptionBasis": "Complete visible animation action contour from the exact Gwen/Max transformation. Root reviewed source, generated art and actual black-dial/projection rendering.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=p8Ufg8oe0_o",
+        "playbackSeconds": 101.978243,
+        "paused": true,
+        "uploader": "Cartoon Network Asia",
+        "officialUploaderObserved": true,
+        "allVisibleContourInsideSource": true,
+        "sourceSize": [
+          980,
+          551
+        ],
+        "nativeVideoSize": [
+          854,
+          480
+        ],
+        "captureViewportRegion": {
+          "x": 143,
+          "y": 56,
+          "width": 980,
+          "height": 551
+        },
+        "pose": "kneeling after somersault, one hand supporting on ground"
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction. Edit target: this original animation still of Gwen 10 as Diamondhead. Isolate ONLY the green crystal humanoid in her exact existing kneeling action pose on real transparency. Keep every visible contour and proportion: tall angular green head turned image-right, thick crystal shoulders, blue-and-lavender sleeveless Gwen suit, chest Omnitrix, image-left arm bent backward with the hand hanging free, image-right arm extended down with fingers braced on the ground, one long bent forward leg with dark blue flared foot planted, the other lavender leg folded under her. Keep the tiny visible rear foot to image-left behind the forward shin exactly where it is. This is a kneeling pose: do not stand her up, extend or invent hidden legs/feet, add crystals, add back spikes, replace with male Ben or Omniverse design, or change the pose. Remove forest, sky, rocks, ground, grass, shadows and CN logo. Preserve simple flat animation colors, linework, sharp angular crystal anatomy and the original clothing color layout. No glowing rim, no halo, no ground contact shadow, no platform or pedestal, no text. Character only on genuinely transparent background, complete existing visible body with comfortable transparent margins on all sides. An enlarged reference cutout, not a newly imagined body.",
+        "rawOutputSha256": "3023d0e451c57a7a6a8819e2291c50bb5ce6786b09f4959bb6e85ec47c7da25e",
+        "rawBytesMatch": true
+      },
+      "alphaInspection": {
+        "mode": "RGBA",
+        "size": [
+          1488,
+          1057
+        ],
+        "range": [
+          0,
+          255
+        ],
+        "nonzeroBBox": [
+          33,
+          17,
+          1436,
+          1057
+        ],
+        "zeroPixels": 951820,
+        "oneTo15Pixels": 20314,
+        "sixteenTo127Pixels": 4631,
+        "atLeast128Pixels": 596051
+      },
+      "currentUIReview": {
+        "version": "0.3.4",
+        "modes": [
+          "dial",
+          "projection"
+        ],
+        "reviewedBy": "root",
+        "observations": "Actually inspected source and generated art, then black dial and projection in the real local browser. The visible action contour stays inside the diamond, with no detached background block. Reference-guided redraw remains distinct from official transparent art.",
+        "realPhone": false
+      }
     }
   ],
   "mergedForms": [

@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "f0e93042a398454f0721825eabd5cc9cba67e358813cb6217ec149a7527d256b",
-  "shapeCount": 175,
+  "sourceSvgSha256": "d6d32c711ccd72286022b2312bf97d23ac65b8cdf8e73e58f83ad9c73fa9aab7",
+  "shapeCount": 179,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -465,6 +465,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.383333,
       "visiblePixels": 18649
+    },
+    "ultimate-way-big": {
+      "scale": 0.7993,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.088325,
+      "visiblePixels": 427635
     },
     "ultimate-albedo": {
       "scale": 0.7054,
@@ -946,6 +952,12 @@
       "diamondExtent": 1.025,
       "visiblePixels": 15408
     },
+    "game-shock-blast": {
+      "scale": 0.5733,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.517443,
+      "visiblePixels": 542604
+    },
     "stage-rocks": {
       "scale": 0.6349,
       "method": "native-png-alpha-diamond-envelope",
@@ -1077,6 +1089,18 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.374592,
       "visiblePixels": 110452
+    },
+    "gwen10-os-heatblast": {
+      "scale": 0.522,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.666667,
+      "visiblePixels": 313930
+    },
+    "gwen10-os-diamondhead": {
+      "scale": 0.647,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.344646,
+      "visiblePixels": 620996
     },
     "dynamite-diamondhead": {
       "scale": 0.5983,

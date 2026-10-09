@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 175,
-    "missing": 49
+    "reviewed": 179,
+    "missing": 45
   },
   "forms": [
     {
@@ -1914,10 +1914,21 @@
       "group": "ultimate",
       "appearance": "The Ultimate Enemy: Part 2",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-ultimate-way-big",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Ultimatrix_(Original)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=zXas_T4N6cI"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-official-cn-korea-animation-action-frame",
+      "dialFit": {
+        "scale": 0.7993,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.088325,
+        "visiblePixels": 427635
+      }
     },
     {
       "id": "ultimate-albedo",
@@ -4152,11 +4163,22 @@
       "group": "extra",
       "appearance": "Ben 10 Heroes and toy line; actual mobile-game Omni-Glitch fusion of Heatblast/Shock Rock, non-canon to TV.",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-game-shock-blast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Shock_Blast",
         "https://ben10.fandom.com/wiki/Heroes"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=GQq3OK7ed90"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-captured-licensed-game-footage",
+      "dialFit": {
+        "scale": 0.5733,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.517443,
+        "visiblePixels": 542604
+      }
     },
     {
       "id": "game-omnitrix-glitch-combination",
@@ -4932,11 +4954,22 @@
       "group": "alternate",
       "appearance": "Gwen 10 (2005 what-if episode)",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-os-heatblast",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29",
         "https://ben10.fandom.com/wiki/Heatblast_(Classic)"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=WZf44kZPXQY"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-official-cn-animation-frame",
+      "dialFit": {
+        "scale": 0.522,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.666667,
+        "visiblePixels": 313930
+      }
     },
     {
       "id": "gwen10-os-grey-matter",
@@ -4957,10 +4990,21 @@
       "group": "alternate",
       "appearance": "Gwen 10 (2005 what-if episode)",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-gwen10-os-diamondhead",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Gwen_10_%28Episode%29"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=p8Ufg8oe0_o"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-official-cn-animation-frame",
+      "dialFit": {
+        "scale": 0.647,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.344646,
+        "visiblePixels": 620996
+      }
     },
     {
       "id": "gwen10-os-four-arms",

@@ -108,6 +108,11 @@ for form in catalog['forms']:
     form['dialFit']=fit
     fits[form['id']]=fit
 catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
+provenance_path=root/'assets/provenance.json'
+provenance=json.loads(provenance_path.read_text(encoding='utf-8'))
+# Fit metadata changes the catalog bytes; bind provenance to the final catalog.
+provenance['catalogSha256']=hashlib.sha256(catalog_path.read_bytes()).hexdigest()
+provenance_path.write_text(json.dumps(provenance,ensure_ascii=False,indent=2),encoding='utf-8')
 report={'sourceSvgSha256':hashlib.sha256(svg_bytes).hexdigest(),'shapeCount':len(fits),'safeDiamondRadius':SAFE_RADIUS,'bitmapEdits':0,'fits':fits}
 (root/'assets/dial-fit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({'forms':len(fits),'alphaMeasured':sum(f['method'].startswith('native') for f in fits.values()),'filterMeasured':sum(f['method'].startswith('legacy') for f in fits.values()),'minScale':min(f['scale'] for f in fits.values()),'maxScale':max(f['scale'] for f in fits.values()),'bitmapEdits':0}))

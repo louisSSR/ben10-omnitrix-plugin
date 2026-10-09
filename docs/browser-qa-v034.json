@@ -1,0 +1,83 @@
+{
+  "version": "0.3.4",
+  "checkedAt": "2026-10-09T06:09:39.112Z",
+  "previewSha256": "e7ba890462bed6cbabdb52ac563d57bd2c7c672e35c3fefa1aa80a7a85947c9a",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "CUA local Chromium; mobile widths are responsive-preview iframes, not physical phones",
+  "coverage": {
+    "total": 224,
+    "reviewed": 179,
+    "missing": 45
+  },
+  "added": [
+    "ultimate-way-big",
+    "gwen10-os-heatblast",
+    "game-shock-blast",
+    "gwen10-os-diamondhead"
+  ],
+  "checks": {
+    "rootSourceAndOutputViewed": [
+      "ultimate-way-big",
+      "gwen10-os-heatblast",
+      "game-shock-blast",
+      "gwen10-os-diamondhead"
+    ],
+    "rootCurrentDialAndProjectionViewed": [
+      "ultimate-way-big",
+      "gwen10-os-heatblast",
+      "game-shock-blast",
+      "gwen10-os-diamondhead"
+    ],
+    "mobileDialAndProjectionViewed": [
+      "gwen10-os-heatblast",
+      "game-shock-blast",
+      "gwen10-os-diamondhead"
+    ],
+    "viewports": [
+      {
+        "targetWidth": 390,
+        "clientWidth": 375,
+        "scrollWidth": 375
+      },
+      {
+        "targetWidth": 320,
+        "clientWidth": 305,
+        "scrollWidth": 305
+      }
+    ],
+    "oldRuntimeImagesByteExact": 179,
+    "filterReset": {
+      "before": "1 / 224",
+      "after": "224 / 224",
+      "finalQuery": "",
+      "readyOnly": false
+    },
+    "projectionKind": "2.5D layered silhouettes; not complete 3D models"
+  },
+  "screenshots": [
+    "screenshots/v034-gwen-dial.png",
+    "screenshots/v034-shock-dial.png",
+    "screenshots/v034-mobile-dial.png",
+    "screenshots/v034-mobile-projection.png",
+    "screenshots/v034-mobile-diamondhead.png",
+    "screenshots/v034-ultimate-way-big-dial.png",
+    "screenshots/v034-ultimate-way-big-projection.png",
+    "screenshots/v034-final-preview.png"
+  ],
+  "productionConsoleErrors": [],
+  "harnessErrors": {
+    "count": 1,
+    "message": "MutationObserver.observe parameter 1 is not of type Node",
+    "source": "unattributed; same class observed in 0.3.3 harness"
+  },
+  "automated": {
+    "tests": 93,
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0
+  },
+  "realPhoneValidated": false,
+  "realSillyTavernValidated": false,
+  "driverAccepted": false,
+  "allSilhouettesComplete": false
+}

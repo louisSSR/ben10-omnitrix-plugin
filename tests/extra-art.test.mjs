@@ -223,6 +223,7 @@ test('snapshot import retains supplements and repeated imports produce identical
   assert.deepEqual(catalog.coverage, { total: 2, reviewed: 2, missing: 0 });
   assert.ok(catalog.forms.find(form => form.id === 'target').aliases.includes('old-target'));
   assert.equal(readJson(path.join(f.dir, 'assets/dial-fit.json')).bitmapEdits, 0);
+  assert.equal(readJson(path.join(f.dir, 'assets/provenance.json')).catalogSha256, digest(readFileSync(path.join(f.dir, 'assets/catalog.json'))));
 });
 
 test('invalid mask decoding cannot partially overwrite a previously valid import', t => {

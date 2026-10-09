@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "f0e93042a398454f0721825eabd5cc9cba67e358813cb6217ec149a7527d256b",
+  "catalogSha256": "6c4ff7722f854371bd7aee66c3f4c3a3dac7aa3bc0ba3ad993b8cdcbce976c0a",
+  "svgSha256": "d6d32c711ccd72286022b2312bf97d23ac65b8cdf8e73e58f83ad9c73fa9aab7",
   "coverage": {
     "total": 224,
-    "reviewed": 175,
-    "missing": 49
+    "reviewed": 179,
+    "missing": 45
   },
   "assets": [
     {
@@ -1536,6 +1536,46 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "bb64d386db00d64b75fa32ae7a53d314cd7cd302525181a4829c498995c15a7c",
       "maskSha256": "4fcb4de5c8f238dbec5496c5acf05b493d8c0b6ccca42059437a0a0684a26275",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-way-big",
+      "url": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+      "pageUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+      "rights": "Underlying Ben 10 animation remains copyrighted. The reference is a root-inspected official Cartoon Network Korea upload; no open license is asserted. The generated transparent drawing is not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+      "maskSha256": "b03d09cbd1bc6277b7c2bd9a4a92ebc2d50c8a70eb28659b49c3c4cf31bcd676",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-os-heatblast",
+      "url": "https://www.youtube.com/watch?v=WZf44kZPXQY",
+      "pageUrl": "https://www.youtube.com/watch?v=WZf44kZPXQY",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official YouTube animation frame; no open license asserted. Generated transparent output is not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "7774e1c925a9ea20b597a868122761bc0f3f98b424dcde11be45e1d0706adb44",
+      "maskSha256": "a48223fb08d888a37966d5f0b1b9ac48ec99de023c122581084a61706f8f441d",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "game-shock-blast",
+      "url": "https://www.youtube.com/watch?v=GQq3OK7ed90",
+      "pageUrl": "https://www.youtube.com/watch?v=GQq3OK7ed90",
+      "rights": "Underlying Ben 10 Heroes character and game art remain copyrighted. Community gameplay capture, no open license asserted. Generated transparent drawing is not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "e6ce654a7d19b9c44a787e4899d646d79886ce6df6d82be724a28a7eaef69350",
+      "maskSha256": "6ee2af3e12c6f734af09a5053f4056a97e55993eef986a1f621edb20a697027e",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "gwen10-os-diamondhead",
+      "url": "https://www.youtube.com/watch?v=p8Ufg8oe0_o",
+      "pageUrl": "https://www.youtube.com/watch?v=p8Ufg8oe0_o",
+      "rights": "Underlying Ben 10 animation remains copyrighted. Actual official YouTube animation frame; no open license asserted. Generated transparent output is not official transparent art.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "7d05e222abf7b5308457ab8af8ce9ce7061c73ba4832c3a1a4b8bb9ff810ca73",
+      "maskSha256": "3023d0e451c57a7a6a8819e2291c50bb5ce6786b09f4959bb6e85ec47c7da25e",
       "contentType": "image/png"
     }
   ],

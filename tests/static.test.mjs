@@ -108,6 +108,8 @@ print(json.dumps(result))`;
 
 test('all dial fits keep every visible pixel corner inside the safe diamond without changing body bytes', () => {
   const fitReport = JSON.parse(read('assets/dial-fit.json')), svg = inlineSvg;
+  const finalCatalogHash = createHash('sha256').update(readFileSync(path.join(root, 'assets/catalog.json'))).digest('hex');
+  assert.equal(JSON.parse(read('assets/provenance.json')).catalogSha256, finalCatalogHash);
   assert.equal(fitReport.sourceSvgSha256, createHash('sha256').update(sourceSvg).digest('hex'));
   assert.equal(fitReport.shapeCount, expectedReviewed); assert.equal(fitReport.bitmapEdits, 0); assert.equal(fitReport.safeDiamondRadius, .87);
   // Source geometry can be tested before preview.html is rebuilt. A separate
