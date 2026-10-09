@@ -1,0 +1,190 @@
+{
+  "version": "0.3.2",
+  "checkedAt": "2026-10-09T00:05:16.445Z",
+  "previewSha256": "0c0655ea0ecae38f932ad4bbc0432f1aa8a6ebefdfc08da79633533680b39af4",
+  "url": "http://127.0.0.1:4191/preview.html",
+  "surface": "Codex in-app Chromium; viewport emulation, not a phone",
+  "coverage": {
+    "total": 224,
+    "reviewed": 175,
+    "missing": 49
+  },
+  "viewports": [
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "dial",
+      "name": "Diamond Matter",
+      "scrollWidth": 375,
+      "transition": "omni-app",
+      "watch": "original",
+      "width": 390
+    },
+    {
+      "clientWidth": 375,
+      "height": 960,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "projection",
+      "name": "Diamond Matter",
+      "scrollWidth": 375,
+      "transition": "omni-app",
+      "watch": "recalibrated",
+      "width": 390
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "carousel",
+      "name": "Diamond Matter",
+      "scrollWidth": 305,
+      "transition": "omni-app",
+      "watch": "recalibrated",
+      "width": 320
+    },
+    {
+      "clientWidth": 305,
+      "height": 920,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "carousel",
+      "name": "Heat Jaws",
+      "scrollWidth": 305,
+      "transition": "omni-app",
+      "watch": "recalibrated",
+      "width": 320
+    },
+    {
+      "clientWidth": 1265,
+      "height": 900,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "complete": true,
+          "src": "./assets/runtime/2e9564ca1485a4e2a943e11cc68a67c625d188bbb92f72066c7a754ddbf4f6e4.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/d5f627c823250ed19ed13a49866c2724d2b791fce448ce1379750a121e8b64d2.png",
+          "width": 1254
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/871ca09109292ceadfc3db0162c55ecf74c13049df5fe7230c5d27018db64197.png",
+          "width": 1024
+        },
+        {
+          "complete": true,
+          "src": "./assets/runtime/6127c3f7b99be449df63d17b4dab38f1add75cf23af49aec9c0308711f7f5bbd.png",
+          "width": 1254
+        }
+      ],
+      "mode": "projection",
+      "name": "Diamond Matter",
+      "scrollWidth": 1265,
+      "transition": "omni-app",
+      "watch": "recalibrated",
+      "width": 1280
+    }
+  ],
+  "screenshots": [
+    "screenshots/v032-diamond-matter-dial-390.png",
+    "screenshots/v032-diamond-matter-projection-390.png",
+    "screenshots/v032-fusions-carousel-320.png",
+    "screenshots/v032-fusions-carousel-next-320.png",
+    "screenshots/v032-diamond-matter-projection-1280.png"
+  ],
+  "console": [],
+  "realHostVerified": false,
+  "driverAccepted": false,
+  "temporaryViewportRestored": true
+}

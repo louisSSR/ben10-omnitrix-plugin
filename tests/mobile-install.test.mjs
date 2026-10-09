@@ -119,6 +119,37 @@ test('mobile install creates missing directory and repeating apply is a no-op', 
     assert.equal((await fs.readdir(path.join(f.root, '.ben10-omnitrix-backups'))).length, 1);
 });
 
+test('mobile no-op rejects a concurrent local edit after cached runtime staging', async t => {
+    const f = await fixture(t);
+    await f.run({ apply: true });
+    const backupRoot = path.join(f.root, '.ben10-omnitrix-backups');
+    const backupsBefore = (await fs.readdir(backupRoot)).sort();
+    const requests = [], messages = [];
+    let edited = false, replacements = 0;
+    await assert.rejects(f.run({
+        apply: true,
+        fetchImpl: remote({ requests }),
+        beforeReplace() { replacements++; },
+        log(message) {
+            messages.push(message);
+            if (!message.startsWith('{')) return;
+            assert.deepEqual(JSON.parse(message).changed, []);
+            // A separate process edits the destination after every cached file has
+            // been staged and validated, just before the no-op decision.
+            const edit = spawnSync(process.execPath, ['-e', 'require("node:fs").writeFileSync(process.argv[1], process.argv[2])', path.join(f.target, 'extension.js'), 'external change'], { encoding: 'utf8' });
+            assert.equal(edit.status, 0, edit.stderr);
+            edited = true;
+        },
+    }), /本地文件发生变化/);
+    assert.equal(edited, true);
+    assert.equal(requests.length, 3, 'all runtime files were reused from the existing directory');
+    assert.equal(replacements, 0);
+    assert.equal(await fs.readFile(path.join(f.target, 'extension.js'), 'utf8'), 'external change');
+    for (const name of RUNTIME_FILES.filter(name => name !== 'extension.js')) assert.deepEqual(await fs.readFile(path.join(f.target, name)), runtime[name]);
+    assert.deepEqual((await fs.readdir(backupRoot)).sort(), backupsBefore);
+    assert.equal(messages.some(message => message.includes('无需覆盖')), false);
+});
+
 test('mobile repair overwrites partial files and preserves .git, settings and unrelated files', async t => {
     const f = await fixture(t);
     await fs.mkdir(path.join(f.target, '.git'), { recursive: true });

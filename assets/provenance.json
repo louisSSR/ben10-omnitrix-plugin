@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
   "catalogSha256": "5c7d92634e6b1945caf2e113090f1c061868403686ca2fe91b38a4bfe0550fcb",
-  "svgSha256": "73d28c3bd0d61cb61677fa15fcaf7638c0d19b5bfe6e0bbc15fce81df2156465",
+  "svgSha256": "f0e93042a398454f0721825eabd5cc9cba67e358813cb6217ec149a7527d256b",
   "coverage": {
     "total": 224,
-    "reviewed": 174,
-    "missing": 50
+    "reviewed": 175,
+    "missing": 49
   },
   "assets": [
     {
@@ -1526,6 +1526,16 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "79a41261a6bb2f5153b410ced1154e6ed111cd6f6d0266d07a46940eade732af",
       "maskSha256": "a636887eaa571226c922163ba15af8cb8124cc433136acde4be6ce2344851407",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "diamond-matter",
+      "url": "https://www.youtube.com/watch?v=1SxwSbOjghg",
+      "pageUrl": "https://www.youtube.com/watch?v=1SxwSbOjghg",
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community video reference; original panel artist unknown. No open license asserted. Generated extraction is not official transparent artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "bb64d386db00d64b75fa32ae7a53d314cd7cd302525181a4829c498995c15a7c",
+      "maskSha256": "4fcb4de5c8f238dbec5496c5acf05b493d8c0b6ccca42059437a0a0684a26275",
       "contentType": "image/png"
     }
   ],

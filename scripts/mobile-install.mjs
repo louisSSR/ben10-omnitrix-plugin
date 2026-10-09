@@ -211,11 +211,15 @@ export async function install({ dataRoot = process.env.APP_DATA_ROOT || DEFAULT_
     const download = await downloadRuntime(fetchImpl, { inspectExisting: async name => fileState(await destinationFor(name)), existingFile: name => path.join(target, name) });
     try {
         const { commit, files, descriptors, existing, manifest } = download;
+        const verifyLocalState = async () => {
+            for (const entry of descriptors) if (!sameState(await fileState(await destinationFor(entry.path)), existing[entry.path])) throw new Error(`下载期间本地文件发生变化，已停止：${entry.path}`);
+        };
         const changes = descriptors.filter(entry => existing[entry.path]?.sha256 !== entry.sha256 || existing[entry.path]?.bytes !== entry.bytes).map(entry => entry.path);
         const result = { mode: apply ? 'apply' : 'dry-run', repository: REPOSITORY, commit, version: manifest.version, target, totalBytes: download.totalBytes, changed: changes, backup: null };
         log(JSON.stringify(result, null, 2));
         if (!apply) { log('预检完成，未写入扩展、备份或设置；本次临时下载将清理。加 --apply 才执行覆盖。'); return result; }
-        if (!changes.length) { log('入口和运行素材已与该提交一致，无需覆盖。'); return result; }
+        // A cached staging copy can be valid while another process edits its source.
+        if (!changes.length) { await verifyLocalState(); log('入口和运行素材已与该提交一致，无需覆盖。'); return result; }
         await fs.mkdir(backupRoot, { recursive: true });
         await safePath(root, BACKUPS, { directory: true });
         const lockPath = await safePath(root, `${BACKUPS}/install.lock`);
@@ -232,7 +236,7 @@ export async function install({ dataRoot = process.env.APP_DATA_ROOT || DEFAULT_
         const applied = [], madeDirectories = [];
         try {
             await lock.writeFile(JSON.stringify({ pid: process.pid, commit }));
-            for (const entry of descriptors) if (!sameState(await fileState(await destinationFor(entry.path)), existing[entry.path])) throw new Error(`下载期间本地文件发生变化，已停止：${entry.path}`);
+            await verifyLocalState();
             await fs.mkdir(backup, { mode: 0o700 });
             await fs.mkdir(path.join(backup, 'before')); await fs.mkdir(path.join(backup, 'next'));
             for (const name of changes) {

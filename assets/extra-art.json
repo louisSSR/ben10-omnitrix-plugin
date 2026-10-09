@@ -2172,6 +2172,70 @@
         "pixelEditsOutsideImageGen": false
       },
       "currentUIEvidence": "docs/browser-qa-v031.json"
+    },
+    {
+      "formId": "diamond-matter",
+      "sourceFile": "assets/source-art/diamond-matter-source-profile-0017.png",
+      "sourceSha256": "bb64d386db00d64b75fa32ae7a53d314cd7cd302525181a4829c498995c15a7c",
+      "maskFile": "assets/source-art/diamond-matter-reference-edit.png",
+      "maskSha256": "4fcb4de5c8f238dbec5496c5acf05b493d8c0b6ccca42059437a0a0684a26275",
+      "pageUrl": "https://www.youtube.com/watch?v=1SxwSbOjghg",
+      "url": "https://www.youtube.com/watch?v=1SxwSbOjghg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "ai-reference-edit-of-community-profile-video-centre-panel-capture",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": false,
+      "rights": "Underlying Ben 10 artwork remains copyrighted. Community video reference; original panel artist unknown. No open license asserted. Generated extraction is not official transparent artwork.",
+      "observations": "Actually inspected the 817x459 profile source screenshot. The centre panel labelled DIAMOND MATTER shows one complete compact green crystal/Galvan-like figure: tall faceted head point and lateral crystal projections, image-left extended hand, image-right lowered/outward hand, black-and-white torso and two short bent legs with green feet. The panel also labels the species mixture as half Petrosapien/half Galvan. The output keeps this gross asymmetric pose and its visible appendages, removing the surrounding UI, text, upper portrait and right-side large-hand video scene. Face facets, fingers/toes, green chest emblem, internal light/dark regions and edges are AI enlarged/redrawn.",
+      "limitations": [
+        "Source is the community ABSTRACT SHNITZEL Profile video, not an official animation publisher page or official transparent original. Original centre-panel artist and upstream artwork publication are unknown.",
+        "The label, visible mixture caption and actual compact crystal/Galvan design support the Diamond Matter material identity. The canonical episode attribution is retained from catalog scope, not newly proven by this community screenshot.",
+        "The source figure is roughly 136x148 pixels. AI altered/enlarged head facets, face, fingers, toes, small chest insignia, colour blocks and edge lines. These are not exact official fine details or a high-definition reproduction.",
+        "All selected body parts are already visible within the source panel. No cropped/hidden limb completion or substitution with ordinary Diamondhead/Grey Matter was requested.",
+        "Low-alpha residues/specks and slight green edging remain around the generated output. Independent material review and current watch UI inspection passed for complete major contours. Positive-alpha residue is included in dial fitting, so the visible figure is conservatively small.",
+        "17 seconds of a 34-second video is root-reported playback UI time. This reviewer actually inspected the saved still and generated output, not remote video playback. No exact official episode timestamp or fresh HTTP status is claimed.",
+        "No fresh oEmbed file was supplied/acquired for this video; uploader/title evidence comes from the web locator and root actual video UI observation, with the saved screenshot itself preserving its visual content."
+      ],
+      "adoptionBasis": "Root and independent reviewer actually viewed source and generated output. Complete head, side crystals, two hands and two feet are retained in the asymmetric captured pose. This is a labelled community-reference AI edit, not an official model sheet. Root viewed the settled silhouette in the 390px mobile dial and projection, 320px carousel and 1280px projection. The complete major contour fits inside the diamond, with a conservative small body scale. Preview evidence is not real-phone or driver acceptance.",
+      "sourceCapture": {
+        "videoUrl": "https://www.youtube.com/watch?v=1SxwSbOjghg",
+        "rootReportedPlaybackUISeconds": 17,
+        "rootReportedVideoDurationSeconds": 34,
+        "sourceSize": [
+          817,
+          459
+        ],
+        "selectionRegionApprox": [
+          338,
+          195,
+          474,
+          343
+        ],
+        "videoTitle": "Ben 10 Classic - Diamond Matter Transformation (Profile)",
+        "uploader": "ABSTRACT SHNITZEL",
+        "operation": "Root-provided browser video frame capture; original source bytes unchanged. Only built-in imagegen performs character extraction.",
+        "originalPanelArtist": null,
+        "freshOembedEvidence": false,
+        "officialAnimationSourceAuthenticated": false
+      },
+      "generation": {
+        "tool": "built-in image_gen.imagegen",
+        "transparentBackground": true,
+        "prompt": "Use case: background-extraction.\nAsset type: a transparent fusion-character reference for a large watch selector silhouette.\nInput image: this actually viewed community-profile-video screenshot is the edit target, not a style guide.\nPrimary request: isolate ONLY the complete small figure in the narrow centre panel, approximately x338..474/y195..343. Remove the green panel, all text, the top head portrait/logo, left text panel and the entire right-side big hand/video scene. Return one figure on a real transparent background.\nComposition and invariants: retain the exact visible asymmetric pose and original proportions. This figure has a large pale-green faceted pointed head, small lateral/back crystal projections, narrow greenish face with dark-outlined eyes, a compact black-and-white torso, a horizontally extended image-left arm and hand, a lower/outward image-right arm and hand, and two short bent legs ending in green feet. Keep those same visible placements. Preserve the short Grey-Matter-like stature and this specific crystal/Galvan fusion rather than making a tall standard Diamondhead.\nFidelity limits: the figure is low resolution. Preserve only its visible simple colour blocks, head/crystal perimeter, hands, feet and garment pattern. Do not invent detailed muscles, teeth, new crystal spikes, extra fingers/toes, enlarged shoulder armour, a different badge or hidden anatomy. Do not reconstruct a body from character memory. Do not straighten into a generic standing pose, mirror the arms or add a large crystal hand from the right panel.\nOutput: centre the complete same figure with generous clear transparent margins. Use simple flat animation colour regions and modest edge cleanup. Keep every visible appendage inside the canvas. No green background, haze, glow, detached fragments, ground, shadow, text or watermark; alpha zero outside the character with only a narrow antialiased edge.",
+        "inputReferences": [
+          {
+            "file": "assets/source-art/diamond-matter-source-profile-0017.png",
+            "sha256": "bb64d386db00d64b75fa32ae7a53d314cd7cd302525181a4829c498995c15a7c",
+            "role": "Actual-viewed complete centre-panel screenshot edit target"
+          }
+        ],
+        "outputSha256": "4fcb4de5c8f238dbec5496c5acf05b493d8c0b6ccca42059437a0a0684a26275",
+        "finalOutputBytesUnchanged": true,
+        "pixelEditsOutsideImageGen": false
+      },
+      "currentUIEvidence": "docs/browser-qa-v032.json"
     }
   ],
   "mergedForms": [

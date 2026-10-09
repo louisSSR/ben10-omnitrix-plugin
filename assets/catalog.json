@@ -22,8 +22,8 @@
   },
   "coverage": {
     "total": 224,
-    "reviewed": 174,
-    "missing": 50
+    "reviewed": 175,
+    "missing": 49
   },
   "forms": [
     {
@@ -2047,10 +2047,21 @@
       "group": "fusion",
       "appearance": "Dr. Animo and the Mutant Ray",
       "aliases": [],
-      "asset": null,
+      "asset": "alien-diamond-matter",
       "sourceUrls": [
         "https://ben10.fandom.com/wiki/Dr._Animo_and_the_Mutant_Ray"
-      ]
+      ],
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=1SxwSbOjghg"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "ai-reference-edit-of-community-profile-video-centre-panel-capture",
+      "dialFit": {
+        "scale": 0.6138,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.417394,
+        "visiblePixels": 232330
+      }
     },
     {
       "id": "heat-jaws",
