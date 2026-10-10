@@ -1,5 +1,7 @@
 # 素材与署名
 
+0.6.3 新增 11 张内置 imagegen 参考重绘头像。原生 RGBA 字节未做后处理，源图、哈希、提示词与具体差异见 `assets/portraits.json` 和 `docs/review-v063.md`。Wildvine 保留头周捕蝇草叶片；Arctiguana 源于已登记的社区绘稿；Spidermonkey 的毛缘更蓬松；OV Humungousaur 依据三个 Skurd 状态动画帧重绘，未直接复用 AF 头型。所有头像均为界面图标化表达，不是官方独立透明头像。
+
 这是非官方 Ben 10 同人交互界面，与 Cartoon Network、Warner Bros. Discovery 或 Man of Action 无隶属关系。
 
 环形转盘的 WebP 头像来自用户提供的第三方应用 DNA Altering 3.5.0（Adi007，`eu.adi007.omnitrix`）资源包，不是三星官方发布的素材。只复制经身份对照的原始透明 WebP；颜色由运行时 SVG 矩阵改变，内部线条与透明边缘保留。逐个资源的包内条目、SHA-256、对照来源和具体形态绑定见 `assets/portraits.json`。素材复用许可与官方首发链未核实，未将该应用代码、完整 APK 或用户本地路径纳入运行包。

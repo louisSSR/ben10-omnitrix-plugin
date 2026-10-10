@@ -832,6 +832,29 @@
       }
     },
     {
+      "id": "reference-arctiguana",
+      "file": "portraits/reference-arctiguana.png",
+      "sha256": "a20b08c7ab086079bf4d90f07d60d9036c2fd3b3349b5539be9a1bb95b3dc299",
+      "bytes": 876642,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.16553960784313726,
+      "light": 0.8745098039215686,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/arctiguana-os-hawkdown-original.png",
+        "referenceSha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d",
+        "referenceUrl": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/57c2fc3e-5131-4e65-9379-181b25329aea/Arctiguana.png",
+        "referencePageUrl": "https://www.thehawkdown.com/articguana",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/arctiguana-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
       "id": "reference-armodrillo",
       "file": "portraits/reference-armodrillo.png",
       "sha256": "ad2da64dabff4ef2e521f4137aaeca3c117197b6496729981944bc2c921d7fc0",
@@ -855,6 +878,52 @@
       }
     },
     {
+      "id": "reference-brainstorm",
+      "file": "portraits/reference-brainstorm.png",
+      "sha256": "fb749942bb1b78af1a8a2edea959483e58d4376316ccc39906071cb3bde38873",
+      "bytes": 579557,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4907466666666666,
+      "light": 0.8246462745098038,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/brainstorm-head-reference-original.png",
+        "referenceSha256": "000522925994bfc7c77fb152320543ba7139a92956b28e2ec097d08e5d636ce2",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/11/brainstorm.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/brainstorm/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/brainstorm-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-buzzshock",
+      "file": "portraits/reference-buzzshock.png",
+      "sha256": "ca502465046eb039695da409c4041540827664cf960eb35a8a045f3e66201e1b",
+      "bytes": 637961,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.45965725490196074,
+      "light": 0.8204415686274509,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/buzzshock-ken10-original.png",
+        "referenceSha256": "902b48aa4c79917c4e87e9fec4b17dc667452374272d5849fbafa4a3295e7aa2",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/08/ken_10_as_buzzshock_004.png",
+        "referencePageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/buzzshock/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/buzzshock-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
       "id": "reference-cannonbolt",
       "file": "portraits/reference-cannonbolt.png",
       "sha256": "98002ea67c1585a24738ef6c841b7aeedcf3174512b5939cc65b75cc2a0dc728",
@@ -875,6 +944,29 @@
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false,
         "alpha": "Native generated RGBA preserved; mild shading and edge noise disclosed in binding."
+      }
+    },
+    {
+      "id": "reference-chromastone",
+      "file": "portraits/reference-chromastone.png",
+      "sha256": "6753ccaa6559c43de183790761039c498576dc85f70456f369bb6a5a85ddf6ae",
+      "bytes": 447380,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3683443137254902,
+      "light": 0.6520972549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/chromastone-ov1-leg-anatomy-support.png",
+        "referenceSha256": "0668658a82ae54038a05fc5f23b519cf269691075d7bd7378b90d84c18b45f6a",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/chromastone-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
       }
     },
     {
@@ -924,6 +1016,29 @@
       }
     },
     {
+      "id": "reference-ghostfreak",
+      "file": "portraits/reference-ghostfreak.png",
+      "sha256": "5c9091b007828b4e654f314303b67e18d2066f16450b915ddd7c5a2c0b933d46",
+      "bytes": 578957,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.13725490196078433,
+      "light": 0.8392156862745097,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ghostfreak-head-reference-original.png",
+        "referenceSha256": "6c28a62b6eb8494b1743a1e71d61cbc1e281c9b5eda4281d080a33bc8eb13837",
+        "referenceUrl": "https://bogleech.com/cartoons/ben10-ghostfreak.png",
+        "referencePageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ghostfreak-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
       "id": "reference-humungousaur",
       "file": "portraits/reference-humungousaur.png",
       "sha256": "75604ba7498b5a1bd9cf6411fc76c18da98346e5182bcae2e0e38962e17f86e6",
@@ -947,6 +1062,64 @@
       }
     },
     {
+      "id": "reference-humungousaur-ov",
+      "file": "portraits/reference-humungousaur-ov.png",
+      "sha256": "1b35ea402b055661abd510f90b296587b80f7081942c609b315429102e1937b0",
+      "bytes": 753768,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.44789254901960784,
+      "light": 0.832206274509804,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/skurd-humungousaur-bloxx-source-original.jpg",
+        "referenceSha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491",
+        "referenceUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "referencePageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/humungousaur-ov-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "additionalReferences": [
+          {
+            "file": "assets/source-art/skurd-humungousaur-diamondhead-source-original.jpg",
+            "sha256": "84895219ad788451b9a64d11f9667445fcbd5d0f5485945eec2f1f6a7aeca095",
+            "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=17s"
+          },
+          {
+            "file": "assets/source-art/skurd-humungousaur-armodrillo-source-original.jpg",
+            "sha256": "3704347488f586f7f513e4f62454ddb78f8c83a5265784ec83050e2622dca7ae",
+            "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=30s"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reference-lodestar",
+      "file": "portraits/reference-lodestar.png",
+      "sha256": "73530abdbc778e3f0a34cf794b896279a34e2b4af621c767130873a1d361335d",
+      "bytes": 395099,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4879419607843137,
+      "light": 0.8520972549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/lodestar-head-reference-original.png",
+        "referenceSha256": "9b52949e17cdaa7e2c6facb2ff0ab59c742988e6bc39467da6213e93f0751417",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/12/lodestar_af_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/lodestar/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/lodestar-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
       "id": "reference-mad-way-big",
       "file": "portraits/reference-mad-way-big.png",
       "sha256": "f9d8d0a5fa91b36387ace76091395f0f4cb9aef9b006705a79319fdf611e504a",
@@ -967,6 +1140,98 @@
         "reuseLicenseVerified": false,
         "extractionTarget": "The small orange head icon in the top-right corner of the user-provided community artwork.",
         "alpha": "Native generated RGBA retained. Minor translucent edge noise remains; no post-generation pixel cleanup."
+      }
+    },
+    {
+      "id": "reference-ripjaws",
+      "file": "portraits/reference-ripjaws.png",
+      "sha256": "b02013f408ddc3acd4f485c160e134d0bab36f7558792b04240b78d91b2884cd",
+      "bytes": 829496,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4871082352941176,
+      "light": 0.8364109803921567,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ripjaws-head-reference-original.jpg",
+        "referenceSha256": "fc4a2308e2374654f57c56f437e6eec7614e1a286097a5034da2748eb32b8e27",
+        "referenceUrl": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/f11c0b78173348829ee44ad1edfb8102/08.jpg",
+        "referencePageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ripjaws-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-spidermonkey",
+      "file": "portraits/reference-spidermonkey.png",
+      "sha256": "e63ea807dd30cfea68625a1489c906c79e4010f29f075e2d394691751f64139d",
+      "bytes": 687805,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.24285411764705883,
+      "light": 0.7773043137254902,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/spidermonkey-head-reference-original.png",
+        "referenceSha256": "9be0abdab340f4bfbc7b4d8aa2c7173b94859e66b9127a01263e0d9bb62e5668",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/11/spidermonkey.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/spidermonkey/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/spidermonkey-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-upchuck-perk",
+      "file": "portraits/reference-upchuck-perk.png",
+      "sha256": "8b67a9cd4cec036f4f32118b0e0709e1f47d03c3be480b68dab97f9d2c2b3640",
+      "bytes": 879238,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.48318666666666665,
+      "light": 0.8361278431372549,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/upchuck-perk-head-reference-original.png",
+        "referenceSha256": "0632bd45670cd3aa402476e8a3a57461393633b76628ad5df33bf76fcdc7e7dd",
+        "referenceUrl": "https://bogleech.com/cartoons/ben10-upchuck.png",
+        "referencePageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/upchuck-perk-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-wildvine",
+      "file": "portraits/reference-wildvine.png",
+      "sha256": "de0fdd7b49e6f80f70aa109b32c1f2556496994c75bd85323b6da11d535e0f3b",
+      "bytes": 777482,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.32100235294117646,
+      "light": 0.812598431372549,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/wildvine-head-reference-original.png",
+        "referenceSha256": "a094c38a1ec5c6529b125b10534c02c62bba12790b2026bc6bd2e69db080511f",
+        "referenceUrl": "https://bogleech.com/cartoons/ben10-wildvine.png",
+        "referencePageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/wildvine-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
       }
     },
     {
@@ -1686,6 +1951,250 @@
       ],
       "publicDisclosure": "依据已保留彩色参考制作的AI头像，比例和细节经过图标化处理，不是官方透明原图。",
       "scope": "Only armodrillo; no automatic variants or wearer propagation."
+    },
+    {
+      "formId": "ripjaws",
+      "portraitId": "reference-ripjaws",
+      "confirmed": true,
+      "reason": "实际查看 OS Ripjaws 原始彩色参考及生成图：中央短灯饵、上置双圆眼、极宽闭合口及不规则交错尖牙、宽下颌对应，未加入颈胸。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/f11c0b78173348829ee44ad1edfb8102/08.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "fc4a2308e2374654f57c56f437e6eec7614e1a286097a5034da2748eb32b8e27"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "灯饵、圆眼和牙列被放大为小图标辨识结构；额面条纹和下颌阴影是生成解释。",
+        "头宽约九成画布，较要求约74%大，主体完整；root需检查dial显示比例。",
+        "灰阶有轻微渐变和原生半透明边缘，不是精确双色平涂。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ripjaws; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "ghostfreak",
+      "portraitId": "reference-ghostfreak",
+      "confirmed": true,
+      "reason": "实际查看 OS Ghostfreak 覆皮参考及生成图：细长不规则浅色头部、单条纵向黑裂缝及其内部单眼、无嘴无露骨，对应基础OS形态。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-ghostfreak.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "6c28a62b6eb8494b1743a1e71d61cbc1e281c9b5eda4281d080a33bc8eb13837"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部改成较正面的长锥形轮廓；下巴比参考更尖更长。",
+        "生成图上下留白较少，主体完整；root需检查缩略图比例。",
+        "裂纹下部转折、颊部折线与渐变是生成解释；没有绑定OV或真身版本。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ghostfreak; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "wildvine",
+      "portraitId": "reference-wildvine",
+      "confirmed": true,
+      "reason": "实际查看 OS Wildvine 彩色参考及生成图：独眼木质窄脸、细口、分节尖下巴、两侧高耸带刺捕蝇草叶片对应辨识结构；未加入躯干或侧肩圆点。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-wildvine.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "a094c38a1ec5c6529b125b10534c02c62bba12790b2026bc6bd2e69db080511f"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "两片捕蝇草叶片属于头周框架，并非狭义脸部解剖；本图保留其辨识功能，需root确认这个head-only边界。",
+        "原图三分之二侧姿被改成对称正面；内侧额叶更大、纹理更概括，不能当成原作新增细节。",
+        "主体比约74%目标更高；原生灰阶渐变与alpha边缘保留。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only wildvine; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "buzzshock",
+      "portraitId": "reference-buzzshock",
+      "confirmed": true,
+      "reason": "实际查看 Ken 10 集数 Buzzshock 彩色帧及生成图：平滑圆柱电池头、浅色椭圆顶盖、靠两侧下方的大眼、收尖下脸对应OS设计；没有沿用已撤销的APK #40火焰发束。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/08/ken_10_as_buzzshock_004.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/omnitrix-alien-heroes-2/buzzshock/",
+        "sha256": "902b48aa4c79917c4e87e9fec4b17dc667452374272d5849fbafa4a3295e7aa2"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图三分之二侧面改成对称正面，脸部较宽；下巴更平滑。",
+        "颊侧闪电样面纹被简化成对称浅色条，不是独立放电特效。",
+        "来源角色为Ken的OS形态，仅支持OS物种造型，不新断言Ben Prime或Ben10000出场身份。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only buzzshock; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "arctiguana",
+      "portraitId": "reference-arctiguana",
+      "confirmed": true,
+      "reason": "实际查看项目采用的 Arctiguana TheHawkDown 社区重绘及生成图：中央额角、较小眉棘、两大眼、宽口块齿和角牙、双触须对应；没有身体与背甲。",
+      "reference": {
+        "url": "https://images.squarespace-cdn.com/content/v1/616cfb6a0343cf58c0a570b5/57c2fc3e-5131-4e65-9379-181b25329aea/Arctiguana.png",
+        "pageUrl": "https://www.thehawkdown.com/articguana",
+        "sha256": "e8fbfcefae439564b61d32dfa7d0ee36b5ebe976a71c1d3b754db671d868947d"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "触须比参考更长且末端上卷；脸部正面对称化，头宽和眼睛位置有图标化调整，需root重点查看。",
+        "主额角简化成单弯角，眉棘和眼部亮斑有AI解释；不是官方精确还原。",
+        "原参考本身是暂按OS基础形态采用的社区重绘，这一来源身份边界继续保留。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only arctiguana; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "upchuck-perk",
+      "portraitId": "reference-upchuck-perk",
+      "confirmed": true,
+      "reason": "实际查看 Perk Upchuck 彩色参考及生成图：高长椭圆头、大高置黑眼、极长宽吻、小口稀疏方牙、侧部圆疙瘩及短褶纹对应，没有换成低宽Murk头型。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-upchuck.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "0632bd45670cd3aa402476e8a3a57461393633b76628ad5df33bf76fcdc7e7dd"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "保留参考的轻微三分之二朝向而非完全正面，只有右侧圆疙瘩显著。",
+        "原图脸部被放大独立，眼睛更大，颊部曲线更圆；v2将宽正面改浅灰、宽侧面保留中灰，以提供更可用的P20/P90换色范围，这属于有意灰阶明暗重绘。",
+        "灰阶渐变与原生alpha边缘保留；没有颈部或白领。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only upchuck-perk; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "chromastone",
+      "portraitId": "reference-chromastone",
+      "confirmed": true,
+      "reason": "实际对照参考中右上方的真正头部，输出保留长晶体尖顶、窄亮色眼区与棱面下颌，没有误把左上举手画成头部。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/10/chromastone.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/chromastone/",
+        "sha256": "0668658a82ae54038a05fc5f23b519cf269691075d7bd7378b90d84c18b45f6a"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部取自小尺寸全身参考并放大重绘，具体棱面分割和轮廓长度属于 AI 图标化解释。",
+        "输出有深色描边和轻微灰阶过渡，并非严格两种 RGB；保留生成原字节。",
+        "采用参考斜向头部方向，未自动推广到 Omniverse 的不同头形。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only chromastone; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "brainstorm",
+      "portraitId": "reference-brainstorm",
+      "confirmed": true,
+      "reason": "闭合圆弧头壳、中心接缝、左右斜眼和下弯嘴均与参考头部对应；输出未将巨大蟹钳当成触角。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/11/brainstorm.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/brainstorm/",
+        "sha256": "000522925994bfc7c77fb152320543ba7139a92956b28e2ec097d08e5d636ce2"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "由参考轻微斜向整理为较正面的头像；壳体比例和细毛刺线条经过图标化。",
+        "输出有深描边、灰阶过渡和少量透明边缘杂点，未经程序清理。",
+        "不含四肢和颈部徽记，不代表完整身体。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only brainstorm; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "spidermonkey",
+      "portraitId": "reference-spidermonkey",
+      "confirmed": true,
+      "reason": "保留普通 AF Spidermonkey 的四眼、深色上脸和浅色下口鼻；没有使用疑似 Ultimate 的 APK #67。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/11/spidermonkey.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/spidermonkey/",
+        "sha256": "9be0abdab340f4bfbc7b4d8aa2c7173b94859e66b9127a01263e0d9bb62e5668"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "生成的脸颊毛缘和顶部毛簇比小尺寸原图更蓬松，需要根代理特别核对普通形态辨识。",
+        "四眼和张口牙齿被放大，口腔及毛缘细节为 AI 图标化解释，不能声称逐线复原。",
+        "输出有多层灰阶和深色描边；PNG 原生透明边缘未经后处理。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only spidermonkey; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "lodestar",
+      "portraitId": "reference-lodestar",
+      "confirmed": true,
+      "reason": "从参考肩部开口内的小型浮空金属头部提取身份，输出保留椭圆多边形头壳、中央面板、双眼与方下颌；没有把黄色双肩当成头角。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/12/lodestar_af_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/lodestar/",
+        "sha256": "9b52949e17cdaa7e2c6facb2ff0ab59c742988e6bc39467da6213e93f0751417"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图面部低清；分面细线与方下颌形状采用保守 AI 图标化解释。",
+        "生成眼区相对原图有所放大，需根代理独立核对小图辨识，非官方独立头像。",
+        "有深描边及轻微灰阶过渡；未进行程序像素修改。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only lodestar; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "skurd-humungousaur-diamondhead",
+      "portraitId": "reference-humungousaur-ov",
+      "confirmed": true,
+      "reason": "实际查看三个 Skurd 状态的官方动画帧及生成图：三者保持同一 OV 神力暴龙头型，采用高圆头、额纹、斜眼、短吻与较窄下巴；未直接沿用 AF 宽低吻头像。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE",
+        "sha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "根据动画多个角度重绘为对称正面头像，额纹和嘴部线条作图标化处理，下巴更尖长。",
+        "原生轻微灰阶渐变和低透明度边缘噪点保留；属于参考重绘，不是官方提取图。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only the three explicitly reviewed Skurd Humungousaur arm states; same OV host head. No AF, wearer or other variant propagation."
+    },
+    {
+      "formId": "skurd-humungousaur-armodrillo",
+      "portraitId": "reference-humungousaur-ov",
+      "confirmed": true,
+      "reason": "实际查看三个 Skurd 状态的官方动画帧及生成图：三者保持同一 OV 神力暴龙头型，采用高圆头、额纹、斜眼、短吻与较窄下巴；未直接沿用 AF 宽低吻头像。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE",
+        "sha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "根据动画多个角度重绘为对称正面头像，额纹和嘴部线条作图标化处理，下巴更尖长。",
+        "原生轻微灰阶渐变和低透明度边缘噪点保留；属于参考重绘，不是官方提取图。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only the three explicitly reviewed Skurd Humungousaur arm states; same OV host head. No AF, wearer or other variant propagation."
+    },
+    {
+      "formId": "skurd-humungousaur-bloxx",
+      "portraitId": "reference-humungousaur-ov",
+      "confirmed": true,
+      "reason": "实际查看三个 Skurd 状态的官方动画帧及生成图：三者保持同一 OV 神力暴龙头型，采用高圆头、额纹、斜眼、短吻与较窄下巴；未直接沿用 AF 宽低吻头像。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=zRI5HSkOdBE&t=38s",
+        "pageUrl": "https://www.youtube.com/watch?v=zRI5HSkOdBE",
+        "sha256": "5af15dbc70ab911dc6a2346a7c56273c1bde09db2db37a9d9975eee64152d491"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "根据动画多个角度重绘为对称正面头像，额纹和嘴部线条作图标化处理，下巴更尖长。",
+        "原生轻微灰阶渐变和低透明度边缘噪点保留；属于参考重绘，不是官方提取图。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only the three explicitly reviewed Skurd Humungousaur arm states; same OV host head. No AF, wearer or other variant propagation."
     }
   ]
 }

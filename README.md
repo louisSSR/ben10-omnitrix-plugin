@@ -14,6 +14,12 @@ SillyTavern 外星人选择插件，同时提供 `preview.html` 与本地素材�
 
 **目录范围仍在核对。** 236 是当前已登记的记录数，用来统计素材接入状态；它不表示所有动画、电影、游戏、漫画中的变身形态都已穷尽。“1 条待补”仅指已登记目录里的缺图，不能据此推断全作品只剩一种形态尚未完成。作品版本、融合和身体状态也不应相加后称为独立物种总数。详见[范围说明](docs/catalog-scope.md)。
 
+## 0.6.3 经典版与 Alien Force 头像
+
+新增 11 张可配色头像、13 条显式形态绑定，现覆盖 **60 条形态、54 个资源**，其余 176 条头像待补。新增大钢牙、鬼影、Wildvine、Buzzshock、Arctiguana、Perk Upchuck、Chromastone、Brainstorm、Spidermonkey、Lodestar，以及供三个 Skurd 手臂状态共用的 OV Humungousaur 头部。236 条目录与 235 张全身剪影保持。
+
+这批使用内置 imagegen 参照保留的角色图制作，保留原生透明字节，支持三种配色。具体重绘差异、提示词和验证范围见 [本版记录](docs/review-v063.md)。Omniverse 打印模型仍在独立查看库中，未作为装配成品替换正式插件表身。
+
 ## 0.6.2 九个头像增补
 
 转盘头像现覆盖 **47 条形态、43 个资源**，其余 189 条头像待补。新增 Jetray、Snare-Oh、开花状态 Swampfire，以及按参考重绘的四手霸王、快闪之星、Cannonbolt、Echo Echo、Humungousaur、Armodrillo。三种配色共用原生透明图，236 条目录与 235 张全身剪影保持。

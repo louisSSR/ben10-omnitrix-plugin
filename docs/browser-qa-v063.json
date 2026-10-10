@@ -1,0 +1,200 @@
+{
+  "version": "0.6.3",
+  "date": "2026-10-10",
+  "previewSha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
+  "portraitRegistrySha256": "ca8ffcb140663c98b3eeaad28715ca6392b96732ad825b01688905fb339f281b",
+  "runtimeManifestSha256": "1661e086c517304c7a61d97af41fb6535d28729246ddb5477da4b79d7e9e128d",
+  "coverage": {
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 54,
+    "bindings": 60,
+    "pending": 176,
+    "sourceSha256": "ca8ffcb140663c98b3eeaad28715ca6392b96732ad825b01688905fb339f281b",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 142,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "b4673f490dbfc7d9c7567827f6c8c114c8705890353455bbce5d46c36c47bda5"
+  },
+  "packageReferenceChecks": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "sourceScriptSha256": "4f66fbcbddec5b837fdf2c34618bd7725a2d170f81a8cad428400521992f0d9a",
+    "receiptSha256": "eb28f36e10be4256e665496218ef24e5ed17a3a71dbdd1bce53eb2c501f93e41",
+    "method": "Reused round200 real fixture evidence after exact current packager hash verification; not rerun this round."
+  },
+  "screenshots": [
+    "screenshots/v063-desktop-green.jpg",
+    "screenshots/v063-desktop-amber.jpg",
+    "screenshots/v063-mobile375-amber.jpg",
+    "screenshots/v063-mobile305-rose.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v063-desktop-green.jpg",
+      "sha256": "7d3b75e78a3ea7a427f3a094954311135ee043213c17e5d7deec0663bb3a66c4",
+      "captureBuildSha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v063-desktop-amber.jpg",
+      "sha256": "8f05fff01661ca83c3fde5488ddf88988f4bdfd69cb92d637493c8f9ac038cf4",
+      "captureBuildSha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v063-mobile375-amber.jpg",
+      "sha256": "6c0cf760bee745146236aa6f237450dc2c20c6704614367561c50ea664602238",
+      "captureBuildSha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v063-mobile305-rose.jpg",
+      "sha256": "69aa90ef3086ba031ed7d6b3c462e893fce674a5d2e84fe49cad474654e31080",
+      "captureBuildSha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
+      "actuallyViewed": true
+    }
+  ],
+  "checks": [
+    {
+      "clientWidth": 707,
+      "id": "ripjaws",
+      "label": "大钢牙",
+      "portrait": "reference-ripjaws",
+      "scrollWidth": 707
+    },
+    {
+      "clientWidth": 1250,
+      "id": "ghostfreak",
+      "label": "鬼影",
+      "portrait": "reference-ghostfreak",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "wildvine",
+      "label": "Wildvine",
+      "portrait": "reference-wildvine",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "buzzshock",
+      "label": "Buzzshock",
+      "portrait": "reference-buzzshock",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "arctiguana",
+      "label": "Arctiguana",
+      "portrait": "reference-arctiguana",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "upchuck-perk",
+      "label": "Perk Upchuck",
+      "portrait": "reference-upchuck-perk",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "chromastone",
+      "label": "Chromastone",
+      "portrait": "reference-chromastone",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "brainstorm",
+      "label": "Brainstorm",
+      "portrait": "reference-brainstorm",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "spidermonkey",
+      "label": "Spidermonkey",
+      "portrait": "reference-spidermonkey",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "lodestar",
+      "label": "Lodestar",
+      "portrait": "reference-lodestar",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "skurd-humungousaur-diamondhead",
+      "label": "Humungousaur（Skurd 钻石臂与剑）",
+      "portrait": "reference-humungousaur-ov",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "skurd-humungousaur-armodrillo",
+      "label": "Humungousaur（Skurd 钻头臂）",
+      "portrait": "reference-humungousaur-ov",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "skurd-humungousaur-bloxx",
+      "label": "Humungousaur（Skurd 积木炮）",
+      "portrait": "reference-humungousaur-ov",
+      "scrollWidth": 1250
+    }
+  ],
+  "console": [],
+  "responsive": {
+    "method": "Browser viewport override via supported capability; actual document widths recorded; reset after test.",
+    "measurements": [
+      {
+        "clientWidth": 360,
+        "innerHeight": 900,
+        "innerWidth": 375,
+        "palette": "amber",
+        "scrollWidth": 360,
+        "selected": "大钢牙"
+      },
+      {
+        "clientWidth": 290,
+        "innerHeight": 900,
+        "innerWidth": 305,
+        "palette": "rose",
+        "scrollWidth": 290,
+        "selected": "Wildvine"
+      }
+    ]
+  },
+  "desktopOverride": {
+    "innerWidth": 1265,
+    "innerHeight": 900,
+    "clientWidth": 1250,
+    "scrollWidth": 1250
+  },
+  "all11HeadsActuallyViewedInUI": true,
+  "previousBodyResourcesUnchanged": true,
+  "previousPortraitResourcesUnchanged": true,
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "boundaries": [
+    "176 registered records lack heads; Crabdozer lacks full-body art. Catalog not exhaustive across all media.",
+    "Nanomech/AF Big Chill image generation was safety-blocked with no output; not retried or rerouted.",
+    "11 generated heads retain native RGBA bytes and explicitly disclosed redraw differences.",
+    "Omniverse upload matches the existing seventh print-model archive; independent model viewer only, not assembled production watch.",
+    "Viewport testing does not establish physical phone touch or SillyDroid installation acceptance."
+  ]
+}
