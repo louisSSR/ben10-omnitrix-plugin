@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-10T20:00:33.172Z",
-  "sha256": "dcd7e4c737a9de259e3f119c9b448b2efcf04b15d9c9e1c531c5b922f0e4358f",
-  "bytes": 478926,
+  "builtAt": "2026-10-10T20:37:29.410Z",
+  "sha256": "1aebaac0d76f6d9f049c43e1d756a12cc9aafef37721285b744062962ef09ed0",
+  "bytes": 482527,
   "coverage": {
     "total": 240,
     "reviewed": 238,
@@ -112,16 +112,16 @@
     "officialModel": false
   },
   "portraits": {
-    "assets": 119,
-    "bindings": 133,
-    "pending": 107,
-    "sourceSha256": "562bfe0bd64948fe64747323e573aff1c935c0c173cc0fd92dc1469c6e8dcbdc",
+    "assets": 127,
+    "bindings": 141,
+    "pending": 99,
+    "sourceSha256": "929cc139fc7bf546a64bae02fe99fe0449ebac5cf200d3e8afb5488d927a6c42",
     "sourceBytesPreserved": true,
     "changesSelectionPool": false
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 384,
-  "runtimeBytes": 198117044,
-  "runtimeManifestSha256": "6cfe2176eb413dc8451ebdd600397fa3ee70a9295c7587f1dbfc99b1139906a7"
+  "runtimeFiles": 392,
+  "runtimeBytes": 203914826,
+  "runtimeManifestSha256": "88bded82bb578d1925c94eed225bf191abe64a2042b328373bde426fdd778d8f"
 }

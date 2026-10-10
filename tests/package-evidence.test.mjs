@@ -204,3 +204,63 @@ test('package rejects unsafe body prompt paths and a real prompt-directory junct
   assert.equal(existsSync(f.receipt), false);
   assert.equal(existsSync(path.join(f.output, file)), false);
 });
+
+function portraitEvidence(f) {
+  const file = 'assets/portraits/fixture.png';
+  const bytes = Buffer.from('native portrait fixture bytes');
+  mkdirSync(path.dirname(path.join(f.root, file)), { recursive: true });
+  writeFileSync(path.join(f.root, file), bytes);
+  const support = 'assets/source-art/portrait-support.png';
+  const sourceBytes = Buffer.from('retained independent head-boundary reference');
+  writeFileSync(path.join(f.root, support), sourceBytes);
+  const asset = { file: 'portraits/fixture.png', bytes: bytes.length, sha256: sha(bytes),
+    source: { supportingReferences: [{ file: support, sha256: sha(sourceBytes) }] } };
+  const save = () => writeJson(path.join(f.root, 'assets/portraits.json'), { assets: [asset] });
+  save();
+  return { asset, support, sourceBytes, save };
+}
+
+test('package retains exact portrait auxiliary reference bytes once and rejects corrupt or unsafe declarations', t => {
+  const f = fixture(t), portrait = portraitEvidence(f);
+  const support = portrait.asset.source.supportingReferences[0];
+  portrait.asset.source.supportingReferences.push({ ...support });
+  f.asset.supportingSources.push({ ...support });
+  portrait.save();
+  const result = f.run();
+  assert.equal(result.status, 0, result.stderr);
+  assert.deepEqual(readFileSync(path.join(f.output, portrait.support)), portrait.sourceBytes);
+  const entries = JSON.parse(readFileSync(f.receipt)).files.filter(row => row.file === portrait.support);
+  assert.equal(entries.length, 1);
+  assert.equal(entries[0].sha256, sha(portrait.sourceBytes));
+  f.asset.supportingSources.pop();
+  const portraitOnly = f.run();
+  assert.equal(portraitOnly.status, 0, portraitOnly.stderr);
+  assert.deepEqual(readFileSync(path.join(f.output, portrait.support)), portrait.sourceBytes);
+  const portraitOnlyEntries = JSON.parse(readFileSync(f.receipt)).files.filter(row => row.file === portrait.support);
+  assert.equal(portraitOnlyEntries.length, 1, 'auxiliary source retained even when declared only by a portrait');
+  assert.equal(portraitOnlyEntries[0].sha256, sha(portrait.sourceBytes));
+  for (const value of [null, [{ ...support, sha256: '0'.repeat(64) }],
+    [{ ...support, file: 'assets/source-art/../portrait-support.png' }]]) {
+    portrait.asset.source.supportingReferences = value;
+    portrait.save();
+    const invalid = f.run();
+    assert.notEqual(invalid.status, 0);
+    assert.match(invalid.stderr, /Invalid supporting sources|Invalid supporting source hash|Unsafe supporting source path/);
+  }
+});
+
+test('package rejects a real junction used only by portrait auxiliary references', t => {
+  const f = fixture(t), portrait = portraitEvidence(f);
+  const sourceDir = path.join(f.root, 'assets/source-art');
+  const outside = path.join(f.dir, 'outside-portrait-source');
+  assert.ok(path.resolve(sourceDir).startsWith(path.resolve(f.dir) + path.sep));
+  assert.ok(path.resolve(outside).startsWith(path.resolve(f.dir) + path.sep));
+  renameSync(sourceDir, outside);
+  symlinkSync(outside, sourceDir, process.platform === 'win32' ? 'junction' : 'dir');
+  f.asset.supportingSources = [];
+  const result = f.run();
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /Unsafe supporting source link/);
+  assert.equal(existsSync(f.receipt), false);
+  assert.equal(existsSync(path.join(f.output, portrait.support)), false);
+});

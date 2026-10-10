@@ -19,11 +19,15 @@ for (const entry of runtime.files) {
   if (!files.includes(entry.path)) files.push(entry.path);
 }
 const supplemental = JSON.parse(readFileSync(path.join(root, 'assets/extra-art.json')));
+const portraitSupportAssets = [];
 if (existsSync(path.join(root, 'assets/portraits.json'))) {
   files.push('assets/portraits.json');
   const portraits = JSON.parse(readFileSync(path.join(root, 'assets/portraits.json')));
   if (!Array.isArray(portraits.assets)) throw new Error('Invalid portrait sources');
   for (const asset of portraits.assets) {
+    if (asset.source?.supportingReferences !== undefined) {
+      portraitSupportAssets.push({ supportingSources: asset.source.supportingReferences });
+    }
     if (!/^portraits\/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.(?:png|webp)$/.test(asset.file || '') || !/^[a-f0-9]{64}$/.test(asset.sha256 || '')) throw new Error('Unsafe portrait source path');
     const relative = `assets/${asset.file}`;
     let resolved = root;
@@ -81,7 +85,7 @@ for (const asset of supplemental.assets.filter(asset => asset.sourceFrame?.conta
   if (!/^assets\/source-art\/[a-z0-9-]+\.gif$/.test(containerFile) || createHash('sha256').update(readFileSync(path.join(root,containerFile))).digest('hex') !== containerSha256) throw new Error('Invalid retained source container');
   if (!files.includes(containerFile)) files.push(containerFile);
 }
-for (const asset of supplemental.assets) {
+for (const asset of [...supplemental.assets, ...portraitSupportAssets]) {
   if (asset.generation?.promptFile !== undefined) {
     const promptFile = asset.generation.promptFile;
     if (typeof promptFile !== 'string' || !/^docs\/prompts\/[a-z0-9-]+\.txt$/.test(promptFile)) throw new Error('Unsafe body prompt path');
