@@ -98,7 +98,7 @@ async function runtimePlan(fetchImpl) {
     let totalBytes = indexBytes.length;
     for (const item of index.files) {
         if (!item || typeof item !== 'object' || Array.isArray(item)) throw new Error('运行资源清单条目无效');
-        const image = typeof item.path === 'string' && item.path.match(/^assets\/runtime\/([a-f0-9]{64})\.(png|avif|webp)$/);
+        const image = typeof item.path === 'string' && item.path.match(/^assets\/runtime\/([a-f0-9]{64})\.(png|avif|webp|f32)$/);
         if ((!RUNTIME_FILES.includes(item.path) && !image) || names.has(item.path) || !/^[a-f0-9]{64}$/.test(item.sha256 || '') || (image && image[1] !== item.sha256)) throw new Error('运行资源清单包含非法路径、重复项或哈希');
         if (!Number.isSafeInteger(item.bytes) || item.bytes <= 0 || item.bytes > FILE_LIMIT) throw new Error('下载文件超过大小限制或清单大小无效');
         names.add(item.path); totalBytes += item.bytes;
@@ -190,6 +190,23 @@ export async function validateRuntime(files, listedPaths = new Set()) {
     }
     for (const match of html.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/gi)) if (!allowedReference(match[1])) throw new Error('preview.html 引用了清单以外的运行资源');
     if (/@import\b/i.test(html)) throw new Error('preview.html 引用了外部样式');
+    const meshScript = /<script type="application\/json" id="watch-mesh-data">([^<]+)<\/script>/.exec(html);
+    if (meshScript) {
+        const watches = JSON.parse(meshScript[1]);
+        if (!watches || Object.keys(watches).sort().join(',') !== 'omniverse,original,recalibrated,ultimatrix') throw new Error('手表网格清单缺少表型');
+        for (const [watch, geometry] of Object.entries(watches)) {
+            if (geometry.watch !== watch || geometry.modelKind !== 'source-mesh' || !Array.isArray(geometry.parts)) throw new Error('手表网格清单无效');
+            for (const part of geometry.parts) {
+                const file = part.file?.replace(/^\.\//, '');
+                const match = /^assets\/runtime\/([a-f0-9]{64})\.f32$/.exec(file || '');
+                if (!match || match[1] !== part.sha256 || !listedPaths.has(file)) throw new Error('手表网格引用不在运行资源清单内');
+                const stride = part.vertexLayout === 'pn-c10-f32le' ? 40 : part.vertexLayout === 'pn6-f32le' ? 24 : 0;
+                if (!stride || !Number.isSafeInteger(part.vertices) || part.vertices <= 0 || part.vertices % 3 || part.vertices > 450000 || part.bytes !== part.vertices * stride) throw new Error('手表网格顶点格式无效');
+                const bytes = await read(file);
+                if (bytes.length !== part.bytes || createHash('sha256').update(bytes).digest('hex') !== part.sha256) throw new Error('手表网格文件校验失败');
+            }
+        }
+    }
     const css = await read('extension.css');
     if (!css.length || /<!doctype|<html/i.test(css.toString('utf8'))) throw new Error('样式文件无效');
     return manifest;

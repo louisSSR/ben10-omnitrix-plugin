@@ -170,7 +170,7 @@ test('missing WebGL returns an explicit fallback without touching DOM-only resou
 });
 
 // Instrument GPU submissions and time, not rasterized pixels. Visual evidence comes from the real browser.
-function rendererHarness() {
+function rendererHarness(options = {}) {
   let time = 1000, serial = 0, boundBuffer = null;
   const frames = new Map(), listeners = new Map(), observers = [], uploads = [], batches = [], callbacks = [];
   const deletedBuffers = new Set(), deletedPrograms = new Set(), uniforms = new Map(), unavailable = [];
@@ -204,15 +204,15 @@ function rendererHarness() {
     },
   };
   const canvas = {
-    ownerDocument: { defaultView: win }, width: 0, height: 0,
+    ownerDocument: { defaultView: win }, width: 0, height: 0, dataset: {},
     getContext: () => gl,
     getBoundingClientRect: () => ({ width: 400, height: 400 }),
     addEventListener(type, fn) { listeners.set(type, fn); },
     removeEventListener(type, fn) { if (listeners.get(type) === fn) listeners.delete(type); },
   };
-  const model = createWatchModel(canvas, { onFrame: frame => callbacks.push(frame), onUnavailable: reason => unavailable.push(reason) });
+  const model = createWatchModel(canvas, { onFrame: frame => callbacks.push(frame), onUnavailable: reason => unavailable.push(reason), ...options });
   assert.ok(model);
-  return { model, canvas, frames, uploads, batches, callbacks, deletedBuffers, deletedPrograms, observers, listeners, unavailable,
+  return { model, canvas, gl, frames, uploads, batches, callbacks, deletedBuffers, deletedPrograms, observers, listeners, unavailable,
     tick(ms = 0) { time += ms; const work = [...frames.values()]; frames.clear(); for (const fn of work) fn(time); },
   };
 }
@@ -320,6 +320,86 @@ test('almost overhead round faces remain upright under tiny pitch and aspect per
       assert.equal(face.a, 0, `${watch}/${azimuth}/${aspect}: no arbitrary principal-axis rotation near a circle`);
       assert.deepEqual(pose, before, 'axis stabilization does not change the camera pose');
     }
+  }
+});
+
+function deferredMeshLoader() {
+  const requests = [];
+  const load = (watch, { signal }) => new Promise((resolve, reject) => requests.push({ watch, signal, resolve, reject }));
+  return { load, requests };
+}
+const finishMeshTasks = () => new Promise(resolve => setImmediate(resolve));
+const sourceGeometryFixture = watch => ({ ...buildWatchGeometry(watch), modelKind: 'source-mesh', sourceArchiveSha256: 'c'.repeat(64) });
+
+test('source mesh swaps atomically during lift and reports provenance without resetting camera or animation', async () => {
+  const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });
+  h.model.setState({ watch: 'original', view: 'low', raised: false, reducedMotion: true }); h.tick();
+  assert.equal(h.callbacks.at(-1).meshStatus, 'loading'); assert.equal(h.callbacks.at(-1).sourceMesh, false);
+  h.model.setState({ raised: true, reducedMotion: false }); h.tick(220);
+  const midpoint = h.callbacks.at(-1), matrix = h.batches.at(-1)[0].matrix, initialUploads = h.uploads.length;
+  await finishMeshTasks(); deferred.requests[0].resolve(sourceGeometryFixture('original')); await finishMeshTasks(); h.tick();
+  const ready = h.callbacks.at(-1);
+  assert.equal(ready.meshStatus, 'ready'); assert.equal(ready.sourceMesh, true); assert.equal(ready.sourceArchiveSha256, 'c'.repeat(64));
+  assert.equal(ready.coreLift, midpoint.coreLift); assert.equal(ready.transitioning, true);
+  assert.deepEqual(h.batches.at(-1)[0].matrix, matrix); assert.deepEqual([ready.x, ready.y, ready.w, ready.h], [midpoint.x, midpoint.y, midpoint.w, midpoint.h]);
+  assert.equal(h.deletedBuffers.size, initialUploads, 'old buffers released only after source upload');
+  assert.equal(h.canvas.dataset.sourceMesh, 'true'); assert.equal(h.canvas.dataset.meshStatus, 'ready');
+  h.tick(220); assert.equal(h.frames.size, 0, 'source geometry retains event-driven rendering'); h.model.dispose();
+});
+
+test('late mesh for a previous generation cannot overwrite the selected watch', async () => {
+  const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });
+  h.model.setState({ watch: 'original', reducedMotion: true }); await finishMeshTasks();
+  h.model.setState({ watch: 'omniverse', raised: true }); await finishMeshTasks(); h.tick();
+  const uploads = h.uploads.length;
+  assert.equal(deferred.requests[0].signal.aborted, true);
+  deferred.requests[0].resolve(sourceGeometryFixture('original')); await finishMeshTasks();
+  assert.equal(h.uploads.length, uploads, 'stale source is not uploaded');
+  deferred.requests[1].resolve(sourceGeometryFixture('omniverse')); await finishMeshTasks(); h.tick();
+  assert.equal(h.callbacks.at(-1).watch, 'omniverse'); assert.equal(h.callbacks.at(-1).sourceMesh, true);
+  assert.ok(h.batches.at(-1).some(batch => batch.offset[0] > 0)); assert.ok(h.batches.at(-1).some(batch => batch.offset[0] < 0), 'source keeps lid motion groups');
+  h.model.dispose();
+});
+
+test('source camera metadata retargets the existing camera and keeps the face overlay on the source dial', async () => {
+  const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });
+  h.model.setState({ watch: 'ultimatrix', view: 'right', raised: true, reducedMotion: true }); await finishMeshTasks(); h.tick();
+  const source = sourceGeometryFixture('ultimatrix'); source.camera = { distance: 5.6, target: [-.080657, -.44124, 0] };
+  deferred.requests[0].resolve(source); await finishMeshTasks(); h.tick();
+  const pose = watchPose({ watch: 'ultimatrix', view: 'right', raised: true }, source), expected = projectWatchFace(source, pose, 1), frame = h.callbacks.at(-1);
+  assert.equal(pose.distance, 5.6); assert.deepEqual(pose.target, source.camera.target);
+  assert.equal(watchPose({ watch: 'ultimatrix' }).distance, 6.1, 'fallback camera remains unchanged');
+  assert.deepEqual([frame.x, frame.y, frame.w, frame.h], [expected.x, expected.y, expected.w, expected.h]);
+  assert.equal(frame.coreLift, source.lift); assert.equal(frame.transitioning, false); h.model.dispose();
+});
+
+test('failed source upload leaves fallback buffers drawable and a cached switch avoids refetch', async () => {
+  const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });
+  h.model.setState({ watch: 'original', reducedMotion: true }); await finishMeshTasks(); h.tick();
+  const previousBuffers = h.batches.at(-1).map(b => b.buffer), originalUpload = h.gl.bufferData;
+  h.gl.bufferData = () => { throw new Error('allocation failure fixture'); };
+  deferred.requests[0].resolve(sourceGeometryFixture('original')); await finishMeshTasks();
+  h.gl.bufferData = originalUpload; h.tick();
+  assert.equal(h.callbacks.at(-1).sourceMesh, false); assert.equal(h.callbacks.at(-1).meshStatus, 'fallback');
+  assert.match(h.callbacks.at(-1).meshError, /allocation failure/);
+  assert.deepEqual(h.batches.at(-1).map(b => b.buffer), previousBuffers);
+  assert.ok(previousBuffers.every(buffer => !h.deletedBuffers.has(buffer)), 'valid fallback survives partial replacement failure');
+  h.model.dispose();
+  const cachedGeometry = sourceGeometryFixture('original'); let called = 0;
+  const cachedLoad = () => { called++; }; cachedLoad.peek = watch => watch === 'original' ? cachedGeometry : null;
+  const cached = rendererHarness({ loadGeometry: cachedLoad }); cached.model.setState({ watch: 'original', reducedMotion: true }); cached.tick();
+  assert.equal(called, 0); assert.equal(cached.callbacks.at(-1).sourceMesh, true); cached.model.dispose();
+});
+
+test('disposal aborts pending source fetch and neither late success nor failure revives GPU work', async () => {
+  for (const outcome of ['resolve', 'reject']) {
+    const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });
+    h.model.setState({ watch: 'original' }); await finishMeshTasks();
+    const count = h.uploads.length; h.model.dispose();
+    assert.equal(deferred.requests[0].signal.aborted, true);
+    deferred.requests[0][outcome](outcome === 'resolve' ? sourceGeometryFixture('original') : new Error('late failure'));
+    await finishMeshTasks();
+    assert.equal(h.uploads.length, count); assert.equal(h.frames.size, 0); assert.equal(h.deletedBuffers.size, count); assert.equal(h.callbacks.length, 0);
   }
 });
 

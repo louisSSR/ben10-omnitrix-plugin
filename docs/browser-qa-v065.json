@@ -1,0 +1,399 @@
+{
+  "version": "0.6.5",
+  "date": "2026-10-10",
+  "previewSha256": "2bad7c38a207f0427c9a84e7ef92b668b3a6ed7f49629a39695234c295b5e8d3",
+  "runtimeManifestSha256": "ef3953db8889ab23437c938fa69942c2d80af19d3f9e728295bf2401a55ef4a9",
+  "watchRegistrySha256": "70b2063614536e90411bdaf8c3610c6316ea612bb5ba1a4a456900376fbb4e38",
+  "watchProvenanceSha256": "62160321e8f9709a56dcc590fa397320ffe13c2a4632c6bf20e9e79519fd61f4",
+  "coverage": {
+    "total": 237,
+    "reviewed": 236,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 66,
+    "bindings": 72,
+    "pending": 165,
+    "sourceSha256": "b17a4b65067a6cbe59ae9b50c767a59f6569ca6ad71a8d4d8ceff1e57d62edfd",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 162,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "d754e4a9d9d5485461b043ce334bc080b8fea6c5ee250ad06ce44446fc030285"
+  },
+  "packageEvidenceTests": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "9d4998ca24115be49e9cd1e50c5a381f32a7138cb86321d07b3ec1945ddfe68d",
+    "reason": "Repeated only packaging fixtures after adding the public conversion receipt; production runtime and meshes unchanged."
+  },
+  "sourceMeshes": {
+    "generations": 4,
+    "parts": 29,
+    "triangles": 97034,
+    "uniqueRuntimeFiles": 29,
+    "geometryBytes": 11644080,
+    "sharedGeometryAcrossViews": true,
+    "officialModel": false
+  },
+  "screenshots": [
+    "screenshots/v065-desktop-ultimatrix-left.jpg",
+    "screenshots/v065-desktop-original-low.jpg",
+    "screenshots/v065-desktop-original-dial.jpg",
+    "screenshots/v065-desktop-omniverse-top-closed.jpg",
+    "screenshots/v065-desktop-recalibrated-right.jpg",
+    "screenshots/v065-desktop-omniverse-ring-amber.jpg",
+    "screenshots/v065-mobile375-ring-amber.jpg",
+    "screenshots/v065-mobile375-projection.jpg",
+    "screenshots/v065-mobile375-dial.jpg",
+    "screenshots/v065-mobile305-ultimatrix-projection-rose.jpg",
+    "screenshots/v065-mobile305-ring-rose.jpg",
+    "screenshots/v065-mobile305-omniverse-dial-rose.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v065-desktop-ultimatrix-left.jpg",
+      "app": {
+        "coreState": "raised",
+        "mode": "projection",
+        "watch": "ultimatrix",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "canvasBounds": {
+        "bottom": 797.53125,
+        "height": 350,
+        "left": 571.8333740234375,
+        "right": 921.8333740234376,
+        "top": 447.53125,
+        "width": 350,
+        "x": 571.8333740234375,
+        "y": 447.53125
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "sourceMesh": "true"
+      },
+      "notice": "",
+      "scrollWidth": 1265,
+      "selected": "小奇兵",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      },
+      "sha256": "144abab70ae788c395e44fd0596f8b6b4aeb67bed758c6f7cace6bc1aa648058"
+    },
+    {
+      "file": "screenshots/v065-desktop-original-low.jpg",
+      "app": {
+        "coreState": "raised",
+        "mode": "projection",
+        "watch": "original",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "low"
+      },
+      "canvasBounds": {
+        "bottom": 797.53125,
+        "height": 350,
+        "left": 571.8333740234375,
+        "right": 921.8333740234376,
+        "top": 447.53125,
+        "width": 350,
+        "x": 571.8333740234375,
+        "y": 447.53125
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458",
+        "sourceMesh": "true"
+      },
+      "notice": "",
+      "scrollWidth": 1265,
+      "selected": "小奇兵",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      },
+      "sha256": "aa28d88714460993cdc7227edf7f4b1894fff9e2426583ad3c6423837578ceca"
+    },
+    {
+      "file": "screenshots/v065-desktop-original-dial.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "dial",
+        "watch": "original",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "low"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458",
+        "sourceMesh": "true"
+      },
+      "notice": "",
+      "scrollWidth": 1265,
+      "selected": "火焰人",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      },
+      "sha256": "f23e49637673cadc22c8c5d7e28f236d1816cea7d41f31cbfc46330acea5592a"
+    },
+    {
+      "file": "screenshots/v065-desktop-omniverse-top-closed.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1265,
+      "selected": "小奇兵",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "projection",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceMesh": "true"
+      },
+      "sha256": "70f0b55666762c71b5f60bbd1486eaa0ccc38d014e633b4dfa658e6bfd59a474"
+    },
+    {
+      "file": "screenshots/v065-desktop-recalibrated-right.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1265,
+      "selected": "小奇兵",
+      "notice": "",
+      "app": {
+        "coreState": "raised",
+        "mode": "projection",
+        "watch": "recalibrated",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "right"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "sourceMesh": "true"
+      },
+      "sha256": "457728e030b9fac335fe37bff8fea32a6339de34e05a4011bf86ba51dda38b2a"
+    },
+    {
+      "file": "screenshots/v065-desktop-omniverse-ring-amber.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "scrollWidth": 1265,
+      "selected": "小奇兵",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "low"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceMesh": "true"
+      },
+      "sha256": "1923a90f79b5faa2a386014f9546377b43b5d653a846adf571c212c9abd0f23e"
+    },
+    {
+      "file": "screenshots/v065-mobile375-ring-amber.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "selected": "四手霸王",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "low"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceMesh": "true"
+      },
+      "sha256": "98e8c7883064324a588fe67e3e3ffc59cfc7a3fa7cff078f1ccb65939fa842d4"
+    },
+    {
+      "file": "screenshots/v065-mobile375-projection.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "selected": "四手霸王",
+      "notice": "",
+      "app": {
+        "coreState": "raised",
+        "mode": "projection",
+        "watch": "recalibrated",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "sourceMesh": "true"
+      },
+      "sha256": "0baef5c6b4364d46cbd427f90fc271006812f2ce60a5f5e3d3002c13da47105d"
+    },
+    {
+      "file": "screenshots/v065-mobile375-dial.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 375,
+        "height": 900
+      },
+      "scrollWidth": 360,
+      "selected": "滑翔金刚",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "dial",
+        "watch": "original",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458",
+        "sourceMesh": "true"
+      },
+      "sha256": "d872ce81d7a100b47616bcb94eea9519d988cff0f635056f0c3c52e4f39124d3"
+    },
+    {
+      "file": "screenshots/v065-mobile305-ultimatrix-projection-rose.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 305,
+        "height": 900
+      },
+      "scrollWidth": 290,
+      "selected": "滑翔金刚",
+      "notice": "",
+      "app": {
+        "coreState": "raised",
+        "mode": "projection",
+        "watch": "ultimatrix",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "sourceMesh": "true"
+      },
+      "sha256": "4ef7ef6ddfe03b004298920a1aceddb18ab78924c5d78c39e6427493164c5b60"
+    },
+    {
+      "file": "screenshots/v065-mobile305-ring-rose.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 305,
+        "height": 900
+      },
+      "scrollWidth": 290,
+      "selected": "大钢牙",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "recalibrated",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "sourceMesh": "true"
+      },
+      "sha256": "9b01d5c9c6725c2d767deffaf5c8bd76a13f3607f59735d1c33cf3745c8293b7"
+    },
+    {
+      "file": "screenshots/v065-mobile305-omniverse-dial-rose.jpg",
+      "metadataSource": "DOM values restored from the actual browser tool outputs returned beside this saved screenshot.",
+      "viewport": {
+        "width": 305,
+        "height": 900
+      },
+      "scrollWidth": 290,
+      "selected": "变形怪",
+      "notice": "",
+      "app": {
+        "coreState": "closed",
+        "mode": "dial",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "left"
+      },
+      "mesh": {
+        "meshStatus": "ready",
+        "modelKind": "source-mesh",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceMesh": "true"
+      },
+      "sha256": "cae06887d16aead7f10520851b8934fce9ae424c4ea8ae523c436508a9670a30"
+    }
+  ],
+  "consoleWarningsAndErrors": [],
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "limits": [
+    "Viewport overrides are browser layout evidence, not physical mobile GPU performance.",
+    "Screenshots are settled frames, not frame-by-frame animation verification.",
+    "Alien projection remains planar image layers.",
+    "Authors, source redistribution licenses and original mechanical animation were not established.",
+    "Catalog completeness is not established; 1 registered full-body silhouette and 165 portrait bindings remain pending."
+  ]
+}

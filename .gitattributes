@@ -7,3 +7,4 @@ extension.css -text
 manifest.json -text whitespace=cr-at-eol
 runtime-manifest.json -text whitespace=cr-at-eol
 assets/runtime/* -text
+assets/watch-meshes/*.json -text whitespace=cr-at-eol

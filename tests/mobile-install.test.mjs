@@ -5,6 +5,7 @@ import path from 'node:path';
 import os from 'node:os';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 import { install, downloadRuntime, validateRuntime, RUNTIME_FILES } from '../scripts/mobile-install.mjs';
 
 const commit = 'a'.repeat(40);
@@ -305,12 +306,99 @@ test('WebP head bundles repair an existing mobile installation and stay idempote
     assert.deepEqual((await f.run({ apply: true, fetchImpl: remote({ files }) })).changed, []);
 });
 
-test('the actual built head-selector page passes the same mobile resource-reference gate', async () => {
+async function actualSourceMeshRuntime() {
     const root = new URL('../', import.meta.url);
     const index = JSON.parse(await fs.readFile(new URL('runtime-manifest.json', root)));
-    const files = Object.fromEntries(await Promise.all(index.files.filter(entry => !entry.path.startsWith('assets/')).map(async entry => [entry.path, await fs.readFile(new URL(entry.path, root))])));
-    const result = await validateRuntime(files, new Set(index.files.map(entry => entry.path)));
+    // validateRuntime accepts paths just as the download staging directory does; do not buffer every image.
+    const files = Object.fromEntries(index.files.map(entry => [entry.path, fileURLToPath(new URL(entry.path, root))]));
+    const html = await fs.readFile(files['preview.html'], 'utf8');
+    const meshScript = /<script type="application\/json" id="watch-mesh-data">([^<]+)<\/script>/.exec(html);
+    assert.ok(meshScript, 'built page must actually include source mesh metadata');
+    return { files, paths: new Set(index.files.map(entry => entry.path)), html, watches: JSON.parse(meshScript[1]), meshScript: meshScript[0] };
+}
+
+test('the actual built four-generation source meshes pass the mobile resource-reference and hash gate', async () => {
+    const bundle = await actualSourceMeshRuntime();
+    assert.deepEqual(Object.keys(bundle.watches).sort(), ['omniverse', 'original', 'recalibrated', 'ultimatrix']);
+    const registry = JSON.parse(await fs.readFile(new URL('../assets/watch-meshes/registry.json', import.meta.url)));
+    assert.deepEqual(bundle.watches, registry.watches, 'the tested runtime uses the current reviewed source registry');
+    for (const geometry of Object.values(bundle.watches)) {
+        assert.equal(geometry.modelKind, 'source-mesh'); assert.ok(geometry.parts.length > 0);
+        for (const part of geometry.parts) assert.equal(part.vertexLayout, 'pn-c10-f32le');
+    }
+    const result = await validateRuntime(bundle.files, bundle.paths);
     assert.equal(result.display_name, 'Ben 10 · Omnitrix');
+});
+
+test('mobile runtime rejects a referenced source mesh absent from its declared resource list', async () => {
+    const bundle = await actualSourceMeshRuntime();
+    const missing = bundle.watches.original.parts[0].file.replace(/^\.\//, '');
+    bundle.paths.delete(missing); delete bundle.files[missing];
+    await assert.rejects(validateRuntime(bundle.files, bundle.paths), /手表网格引用不在运行资源清单内/);
+});
+
+test('mobile runtime rejects a declared source mesh whose staged file is missing', async t => {
+    const bundle = await actualSourceMeshRuntime(), f = await fixture(t);
+    const file = bundle.watches.recalibrated.parts[0].file.replace(/^\.\//, '');
+    bundle.files[file] = path.join(f.root, 'missing-staged-mesh.f32');
+    await assert.rejects(validateRuntime(bundle.files, bundle.paths), { code: 'ENOENT' });
+});
+
+test('mobile runtime rejects same-length source mesh corruption even when its name and metadata remain valid', async () => {
+    const bundle = await actualSourceMeshRuntime();
+    const geometry = bundle.watches.ultimatrix, part = geometry.parts.at(-1), file = part.file.replace(/^\.\//, '');
+    const tampered = await fs.readFile(bundle.files[file]);
+    assert.equal(tampered.length, part.bytes); tampered[tampered.length - 1] ^= 1;
+    bundle.files[file] = tampered;
+    await assert.rejects(validateRuntime(bundle.files, bundle.paths), /手表网格文件校验失败/);
+});
+
+test('mobile runtime rejects an incomplete generation set and mismatched embedded mesh hash', async () => {
+    for (const [mutate, expected] of [
+        [watches => { delete watches.omniverse; }, /手表网格清单缺少表型/],
+        [watches => { watches.original.parts[0].sha256 = '0'.repeat(64); }, /手表网格引用不在运行资源清单内/],
+        [watches => { watches.original.parts[0].vertices++; }, /手表网格顶点格式无效/],
+    ]) {
+        const bundle = await actualSourceMeshRuntime(); mutate(bundle.watches);
+        bundle.files['preview.html'] = Buffer.from(bundle.html.replace(bundle.meshScript, `<script type="application/json" id="watch-mesh-data">${JSON.stringify(bundle.watches)}</script>`));
+        await assert.rejects(validateRuntime(bundle.files, bundle.paths), expected);
+    }
+});
+
+function sourceMeshBundle() {
+    const files = { ...runtime }, watches = {}, assets = [];
+    for (const [index, watch] of ['original', 'recalibrated', 'ultimatrix', 'omniverse'].entries()) {
+        const parts = ['body', 'core'].map((group, motion) => {
+            const data = Buffer.alloc(3 * 40);
+            for (let vertex = 0; vertex < 3; vertex++) {
+                const values = [index * .1 + (vertex === 2 ? .1 : 0), motion * .2, vertex === 1 ? .1 : 0, 0, 1, 0, .2, .5, .1, 1];
+                values.forEach((value, offset) => data.writeFloatLE(value, vertex * 40 + offset * 4));
+            }
+            const sha256 = createHash('sha256').update(data).digest('hex'), name = `assets/runtime/${sha256}.f32`;
+            files[name] = data; assets.push(name);
+            return { id: `${watch}-${group}`, group, file: `./${name}`, sha256, vertices: 3, bytes: data.length, vertexLayout: 'pn-c10-f32le' };
+        });
+        watches[watch] = { watch, parts, modelKind: 'source-mesh', sourceArchiveSha256: 'a'.repeat(64), face: { center: [0, .2, 0], radius: .1 }, lift: .3, bounds: { min: [0, 0, 0], max: [1, 1, 1] } };
+    }
+    files['preview.html'] = Buffer.from(`<!doctype html><main id="omni-app"></main><script type="application/json" id="watch-mesh-data">${JSON.stringify(watches)}</script>`);
+    return { files, assets };
+}
+
+test('mobile apply stages complete PNC10 source meshes before entry points and rejects missing meshes without target writes', async t => {
+    const f = await fixture(t), { files, assets } = sourceMeshBundle(), applied = [];
+    await fs.mkdir(f.target, { recursive: true });
+    await fs.writeFile(path.join(f.target, 'preview.html'), 'existing preview');
+    const incomplete = { ...files }; delete incomplete[assets[0]];
+    await assert.rejects(f.run({ apply: true, fetchImpl: remote({ files: incomplete }) }), /手表网格引用不在运行资源清单内/);
+    assert.deepEqual(await fs.readdir(f.target), ['preview.html']);
+    assert.equal(await fs.readFile(path.join(f.target, 'preview.html'), 'utf8'), 'existing preview');
+    await assert.rejects(fs.stat(path.join(f.root, '.ben10-omnitrix-backups')), { code: 'ENOENT' });
+    const result = await f.run({ apply: true, fetchImpl: remote({ files }), beforeReplace({ name }) { applied.push(name); } });
+    for (const file of assets) {
+        assert.deepEqual(await fs.readFile(path.join(f.target, file)), files[file]);
+        assert.ok(applied.indexOf(file) < applied.indexOf('preview.html'), 'mesh bytes arrive before referencing entry page');
+    }
+    assert.equal(result.mode, 'apply'); assert.equal(applied.at(-1), 'manifest.json');
 });
 
 test('runtime download returns disk paths and removes only its temporary staging on dispose or error', async t => {

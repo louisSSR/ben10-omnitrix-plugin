@@ -832,6 +832,30 @@
       }
     },
     {
+      "id": "reference-ampfibian",
+      "file": "portraits/reference-ampfibian.png",
+      "sha256": "228a3c28facbd3b90ffe4339dc2310edc42b99cd8ff6da4d5b4c5940b2406ce7",
+      "bytes": 800566,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4871082352941176,
+      "light": 0.8596572549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ampfibian-head-reference-original.png",
+        "referenceSha256": "9bd9ad2dc0e27c7bea2af9270f98c8dcd9acf7e0ac28ffe252abbafe5a468be2",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/01/ampfibian_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ampfibian-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P90 light, computed read-only"
+      }
+    },
+    {
       "id": "reference-arctiguana",
       "file": "portraits/reference-arctiguana.png",
       "sha256": "a20b08c7ab086079bf4d90f07d60d9036c2fd3b3349b5539be9a1bb95b3dc299",
@@ -947,6 +971,30 @@
       }
     },
     {
+      "id": "reference-chamalien",
+      "file": "portraits/reference-chamalien.png",
+      "sha256": "189d126bf97130d4064af40addbb5f421dd606134331cbffbd662ed913861068",
+      "bytes": 581437,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.09803921568627451,
+      "light": 0.8252660392156893,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/chamalien-head-reference-original.png",
+        "referenceSha256": "48887d234c4527b27e98df149320d6de945c9f6eb6b29e724704cc55f93b0f60",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/03/chamalien_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/chamalien-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 weighted RGB luminance; P20 dark and P90 light; computed read-only."
+      }
+    },
+    {
       "id": "reference-chromastone",
       "file": "portraits/reference-chromastone.png",
       "sha256": "6753ccaa6559c43de183790761039c498576dc85f70456f369bb6a5a85ddf6ae",
@@ -967,6 +1015,54 @@
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-clockwork",
+      "file": "portraits/reference-clockwork.png",
+      "sha256": "4d3bf0d4c72a966d323f36e70ff0f257e3c8215aa2b2a4d51626005c60a7daab",
+      "bytes": 564692,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4711388235294118,
+      "light": 0.8478925490196078,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/clockwork-head-reference-original.png",
+        "referenceSha256": "15e774dd9c1307c2c851babf03573da5d87655b9ec379e4a817c7d30a3538adf",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/03/clockwork_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/clockwork-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; Rec.709 normalized RGB luminance; P20 dark, median of opaque pixels with luminance>0.7 for light. Eyes/mouth occupy under 2% of opaque area, so even P98 measures base gray. Bright population checked against displayed eyes/mouth; P20/P90/P95/P98/P99 preserved separately. Read-only measurement, no pixel changes."
+      }
+    },
+    {
+      "id": "reference-eatle",
+      "file": "portraits/reference-eatle.png",
+      "sha256": "4b60be242406213bb651a5b41c4c6a18b76c7796c4958f725cd3e4827076958e",
+      "bytes": 467529,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3803921568627451,
+      "light": 0.7843137254901961,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/eatle-head-reference-original.png",
+        "referenceSha256": "0346f80cf797869ea02eef997d37d1db70a982320a1e79a836afbbbc3517eb5e",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/04/eatle_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/eatle-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 weighted RGB luminance; P20 dark and P90 light; computed read-only."
       }
     },
     {
@@ -993,6 +1089,54 @@
       }
     },
     {
+      "id": "reference-eye-guy",
+      "file": "portraits/reference-eye-guy.png",
+      "sha256": "4f6e0c3857f15116ee160d30b5865eb3cb407a5b1bd9dc8d490c97a50605f364",
+      "bytes": 745763,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.38122588235294114,
+      "light": 0.856852549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/eye-guy-head-reference-original.png",
+        "referenceSha256": "6c9946a77498dfc277ef42bd9637a213ecc38c3a297c6438cec92ed592527ea5",
+        "referenceUrl": "https://bogleech.com/cartoons/ben10-eyeguy.png",
+        "referencePageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/eye-guy-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P90 light, computed read-only"
+      }
+    },
+    {
+      "id": "reference-fasttrack",
+      "file": "portraits/reference-fasttrack.png",
+      "sha256": "ce725152984a822a8be1e95cc1c4e23976f27ec270cf3e80d5e58209525e22be",
+      "bytes": 608851,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.18795215686274508,
+      "light": 0.8478925490196078,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/fasttrack-head-reference-original.png",
+        "referenceSha256": "d1f5e53b7e77003ee3eed79e4247cb4252bb76433253904f50bb8c1d6370c370",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/01/fasttrack_official.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/fasttrack-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; Rec.709 normalized RGB luminance; P20 dark, P98 light. Bright eye region is about 4.09% of opaque area; P90 is base gray. P98 matches bright (>0.7) median; no pixel changes."
+      }
+    },
+    {
       "id": "reference-four-arms",
       "file": "portraits/reference-four-arms.png",
       "sha256": "6d23881b8b41984fd7c773729225b50be1616818dca201e60d60423365d5436e",
@@ -1013,6 +1157,30 @@
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA; slight gradients and low-alpha edge noise retained without pixel postprocessing."
+      }
+    },
+    {
+      "id": "reference-frankenstrike",
+      "file": "portraits/reference-frankenstrike.png",
+      "sha256": "eb222b2ef551ab910eacd60080f42d6b394151efaceb9da11ee9c459bac442db",
+      "bytes": 969132,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.14117647058823532,
+      "light": 0.8196078431372549,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/frankenstrike-head-reference-original.png",
+        "referenceSha256": "b1c0590d9043d2f0e4d5bd6fc2be4243e64bcff4dfe8c4bb8235e7196a9a4a8e",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/07/frankenstrike_os.png",
+        "referencePageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/frankenstrike-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P90 light, computed read-only"
       }
     },
     {
@@ -1097,6 +1265,30 @@
       }
     },
     {
+      "id": "reference-juryrigg",
+      "file": "portraits/reference-juryrigg.png",
+      "sha256": "28d9dba49b6a26e372f7e3e76b8155caf56558e69056d2d972e95e7917eaf8bb",
+      "bytes": 690067,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.43529411764705883,
+      "light": 0.8165199999999999,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/juryrigg-head-reference-original.png",
+        "referenceSha256": "6cfc2532c1f0b0ebecd8b277c833c146dada41157338f0499d69022c11223520",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/04/jury_rigg.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/juryrigg-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; Rec.709 normalized RGB luminance; P20 dark, median of opaque pixels with luminance>0.7 for light. Eyes/mouth occupy under 2% of opaque area, so even P98 measures base gray. Bright population checked against displayed eyes/mouth; P20/P90/P95/P98/P99 preserved separately. Read-only measurement, no pixel changes."
+      }
+    },
+    {
       "id": "reference-lodestar",
       "file": "portraits/reference-lodestar.png",
       "sha256": "73530abdbc778e3f0a34cf794b896279a34e2b4af621c767130873a1d361335d",
@@ -1166,6 +1358,30 @@
       }
     },
     {
+      "id": "reference-shocksquatch",
+      "file": "portraits/reference-shocksquatch.png",
+      "sha256": "385d61d3ea1659bf0df1032fc7fdc692c7e4fe8d9e3537ed13f614621f5c15ce",
+      "bytes": 788287,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.42044156862745097,
+      "light": 0.7786933333333332,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/shocksquatch-original.png",
+        "referenceSha256": "c9ac0d35b9713fda3f6c94255c1a18abcedde7825466861af6934c9d6fab5785",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/05/hu_997.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/shocksquatch-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 weighted RGB luminance; P20 dark and P90 light; computed read-only."
+      }
+    },
+    {
       "id": "reference-spidermonkey",
       "file": "portraits/reference-spidermonkey.png",
       "sha256": "e63ea807dd30cfea68625a1489c906c79e4010f29f075e2d394691751f64139d",
@@ -1189,6 +1405,54 @@
       }
     },
     {
+      "id": "reference-ultimate-aggregor-amalgam",
+      "file": "portraits/reference-ultimate-aggregor-amalgam.png",
+      "sha256": "0ef1e79c681d17ced61b15ac7933468161092146af1c0274dbb345a05e14ae5b",
+      "bytes": 879852,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3204517647058823,
+      "light": 0.8392156862745097,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-aggregor-amalgam-source-original.jpg",
+        "referenceSha256": "2b1dae54dd70114f96a7be37befc4a032d9e40598678e469fc387e4951bc8441",
+        "referenceUrl": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "referencePageUrl": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-aggregor-amalgam-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P90 light, computed read-only"
+      }
+    },
+    {
+      "id": "reference-upchuck-murk",
+      "file": "portraits/reference-upchuck-murk.png",
+      "sha256": "4a1b7cd7482e860a56e6aae7bde75e339f38a6ee72e1eaa0eb82efd9abc4bd0b",
+      "bytes": 858288,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.2672172549019608,
+      "light": 0.8627450980392157,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/upchuck-murk-head-reference-original.png",
+        "referenceSha256": "bc93c6fa4396acdd5997cf9831d00beb152d5731ed2e5aaf2847abfa74dd9568",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/08/upchuck.png",
+        "referencePageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/upchuck-murk-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance P20/P90 on alpha>=200"
+      }
+    },
+    {
       "id": "reference-upchuck-perk",
       "file": "portraits/reference-upchuck-perk.png",
       "sha256": "8b67a9cd4cec036f4f32118b0e0709e1f47d03c3be480b68dab97f9d2c2b3640",
@@ -1209,6 +1473,30 @@
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed."
+      }
+    },
+    {
+      "id": "reference-waterhazard",
+      "file": "portraits/reference-waterhazard.png",
+      "sha256": "222e1f5651481629d12b797e7848e6c0d64819d82f486faa6579c33ef8ebefbc",
+      "bytes": 1059440,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.17226588235294116,
+      "light": 0.8442541176470589,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/waterhazard-head-reference-original.png",
+        "referenceSha256": "2941f10a0ccd235a068665d52f2cd36c8e80f3c48f5af90abc45f9547503f039",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/01/waterguy.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/waterhazard-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P98 light, computed read-only"
       }
     },
     {
@@ -2195,6 +2483,235 @@
       ],
       "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
       "scope": "Only the three explicitly reviewed Skurd Humungousaur arm states; same OV host head. No AF, wearer or other variant propagation."
+    },
+    {
+      "formId": "frankenstrike",
+      "portraitId": "reference-frankenstrike",
+      "confirmed": true,
+      "reason": "实际查看OS Frankenstrike全身彩色源与生成图：侧扫不齐发梢、长鬓角、低眉窄眼、宽鼻和方下颌对应；未加入肩后发电柱、颈部硬件或APK候选的机械额板。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/07/frankenstrike_os.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/frankenstrike/",
+        "sha256": "b1c0590d9043d2f0e4d5bd6fc2be4243e64bcff4dfe8c4bb8235e7196a9a4a8e"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源图仅200×377且脸部较小，鼻孔、眼部瞳孔、颊部折面和耳廓由AI放大解释，不能作为官方新增细节。",
+        "原图侧姿转成近正面，头发比小源图更分束、更整齐，表情改为闭口严肃。",
+        "原生灰阶存在轻微渐变及alpha边缘；主体尺度大于提示约74%。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only frankenstrike; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "eye-guy",
+      "portraitId": "reference-eye-guy",
+      "confirmed": true,
+      "reason": "实际查看OS Eye Guy彩色参考与生成图：窄长无眼脸、小下弯口、两片巨耳和双尖顶清晰对应；没有把胸眼或肩眼搬进头像。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-eyeguy.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "6c9946a77498dfc277ef42bd9637a213ecc38c3a297c6438cec92ed592527ea5"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "参考略偏侧的脸和耳被对称化，两侧耳膜及尖角加宽，尖顶之间空隙更深。",
+        "面部和耳部内线变粗，保留原始口部上下短弧；没有凭角色名增添眼睛。",
+        "原色改为灰阶，耳膜稍带渐变；完全透明背景原样保留。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only eye-guy; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "upchuck-murk",
+      "portraitId": "reference-upchuck-murk",
+      "confirmed": true,
+      "reason": "实际查看AF Murk Upchuck彩色源与生成图：短宽头、狭长斜眼、浅色宽吻、深色锯齿侧纹及宽口块齿对应；没有采用Perk的高长黑眼头型。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/08/upchuck.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/upchuck/",
+        "sha256": "bc93c6fa4396acdd5997cf9831d00beb152d5731ed2e5aaf2847abfa74dd9568"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "Near-frontal symmetrical icon instead of the small three-quarter reference; cheek stripes, teeth and tongue simplified.",
+        "Large round ear-like stalks in the first draft were corrected with built-in imagegen to short angular rear nubs; forehead proportions remain interpreted.",
+        "Native grayscale gradients and antialiased alpha retained unchanged."
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only upchuck-murk; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "waterhazard",
+      "portraitId": "reference-waterhazard",
+      "confirmed": true,
+      "reason": "实际查看UA Waterhazard彩色源与生成图：拱形壳帽、额部纵向分区、双狭眼、中央尖面桥及下部封闭面甲对应，没有加入待定APK面罩栅格或躯干。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/01/waterguy.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/water-hazard/",
+        "sha256": "2941f10a0ccd235a068665d52f2cd36c8e80f3c48f5af90abc45f9547503f039"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "壳帽和内外两侧尖缘更长更展开，正面化后头形较宽；需要root确认没有把源图头周壳缘误读成多余结构。",
+        "源头部尺寸较小，面甲中部折面和额部结构经过图标化简化。",
+        "浅灰面甲替代源灰/红分色；含少量灰阶渐变和alpha软边。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only waterhazard; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ampfibian",
+      "portraitId": "reference-ampfibian",
+      "confirmed": true,
+      "reason": "实际查看UA Ampfibian彩色源与生成图：平滑圆顶水母式头罩、两只高窄杏仁眼、浅色分叉纹路和浅色下缘对应；没有身体触手、胸前标志、鼻或人形嘴。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/01/ampfibian_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/ampfibian/",
+        "sha256": "9bd9ad2dc0e27c7bea2af9270f98c8dcd9acf7e0ac28ffe252abbafe5a468be2"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "从全身图中的小头部独立为宽圆角菱形脸，左右下侧略加宽；原图侧姿变为对称正面。",
+        "细碎浅色纹路合并成更粗分叉，路径并非逐像素复刻；不作为额外解剖细节。",
+        "灰阶保留浅纹与深底的可换色对比，无独立闪电或发光特效。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ampfibian; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "fasttrack",
+      "portraitId": "reference-fasttrack",
+      "confirmed": true,
+      "reason": "实看 UA 彩色源与生成结果：保留双高尖耳、耳间圆头顶、双斜眼、短闭嘴和两侧颊毛，没有变成 XLR8 单冠头盔。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/01/fasttrack_official.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/fasttrack/",
+        "sha256": "d1f5e53b7e77003ee3eed79e4247cb4252bb76433253904f50bb8c1d6370c370"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头像整理为较对称正面，眼罩线条及下颌比例有 AI 图标化解释。",
+        "耳尖完整但顶部留白小于提示的14%，实际边界由alpha统计记录，未裁剪或缩放原像素。",
+        "有深灰眼罩与渐变，非严格两种RGB；所有生成字节保留。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only fasttrack; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "clockwork",
+      "portraitId": "reference-clockwork",
+      "confirmed": true,
+      "reason": "彩色 UA 源头部是躯干上方的小梯形组件，钥匙为实心半圆；生成保留半圆钥匙、短方柄、矩形暗面板和双方眼，不套用OV双孔钥匙。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/03/clockwork_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/clockwork/",
+        "sha256": "15e774dd9c1307c2c851babf03573da5d87655b9ec379e4a817c7d30a3538adf"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "钥匙与梯形头部为便于小图识别整理成正面；面板轮廓和比例是AI简化。",
+        "浅色方眼和短嘴仅占约0.9%不透明像素，P90/P98不能代表亮区，使用实际亮区中位数校准。",
+        "不含巨大桶形躯干/胸口钟面，输出不是完整身体。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only clockwork; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "chamalien",
+      "portraitId": "reference-chamalien",
+      "confirmed": true,
+      "reason": "参考与输出均有前额三块楔形眼区、圆弧蜥蜴头、细长后上突及闭合弧线嘴；三眼没有被误改成两眼或徽记。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/03/chamalien_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/chamalien/",
+        "sha256": "48887d234c4527b27e98df149320d6de945c9f6eb6b29e724704cc55f93b0f60"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源红绿蓝三眼统一为可配色浅灰，颜色差异不再区分；只保留三眼结构。",
+        "后上头刺比原图细线更粗、脸颊线条经AI补绘，保持侧向头形但不声称逐线复原。",
+        "输出带深灰眼区及少量过渡色，原生透明边缘未清理。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only chamalien; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "eatle",
+      "portraitId": "reference-eatle",
+      "confirmed": true,
+      "reason": "输出保留 UA 的长直单尖主角、底部斜眼和锯齿接缝的收窄大颚，没有采用OV叉角或球形下巴。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/04/eatle_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/eatle/",
+        "sha256": "0346f80cf797869ea02eef997d37d1db70a982320a1e79a836afbbbc3517eb5e"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "参考角尖触及源图上边界，生成只作必要尖端补全；完整角尖属于AI解释，不是已确认的原图全貌。",
+        "下颚和角部朝向略作图标化正面整理，外形与金属分面细节非逐像素还原。",
+        "上下留白小于提示14%但主体未碰画布边缘；具体alpha边界记录。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only eatle; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "juryrigg",
+      "portraitId": "reference-juryrigg",
+      "confirmed": true,
+      "reason": "输出保留 UA 裸露圆头、两侧高尖耳、下指长鼻、斜眼和严肃闭嘴；没有OV飞行帽或护目镜，也未带入源图彩边杂点。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/04/jury_rigg.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/jury-rigg/",
+        "sha256": "6cfc2532c1f0b0ebecd8b277c833c146dada41157338f0499d69022c11223520"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部小皱纹、顶端毛须和耳内线条经过AI图标化放大。",
+        "亮眼仅约1.39%不透明面积，P98仍落在底灰，使用亮区中位数作浅色基准。",
+        "灰度代替红色皮肤；轮廓完整，非官方独立头像。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only juryrigg; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "shocksquatch",
+      "portraitId": "reference-shocksquatch",
+      "confirmed": true,
+      "reason": "参考为Heroes United场景：白灰黑毛色、紧凑露出脸区、重眉和右侧圆形部件；生成沿用该头型，未套用黄黑OV版本，也没有把胸毛和胸徽并入头像。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/05/hu_997.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/shocksquatch/",
+        "sha256": "c9ac0d35b9713fda3f6c94255c1a18abcedde7825466861af6934c9d6fab5785"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "来源头部像素较少，毛束、眉线与口腔齿边属于放大后AI解释，生成冠毛更明显。",
+        "红粉脸部转换为深灰，白毛转换为浅灰；不能据灰度恢复原配色。",
+        "以源图的小头部单独绘制，隐藏侧细节未获官方模型验证。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only shocksquatch; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-aggregor-amalgam",
+      "portraitId": "reference-ultimate-aggregor-amalgam",
+      "confirmed": true,
+      "reason": "实际查看已确认官方视频1242秒头胸帧及生成图：四支成对上弯角、浅色宽方脸、下斜黑眼周、狭眼、紧闭下弯口、两束长前发与外展锯齿侧发对应。头部下颌下方和发束之间保持透明，没有胸甲、三槽领口或躯干。只绑定ultimate-aggregor-amalgam。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "pageUrl": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "sha256": "2b1dae54dd70114f96a7be37befc4a032d9e40598678e469fc387e4951bc8441"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "官方略仰视偏侧姿改成对称近正面；四角被加长加粗、成对间距更均匀，脸宽和鼻部折线有所概括。",
+        "原蓝角、蓝色发缘和面侧蓝纹转为中灰，白蓝发与浅蓝脸转浅灰，红眼转浅灰黑眼框；这是有意可换色重绘，不是保留原色。",
+        "官方长发几束的具体锯齿和色纹经过重新排列；左侧中下部发束可见小块状亮斑，属生成瑕疵而非官方细节，需root缩略图检查。",
+        "头发横向范围大于提示约74%，但所有发尖与角尖完整入画；未缩放、裁切或更改alpha。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-aggregor-amalgam; no automatic edition, wearer or mixed-form propagation."
     }
   ]
 }

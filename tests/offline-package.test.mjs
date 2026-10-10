@@ -8,10 +8,12 @@ import path from 'node:path';
 const root = new URL('../', import.meta.url);
 const read = name => readFileSync(new URL(name, root));
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
-test('offline manifest exactly covers entry files and all local image references', () => {
+test('offline manifest exactly covers entry files, images and source mesh resources', () => {
   const manifest = JSON.parse(read('runtime-manifest.json'));
   const html = read('preview.html').toString('utf8');
   const refs = [...html.matchAll(/(?:href|src)="\.\/(assets\/runtime\/[a-f0-9]{64}\.(?:png|avif|webp))"/g)].map(x => x[1]);
+  const meshData=JSON.parse(html.match(/<script type="application\/json" id="watch-mesh-data">([^<]+)<\/script>/)[1]);
+  refs.push(...Object.values(meshData).flatMap(geometry=>geometry.parts.map(part=>part.file.replace(/^\.\//,''))));
   const expected = new Set(['extension.js','host-adapter.js','extension.css','preview.html','manifest.json',...refs]);
   assert.equal(manifest.schemaVersion,1);assert.equal(manifest.files.length,expected.size);
   assert.deepEqual(new Set(manifest.files.map(x=>x.path)),expected);

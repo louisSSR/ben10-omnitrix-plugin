@@ -11,10 +11,11 @@ const watchViews = JSON.parse(read('assets/watches-v4/views.json'));
 if (watchViews.columns !== 4 || watchViews.rows !== 2 || watchViews.views?.length !== 4) throw new Error('Invalid watch view layout');
 const css = read('styles.css');
 const core = read('core.js').replace(/^export /gm, '');
-const model = read('watch-model.js').replace(/^export /gm, '');
+const meshModule = read('watch-meshes.js').replace(/^export /gm, '');
+const model = read('watch-model.js').replace(/^export /gm, '').replace(/^import[^\n]+\n/gm, '');
 const portraitModule = read('portrait-renderer.js').replace(/^export /gm, '');
 const code = read('app.js').replace(/^import[^\n]+\n/gm, '');
-const applicationCode = `(() => {\n'use strict';\n${core}\n${model}\n${portraitModule}\n${code}\n})();`;
+const applicationCode = `(() => {\n'use strict';\n${core}\n${meshModule}\n${model}\n${portraitModule}\n${code}\n})();`;
 new Script(applicationCode, { filename: 'preview-inline.js' });
 const svg = read('assets/silhouettes.svg');
 if (/<script\b|\bon\w+\s*=/i.test(svg) || /(?:href|src)=["']https?:/i.test(svg)) throw new Error('Unsafe image library');
@@ -60,6 +61,21 @@ const portraitRuntime = {
   assets: portraits.assets.map(({ id, width, height, dark, light }) => ({ id, width, height, dark, light })),
   bindings: portraits.bindings.map(({ formId, portraitId }) => ({ formId, portraitId })),
 };
+const meshRegistry = JSON.parse(read('assets/watch-meshes/registry.json'));
+if (meshRegistry.schemaVersion !== 1 || !meshRegistry.watches || Object.keys(meshRegistry.watches).length !== 4) throw new Error('Incomplete source mesh registry');
+for (const [watch, geometry] of Object.entries(meshRegistry.watches)) {
+  if (geometry.watch !== watch || geometry.modelKind !== 'source-mesh' || !/^[a-f0-9]{64}$/.test(geometry.sourceArchiveSha256)) throw new Error('Invalid source mesh identity');
+  for (const part of geometry.parts) {
+    const match = /^\.\/assets\/runtime\/([a-f0-9]{64})\.f32$/.exec(part.file || '');
+    if (!match || match[1] !== part.sha256 || !Number.isSafeInteger(part.vertices) || part.vertices <= 0 || part.vertices % 3) throw new Error('Invalid source mesh resource');
+    const target = path.join(root, part.file);
+    if (lstatSync(target).isSymbolicLink() || !lstatSync(target).isFile()) throw new Error('Unsafe mesh file');
+    const raw = readFileSync(target);
+    const stride = part.vertexLayout === 'pn-c10-f32le' ? 40 : part.vertexLayout === 'pn6-f32le' ? 24 : 0;
+    if (!stride || raw.length !== part.bytes || raw.length !== part.vertices * stride || hash(raw) !== part.sha256) throw new Error('Mesh bytes do not match registry');
+    storeImage(raw, 'f32');
+  }
+}
 let html = read('preview.shell.html');
 const replacements = {
   '/* APP_STYLES */': css,
@@ -68,6 +84,7 @@ const replacements = {
   '<!-- PORTRAIT_DATA -->': JSON.stringify(portraitRuntime).replace(/</g, '\\u003c'),
   '<!-- CATALOG_DATA -->': JSON.stringify(catalog).replace(/</g, '\\u003c'),
   '<!-- WATCH_VIEWS_DATA -->': JSON.stringify(watchViews).replace(/</g, '\\u003c'),
+  '<!-- WATCH_MESH_DATA -->': JSON.stringify(meshRegistry.watches).replace(/</g, '\\u003c'),
   '/* APP_CODE */': applicationCode,
 };
 for (const [key, value] of Object.entries(replacements)) {
@@ -107,7 +124,7 @@ for (const watch of ['original', 'recalibrated', 'ultimatrix', 'omniverse']) {
 writeFileSync(path.join(root, 'preview.html'), html);
 mkdirSync(path.join(root, 'docs'), { recursive: true });
 const receipt = { builtAt: new Date().toISOString(), sha256: createHash('sha256').update(html).digest('hex'), bytes: Buffer.byteLength(html), coverage: catalog.coverage, watchArt, watchAtlases, standalone: true, browserVerified: false, realHostVerified: false };
-receipt.watchModel = { renderer: 'local-webgl-geometry', source: 'watch-model.js', sha256: hash(Buffer.from(read('watch-model.js'))), generations: 4, sharedGeometryAcrossViews: true, artFallbackRetained: true, officialModel: false };
+receipt.watchModel = { renderer: 'local-webgl-source-mesh', source: 'watch-model.js', sha256: hash(Buffer.from(read('watch-model.js'))), loaderSha256: hash(Buffer.from(read('watch-meshes.js'))), registrySha256: hash(Buffer.from(read('assets/watch-meshes/registry.json'))), generations: 4, watches: Object.values(meshRegistry.watches).map(g => ({id:g.watch, triangles:g.triangles, sourceArchiveSha256:g.sourceArchiveSha256})), sharedGeometryAcrossViews: true, artFallbackRetained: true, officialModel: false };
 receipt.portraits = { assets: portraits.assets.length, bindings: portraits.bindings.length, pending: catalog.forms.length - portraits.bindings.length, sourceSha256: hash(Buffer.from(read('assets/portraits.json'))), sourceBytesPreserved: true, changesSelectionPool: false };
 const entryFiles = ['extension.js', 'host-adapter.js', 'extension.css', 'preview.html', 'manifest.json'];
 const files = [...entryFiles.map(file => {

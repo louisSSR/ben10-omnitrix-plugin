@@ -1,0 +1,341 @@
+{
+  "version": "0.6.4",
+  "date": "2026-10-10",
+  "previewSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+  "portraitRegistrySha256": "b17a4b65067a6cbe59ae9b50c767a59f6569ca6ad71a8d4d8ceff1e57d62edfd",
+  "runtimeManifestSha256": "af90640149cd32ef97a28f889fd1791370bbedb5d4d15826441591991b83297d",
+  "coverage": {
+    "total": 237,
+    "reviewed": 236,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 66,
+    "bindings": 72,
+    "pending": 165,
+    "sourceSha256": "b17a4b65067a6cbe59ae9b50c767a59f6569ca6ad71a8d4d8ceff1e57d62edfd",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 142,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "06b4e379d058ad3b25aa6fccb34c909c5424c9f6c3d2589ee61275af889279ca"
+  },
+  "packageReferenceChecks": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "sourceScriptSha256": "4f66fbcbddec5b837fdf2c34618bd7725a2d170f81a8cad428400521992f0d9a",
+    "receiptSha256": "eb28f36e10be4256e665496218ef24e5ed17a3a71dbdd1bce53eb2c501f93e41",
+    "method": "Reused round200 real fixture evidence after exact current packager hash verification; not rerun this round."
+  },
+  "screenshots": [
+    "screenshots/v064-desktop-ring-green.jpg",
+    "screenshots/v064-desktop-dial.jpg",
+    "screenshots/v064-desktop-projection.jpg",
+    "screenshots/v064-mobile375-projection.jpg",
+    "screenshots/v064-mobile375-dial.jpg",
+    "screenshots/v064-mobile375-ring-amber.jpg",
+    "screenshots/v064-mobile305-ring-rose.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v064-desktop-ring-green.jpg",
+      "sha256": "bfa98fa1d26821a30a650738ea864fe02d3d2773caa74e890053c969c820c3e1",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-desktop-dial.jpg",
+      "sha256": "3f99d2d27c37c70b8147fea5bcea197a6e3ef057ff78070754d38225b994be63",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-desktop-projection.jpg",
+      "sha256": "fb694d211ff01da4d6a87f0f2925018c552a4715211fe6dbb65996422995b14e",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-mobile375-projection.jpg",
+      "sha256": "3b86f271f011cf2ec4495f750583f0c4cc327f0a3f56defd10d38be93b54b7da",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-mobile375-dial.jpg",
+      "sha256": "b24d37680bdedea9161bbf294693963c133c72f7b5a859b6eecf21cec9426748",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-mobile375-ring-amber.jpg",
+      "sha256": "0bdfe6116bfab29522493ce99a6b1d8846e1528224eecb5faa75582547842322",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v064-mobile305-ring-rose.jpg",
+      "sha256": "c88ac3643864158f7397cf2707a3c400355387ba8fb1c3d0eb111167a5953915",
+      "captureBuildSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+      "actuallyViewed": true
+    }
+  ],
+  "checks": [
+    {
+      "clientWidth": 699,
+      "clip": {
+        "height": 540,
+        "width": 665.3333740234375,
+        "x": 16.666667938232422,
+        "y": 369.3333435058594
+      },
+      "id": "frankenstrike",
+      "label": "Frankenstrike",
+      "portrait": "reference-frankenstrike",
+      "scrollWidth": 699
+    },
+    {
+      "clientWidth": 699,
+      "clip": {
+        "height": 540,
+        "width": 665.3333740234375,
+        "x": 16.666667938232422,
+        "y": 369.3333435058594
+      },
+      "id": "eye-guy",
+      "label": "Eye Guy",
+      "portrait": "reference-eye-guy",
+      "scrollWidth": 699
+    },
+    {
+      "clientWidth": 699,
+      "clip": {
+        "height": 540,
+        "width": 665.3333740234375,
+        "x": 16.666667938232422,
+        "y": 369.3333435058594
+      },
+      "id": "upchuck-murk",
+      "label": "Murk Upchuck",
+      "portrait": "reference-upchuck-murk",
+      "scrollWidth": 699
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "waterhazard",
+      "label": "Waterhazard",
+      "portrait": "reference-waterhazard",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "ampfibian",
+      "label": "Ampfibian",
+      "portrait": "reference-ampfibian",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "fasttrack",
+      "label": "Fasttrack",
+      "portrait": "reference-fasttrack",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "clockwork",
+      "label": "Clockwork",
+      "portrait": "reference-clockwork",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "chamalien",
+      "label": "Chamalien",
+      "portrait": "reference-chamalien",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "eatle",
+      "label": "Eatle",
+      "portrait": "reference-eatle",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "juryrigg",
+      "label": "Juryrigg",
+      "portrait": "reference-juryrigg",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "shocksquatch",
+      "label": "Shocksquatch",
+      "portrait": "reference-shocksquatch",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "clip": {
+        "height": 540,
+        "width": 939.6666870117188,
+        "x": 269.66668701171875,
+        "y": 219.33334350585935
+      },
+      "id": "ultimate-aggregor-amalgam",
+      "label": "Ultimate Aggregor (Five-Alien Amalgam)",
+      "portrait": "reference-ultimate-aggregor-amalgam",
+      "scrollWidth": 1250
+    }
+  ],
+  "bodyChecks": [
+    {
+      "clientWidth": 1250,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "dial",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 1250,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "projection",
+      "scrollWidth": 1250
+    },
+    {
+      "clientWidth": 360,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "projection",
+      "scrollWidth": 360
+    },
+    {
+      "clientWidth": 360,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "dial",
+      "scrollWidth": 360
+    },
+    {
+      "clientWidth": 360,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "carousel",
+      "scrollWidth": 360
+    },
+    {
+      "clientWidth": 290,
+      "id": "ultimate-aggregor-amalgam",
+      "mode": "carousel",
+      "scrollWidth": 290
+    }
+  ],
+  "console": [],
+  "responsive": {
+    "viewportOverrides": [
+      {
+        "width": 1265,
+        "height": 900
+      },
+      {
+        "width": 375,
+        "height": 900
+      },
+      {
+        "width": 305,
+        "height": 900
+      }
+    ],
+    "measurements": [
+      {
+        "clientWidth": 1250,
+        "scrollWidth": 1250
+      },
+      {
+        "clientWidth": 1250,
+        "scrollWidth": 1250
+      },
+      {
+        "clientWidth": 360,
+        "scrollWidth": 360
+      },
+      {
+        "clientWidth": 360,
+        "scrollWidth": 360
+      },
+      {
+        "clientWidth": 360,
+        "scrollWidth": 360
+      },
+      {
+        "clientWidth": 290,
+        "scrollWidth": 290
+      }
+    ]
+  },
+  "all12HeadsActuallyViewedInUI": true,
+  "previousCatalogRecordsUnchanged": true,
+  "previousBodyResourcesUnchanged": true,
+  "previousPortraitResourcesUnchanged": true,
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "boundaries": [
+    "165 registered forms lack head portraits; Crabdozer lacks full-body art. Catalog still not exhaustive across all media.",
+    "Terraspin head generation was safety-blocked without output; not retried or rerouted. Prior Crabdozer, Nanomech and AF Big Chill blocked requests remain stopped.",
+    "All new graphics retain built-in imagegen native RGBA bytes with explicit reconstruction differences.",
+    "Ultimate Aggregor lower-body proportions and details use an attributed community reference plus AI interpretation; the inspected official frame only verifies upper-body design.",
+    "Omniverse upload is byte-identical to the existing seventh print-model archive; it remains in the independent model viewer, not an assembled production watch.",
+    "Viewport checks do not establish physical touch, SillyDroid installation or real SillyTavern acceptance."
+  ]
+}

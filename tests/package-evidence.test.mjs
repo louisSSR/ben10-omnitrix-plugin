@@ -26,6 +26,7 @@ function fixture(t) {
   });
   const files = ['extension.js', 'host-adapter.js', 'extension.css', 'preview.html', 'README.md', 'NOTICE.md',
     'assets/provenance.json', 'assets/dial-fit.json', 'assets/watches-v3/provenance.json', 'assets/watches-v3/prompts.json',
+    'assets/watch-meshes/registry.json', 'assets/watch-meshes/provenance.json', 'assets/watch-meshes/conversion-receipt.json',
     'assets/watches-v4/views.json', 'assets/watches-v4/original-generation.json', 'assets/watches-v4/recalibrated-generation.json',
     'assets/watches-v4/ultimatrix-generation.json', 'assets/watches-v4/omniverse-generation.json',
     'docs/host-contract.md', 'docs/review-v2.md', 'docs/browser-qa-v2.json', 'docs/dial-animation-reference.md',

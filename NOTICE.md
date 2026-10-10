@@ -1,5 +1,9 @@
 # 素材与署名
 
+0.6.5 四代手表使用用户提供的 3MF / STL 打印模型网格，由六个来源包组合装配；AF 与 Ultimatrix 独立表盘减面至约 14,000 三角。源作者、许可及官方发布链未确定。模型网格不是由本仓库重新授权的官方资源。材质、信号图形、归一化与零件运动含本插件编制，详情与逐部件哈希见 `assets/watch-meshes/provenance.json`。
+
+0.6.4 增加 12 张 imagegen 参考头像及 Ultimate Aggregor 混合形态全身剪影，保留原生输出字节。完整身体依据 SasakiToon 社区绘稿，头胸经动画画面核对；不是官方独立透明素材。来源及差异见 `assets/extra-art.json`、`assets/portraits.json` 和 `docs/review-v064.md`。
+
 0.6.3 新增 11 张内置 imagegen 参考重绘头像。原生 RGBA 字节未做后处理，源图、哈希、提示词与具体差异见 `assets/portraits.json` 和 `docs/review-v063.md`。Wildvine 保留头周捕蝇草叶片；Arctiguana 源于已登记的社区绘稿；Spidermonkey 的毛缘更蓬松；OV Humungousaur 依据三个 Skurd 状态动画帧重绘，未直接复用 AF 头型。所有头像均为界面图标化表达，不是官方独立透明头像。
 
 这是非官方 Ben 10 同人交互界面，与 Cartoon Network、Warner Bros. Discovery 或 Man of Action 无隶属关系。

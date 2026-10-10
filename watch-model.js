@@ -1,4 +1,6 @@
-/** Volumetric watch renderer. One solid mesh per generation, viewed by a moving camera.
+import { createWatchMeshLoader } from './watch-meshes.js';
+
+/** Volumetric watch renderer. Reviewed source meshes share the camera and motion of the fallback.
  * References establish the visible designs, not exact dimensions or hidden mechanisms.
  * Cuff interiors, the lift travel and OV lid-slide path are disclosed modelling interpretations.
  * Coordinates: x along the wrist, y up, z towards the front controls. No image atlases.
@@ -400,13 +402,14 @@ export function buildWatchGeometry(watchId='original') {
   return {watch,parts,face:{center:[cx,top+.021,0],radius:coreRadius-.052},lift,bounds:{min,max}};
 }
 
-export function watchPose(state={}) {
+export function watchPose(state={},geometry=null) {
   const watch=IDS.includes(state.watch)?state.watch:'original';
   const presets={top:[0,79],left:[-42,41],low:[-20,21],right:[43,40]};
   const dial=state.mode==='dial',view=presets[state.view]||presets.left;
   const raised=dial?0:clamp(typeof state.raised==='number'?state.raised:state.raised?1:0);
-  const lift={original:.32,recalibrated:.33,ultimatrix:.30,omniverse:.35}[watch];
-  return {watch,azimuth:(dial?0:view[0])*Math.PI/180,elevation:(dial?90:view[1])*Math.PI/180,distance:watch==='ultimatrix'?6.10:watch==='omniverse'?5.00:4.30,target:[watch==='ultimatrix'?.54:0,-.30,0],lift:raised*lift,lidSlide:watch==='omniverse'?(dial?.47:raised*.47):0,fov:38*Math.PI/180};
+  const lift=geometry?.watch===watch?geometry.lift:{original:.32,recalibrated:.33,ultimatrix:.30,omniverse:.35}[watch];
+  const sourceCamera=geometry?.watch===watch&&geometry.modelKind==='source-mesh'?geometry.camera:null;
+  return {watch,azimuth:(dial?0:view[0])*Math.PI/180,elevation:(dial?90:view[1])*Math.PI/180,distance:sourceCamera?.distance??(watch==='ultimatrix'?6.10:watch==='omniverse'?5.00:4.30),target:sourceCamera?[...sourceCamera.target]:[watch==='ultimatrix'?.54:0,-.30,0],lift:raised*lift,lidSlide:watch==='omniverse'?(dial?.47:raised*.47):0,fov:38*Math.PI/180};
 }
 function camera(pose,aspect=1) {
   const {azimuth:a,elevation:e,distance:d,target}=pose;
@@ -484,7 +487,7 @@ void main(){
 }`;
 
 /** Event-driven renderer: no idle animation loop; disposal releases all owned resources. */
-export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}) {
+export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{},loadGeometry}={}) {
   if(!canvas||typeof canvas.getContext!=='function')return null;
   let gl;
   try{gl=canvas.getContext('webgl',{alpha:true,antialias:true,premultipliedAlpha:false,depth:true,preserveDrawingBuffer:false});}catch{return null;}
@@ -502,18 +505,76 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
   const locations={position:gl.getAttribLocation(program,'aPosition'),normal:gl.getAttribLocation(program,'aNormal'),color:gl.getAttribLocation(program,'aColor'),matrix:gl.getUniformLocation(program,'uViewProjection'),offset:gl.getUniformLocation(program,'uOffset'),eye:gl.getUniformLocation(program,'uEye'),tint:gl.getUniformLocation(program,'uEnergyTint')};
   let state={watch:'original',view:'left',raised:false,reducedMotion:false,visible:true,mode:'projection'};
   let geometry=null,current=watchPose(state),transition=null;
+  let meshStatus='fallback',meshError='',meshRequest=0,meshController=null,ownsLoader=false;
+  if(loadGeometry===undefined){
+    const source=canvas.ownerDocument?.getElementById?.('watch-mesh-data');
+    if(source){
+      try{loadGeometry=createWatchMeshLoader({manifests:JSON.parse(source.textContent),baseUrl:source.baseURI||canvas.ownerDocument.baseURI});ownsLoader=true;}
+      catch{meshError='Invalid embedded mesh manifest';}
+    }
+  }
   let lastW=0,lastH=0;
   const now=()=>win.performance?.now?.()??Date.now();
   function releaseBuffers(){for(const b of buffers)gl.deleteBuffer(b.buffer);buffers=[];}
-  function upload(watch){
-    releaseBuffers();geometry=buildWatchGeometry(watch);
-    for(const group of ['body','core','lid-left','lid-right']){
-      const pieces=geometry.parts.filter(p=>p.group===group);if(!pieces.length)continue;
-      const count=pieces.reduce((n,p)=>n+p.positions.length/3,0),data=new Float32Array(count*10);let offset=0;
-      for(const p of pieces)for(let i=0;i<p.positions.length/3;i++){
-        data.set(p.positions.subarray(i*3,i*3+3),offset);data.set(p.normals.subarray(i*3,i*3+3),offset+3);data.set(p.colors.subarray(i*4,i*4+4),offset+6);offset+=10;
+  function upload(nextGeometry){
+    // Keep the currently drawable buffers until every replacement batch has uploaded.
+    const replacement=[];
+    try{
+      for(const group of ['body','core','lid-left','lid-right']){
+        const pieces=nextGeometry.parts.filter(p=>p.group===group);if(!pieces.length)continue;
+        const count=pieces.reduce((n,p)=>n+p.positions.length/3,0),data=new Float32Array(count*10);let offset=0;
+        for(const p of pieces)for(let i=0;i<p.positions.length/3;i++){
+          data.set(p.positions.subarray(i*3,i*3+3),offset);data.set(p.normals.subarray(i*3,i*3+3),offset+3);data.set(p.colors.subarray(i*4,i*4+4),offset+6);offset+=10;
+        }
+        const buffer=gl.createBuffer();if(!buffer)throw new Error('Watch mesh buffer allocation failed');
+        replacement.push({group,buffer,count});gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);
+        if(gl.getError?.())throw new Error('Watch mesh GPU upload failed');
       }
-      const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);buffers.push({group,buffer,count});
+    }catch(error){for(const b of replacement)gl.deleteBuffer(b.buffer);throw error;}
+    if(geometry?.watch===nextGeometry.watch&&geometry.lift>0&&geometry.lift!==nextGeometry.lift){
+      const ratio=nextGeometry.lift/geometry.lift;current.lift*=ratio;
+      if(transition){transition.from.lift*=ratio;transition.to.lift*=ratio;}
+    }
+    releaseBuffers();buffers=replacement;geometry=nextGeometry;
+  }
+  function sourceState(){
+    const sourceMesh=geometry?.modelKind==='source-mesh';
+    return {sourceMesh,meshStatus,meshError,modelKind:sourceMesh?'source-mesh':'procedural-fallback',sourceArchiveSha256:sourceMesh?geometry.sourceArchiveSha256:null};
+  }
+  function selectGeometry(watch){
+    const request=++meshRequest;meshController?.abort();meshController=null;meshError='';
+    const cached=loadGeometry?.peek?.(watch);
+    if(cached){
+      try{upload(cached);meshStatus='ready';return;}
+      catch(error){meshError=String(error?.message||'Cached watch mesh upload failed').slice(0,160);}
+    }
+    try{upload(buildWatchGeometry(watch));}
+    catch{dispose();onUnavailable('mesh-upload-failed');return;}
+    meshStatus=!cached&&typeof loadGeometry==='function'?'loading':'fallback';
+    if(cached||typeof loadGeometry!=='function')return;
+    meshController=new AbortController();const signal=meshController.signal;
+    Promise.resolve().then(()=>loadGeometry(watch,{signal})).then(nextGeometry=>{
+      if(disposed||signal.aborted||request!==meshRequest||state.watch!==watch)return;
+      if(nextGeometry){
+        if(nextGeometry.watch!==watch||nextGeometry.modelKind!=='source-mesh')throw new Error('Unexpected watch mesh identity');
+        upload(nextGeometry);meshStatus='ready';
+        const target=watchPose(state,geometry);
+        if(poseChanged(transition?.to||current,target)){
+          const time=now();sample(time);
+          if(state.reducedMotion||!state.visible){current=target;transition=null;}
+          else transition={from:{...current,target:[...current.target]},to:target,start:time,duration:440};
+        }
+      }else meshStatus='fallback';
+      meshController=null;requestDraw();
+    }).catch(error=>{
+      if(disposed||signal.aborted||request!==meshRequest)return;
+      meshController=null;meshStatus='fallback';meshError=String(error?.message||'Watch mesh load failed').slice(0,160);requestDraw();
+    });
+  }
+  function writeMeshState(){
+    if(canvas.dataset){
+      const status=sourceState();canvas.dataset.sourceMesh=String(status.sourceMesh);canvas.dataset.meshStatus=status.meshStatus;
+      canvas.dataset.modelKind=status.modelKind;canvas.dataset.sourceArchiveSha256=status.sourceArchiveSha256||'';
     }
   }
   function sample(time){
@@ -524,6 +585,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
     if(t>=1)transition=null;
     return current;
   }
+  function poseChanged(a,b){return a.watch!==b.watch||['azimuth','elevation','distance','lift','lidSlide','fov'].some(k=>Math.abs(a[k]-b[k])>1e-7)||a.target.some((v,i)=>Math.abs(v-b.target[i])>1e-7);}
   function requestDraw(){if(!disposed&&state.visible&&!frame)frame=raf(draw);}
   function draw(time){
     frame=0;if(disposed||!state.visible)return;sample(time);
@@ -542,7 +604,8 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
       const offset=b.group==='core'?[0,current.lift,0]:b.group==='lid-left'?[-current.lidSlide,0,0]:b.group==='lid-right'?[current.lidSlide,0,0]:[0,0,0];
       gl.uniform3fv(locations.offset,offset);gl.drawArrays(gl.TRIANGLES,0,b.count);
     }
-    onFrame({...projectWatchFace(geometry,current,aspect),watch:state.watch,coreLift:current.lift,transitioning:!!transition,vertexCount:buffers.reduce((n,b)=>n+b.count,0)});
+    writeMeshState();
+    onFrame({...projectWatchFace(geometry,current,aspect),watch:state.watch,coreLift:current.lift,transitioning:!!transition,vertexCount:buffers.reduce((n,b)=>n+b.count,0),...sourceState()});
     if(transition)requestDraw();
   }
   function setState(next={}){
@@ -550,15 +613,16 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{}}={}
     const time=now();sample(time);
     const previous=state;state={...state,...next};state.watch=IDS.includes(state.watch)?state.watch:'original';
     if(!['top','left','low','right'].includes(state.view))state.view='left';
-    if(!geometry||geometry.watch!==state.watch)upload(state.watch);
-    const target=watchPose(state);
-    const changed=['azimuth','elevation','distance','lift','lidSlide','fov'].some(k=>Math.abs(current[k]-target[k])>1e-7)||current.watch!==target.watch;
+    if(!geometry||geometry.watch!==state.watch)selectGeometry(state.watch);
+    if(disposed)return;
+    const target=watchPose(state,geometry);
+    const changed=poseChanged(current,target);
     if(state.reducedMotion||!previous.visible){current=target;transition=null;}
     else if(changed)transition={from:{...current,target:[...current.target]},to:target,start:time,duration:440};
     if(!state.visible){if(frame)cancel(frame);frame=0;current=target;transition=null;return;}
     requestDraw();
   }
-  function dispose(){if(disposed)return;disposed=true;if(frame)cancel(frame);frame=0;resizeObserver?.disconnect();canvas.removeEventListener?.('webglcontextlost',contextLost);win.removeEventListener?.('resize',requestDraw);releaseBuffers();if(program)gl.deleteProgram(program);program=null;transition=null;}
+  function dispose(){if(disposed)return;disposed=true;++meshRequest;meshController?.abort();meshController=null;if(ownsLoader)loadGeometry.dispose();if(frame)cancel(frame);frame=0;resizeObserver?.disconnect();canvas.removeEventListener?.('webglcontextlost',contextLost);win.removeEventListener?.('resize',requestDraw);releaseBuffers();if(program)gl.deleteProgram(program);program=null;transition=null;}
   function contextLost(event){event.preventDefault?.();dispose();onUnavailable('context-lost');}
   canvas.addEventListener?.('webglcontextlost',contextLost,false);
   if(typeof win.ResizeObserver==='function'){resizeObserver=new win.ResizeObserver(requestDraw);resizeObserver.observe(canvas);}

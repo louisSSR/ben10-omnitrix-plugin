@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-10-10T04:14:51.831Z",
-  "sha256": "e524772d52be2d97c66ad94ba00a20a4b3a3d99d3d2455dc99f529011a9495fb",
-  "bytes": 415386,
+  "builtAt": "2026-10-10T06:11:51.749Z",
+  "sha256": "2bad7c38a207f0427c9a84e7ef92b668b3a6ed7f49629a39695234c295b5e8d3",
+  "bytes": 446593,
   "coverage": {
-    "total": 236,
-    "reviewed": 235,
+    "total": 237,
+    "reviewed": 236,
     "missing": 1
   },
   "watchArt": [
@@ -79,25 +79,49 @@
   "browserVerified": false,
   "realHostVerified": false,
   "watchModel": {
-    "renderer": "local-webgl-geometry",
+    "renderer": "local-webgl-source-mesh",
     "source": "watch-model.js",
-    "sha256": "b574f7db9c5d1c4fa2c01ae2de5c69d9fb4280c810d6d55e5342948cda729125",
+    "sha256": "6aa86bcfee56a3e168ae4361b5c41a6eb7cc4edbbd7db3551c68322be591b1d6",
+    "loaderSha256": "a95a3ecb74b7ec9bcc5866892594b86e16df20ae9e295e8d93ed750b6d2ec538",
+    "registrySha256": "70b2063614536e90411bdaf8c3610c6316ea612bb5ba1a4a456900376fbb4e38",
     "generations": 4,
+    "watches": [
+      {
+        "id": "original",
+        "triangles": 22040,
+        "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458"
+      },
+      {
+        "id": "recalibrated",
+        "triangles": 32430,
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448"
+      },
+      {
+        "id": "ultimatrix",
+        "triangles": 23548,
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52"
+      },
+      {
+        "id": "omniverse",
+        "triangles": 19016,
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c"
+      }
+    ],
     "sharedGeometryAcrossViews": true,
     "artFallbackRetained": true,
     "officialModel": false
   },
   "portraits": {
-    "assets": 54,
-    "bindings": 60,
-    "pending": 176,
-    "sourceSha256": "ca8ffcb140663c98b3eeaad28715ca6392b96732ad825b01688905fb339f281b",
+    "assets": 66,
+    "bindings": 72,
+    "pending": 165,
+    "sourceSha256": "b17a4b65067a6cbe59ae9b50c767a59f6569ca6ad71a8d4d8ceff1e57d62edfd",
     "sourceBytesPreserved": true,
     "changesSelectionPool": false
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 302,
-  "runtimeBytes": 128889742,
-  "runtimeManifestSha256": "1661e086c517304c7a61d97af41fb6535d28729246ddb5477da4b79d7e9e128d"
+  "runtimeFiles": 344,
+  "runtimeBytes": 151255889,
+  "runtimeManifestSha256": "ef3953db8889ab23437c938fa69942c2d80af19d3f9e728295bf2401a55ef4a9"
 }

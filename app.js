@@ -588,6 +588,14 @@ resize.observe($('stage'));
 watchModel = createWatchModel($('watch-model'), {
   onFrame(anchor) {
     if (lifetime.signal.aborted || app.dataset.watchArt !== 'model') return;
+    if (anchor.meshStatus) {
+      app.dataset.watchMesh = anchor.meshStatus;
+      const status = $('watch-view-status');
+      if (status) {
+        status.textContent = anchor.meshStatus === 'loading' ? '正在加载手表模型…' : anchor.meshStatus === 'fallback' ? '手表模型未能加载，暂用简化表身' : '';
+        status.hidden = anchor.meshStatus === 'ready';
+      }
+    }
     placeModelFace(anchor);
     if (preferences.mode === 'carousel') positionRing(ringRotation);
     else alignProjection();

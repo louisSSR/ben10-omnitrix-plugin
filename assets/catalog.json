@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 236,
-    "reviewed": 235,
+    "total": 237,
+    "reviewed": 236,
     "missing": 1
   },
   "forms": [
@@ -5979,6 +5979,33 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.46224,
         "visiblePixels": 342791
+      }
+    },
+    {
+      "id": "ultimate-aggregor-amalgam",
+      "name": null,
+      "en": "Ultimate Aggregor (Five-Alien Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Ultimate Alien, Ultimate Aggregor. Aggregor absorbs the five captive aliens and assumes their combined body, retaining his identity. An alien-DNA amalgam state, distinct from ordinary Aggregor and Ultimate Kevin; not an Ultimatrix simulated-evolution form or a separate species.",
+      "aliases": [
+        "Ultimate Aggregor"
+      ],
+      "sourceUrls": [
+        "https://dwaynemcduffie.com/wp-content/uploads/2024/07/WEBSITE-B10UA-ep110-Ultimate-Aggregor-SCRIPT-AS-RECORDED.pdf",
+        "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "https://www.deviantart.com/sasakitoon/art/Ben-10-Ultimate-Alien-Ultimate-Aggregor-993777495"
+      ],
+      "asset": "alien-ultimate-aggregor-amalgam",
+      "visualSourceUrls": [
+        "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s"
+      ],
+      "artSourceLabel": "AI reference edit; not official original",
+      "artProvenance": "AI transparent full-body reference reconstruction. The directly inspected official Ben 10 video screenshot at 1242.964 seconds establishes the horns, face, blue-white hair, red collar vents, radial chest armor and visible upper arms only. Full-body proportions, lower torso, detailed forearms and claws, legs and feet rely on SasakiToon's attributed community redraw and AI interpretation; these areas and the completed full-body pose are not independently verified by the cropped official frame. The output is not official complete artwork, a native transparent original or exact recovered source pixels.",
+      "dialFit": {
+        "scale": 0.5825,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.49349,
+        "visiblePixels": 826382
       }
     }
   ]

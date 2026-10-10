@@ -13,7 +13,7 @@ for (const watch of ['original','recalibrated','ultimatrix','omniverse']) files.
 if (runtime.schemaVersion !== 1 || !Array.isArray(runtime.files)) throw new Error('Invalid runtime manifest');
 files.push('runtime-manifest.json');
 for (const entry of runtime.files) {
-  if (!/^(?:extension\.js|host-adapter\.js|extension\.css|preview\.html|manifest\.json|assets\/runtime\/[a-f0-9]{64}\.(?:png|avif|webp))$/.test(entry.path)) throw new Error('Unsafe runtime path');
+  if (!/^(?:extension\.js|host-adapter\.js|extension\.css|preview\.html|manifest\.json|assets\/runtime\/[a-f0-9]{64}\.(?:png|avif|webp|f32))$/.test(entry.path)) throw new Error('Unsafe runtime path');
   const raw = readFileSync(path.join(root, entry.path));
   if (raw.length !== entry.bytes || createHash('sha256').update(raw).digest('hex') !== entry.sha256) throw new Error(`Stale runtime file: ${entry.path}`);
   if (!files.includes(entry.path)) files.push(entry.path);
@@ -60,6 +60,7 @@ if (existsSync(path.join(root, 'assets/portraits.json'))) {
 }
 if (existsSync(path.join(root, 'docs/catalog-scope.md'))) files.push('docs/catalog-scope.md');
 if (existsSync(path.join(root, 'docs/watch-model.md'))) files.push('docs/watch-model.md');
+files.push('assets/watch-meshes/registry.json','assets/watch-meshes/provenance.json','assets/watch-meshes/conversion-receipt.json');
 const reviewKey = version.replaceAll('.', '');
 files.push('assets/extra-art.json', 'docs/build-receipt.json', `docs/review-v${reviewKey}.md`, `docs/browser-qa-v${reviewKey}.json`);
 if (existsSync(path.join(root, `docs/asset-migration-v${reviewKey}.json`))) files.push(`docs/asset-migration-v${reviewKey}.json`);

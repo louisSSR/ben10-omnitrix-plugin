@@ -1,0 +1,1127 @@
+{
+  "parts": [
+    {
+      "watch": "original",
+      "id": "source-classic-cuff",
+      "trianglesBefore": 20256,
+      "triangles": 20256,
+      "file": "assets/runtime/ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82.f32",
+      "sha256": "ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82",
+      "bounds": {
+        "min": [
+          -0.7113333315,
+          -0.7641983438762354,
+          -0.6078666651
+        ],
+        "max": [
+          0.646666665,
+          0.343307816802896,
+          0.6078666651
+        ]
+      },
+      "sourceObject": "model-3-object-2",
+      "transforms": "Declared source component transform; x=-(sy+2.5)*.0129333, y=sz*.0129333+shift, z=-sx*.0129333."
+    },
+    {
+      "watch": "original",
+      "id": "source-classic-face",
+      "trianglesBefore": 1508,
+      "triangles": 1508,
+      "file": "assets/runtime/f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04.f32",
+      "sha256": "f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04",
+      "bounds": {
+        "min": [
+          -0.4138666656,
+          0.3002133236759491,
+          -0.4138666656
+        ],
+        "max": [
+          0.4138666656,
+          0.36100000005329935,
+          0.4138666656
+        ]
+      },
+      "sourceObject": "model-2-object-1"
+    },
+    {
+      "watch": "original",
+      "id": "authored-hidden-lift-shaft",
+      "trianglesBefore": 256,
+      "triangles": 256,
+      "file": "assets/runtime/817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15.f32",
+      "sha256": "817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15",
+      "bounds": {
+        "min": [
+          -0.365,
+          -0.18,
+          -0.365
+        ],
+        "max": [
+          0.365,
+          0.327,
+          0.365
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Keep a physical shaft seated while the source face lifts; source does not provide rigging."
+    },
+    {
+      "watch": "recalibrated",
+      "id": "source-af-case-and-strap",
+      "trianglesBefore": 18158,
+      "triangles": 18158,
+      "file": "assets/runtime/bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691.f32",
+      "sha256": "bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691",
+      "bounds": {
+        "min": [
+          -0.6767048864051765,
+          -1.0220244672,
+          -0.5464274754
+        ],
+        "max": [
+          0.6767048880948235,
+          0.341,
+          0.5464274754
+        ]
+      },
+      "sourceObject": "1",
+      "sourceTrianglesRetained": true,
+      "transforms": "Declared non-print component positions; x=-sy*.0205,y=sz*.0205+shift,z=-sx*.0205."
+    },
+    {
+      "watch": "recalibrated",
+      "id": "source-af-face",
+      "trianglesBefore": 89632,
+      "triangles": 13996,
+      "file": "assets/runtime/73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014.f32",
+      "sha256": "73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014",
+      "bounds": {
+        "min": [
+          -0.38779903079414113,
+          0.1651062341916882,
+          -0.3879325323546377
+        ],
+        "max": [
+          0.3877781677246094,
+          0.3310002025821061,
+          0.3879306605645872
+        ]
+      },
+      "sourceObject": "part-4",
+      "sourceArchiveSha256": "ffb8e6072e234a5337af48dc1ac65749f9a6ec6b29c7bcdd5e906c9da0dd8622",
+      "sourceSha256": "62225d197cb209571ca83187bb05532200404f74a70836159144f3fbfa4f4428",
+      "simplification": "QEM target 14000; boundaries inspected after rendering."
+    },
+    {
+      "watch": "recalibrated",
+      "id": "authored-hidden-lift-shaft",
+      "trianglesBefore": 256,
+      "triangles": 256,
+      "file": "assets/runtime/77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871.f32",
+      "sha256": "77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871",
+      "bounds": {
+        "min": [
+          -0.362,
+          -0.22,
+          -0.362
+        ],
+        "max": [
+          0.362,
+          0.289,
+          0.362
+        ]
+      },
+      "authoredSupplement": true
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "source-ultimate-cuff",
+      "trianglesBefore": 4928,
+      "triangles": 4928,
+      "file": "assets/runtime/5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c.f32",
+      "sha256": "5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c",
+      "bounds": {
+        "min": [
+          -1.4617920019148558,
+          -1.213157236328125,
+          -0.740938080078125
+        ],
+        "max": [
+          1.30047801953125,
+          0.330677236328125,
+          0.744902740234375
+        ]
+      },
+      "sourceObject": "part-1",
+      "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+      "transforms": "x=(sz-125.112)*.016+.54,y=-(sy-79.735)*.016+.331,z=(sx-128.316)*.016",
+      "rigging": "Entire supplied main body remains stationary, including original front relief; supplied separate face from another Ultimatrix archive supplies movable core."
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "source-ultimate-side-fittings",
+      "trianglesBefore": 4346,
+      "triangles": 4346,
+      "file": "assets/runtime/c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36.f32",
+      "sha256": "c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36",
+      "bounds": {
+        "min": [
+          -1.0403305131835936,
+          -0.71465748046875,
+          -0.7550147402343751
+        ],
+        "max": [
+          -0.028909187499999933,
+          -0.02110108398437499,
+          0.74409683203125
+        ]
+      },
+      "sourceObject": "part-1",
+      "sourceTriangleRange": [
+        4928,
+        9274
+      ],
+      "sourceComponents": "Three disconnected side fittings; topology retained."
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "source-ultimate-independent-face",
+      "trianglesBefore": 89632,
+      "triangles": 13998,
+      "file": "assets/runtime/f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02.f32",
+      "sha256": "f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02",
+      "bounds": {
+        "min": [
+          0.06947049176086675,
+          0.12893432617460052,
+          -0.4704205322265625
+        ],
+        "max": [
+          1.0104875456600986,
+          0.33100023714820875,
+          0.4704205322265625
+        ]
+      },
+      "sourceObject": "obj_3_FACE",
+      "sourceArchiveSha256": "39fe4625e6c222b133b995639b99b42a1a6bb17762375764bd1bf0dc4c49d71a",
+      "sourceSha256": "c4b5585241166651fb2bb1b112921f21c6c9f7b52d8b8d84a991d168ce0c680d",
+      "simplification": "QEM target 14000; separate print face fitted to measured main source circle."
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "authored-hidden-lift-shaft",
+      "trianglesBefore": 256,
+      "triangles": 256,
+      "file": "assets/runtime/fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48.f32",
+      "sha256": "fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48",
+      "bounds": {
+        "min": [
+          0.07200000000000001,
+          -0.26,
+          -0.468
+        ],
+        "max": [
+          1.008,
+          0.224,
+          0.468
+        ]
+      },
+      "authoredSupplement": true
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-silver-face-ring",
+      "trianglesBefore": 1390,
+      "triangles": 1388,
+      "file": "assets/runtime/be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797.f32",
+      "sha256": "be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797",
+      "bounds": {
+        "min": [
+          -0.371925411767578,
+          0.29019246000902343,
+          -0.37196695273437513
+        ],
+        "max": [
+          0.3719254488281251,
+          0.32056919950195306,
+          0.371966915673828
+        ]
+      },
+      "sourceObject": "part-1",
+      "sourceSha256": "06e9fdde133203e9668ef3c1b2007eef3e0b43c79ea32c8210ca83f813285ed5",
+      "sourceRole": "silver-face-ring",
+      "normalization": {
+        "sourceCenter": [
+          127.99998092651367,
+          127.99998092651367,
+          0.7594184877744141
+        ],
+        "rotationRowMajor3x3": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          9.26513678223273e-07,
+          9.26513678223273e-07,
+          14.784018487774414
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-middle-case",
+      "trianglesBefore": 2492,
+      "triangles": 2492,
+      "file": "assets/runtime/4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4.f32",
+      "sha256": "4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4",
+      "bounds": {
+        "min": [
+          -0.6499831152343746,
+          0.06970045993674312,
+          -0.5000000044726562
+        ],
+        "max": [
+          0.5937790917968755,
+          0.20970044092651363,
+          0.4999999955273438
+        ]
+      },
+      "sourceObject": "part-2",
+      "sourceSha256": "485860ae389f66d470f1f308a7157866a90fe35c1ad0575b6ebaef486f54c3af",
+      "sourceRole": "middle-case",
+      "normalization": {
+        "sourceCenter": [
+          774.4468994140625,
+          158.4999542236328,
+          3.4999995215814206
+        ],
+        "rotationRowMajor3x3": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -1.4051005859374754,
+          2.2363281004800228e-07,
+          6.499999521581421
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-cylindrical-face-core",
+      "trianglesBefore": 2498,
+      "triangles": 2496,
+      "file": "assets/runtime/3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533.f32",
+      "sha256": "3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533",
+      "bounds": {
+        "min": [
+          -0.39312256480468705,
+          0.07070046002624507,
+          -0.39312240824218747
+        ],
+        "max": [
+          0.39312255238281296,
+          0.3205999999475097,
+          0.3931224037695313
+        ]
+      },
+      "sourceObject": "part-3",
+      "sourceSha256": "8ce637ba30b3f8957604c384c5642a46cb87551d4d2c98d17bfe744bd625a6c4",
+      "sourceRole": "cylindrical-face-core",
+      "normalization": {
+        "sourceCenter": [
+          435.1999816894531,
+          127.9999771118164,
+          6.247488499343872
+        ],
+        "rotationRowMajor3x3": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -3.105468522335286e-07,
+          1.1181640502400114e-07,
+          9.29748849934387
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-bottom-case-with-post",
+      "trianglesBefore": 3422,
+      "triangles": 3415,
+      "file": "assets/runtime/98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61.f32",
+      "sha256": "98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61",
+      "bounds": {
+        "min": [
+          -0.7171894335937509,
+          0.009700459959081996,
+          -0.4999999990527343
+        ],
+        "max": [
+          0.6565508007812492,
+          0.21087290720458982,
+          0.5000000009472657
+        ]
+      },
+      "sourceObject": "part-6",
+      "sourceSha256": "19d0f63ee5bb5c703a28d6d0972b34ed021b1f1b8c1989b22464d79b8d59d4f0",
+      "sourceRole": "bottom-case-with-post",
+      "normalization": {
+        "sourceCenter": [
+          797.0350341796875,
+          99.51836395263672,
+          5.029311179091797
+        ],
+        "rotationRowMajor3x3": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -1.5159658203125446,
+          -4.736328662602318e-08,
+          5.029311179091797
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "derived-ov-cover-lid-left",
+      "trianglesBefore": 2413,
+      "triangles": 2413,
+      "file": "assets/runtime/ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f.f32",
+      "sha256": "ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f",
+      "bounds": {
+        "min": [
+          -0.7574746801757811,
+          0.3357004599343255,
+          -0.4133944213867187
+        ],
+        "max": [
+          0.0,
+          0.4227270560693359,
+          0.41384556884765633
+        ]
+      },
+      "sourceObject": "part-7",
+      "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
+      "sourceRole": "single-cover",
+      "normalization": {
+        "sourceCenter": [
+          148.20127868652344,
+          -199.19998931884766,
+          2.1756649000915376
+        ],
+        "rotationRowMajor3x3": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -6.436989318847651,
+          -0.011278686523439774,
+          18.475664900091537
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      },
+      "derivedSplit": true,
+      "reason": "Single supplied cover split on production x=0 for authored two-panel interaction."
+    },
+    {
+      "watch": "omniverse",
+      "id": "derived-ov-cover-lid-right",
+      "trianglesBefore": 605,
+      "triangles": 605,
+      "file": "assets/runtime/073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c.f32",
+      "sha256": "073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c",
+      "bounds": {
+        "min": [
+          0.0,
+          0.33625945135677565,
+          -0.41323217606710366
+        ],
+        "max": [
+          0.49999510742187514,
+          0.3987067275476074,
+          0.41372391522083524
+        ]
+      },
+      "sourceObject": "part-7",
+      "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
+      "sourceRole": "single-cover",
+      "normalization": {
+        "sourceCenter": [
+          148.20127868652344,
+          -199.19998931884766,
+          2.1756649000915376
+        ],
+        "rotationRowMajor3x3": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -6.436989318847651,
+          -0.011278686523439774,
+          18.475664900091537
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      },
+      "derivedSplit": true,
+      "reason": "Single supplied cover split on production x=0 for authored two-panel interaction."
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-upper-case",
+      "trianglesBefore": 2654,
+      "triangles": 2649,
+      "file": "assets/runtime/89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936.f32",
+      "sha256": "89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936",
+      "bounds": {
+        "min": [
+          -0.6500004296874999,
+          0.20970046006325682,
+          -0.500000005996094
+        ],
+        "max": [
+          0.59376177734375,
+          0.3297004790734863,
+          0.4999999940039061
+        ]
+      },
+      "sourceObject": "part-8",
+      "sourceSha256": "03454670edc926c1d78a68c5e7e2fced8c3a4d5acfb02b3839fadd2e97018fcb",
+      "sourceRole": "upper-case",
+      "normalization": {
+        "sourceCenter": [
+          710.3529663085938,
+          131.5181427001953,
+          3.0000004784185794
+        ],
+        "rotationRowMajor3x3": [
+          [
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          -1.4059663085937473,
+          2.9980469662405085e-07,
+          13.00000047841858
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "source-ov-curved-cuff",
+      "trianglesBefore": 3270,
+      "triangles": 3270,
+      "file": "assets/runtime/093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f.f32",
+      "sha256": "093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f",
+      "bounds": {
+        "min": [
+          -0.6551400756835938,
+          -0.9120198305273437,
+          -0.24622051247303042
+        ],
+        "max": [
+          0.6551400756835938,
+          0.00970075052734373,
+          0.24622051247303042
+        ]
+      },
+      "sourceObject": "part-9",
+      "sourceSha256": "a5d7f6d3de3e0dc008c5743efb2229ee9d19efae016ff87fd34bbf02551b64da",
+      "sourceRole": "curved-cuff",
+      "normalization": {
+        "sourceCenter": [
+          404.8477325439453,
+          -176.18064880371094,
+          12.311025615362151
+        ],
+        "rotationRowMajor3x3": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        "translationAfterCenterRotation": [
+          0.0,
+          0.0,
+          -23.043
+        ],
+        "common": {
+          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
+          "commonZupToYupRowMajor3x3": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              -1,
+              0
+            ]
+          ],
+          "scale": 0.02,
+          "productionOffset": [
+            0,
+            0.009700459999999966,
+            0
+          ],
+          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
+          "sourceUnits": "STL unspecified; preserve geometric proportions",
+          "originalGeometryUnchanged": true
+        }
+      }
+    },
+    {
+      "watch": "omniverse",
+      "id": "authored-hidden-lift-shaft",
+      "trianglesBefore": 256,
+      "triangles": 256,
+      "file": "assets/runtime/d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5.f32",
+      "sha256": "d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5",
+      "bounds": {
+        "min": [
+          -0.276,
+          -0.33,
+          -0.276
+        ],
+        "max": [
+          0.276,
+          0.3,
+          0.276
+        ]
+      },
+      "authoredSupplement": true
+    },
+    {
+      "watch": "omniverse",
+      "id": "authored-cover-signal-lid-left",
+      "trianglesBefore": 6,
+      "triangles": 6,
+      "file": "assets/runtime/8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25.f32",
+      "sha256": "8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25",
+      "bounds": {
+        "min": [
+          -0.195,
+          0.427,
+          -0.2
+        ],
+        "max": [
+          0.0,
+          0.427,
+          0.2
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Split recolorable hourglass placed on the supplied cover; follows authored cover motion."
+    },
+    {
+      "watch": "omniverse",
+      "id": "authored-cover-signal-lid-right",
+      "trianglesBefore": 6,
+      "triangles": 6,
+      "file": "assets/runtime/a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f.f32",
+      "sha256": "a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f",
+      "bounds": {
+        "min": [
+          0.0,
+          0.427,
+          -0.2
+        ],
+        "max": [
+          0.195,
+          0.427,
+          0.2
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Split recolorable hourglass placed on the supplied cover; follows authored cover motion."
+    },
+    {
+      "watch": "original",
+      "id": "authored-hourglass-signal",
+      "trianglesBefore": 4,
+      "triangles": 4,
+      "file": "assets/runtime/aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d.f32",
+      "sha256": "aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d",
+      "bounds": {
+        "min": [
+          -0.2716,
+          0.368,
+          -0.27936
+        ],
+        "max": [
+          0.2716,
+          0.368,
+          0.27936
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Recolorable interface symbol placed on measured source face plane."
+    },
+    {
+      "watch": "original",
+      "id": "authored-lift-shaft-signal",
+      "trianglesBefore": 16,
+      "triangles": 16,
+      "file": "assets/runtime/8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46.f32",
+      "sha256": "8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46",
+      "bounds": {
+        "min": [
+          -0.36544656453296104,
+          0.151,
+          -0.36544656453296104
+        ],
+        "max": [
+          0.36544656453296104,
+          0.301,
+          0.36544656453296104
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Interface signal on authored shaft, not recovered animation markings."
+    },
+    {
+      "watch": "recalibrated",
+      "id": "authored-hourglass-signal",
+      "trianglesBefore": 4,
+      "triangles": 4,
+      "file": "assets/runtime/7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4.f32",
+      "sha256": "7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4",
+      "bounds": {
+        "min": [
+          -0.2716,
+          0.338,
+          -0.27936
+        ],
+        "max": [
+          0.2716,
+          0.338,
+          0.27936
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Recolorable interface symbol placed on measured source face plane."
+    },
+    {
+      "watch": "recalibrated",
+      "id": "authored-lift-shaft-signal",
+      "trianglesBefore": 16,
+      "triangles": 16,
+      "file": "assets/runtime/3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06.f32",
+      "sha256": "3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06",
+      "bounds": {
+        "min": [
+          -0.36245110088924826,
+          0.12100000000000002,
+          -0.36245110088924826
+        ],
+        "max": [
+          0.36245110088924826,
+          0.271,
+          0.36245110088924826
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Interface signal on authored shaft, not recovered animation markings."
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "authored-hourglass-signal",
+      "trianglesBefore": 4,
+      "triangles": 4,
+      "file": "assets/runtime/68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e.f32",
+      "sha256": "68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e",
+      "bounds": {
+        "min": [
+          0.2103000000000001,
+          0.338,
+          -0.33912
+        ],
+        "max": [
+          0.8696999999999999,
+          0.338,
+          0.33912
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Recolorable interface symbol placed on measured source face plane."
+    },
+    {
+      "watch": "ultimatrix",
+      "id": "authored-lift-shaft-signal",
+      "trianglesBefore": 16,
+      "triangles": 16,
+      "file": "assets/runtime/9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5.f32",
+      "sha256": "9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5",
+      "bounds": {
+        "min": [
+          0.07170918369956636,
+          0.12100000000000002,
+          -0.4682908163004337
+        ],
+        "max": [
+          1.0082908163004336,
+          0.271,
+          0.4682908163004337
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Interface signal on authored shaft, not recovered animation markings."
+    },
+    {
+      "watch": "omniverse",
+      "id": "authored-hourglass-signal",
+      "trianglesBefore": 4,
+      "triangles": 4,
+      "file": "assets/runtime/cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8.f32",
+      "sha256": "cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8",
+      "bounds": {
+        "min": [
+          -0.20439999999999997,
+          0.328,
+          -0.21023999999999998
+        ],
+        "max": [
+          0.20439999999999997,
+          0.328,
+          0.21023999999999998
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Recolorable interface symbol placed on measured source face plane."
+    },
+    {
+      "watch": "omniverse",
+      "id": "authored-lift-shaft-signal",
+      "trianglesBefore": 16,
+      "triangles": 16,
+      "file": "assets/runtime/40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc.f32",
+      "sha256": "40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc",
+      "bounds": {
+        "min": [
+          -0.2765811431028148,
+          0.11100000000000002,
+          -0.2765811431028148
+        ],
+        "max": [
+          0.2765811431028148,
+          0.261,
+          0.2765811431028148
+        ]
+      },
+      "authoredSupplement": true,
+      "reason": "Interface signal on authored shaft, not recovered animation markings."
+    }
+  ],
+  "normalPolicy": "Source geometry, unit normals with 40 degree crease preservation; no flat image geometry.",
+  "materials": "Authored neutral/metal/rubber/lamp regions, not recovered source materials."
+}

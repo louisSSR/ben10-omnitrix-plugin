@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "a2ddfc1cbd8cb6765e9f7fdbc44ca5a2afbf95d1337c91ed62fe157396d14914",
-  "svgSha256": "61aa58251a8473ece8d019135f11295b7c8a9bf7a8ed0d93e7ae3a9d012ffc57",
+  "catalogSha256": "8cb199ef4e988d06da6a253fddf9d2f1e352016854981b0db596ac9f337b5e8f",
+  "svgSha256": "22cac85908c676e5818c613028c788890fea09c592c070c077693ce0fabeb11e",
   "coverage": {
-    "total": 236,
-    "reviewed": 235,
+    "total": 237,
+    "reviewed": 236,
     "missing": 1
   },
   "assets": [
@@ -2136,6 +2136,16 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "b7c011656c86b3fbb06ef743938a9b44eadca0da62e8d4da9ac490e4147245dc",
       "maskSha256": "fdeee65fc7c47e60f71e7fbfee03340f5b7f80dc8913a5e11320aa1977b81f3e",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "ultimate-aggregor-amalgam",
+      "url": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+      "pageUrl": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+      "rights": "Underlying Ben 10 rights remain with their owners. Official video is a primary partial visual reference; the complete-body secondary reference is by SasakiToon on DeviantArt. No separate redistribution license was established for either. AI reconstruction and the partial official-body evidence are explicitly disclosed.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "2b1dae54dd70114f96a7be37befc4a032d9e40598678e469fc387e4951bc8441",
+      "maskSha256": "a08618a3f8ca98b1a616fa7161a52fe5092a1f1a6544c5d533a847e00fe02e10",
       "contentType": "image/png"
     }
   ],

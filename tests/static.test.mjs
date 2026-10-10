@@ -210,7 +210,8 @@ test('built preview has no runtime remote resource or unresolved build marker', 
   assert.doesNotMatch(runtime, /\b(?:fetch|XMLHttpRequest)\s*\(/);
   assert.ok(runtime.includes(read('core.js').replace(/^export /gm, '')), 'delivered core matches the tested source');
   assert.ok(runtime.includes(app.replace(/^import[^\n]+\n/gm, '')), 'delivered app matches the tested source');
-  assert.ok(runtime.includes(read('watch-model.js').replace(/^export /gm, '')), 'delivered model matches the tested source');
+  assert.ok(runtime.includes(read('watch-meshes.js').replace(/^export /gm, '')), 'delivered mesh loader matches the tested source');
+  assert.ok(runtime.includes(read('watch-model.js').replace(/^export /gm, '').replace(/^import[^\n]+\n/gm, '')), 'delivered model matches the tested source');
   assert.doesNotThrow(() => new vm.Script(runtime, { filename: 'built-preview-runtime.js' }));
 });
 
@@ -384,7 +385,7 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
     },
   });
   const core = read('core.js').replace(/^export /gm, '');
-  const model = modelFactory ? '' : read('watch-model.js').replace(/^export /gm, '');
+  const model = modelFactory ? '' : read('watch-meshes.js').replace(/^export /gm, '') + '\n' + read('watch-model.js').replace(/^export /gm, '').replace(/^import[^\n]+\n/gm, '');
   const portraitModule = read('portrait-renderer.js').replace(/^export /gm, '');
   vm.runInContext(`(() => { ${core}\n${model}\n${portraitModule}\n${app.replace(/^import[^\n]+\n/gm, '')}\n})();`, context);
   const advance = ms => {

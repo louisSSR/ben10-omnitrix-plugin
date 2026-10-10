@@ -9595,6 +9595,117 @@
         "realHostVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "ultimate-aggregor-amalgam",
+      "sourceFile": "assets/source-art/ultimate-aggregor-amalgam-source-original.jpg",
+      "sourceSha256": "2b1dae54dd70114f96a7be37befc4a032d9e40598678e469fc387e4951bc8441",
+      "maskFile": "assets/source-art/ultimate-aggregor-amalgam-reference-edit.png",
+      "maskSha256": "a08618a3f8ca98b1a616fa7161a52fe5092a1f1a6544c5d533a847e00fe02e10",
+      "url": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+      "pageUrl": "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI transparent full-body reference reconstruction. The directly inspected official Ben 10 video screenshot at 1242.964 seconds establishes the horns, face, blue-white hair, red collar vents, radial chest armor and visible upper arms only. Full-body proportions, lower torso, detailed forearms and claws, legs and feet rely on SasakiToon's attributed community redraw and AI interpretation; these areas and the completed full-body pose are not independently verified by the cropped official frame. The output is not official complete artwork, a native transparent original or exact recovered source pixels.",
+      "rights": "Underlying Ben 10 rights remain with their owners. Official video is a primary partial visual reference; the complete-body secondary reference is by SasakiToon on DeviantArt. No separate redistribution license was established for either. AI reconstruction and the partial official-body evidence are explicitly disclosed.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": true,
+      "officialSourceVerified": true,
+      "sourceCapture": {
+        "kind": "official-video-frame-screenshot",
+        "title": "Ultimate Aggregor | Full Episode | Ben 10: Ultimate Alien | Cartoon Network",
+        "channel": "Ben 10",
+        "verifiedChannelObservedBy": "root",
+        "observedTimestampSeconds": 1242.964,
+        "sourceWidth": 1721,
+        "sourceHeight": 927,
+        "sourceFormat": "JPEG",
+        "rootReportedReadyState": 4,
+        "captureRegion": "Video picture: complete head/horns and chest with partial upper arms. Lower torso, full hands, legs and feet outside shot.",
+        "sourceBytesUnchanged": true,
+        "originalFrameAsset": false,
+        "screenshotNotNativeTransparentArt": true
+      },
+      "supportingSources": [
+        {
+          "file": "assets/source-art/ultimate-aggregor-amalgam-support-sasaki-original.png",
+          "sha256": "4c0a7d46437ca3d05f042af33f34d07c12c513176e53ae6b2e716caf6b8a5c3e",
+          "pageUrl": "https://www.deviantart.com/sasakitoon/art/Ben-10-Ultimate-Alien-Ultimate-Aggregor-993777495",
+          "author": "SasakiToon",
+          "kind": "community-artist-redraw-not-official-production-art",
+          "sourceWidth": 1280,
+          "sourceHeight": 1808,
+          "sourceFormat": "PNG",
+          "sourceBytesUnchanged": true,
+          "sourceViewed": true,
+          "purpose": "Complete-body proportion and unseen lower-body reference; source retained whole including the separate top-left artist avatar.",
+          "limitations": "Source itself is a community interpretation, not proof of exact official lower-body anatomy or pose. AI output should depict only Aggregor; omission of the detached artist avatar from a newly generated sprite is not a pixel edit of the preserved source."
+        }
+      ],
+      "limitations": [
+        "Official screenshot does not verify full lower anatomy. The upright completed pose cannot be described as the exact official-frame full-body pose.",
+        "Color and fine detail differences exist between the two sources: the community chest center is teal, while the inspected official screenshot center is olive. Prefer visible official upper-body design and disclose unseen-detail interpretation.",
+        "This full-body addition does not create a head portrait or permit cross-form portrait inheritance.",
+        "Native alpha includes faint edge pixels; no thresholding or local pixel edits. Color/glow stored in alpha-zero pixels is invisible in browser composition. Body proportions and lower armor are a disclosed community-guided AI interpretation."
+      ],
+      "generation": {
+        "tool": "image_gen (built-in)",
+        "transparentBackground": true,
+        "promptSha256": "ef4b1849399fcf4e7d8f50d79f78f609b28f5bc86460a48e6fa09a52cc8574c0",
+        "rawOutputSha256": "a08618a3f8ca98b1a616fa7161a52fe5092a1f1a6544c5d533a847e00fe02e10",
+        "rawBytesMatch": true,
+        "programmaticPixelEdits": 0,
+        "prompt": "Use case: stylized-concept. Create one complete, isolated full-body illustration of Ultimate Aggregor, the five-alien absorbed form from Ben 10 Ultimate Alien, for a fan character selector. Two supplied images are REFERENCES, not an editing canvas.\n\nReference 1 (community full-body drawing) supplies the complete pose, limb placement, proportions and lower-body design. Only the large full-body character is relevant. Exclude the small unrelated black-and-white author avatar in its upper-left. Reference 2 (official animation frame) is the authority for the head, chest and shoulder design: blue-white long angular human-like face, red eyes with black surrounding lids, four upward ice-blue horns, long jagged ice-blue/white flowing hair, three vertical red vents on a dark collar, olive radial chest armor with a circular center, yellow-olive shoulder caps and dark upper arms. Keep this anatomy and do not substitute ordinary Aggregor or an Omnitrix-wearing form.\n\nReillustrate the complete character in a clean 2D cel-animation style, three-quarter front standing pose like reference 1, broad shoulders, both long arms relaxed slightly away from torso. Preserve the reference's yellow mechanical forearm armor, gray rear forearm cylinders and spring-like details, gray segmented claw hands with all fingertips visible, gray spikes at the wrists, dark red articulated thigh/shin armor with the same black panel gaps and pointed red armored feet with gray outer spurs. Do not add weapons, extra limbs, logos, chest badge, energy effects or new armor ornaments. Keep hair, horns, wrists, fingers and both feet fully inside the canvas. Character occupies about 84% of a portrait 1024x1536 canvas with transparent margin on every side.\n\nTrue transparent background with native RGBA alpha, no white matte, ground shadow, floor, vignette, environment, text, watermark, frame or other character. Bold clean dark outlines, flat color regions with restrained cel shading. One complete body only. This is a reference-guided fan redraw; prioritize coherent silhouette and retained design over invented surface details.\n"
+      },
+      "observations": [
+        "Root and independent reviewer inspected both references and complete generated output. Four horns, two claw hands, two armored feet retained; detached author avatar excluded.",
+        "Root actually viewed the unchanged PNG on checkerboard and dark-green browser backgrounds. Apparent glow in an image-tool rendering was alpha-zero hidden RGB; no visible aura in actual composition."
+      ],
+      "alphaInspection": {
+        "width": 1024,
+        "height": 1536,
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "positiveAlphaBBox": [
+          0,
+          10,
+          1023,
+          1516
+        ],
+        "transparentFraction": 0.47460047403971356,
+        "readonly": true
+      },
+      "independentReview": {
+        "reviewer": "catalog_scope_audit",
+        "sourceAndOutputActuallyViewed": true,
+        "status": "source and anatomy reviewed; root current UI verified separately"
+      },
+      "adoptionBasis": "Source/output and native-alpha composition inspected; current product UI review recorded separately after integration.",
+      "uiReview": {
+        "version": "0.6.4",
+        "previewSha256": "730769ab04db6bcee14ebe2501d8beae602a33ab8a7ea51263aa8f4cc4a2a1e1",
+        "evidence": "docs/browser-qa-v064.json",
+        "screenshots": [
+          "screenshots/v064-desktop-ring-green.jpg",
+          "screenshots/v064-desktop-dial.jpg",
+          "screenshots/v064-desktop-projection.jpg",
+          "screenshots/v064-mobile375-projection.jpg",
+          "screenshots/v064-mobile375-dial.jpg",
+          "screenshots/v064-mobile375-ring-amber.jpg",
+          "screenshots/v064-mobile305-ring-rose.jpg"
+        ],
+        "desktopAndMobileModes": [
+          "dial",
+          "projection",
+          "carousel"
+        ],
+        "physicalPhoneVerified": false,
+        "realHostVerified": false,
+        "humanAccepted": false
+      }
     }
   ],
   "mergedForms": [
@@ -9808,6 +9919,21 @@
         "https://www.youtube.com/watch?v=0sOeXKG2Lmw&t=55s",
         "https://ben10.fandom.com/wiki/Diamondhead_(Classic)",
         "https://ben10.fandom.com/wiki/Third_Time%27s_a_Charm"
+      ]
+    },
+    {
+      "id": "ultimate-aggregor-amalgam",
+      "name": null,
+      "en": "Ultimate Aggregor (Five-Alien Amalgam)",
+      "group": "fusion",
+      "appearance": "Ben 10: Ultimate Alien, Ultimate Aggregor. Aggregor absorbs the five captive aliens and assumes their combined body, retaining his identity. An alien-DNA amalgam state, distinct from ordinary Aggregor and Ultimate Kevin; not an Ultimatrix simulated-evolution form or a separate species.",
+      "aliases": [
+        "Ultimate Aggregor"
+      ],
+      "sourceUrls": [
+        "https://dwaynemcduffie.com/wp-content/uploads/2024/07/WEBSITE-B10UA-ep110-Ultimate-Aggregor-SCRIPT-AS-RECORDED.pdf",
+        "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
+        "https://www.deviantart.com/sasakitoon/art/Ben-10-Ultimate-Alien-Ultimate-Aggregor-993777495"
       ]
     }
   ],
