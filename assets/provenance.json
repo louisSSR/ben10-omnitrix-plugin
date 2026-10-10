@@ -1,10 +1,10 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "8cb199ef4e988d06da6a253fddf9d2f1e352016854981b0db596ac9f337b5e8f",
-  "svgSha256": "22cac85908c676e5818c613028c788890fea09c592c070c077693ce0fabeb11e",
+  "catalogSha256": "1380b9adffe20db0ad9c3af8f247a3d80f6f9be41e4a18dc0f77d4f1d2fbf35b",
+  "svgSha256": "0ad728e8d90dbb33b19673c95dc3f61bbcb648fbcb9de4f45657d310679e95de",
   "coverage": {
-    "total": 237,
-    "reviewed": 236,
+    "total": 238,
+    "reviewed": 237,
     "missing": 1
   },
   "assets": [
@@ -2146,6 +2146,16 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "2b1dae54dd70114f96a7be37befc4a032d9e40598678e469fc387e4951bc8441",
       "maskSha256": "a08618a3f8ca98b1a616fa7161a52fe5092a1f1a6544c5d533a847e00fe02e10",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-cannonbolt",
+      "url": "https://cdn.uploads.micro.blog/296796/2026/p19.jpg",
+      "pageUrl": "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html",
+      "rights": "Underlying Ben 10 characters and original comic artwork remain copyrighted. The attributed publisher media release and public preview do not establish an open reuse or redistribution licence. Native source is retained as reference; AI redraw is disclosed and is not official transparent original artwork.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "fc3f0dc08d87e9426964a0089e1107525f7c78e882415423ba3d58a6e378af5d",
+      "maskSha256": "38443f36586786d762aa786adff884dce40500af80cf9c444b4036315dc4e901",
       "contentType": "image/png"
     }
   ],

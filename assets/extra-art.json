@@ -9706,6 +9706,116 @@
         "realHostVerified": false,
         "humanAccepted": false
       }
+    },
+    {
+      "formId": "dynamite-cannonbolt",
+      "sourceFile": "assets/source-art/dynamite-cannonbolt-source-original.jpg",
+      "sourceSha256": "fc3f0dc08d87e9426964a0089e1107525f7c78e882415423ba3d58a6e378af5d",
+      "maskFile": "assets/source-art/dynamite-cannonbolt-reference-redraw.png",
+      "maskSha256": "38443f36586786d762aa786adff884dce40500af80cf9c444b4036315dc4e901",
+      "pageUrl": "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html",
+      "url": "https://cdn.uploads.micro.blog/296796/2026/p19.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided full-body redraw of the complete middle-left action-panel Cannonbolt in a Robert Carey Dynamite Ben 10 issue 2 color preview. Issue and character identity are separately supported by official metadata and attributed publisher/creator media release. Not official transparent original artwork or a pixel-exact cutout.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": false,
+      "officialSourceVerified": false,
+      "issueMetadataOfficialPublisherVerified": true,
+      "rights": "Underlying Ben 10 characters and original comic artwork remain copyrighted. The attributed publisher media release and public preview do not establish an open reuse or redistribution licence. Native source is retained as reference; AI redraw is disclosed and is not official transparent original artwork.",
+      "observations": [
+        "Root actually viewed the complete original colored preview and unchanged native body output: broad tilted round head, round eyes, pointed teeth, separate shoulder/forearm/knee armor, two arms/hands and two legs/feet, claws and green emblem."
+      ],
+      "limitations": [
+        "Source-derived angled airborne action pose; native redraw is wider and foreshortens the limbs differently. It is not a pixel-exact pose, neutral standing figure or orthographic turnaround.",
+        "Fine hatching, tooth/claw shapes, limb thickness and emblem are interpreted by image generation; no hidden anatomy is claimed recovered.",
+        "Native strong-alpha pixels do not touch the border; minimum right margin is 8 pixels. Numeric diamond-envelope fit is calculated independently of source padding.",
+        "Original preview filename is not verified printed page number.",
+        "No current preview, physical phone, real host or user acceptance.",
+        "Source public redistribution permission is unverified; no open licence is asserted."
+      ],
+      "adoptionBasis": "Root actual source/native-output inspection, original-byte verification and subsequent read-only diamond fit; current UI remains unverified.",
+      "sourceCapture": {
+        "kind": "attributed-publisher-media-release-original-interior-preview",
+        "originalBytesUnchanged": true,
+        "original": {
+          "file": "assets/source-art/dynamite-cannonbolt-source-original.jpg",
+          "sha256": "fc3f0dc08d87e9426964a0089e1107525f7c78e882415423ba3d58a6e378af5d",
+          "bytes": 4519170,
+          "format": "JPEG",
+          "size": [
+            1800,
+            2732
+          ],
+          "mode": "RGB",
+          "url": "https://cdn.uploads.micro.blog/296796/2026/p19.jpg",
+          "pageUrl": "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html",
+          "sourceViewed": true
+        }
+      },
+      "generation": {
+        "tool": "image_gen.imagegen",
+        "round": 211,
+        "attempt": 1,
+        "fullPrompt": "Use case: stylized-concept.\nAsset type: one transparent full-body alien selector sprite for a Ben 10 fan watch interface.\nInput image: the attached original colored Dynamite Ben 10 issue 2 comic preview is the exact anatomy and pose reference. Use ONLY the complete alien in the MIDDLE-LEFT VERTICAL PANEL. Other panels are identification support, not extra subjects or an alternative pose.\nPrimary request: make a clean reference-guided 2D redraw of that complete Cannonbolt body in its original angled, foreshortened, airborne action pose. Keep the tilted large round pale head, small circular orange-yellow eyes, wide angular open mouth with pointed triangular teeth, pale bulky torso, the short dark connections running down the chest and separating armor, four limbs, orange-yellow rounded shoulder plates, orange-yellow oval forearm armor and rounded knee plates, pointed dark claws on both hands and feet, and the small green chest hourglass emblem in its original approximate position. The head is a large pale rounded face, not a helmet. Shoulder armor is outside the head. Preserve the actual view and visible relative limb placement; do not substitute classic, Reboot or animated Cannonbolt proportions and do not rotate to an invented standing pose.\nComposition: isolate exactly this one complete body, all head edges, both arms and hands, both legs and feet intact, with about 12 percent transparent margin around the extremities. The foreshortened rear leg must remain separately readable. No ball-state duplicates. Do not include comic panel borders, other panels, trees, energy streaks or ground.\nStyle: clean colored flat 2D comic art, crisp dark anatomical outlines with a small amount of source-derived line detail, pale cream body and orange-yellow armor, tiny green emblem; simplify fine hatching for selector readability. No photorealistic or glossy 3D surfaces, no plastic sheen, no glow or cast shadow.\nBackground: genuinely transparent RGBA, empty all around the isolated alien.\nConstraints: no lettering, labels, watermark, frame, opaque background, checkerboard or additional subject. Preserve the issue-specific appearance and the source action pose. This is a disclosed AI reference redraw, not official original transparent artwork.",
+        "transparentBackground": true,
+        "rawOutputSha256": "38443f36586786d762aa786adff884dce40500af80cf9c444b4036315dc4e901",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false,
+        "promptFile": "docs/prompts/dynamite-cannonbolt-body.txt"
+      },
+      "alphaInspection": {
+        "sha256": "38443f36586786d762aa786adff884dce40500af80cf9c444b4036315dc4e901",
+        "bytes": 1313148,
+        "format": "PNG",
+        "size": [
+          1374,
+          1145
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bboxAlpha128": [
+          22,
+          66,
+          1366,
+          1108
+        ],
+        "weakAlpha1to127": 21859,
+        "edgeAlpha128": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        },
+        "minimumMarginFraction": 0.005822416302765648
+      },
+      "appearanceEvidence": [
+        {
+          "url": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
+          "kind": "official-publisher-issue-metadata",
+          "actuallyReadThisRound": true,
+          "supports": "Ben 10 issue 2, Joe Casey writer, Robert Carey artist, June 2026 publication and June 3 scheduled sale date. Description does not name Cannonbolt.",
+          "limits": "Sale metadata is not independently audited actual shop arrival."
+        },
+        {
+          "url": "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html",
+          "kind": "attributed-publisher-creator-media-release-reprint",
+          "actuallyReadThisRound": true,
+          "supports": "Page labels Media Release, attributes the announcement to Dynamite and WBDGCP, explicitly names Cannonbolt in Ben 10 issue 2 and describes Ben attempting to master this transformation; writer Joe Casey is quoted.",
+          "limits": "Reprint domain is ComicList, not publisher domain. The June 11 post retains prospective June 3 language; no fresh first-ever chronology is inferred."
+        },
+        {
+          "url": "https://cdn.uploads.micro.blog/296796/2026/p19.jpg",
+          "kind": "original-colored-comic-interior-preview",
+          "actuallyViewedThisRound": true,
+          "sha256": "fc3f0dc08d87e9426964a0089e1107525f7c78e882415423ba3d58a6e378af5d",
+          "supports": "Middle-left vertical panel shows complete head, torso, both arms/hands and both legs/feet in an angled action pose. Separate upper and lower panels corroborate rolling and back anatomy.",
+          "limits": "Filename p19 is not a verified printed page number. Page alone does not name the character or show human-to-alien transition."
+        }
+      ]
     }
   ],
   "mergedForms": [
@@ -9934,6 +10044,21 @@
         "https://dwaynemcduffie.com/wp-content/uploads/2024/07/WEBSITE-B10UA-ep110-Ultimate-Aggregor-SCRIPT-AS-RECORDED.pdf",
         "https://www.youtube.com/watch?v=SHLCviTXw34&t=1242s",
         "https://www.deviantart.com/sasakitoon/art/Ben-10-Ultimate-Alien-Ultimate-Aggregor-993777495"
+      ]
+    },
+    {
+      "id": "dynamite-cannonbolt",
+      "name": null,
+      "en": "Cannonbolt",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #2: original colored story preview depicts Cannonbolt in full action pose; an attributed publisher/creator media release separately names the transformation. Printed page number unverified.",
+      "aliases": [
+        "Cannonbolt — Dynamite 2026",
+        "Dynamite Cannonbolt"
+      ],
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
+        "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html"
       ]
     }
   ],

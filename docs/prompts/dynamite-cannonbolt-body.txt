@@ -1,0 +1,12 @@
+Tool: built-in image_gen; transparent_background: true.
+Input reference: assets/source-art/dynamite-cannonbolt-source-original.jpg
+Use case: stylized-concept.
+Asset type: one transparent full-body alien selector sprite for a Ben 10 fan watch interface.
+Input image: the attached original colored Dynamite Ben 10 issue 2 comic preview is the exact anatomy and pose reference. Use ONLY the complete alien in the MIDDLE-LEFT VERTICAL PANEL. Other panels are identification support, not extra subjects or an alternative pose.
+Primary request: make a clean reference-guided 2D redraw of that complete Cannonbolt body in its original angled, foreshortened, airborne action pose. Keep the tilted large round pale head, small circular orange-yellow eyes, wide angular open mouth with pointed triangular teeth, pale bulky torso, the short dark connections running down the chest and separating armor, four limbs, orange-yellow rounded shoulder plates, orange-yellow oval forearm armor and rounded knee plates, pointed dark claws on both hands and feet, and the small green chest hourglass emblem in its original approximate position. The head is a large pale rounded face, not a helmet. Shoulder armor is outside the head. Preserve the actual view and visible relative limb placement; do not substitute classic, Reboot or animated Cannonbolt proportions and do not rotate to an invented standing pose.
+Composition: isolate exactly this one complete body, all head edges, both arms and hands, both legs and feet intact, with about 12 percent transparent margin around the extremities. The foreshortened rear leg must remain separately readable. No ball-state duplicates. Do not include comic panel borders, other panels, trees, energy streaks or ground.
+Style: clean colored flat 2D comic art, crisp dark anatomical outlines with a small amount of source-derived line detail, pale cream body and orange-yellow armor, tiny green emblem; simplify fine hatching for selector readability. No photorealistic or glossy 3D surfaces, no plastic sheen, no glow or cast shadow.
+Background: genuinely transparent RGBA, empty all around the isolated alien.
+Constraints: no lettering, labels, watermark, frame, opaque background, checkerboard or additional subject. Preserve the issue-specific appearance and the source action pose. This is a disclosed AI reference redraw, not official original transparent artwork.
+
+Observed: original native 1374x1145 RGBA, no pixel edits. Wider proportions, foreshortening and small line details are interpreted; current UI unverified.

@@ -160,3 +160,47 @@ test('package rejects a real supporting-source directory junction or symlink', t
   assert.equal(existsSync(f.receipt), false);
   assert.equal(existsSync(path.join(f.output, gif.file)), false);
 });
+
+test('package retains a declared body prompt with exact bytes and a shared reference once', t => {
+  const f = fixture(t);
+  const file = 'docs/prompts/body-generation.txt';
+  const bytes = Buffer.from('Actual body generation prompt\nKeep all four limbs.\n实际制作提示。\n', 'utf8');
+  mkdirSync(path.join(f.root, 'docs/prompts'));
+  writeFileSync(path.join(f.root, file), bytes);
+  f.asset.generation = { promptFile: file, fullPrompt: 'Actual body generation prompt' };
+  f.plan.assets.push({ ...f.asset, formId: 'second-body' });
+  const result = f.run();
+  assert.equal(result.status, 0, result.stderr);
+  assert.deepEqual(readFileSync(path.join(f.output, file)), bytes);
+  const rows = JSON.parse(readFileSync(f.receipt)).files.filter(row => row.file === file);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].bytes, bytes.length);
+  assert.equal(rows[0].sha256, sha(bytes));
+});
+
+test('package rejects unsafe body prompt paths and a real prompt-directory junction', t => {
+  const f = fixture(t);
+  const file = 'docs/prompts/body-generation.txt';
+  const promptDir = path.join(f.root, 'docs/prompts');
+  mkdirSync(promptDir);
+  writeFileSync(path.join(f.root, file), 'Actual prompt');
+  for (const value of ['docs/prompts/../body-generation.txt', 'docs/prompts\\body-generation.txt', path.resolve(f.root, file), 'https://example.test/prompt.txt', null]) {
+    f.asset.generation = { promptFile: value };
+    const result = f.run();
+    assert.notEqual(result.status, 0);
+    assert.match(result.stderr, /Unsafe body prompt path/);
+    assert.equal(existsSync(f.receipt), false);
+    assert.equal(existsSync(path.join(f.output, 'manifest.json')), false);
+  }
+  const outside = path.join(f.dir, 'outside-prompts');
+  assert.ok(path.resolve(promptDir).startsWith(path.resolve(f.dir) + path.sep));
+  assert.ok(path.resolve(outside).startsWith(path.resolve(f.dir) + path.sep));
+  renameSync(promptDir, outside);
+  symlinkSync(outside, promptDir, process.platform === 'win32' ? 'junction' : 'dir');
+  f.asset.generation = { promptFile: file };
+  const result = f.run();
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /Unsafe body prompt link/);
+  assert.equal(existsSync(f.receipt), false);
+  assert.equal(existsSync(path.join(f.output, file)), false);
+});

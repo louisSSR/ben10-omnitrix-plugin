@@ -21,8 +21,8 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 237,
-    "reviewed": 236,
+    "total": 238,
+    "reviewed": 237,
     "missing": 1
   },
   "forms": [
@@ -6006,6 +6006,34 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.49349,
         "visiblePixels": 826382
+      }
+    },
+    {
+      "id": "dynamite-cannonbolt",
+      "name": null,
+      "en": "Cannonbolt",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #2: original colored story preview depicts Cannonbolt in full action pose; an attributed publisher/creator media release separately names the transformation. Printed page number unverified.",
+      "aliases": [
+        "Cannonbolt — Dynamite 2026",
+        "Dynamite Cannonbolt"
+      ],
+      "asset": "alien-dynamite-cannonbolt",
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
+        "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html"
+      ],
+      "visualSourceUrls": [
+        "https://cdn.uploads.micro.blog/296796/2026/p19.jpg",
+        "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html"
+      ],
+      "artSourceLabel": "AI reference redraw; not official original",
+      "artProvenance": "AI reference-guided full-body redraw of the complete middle-left action-panel Cannonbolt in a Robert Carey Dynamite Ben 10 issue 2 color preview. Issue and character identity are separately supported by official metadata and attributed publisher/creator media release. Not official transparent original artwork or a pixel-exact cutout.",
+      "dialFit": {
+        "scale": 0.6196,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.404051,
+        "visiblePixels": 688777
       }
     }
   ]

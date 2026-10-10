@@ -1,6 +1,6 @@
 {
-  "sourceSvgSha256": "22cac85908c676e5818c613028c788890fea09c592c070c077693ce0fabeb11e",
-  "shapeCount": 236,
+  "sourceSvgSha256": "0ad728e8d90dbb33b19673c95dc3f61bbcb648fbcb9de4f45657d310679e95de",
+  "shapeCount": 237,
   "safeDiamondRadius": 0.87,
   "bitmapEdits": 0,
   "fits": {
@@ -1467,6 +1467,12 @@
       "method": "native-png-alpha-diamond-envelope",
       "diamondExtent": 1.49349,
       "visiblePixels": 826382
+    },
+    "dynamite-cannonbolt": {
+      "scale": 0.6196,
+      "method": "native-png-alpha-diamond-envelope",
+      "diamondExtent": 1.404051,
+      "visiblePixels": 688777
     }
   }
 }

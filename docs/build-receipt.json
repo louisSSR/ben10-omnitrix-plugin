@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-10-10T18:41:31.218Z",
-  "sha256": "0333ae2ee3f8624b460b8856e9088f6d5fcd6d622ae3bf1c53e217eeb233af44",
-  "bytes": 464807,
+  "builtAt": "2026-10-10T19:15:43.965Z",
+  "sha256": "91b4e95d69e88e4780525b3b7ad0e63809987bfb71bd0f2c19aa3e1b3212be21",
+  "bytes": 471367,
   "coverage": {
-    "total": 237,
-    "reviewed": 236,
+    "total": 238,
+    "reviewed": 237,
     "missing": 1
   },
   "watchArt": [
@@ -112,16 +112,16 @@
     "officialModel": false
   },
   "portraits": {
-    "assets": 98,
-    "bindings": 111,
-    "pending": 126,
-    "sourceSha256": "7a96f40f726ee0efe1b017c100489f9a86a1c5433e04487d1f7f9b1744fbeaf3",
+    "assets": 109,
+    "bindings": 123,
+    "pending": 115,
+    "sourceSha256": "3ffffa3ff7efea0f3ed7c91f4e77f0b9fc7faffc6a8bae505e7eae10244ed320",
     "sourceBytesPreserved": true,
     "changesSelectionPool": false
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 361,
-  "runtimeBytes": 181730040,
-  "runtimeManifestSha256": "c4b3684b9b5751b7ac0b6ae334d23b5251b60d55e0c2a5d42aa2bfecc8cfad22"
+  "runtimeFiles": 373,
+  "runtimeBytes": 190859568,
+  "runtimeManifestSha256": "ec0453f1892c1f167d3bd9d034f10456e1bc46f24b141a731a2a0635f0e28b24"
 }

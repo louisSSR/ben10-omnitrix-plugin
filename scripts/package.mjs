@@ -82,6 +82,17 @@ for (const asset of supplemental.assets.filter(asset => asset.sourceFrame?.conta
   if (!files.includes(containerFile)) files.push(containerFile);
 }
 for (const asset of supplemental.assets) {
+  if (asset.generation?.promptFile !== undefined) {
+    const promptFile = asset.generation.promptFile;
+    if (typeof promptFile !== 'string' || !/^docs\/prompts\/[a-z0-9-]+\.txt$/.test(promptFile)) throw new Error('Unsafe body prompt path');
+    let promptPath = root;
+    for (const part of promptFile.split('/')) {
+      promptPath = path.join(promptPath, part);
+      if (lstatSync(promptPath).isSymbolicLink()) throw new Error('Unsafe body prompt link');
+    }
+    if (!lstatSync(promptPath).isFile()) throw new Error('Invalid body prompt file');
+    if (!files.includes(promptFile)) files.push(promptFile);
+  }
   if (asset.supportingSources === undefined) continue;
   if (!Array.isArray(asset.supportingSources)) throw new Error('Invalid supporting sources');
   for (const source of asset.supportingSources) {
