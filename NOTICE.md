@@ -6,6 +6,8 @@
 
 0.6.1 的 Mad Way Big PNG 头像依据用户提供的社区图稿右上橙色图标，用内置 imagegen 参考重绘；不是官方透明原图，也不是 APK 原始资源。保留生成 RGBA 字节，未做像素后处理。形状比例、管口端面和细微边缘噪点与参考有差异。提示词见 `docs/prompts/mad-way-big-portrait.txt`，源图与输出哈希见 `assets/portraits.json`。
 
+0.6.2 新增 3 张 DNA Altering 原生头像和 6 张内置 imagegen 参考重绘 PNG。重绘角色为 Four Arms、XLR8、Cannonbolt、Echo Echo、Humungousaur、Armodrillo；全部保留生成 RGBA 字节，未做像素后处理。参考资料、输出哈希与具体差异记录于 `assets/portraits.json`，完整提示词在 `docs/prompts/*-head.txt`。Cannonbolt 含图标化的两侧甲片；Armodrillo 的低清原图细节含 AI 解释；Humungousaur 保留少量原生边缘噪点。原应用图标同样有简化风格，均不称为动画逐帧复刻。
+
 角色设计、动画画面及相关商标归各原权利方。仓库中不对这些美术素材声明开源许可。用于个人原型与兼容性测试；分发或其他用途需自行确认相应权利。
 
 `assets/provenance.json` 记录已接入剪影的来源网址；其中包括官方页面及社区转载，不能把社区转载全部称作官方原图。剪影沿用此前核对的原始素材与显示处理，不用缺图占位冒充角色。

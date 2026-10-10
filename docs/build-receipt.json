@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-09T19:39:35.123Z",
-  "sha256": "57d2d335be1e00e90023065c2d875a640b09a66bea9121d53856cad1016ebb75",
-  "bytes": 406971,
+  "builtAt": "2026-10-09T20:08:40.561Z",
+  "sha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+  "bytes": 410608,
   "coverage": {
     "total": 236,
     "reviewed": 235,
@@ -88,16 +88,16 @@
     "officialModel": false
   },
   "portraits": {
-    "assets": 34,
-    "bindings": 38,
-    "pending": 198,
-    "sourceSha256": "497367ebae4dabc879ff8b48a0b415c4822b51237048c0e491addecd8cd58e68",
+    "assets": 43,
+    "bindings": 47,
+    "pending": 189,
+    "sourceSha256": "bfef7dcb30e8a05d7923c73e1f6dd598d9caaad2125062a448727207ce855011",
     "sourceBytesPreserved": true,
     "changesSelectionPool": false
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 282,
-  "runtimeBytes": 117524417,
-  "runtimeManifestSha256": "a0a319de9e326673d105bfd6609257ed7623f0ff7de41136fc7de197083a1b22"
+  "runtimeFiles": 291,
+  "runtimeBytes": 121441579,
+  "runtimeManifestSha256": "3af6709451667fa2f15758ea8f2acfc5fb1c665047edef47a68e52fa6dfa4b1e"
 }

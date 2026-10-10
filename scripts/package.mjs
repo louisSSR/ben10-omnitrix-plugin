@@ -34,6 +34,17 @@ if (existsSync(path.join(root, 'assets/portraits.json'))) {
     const bytes = readFileSync(resolved);
     if (bytes.length !== asset.bytes || createHash('sha256').update(bytes).digest('hex') !== asset.sha256) throw new Error('Invalid portrait source hash');
     files.push(relative);
+    if (asset.source?.referenceFile) {
+      const { referenceFile, referenceSha256 } = asset.source;
+      if (!/^assets\/source-art\/[a-z0-9-]+\.(?:png|jpe?g|webp)$/.test(referenceFile) || !/^[a-f0-9]{64}$/.test(referenceSha256 || '')) throw new Error('Unsafe portrait reference');
+      let referencePath = root;
+      for (const part of referenceFile.split('/')) {
+        referencePath = path.join(referencePath, part);
+        if (lstatSync(referencePath).isSymbolicLink()) throw new Error('Unsafe portrait reference link');
+      }
+      if (!lstatSync(referencePath).isFile() || createHash('sha256').update(readFileSync(referencePath)).digest('hex') !== referenceSha256) throw new Error('Invalid portrait reference hash');
+      if (!files.includes(referenceFile)) files.push(referenceFile);
+    }
     if (asset.source?.promptFile) {
       const promptFile = asset.source.promptFile;
       if (!/^docs\/prompts\/[a-z0-9-]+\.txt$/.test(promptFile)) throw new Error('Unsafe portrait prompt path');
@@ -59,7 +70,7 @@ for (const image of browserQa.screenshots) {
 }
 for (const file of new Set(supplemental.assets.flatMap(asset => [asset.sourceFile, asset.maskFile]))) {
   if (!/^assets\/source-art\/[a-z0-9-]+\.(?:png|jpe?g|webp)$/.test(file)) throw new Error(`Unexpected supplemental path: ${file}`);
-  files.push(file);
+  if (!files.includes(file)) files.push(file);
 }
 for (const asset of supplemental.assets.filter(asset => asset.sourceFrame?.containerFile)) {
   const { containerFile, containerSha256 } = asset.sourceFrame;

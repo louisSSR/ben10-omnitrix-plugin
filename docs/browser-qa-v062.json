@@ -1,0 +1,163 @@
+{
+  "version": "0.6.2",
+  "date": "2026-10-10",
+  "previewSha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+  "portraitRegistrySha256": "bfef7dcb30e8a05d7923c73e1f6dd598d9caaad2125062a448727207ce855011",
+  "runtimeManifestSha256": "3af6709451667fa2f15758ea8f2acfc5fb1c665047edef47a68e52fa6dfa4b1e",
+  "coverage": {
+    "total": 236,
+    "reviewed": 235,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 43,
+    "bindings": 47,
+    "pending": 189,
+    "sourceSha256": "bfef7dcb30e8a05d7923c73e1f6dd598d9caaad2125062a448727207ce855011",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 142,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "2a81e8ce388a4fdeedfe66b539c4bc0268e5bebca97589d73d6d22dacfd59bf2"
+  },
+  "packageReferenceChecks": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0,
+    "sourceScriptSha256": "4f66fbcbddec5b837fdf2c34618bd7725a2d170f81a8cad428400521992f0d9a",
+    "receiptSha256": "eb28f36e10be4256e665496218ef24e5ed17a3a71dbdd1bce53eb2c501f93e41"
+  },
+  "screenshots": [
+    "screenshots/v062-desktop-four-arms.jpg",
+    "screenshots/v062-desktop-cannonbolt.jpg",
+    "screenshots/v062-mobile-cannonbolt.jpg",
+    "screenshots/v062-narrow-humungousaur.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v062-desktop-four-arms.jpg",
+      "sha256": "3ac0868d3968f8b47d77b28cad9f9eed815e914915dbec25db5d7aa48a987278",
+      "captureBuildSha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v062-desktop-cannonbolt.jpg",
+      "sha256": "cb8c27499334944e7f69d68c55f64112edc156847557ec76e0a1aff78e82b12f",
+      "captureBuildSha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v062-mobile-cannonbolt.jpg",
+      "sha256": "03bb4ea1051bc6c7741ebf9132dc1f3eedde077f408f99c689a74a97d34b0694",
+      "captureBuildSha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+      "actuallyViewed": true
+    },
+    {
+      "file": "screenshots/v062-narrow-humungousaur.jpg",
+      "sha256": "6ae5cd0d228e3afd5bcd58c76f08de28e4416d4f83aa4dce81a144cdea65e333",
+      "captureBuildSha256": "8be18b78dc803a640439d5550867ea610b0b67b192ac1c4ef5ac2f7501072475",
+      "actuallyViewed": true
+    }
+  ],
+  "checks": [
+    {
+      "clientWidth": 1265,
+      "id": "jetray",
+      "label": "Jetray",
+      "portrait": "dna-omv-056",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "snare-oh",
+      "label": "Snare-Oh",
+      "portrait": "dna-omv-045",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "swampfire-blossomed",
+      "label": "Swampfire (Blossomed)",
+      "portrait": "dna-omv-037",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "four-arms",
+      "label": "四手霸王",
+      "portrait": "reference-four-arms",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "xlr8",
+      "label": "快闪之星",
+      "portrait": "reference-xlr8",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "cannonbolt",
+      "label": "Cannonbolt",
+      "portrait": "reference-cannonbolt",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "echo-echo",
+      "label": "Echo Echo",
+      "portrait": "reference-echo-echo",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "humungousaur",
+      "label": "Humungousaur",
+      "portrait": "reference-humungousaur",
+      "scrollWidth": 1265
+    },
+    {
+      "clientWidth": 1265,
+      "id": "armodrillo",
+      "label": "Armodrillo",
+      "portrait": "reference-armodrillo",
+      "scrollWidth": 1265
+    }
+  ],
+  "console": {
+    "desktop": [],
+    "responsive": []
+  },
+  "responsive": {
+    "method": "Fixed 375/305px iframe with actual DOM width measured; desktop controls set preferences before iframe reload.",
+    "measurements": [
+      {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "selected": "Cannonbolt"
+      },
+      {
+        "clientWidth": 290,
+        "scrollWidth": 290,
+        "selected": "Humungousaur"
+      }
+    ],
+    "horizontalOverflow": false,
+    "realPhone": false,
+    "touchVerified": false
+  },
+  "previousBodyResourcesUnchanged": true,
+  "previousPortraitResourcesUnchanged": true,
+  "realHostVerified": false,
+  "physicalPhoneVerified": false,
+  "driverAccepted": false,
+  "boundaries": [
+    "189 catalog records still lack head icons; Crabdozer still lacks full-body art.",
+    "Existing catalog is not exhaustive across all media. Future Kevin 11,000 and Ultimate Aggregor remain researched candidates, not registered assets.",
+    "Six reference-redrawn heads added this round retain native alpha and disclose stylization; original app portraits are unchanged bytes.",
+    "Fixed-width iframe rendering and desktop controls are not physical phone or SillyDroid acceptance."
+  ]
+}

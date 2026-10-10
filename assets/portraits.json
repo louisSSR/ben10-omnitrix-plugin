@@ -556,6 +556,29 @@
       }
     },
     {
+      "id": "dna-omv-037",
+      "file": "portraits/dna-omv-037.webp",
+      "sha256": "fa29867dca93270ad3078eed9aa50238736e2a355810d602fedb5da0ce28643c",
+      "bytes": 6542,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5202808447521816,
+      "light": 0.8728401141955658,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__37_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
       "id": "dna-omv-038",
       "file": "portraits/dna-omv-038.webp",
       "sha256": "3f6332ff431b91f603d73a94695c2a61a30c83b935e6f29fd5cd4ca731b7bf23",
@@ -619,6 +642,29 @@
         "apkEntry": "config.mdpi.apk",
         "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
         "archiveEntry": "res/drawable-mdpi-v4/omniverse__44_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
+      "id": "dna-omv-045",
+      "file": "portraits/dna-omv-045.webp",
+      "sha256": "8c9e05de835381492391fc6b26c005a18005e8362839fc89d15986ff8413ef31",
+      "bytes": 7440,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5139536880056657,
+      "light": 0.864347591351935,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__45_.webp",
         "originalBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false
@@ -717,6 +763,29 @@
       }
     },
     {
+      "id": "dna-omv-056",
+      "file": "portraits/dna-omv-056.webp",
+      "sha256": "d4acc8c52ea3e1350289d2ca4e682b92baacbb227d4c4b9ba163a3e2823beca7",
+      "bytes": 6874,
+      "width": 150,
+      "height": 150,
+      "dark": 0.5270869905878386,
+      "light": 0.8797872272897505,
+      "source": {
+        "kind": "user-supplied-third-party-app-resource",
+        "application": "DNA Altering 3.5.0",
+        "publisher": "Adi007",
+        "package": "eu.adi007.omnitrix",
+        "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+        "apkEntry": "config.mdpi.apk",
+        "apkSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+        "archiveEntry": "res/drawable-mdpi-v4/omniverse__56_.webp",
+        "originalBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false
+      }
+    },
+    {
       "id": "dna-omv-057",
       "file": "portraits/dna-omv-057.webp",
       "sha256": "f9de08229f1026b606f8e45533f9cd60adee11b5e0020ff3fe21c87c227ee193",
@@ -763,6 +832,121 @@
       }
     },
     {
+      "id": "reference-armodrillo",
+      "file": "portraits/reference-armodrillo.png",
+      "sha256": "ad2da64dabff4ef2e521f4137aaeca3c117197b6496729981944bc2c921d7fc0",
+      "bytes": 482610,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4518141176470588,
+      "light": 0.8439709803921569,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/armodrillo-head-reference-original.png",
+        "referenceSha256": "f2a723e7740f7ec17df654874bc2108fac02a50e6b74988fa38f8f3bb962f485",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/01/armodrillo_ua.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/armodrillo-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native generated RGBA preserved; mild shading and edge noise disclosed in binding."
+      }
+    },
+    {
+      "id": "reference-cannonbolt",
+      "file": "portraits/reference-cannonbolt.png",
+      "sha256": "98002ea67c1585a24738ef6c841b7aeedcf3174512b5939cc65b75cc2a0dc728",
+      "bytes": 752200,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.44789254901960784,
+      "light": 0.8462250980392156,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/cannonbolt-os-anatomy-reference-original.png",
+        "referenceSha256": "d274f16de248bbb4799770318fb1f569349b0f068c1324eb6e687dbf9dda003a",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/07/cannonbolt.png",
+        "referencePageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/cannonbolt-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native generated RGBA preserved; mild shading and edge noise disclosed in binding."
+      }
+    },
+    {
+      "id": "reference-echo-echo",
+      "file": "portraits/reference-echo-echo.png",
+      "sha256": "3cea2b79973796f0b0c8324aa34e09ce0ed686071ae66544342e183fc8951f3c",
+      "bytes": 658159,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4868250980392157,
+      "light": 0.8431372549019608,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/echo-echo-head-reference-original.png",
+        "referenceSha256": "4fea5c77eaa5b500ea904c1bbdc852a18faac157bdf0ad6c5fd625a602182a33",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/10/echo_echo-1.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/echo-echo/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/echo-echo-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native generated RGBA preserved; mild shading and edge noise disclosed in binding."
+      }
+    },
+    {
+      "id": "reference-four-arms",
+      "file": "portraits/reference-four-arms.png",
+      "sha256": "6d23881b8b41984fd7c773729225b50be1616818dca201e60d60423365d5436e",
+      "bytes": 737817,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.45573568627450983,
+      "light": 0.8459419607843136,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/four-arms-head-reference-original.jpg",
+        "referenceSha256": "e0513741be54638f42bdb0f96fb7fa2f25f152903c79fd3ea487b09f0d4167b5",
+        "referenceUrl": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/e967efe49ae748b895aa98940e386788/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%A0%E3%82%B9%E3%82%99.jpg",
+        "referencePageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/four-arms-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA; slight gradients and low-alpha edge noise retained without pixel postprocessing."
+      }
+    },
+    {
+      "id": "reference-humungousaur",
+      "file": "portraits/reference-humungousaur.png",
+      "sha256": "75604ba7498b5a1bd9cf6411fc76c18da98346e5182bcae2e0e38962e17f86e6",
+      "bytes": 706291,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4795482352941176,
+      "light": 0.8439709803921569,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/humungousaur-head-reference-original.png",
+        "referenceSha256": "d58494c402fb0e9873aba2b8f4fdfc5f2961b5ac53a84b9ffe56268ab0af7c77",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2016/10/humungousaur_uaf_render.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/humungousaur/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/humungousaur-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native generated RGBA preserved; mild shading and edge noise disclosed in binding."
+      }
+    },
+    {
       "id": "reference-mad-way-big",
       "file": "portraits/reference-mad-way-big.png",
       "sha256": "f9d8d0a5fa91b36387ace76091395f0f4cb9aef9b006705a79319fdf611e504a",
@@ -783,6 +967,29 @@
         "reuseLicenseVerified": false,
         "extractionTarget": "The small orange head icon in the top-right corner of the user-provided community artwork.",
         "alpha": "Native generated RGBA retained. Minor translucent edge noise remains; no post-generation pixel cleanup."
+      }
+    },
+    {
+      "id": "reference-xlr8",
+      "file": "portraits/reference-xlr8.png",
+      "sha256": "3645a562ef55f89577173283ce8d2727ab097d5535c29892fd08e76352a7364b",
+      "bytes": 555592,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3686274509803922,
+      "light": 0.8518141176470588,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/xlr8-head-reference-original.jpg",
+        "referenceSha256": "494f402f218fedc6a551a34ebce21b4d3f540a5535c1ec56349e58f91ce6b161",
+        "referenceUrl": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/da54616a67bf4065b081a839cfdfd311/05.jpg",
+        "referencePageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/xlr8-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA; slight gradients and low-alpha edge noise retained without pixel postprocessing."
       }
     }
   ],
@@ -1310,6 +1517,175 @@
         "原生透明边缘存在少量噪点，保留生成原字节。"
       ],
       "publicDisclosure": "依据用户提供的社区头像制作的AI参考重绘，不是官方透明原图。"
+    },
+    {
+      "formId": "jetray",
+      "portraitId": "dna-omv-056",
+      "confirmed": true,
+      "reason": "本轮实际重新查看 56 号原始WebP与保留的 Jetray 彩色参考：两根从头侧向上弯的长角、角根间的中央额脊、分区斜眼和横向露齿嘴形成同一组特征。56号的横向分齿嘴比69/79两张近似角脸更接近该参考，故仅提议56号用于基础Jetray；并非由文件编号推定。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/10/jetray.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/jetray/",
+        "sha256": "2a1dc0d53205316554bbb662c6c1689697ea7fc239719e9a544ae6e59c7d0bb3"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "原参考是仰举双臂的三分之二侧面，头像改为正面完全对称。",
+        "角和额纹扩大且线条变粗，嘴部牙齿被概括为矩形分格。",
+        "红黄黑原色改为双色绿；不含身体，不能据此推定其它用户或变体。"
+      ],
+      "publicDisclosure": "第三方风格化 Jetray 头像：长双角、额脊和露齿嘴与保留彩色参考对应，正面比例、牙齿与线条经过图标化处理；仅绑定基础 Jetray，不是官方原画。",
+      "scope": "Only named base entry jetray; no automatic era, alternate wearer, Skurd, fusion, Ultimate, reboot or family expansion. This is a stylized species-level UI icon, not a claim of the exact line art of that era."
+    },
+    {
+      "formId": "snare-oh",
+      "portraitId": "dna-omv-045",
+      "confirmed": true,
+      "reason": "本轮实际查看45号原始WebP与保留的 Snare-Oh 彩色参考：左右展开并带分层条纹的头巾、内收狭眼、向下收尖的长中央面罩共同支持木乃伊形态识别。图标把柔软长布条压缩为对称带状脸部结构；作为基础物种UI头像候选，不宣称是经典版逐帧原线稿，也不自动绑定Benzarro等变体。",
+      "reference": {
+        "url": "https://bogleech.com/cartoons/ben10-snareoh.png",
+        "pageUrl": "https://bogleech.com/halloween/hall20-ben10",
+        "sha256": "34ea48e823b62a115c5fcb0a40c6549d760b34361cd1e5f591c8ae962c8ba1a5"
+      },
+      "bindingKind": "third-party-stylized-species-ui-icon",
+      "visualDifferences": [
+        "参考头巾侧带较长且自然下垂，头像外轮廓更短、更横向展开。",
+        "参考长面罩的纵向布条被图标概括为多层V形横带；这是明显的图形设计差异。",
+        "额部圆/盾状标记和五官线更几何化，原卡其黑灰配色改为双色绿。"
+      ],
+      "publicDisclosure": "第三方风格化 Snare-Oh 头像：保留条纹头巾、狭眼与长面罩的识别组合，头巾比例和面罩条纹经过明显图标化处理；仅用于基础形态，不作为官方原画或特定动画帧。",
+      "scope": "Only named base entry snare-oh; no automatic era, alternate wearer, Skurd, fusion, Ultimate, reboot or family expansion. This is a stylized species-level UI icon, not a claim of the exact line art of that era."
+    },
+    {
+      "formId": "swampfire-blossomed",
+      "portraitId": "dna-omv-037",
+      "confirmed": true,
+      "reason": "实际对照原始头像和开花版彩色原图：中间逐层上扬的尖叶冠、两侧外展叶片、斜眼和窄方口吻组合相同。仅绑定开花版，未套给基础Swampfire。",
+      "reference": {
+        "url": "https://ben10hero.com/additional-aliens/swampfire/",
+        "pageUrl": "https://ben10hero.com/additional-aliens/swampfire/",
+        "sha256": "acd86d9455f446fa3bd6a82bd99a223ca64cfe666c5c68aaa809fba2f3c064b0"
+      },
+      "bindingKind": "third-party-stylized-form-ui-icon",
+      "visualDifferences": [
+        "双色绿替代原黄红绿配色。",
+        "冠部、侧叶与口吻改为对称线条，比例和局部纹路简化。"
+      ],
+      "publicDisclosure": "DNA Altering第三方简化头像；开花版叶冠的轮廓经过图标化，不是官方原画。",
+      "scope": "Only swampfire-blossomed; no base Swampfire, Ultimate or alternate-wearer propagation."
+    },
+    {
+      "formId": "four-arms",
+      "portraitId": "reference-four-arms",
+      "confirmed": true,
+      "reason": "按经典版彩色参考重绘四眼、光头中线、宽下颌和嘴下条纹，未使用带冠或胡须版本。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/e967efe49ae748b895aa98940e386788/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%A0%E3%82%B9%E3%82%99.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "e0513741be54638f42bdb0f96fb7fa2f25f152903c79fd3ea487b09f0d4167b5"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部改为对称的独立正面图标，比例和内部线条经过简化。",
+        "深浅灰替代原配色，轻微渐变和原生低透明度边缘噪点保留。"
+      ],
+      "publicDisclosure": "依据彩色角色参考制作的AI重绘头像，不是官方透明原图。",
+      "scope": "Only four-arms; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "xlr8",
+      "portraitId": "reference-xlr8",
+      "confirmed": true,
+      "reason": "按经典版彩色参考重绘单尖头盔、两眼和开放面部，未替换为双角或闭面罩状态。",
+      "reference": {
+        "url": "https://images.microcms-assets.io/assets/9ec4dfe3f47b409aa5fea482e9d272af/da54616a67bf4065b081a839cfdfd311/05.jpg",
+        "pageUrl": "https://www.discoveryjapan.jp/cartoonnetwork/ben10/",
+        "sha256": "494f402f218fedc6a551a34ebce21b4d3f540a5535c1ec56349e58f91ce6b161"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部改为对称的独立正面图标，比例和内部线条经过简化。",
+        "深浅灰替代原配色，轻微渐变和原生低透明度边缘噪点保留。"
+      ],
+      "publicDisclosure": "依据彩色角色参考制作的AI重绘头像，不是官方透明原图。",
+      "scope": "Only xlr8; no automatic edition or wearer propagation."
+    },
+    {
+      "formId": "cannonbolt",
+      "portraitId": "reference-cannonbolt",
+      "confirmed": true,
+      "reason": "实际查看经典 Cannonbolt 彩色参考及生成结果：宽低脸部、两小斜眼、额部中条与独立下巴条、下弯细口线对应。没有独立颈部或躯干，保留两侧上方甲片作为辨识框架。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/07/cannonbolt.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/cannonbolt/",
+        "sha256": "d274f16de248bbb4799770318fb1f569349b0f068c1324eb6e687dbf9dda003a"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "两侧甲片不是纯头部解剖，作为本版图标化框架保留；生成版更像完整的上半椭圆甲片，较提示词要求的少量上缘更大。",
+        "头部正面对称化，脸宽和下颌比例简化；额部Omnitrix徽记有意排除。",
+        "灰阶替代原黄黑白，存在轻微渐变及少量浅色alpha边缘噪点。"
+      ],
+      "publicDisclosure": "依据已保留彩色参考制作的AI头像，比例和细节经过图标化处理，不是官方透明原图。",
+      "scope": "Only cannonbolt; no automatic variants or wearer propagation."
+    },
+    {
+      "formId": "echo-echo",
+      "portraitId": "reference-echo-echo",
+      "confirmed": true,
+      "reason": "实际查看 AF Echo Echo 彩色参考及生成结果：平滑圆顶、宽圆角方下颌、中央接缝、矩形斜眼、侧耳片及后侧小管与下弯细口对应；没有误用 Ultimate 的头顶声盘。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/10/echo_echo-1.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/echo-echo/",
+        "sha256": "4fea5c77eaa5b500ea904c1bbdc852a18faac157bdf0ad6c5fd625a602182a33"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图斜侧姿态被改成对称正面，侧耳和管的可見部分作对称解释。",
+        "窄眼和嘴采用浅色轮廓围深底而非参考原色填充，线条更粗。",
+        "有轻微灰阶渐变和原生低alpha边缘噪点，不是精确两色平涂。"
+      ],
+      "publicDisclosure": "依据已保留彩色参考制作的AI头像，比例和细节经过图标化处理，不是官方透明原图。",
+      "scope": "Only echo-echo; no automatic variants or wearer propagation."
+    },
+    {
+      "formId": "humungousaur",
+      "portraitId": "reference-humungousaur",
+      "confirmed": true,
+      "reason": "实际查看 AF Humungousaur 彩色参考及生成结果：低平宽额、厚眉骨下的两小斜眼、宽钝吻部、闭合嘴和厚方下颌对应。没有角、头盔、尖齿外露、颈或Ultimate装甲。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/10/humungousaur_uaf_render.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/humungousaur/",
+        "sha256": "d58494c402fb0e9873aba2b8f4fdfc5f2961b5ac53a84b9ffe56268ab0af7c77"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "生成版接近正面三分之二视角，眉骨和颊部转折比小尺寸参考更概括、更硬朗。",
+        "鼻孔、眉颊分区和下颌竖线存在AI放大解释，不构成新增原作细节证据。",
+        "原生低alpha浅色边缘噪点较其他三图明显，尤其头顶和下颌；小尺寸是否影响需root实看。",
+        "灰阶有轻微渐变，不是严格双色。"
+      ],
+      "publicDisclosure": "依据已保留彩色参考制作的AI头像，比例和细节经过图标化处理，不是官方透明原图。",
+      "scope": "Only humungousaur; no automatic variants or wearer propagation."
+    },
+    {
+      "formId": "armodrillo",
+      "portraitId": "reference-armodrillo",
+      "confirmed": true,
+      "reason": "实际查看 UA Armodrillo 完整彩色原字节参考及生成结果：纵长下收尖的甲面轮廓、浅色外侧板围绕深色中央面部、上方小眼及两个侧上方小突起对应基本识别结构；没有加入钻头、胸甲或双臂。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/01/armodrillo_ua.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-from-alien-force/armodrillo/",
+        "sha256": "f2a723e7740f7ec17df654874bc2108fac02a50e6b74988fa38f8f3bb962f485"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图仅354×267且头部像素很小；放大后的眼区与侧尖/额部转折是AI保守解释，不能宣称官方细节还原。",
+        "生成版额顶更圆、脸宽略放大，两侧小突起更显著；需root重点核头形，不因四图批次而自动通过。",
+        "灰阶替代黄黑灰，存在轻微渐变与alpha边缘噪点。"
+      ],
+      "publicDisclosure": "依据已保留彩色参考制作的AI头像，比例和细节经过图标化处理，不是官方透明原图。",
+      "scope": "Only armodrillo; no automatic variants or wearer propagation."
     }
   ]
 }
