@@ -902,6 +902,54 @@
       }
     },
     {
+      "id": "reference-astrodactyl",
+      "file": "portraits/reference-astrodactyl.png",
+      "sha256": "301254cf0a7acc2fde5258a2941de711a2d9a7e4e0b742c7c7aa347540d5816e",
+      "bytes": 540106,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.31803717647059054,
+      "light": 0.7999999999999999,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/astrodactyl-head-reference-original.png",
+        "referenceSha256": "5e9ca97ca7a7a22c7ba4512ca243f3d7291eb8c1f5dd9de6353bbe01f29a7387",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2018/03/astrodactyl_omniverse.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/astrodactyl-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200; normalized Rec.709 RGB luminance; P20 dark, brightPopulationMedian light. Bright population is luminance>0.7. No pixel or alpha modifications."
+      }
+    },
+    {
+      "id": "reference-bloxx",
+      "file": "portraits/reference-bloxx.png",
+      "sha256": "60486d85f9bcf1ff80835f11c8db93796128ae269e2578873a3f1281899b09da",
+      "bytes": 717511,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.412598431372549,
+      "light": 0.8310894117647059,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/bloxx-head-reference-original.png",
+        "referenceSha256": "2f735000f78607ba0bac97dae73a0d4e376ea3a94036d34c2447e566faea2bfd",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/06/bloxx.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/bloxx-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200; normalized Rec.709 RGB luminance; P20 dark, P90 light. Bright population is luminance>0.7. No pixel or alpha modifications."
+      }
+    },
+    {
       "id": "reference-brainstorm",
       "file": "portraits/reference-brainstorm.png",
       "sha256": "fb749942bb1b78af1a8a2edea959483e58d4376316ccc39906071cb3bde38873",
@@ -1039,6 +1087,30 @@
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
         "colorCalibration": "alpha>=200; Rec.709 normalized RGB luminance; P20 dark, median of opaque pixels with luminance>0.7 for light. Eyes/mouth occupy under 2% of opaque area, so even P98 measures base gray. Bright population checked against displayed eyes/mouth; P20/P90/P95/P98/P99 preserved separately. Read-only measurement, no pixel changes."
+      }
+    },
+    {
+      "id": "reference-crashhopper",
+      "file": "portraits/reference-crashhopper.png",
+      "sha256": "ceea75e92493ad81e21d36aa4a1e1ab903a36e5b1a05382296575982518a9b1e",
+      "bytes": 564847,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.436961568627451,
+      "light": 0.8448047058823529,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/crashhopper-head-reference-original.png",
+        "referenceSha256": "b7f1824f95ed0c476afe33591adf54e744ee13365c415cf69ad775a591c1c14a",
+        "referenceUrl": "https://www.pinclipart.com/picdir/big/558-5580741_grasshopper-clipart-black-and-white.png",
+        "referencePageUrl": "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/crashhopper-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200; normalized Rec.709 RGB luminance; P20 dark, brightPopulationMedian light. Bright population is luminance>0.7. No pixel or alpha modifications."
       }
     },
     {
@@ -1335,6 +1407,30 @@
       }
     },
     {
+      "id": "reference-pesky-dust",
+      "file": "portraits/reference-pesky-dust.png",
+      "sha256": "ed9776b3caf446300c688b529dcc813a287d8fe4be014ee3069c821bc0d8cdb4",
+      "bytes": 601868,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.49915607843137255,
+      "light": 0.8439709803921569,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/pesky-dust-head-reference-original.png",
+        "referenceSha256": "b1584592ee4a43653f24af093954ef84bae4e007563eb3bfde2d8d580326ff67",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2017/08/peskydust.png",
+        "referencePageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/pesky-dust-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200; normalized Rec.709 RGB luminance; P20 dark, P90 light. Bright population is luminance>0.7. No pixel or alpha modifications."
+      }
+    },
+    {
       "id": "reference-ripjaws",
       "file": "portraits/reference-ripjaws.png",
       "sha256": "b02013f408ddc3acd4f485c160e134d0bab36f7558792b04240b78d91b2884cd",
@@ -1426,6 +1522,150 @@
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
         "colorCalibration": "alpha>=200; normalized Rec.709 RGB luminance P20 dark/P90 light, computed read-only"
+      }
+    },
+    {
+      "id": "reference-ultimate-cannonbolt",
+      "file": "portraits/reference-ultimate-cannonbolt.png",
+      "sha256": "93f9e36ce4e48ac35e90923cfe6ccacaae87f27c323222a0ff98fa0f3c787c6e",
+      "bytes": 794612,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4117647058823529,
+      "light": 0.8579898039215687,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-cannonbolt-head-reference-original.png",
+        "referenceSha256": "d06f428704f49513c2f30915e0d269b8aa1fb06f732195183458ff2c2052c516",
+        "referenceUrl": "https://www.pngaaa.com/api-download/7832317",
+        "referencePageUrl": "https://www.pngaaa.com/detail/7832317",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-cannonbolt-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200 RGB Rec.709 luminance; dark=P20 and light=median of pixels above luminance0.7. No changes to any input/output image bytes."
+      }
+    },
+    {
+      "id": "reference-ultimate-echo-echo",
+      "file": "portraits/reference-ultimate-echo-echo.png",
+      "sha256": "71ddbf7a6a71d81fc59df8d55c22950ca0a2c94ad9a294d11b79f518c1c63008",
+      "bytes": 682297,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3016776470588235,
+      "light": 0.8481756862745098,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-echo-echo-head-reference-original.png",
+        "referenceSha256": "8151f29a859e0fbb2bed4486fd295ab605d7e3f435a31025c7ed226cd662d301",
+        "referenceUrl": "https://cdn.fufu.gg/uploads/mgunu8c9w8yua.png",
+        "referencePageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-echo-echo-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200 RGB Rec.709 luminance; dark=P20 and light=median of pixels above luminance0.7. No changes to any input/output image bytes."
+      }
+    },
+    {
+      "id": "reference-ultimate-humungousaur",
+      "file": "portraits/reference-ultimate-humungousaur.png",
+      "sha256": "f40b94aaddf6c2650a78e641e241088b8bf2b8a0504f558052b28b1eb86e242a",
+      "bytes": 864867,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.31848078431372545,
+      "light": 0.8083937254901961,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-humungousaur-original.png",
+        "referenceSha256": "ce52d0664d165a0107a37f9a89c23f2106356fbc109ff562ce05dc07d110d51c",
+        "referenceUrl": "https://ben10hero.com/wp-content/uploads/2024/05/uhua.png",
+        "referencePageUrl": "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-humungousaur-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-ultimate-spidermonkey",
+      "file": "portraits/reference-ultimate-spidermonkey.png",
+      "sha256": "3429cbb9d110f24d699fba0562e878888415c2ea14cc12a2029287ca0485e1f5",
+      "bytes": 751400,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3506870588235294,
+      "light": 0.820158431372549,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-spidermonkey-head-reference-original.png",
+        "referenceSha256": "52f1d19950de8cc4aa794a849fc0b71f8f43320871d6c06c4f337c13d8b3e1b0",
+        "referenceUrl": "https://www.pngitem.com/pimgs/b/411-4114680_spider-monkey-png.png",
+        "referencePageUrl": "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-spidermonkey-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200 RGB Rec.709 luminance; dark=P20 and light=median of pixels above luminance0.7. No changes to any input/output image bytes."
+      }
+    },
+    {
+      "id": "reference-ultimate-swampfire",
+      "file": "portraits/reference-ultimate-swampfire.png",
+      "sha256": "2fc9279cad27fb9dcb7a7f5f507930ccc743b6b1d2523da6028b77105833e202",
+      "bytes": 504222,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4792650980392157,
+      "light": 0.8478925490196079,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-swampfire-head-reference-original.png",
+        "referenceSha256": "0ebc495e5a213e0db2481125122ecd1ec76288bf1047c4f8f3be2c8d1b07a6c7",
+        "referenceUrl": "https://cdn.fufu.gg/uploads/mgunu8c24yei1.png",
+        "referencePageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-swampfire-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only alpha>=200 RGB Rec.709 luminance; dark=P20 and light=median of pixels above luminance0.7. No changes to any input/output image bytes."
+      }
+    },
+    {
+      "id": "reference-ultimate-way-big",
+      "file": "portraits/reference-ultimate-way-big.png",
+      "sha256": "6d13ce939f3304fdf8c48a5ea4544f7c98c4a1474442472767eb6ccd7ed47ea5",
+      "bytes": 385371,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.47030509803921566,
+      "light": 0.8285678431372548,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-way-big-source-korea-0118502.png",
+        "referenceSha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf",
+        "referenceUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+        "referencePageUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-way-big-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": true,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly Rec.709 luminance on alpha>=200: median mid-gray face population (0.12<luminance<0.69), excluding black outlines, and median bright population above 0.7; no pixel edits."
       }
     },
     {
@@ -2712,6 +2952,250 @@
       ],
       "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
       "scope": "Only ultimate-aggregor-amalgam; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "bloxx",
+      "portraitId": "reference-bloxx",
+      "confirmed": true,
+      "reason": "实看原始 OV 积木身体中的小头部及生成输出：保留顶上单圆柱凸粒、方块头、斜眉、小眼、平短鼻口与两侧方下颌；未混入粗大肩拱和身体。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/06/bloxx.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/bloxx/",
+        "sha256": "2f735000f78607ba0bac97dae73a0d4e376ea3a94036d34c2447e566faea2bfd"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头部比例为小图识别放大整理，额面和方下颌宽度属于 AI 图标化解释，不是源像素提取。",
+        "源红黄蓝配色归一灰阶；输出深描边和表面灰阶有细微变化，并非严格只有两种 RGB。",
+        "亮灰额眉和下颌占比较大，保留源图黄色结构分区；根代理需检查环形转盘的双色映射。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only bloxx; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "crashhopper",
+      "portraitId": "reference-crashhopper",
+      "confirmed": true,
+      "reason": "实看 OV 原图和输出：细长分节尖头完整，左右不对称侧触角、两只斜杏眼、细嘴和双下颌短突保留，没有衣领、胸或躯干。",
+      "reference": {
+        "url": "https://www.pinclipart.com/picdir/big/558-5580741_grasshopper-clipart-black-and-white.png",
+        "pageUrl": "https://www.pinclipart.com/pindetail/ibohTxm_cartoon-network-wiki-ben-10-alien-grasshopper-clipart/",
+        "sha256": "b7f1824f95ed0c476afe33591adf54e744ee13365c415cf69ad775a591c1c14a"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "头尖和侧角描边加粗、节纹更清晰，是低分辨率原图的 AI 整理。",
+        "实际顶边留白少于提示的 14%，但完整尖端仍在画布内；原像素未裁剪或缩放。",
+        "脸颊和下颌线条存在放大解释，原配色转换为中灰与浅灰。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only crashhopper; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "pesky-dust",
+      "portraitId": "reference-pesky-dust",
+      "confirmed": true,
+      "reason": "实看 OV 原图和输出：保留弯曲上扬的完整大髮冠、两只大杏眼、小颊斑、小笑嘴和尖下巴，未把蝴蝶翅膀或衣领画入头像。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/08/peskydust.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/pesky-dust/",
+        "sha256": "b1584592ee4a43653f24af093954ef84bae4e007563eb3bfde2d8d580326ff67"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "髮冠尖束、脸部轮廓经 AI 扁平化整理，源图绿色虹膜仅保留为浅色眼区，没有保留原颜色。",
+        "脸底与髮冠形成大面积明暗两区，不把浅脸误当背景；原生 alpha 透明边缘不修改。",
+        "实际髮尖上留白少于提示的 14%，但所有髮尖均在画布内。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only pesky-dust; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "astrodactyl",
+      "portraitId": "reference-astrodactyl",
+      "confirmed": true,
+      "reason": "实看 OV 原图和输出：保留左向长鸟喙、上喙齿状轮廓、主可见斜眼、向后的细长分叉冠；省略长颈、飞翼及喷气背包。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2018/03/astrodactyl_omniverse.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/astrodactyl/",
+        "sha256": "5e9ca97ca7a7a22c7ba4512ca243f3d7291eb8c1f5dd9de6353bbe01f29a7387"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源头部像素有限，生成的冠尖和喙线更细长、转角和面颊是 AI 图标化解释，不声称逐线还原。",
+        "源中仅一只主眼清晰可见，生成靠鼻梁另有小浅灰楔形面部线，根代理应确认小尺寸下不被误读成额外眼睛。",
+        "眼部亮区占比较低，使用实际亮区中位值校准；顶尖实际留白小于提示的 14%，全部尖端仍完整。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only astrodactyl; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-humungousaur",
+      "portraitId": "reference-ultimate-humungousaur",
+      "confirmed": true,
+      "reason": "原图与输出均实际查看：保留 UA 终极型的三枚中央甲刺、两侧尖冠、狭眼、宽平鼻吻、闭合下弯嘴及分段下颌；头部下方透明，无胸甲、肩背或尾刺。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2024/05/uhua.png",
+        "pageUrl": "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
+        "sha256": "ce52d0664d165a0107a37f9a89c23f2106356fbc109ff562ce05dc07d110d51c"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "由源图略侧向改为较对称正面，头甲三刺和颊片为图标辨识被放大；轮廓比例有 AI 概括。",
+        "原绿色脸与蓝色甲改为灰阶；生成仍有灰阶渐变，保留原生像素，不声称严格两色或官方透明头像。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-humungousaur; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-way-big",
+      "portraitId": "reference-ultimate-way-big",
+      "confirmed": true,
+      "reason": "已实际查看原动画飞行画面及两次生成：终稿保留三枚冠鳍、侧向面罩、斜眼、短几何嘴和深色下颌边。首稿中央冠鳍过长已修订；仅头部独立成图，不推测未显示的身体。",
+      "reference": {
+        "url": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+        "pageUrl": "https://www.youtube.com/watch?v=zXas_T4N6cI",
+        "sha256": "a6754fe20de44e63af080e383fa7279f3fa59e1c9325159f4ee8d646e2939acf"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原帧中头部较小且透视明显；输出放大并调整为偏正面的独立图标，眼、嘴和面颊折线为 AI 概括。",
+        "第二稿缩短了第一稿过长的中央冠鳍，但三鳍的曲线、角度和相对长度仍属图标化重绘，不是原帧像素提取。",
+        "淡灰图形与中灰脸部有渐变和黑色描线，保留原生 alpha 与字节。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-way-big; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-swampfire",
+      "portraitId": "reference-ultimate-swampfire",
+      "confirmed": true,
+      "reason": "实际查看 UA 全身彩色参考与原生输出：只保留位于木质躯干包围中的尖卵/泪滴状脸、双狭斜眼与短倒折口，没有把两支长树枝、后方蓝囊、胸徽或树干作为头部。",
+      "reference": {
+        "url": "https://cdn.fufu.gg/uploads/mgunu8c24yei1.png",
+        "pageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "sha256": "0ebc495e5a213e0db2481125122ecd1ec76288bf1047c4f8f3be2c8d1b07a6c7"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源图的蓝色脸面/亮蓝边框改为中灰与浅灰；输出沿用偏侧视，但更修长、脸部线条更粗。",
+        "头部边界和尖卵顶部比例是AI图标化解释；不将其称为从原图抽取的精确轮廓。",
+        "有轻微灰阶渐变，实际最小不透明边界留白约11.32%，小于提示14%；完整头部未裁切。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-swampfire; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-spidermonkey",
+      "portraitId": "reference-ultimate-spidermonkey",
+      "confirmed": true,
+      "reason": "实看 UA 六眼猩猩参考与输出：保留四枚额眼加两枚眉下主眼、重眉、短猩猩鼻吻、闭口下颌与双小牙尖；没有套用 OV 重设计或引入蜘蛛腿、胸徽。",
+      "reference": {
+        "url": "https://www.pngitem.com/pimgs/b/411-4114680_spider-monkey-png.png",
+        "pageUrl": "https://www.pngitem.com/middle/hbiRwoo_ultimate-spidermonkey-ben-10-ultimate-alien-ultimate-spidermonkey/",
+        "sha256": "52f1d19950de8cc4aa794a849fc0b71f8f43320871d6c06c4f337c13d8b3e1b0"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "输出头顶毛束明显加长，额眼排列整理得更规整，脸颊毛和鼻部线条经过AI解释；源头部像素较少。",
+        "嘴部牙尖与下颌被放大用于小头像识别，不能作为新增原作细节。",
+        "输出存在深灰边线/渐变，最小不透明边界留白约8.93%，小于14%；发尖完整。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-spidermonkey; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-cannonbolt",
+      "portraitId": "reference-ultimate-cannonbolt",
+      "confirmed": true,
+      "reason": "原始 UA 彩色源和两轮输出均已实际查看。v1 顶部两巨大圆弧错误吸收了肩甲，已弃用；第二次 builtin imagegen 以 v1 为编辑目标及原图为解剖参考，移除两圆弧，生成平滑连续圆顶。中央额带、双斜眼与短折口仍在，无颈、肩、胸徽或体侧装甲。",
+      "reference": {
+        "url": "https://www.pngaaa.com/api-download/7832317",
+        "pageUrl": "https://www.pngaaa.com/detail/7832317",
+        "sha256": "d06f428704f49513c2f30915e0d269b8aa1fb06f732195183458ff2c2052c516"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "v1 原生SHA为 7d3e330faa97b7718c41bf02b96758950b901bc43252922b5ef49b888f5b0761，其顶部两大装甲圆弧被root明确否定，不作正式候选；仅保留私有废稿审计。",
+        "v2通过第二次builtin图像编辑删除装甲弧，保留脸部中央条、斜眼和折口；头部圆边界仍是从无独立颈的球形角色脸面编制的UI解释，不是原作头模。",
+        "修改后脸面横向略加宽；原生轻灰渐变和图像右侧边缘小浅色杂点保留，未程序清边或重着色。",
+        "v2 alpha>=128包围盒最小留白约9.25%，小于最初14%提示；完整主体未接触画布边缘。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-cannonbolt; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-echo-echo",
+      "portraitId": "reference-ultimate-echo-echo",
+      "confirmed": true,
+      "reason": "实看 UA 彩色源与输出：圆椭圆机器头、额上大圆声盘、右侧带环声盘、左右椭圆眼、侧深带及低位短折口均在；没有颈、肩声盘、胸徽或OV版本头型。",
+      "reference": {
+        "url": "https://cdn.fufu.gg/uploads/mgunu8c9w8yua.png",
+        "pageUrl": "https://leewufufu.com/quiz/ben-10-ultimate-forms-xFGJ0Nivx2",
+        "sha256": "8151f29a859e0fbb2bed4486fd295ab605d7e3f435a31025c7ed226cd662d301"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "额部声盘、左右眼和右侧声盘整理为更大的椭圆，源姿态被更规整地正面化；透视与比例为AI解释。",
+        "侧深带和右侧声盘带少量渐变与分面，未满足严格仅两种RGB。",
+        "头部横向宽度大，实际最小边界留白约9.41%，小于14%，声盘完整且未触边。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-echo-echo; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ripjaws-aquatic",
+      "portraitId": "reference-ripjaws",
+      "confirmed": true,
+      "reason": "本轮实际并排看水生尾形原图、基础彩色头部参考和现有头像：单根前弯灯杆与圆灯、双外凸圆眼、横向宽嘴及交错长齿均相同；变化集中在下身尾形。可仅为 ripjaws-aquatic 显式复用现有灰阶头部图标。",
+      "reference": {
+        "url": "http://ben10hero.com/wp-content/uploads/2016/07/ripjaws_2.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/ripjaws/",
+        "sha256": "adacc3674fd70b1100bfc1de1cf8a69d08ac6816852db41122e27c30c23600f7"
+      },
+      "bindingKind": "explicit-body-state-head-reuse",
+      "visualDifferences": [
+        "水生图为侧三分之四全身姿态，现有生成头像为近正面图标；其灯杆、牙齿及眼比例是 AI 图标化解释。",
+        "水生状态应继续由全身图与标签区分，不能说头像是从水生原帧提取。"
+      ],
+      "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
+      "scope": "Only ripjaws-aquatic; no automatic family or wearer propagation."
+    },
+    {
+      "formId": "bad-gravattack",
+      "portraitId": "dna-omv-031",
+      "confirmed": true,
+      "reason": "本轮实看 Bad Gravattack、已用基础彩色参考及31号原头像：扁宽岩面、两侧短岩突、额部 Omnitrix 徽记、横向黑眼带与长方牙列保持同一套结构；Bad 图的主要差异是深色岩身、配色与紫色能力。可为这个明确已登记条目复用现有第三方简化图标。",
+      "reference": {
+        "url": "http://ben10hero.com/wp-content/uploads/2017/06/bad_ben_gravattack.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gravattack/",
+        "sha256": "87f0094ccf53f41f1b5b2743d756ba59bcb89dca95a8a5a759d938defd17b47c"
+      },
+      "bindingKind": "explicit-alternate-wearer-stylized-head-reuse",
+      "visualDifferences": [
+        "31号头像极度压扁并简化岩缝、牙块与额部比例，属于第三方物种图标，不是 Bad Ben 的精确头部原图。",
+        "佩戴者身份、原配色与能力特效仍需全身图、标签及手表主题表达；不推导其他 Gravattack 状态。"
+      ],
+      "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
+      "scope": "Only bad-gravattack; no automatic family or wearer propagation."
+    },
+    {
+      "formId": "nega-gutrot",
+      "portraitId": "dna-omv-010",
+      "confirmed": true,
+      "reason": "本轮实际并排看 Nega Gutrot、基础彩色 Gutrot 和已用10号头像：圆罩顶、双斜眼、中央口鼻呼吸罩以及左右横向面罩条仍属同一结构；Nega 图改变浅色装甲和紫色部位配色，未见新的头角/头盔机构。可仅作为 Nega 条目的现有简化 UI 图标复用。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2017/09/nega_gutrot.png",
+        "pageUrl": "https://ben10hero.com/additional-aliens/new-aliens-omniverse/gutrot/",
+        "sha256": "499f67ae83d269967d2d0485d953f25598151a241aee7fc55651b7b8ae690810"
+      },
+      "bindingKind": "explicit-alternate-wearer-stylized-head-reuse",
+      "visualDifferences": [
+        "10号原生图的呼吸罩与低位徽记/轮廓为强图标化简化；不声称它逐线等同动画脸。",
+        "配色由手表主题适配，不能用图标作为 Nega 原色或佩戴者身份的独立证据。"
+      ],
+      "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
+      "scope": "Only nega-gutrot; no automatic family or wearer propagation."
     }
   ]
 }

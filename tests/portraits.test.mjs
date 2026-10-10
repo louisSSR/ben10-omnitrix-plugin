@@ -39,7 +39,13 @@ test('every source portrait remains a content-addressed original with its source
       assert.equal(bytes[25], 6, 'reference edit retains RGBA');
       assert.equal(asset.source.kind, 'ai-reference-redraw');
       assert.equal(sha(read(asset.source.referenceFile)), asset.source.referenceSha256);
-      assert.equal(asset.source.officialPublisherVerified, false);
+      assert.equal(typeof asset.source.officialPublisherVerified, 'boolean');
+      if (asset.source.officialPublisherVerified) {
+        const evidence = JSON.parse(read('assets/extra-art.json')).assets.find(source =>
+          source.sourceFile === asset.source.referenceFile &&
+          source.sourceSha256 === asset.source.referenceSha256);
+        assert.equal(evidence?.officialSourceVerified, true, 'official reference must match retained, verified source evidence');
+      }
     }
     assert.deepEqual(read(`assets/runtime/${asset.sha256}.${type}`), bytes);
     assert.ok(html.includes(`href="./assets/runtime/${asset.sha256}.${type}"`));

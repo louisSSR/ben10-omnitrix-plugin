@@ -1,5 +1,7 @@
 # 素材与署名
 
+0.6.6 新增 10 张内置 imagegen 参考头像，原生 RGBA 字节保留。Ultimate Way Big 的参考来自已核对的 Cartoon Network Korea 动画画面，其余来自注明链接的第三方转载；来源为官方不意味着生成头像是官方素材。头鳍、面部线条、头部边界和姿态含图标化重绘，具体差异及完整提示词见 `assets/portraits.json` 与 `docs/review-v066.md`。三条复用绑定逐项核对头部结构，没有新增 APK 原始图；水生大钢牙复用的是既有 AI 头像。
+
 0.6.5 四代手表使用用户提供的 3MF / STL 打印模型网格，由六个来源包组合装配；AF 与 Ultimatrix 独立表盘减面至约 14,000 三角。源作者、许可及官方发布链未确定。模型网格不是由本仓库重新授权的官方资源。材质、信号图形、归一化与零件运动含本插件编制，详情与逐部件哈希见 `assets/watch-meshes/provenance.json`。
 
 0.6.4 增加 12 张 imagegen 参考头像及 Ultimate Aggregor 混合形态全身剪影，保留原生输出字节。完整身体依据 SasakiToon 社区绘稿，头胸经动画画面核对；不是官方独立透明素材。来源及差异见 `assets/extra-art.json`、`assets/portraits.json` 和 `docs/review-v064.md`。
@@ -24,6 +26,6 @@
 
 0.2.2 新增五张显示输入。Atomic-X 和 Fourmungousaur 的来源为设计师 [Thomas Perkins 公开的最终设计稿](https://thomasperkins.blogspot.com/2014/10/portfolio-work-atomic-x-and.html)，该页说明用于 Omniverse 第 51 集；保留完整原始合照 JPG。UI 使用从该稿制作的 AI 参考编辑，细线、星点和阴影存在生成变化，官方制作原稿的出处不使生成稿成为官方素材。Omni-Kix XLR8 的原始来源是商品预览海报，显示图同样经过 AI 参考编辑，未核实其官方动画原画发布链。终极神力暴龙和终极重力蟹使用社区转载的现成透明 PNG，未改动原始字节，也未核实官方首发来源。所有新增素材的原图、显示图、来源网址、哈希、提示词和限制见 `assets/extra-art.json`。
 
-四代手表的表壳是依据参考用内置图像生成工具制作的 AI 界面插画，并非官方素材。原始透明 PNG、完整提示词、生成记录和文件校验值保存于 `assets/watches-v3/`。UI 控件、投影和选择动画由本项目代码实现，不能作为原动画的逐帧复刻证明。
+历史表壳插画及 WebGL 不可用时的美术回退采用 AI 参考绘制，并非官方素材。原始透明 PNG、完整提示词、生成记录和文件校验值保存于 `assets/watches-v3/` 与 `assets/watches-v4/`；正式 WebGL 手表从 0.6.5 起使用本文开头说明的实际打印模型网格。UI 控件、投影和选择动画由本项目代码实现，不能作为原动画的逐帧复刻证明。
 
 0.2.3 新增 15 张显示输入，其中 AF 鬼影原形、重启 Goop、Omni-Enhanced Stinkfly、OS Buzzshock 和 OV2 Chromastone 是 AI 参考编辑。其余十张使用社区转载的原生透明 PNG，原字节保留。这批没有新增经核实的官方首发素材。Buzzshock 源帧人物是 Ken，采用其 OS 共用造型；不能把该画面说成 Ben Prime 或 Ben 10000 的已核实镜头。Chromastone 移除了肩上的 Skurd 并重建了其遮挡的小块肩部；完整两次提示词和输出哈希保留。Omni-Enhanced Heatblast 的右岩炮角尖紧贴源图边缘，微小尖端是否被上游裁切未知；主体与双手双脚可见，未编造补角。低分辨率原图、透明边缘及生成细节差异均见补充 registry。

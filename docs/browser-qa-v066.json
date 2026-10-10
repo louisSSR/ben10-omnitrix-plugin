@@ -1,0 +1,573 @@
+{
+  "version": "0.6.6",
+  "date": "2026-10-10",
+  "previewSha256": "660f29faa8d952a3e24ec1b24a59557d20975d956e73f811ad7352fcdff0f6fe",
+  "runtimeManifestSha256": "701cecf455f191a838fc955a8eee94b7d4531f4c8c0221aaf1d5a4d7912cddfa",
+  "coverage": {
+    "total": 237,
+    "reviewed": 236,
+    "missing": 1
+  },
+  "portraits": {
+    "assets": 76,
+    "bindings": 85,
+    "pending": 152,
+    "sourceSha256": "ecaecdba299f0e6201cb5d8335081552fe49d722a51cacd3bf4ba85b340b60cb",
+    "sourceBytesPreserved": true,
+    "changesSelectionPool": false
+  },
+  "tests": {
+    "passed": 162,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "8888f727a34a60b446e9225014c047153fdcdc0f23d16a1bc1d7e81e3ec7ca1c"
+  },
+  "preservation": {
+    "previousPortraitAssets": 66,
+    "previousBindings": 72,
+    "oldRecordsUnchanged": true,
+    "selectionPool": 236,
+    "bodyCatalogChanged": false,
+    "watchRegistrySha256": "70b2063614536e90411bdaf8c3610c6316ea612bb5ba1a4a456900376fbb4e38",
+    "watchImplementationChanged": false
+  },
+  "screenshots": [
+    "screenshots/v066-desktop-astrodactyl-energy.jpg",
+    "screenshots/v066-desktop-bloxx-energy.jpg",
+    "screenshots/v066-desktop-crashhopper-amber.jpg",
+    "screenshots/v066-desktop-pesky-dust-rose.jpg",
+    "screenshots/v066-desktop-ultimate-humungousaur-energy.jpg",
+    "screenshots/v066-desktop-ultimate-way-big-amber.jpg",
+    "screenshots/v066-desktop-ultimate-swampfire-rose.jpg",
+    "screenshots/v066-desktop-ultimate-spidermonkey-energy.jpg",
+    "screenshots/v066-desktop-ultimate-cannonbolt-amber.jpg",
+    "screenshots/v066-desktop-ultimate-echo-echo-rose.jpg",
+    "screenshots/v066-desktop-ripjaws-aquatic-energy.jpg",
+    "screenshots/v066-desktop-bad-gravattack-amber.jpg",
+    "screenshots/v066-desktop-nega-gutrot-rose.jpg",
+    "screenshots/v066-mobile375-ultimate-cannonbolt-amber.jpg",
+    "screenshots/v066-mobile305-astrodactyl-rose.jpg"
+  ],
+  "captures": [
+    {
+      "file": "screenshots/v066-desktop-astrodactyl-energy.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Astrodactyl",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "astrodactyl",
+          "portrait": "reference-astrodactyl",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "2e21c7b20c6102f08357890b5fc1ebdfc786ceaffe44a502cf28a89c593d95fb",
+      "bytes": 77978
+    },
+    {
+      "file": "screenshots/v066-desktop-bloxx-energy.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Bloxx",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "bloxx",
+          "portrait": "reference-bloxx",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "37bb512f088a87f6a6a1d927d55444c8ae625140b54383aa1a6a5f504e33ae74",
+      "bytes": 73788
+    },
+    {
+      "file": "screenshots/v066-desktop-crashhopper-amber.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Crashhopper",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "crashhopper",
+          "portrait": "reference-crashhopper",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "a909c0819570b9061a18fa8178469c0022d7e9811ecf0463f266268052e57bba",
+      "bytes": 75783
+    },
+    {
+      "file": "screenshots/v066-desktop-pesky-dust-rose.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Pesky Dust",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "pesky-dust",
+          "portrait": "reference-pesky-dust",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "b93633ff8db6890e2152ff524656ed2a9b42bb841bdc62e231b36954ca92bd88",
+      "bytes": 75129
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-humungousaur-energy.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Humungousaur",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-humungousaur",
+          "portrait": "reference-ultimate-humungousaur",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "d2c47ecb2b69c6130aeb64e73418706306a623d290f1ae6eb59b0078e891ac07",
+      "bytes": 77478
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-way-big-amber.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Way Big",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-way-big",
+          "portrait": "reference-ultimate-way-big",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "ad159b8ccbf50be4d837723d6aba6844fa300e51b7462ca169c7317a375212df",
+      "bytes": 77807
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-swampfire-rose.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Swampfire",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-swampfire",
+          "portrait": "reference-ultimate-swampfire",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "a563d251b2bd60a1c839dee5b70b8db5109e75baa1c2766363d63c8e731a511b",
+      "bytes": 75379
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-spidermonkey-energy.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Spidermonkey",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-spidermonkey",
+          "portrait": "reference-ultimate-spidermonkey",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "e3e51adc2ea78476a88b4d082225f95b1cd2fd82a79cd1e0ecfd6a2d8379fd49",
+      "bytes": 77208
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-cannonbolt-amber.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Cannonbolt",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-cannonbolt",
+          "portrait": "reference-ultimate-cannonbolt",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "a5180d3b89c56bc51dede6cac8cc4976791951be95f6c798fb01d0d1acf551e9",
+      "bytes": 77280
+    },
+    {
+      "file": "screenshots/v066-desktop-ultimate-echo-echo-rose.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Echo Echo",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ultimate-echo-echo",
+          "portrait": "reference-ultimate-echo-echo",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "a3f243bb69a6129e4ad927f8aecd3aa22cdbf93e8e5d1eacaed46fb961e59c4d",
+      "bytes": 75837
+    },
+    {
+      "file": "screenshots/v066-desktop-ripjaws-aquatic-energy.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ripjaws (Aquatic Tail)",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "ripjaws-aquatic",
+          "portrait": "reference-ripjaws",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "a33d664e6910dd46884256adde66c2c1f4026201792bf5bfa4979dc4228d1e68",
+      "bytes": 79748
+    },
+    {
+      "file": "screenshots/v066-desktop-bad-gravattack-amber.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Bad Gravattack",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "bad-gravattack",
+          "portrait": "dna-omv-031",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "46ee1434555dbf527c23fa43aad63ecffdd926f5845b79e44daae616ee762908",
+      "bytes": 77798
+    },
+    {
+      "file": "screenshots/v066-desktop-nega-gutrot-rose.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Nega Gutrot",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 1265,
+      "selected": [
+        {
+          "id": "nega-gutrot",
+          "portrait": "dna-omv-010",
+          "ready": "ready"
+        }
+      ],
+      "width": 1265,
+      "sha256": "497fe3c8a4a088695116ad9a7f2f5da7063f6eb170c12a553a1fd31595ff2718",
+      "bytes": 75276
+    },
+    {
+      "file": "screenshots/v066-mobile375-ultimate-cannonbolt-amber.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Ultimate Cannonbolt",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 360,
+      "selected": [
+        {
+          "id": "ultimate-cannonbolt",
+          "portrait": "reference-ultimate-cannonbolt",
+          "ready": "ready"
+        }
+      ],
+      "width": 360,
+      "sha256": "6708d0b70e922e2324fb1d7216ff8de5c5abfc40d452a17ae18ffc91a414fd06",
+      "bytes": 38777
+    },
+    {
+      "file": "screenshots/v066-mobile305-astrodactyl-rose.jpg",
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "mesh": [
+        {
+          "meshStatus": "ready",
+          "modelKind": "source-mesh",
+          "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+          "sourceMesh": "true"
+        }
+      ],
+      "name": "Astrodactyl",
+      "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+      "scrollWidth": 290,
+      "selected": [
+        {
+          "id": "astrodactyl",
+          "portrait": "reference-astrodactyl",
+          "ready": "ready"
+        }
+      ],
+      "width": 290,
+      "sha256": "3145d5d9ae372533edc3ce499b71cac16f23f0b3e967fcfd6add0f44393f33c3",
+      "bytes": 32894
+    }
+  ],
+  "interaction": {
+    "next": {
+      "id": "bullfrag",
+      "name": "Bullfrag"
+    },
+    "afterPreviousAndLock": {
+      "app": {
+        "coreState": "closed",
+        "mode": "carousel",
+        "watch": "omniverse",
+        "watchArt": "model",
+        "watchMesh": "ready",
+        "watchView": "top"
+      },
+      "id": "astrodactyl",
+      "name": "Astrodactyl",
+      "status": [
+        "",
+        "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+        "已锁定 Astrodactyl"
+      ]
+    },
+    "logs": []
+  },
+  "visualNotes": [
+    "All thirteen newly bound portraits actually selected and visually reviewed in production preview.",
+    "Three palettes viewed; complete new head silhouettes remain in slots.",
+    "Cannonbolt v2 removes rejected shoulder arcs; native minor edge residue retained.",
+    "Astrodactyl narrow nasal wedge accepted as stylized far-side facial detail.",
+    "Viewport overrides reset after responsive checks."
+  ],
+  "boundaries": {
+    "realHostVerified": false,
+    "physicalPhoneVerified": false,
+    "humanAccepted": false,
+    "allFormsComplete": false,
+    "allFourWatchesRetestedThisVersion": false,
+    "priorMeshEvidence": "browser-qa-v065.json",
+    "heroProjectionIsVolumetric": false
+  }
+}

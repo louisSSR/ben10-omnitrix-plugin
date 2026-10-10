@@ -609,6 +609,6 @@ if (document.addEventListener) listen(document, 'visibilitychange', () => render
 listen(window, 'pagehide', () => { stopMotion(); watchModel?.dispose(); portraits.dispose(); clearTimeout(toastTimer); resize.disconnect(); lifetime.abort(); });
 $('material-summary').textContent = `${data.coverage.reviewed} 个剪影已接入 / ${data.coverage.total} 条形态记录`;
 $('coverage-note').textContent = `当前有 ${data.coverage.total} 条形态记录，其中 ${data.coverage.reviewed} 条已接入核对过的剪影，${data.coverage.missing} 条素材待补。目录同时保留不同作品版本、身体状态、融合及扩展形态，不等于独立物种数量。`;
-$('portrait-coverage').textContent = `环形转盘已接入 ${portraits.count} 条形态的独立头像，其余显示“头像待补”，仍可选择。头像取自用户提供的第三方 DNA Altering 素材包，保留原始透明图；不是三星官方素材。配色只改变显示颜色，不改变角色身份。`;
+$('portrait-coverage').textContent = `环形转盘已接入 ${portraits.count} 条形态的独立头像，其余显示“头像待补”，仍可选择。头像包含第三方 DNA Altering 应用资源和依据角色参考图制作的 AI 重绘，均保留原生透明图；不是三星官方素材。具体来源与重绘差异见素材记录。配色只改变显示颜色，不改变角色身份。`;
 $('ready-only').checked = readyOnly;
 renderControls(); refreshFilter(); post('ready');

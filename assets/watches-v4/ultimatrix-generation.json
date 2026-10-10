@@ -6,7 +6,6 @@
   "transparentBackground": true,
   "references": [
     {
-      "file": ".local/watch-reference/ua-promo.png",
       "width": 785,
       "height": 618,
       "format": "PNG",
@@ -14,7 +13,8 @@
       "sha256": "11a1cc4c933350f1d20b1c626c7d1c371c48ff606b2947819cce212d26bee49d",
       "role": "primary flat-animation-style structure reference; public mirror, original publisher and artist unverified",
       "url": "https://www.pinclipart.com/picdir/big/394-3943027_cartoon-network-wiki-ben-10-ultimate-alien-omnitrix.png",
-      "actualViewed": true
+      "actualViewed": true,
+      "retainedPrivateFilename": "ua-promo.png"
     },
     {
       "file": "assets/watches-v3/ultimatrix.png",
@@ -34,7 +34,6 @@
       "type": "initial-generation",
       "fullPrompt": "Use case: stylized-concept. Asset type: one transparent 4-column by 2-row sprite atlas for an interactive Omnitrix UI. Generate exactly EIGHT views of ONE physically identical ULTIMATRIX from Ultimate Alien, on a regular four-column, two-row grid. Wide 2:1 canvas, eight equal square cells, no text, numbers, separators or cell borders. Background truly transparent.\n\nInput image 1 is an inspected public mirror of a flat animation-style Ultimatrix drawing. It is the PRIMARY structure and color reference, not an assertion of a verified official publication. Input image 2 is the current generated V3 redraw: use it ONLY to clarify the separated pipe components, not as evidence for new mechanisms or proportions. This is a new reference-guided UI redraw.\n\nIdentity: a LONG bright green forearm cuff/gauntlet, not a compact wristwatch. Raised circular gray bezel and circular dark display at ONE end of the long casing; a dark blue-gray rectangular recessed block near the OTHER end; long dark inset side panels. On each side inset preserve exactly TWO SEPARATE lime-green pipe components with gray end collars: one bent U/return component and one independent longitudinal component. Four separate collars per side, no shared junction, no Y merge. The visible reference's simple green-shell and pipe topology is essential. Do not borrow AF's two cylindrical side buttons, OS's claws/dots, or OV's angular sliding cover.\n\nBuild the cuff as a substantial closed curved hollow sleeve with a complete wrist/forearm opening and visible INNER CAVITY, like the thick bent cuff in image 1. It must NOT be a flat rectangular strap or an open ribbon. Show the entire cuff including both ends inside every cell with transparent padding. Prefer the long cuff axis lying left-to-right, but prioritize believable closed volume and visible cavity over a flat forced orientation. Keep the circular dial at the same physical end of the same model in every view. Screen is plain empty muted charcoal, no hourglass, alien, logo or writing.\n\nColumns are four fixed camera views: column 1 front-leaning overhead at 70 degrees above horizontal; column 2 front three-quarter at 45 degrees; column 3 low front at 20 degrees with cuff thickness, side pipes and interior cavity very legible; column 4 rear three-quarter at 45 degrees revealing the other side/back of the same cuff. Do not merely repeat a front view in column 4. No redesign between columns: same thickness, taper, rim, inset rectangle, side pipe counts, collar positions, colors and overall scale.\n\nUpper row: round core fully lowered into its end housing. Lower row: EXACTLY the same camera, body position, angle, scale and perspective as the cell directly above; lift ONLY the circular core a short distance on a restrained dark cylindrical neck, keeping it attached and centered above its original base. Keep the sleeve, side pipes and inset rectangle unchanged. This short lifted-core state is a reasonable UI adaptation of the original prop, not a claimed exact canonical hidden mechanism. The raised cylinder should be clean dark gray with modest green accents, not AF side buttons or a tall futuristic tower. Keep the usable circular screen blank in all eight views.\n\nStyle: beautiful premium hard-surface 3D CEL-SHADED prop render, thick clean green shell, smooth curved cuff, crisp outlines, limited polished highlights, simple joints and seams, dark inset panels and gray collars. Coherent soft studio lighting and shadows confined to the prop. Match the recognizable simple animation prop design rather than adding new sci-fi armor. No invented controls, arbitrary screws, chrome microtexture, digits, letters, hands, arms, environment, ground, external cast shadows, backdrop, glow fog or decorative graphics. Exactly eight coherent views of ONE model.",
       "output": {
-        "file": ".local/watch-v4-review/ultimatrix-atlas-first.png",
         "width": 1774,
         "height": 887,
         "format": "PNG",
@@ -189,7 +188,8 @@
         ],
         "rawOutput": {
           "locationRelativeToCodexHome": "generated_images/01a11c12-1f62-7dc0-a906-a5d8f8e10167/exec-1f582f1a-bd64-491c-ac9e-0444ea6d75f2.png"
-        }
+        },
+        "retainedPrivateFilename": "ultimatrix-atlas-first.png"
       },
       "selected": false,
       "actualViewed": true,
@@ -198,7 +198,6 @@
     {
       "type": "targeted-reference-edit",
       "fullPrompt": "Use case: precise-object-edit. Edit the supplied transparent Ultimatrix atlas. Preserve the exact 1774 by 887 canvas size, transparency, regular 4 columns by 2 rows, every cell's boundaries, the same green forearm cuff, gray end dial, dark rectangular inset and two independent lime side tubes with separate gray collars.\n\nONE TARGETED CHANGE ONLY: replace the FIRST COLUMN'S TWO IMAGES (upper-left and lower-left cells) with a dramatically higher camera elevation, nearly directly overhead: approximately 82-85 degrees above horizontal. The current first column resembles the second column's oblique 45-degree view; the revised first column must have an obviously distinct overhead silhouette. Look almost straight down on the TOP of this same long green cuff: display face almost circular rather than a tilted ellipse; long upper surface and dark rectangular top inset clearly exposed; far and near sidewall heights compressed by the overhead perspective. Do not merely rotate the old drawing in the image plane or recolor it. Keep the prop's dial at the SAME physical end, the same taper, length, width, pipe topology and color palette. Keep the whole watch centered and padded within the first column. It remains a CLOSED hollow forearm cuff, not an unfolded flat strap; a little curved rim/inner cavity can be visible at the end from the slight tilt.\n\nThe upper-left cell must show the dial lowered. The lower-left cell must use the EXACT SAME new overhead camera and body placement as the upper-left cell but with the same short attached dark raised core and green accents already shown in the lower row. Lift only that circular core, no redesign of the cuff or the screen. Both screens stay blank charcoal. Avoid adding a logo, hourglass, character, text or new buttons.\n\nPreserve columns TWO, THREE and FOUR in BOTH rows as they are: same views, object geometry, scale, positions, colors and lowered/raised states. Do not redesign or relocate those six images. Preserve the existing polished hard-surface cel-shaded linework and lighting. Do not crop, resize, add labels, grid lines, background, external glow or outside shadows. The result remains a single transparent eight-frame atlas with a clearly distinct overhead first view.",
-      "inputFile": ".local/watch-v4-review/ultimatrix-atlas-first.png",
       "toolInputPathAtCall": "assets/watches-v4/ultimatrix-atlas.png",
       "inputSha256": "28f072e0a6e7d2316ed89588050b2dbd4ff6469fb197f3c64f0d22ef2e87b404",
       "outputSha256": "23017dc21e5c560c86bfbb9e0c3a08f98d22ae575d58101acea9bbf3489aa93a",
@@ -237,7 +236,8 @@
           "column": 3,
           "rgbaPixelsExactlyEqual": false
         }
-      ]
+      ],
+      "retainedPrivateInputFilename": "ultimatrix-atlas-first.png"
     }
   ],
   "output": {
@@ -286,5 +286,6 @@
     "29677 pixels have alpha1..15; original generated alpha retained, actual black-background runtime appearance is still for root review."
   ],
   "currentUIReview": "docs/browser-qa-v040.json",
-  "runtimeCropNote": "Only left raised view clips its left 3% empty margin in CSS to exclude neighbouring-cell residue; atlas bytes unchanged."
+  "runtimeCropNote": "Only left raised view clips its left 3% empty margin in CSS to exclude neighbouring-cell residue; atlas bytes unchanged.",
+  "privateReferenceNote": "Historical reference and rejected draft filenames are identification labels only. They are retained in the local research archive, not distributed package paths. Source URLs and SHA-256 remain unchanged."
 }

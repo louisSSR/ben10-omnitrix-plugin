@@ -22,9 +22,9 @@
 
 | 时间点 | 实际可见结构 | 本地截图与 SHA256 |
 | --- | --- | --- |
-| [01:56.24](https://www.youtube.com/watch?v=iLBivD9Pxks&t=116s) | 重校准前仍是初代旧表：圆面周围四个小绿点，另有大侧面绿按钮，深色厚表体和浅灰护件。该片段来自 AF，本文不将它标为 2005 版原集画面。 | `../.local/watch-reference/classic-official-116.png`；`7c9f368a5a0dec1c4a14aa016a46438dbecb392d1f9fd1f4541cb5842da3731a` |
-| [01:59.99](https://www.youtube.com/watch?v=iLBivD9Pxks&t=120s) | 重校准后的闭合状态：绿色表带有黑色中线，深色圆形上壳，黑色盘面上的绿色沙漏标志；两侧有短的深色圆柱控制件，近侧端面明确可见绿色。下缘有银灰色弧形配件。 | `../.local/watch-reference/af-official-closed-119.png`；`bb75a033d5c3bc04a3a7e0693c3453568edb7fec16f743c38c7fe15795b4b1c4` |
-| [02:03.99](https://www.youtube.com/watch?v=iLBivD9Pxks&t=124s) | 圆芯已经升起，侧壁为深色圆柱，周围有绿色符号；上表面发出白绿光，绿色 Swampfire 全息形象立于盘面上方。绿色带、黑中线和侧边控制件仍可见。 | `../.local/watch-reference/af-official-holo-123.png`；`174c9c74626bb5ff319e72bd35e01c633ee43f7f47172c417ffdbf48d6c032d1` |
+| [01:56.24](https://www.youtube.com/watch?v=iLBivD9Pxks&t=116s) | 重校准前仍是初代旧表：圆面周围四个小绿点，另有大侧面绿按钮，深色厚表体和浅灰护件。该片段来自 AF，本文不将它标为 2005 版原集画面。 | `classic-official-116.png`；`7c9f368a5a0dec1c4a14aa016a46438dbecb392d1f9fd1f4541cb5842da3731a` |
+| [01:59.99](https://www.youtube.com/watch?v=iLBivD9Pxks&t=120s) | 重校准后的闭合状态：绿色表带有黑色中线，深色圆形上壳，黑色盘面上的绿色沙漏标志；两侧有短的深色圆柱控制件，近侧端面明确可见绿色。下缘有银灰色弧形配件。 | `af-official-closed-119.png`；`bb75a033d5c3bc04a3a7e0693c3453568edb7fec16f743c38c7fe15795b4b1c4` |
+| [02:03.99](https://www.youtube.com/watch?v=iLBivD9Pxks&t=124s) | 圆芯已经升起，侧壁为深色圆柱，周围有绿色符号；上表面发出白绿光，绿色 Swampfire 全息形象立于盘面上方。绿色带、黑中线和侧边控制件仍可见。 | `af-official-holo-123.png`；`174c9c74626bb5ff319e72bd35e01c633ee43f7f47172c417ffdbf48d6c032d1` |
 
 三张截图均为 1265×712 的完整浏览器画面，分别为 128,197、124,726、132,304 bytes。闭合近景明确支持较紧凑的深色圆面、绿带黑中线和侧向圆柱控制件；四小环灯是旧表的结构，不能搬到 AF。盘面占上壳大部分，但这两张 AF 近景是透视画面，仍未量定严格俯视直径比例、全带展开长度或背面扣合结构。升起/全息截图证明这一状态的外观，不证明完整升起速度、面盖运动路径或动画时长。
 
@@ -32,7 +32,7 @@
 
 ## Omniverse：带制作字段的模型稿镜像
 
-社区转载页为 [@Ben10protector 的 X 帖子](https://x.com/Ben10protector/status/1831392265149018138)，根代理从公开检索取得并普通 HTTP 下载了[实际 JPG 地址](https://pbs.twimg.com/media/GWppjocW8AAegif.jpg)。本代理已用 `view_image` 实际查看本地原图 `../.local/watch-reference/ov-model.jpg`，712×542、59,587 bytes，SHA256：`7f422f3d625a609bf426a8d78656e80f7083f7d7314aa2c6e84036f595cd110f`。
+社区转载页为 [@Ben10protector 的 X 帖子](https://x.com/Ben10protector/status/1831392265149018138)，根代理从公开检索取得并普通 HTTP 下载了[实际 JPG 地址](https://pbs.twimg.com/media/GWppjocW8AAegif.jpg)。本代理已用 `view_image` 实际查看本地原图 `ov-model.jpg`，712×542、59,587 bytes，SHA256：`7f422f3d625a609bf426a8d78656e80f7083f7d7314aa2c6e84036f595cd110f`。
 
 图内制作栏可读：Cartoon Network Studios 标头、《The More Things Change, Pt. 1》、集号 1010-001、模型名 TEENAGE BEN OMNITRIX、道具 ID P001S059A_053、场次 059a、页码 117a；另有 Day Colors、FINAL 和 2011 年版权行。这些是图内实际可见的制作标记，支持把它作为带明确制作标记的模型稿镜像候选。**X 上传者不是官方来源；本轮没有查到最初官方发布页或艺术家署名，不能声称转载链已经官方认证。**
 
@@ -47,7 +47,7 @@
 
 ## Ultimatrix：可读平面图，发布来源未证
 
-根代理从公开检索取得 [Pinclipart 上的 PNG 原图地址](https://www.pinclipart.com/picdir/big/394-3943027_cartoon-network-wiki-ben-10-ultimate-alien-omnitrix.png)。本代理已实际查看 `../.local/watch-reference/ua-promo.png`，785×618、182,962 bytes，SHA256：`11a1cc4c933350f1d20b1c626c7d1c371c48ff606b2947819cce212d26bee49d`。
+根代理从公开检索取得 [Pinclipart 上的 PNG 原图地址](https://www.pinclipart.com/picdir/big/394-3943027_cartoon-network-wiki-ben-10-ultimate-alien-omnitrix.png)。本代理已实际查看 `ua-promo.png`，785×618、182,962 bytes，SHA256：`11a1cc4c933350f1d20b1c626c7d1c371c48ff606b2947819cce212d26bee49d`。
 
 实际图像为平面色块插图：主表体是亮绿色长护腕；较大圆盘位于护腕的一端，盘面黑绿沙漏，外圈呈灰色并用少量明暗色块表现侧面；另一端有深蓝灰矩形嵌块。侧面有深色长面板、两条浅绿色弯管以及灰色接头。没有看到可据以复原的细螺钉、雕刻纹理或金属导轨。
 
@@ -55,7 +55,7 @@
 
 ## 找到的艺术家原始作品集：不套用到 OS / AF
 
-[Jeff Wong 的 Ben 10 作品页](https://www.jeffwongdesignportfolio.com/ben10) 直接列出 [Omnitrix Orthographic copy.jpg](https://images.squarespace-cdn.com/content/v1/5df842f22144da3774fc9df5/1580193187816-ECW0TFIG85BN6W29I8NT/Omnitrix%2BOrthographic%2Bcopy.jpg)。本代理从这个字面原图 URL 普通 HTTP 200 下载并实际查看，保存为 `../.local/watch-reference/jeff-wong-omnitrix-orthographic-original.jpg`，1300×1005、286,970 bytes，SHA256：`cf266fccfbd838666482485f9f4a17b7e1a65addc015e8d86d2edfc27492dd1d`。
+[Jeff Wong 的 Ben 10 作品页](https://www.jeffwongdesignportfolio.com/ben10) 直接列出 [Omnitrix Orthographic copy.jpg](https://images.squarespace-cdn.com/content/v1/5df842f22144da3774fc9df5/1580193187816-ECW0TFIG85BN6W29I8NT/Omnitrix%2BOrthographic%2Bcopy.jpg)。本代理从这个字面原图 URL 普通 HTTP 200 下载并实际查看，保存为 `jeff-wong-omnitrix-orthographic-original.jpg`，1300×1005、286,970 bytes，SHA256：`cf266fccfbd838666482485f9f4a17b7e1a65addc015e8d86d2edfc27492dd1d`。
 
 这是带 Jeff Wong 签名的多视角正交线稿，展示圆形中心、宽护腕和四条弯曲外部结构。作品页没有在本轮可读文字中给出该张图的代际、年份、集号或官方委托信息。因此能够追到作者自发作品页，但**尚不能归为 2005 初代或 AF 重校准表**。本次不拿它填补 OS / AF 的缺失结构，也不据它重新设计四代共用表壳。
 
@@ -67,4 +67,6 @@
 
 Wiki 本轮能够公开读到 Ultimatrix 画廊的 Official Artwork / Models and Poses 栏目；另两张画廊及模型文件页未能用本代理 web 工具读取。一次普通公开 HTTP 请求 AF 模型文件页得到真实 403，未选择年龄、未换 UA、未尝试代理或传输规避。UA 画廊的一张缩小 Box Image 图请求返回 402，也未重试。Wiki 栏目分类本身不是作者或上游官方发布链的认证。本轮未取得 Wiki 所列 AF 模型原字节；这一缺口不再等同于没有 AF 官方近景，上表官方视频截图已经提供独立结构证据。
 
-这份文档目前可用初代与 AF 官方近景、初代升起表芯及带制作字段的 OV 镜像约束结构；UA 平面图的原始发布链未证，四代完整正交尺寸也未量定。官方帧观察不等于逐帧复刻，按这些参考重绘的网页素材仍须标为重绘。原始研究图只作参考，保留在 `.local/watch-reference`，不打包为插件美术。资料核查不等于用户接受；不将本次结果写成造型验收通过。
+这份文档目前可用初代与 AF 官方近景、初代升起表芯及带制作字段的 OV 镜像约束结构；UA 平面图的原始发布链未证，四代完整正交尺寸也未量定。官方帧观察不等于逐帧复刻，按这些参考重绘的网页素材仍须标为重绘。原始研究图只作参考，保留在 本地研究归档，不打包为插件美术。资料核查不等于用户接受；不将本次结果写成造型验收通过。
+
+0.6.6 公开说明整理：上文研究图片仅以归档文件名和 SHA-256 标识，不是安装包内的可打开路径；未分发的参考与废稿仍保留在本地研究归档。
