@@ -1,0 +1,3665 @@
+{
+  "schemaVersion": 1,
+  "version": "0.6.10",
+  "recordedAt": "2026-10-10T20:01:39.816Z",
+  "currentBuildBrowserVerified": false,
+  "allDeliveryGatesPassed": false,
+  "status": "source-and-file-reviewed-current-ui-unverified",
+  "previewSha256": "dcd7e4c737a9de259e3f119c9b448b2efcf04b15d9c9e1c531c5b922f0e4358f",
+  "runtimeManifestSha256": "6cfe2176eb413dc8451ebdd600397fa3ee70a9295c7587f1dbfc99b1139906a7",
+  "portraitRegistrySha256": "562bfe0bd64948fe64747323e573aff1c935c0c173cc0fd92dc1469c6e8dcbdc",
+  "modelRegistrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
+  "screenshots": [
+    "screenshots/v067-desktop-ultimate-wildmutt-energy.jpg",
+    "screenshots/v067-desktop-ultimate-albedo-energy.jpg",
+    "screenshots/v067-desktop-ultimate-arctiguana-energy.jpg",
+    "screenshots/v067-desktop-ultimate-rath-energy.jpg",
+    "screenshots/v067-desktop-reboot-cannonbolt-energy.jpg",
+    "screenshots/v067-desktop-reboot-four-arms-energy.jpg",
+    "screenshots/v067-desktop-reboot-gax-energy.jpg",
+    "screenshots/v067-desktop-reboot-grey-matter-energy.jpg",
+    "screenshots/v067-desktop-reboot-heatblast-energy.jpg",
+    "screenshots/v067-desktop-reboot-overflow-energy.jpg",
+    "screenshots/v067-desktop-reboot-stinkfly-energy.jpg",
+    "screenshots/v067-desktop-ultimate-gravattack-energy.jpg",
+    "screenshots/v067-desktop-heatblast-ua-energy.jpg",
+    "screenshots/v067-desktop-heatblast-ov-energy.jpg",
+    "screenshots/v067-mobile375-ultimate-albedo-amber.jpg",
+    "screenshots/v067-mobile375-reboot-gax-energy.jpg",
+    "screenshots/v067-mobile305-ultimate-albedo-rose.jpg",
+    "screenshots/v067-mobile305-ultimate-gravattack-energy.jpg",
+    "screenshots/v067-source-desktop-original-projection.jpg",
+    "screenshots/v067-source-desktop-recalibrated-projection.jpg",
+    "screenshots/v067-source-desktop-ultimatrix-projection.jpg",
+    "screenshots/v067-source-desktop-omniverse-projection.jpg",
+    "screenshots/v067-source-mobile-original-carousel.jpg",
+    "screenshots/v067-source-mobile-recalibrated-carousel.jpg",
+    "screenshots/v067-source-mobile-ultimatrix-carousel.jpg",
+    "screenshots/v067-source-mobile-omniverse-carousel.jpg",
+    "screenshots/v067-source-mobile-original-dial.jpg",
+    "screenshots/v067-source-mobile-recalibrated-dial.jpg",
+    "screenshots/v067-source-mobile-ultimatrix-dial.jpg",
+    "screenshots/v067-source-mobile-omniverse-dial.jpg",
+    "screenshots/v067-source-mobile305-original-projection.jpg",
+    "screenshots/v067-source-mobile305-recalibrated-projection.jpg",
+    "screenshots/v067-source-mobile305-ultimatrix-projection.jpg",
+    "screenshots/v067-source-mobile305-omniverse-projection.jpg",
+    "screenshots/v067-source-mobile305-original-right-closed.jpg",
+    "screenshots/v067-source-mobile305-original-carousel-amber.jpg"
+  ],
+  "currentScreenshots": [],
+  "currentCaptures": [],
+  "screenshotScope": "All listed images are historical v067 screenshots with unchanged bytes and build identity; none verifies current v068.",
+  "browserAccess": {
+    "priorAttemptVersion": "0.6.8",
+    "priorAttempt": "Bind existing local preview via CUA",
+    "outcome": "prior-browser-security-refusal-remains-unresolved",
+    "attemptedThisBuild": false,
+    "reason": "Prior URL policy explicitly prohibited alternate surfaces, indirect execution and circumvention; no policy state change observed.",
+    "workaroundAttempted": false,
+    "currentBuildAccessed": false
+  },
+  "automated": {
+    "command": "npm test",
+    "tests": 173,
+    "pass": 173,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "logSha256": "32e16f6f7c9fa21669b81e8df87495145ff317c08fa7fdaa4706cf498879dcc1"
+  },
+  "counts": {
+    "catalog": 240,
+    "bodyAssets": 238,
+    "registeredBodyMissing": 2,
+    "portraitAssets": 119,
+    "portraitBindings": 133,
+    "portraitPending": 107
+  },
+  "sourceImageReviews": [
+    {
+      "formId": "reboot-omni-enhanced-overflow",
+      "sourceFile": "assets/source-art/reboot-omni-enhanced-overflow-head-reference-original.png",
+      "sourceSha256": "5e3059387b2889aa123666e25457bf62bd012edbe889a0def8b327efa3b13cbc",
+      "portraitFile": "assets/portraits/reference-reboot-omni-enhanced-overflow.png",
+      "portraitSha256": "be71cec728fa7c478d247969d9d0791b8db1ae51a7a543891a22ec60f18e8b87",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 979466,
+        "lowAlpha1to127": 10364,
+        "alpha128BBox": [
+          118,
+          211,
+          1135,
+          1024
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.09409888357256778
+      },
+      "visualDifferences": [
+        "原图头部较小，岩甲包覆、额能量纹、眼罩和三孔呼吸器放大整理；头像基本正面对称，源细小头甲裂纹未逐像素复现。",
+        "双小头罐保留泡点，原 cyan 转浅灰；呼吸器接向身体的两根长管只留短端口，未表现肩胸环管。",
+        "首稿宽翼状外颊甲被认为可能混入肩侧岩甲，执行一次定向编辑收窄；两稿、真实提示及原字节均留存，不把首稿说成最终通过。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-omni-enhanced-stinkfly",
+      "sourceFile": "assets/source-art/reboot-omni-enhanced-stinkfly-reference-original.png",
+      "sourceSha256": "15632bf59984b0682279e18ae9d9d1500e0e60ce89875da58a015ac1936fdf97",
+      "portraitFile": "assets/portraits/reference-reboot-omni-enhanced-stinkfly.png",
+      "portraitSha256": "93c2bb8fe1aea9b8d2cea582b063fb0470c976ad0cdf7d1f7c89eccdd976eaa4",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 980004,
+        "lowAlpha1to127": 17301,
+        "alpha128BBox": [
+          147,
+          39,
+          1108,
+          1155
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.03110047846889952
+      },
+      "visualDifferences": [
+        "源头部较小且随身体稍倾，头像把完整岩甲脸整理为正面较对称构图；两眉角长度、宽度、复眼格数及岩裂为 AI 图标化。",
+        "中央小顶尖保留，未将巨大 cyan 背翼混作头角；眼罩内面的块形轮廓与下颏裂纹有局部重绘差异。",
+        "原紫岩/cyan 复眼改灰阶，渐变、抗锯齿和 alpha 留原生；上角边距小于提示约14%，但完整可见且不碰边。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-omni-enhanced-wildvine",
+      "sourceFile": "assets/source-art/reboot-omni-enhanced-wildvine-round121-original.png",
+      "sourceSha256": "04df20c1223786f58e373e985c78c2e8c2ece59ed5cce2d99b95af9f31fb3d02",
+      "portraitFile": "assets/portraits/reference-reboot-omni-enhanced-wildvine.png",
+      "portraitSha256": "4cf04081a59ab83b48bfb1af0efdbf6bd4474100e1fefbd75976d12965f27d08",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 1282044,
+        "lowAlpha1to127": 7252,
+        "alpha128BBox": [
+          382,
+          64,
+          869,
+          1109
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.051036682615629984
+      },
+      "visualDifferences": [
+        "原头像源内小芽本身已可见；本候选将顶芽和叶脉放大整理，芽的相对宽高与尖端含 AI 解释，不能声称小芽是强化形态独有。",
+        "强化原图近正面短横口，旧普通头像为侧视笑口且没有芽；本候选正面化和两侧脸线较对称，下颏/颈部切界经过图标化。",
+        "巨大双能量角是从胸甲上伸的 V 领框，不是本头像头角；源翠绿/cyan 眼转灰阶，原生渐变与 alpha 保留。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-bashmouth",
+      "sourceFile": "assets/source-art/reboot-bashmouth-round121-original.png",
+      "sourceSha256": "16de2f71dad1a4e115dbbd58c8740fa014adb63e4e39489a87679fb8ca98a8c5",
+      "portraitFile": "assets/portraits/reference-reboot-bashmouth.png",
+      "portraitSha256": "b226167dc1a1a1eb2f93883a28bc6b8870fa575821bc95a0b96f92a00e3ebc23",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 908090,
+        "lowAlpha1to127": 15010,
+        "alpha128BBox": [
+          120,
+          91,
+          1159,
+          1064
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.07256778309409888
+      },
+      "visualDifferences": [
+        "头部从彩色全身放大并整理为三分之四图标，耳朵显著放大、颊毛尖与齿列更规整；不是原帧像素提取。",
+        "首稿错误混入下左白色颈胸鬃，实际一次定向编辑删除；保留首稿与真实提示链，不宣称首稿正确。",
+        "源橙眼和浅色毛转换成浅灰，深毛改中灰；中性的原生灰阶和抗锯齿保留，可由渲染器配色。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-dark-matter",
+      "sourceFile": "assets/source-art/reboot-dark-matter-round121-original.png",
+      "sourceSha256": "f13e3bbe9e1109fe88acb163305ac6f7c4c735b78c8fe970133910af74147f06",
+      "portraitFile": "assets/portraits/reference-reboot-dark-matter.png",
+      "portraitSha256": "e8d36cf1c426dc23314886d154adcdab9066fbb93a3a5b05f5cf9e6fe7e18ddb",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 974113,
+        "lowAlpha1to127": 8535,
+        "alpha128BBox": [
+          114,
+          215,
+          1157,
+          1065
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.0773524720893142
+      },
+      "visualDifferences": [
+        "源小头放大整理为近正面图标，额部和眼形更对称，右侧小颊突被简化进外轮廓。",
+        "浅灰大眼内新增深灰长带、眉口沟槽和面部阴影属于图标化解释；并非新原作结构证据。",
+        "源红头红眼转换为中灰和浅灰，无额外彩色光效，原生字节与 alpha 不改。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-quad-smack",
+      "sourceFile": "assets/source-art/reboot-quad-smack-round121-original.png",
+      "sourceSha256": "575272d3c91e09697a4d2d5af48026cb4e879bfd0b972209f1859fb7e283d687",
+      "portraitFile": "assets/portraits/reference-reboot-quad-smack.png",
+      "portraitSha256": "622ffc2fe8a722b6325092771f17bcc387e66efe87b8641e031f5b0f3019989c",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 1020505,
+        "lowAlpha1to127": 7727,
+        "alpha128BBox": [
+          169,
+          200,
+          1095,
+          1094
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.12679425837320574
+      },
+      "visualDifferences": [
+        "源夹在肩甲中的小头放大，短额角、眉骨、尖下颏和牙齿比例有 AI 整理；四肢附肢未引入头部。",
+        "首稿后下方多出颈瓣，实际一次定向编辑删去；头后颊直接收至下颌而无单独颈、肩或领。",
+        "紫皮红眼转中浅灰，口鼻额纹及齿列更清楚和对称，不是原官方透明头像。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "reboot-bootleg",
+      "sourceFile": "assets/source-art/reboot-bootleg-head-reference-original.png",
+      "sourceSha256": "19eef88175943765b615dca399c11685140264227ee0eaa1d7949d343fada923",
+      "portraitFile": "assets/portraits/reference-reboot-bootleg.png",
+      "portraitSha256": "82a5a5fea9542b5082ac4ddaf8ae3d00874c4b95c4b949d63f072db5f60b99a5",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "transparentPixels": 1169180,
+        "lowAlpha1to127": 10630,
+        "alpha128BBox": [
+          197,
+          206,
+          1128,
+          995
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.10047846889952153
+      },
+      "visualDifferences": [
+        "游戏精灵单头很小，输出重新放大并整理为四个可见尖刺的灰阶三分之四小圆头；尖刺数与精确位置为低清参考下 AI 解释，非动画模型精确测量。",
+        "双椭圆眼、深眼眶、宽浅下口沿保留，低清头皮分块被加粗整理；不能把头皮分线当官方新增设定。",
+        "输入是官方游戏 adaptation spritesheet，输出是 AI 灰阶重绘而非官方原生图标。未新读游戏页面或验证再分发许可。"
+      ],
+      "currentUIViewed": false
+    },
+    {
+      "formId": "dynamite-heatblast",
+      "sourceFile": "assets/source-art/dynamite-heatblast-source-original.jpg",
+      "sourceSha256": "fd160e05b8f2d575b8aa0fd0af29aadc70309cb267258917691219e30672985a",
+      "portraitFile": "assets/portraits/reference-dynamite-heatblast.png",
+      "portraitSha256": "2891e368cd412b756febfcb3dae962ab9b25ffe59ae0bcd47fe78a96684b48a5",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          255
+        ],
+        "transparentPixels": 1101334,
+        "lowAlpha1to127": 10495,
+        "alpha128BBox": [
+          248,
+          112,
+          1093,
+          1114
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.07089241034195162
+      },
+      "visualDifferences": [
+        "First candidate mistakenly expanded source neck/chest shell into a large invented lower jaw. One targeted native correction removed the entire lower black neck/body structure.",
+        "Corrected candidate retains only compact actual dark rock face embedded in grayscale flames; outer up-left taper and simplified facial/fissure lines are interpreted redraw detail.",
+        "Large source outer plume is cropped at the source top/left; portrait uses a contained crown and does not claim recovered unseen flame geometry.",
+        "All opaque color channels are inspected, never converted/recolored by script; native pixels retained unchanged."
+      ],
+      "currentUIViewed": false
+    }
+  ],
+  "reviewedReuses": [],
+  "runtime": {
+    "files": 384,
+    "bytes": 198117044,
+    "bytesIncludingManifest": 198201046
+  },
+  "historicalEvidence": {
+    "version": "0.6.7",
+    "scope": "Unchanged source models were reviewed in the prior build. New portraits and current v068 UI are not covered.",
+    "qa": {
+      "version": "0.6.7",
+      "date": "2026-10-11",
+      "previewSha256": "0a7d9d3c12ceae5b2edc87e350c6523b5bc991432cadfc30f659d4d3609dcebe",
+      "runtimeManifestSha256": "f0f4311a9ccbc4713e2243c7bde31f157cb7465467a81da7d40b07173af18cc6",
+      "coverage": {
+        "total": 237,
+        "reviewed": 236,
+        "missing": 1
+      },
+      "portraits": {
+        "assets": 88,
+        "bindings": 99,
+        "pending": 138,
+        "sourceSha256": "0a45f747e9666f2f14987d964da88f0aae74c49b15d0132db0a108d0825d86b6",
+        "sourceBytesPreserved": true,
+        "changesSelectionPool": false
+      },
+      "tests": {
+        "passed": 171,
+        "failed": 0,
+        "skipped": 0,
+        "logSha256": "d6ef1ff308cc7d9be69bcb9da66b5322be08f6ee152cb9a300bc7d198ce01104"
+      },
+      "portraitPhase": {
+        "version": "0.6.7",
+        "date": "2026-10-10",
+        "previewSha256": "2a2e57b989d9b70ab9a2afcaf061ec68c11abe0c3a8207a6ce6071014a4f9928",
+        "runtimeManifestSha256": "11e80bfda01b3de3e1d196d417dcb7cb4af3d06cd156b8bdc6883fb50d2a6a77",
+        "coverage": {
+          "total": 237,
+          "reviewed": 236,
+          "missing": 1
+        },
+        "portraits": {
+          "assets": 88,
+          "bindings": 99,
+          "pending": 138,
+          "sourceSha256": "0a45f747e9666f2f14987d964da88f0aae74c49b15d0132db0a108d0825d86b6",
+          "sourceBytesPreserved": true,
+          "changesSelectionPool": false
+        },
+        "tests": {
+          "passed": 162,
+          "failed": 0,
+          "skipped": 0,
+          "logSha256": "c666f10ddf84c00f56169ad8ee1b91f25d4eb72db5d1964ecb4bdb9873755715"
+        },
+        "preservation": {
+          "previousPortraitAssets": 76,
+          "previousBindings": 85,
+          "oldRecordsUnchanged": true,
+          "selectionPool": 236,
+          "bodyCatalogChanged": false,
+          "watchRegistrySha256": "70b2063614536e90411bdaf8c3610c6316ea612bb5ba1a4a456900376fbb4e38",
+          "watchImplementationChanged": false
+        },
+        "screenshots": [
+          "screenshots/v067-desktop-ultimate-wildmutt-energy.jpg",
+          "screenshots/v067-desktop-ultimate-albedo-energy.jpg",
+          "screenshots/v067-desktop-ultimate-arctiguana-energy.jpg",
+          "screenshots/v067-desktop-ultimate-rath-energy.jpg",
+          "screenshots/v067-desktop-reboot-cannonbolt-energy.jpg",
+          "screenshots/v067-desktop-reboot-four-arms-energy.jpg",
+          "screenshots/v067-desktop-reboot-gax-energy.jpg",
+          "screenshots/v067-desktop-reboot-grey-matter-energy.jpg",
+          "screenshots/v067-desktop-reboot-heatblast-energy.jpg",
+          "screenshots/v067-desktop-reboot-overflow-energy.jpg",
+          "screenshots/v067-desktop-reboot-stinkfly-energy.jpg",
+          "screenshots/v067-desktop-ultimate-gravattack-energy.jpg",
+          "screenshots/v067-desktop-heatblast-ua-energy.jpg",
+          "screenshots/v067-desktop-heatblast-ov-energy.jpg",
+          "screenshots/v067-mobile375-ultimate-albedo-amber.jpg",
+          "screenshots/v067-mobile375-reboot-gax-energy.jpg",
+          "screenshots/v067-mobile305-ultimate-albedo-rose.jpg",
+          "screenshots/v067-mobile305-ultimate-gravattack-energy.jpg"
+        ],
+        "captures": [
+          {
+            "file": "screenshots/v067-desktop-ultimate-wildmutt-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Wildmutt",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "ultimate-wildmutt",
+                "portrait": "reference-ultimate-wildmutt",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "f7c1211d792d173987015c53e4e2532ff0cf7e04271ebd0a4b0910ab7687e63b",
+            "bytes": 76258
+          },
+          {
+            "file": "screenshots/v067-desktop-ultimate-albedo-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Albedo",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "ultimate-albedo",
+                "portrait": "reference-ultimate-albedo",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "32e8e09ffa15d894b23b65893403c02cd6c4d3cd6198a7bf21925297851fd01c",
+            "bytes": 76664
+          },
+          {
+            "file": "screenshots/v067-desktop-ultimate-arctiguana-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Arctiguana",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "ultimate-arctiguana",
+                "portrait": "reference-ultimate-arctiguana",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "94122e035c33b2fb4605dc5383f2b94cdbca92513cf799457cebdf4a001052f2",
+            "bytes": 76707
+          },
+          {
+            "file": "screenshots/v067-desktop-ultimate-rath-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Rath",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "ultimate-rath",
+                "portrait": "reference-ultimate-rath",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "a091a15cb7584fa6359597d15c736d6ef80737fcfb86310c8d2582e4804e3ac5",
+            "bytes": 75556
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-cannonbolt-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Cannonbolt",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-cannonbolt",
+                "portrait": "reference-reboot-cannonbolt",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "ba305e3bed4c175f6f77579008b743a8ed95cc89ce2a42f59288eeefc0216ede",
+            "bytes": 76686
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-four-arms-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Four Arms",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-four-arms",
+                "portrait": "reference-reboot-four-arms",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "3455c5efed5f4bca5088fd5fd22dd9b5b1187be88cbb7e6b902745aae25de79f",
+            "bytes": 75017
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-gax-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Gax",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-gax",
+                "portrait": "reference-reboot-gax",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "9b975c9d0a17d706c1e6bcf2863028da45cb81ae195444cf20bed7bc82a60e72",
+            "bytes": 73677
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-grey-matter-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Grey Matter",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-grey-matter",
+                "portrait": "reference-reboot-grey-matter",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "97e451c29f0a1199f448ca9da43aa6e18898ae1c5b21ecd259cb0bb49eccb098",
+            "bytes": 75965
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-heatblast-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Heatblast",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-heatblast",
+                "portrait": "reference-reboot-heatblast",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "b864f71111aaa96d4e964c0884b8691d0eadd0927afd69ba8dfa70ec6e0fe0f5",
+            "bytes": 74752
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-overflow-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Overflow",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-overflow",
+                "portrait": "reference-reboot-overflow",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "048a31916dc3aaa4564d02794758266164364e61fc0d839c2fbc072d98473a64",
+            "bytes": 74229
+          },
+          {
+            "file": "screenshots/v067-desktop-reboot-stinkfly-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Stinkfly",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "reboot-stinkfly",
+                "portrait": "reference-reboot-stinkfly",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "89226f831887e9a1c71233a8c327c093714a7ddc11a7c3eee59a44ed92833ffa",
+            "bytes": 74292
+          },
+          {
+            "file": "screenshots/v067-desktop-ultimate-gravattack-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Gravattack",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "ultimate-gravattack",
+                "portrait": "reference-ultimate-gravattack",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "a899f25b7cb9d5c694950cda03428707eef18d506a51999e8a51fcd824451624",
+            "bytes": 79429
+          },
+          {
+            "file": "screenshots/v067-desktop-heatblast-ua-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Heatblast — Ultimate Alien",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "heatblast-ua",
+                "portrait": "dna-omv-004",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "82bf74974ea4cf5045b942ed7d6814b210dd3214a51437249c3046aafed466b2",
+            "bytes": 78714
+          },
+          {
+            "file": "screenshots/v067-desktop-heatblast-ov-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Heatblast — Omniverse",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 1265,
+            "selected": [
+              {
+                "id": "heatblast-ov",
+                "portrait": "dna-omv-004",
+                "ready": "ready"
+              }
+            ],
+            "width": 1265,
+            "sha256": "94fb86c6294c15f4048798b63e8e41b80bc1f0afba6e9903c97dbc758ff33e31",
+            "bytes": 78310
+          },
+          {
+            "file": "screenshots/v067-mobile375-ultimate-albedo-amber.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Albedo",
+            "palette": "amber",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 360,
+            "selected": [
+              {
+                "id": "ultimate-albedo",
+                "portrait": "reference-ultimate-albedo",
+                "ready": "ready"
+              }
+            ],
+            "width": 360,
+            "sha256": "d73ff4bb180681c6c81be6ef318d208702b31f744eddce5abd2ea08b0348ebb8",
+            "bytes": 38830
+          },
+          {
+            "file": "screenshots/v067-mobile375-reboot-gax-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Gax",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 360,
+            "selected": [
+              {
+                "id": "reboot-gax",
+                "portrait": "reference-reboot-gax",
+                "ready": "ready"
+              }
+            ],
+            "width": 360,
+            "sha256": "7e8a6e1daf97295eed4f9f1eb28eea18fb3c727ea0be5494e5e5ed085b23ed22",
+            "bytes": 38552
+          },
+          {
+            "file": "screenshots/v067-mobile305-ultimate-albedo-rose.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Albedo",
+            "palette": "rose",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 290,
+            "selected": [
+              {
+                "id": "ultimate-albedo",
+                "portrait": "reference-ultimate-albedo",
+                "ready": "ready"
+              }
+            ],
+            "width": 290,
+            "sha256": "0aa6ccac1dfb54559fd57e89809cc36489075cbf692ec1aeed113f3dfd017c71",
+            "bytes": 33281
+          },
+          {
+            "file": "screenshots/v067-mobile305-ultimate-gravattack-energy.jpg",
+            "app": {
+              "coreState": "closed",
+              "mode": "carousel",
+              "watch": "omniverse",
+              "watchArt": "model",
+              "watchMesh": "ready",
+              "watchView": "top"
+            },
+            "mesh": [
+              {
+                "meshStatus": "ready",
+                "modelKind": "source-mesh",
+                "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+                "sourceMesh": "true"
+              }
+            ],
+            "name": "Ultimate Gravattack",
+            "palette": "energy",
+            "pool": "档案搜索 237 / 237 · 手表可切换 236 个 · 全部形态",
+            "scrollWidth": 290,
+            "selected": [
+              {
+                "id": "ultimate-gravattack",
+                "portrait": "reference-ultimate-gravattack",
+                "ready": "ready"
+              }
+            ],
+            "width": 290,
+            "sha256": "3b667455a87bb09dbf1dd5c34f963cd5207974ba912b4a7b32e7ec8abd4af878",
+            "bytes": 34658
+          }
+        ],
+        "interaction": {
+          "initial": {
+            "id": "ultimate-gravattack"
+          },
+          "next": {
+            "id": "ultimate-rath"
+          },
+          "afterPreviousAndLock": {
+            "id": "ultimate-gravattack",
+            "status": "Ultimate Gravattack · 形态已锁定\n复制形态名称"
+          },
+          "logs": []
+        },
+        "visualNotes": [
+          "All fourteen newly bound portraits actually selected in production preview and visually reviewed.",
+          "Three palettes viewed, complete heads retained within slots.",
+          "Viewport overrides reset after responsive checks.",
+          "AI redraws include simplified anatomy, grayscale gradients and native edge residue; not official or exact two-tone extractions."
+        ],
+        "boundaries": {
+          "realHostVerified": false,
+          "physicalPhoneVerified": false,
+          "humanAccepted": false,
+          "allFormsComplete": false,
+          "allFourWatchesRetestedThisVersion": false,
+          "priorMeshEvidence": "browser-qa-v065.json",
+          "heroProjectionIsVolumetric": false
+        },
+        "scope": "Portrait additions verified before the source-preserved watch replacement. These screenshots retain their original build hashes."
+      },
+      "modelCaptures": [
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 823.3333435058594,
+            "height": 480,
+            "left": 506.8333435058594,
+            "right": 986.8333435058594,
+            "top": 343.3333435058594,
+            "width": 480,
+            "x": 506.8333435058594,
+            "y": 343.3333435058594
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 779.3333435058594,
+            "height": 560,
+            "left": 269.66668701171875,
+            "right": 1224.0000610351562,
+            "top": 219.33334350585935,
+            "width": 954.3333740234376,
+            "x": 269.66668701171875,
+            "y": 219.33334350585935
+          },
+          "viewport": {
+            "height": 1100,
+            "innerWidth": 1280,
+            "scrollWidth": 1265,
+            "width": 1265
+          },
+          "file": "screenshots/v067-source-desktop-original-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "7788a90c0a178e2b054fbc16092b26987dd2b6c3a0d9be444e3cca0d1430d8be",
+          "bytes": 75826
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "recalibrated",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 823.3333435058594,
+            "height": 480,
+            "left": 506.8333435058594,
+            "right": 986.8333435058594,
+            "top": 343.3333435058594,
+            "width": 480,
+            "x": 506.8333435058594,
+            "y": 343.3333435058594
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "54474",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 779.3333435058594,
+            "height": 560,
+            "left": 269.66668701171875,
+            "right": 1224.0000610351562,
+            "top": 219.33334350585935,
+            "width": 954.3333740234376,
+            "x": 269.66668701171875,
+            "y": 219.33334350585935
+          },
+          "viewport": {
+            "height": 1100,
+            "innerWidth": 1280,
+            "scrollWidth": 1265,
+            "width": 1265
+          },
+          "file": "screenshots/v067-source-desktop-recalibrated-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "0f5ff95c42868218534b59c762dcb625189b01e5300b83341c51a1c00f486eca",
+          "bytes": 72995
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "ultimatrix",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 823.3333435058594,
+            "height": 480,
+            "left": 506.8333435058594,
+            "right": 986.8333435058594,
+            "top": 343.3333435058594,
+            "width": 480,
+            "x": 506.8333435058594,
+            "y": 343.3333435058594
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "27822",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 779.3333435058594,
+            "height": 560,
+            "left": 269.66668701171875,
+            "right": 1224.0000610351562,
+            "top": 219.33334350585935,
+            "width": 954.3333740234376,
+            "x": 269.66668701171875,
+            "y": 219.33334350585935
+          },
+          "viewport": {
+            "height": 1100,
+            "innerWidth": 1280,
+            "scrollWidth": 1265,
+            "width": 1265
+          },
+          "file": "screenshots/v067-source-desktop-ultimatrix-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "48f09b1709c05c35c46a1cbb3ea30264613ff56e5fff53eb3594557328b162ff",
+          "bytes": 75351
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "omniverse",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 823.3333435058594,
+            "height": 480,
+            "left": 506.8333435058594,
+            "right": 986.8333435058594,
+            "top": 343.3333435058594,
+            "width": 480,
+            "x": 506.8333435058594,
+            "y": 343.3333435058594
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "55686",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 779.3333435058594,
+            "height": 560,
+            "left": 269.66668701171875,
+            "right": 1224.0000610351562,
+            "top": 219.33334350585935,
+            "width": 954.3333740234376,
+            "x": 269.66668701171875,
+            "y": 219.33334350585935
+          },
+          "viewport": {
+            "height": 1100,
+            "innerWidth": 1280,
+            "scrollWidth": 1265,
+            "width": 1265
+          },
+          "file": "screenshots/v067-source-desktop-omniverse-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "c4276b64d5f2bdcc00dfb98bbc4ba41238a5ced50401de8027458ad26d8efe6b",
+          "bytes": 75396
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "carousel",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 902.3502807617188,
+            "height": 327.66668701171875,
+            "left": 23.5,
+            "right": 351.16668701171875,
+            "top": 574.68359375,
+            "width": 327.66668701171875,
+            "x": 23.5,
+            "y": 574.68359375
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 765.8958587646484,
+            "height": 177.5416717529297,
+            "left": 47.39583587646485,
+            "right": 327.27083587646484,
+            "top": 588.3541870117188,
+            "width": 279.875,
+            "x": 47.39583587646485,
+            "y": 588.3541870117188
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 909.3333435058594,
+            "height": 540,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-original-carousel.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "55525021e34cf5bd1b4a0db27fac0f5ed212a25d9efc1e7b2b60ee7df1fe76c3",
+          "bytes": 46792
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "carousel",
+            "watch": "recalibrated",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 900.2913818359375,
+            "height": 327.66668701171875,
+            "left": 23.5,
+            "right": 351.16668701171875,
+            "top": 572.6246948242188,
+            "width": 327.66668701171875,
+            "x": 23.5,
+            "y": 572.6246948242188
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "54474",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 766.2760925292969,
+            "height": 178.30209350585938,
+            "left": 47.39583587646485,
+            "right": 327.27083587646484,
+            "top": 587.9739990234375,
+            "width": 279.875,
+            "x": 47.39583587646485,
+            "y": 587.9739990234375
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 909.3333435058594,
+            "height": 540,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-recalibrated-carousel.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "b40ac182b0a22a58e2f0ca01e52744d6695b6a0f65d194a23226452b8d8e97ef",
+          "bytes": 46054
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "carousel",
+            "watch": "ultimatrix",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 868.7479248046875,
+            "height": 262.6041259765625,
+            "left": 23.50118064880371,
+            "right": 286.10536766052246,
+            "top": 606.143798828125,
+            "width": 262.60418701171875,
+            "x": 23.50118064880371,
+            "y": 606.143798828125
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "27822",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 762.984375,
+            "height": 171.71875,
+            "left": 47.39583587646485,
+            "right": 327.27083587646484,
+            "top": 591.265625,
+            "width": 279.875,
+            "x": 47.39583587646485,
+            "y": 591.265625
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 909.3333435058594,
+            "height": 540,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-ultimatrix-carousel.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "c5a69604d8a482f4f8020fab848f4b0c20ed691cd72336ae2846d0e7e9b130e6",
+          "bytes": 46591
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "carousel",
+            "watch": "omniverse",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 889.5145263671875,
+            "height": 327.66668701171875,
+            "left": 23.5,
+            "right": 351.16668701171875,
+            "top": 561.8478393554688,
+            "width": 327.66668701171875,
+            "x": 23.5,
+            "y": 561.8478393554688
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "55686",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 768.2604675292969,
+            "height": 182.27084350585935,
+            "left": 47.39583587646485,
+            "right": 327.27083587646484,
+            "top": 585.9896240234375,
+            "width": 279.875,
+            "x": 47.39583587646485,
+            "y": 585.9896240234375
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 909.3333435058594,
+            "height": 540,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-omniverse-carousel.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "1e46589cf584dd417ffbd41e7d81dfeb516a43d9ae590ec6b0c9357c511cf313",
+          "bytes": 46724
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "dial",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 820.9271240234375,
+            "height": 389.1041870117187,
+            "left": -7.21875,
+            "right": 381.8854370117187,
+            "top": 431.8229370117187,
+            "width": 389.1041870117187,
+            "x": -7.21875,
+            "y": 431.8229370117187
+          },
+          "dial": {
+            "clip": "polygon(50% 0px, 100% 50%, 50% 100%, 0px 50%)",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 854.3333435058594,
+            "height": 485,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-original-dial.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "7f0836157b93fb0654ea5cd1ffc96b5bea62b2af02ffd6b1737c7447f91bafac",
+          "bytes": 42885
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "dial",
+            "watch": "recalibrated",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 820.9271240234375,
+            "height": 389.1041870117187,
+            "left": -7.21875,
+            "right": 381.8854370117187,
+            "top": 431.8229370117187,
+            "width": 389.1041870117187,
+            "x": -7.21875,
+            "y": 431.8229370117187
+          },
+          "dial": {
+            "clip": "polygon(50% 0px, 100% 50%, 50% 100%, 0px 50%)",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "54474",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 854.3333435058594,
+            "height": 485,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-recalibrated-dial.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "50b0b4d12d745e1c58a3b3cf31c04a83742fa747913b90e648b65dbefdd59978",
+          "bytes": 41208
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "dial",
+            "watch": "ultimatrix",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 790.2083740234375,
+            "height": 327.66668701171875,
+            "left": 23.5,
+            "right": 351.16668701171875,
+            "top": 462.5416870117187,
+            "width": 327.66668701171875,
+            "x": 23.5,
+            "y": 462.5416870117187
+          },
+          "dial": {
+            "clip": "polygon(50% 0px, 100% 50%, 50% 100%, 0px 50%)",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "27822",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 854.3333435058594,
+            "height": 485,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-ultimatrix-dial.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "215ddcf9da58483556edff4bd2aa2111135d74f8aa96adc4213ed89ddbc3bdb3",
+          "bytes": 41703
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "dial",
+            "watch": "omniverse",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 820.9271240234375,
+            "height": 389.1041870117187,
+            "left": -7.21875,
+            "right": 381.8854370117187,
+            "top": 431.8229370117187,
+            "width": 389.1041870117187,
+            "x": -7.21875,
+            "y": 431.8229370117187
+          },
+          "dial": {
+            "clip": "polygon(50% 0px, 100% 50%, 50% 100%, 0px 50%)",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "55686",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 854.3333435058594,
+            "height": 485,
+            "left": 16.666667938232422,
+            "right": 358.0000114440918,
+            "top": 369.3333435058594,
+            "width": 341.3333435058594,
+            "x": 16.666667938232422,
+            "y": 369.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 390,
+            "scrollWidth": 375,
+            "width": 375
+          },
+          "file": "screenshots/v067-source-mobile-omniverse-dial.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "c83c11ea7c3b6d552e44f4bb9c29b414ecb27599b41e87a6d826fec9fb712dc6",
+          "bytes": 40831
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 883.0625305175781,
+            "height": 309.4583435058594,
+            "left": -2.3958334922790527,
+            "right": 307.0625100135803,
+            "top": 573.6041870117188,
+            "width": 309.4583435058594,
+            "x": -2.3958334922790527,
+            "y": 573.6041870117188
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 924.3333435058594,
+            "height": 560,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-original-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "edf74dfec10745a45a8173889e6cbd7794220dc85b37f1ba5617f8aea71f446a",
+          "bytes": 38804
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "recalibrated",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 883.0625305175781,
+            "height": 309.4583435058594,
+            "left": -2.3958334922790527,
+            "right": 307.0625100135803,
+            "top": 573.6041870117188,
+            "width": 309.4583435058594,
+            "x": -2.3958334922790527,
+            "y": 573.6041870117188
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "54474",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 924.3333435058594,
+            "height": 560,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-recalibrated-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "0af89bc76dc78452adc8931d3c4fb0c4c1062e7b70fb1ec09b176652b0dfe340",
+          "bytes": 37206
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "ultimatrix",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 863.3698120117188,
+            "height": 270.07293701171875,
+            "left": 17.296875,
+            "right": 287.36981201171875,
+            "top": 593.296875,
+            "width": 270.07293701171875,
+            "x": 17.296875,
+            "y": 593.296875
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "27822",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 924.3333435058594,
+            "height": 560,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-ultimatrix-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "9baddd6822b59e8467d0261fef3ae29a27a6db9ce96eccd0965e783c10991218",
+          "bytes": 38315
+        },
+        {
+          "app": {
+            "coreState": "raised",
+            "mode": "projection",
+            "watch": "omniverse",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "left"
+          },
+          "canvasRect": {
+            "bottom": 883.0625305175781,
+            "height": 309.4583435058594,
+            "left": -2.3958334922790527,
+            "right": 307.0625100135803,
+            "top": 573.6041870117188,
+            "width": 309.4583435058594,
+            "x": -2.3958334922790527,
+            "y": 573.6041870117188
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "55686",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 924.3333435058594,
+            "height": 560,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-omniverse-projection.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "d8e3d01ca181ced9c3f4d7d1233c5a3883995d1efffe9333077a1e31f2f8c7ad",
+          "bytes": 38515
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "projection",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "right"
+          },
+          "canvasRect": {
+            "bottom": 883.0625305175781,
+            "height": 309.4583435058594,
+            "left": -2.3958334922790527,
+            "right": 307.0625100135803,
+            "top": 573.6041870117188,
+            "width": 309.4583435058594,
+            "x": -2.3958334922790527,
+            "y": 573.6041870117188
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 0,
+            "height": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "width": 0,
+            "x": 0,
+            "y": 0
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 924.3333435058594,
+            "height": 560,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-original-right-closed.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "5b34dacb4d57b5dbcc8dac858a92d1d78c7f12089eb82828cadafd617704c358",
+          "bytes": 35243
+        },
+        {
+          "app": {
+            "coreState": "closed",
+            "mode": "carousel",
+            "watch": "original",
+            "watchAnimating": "false",
+            "watchArt": "model",
+            "watchMesh": "ready",
+            "watchView": "right"
+          },
+          "canvasRect": {
+            "bottom": 858.4063110351562,
+            "height": 270.07293701171875,
+            "left": 17.296875,
+            "right": 287.36981201171875,
+            "top": 588.3333740234375,
+            "width": 270.07293701171875,
+            "x": 17.296875,
+            "y": 588.3333740234375
+          },
+          "dial": {
+            "clip": "none",
+            "visibility": "visible"
+          },
+          "mesh": {
+            "meshStatus": "ready",
+            "meshVertexCount": "360000",
+            "modelKind": "source-mesh",
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "sourceMesh": "true"
+          },
+          "ringRect": {
+            "bottom": 747.9739837646484,
+            "height": 151.6979217529297,
+            "left": 32.796875,
+            "right": 271.8697967529297,
+            "top": 596.2760620117188,
+            "width": 239.0729217529297,
+            "x": 32.796875,
+            "y": 596.2760620117188
+          },
+          "scrollY": 0,
+          "selectedName": "火焰人",
+          "stageRect": {
+            "bottom": 904.3333435058594,
+            "height": 540,
+            "left": 11.666666984558104,
+            "right": 293.0000104904175,
+            "top": 364.3333435058594,
+            "width": 281.3333435058594,
+            "x": 11.666666984558104,
+            "y": 364.3333435058594
+          },
+          "viewport": {
+            "height": 1600,
+            "innerWidth": 320,
+            "scrollWidth": 305,
+            "width": 305
+          },
+          "file": "screenshots/v067-source-mobile305-original-carousel-amber.jpg",
+          "captureRegion": {
+            "type": "visible-viewport"
+          },
+          "nativeFormat": "jpeg",
+          "sha256": "e525d287968c545949772765451dd82f9d804ed36f9e01aeadca152622129438",
+          "bytes": 42568
+        }
+      ],
+      "screenshots": [
+        "screenshots/v067-desktop-ultimate-wildmutt-energy.jpg",
+        "screenshots/v067-desktop-ultimate-albedo-energy.jpg",
+        "screenshots/v067-desktop-ultimate-arctiguana-energy.jpg",
+        "screenshots/v067-desktop-ultimate-rath-energy.jpg",
+        "screenshots/v067-desktop-reboot-cannonbolt-energy.jpg",
+        "screenshots/v067-desktop-reboot-four-arms-energy.jpg",
+        "screenshots/v067-desktop-reboot-gax-energy.jpg",
+        "screenshots/v067-desktop-reboot-grey-matter-energy.jpg",
+        "screenshots/v067-desktop-reboot-heatblast-energy.jpg",
+        "screenshots/v067-desktop-reboot-overflow-energy.jpg",
+        "screenshots/v067-desktop-reboot-stinkfly-energy.jpg",
+        "screenshots/v067-desktop-ultimate-gravattack-energy.jpg",
+        "screenshots/v067-desktop-heatblast-ua-energy.jpg",
+        "screenshots/v067-desktop-heatblast-ov-energy.jpg",
+        "screenshots/v067-mobile375-ultimate-albedo-amber.jpg",
+        "screenshots/v067-mobile375-reboot-gax-energy.jpg",
+        "screenshots/v067-mobile305-ultimate-albedo-rose.jpg",
+        "screenshots/v067-mobile305-ultimate-gravattack-energy.jpg",
+        "screenshots/v067-source-desktop-original-projection.jpg",
+        "screenshots/v067-source-desktop-recalibrated-projection.jpg",
+        "screenshots/v067-source-desktop-ultimatrix-projection.jpg",
+        "screenshots/v067-source-desktop-omniverse-projection.jpg",
+        "screenshots/v067-source-mobile-original-carousel.jpg",
+        "screenshots/v067-source-mobile-recalibrated-carousel.jpg",
+        "screenshots/v067-source-mobile-ultimatrix-carousel.jpg",
+        "screenshots/v067-source-mobile-omniverse-carousel.jpg",
+        "screenshots/v067-source-mobile-original-dial.jpg",
+        "screenshots/v067-source-mobile-recalibrated-dial.jpg",
+        "screenshots/v067-source-mobile-ultimatrix-dial.jpg",
+        "screenshots/v067-source-mobile-omniverse-dial.jpg",
+        "screenshots/v067-source-mobile305-original-projection.jpg",
+        "screenshots/v067-source-mobile305-recalibrated-projection.jpg",
+        "screenshots/v067-source-mobile305-ultimatrix-projection.jpg",
+        "screenshots/v067-source-mobile305-omniverse-projection.jpg",
+        "screenshots/v067-source-mobile305-original-right-closed.jpg",
+        "screenshots/v067-source-mobile305-original-carousel-amber.jpg"
+      ],
+      "modelInteraction": {
+        "observed": [
+          {
+            "mode": "projection",
+            "before": "火焰人",
+            "active": {
+              "classes": "omni-app selection-transition holo-transition",
+              "dialVisibility": "visible",
+              "selectedName": "超能兽"
+            },
+            "settled": {
+              "classes": "omni-app",
+              "dialVisibility": "visible",
+              "selectedName": "超能兽",
+              "shutters": [
+                {
+                  "clipPath": "polygon(0px 0px, 50% 0px, 0px 50%, 50% 100%, 0px 100%)",
+                  "id": "dial-shutter-a",
+                  "transform": "none"
+                },
+                {
+                  "clipPath": "polygon(50% 0px, 100% 0px, 100% 100%, 50% 100%, 100% 50%)",
+                  "id": "dial-shutter-b",
+                  "transform": "none"
+                }
+              ]
+            }
+          },
+          {
+            "mode": "dial",
+            "before": "超能兽",
+            "active": {
+              "classes": "omni-app selection-transition dial-transition",
+              "dialVisibility": "hidden",
+              "selectedName": "钻石战神"
+            },
+            "settled": {
+              "classes": "omni-app",
+              "dialVisibility": "visible",
+              "selectedName": "钻石战神",
+              "shutters": [
+                {
+                  "clipPath": "polygon(0px 0px, 50% 0px, 0px 50%, 50% 100%, 0px 100%)",
+                  "id": "dial-shutter-a",
+                  "transform": "none"
+                },
+                {
+                  "clipPath": "polygon(50% 0px, 100% 0px, 100% 100%, 50% 100%, 100% 50%)",
+                  "id": "dial-shutter-b",
+                  "transform": "none"
+                }
+              ]
+            }
+          },
+          {
+            "mode": "carousel",
+            "before": "钻石战神",
+            "active": {
+              "classes": "omni-app ring-transition selection-transition",
+              "dialVisibility": "visible",
+              "selectedName": "快闪之星"
+            },
+            "settled": {
+              "classes": "omni-app",
+              "dialVisibility": "visible",
+              "selectedName": "快闪之星",
+              "shutters": [
+                {
+                  "clipPath": "polygon(0px 0px, 50% 0px, 0px 50%, 50% 100%, 0px 100%)",
+                  "id": "dial-shutter-a",
+                  "transform": "none"
+                },
+                {
+                  "clipPath": "polygon(50% 0px, 100% 0px, 100% 100%, 50% 100%, 100% 50%)",
+                  "id": "dial-shutter-b",
+                  "transform": "none"
+                }
+              ]
+            }
+          }
+        ],
+        "sourceCoreClose": {
+          "watch": "original",
+          "view": "right",
+          "coreState": "closed",
+          "projectionHidden": true,
+          "screenshot": "screenshots/v067-source-mobile305-original-right-closed.jpg"
+        },
+        "notes": [
+          "Final stable screenshots wait for source archive/vertex-count match, physical watch idle and selection-transition clearance.",
+          "Dial switching exposes a pinhole and closed phase intentionally, returning to the full diamond after selection settles.",
+          "Each mobile375 carousel ring fits the stage horizontally. Physical phone, real SillyTavern installation and performance are not verified."
+        ]
+      },
+      "logs": [],
+      "watchModel": {
+        "renderer": "local-webgl-source-mesh",
+        "source": "watch-model.js",
+        "sha256": "6516ab62ddb8c20fba4fa7b1cbf73a8190c052ebed12f5cae4fa08d7f7a817fa",
+        "loaderSha256": "1363df282a5a18c0827403bc168233e19ca4a59a0cedb673aafa9595542f25c5",
+        "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
+        "generations": 4,
+        "watches": [
+          {
+            "id": "original",
+            "triangles": 120000,
+            "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9"
+          },
+          {
+            "id": "recalibrated",
+            "triangles": 18158,
+            "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448"
+          },
+          {
+            "id": "ultimatrix",
+            "triangles": 9274,
+            "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52"
+          },
+          {
+            "id": "omniverse",
+            "triangles": 18562,
+            "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c"
+          }
+        ],
+        "sharedGeometryAcrossViews": true,
+        "artFallbackRetained": true,
+        "officialModel": false,
+        "sourceArchivesRetained": true,
+        "sourcePreservation": {
+          "schemaVersion": 2,
+          "recordedAt": "2026-10-10T17:50:18.122433+00:00",
+          "status": "independent-source-derived-and-preserved-verification",
+          "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
+          "geometryContractPassed": true,
+          "inputsStable": true,
+          "driverAcceptance": "Not set by numerical verification.",
+          "counts": {
+            "displayedParts": 14,
+            "runtimeTriangles": 165994,
+            "sourceDerivedOriginalTriangles": 120000,
+            "exactSourcePreservedOtherWatchTriangles": 45994,
+            "excludedUnverifiedPinParts": 2,
+            "excludedPinTriangles": 116,
+            "sourceExactZeroAreaFacesRemovedFromOmniverse": 16
+          },
+          "watches": [
+            {
+              "watch": "original",
+              "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+              "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+              "geometryMethod": "source-derived-display-lod",
+              "displayedParts": 4,
+              "runtimeTriangles": 120000,
+              "sourceMotion": {
+                "core": true,
+                "lids": false
+              },
+              "lift": 0.1
+            },
+            {
+              "watch": "recalibrated",
+              "sourceArchive": "Ben+10+Omnitrix+Watch.zip",
+              "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+              "geometryMethod": "source-preserved",
+              "displayedParts": 1,
+              "runtimeTriangles": 18158,
+              "sourceMotion": {
+                "core": false,
+                "lids": false
+              },
+              "lift": 0
+            },
+            {
+              "watch": "ultimatrix",
+              "sourceArchive": "omnitrix+ultimate_stls.zip",
+              "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+              "geometryMethod": "source-preserved",
+              "displayedParts": 2,
+              "runtimeTriangles": 9274,
+              "sourceMotion": {
+                "core": false,
+                "lids": false
+              },
+              "lift": 0
+            },
+            {
+              "watch": "omniverse",
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "geometryMethod": "source-preserved",
+              "displayedParts": 7,
+              "runtimeTriangles": 18562,
+              "sourceMotion": {
+                "core": true,
+                "lids": false
+              },
+              "lift": 0.35
+            }
+          ],
+          "parts": [
+            {
+              "watch": "recalibrated",
+              "part": "source-af-case-and-strap",
+              "runtimeSha256": "38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4",
+              "runtimeTriangles": 18158,
+              "sourceArchive": "Ben+10+Omnitrix+Watch.zip",
+              "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+              "sourceObject": "1",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.0205,
+                0.0205,
+                0.0205
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 54474,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "ultimatrix",
+              "part": "source-ultimate-cuff",
+              "runtimeSha256": "8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557",
+              "runtimeTriangles": 4928,
+              "sourceArchive": "omnitrix+ultimate_stls.zip",
+              "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+              "sourceObject": "part-1",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.016,
+                0.016,
+                0.016
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 14784,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "ultimatrix",
+              "part": "source-ultimate-side-fittings",
+              "runtimeSha256": "5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af",
+              "runtimeTriangles": 4346,
+              "sourceArchive": "omnitrix+ultimate_stls.zip",
+              "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+              "sourceObject": "part-1",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.016,
+                0.016,
+                0.016
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-silver-face-ring",
+              "runtimeSha256": "f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f",
+              "runtimeTriangles": 1388,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-1",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [
+                674,
+                1114
+              ],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-middle-case",
+              "runtimeSha256": "80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816",
+              "runtimeTriangles": 2492,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-2",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-cylindrical-face-core",
+              "runtimeSha256": "681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9",
+              "runtimeTriangles": 2496,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-3",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [
+                364,
+                686
+              ],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-bottom-case-with-post",
+              "runtimeSha256": "178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7",
+              "runtimeTriangles": 3415,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-6",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [
+                328,
+                338,
+                412,
+                489,
+                656,
+                1111,
+                1183
+              ],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-single-cover",
+              "runtimeSha256": "d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8",
+              "runtimeTriangles": 2852,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-7",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-upper-case",
+              "runtimeSha256": "edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874",
+              "runtimeTriangles": 2649,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-8",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [
+                183,
+                248,
+                643,
+                645,
+                807
+              ],
+              "passed": true
+            },
+            {
+              "watch": "omniverse",
+              "part": "source-ov-curved-cuff",
+              "runtimeSha256": "10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9",
+              "runtimeTriangles": 3270,
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceObject": "part-9",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.02,
+                0.02,
+                0.02
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-preserved",
+              "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+              "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+              "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+              "normalsUnchangedFromVerifiedSourceVersion": true,
+              "changedMaterialColorCorners": 0,
+              "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+              "removedFaces": [],
+              "passed": true
+            },
+            {
+              "watch": "original",
+              "part": "source-reboot-cuff",
+              "runtimeSha256": "6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248",
+              "runtimeTriangles": 36000,
+              "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+              "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+              "sourceObject": "1",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.013,
+                0.013,
+                0.012999999999999998
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-derived-display-lod",
+              "sourceTriangles": 300894,
+              "orderedTransformedLodExactlyEqualsActualFloat32": true,
+              "maximumInverseFloat32VertexQuantizationMillimeters": 0.0000034755596454566336,
+              "sourceToRuntimeRatio": 0.11964346248180423,
+              "sourceLodNpzSha256": "e6d5b55c3b2ec052182192c9e66179334f603563f223fd8ddc1b1de127dad607",
+              "allLodFacesRepresentedExactlyOnce": true,
+              "passed": true
+            },
+            {
+              "watch": "original",
+              "part": "source-reboot-dial",
+              "runtimeSha256": "b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89",
+              "runtimeTriangles": 30000,
+              "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+              "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+              "sourceObject": "3",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.013,
+                0.013,
+                0.012999999999999998
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-derived-display-lod",
+              "sourceTriangles": 389120,
+              "orderedTransformedLodExactlyEqualsActualFloat32": true,
+              "maximumInverseFloat32VertexQuantizationMillimeters": 0.0000018768397640126413,
+              "sourceToRuntimeRatio": 0.07709703947368421,
+              "sourceLodNpzSha256": "e4288b87a63ddfedbc52e6f5a5400cb3ecee162fc3857c35eef0e27b0cef3d58",
+              "allLodFacesRepresentedExactlyOnce": true,
+              "passed": true
+            },
+            {
+              "watch": "original",
+              "part": "source-reboot-core",
+              "runtimeSha256": "22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5",
+              "runtimeTriangles": 48000,
+              "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+              "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+              "sourceObject": "5",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.013,
+                0.013,
+                0.012999999999999998
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-derived-display-lod",
+              "sourceTriangles": 578444,
+              "orderedTransformedLodExactlyEqualsActualFloat32": true,
+              "maximumInverseFloat32VertexQuantizationMillimeters": 0.0000016718042619421443,
+              "sourceToRuntimeRatio": 0.08298123932480932,
+              "sourceLodNpzSha256": "3972d3a8777a1dbcfa7cc04d9cdcf7623018e8f80a6d9a1423c3ce403944f4c1",
+              "allLodFacesRepresentedExactlyOnce": true,
+              "passed": true
+            },
+            {
+              "watch": "original",
+              "part": "source-reboot-button",
+              "runtimeSha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf",
+              "runtimeTriangles": 6000,
+              "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+              "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+              "sourceObject": "7",
+              "uniformProperRigidTransform": true,
+              "singularValues": [
+                0.013000000000000001,
+                0.013,
+                0.012999999999999998
+              ],
+              "authoredGeometry": false,
+              "finite": true,
+              "zeroAreaRuntimeTriangles": 0,
+              "normalMaximumUnitLengthError": 5.960464477539063e-8,
+              "normalOppositeFaceCornerCount": 0,
+              "geometryMethod": "source-derived-display-lod",
+              "sourceTriangles": 47104,
+              "orderedTransformedLodExactlyEqualsActualFloat32": true,
+              "maximumInverseFloat32VertexQuantizationMillimeters": 0.0000023504770025652403,
+              "sourceToRuntimeRatio": 0.12737771739130435,
+              "sourceLodNpzSha256": "91b49c9e7775d340135812352a368543ff17b998a97487e161c04e0e66163644",
+              "allLodFacesRepresentedExactlyOnce": true,
+              "passed": true
+            }
+          ],
+          "sameUniformScaleForEveryPartWithinWatch": true,
+          "originalSource": {
+            "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+            "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+            "nested3mfSha256": "aa006345b745d6341c9dd4eb3b0994626ae361e12abd31832ce91594efea42d8",
+            "units": "millimeter",
+            "independentlyReparsedMeshObjects": [
+              "1",
+              "3",
+              "5",
+              "7"
+            ],
+            "vertices": 657865,
+            "triangles": 1315562,
+            "sourceArrayProofSha256": "c22a0a6310d7ca41efea5d50a567e8a921eb27b32abb483e5b631d92eb5528ea",
+            "sourceArraysMatchConverterInputs": true,
+            "originalArchiveRetainedUnmodified": true
+          },
+          "sourceDerivedLod": {
+            "scope": "Only renderer slot original uses the supplied Reboot-season-1 source-derived display LoD. The other three watches retain source triangle coordinates.",
+            "algorithm": {
+              "engine": "PyMeshLab / meshing_decimation_quadric_edge_collapse",
+              "algorithm": "Quadric error edge collapse",
+              "parameters": {
+                "qualitythr": 0.3,
+                "preserveboundary": true,
+                "boundaryweight": 2,
+                "preservenormal": true,
+                "preservetopology": true,
+                "optimalplacement": true,
+                "planarquadric": true,
+                "planarweight": 0.001,
+                "autoclean": false
+              },
+              "seed": "No random seed API used by the QEM engine; fixed vertex and face ordering. Output is repeated and byte-compared.",
+              "surfaceSampleSeed": 209,
+              "samplesPerDirectionPerPart": 20000,
+              "targetTriangles": 120000
+            },
+            "converterReportSha256": "39dd8c5af09111ea29a0055a6d6ce2e1411c61d2834a1955f855eb79375ad0b6",
+            "converterReportedSamples": [
+              {
+                "sourceObject": "1",
+                "label": "cuff",
+                "sourceTriangles": 300894,
+                "lodTriangles": 36000,
+                "sourceZeroAreaFaceIndices": [],
+                "sourcePositionSha256": "681ecb3330b28a0ee40005fccaf923e6a24b7d0b14ce8e7d25876025aa8b4af6",
+                "sourceIndicesSha256": "c4923e91271c3b679e9a320010bce091756d4a6fda6e76adcec21681ef76d598",
+                "lodPositionSha256": "2ab10736efb155caed5bc3926764f861e41a459886cd1727164664c14861eddb",
+                "lodIndicesSha256": "e73250825773effc5e5719feb64d6b6b21d83caf8deaaa480047a6ab63881a1d",
+                "maximumAbsoluteBboxExtremeDelta": 0.011405531861065299,
+                "sourceToLod": {
+                  "samples": 20000,
+                  "seed": 210,
+                  "mean": 0.0031562350542240275,
+                  "rms": 0.004926616788016801,
+                  "p95": 0.010859830352953277,
+                  "p99": 0.017426169878827412,
+                  "maximumObservedSample": 0.05728852936033395,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "lodToSource": {
+                  "samples": 20000,
+                  "seed": 1210,
+                  "mean": 0.003222261371617627,
+                  "rms": 0.005097080818536038,
+                  "p95": 0.010930952592818078,
+                  "p99": 0.017718804420945537,
+                  "maximumObservedSample": 0.06154645529861667,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "repeatedQemBytesIdentical": true,
+                "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+                "sourceArrayIdentityIndependentlyReparsed": true,
+                "globalHausdorffBound": false
+              },
+              {
+                "sourceObject": "3",
+                "label": "dial",
+                "sourceTriangles": 389120,
+                "lodTriangles": 30000,
+                "sourceZeroAreaFaceIndices": [],
+                "sourcePositionSha256": "96336a782ed43b969a8bb2bbd9000421c29cece5c830210a58af5af3ff8e4ab7",
+                "sourceIndicesSha256": "6cc378523e56617a94cd3b6dd4a92021597aa9d6117e864349bf981258efd144",
+                "lodPositionSha256": "19d711f32a909e9f7004aa5722de91e79ec53bbf37efe776461a13cf81e80fa2",
+                "lodIndicesSha256": "e5b08f3a8ff5bc983ad6e5976d6b5d47a69fdbb27f55d75140caaa7b4a94d94a",
+                "maximumAbsoluteBboxExtremeDelta": 0.005387432579738061,
+                "sourceToLod": {
+                  "samples": 20000,
+                  "seed": 212,
+                  "mean": 0.0008813673043835456,
+                  "rms": 0.001699267974281368,
+                  "p95": 0.004062882373468578,
+                  "p99": 0.006426932862086766,
+                  "maximumObservedSample": 0.011030567609927556,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "lodToSource": {
+                  "samples": 20000,
+                  "seed": 1212,
+                  "mean": 0.0008873659232087595,
+                  "rms": 0.0016920466972744615,
+                  "p95": 0.004028766881273901,
+                  "p99": 0.0064328263025517935,
+                  "maximumObservedSample": 0.012185863453351594,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "repeatedQemBytesIdentical": true,
+                "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+                "sourceArrayIdentityIndependentlyReparsed": true,
+                "globalHausdorffBound": false
+              },
+              {
+                "sourceObject": "5",
+                "label": "core",
+                "sourceTriangles": 578444,
+                "lodTriangles": 48000,
+                "sourceZeroAreaFaceIndices": [
+                  1492,
+                  1496
+                ],
+                "sourcePositionSha256": "3e51068b705ff598d95082f0f8ad0aeca8b355e622814ae598b6d8d026a16b6c",
+                "sourceIndicesSha256": "3e9ff965d611b8c0ea5754c7b3a64cc783a2731fc835260b74225c95dbfaae71",
+                "lodPositionSha256": "87b8e99ac022ba20f32ae9b0eabbd0fb4038c5b10c82baec648184a277b2a45d",
+                "lodIndicesSha256": "53a090673f74aebf194ebadce198aa5fe9895bb8e3c78587e2f413b9cdf16ab1",
+                "maximumAbsoluteBboxExtremeDelta": 0.0015260741325775484,
+                "sourceToLod": {
+                  "samples": 20000,
+                  "seed": 214,
+                  "mean": 0.0004123097276969061,
+                  "rms": 0.0010983190689133723,
+                  "p95": 0.002142330627493665,
+                  "p99": 0.0046892804818398845,
+                  "maximumObservedSample": 0.02902213814231764,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "lodToSource": {
+                  "samples": 20000,
+                  "seed": 1214,
+                  "mean": 0.0004059623290544872,
+                  "rms": 0.0010609217832350804,
+                  "p95": 0.0020749340490003273,
+                  "p99": 0.004832001078966625,
+                  "maximumObservedSample": 0.017074001147280055,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "repeatedQemBytesIdentical": true,
+                "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+                "sourceArrayIdentityIndependentlyReparsed": true,
+                "globalHausdorffBound": false
+              },
+              {
+                "sourceObject": "7",
+                "label": "button",
+                "sourceTriangles": 47104,
+                "lodTriangles": 6000,
+                "sourceZeroAreaFaceIndices": [],
+                "sourcePositionSha256": "4525f61de19a1aacb7d69139b1def1c6cf9ff14f32d03180416037f4caa67d3f",
+                "sourceIndicesSha256": "5874567256316354317a46aaa56ac6319f0ea576fcb8066d39f41fe0ec104722",
+                "lodPositionSha256": "0bb909261e31faeb1228382144fcc85bc66dc015667c39c3296d6d18c36bd15f",
+                "lodIndicesSha256": "dd9a2c7c097cfd80b23c7965a8783b93bb177d7aeae45e1052dc6e1a70c0e64a",
+                "maximumAbsoluteBboxExtremeDelta": 0.001889800342251391,
+                "sourceToLod": {
+                  "samples": 20000,
+                  "seed": 216,
+                  "mean": 0.0005750250539312618,
+                  "rms": 0.0010700904738819533,
+                  "p95": 0.0025596947008191045,
+                  "p99": 0.004068358337982568,
+                  "maximumObservedSample": 0.006968560481154046,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "lodToSource": {
+                  "samples": 20000,
+                  "seed": 1216,
+                  "mean": 0.0005638374919796715,
+                  "rms": 0.0010528687753151523,
+                  "p95": 0.002538268242984623,
+                  "p99": 0.003974261721685885,
+                  "maximumObservedSample": 0.007942911452542627,
+                  "units": "Source 3MF millimeter units",
+                  "globalHausdorffBound": false,
+                  "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+                },
+                "repeatedQemBytesIdentical": true,
+                "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+                "sourceArrayIdentityIndependentlyReparsed": true,
+                "globalHausdorffBound": false
+              }
+            ],
+            "independentSourceCoordinateSamplesCompleted": [
+              {
+                "sourceObject": "1",
+                "label": "cuff",
+                "reportSha256": "144869e27c69b85afffd640332a456a8574bb435ccfe2c331af5c3d105911f35",
+                "coordinateStage": "Source-coordinate QEM LoD, before display assembly and float32 output",
+                "sourceToLod": {
+                  "samples": 6000,
+                  "seed": 209614,
+                  "units": "source millimeters",
+                  "mean": 0.0032143107804342595,
+                  "rms": 0.0050277733330520704,
+                  "p50": 0.0018564043726345533,
+                  "p95": 0.010919552783234022,
+                  "p99": 0.016695878329649333,
+                  "maximumObservedSample": 0.06363206696964967,
+                  "normalAngleDegrees": {
+                    "p50": 0.5524742882445131,
+                    "p95": 3.890435386560576,
+                    "p99": 9.663546282347799,
+                    "max": 37.236165475872205
+                  },
+                  "globalHausdorffBound": false,
+                  "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+                },
+                "lodToSource": {
+                  "samples": 6000,
+                  "seed": 309614,
+                  "units": "source millimeters",
+                  "mean": 0.0031452644197562532,
+                  "rms": 0.004835165550395109,
+                  "p50": 0.0018708331091798062,
+                  "p95": 0.010695622633881824,
+                  "p99": 0.016651214207778972,
+                  "maximumObservedSample": 0.03698295507599157,
+                  "normalAngleDegrees": {
+                    "p50": 0.5693102429878344,
+                    "p95": 4.171993609222276,
+                    "p99": 11.248994179174625,
+                    "max": 60.39917240683734
+                  },
+                  "globalHausdorffBound": false,
+                  "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+                },
+                "maximumAbsoluteBboxExtremeDeltaMillimeters": 0.011405531861065299
+              },
+              {
+                "sourceObject": "3",
+                "label": "dial",
+                "reportSha256": "849e10369db4b4d1ca0d7a627cddab548dbf5cd8634ed547b96830c8071848ed",
+                "coordinateStage": "Source-coordinate QEM LoD, before display assembly and float32 output",
+                "sourceToLod": {
+                  "samples": 6000,
+                  "seed": 209616,
+                  "units": "source millimeters",
+                  "mean": 0.0008984925432806683,
+                  "rms": 0.0017213581509888944,
+                  "p50": 0.0001288609219084059,
+                  "p95": 0.004251958630236894,
+                  "p99": 0.00639510168443072,
+                  "maximumObservedSample": 0.012455267715556674,
+                  "normalAngleDegrees": {
+                    "p50": 0.04158611122450488,
+                    "p95": 3.5519163884265663,
+                    "p99": 7.142044889215529,
+                    "max": 101.75355005278539
+                  },
+                  "globalHausdorffBound": false,
+                  "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+                },
+                "lodToSource": {
+                  "samples": 6000,
+                  "seed": 309616,
+                  "units": "source millimeters",
+                  "mean": 0.0008849641313913648,
+                  "rms": 0.0016871262520629826,
+                  "p50": 0.0001377937698068395,
+                  "p95": 0.004004016273329546,
+                  "p99": 0.006410714710749612,
+                  "maximumObservedSample": 0.009666242615207378,
+                  "normalAngleDegrees": {
+                    "p50": 0.04357643165691158,
+                    "p95": 3.6914519841094062,
+                    "p99": 7.413039811497516,
+                    "max": 90.38882492181838
+                  },
+                  "globalHausdorffBound": false,
+                  "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+                },
+                "maximumAbsoluteBboxExtremeDeltaMillimeters": 0.005387432579738061
+              }
+            ],
+            "independentActualFloat32SurfaceDistance": {
+              "complete": false,
+              "usedAsAcceptanceCondition": false,
+              "reason": "Extra dense-source proximity sampling was stopped after resource pressure; it is not needed for the independently completed exact LoD-to-F32 transform proof. No converter samples are relabeled as independent."
+            },
+            "actualFloat32CoordinatesMatchAllTransformedLodFacesExactly": true,
+            "actualFloat32InverseVertexQuantizationMaximumMillimeters": 0.0000034755596454566336,
+            "globalHausdorffBound": false,
+            "noVoxelizationOrAuthoredReplacementGeometry": true,
+            "fullSourceFaceEqualityClaim": false
+          },
+          "assemblies": {
+            "original": "The four source meshes retain the same 0.013 scale and positive-determinant rigid rotations/translations. Source assemble_item transforms are print-bed placements, not a proven assembled watch. Current mating is measured project placement; no part-specific shrinking. Core-neck/ring internal contact remains disclosed, not certified collision-free.",
+            "af": "Complete source object retained; no extra borrowed face/core is stacked on it.",
+            "ua": "Two subsets use the same source transform and retain original relative positions; source-connected dial has no fabricated moving core.",
+            "ov": "Seven source parts retain their local geometry with measured project placements. Original single lid remains whole and fixed; two unverified locating pins are excluded from display and preserved in the original source archive.",
+            "buttonBasisCorrection": {
+              "issue": "An earlier candidate button frame had singular scales 0.01300201747 / 0.013 / 0.01299798222 rather than a pure rotation times 0.013.",
+              "correction": "Orthogonalized tangent against the measured outward normal and rebuilt its companion cross-product basis.",
+              "verifiedFinalUniformProperRigidTransform": true,
+              "finalRuntimeSha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf"
+            }
+          },
+          "excludedPins": [
+            {
+              "watch": "omniverse",
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceFilename": "obj_4_orta-pin.stl",
+              "sourceObject": "part-4",
+              "sourceSha256": "972008fb209619736c6e17240ec0287a60ea439b503558cbe7b6de68cf7041dc",
+              "triangles": 84,
+              "sourceCoordinateFingerprint": "7782e4497cee2da7d70fc9123f19812f9b029c2b775c7b955b2c3602af5ab2c9",
+              "sourceFileStillPresentAndUnchanged": true,
+              "displayed": false,
+              "status": "retained-in-source-library-not-assembled",
+              "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+            },
+            {
+              "watch": "omniverse",
+              "sourceArchive": "saat-yesil_stls.zip",
+              "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+              "sourceFilename": "obj_5_kapak-pin.stl",
+              "sourceObject": "part-5",
+              "sourceSha256": "2d966088b46463be40b46fea2d721305fc26d8b6c448372d90261662605bad94",
+              "triangles": 32,
+              "sourceCoordinateFingerprint": "d8142bd3bd1b8659192bf1c3fc4ec879c02051fe7d3e5488d87e313d125d94fb",
+              "sourceFileStillPresentAndUnchanged": true,
+              "displayed": false,
+              "status": "retained-in-source-library-not-assembled",
+              "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+            }
+          ],
+          "stageFit": {
+            "passed": true,
+            "reportSha256": "b95cfac03d450c585cf7597ae57991d4bdfdd1e4c3a0f08be5f493d62498a7b6",
+            "inputs": {
+              "stylesSha256": "f6ee14d72384a1049a7aab4d790c0ab28c73b29d7c1ddbedcd7db78d9c45c6fb",
+              "watchModelSha256": "6516ab62ddb8c20fba4fa7b1cbf73a8190c052ebed12f5cae4fa08d7f7a817fa",
+              "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e"
+            },
+            "cases": 2560,
+            "failed": 0,
+            "minimumStageMarginCssPixels": 2.013033655160825,
+            "perWatchMode": {
+              "original/projection": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 43.766322557258235
+              },
+              "original/carousel": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 35.563260971554456
+              },
+              "recalibrated/projection": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 60.972764176208216
+              },
+              "recalibrated/carousel": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 54.33392455586352
+              },
+              "ultimatrix/projection": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 17.79073573302776
+              },
+              "ultimatrix/carousel": {
+                "cases": 160,
+                "failed": 0,
+                "minMargin": 2.013033655160825
+              },
+              "omniverse/projection": {
+                "cases": 800,
+                "failed": 0,
+                "minMargin": 57.6871237493755
+              },
+              "omniverse/carousel": {
+                "cases": 800,
+                "failed": 0,
+                "minMargin": 52.13709638569371
+              }
+            },
+            "scope": {
+              "stageWidths": [
+                940,
+                600,
+                400,
+                338,
+                320,
+                305,
+                290,
+                268
+              ],
+              "stageHeights": {
+                "projection": 560,
+                "carousel": 540
+              },
+              "canvasRules": {
+                "projection": {
+                  "capPx": 480,
+                  "containerWidthRatio": 1.1,
+                  "ultimatrixRatio": 0.96,
+                  "topRatio": 0.65
+                },
+                "carousel": {
+                  "capPx": 620,
+                  "containerWidthRatio": 1.2,
+                  "ultimatrixRatio": 0.98,
+                  "topRatio": 0.57,
+                  "omniverseRatio": 1.18
+                }
+              },
+              "views": [
+                "top",
+                "left",
+                "low",
+                "right"
+              ],
+              "coreFractions": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "lidFractions": [
+                0,
+                0.25,
+                0.5,
+                0.75,
+                1
+              ],
+              "ovLidCombination": "Each lid fraction checked independently of each core fraction; wider than actual coupled animation.",
+              "method": "Read every retained source-mesh vertex from actual f32 files after byte/hash checks. Use production pose metadata but independent camera-basis and perspective arithmetic, not projectWatchFace or renderer project(). Convert canvas coordinates to CSS stage coordinates. Require all entity vertices within both GPU canvas/clipping planes and clipped stage rectangle. Canvas CSS rectangle may exceed stage.",
+              "exclusions": [
+                "No browser layout execution: stage/container dimensions are explicit sampled inputs and exact CSS declarations are checked.",
+                "No camera interpolation paths between the four view endpoints.",
+                "No CSS drop shadows, glow, portrait slots, labels or hero projection; only actual mesh entities.",
+                "No user visual acceptance, physical phone or SillyTavern validation."
+              ],
+              "sourceMotionNote": "When sourceMotion disables a core or lid, the parameter samples intentionally repeat its fixed geometry; there is no fabricated motion or fabricated lid split.",
+              "continuousMotionReasoning": "For a fixed camera each core/lid vertex is translated along one fixed axis. Each projected coordinate is a ratio of affine functions of that single motion parameter; positive near-depth verified at endpoints makes the coordinate monotonic or constant. Therefore endpoints bound its continuous motion, with quarter-step checks retained. This argument does not cover camera interpolation."
+            },
+            "actualAllVertexProjection": true
+          },
+          "offlineVisualReview": {
+            "scope": "Independent inspection of source-versus-LoD four-angle offline orthographic render comparisons. This is not a browser/material/physical-phone acceptance.",
+            "parts": [
+              {
+                "part": "cuff",
+                "comparisonImageSha256": "8f332f2080d34f2543b034de424e118a6502bf5f397519567f63fcdadc9733e2",
+                "visuallyInspected": true,
+                "viewsPerSourceAndLod": 4,
+                "observation": "Wrist opening, side circular seat, raised paired tubes and wide shell bands remain in all four offline views."
+              },
+              {
+                "part": "dial",
+                "comparisonImageSha256": "94841890d95f1b6ec0a8c72c885dc170deb0e680ce2dd09f8d62d8f3e65f3a23",
+                "visuallyInspected": true,
+                "viewsPerSourceAndLod": 4,
+                "observation": "Four spherical protrusions, annular opening and stepped/sloped ring edges remain."
+              },
+              {
+                "part": "core",
+                "comparisonImageSha256": "d5d89175709cb298b8f442c3203553ddb670d1c8de78f58a13357669a7876546",
+                "visuallyInspected": true,
+                "viewsPerSourceAndLod": 4,
+                "observation": "Hourglass-shaped recessed lines, inner circular rim and lower cylindrical flange remain."
+              },
+              {
+                "part": "button",
+                "comparisonImageSha256": "99cc38a08422b05902e68657527f24e74cfbc150c9689e01a0696849e4d72105",
+                "visuallyInspected": true,
+                "viewsPerSourceAndLod": 4,
+                "observation": "Dome and flared bezel silhouette remain. The magnified offline LoD image has visible faceting; runtime smooth normals and small-screen appearance require separate browser review."
+              }
+            ]
+          },
+          "byteVerificationReportSha256": "ce0c865aff250344353ea0933145e99d22ef0328e98e60fcd4a3de70b7d71db2",
+          "sourceGeometryBoundary": {
+            "goal": "Preserve supplied shapes with the authorized Reboot display LoD, rather than make all source meshes watertight or collision-free.",
+            "inheritedOtherWatchSourceIntersectionEvidence": [
+              {
+                "watch": "recalibrated",
+                "part": "source-af-case-and-strap",
+                "sourceSha256": "4891119f23ef517cebbd733d4f4066c7ff6378b1da9d73e8dfe937a7b9e2fd39",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 4,
+                "nearParallelPairs": 0
+              },
+              {
+                "watch": "ultimatrix",
+                "part": "source-ultimate-cuff",
+                "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 0
+              },
+              {
+                "watch": "ultimatrix",
+                "part": "source-ultimate-side-fittings",
+                "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 0
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-silver-face-ring",
+                "sourceSha256": "06e9fdde133203e9668ef3c1b2007eef3e0b43c79ea32c8210ca83f813285ed5",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 3,
+                "nearParallelPairs": 0
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-middle-case",
+                "sourceSha256": "485860ae389f66d470f1f308a7157866a90fe35c1ad0575b6ebaef486f54c3af",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 94
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-cylindrical-face-core",
+                "sourceSha256": "8ce637ba30b3f8957604c384c5642a46cb87551d4d2c98d17bfe744bd625a6c4",
+                "properInteriorCrossingPairs": 0,
+                "coplanarWithin1e8Pairs": 4,
+                "nearParallelPairs": 543
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-bottom-case-with-post",
+                "sourceSha256": "19d0f63ee5bb5c703a28d6d0972b34ed021b1f1b8c1989b22464d79b8d59d4f0",
+                "properInteriorCrossingPairs": 734,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 26
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-single-cover",
+                "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
+                "properInteriorCrossingPairs": 307,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 0
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-upper-case",
+                "sourceSha256": "03454670edc926c1d78a68c5e7e2fced8c3a4d5acfb02b3839fadd2e97018fcb",
+                "properInteriorCrossingPairs": 178,
+                "coplanarWithin1e8Pairs": 0,
+                "nearParallelPairs": 283
+              },
+              {
+                "watch": "omniverse",
+                "part": "source-ov-curved-cuff",
+                "sourceSha256": "a5d7f6d3de3e0dc008c5743efb2229ee9d19efae016ff87fd34bbf02551b64da",
+                "properInteriorCrossingPairs": 5,
+                "coplanarWithin1e8Pairs": 1,
+                "nearParallelPairs": 2
+              }
+            ],
+            "sourceIntersectionReportSha256": "d00d17bd60fd0759bc2c47527eead5362a7afc11c19f93754adfd1f788e72370",
+            "rebootGlobalSelfIntersectionScanCompleted": false,
+            "zeroIntersectionClaim": false,
+            "mechanicalFitCertification": false,
+            "detail": "Source parts may already include coincident or intersecting surfaces. Those are not automatically remeshed. The Reboot source Core has two zero-area source faces, explicitly listed in the converter evidence; no claim of a printable closed solid is made."
+          },
+          "limits": [
+            "QEM changes Reboot triangle tessellation and introduces measured finite surface differences; it is not exact original-face preservation.",
+            "Surface samples are finite estimates, not global Hausdorff bounds or guarantees of every tiny feature.",
+            "Uniform local shape preservation does not prove an original mechanical assembly; source archives contain print-layout metadata.",
+            "Material colors/finish and displayed motions are project choices, not recovered official source material or animation.",
+            "No claim of official production assets, printer-ready solid topology, mechanical collision clearance, browser/physical-phone/SillyTavern acceptance, exported bundle verification, Git or publication follows from this report.",
+            "Extra verifier memory pressure is not evidence of runtime renderer performance."
+          ]
+        },
+        "partMaterialsAndAssemblyRevised": true
+      },
+      "visualNotes": [
+        "Four source variants viewed in the production selector. Reboot Season 1 uses the disclosed source-derived 120k QEM LoD; the other three preserve supplied source coordinates.",
+        "Projection body enlarged; translucent ring reveals the case underneath. Actual viewport widths are recorded, separate from requested overrides.",
+        "Original source parts carry authored material classes. The shader adds analytic grain, roughness and studio-panel reflections, with no added face plates, geometry paint cuts, or per-frame texture fetch.",
+        "Screenshots may include a document region taller than the viewport; viewport dimensions record the actual responsive layout width."
+      ],
+      "boundaries": {
+        "realHostVerified": false,
+        "physicalPhoneVerified": false,
+        "humanAccepted": false,
+        "allFormsComplete": false,
+        "allFourWatchesRetestedThisVersion": true,
+        "heroProjectionIsVolumetric": false
+      }
+    }
+  },
+  "realPhoneVerified": false,
+  "realSillyTavernVerified": false,
+  "driverAccepted": false,
+  "untested": [
+    "Current build rendering, point selection and all three palette appearances.",
+    "Actual phone touch/performance, SillyDroid installation and real SillyTavern behavior.",
+    "Human visual acceptance, no-plastic aesthetic and full-franchise catalog completeness.",
+    "New long Stinkfly crown and Wildvine bud at production ring size.",
+    "APK opening/selection motion integration; alien projection remains a layered flat image."
+  ],
+  "reviewedNativePortraits": [
+    {
+      "formId": "fourmungousaur",
+      "portraitId": "dna-omv-067",
+      "sha256": "0cc9a0ee3441f976a5025843973a86f744aa41c3e2bf227b510a6ceeb07337df",
+      "referenceFile": "assets/source-art/perkins-final-fusions-original.jpg",
+      "referenceSha256": "07c161c656e8196240a40b4d3cc573b41d2dfb10bbd22be6f6f1609fe1cc33cd",
+      "originalArchiveBytesIndependentlyVerified": true,
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "visualDifferences": [
+        "第三方图标将小额冠夸张为宽大对称侧角，眉、鼻和块状嘴部合并；不是官方正投影头稿。",
+        "源彩色侧视四眼巨人头变为绿色二色正面标识，没有采用普通 Four Arms 头像自动继承。"
+      ],
+      "officialPublisherVerified": false,
+      "currentUIViewed": false
+    },
+    {
+      "formId": "atomic-x",
+      "portraitId": "dna-omv-079",
+      "sha256": "79fc879efa100f8e1de1724b8df4993fcb9df21d9f76b4ef8d62c7f9bbe3af39",
+      "referenceFile": "assets/source-art/perkins-final-fusions-original.jpg",
+      "referenceSha256": "07c161c656e8196240a40b4d3cc573b41d2dfb10bbd22be6f6f1609fe1cc33cd",
+      "originalArchiveBytesIndependentlyVerified": true,
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "visualDifferences": [
+        "第三方绿色图标将侧角、顶板和面罩转为近对称标识，省略额线细节和材质。",
+        "原作小尺寸头部及斜视的面罩转为正面；不表示官方透明头像或原应用身份标签被解析。"
+      ],
+      "officialPublisherVerified": false,
+      "currentUIViewed": false
+    }
+  ],
+  "newBodyReviews": [
+    {
+      "formId": "dynamite-heatblast",
+      "sourceFile": "assets/source-art/dynamite-heatblast-source-original.jpg",
+      "sourceSha256": "fd160e05b8f2d575b8aa0fd0af29aadc70309cb267258917691219e30672985a",
+      "maskFile": "assets/source-art/dynamite-heatblast-reference-redraw.png",
+      "maskSha256": "99d7da22f1462895f788e4fe80e767779cf636e5056d6150618d1c6e5309caa5",
+      "sourceActuallyViewed": true,
+      "outputActuallyViewed": true,
+      "rootActuallyViewed": true,
+      "originalBytesPreserved": true,
+      "pixelsModified": false,
+      "readonlyAlphaStats": {
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "transparentPixels": 1237188,
+        "lowAlpha1to127": 26130,
+        "alpha128BBox": [
+          180,
+          13,
+          809,
+          1485
+        ],
+        "borderAlpha128Pixels": 0,
+        "minimumMarginFraction": 0.008463541666666666
+      },
+      "dialFit": {
+        "scale": 0.5835,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.490885,
+        "visiblePixels": 335676
+      },
+      "referenceKind": "published-cover-or-character-design-not-transition-panel",
+      "officialTransparentOriginal": false,
+      "currentUIViewed": false
+    }
+  ],
+  "currentModelFileAudit": {
+    "sourceArchiveName": "Omnitrix+ben+10+reboot+season+1.zip",
+    "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+    "crcPassed": true,
+    "nestedCrcPassed": true,
+    "sourceTriangles": 1315562,
+    "currentDisplayQemTriangles": 120000,
+    "currentQemMatricesProduceExactFloat32Positions": true,
+    "runtimeFiles": 14,
+    "triangles": 165994,
+    "fourWatches": {
+      "original": {
+        "parts": 4,
+        "triangles": 120000,
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9"
+      },
+      "recalibrated": {
+        "parts": 1,
+        "triangles": 18158,
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448"
+      },
+      "ultimatrix": {
+        "parts": 2,
+        "triangles": 9274,
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52"
+      },
+      "omniverse": {
+        "parts": 7,
+        "triangles": 18562,
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c"
+      }
+    },
+    "scope": "Readonly archive, original geometry, conversion matrix and native file/CPU-loader audit. No browser, WebGL render, mechanical assembly or phone test.",
+    "metalRubberAndCoatingShaderParametersDistinct": true,
+    "materialAestheticVerified": false,
+    "realPhoneVerified": false
+  },
+  "deferredAssets": [
+    {
+      "formId": "reboot-omni-enhanced-cannonbolt",
+      "reason": "Only visible face armor verified; complete head-shell boundary unclear. Candidate not bound."
+    },
+    {
+      "formId": "dynamite-four-arms",
+      "reason": "Full-body image generation was declined; no alternate tool, rephrasing or head generation attempted. Catalog metadata can retain the edition with no artwork."
+    }
+  ]
+}

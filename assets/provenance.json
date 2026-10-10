@@ -1,11 +1,11 @@
 {
   "source": "Reviewed Ben10 cosmic-selector archive snapshot",
-  "catalogSha256": "1380b9adffe20db0ad9c3af8f247a3d80f6f9be41e4a18dc0f77d4f1d2fbf35b",
-  "svgSha256": "0ad728e8d90dbb33b19673c95dc3f61bbcb648fbcb9de4f45657d310679e95de",
+  "catalogSha256": "4b6dc4ba02418fa87bcacb120293d5081a6e5cb0ec218f2d43975cc5ec24c16f",
+  "svgSha256": "1aea3d4351bc6bbfa0e1ddbf372d04181e3dee03ea9bd22b204dca21b3cb1c01",
   "coverage": {
-    "total": 238,
-    "reviewed": 237,
-    "missing": 1
+    "total": 240,
+    "reviewed": 238,
+    "missing": 2
   },
   "assets": [
     {
@@ -2156,6 +2156,16 @@
       "renderMode": "reference-guided-edit-alpha",
       "sourceSha256": "fc3f0dc08d87e9426964a0089e1107525f7c78e882415423ba3d58a6e378af5d",
       "maskSha256": "38443f36586786d762aa786adff884dce40500af80cf9c444b4036315dc4e901",
+      "contentType": "image/png"
+    },
+    {
+      "formId": "dynamite-heatblast",
+      "url": "https://geekfetch.s3.ca-central-1.amazonaws.com/product_images/202606-0000533343.jpg",
+      "pageUrl": "https://comicpreviews.com/products/3afec641-a30a-42bd-a79f-e70447d430fa",
+      "rights": "Underlying Ben 10 characters and Robert Carey comic artwork remain copyrighted. Public cover/design previews are not open-licensed. No open reuse or redistribution licence was verified. User-authorized reference use and disclosed AI redraw are separate from distribution rights; Root decides public source retention.",
+      "renderMode": "reference-guided-edit-alpha",
+      "sourceSha256": "fd160e05b8f2d575b8aa0fd0af29aadc70309cb267258917691219e30672985a",
+      "maskSha256": "99d7da22f1462895f788e4fe80e767779cf636e5056d6150618d1c6e5309caa5",
       "contentType": "image/png"
     }
   ],

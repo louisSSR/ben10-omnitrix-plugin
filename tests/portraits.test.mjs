@@ -62,9 +62,9 @@ test('every source portrait remains a content-addressed original with its source
     assert.match(binding.reference.url, /^https?:\/\//);
     assert.match(binding.reference.sha256, /^[a-f0-9]{64}$/);
   }
-  assert.equal(catalog.forms.length, 238, 'head coverage never narrows the catalog');
-  assert.equal(catalog.forms.filter(form => form.asset).length, 237);
-  assert.deepEqual(catalog.forms.filter(form => !form.asset).map(form => form.id), ['nemetrix-crabdozer']);
+  assert.equal(catalog.forms.length, 240, 'head coverage never narrows the catalog');
+  assert.equal(catalog.forms.filter(form => form.asset).length, 238);
+  assert.deepEqual(catalog.forms.filter(form => !form.asset).map(form => form.id), ['nemetrix-crabdozer', 'dynamite-four-arms']);
 });
 
 test('two-tone colors hit independent expected endpoints and never alter alpha', () => {

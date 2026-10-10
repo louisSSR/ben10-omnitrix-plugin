@@ -9816,6 +9816,158 @@
           "limits": "Filename p19 is not a verified printed page number. Page alone does not name the character or show human-to-alien transition."
         }
       ]
+    },
+    {
+      "formId": "dynamite-heatblast",
+      "sourceFile": "assets/source-art/dynamite-heatblast-source-original.jpg",
+      "sourceSha256": "fd160e05b8f2d575b8aa0fd0af29aadc70309cb267258917691219e30672985a",
+      "maskFile": "assets/source-art/dynamite-heatblast-reference-redraw.png",
+      "maskSha256": "99d7da22f1462895f788e4fe80e767779cf636e5056d6150618d1c6e5309caa5",
+      "pageUrl": "https://comicpreviews.com/products/3afec641-a30a-42bd-a79f-e70447d430fa",
+      "url": "https://geekfetch.s3.ca-central-1.amazonaws.com/product_images/202606-0000533343.jpg",
+      "renderMode": "reference-guided-edit-alpha",
+      "artProvenance": "AI reference-guided full-body redraw of Robert Carey published comic cover/design. Complete source body retains two hands and two feet; originally cropped outer flame plume is redrawn as a contained interpreted taper. Not official transparent original artwork or a pixel-exact cutout.",
+      "sourceViewed": true,
+      "maskViewed": true,
+      "currentUIViewed": false,
+      "officialSourceVerified": false,
+      "issueMetadataOfficialPublisherVerified": true,
+      "rights": "Underlying Ben 10 characters and Robert Carey comic artwork remain copyrighted. Public cover/design previews are not open-licensed. No open reuse or redistribution licence was verified. User-authorized reference use and disclosed AI redraw are separate from distribution rights; Root decides public source retention.",
+      "observations": [
+        "Original cover outer plume was cropped at top/left; redraw gives it a contained tapered up-left boundary. This interpreted boundary is not exact original artwork or newly inferred anatomy.",
+        "Actual two hands and two feet remain fully contained in original upright/angled pose.",
+        "Fine chest/shin fissures are simplified and made clearer; source signature and tiny lettering are absent.",
+        "Native result clearance is less than requested 10 percent at the top; no pixel resizing or padding was applied. Parent must inspect and perform existing dial fit if adopted.",
+        "RGB channels show warm glow under alpha-zero pixels; native RGBA transparency is preserved. Read-only alpha metrics, not raw RGB display alone, determine transparency.",
+        "Root actually viewed original full-art cover, native full body and official first-cover corroboration. Two arms/hands and two legs/feet are complete.",
+        "Source cropped up-left plume termination is interpreted. Native warm glow/alpha gradients and simplified fissures remain; top clearance 0.85%, no pixel edits, subsequent positive-alpha diamond fit required."
+      ],
+      "generation": {
+        "tool": "builtin-imagegen",
+        "promptFile": "docs/prompts/dynamite-heatblast-body.txt",
+        "fullPrompt": "Use case: stylized-concept.\nAsset type: one transparent full-body alien selector sprite for a Ben 10 fan watch interface.\nInput image: the attached Robert Carey Ben 10 issue 1 third-printing full-art cover/design, published as a ComicPreviews listing image. It is the exact body, pose, coloration and design reference. The publication metadata attributes this cover to Carey; this is a cover/design, not a transformation interior panel.\nPrimary request: redraw only this one complete Dynamite-edition Heatblast. Preserve the long slender gold-orange magma body, dark angular rock face turned slightly upward and toward image-right, its actual visible light facial streaks, broad dark rock chest and shoulder shell with thin orange-red fissures, the small green hourglass emblem at the image-right upper chest, the orange-gold arms, curved partly open dark fingers on both hands, long orange-gold upper legs, dark fissured lower-leg plates and pointed pale-gold toes. Preserve the actual arm placement, slight bend in each elbow, separated two hands beside the hips, staggered two legs and both complete feet. Exactly TWO arms and TWO hands, TWO legs and TWO feet; do not change to a bulky cartoon body or add flames that resemble extra limbs.\nFire boundary: the source's large yellow-red plume extends upward and to image-left beyond the source's top/left frame, so its missing outer boundary is unknown. Keep the attached directional flame crown flowing up-left, but draw a modest compact contained taper using only the source's visible yellow core/red outer shapes. This limited edge interpretation is for a complete selector sprite; do not invent additional face anatomy, giant flame wings or unseen structures. Keep the actual rock face readable and do not hide it with new flame shapes.\nComposition: full head, contained flame crown, shoulders, two arms and hands, two legs and feet all visible with at least 10 percent transparent margin. Preserve the source three-quarter upright pose, rather than a new action pose. Isolate exactly one character; remove the white source background, the artist signature, tiny lettering, logos and any page marks.\nStyle: clean colored flat 2D comic drawing with crisp dark anatomical outlines and restrained source-derived detail. Golden-yellow/orange lava skin, near-black rock chest/face/shins, thin burnt-orange fissures and a small green emblem. Simplify microscopic source strokes for selector readability. No photorealistic glossy material, plastic sheen, glow, cast shadow, ground or particles.\nBackground: genuinely transparent RGBA.\nConstraints: no lettering, labels, watermark, frame, opaque background, checkerboard or additional subject. This is a disclosed AI reference-guided redraw with a limited interpreted plume boundary, not official original transparent artwork.\n",
+        "transparentBackground": true,
+        "rawOutputSha256": "99d7da22f1462895f788e4fe80e767779cf636e5056d6150618d1c6e5309caa5",
+        "originalOutputBytesPreserved": true,
+        "pixelPostprocessing": false,
+        "attemptCount": 1,
+        "editCount": 0,
+        "referenceType": "published-cover-design-not-transformation-interior",
+        "outerFlameBoundaryInterpreted": true
+      },
+      "alphaInspection": {
+        "sha256": "99d7da22f1462895f788e4fe80e767779cf636e5056d6150618d1c6e5309caa5",
+        "bytes": 1497181,
+        "format": "PNG",
+        "size": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "alphaRange": [
+          0,
+          254
+        ],
+        "bboxAlpha128": [
+          180,
+          13,
+          809,
+          1485
+        ],
+        "weakAlpha1to127": 26130,
+        "edgeAlpha128": 0,
+        "minimumMarginFraction": 0.008463541666666666
+      },
+      "appearanceEvidence": [
+        {
+          "url": "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343501011",
+          "kind": "official-publisher-issue-metadata",
+          "actuallyReadThisRound": true,
+          "freshRecheckRead": true,
+          "supports": "Dynamite Ben 10 issue 1; writer Joe Casey, artist Robert Carey; publication May 2026, 32 pages, scheduled on-sale May 6, 2026.",
+          "limits": "Publisher synopsis says Ben can transform but does not name Four Arms or Heatblast. Schedule is not an independently audited actual shop arrival."
+        },
+        {
+          "url": "https://comicon.com/2026/05/07/review-ben-10-1-is-a-new-take-on-the-cartoon-classic/",
+          "kind": "signed-review-named-story-appearance",
+          "author": "Tony Thornley",
+          "published": "2026-05-07",
+          "actuallyReadThisRound": true,
+          "freshRecheckRead": true,
+          "supports": "Names Four Arms and Heat Blast as aliens appearing when Ben uses the Omnitrix against a cyborg bear in issue 1.",
+          "limits": "Secondary attributed review, not primary transformation-panel pixels. Linked review images actually inspected in this research are covers, not proof of the described transformation scene."
+        },
+        {
+          "url": "https://worldcomicbookreview.com/2026/05/24/ben-10-1-review/",
+          "kind": "signed-review-named-story-appearance-corroboration",
+          "author": "Neil Raymundo",
+          "published": "2026-05-24",
+          "actuallyReadThisRound": true,
+          "freshRecheckRead": true,
+          "supports": "Names Heatblast and Four Arms as transformation forms in its issue 1 origin discussion.",
+          "limits": "Secondary review; does not supply independently viewed transformation panels."
+        },
+        {
+          "url": "https://icv2.com/articles/news/view/62609/",
+          "kind": "signed-reprint-report-design-attribution",
+          "author": "Brigid Alverson",
+          "published": "2026-06-12",
+          "actuallyReadThisRound": true,
+          "freshRecheckRead": true,
+          "supports": "Reports third printing of issue 1 and second printing of issue 2, new covers featuring character designs by interior artist Robert Carey, July 8 on-sale and June 15 FOC.",
+          "limits": "Does not name Heatblast in text. Not the publisher domain or independently viewed transformation interior."
+        },
+        {
+          "url": "https://comicpreviews.com/products/3afec641-a30a-42bd-a79f-e70447d430fa",
+          "kind": "published-third-print-full-art-listing",
+          "actuallyReadThisRound": true,
+          "freshRecheckRead": false,
+          "freshRecheckResult": "Web reader inaccessible on later recheck; earlier successful content read remains separately attributed.",
+          "metadata": {
+            "title": "Ben 10 #1 Third Printing Cover C 1:10 Robert Carey Full Art Variant",
+            "writer": "Joe Casey",
+            "artist": "Robert Carey",
+            "coverArtist": "Robert Carey",
+            "upc": "72513036343501033",
+            "lunarCode": "0526DE8435",
+            "releaseDate": "2026-07-08",
+            "FOCDate": "2026-06-15"
+          },
+          "supports": "Specific source image listing, third-print full-art version and Carey attribution.",
+          "limits": "ComicPreviews is a listings source, not official publisher image domain. Exact publisher third-print product was not safely verified; a guessed-by-observed-UPC old page returned no product and is explicitly excluded."
+        },
+        {
+          "url": "https://geekfetch.s3.ca-central-1.amazonaws.com/product_images/202606-0000533343.jpg",
+          "kind": "original-color-full-art-cover-design-reference",
+          "actuallyViewedThisRound": true,
+          "image": {
+            "sha256": "fd160e05b8f2d575b8aa0fd0af29aadc70309cb267258917691219e30672985a",
+            "bytes": 41003,
+            "format": "JPEG",
+            "width": 659,
+            "height": 1000,
+            "mode": "RGB"
+          },
+          "supports": "Complete lanky Heatblast body: actual rock face, two arms/hands, two legs/feet, dark chest/shin shell, gold-orange limbs and green chest emblem.",
+          "limits": "Outer flame plume is cropped at top/left of source. A complete body is visible, but missing outer flame boundary is unknown. Not a transformation interior or open-licensed image."
+        },
+        {
+          "url": "https://2001.dynamite.com/previews/C72513036343501011/BEN1001ACAREY.jpg",
+          "kind": "official-publisher-first-cover-design-corroboration",
+          "actuallyViewedThisRound": true,
+          "image": {
+            "sha256": "5d385fea34cca5a6f0a8a0642d9088d25b9bd9c72ee9aeafab4fc5eb7446ad87",
+            "bytes": 705960,
+            "format": "JPEG",
+            "width": 600,
+            "height": 900,
+            "mode": "RGB"
+          },
+          "supports": "First Carey cover contains the same edition family of Heatblast with dark chest armor and gold-orange body, confirming published comic design context.",
+          "limits": "Different small floating pose; not copied for this redraw and not evidence that the third-print image is hosted on the publisher domain."
+        }
+      ],
+      "adoptionBasis": "Root actual original-source/native-output review, original-byte checks and subsequent readonly diamond fit; current UI remains unverified."
     }
   ],
   "mergedForms": [
@@ -10059,6 +10211,40 @@
       "sourceUrls": [
         "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343502011",
         "https://comiclist.info/2026/06/11/cannonbolt-makes-a-highvelocity-entrance.html"
+      ]
+    },
+    {
+      "id": "dynamite-four-arms",
+      "name": null,
+      "en": "Four Arms",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #1: named transformation appearance reported by attributed issue1 reviews; complete Robert Carey second-printing cover/design corroborated by official publisher product C136728. Primary transformation interior not independently viewed.",
+      "aliases": [
+        "Four Arms — Dynamite 2026",
+        "Dynamite Four Arms"
+      ],
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343501011",
+        "https://comicon.com/2026/05/07/review-ben-10-1-is-a-new-take-on-the-cartoon-classic/",
+        "https://worldcomicbookreview.com/2026/05/24/ben-10-1-review/",
+        "https://dynamite.com/BEN-10-1-SECOND-PRINTING-1-IN-10-ROBERT-CAREY-VIRGIN-COVER-INCLUDES-10-COPIES-OF-THE-OPEN-ORDER-COVER-AND-1-COPY-OF-THE-SECOND-PRINTING-BLANK-AUTHENTIX-COVER/"
+      ]
+    },
+    {
+      "id": "dynamite-heatblast",
+      "name": null,
+      "en": "Heatblast",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #1: named transformation appearance reported by attributed issue1 reviews; visual design based on Robert Carey issue1 third-printing full-art cover/design. Primary transformation interior not independently viewed.",
+      "aliases": [
+        "Heatblast — Dynamite 2026",
+        "Dynamite Heatblast"
+      ],
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343501011",
+        "https://comicon.com/2026/05/07/review-ben-10-1-is-a-new-take-on-the-cartoon-classic/",
+        "https://worldcomicbookreview.com/2026/05/24/ben-10-1-review/",
+        "https://icv2.com/articles/news/view/62609/"
       ]
     }
   ],

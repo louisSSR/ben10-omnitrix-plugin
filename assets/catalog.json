@@ -21,9 +21,9 @@
     "edition-variant": "作品版本"
   },
   "coverage": {
-    "total": 238,
-    "reviewed": 237,
-    "missing": 1
+    "total": 240,
+    "reviewed": 238,
+    "missing": 2
   },
   "forms": [
     {
@@ -6034,6 +6034,61 @@
         "method": "native-png-alpha-diamond-envelope",
         "diamondExtent": 1.404051,
         "visiblePixels": 688777
+      }
+    },
+    {
+      "id": "dynamite-four-arms",
+      "name": null,
+      "en": "Four Arms",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #1: named transformation appearance reported by attributed issue1 reviews; complete Robert Carey second-printing cover/design corroborated by official publisher product C136728. Primary transformation interior not independently viewed.",
+      "aliases": [
+        "Four Arms — Dynamite 2026",
+        "Dynamite Four Arms"
+      ],
+      "asset": null,
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343501011",
+        "https://comicon.com/2026/05/07/review-ben-10-1-is-a-new-take-on-the-cartoon-classic/",
+        "https://worldcomicbookreview.com/2026/05/24/ben-10-1-review/",
+        "https://dynamite.com/BEN-10-1-SECOND-PRINTING-1-IN-10-ROBERT-CAREY-VIRGIN-COVER-INCLUDES-10-COPIES-OF-THE-OPEN-ORDER-COVER-AND-1-COPY-OF-THE-SECOND-PRINTING-BLANK-AUTHENTIX-COVER/"
+      ],
+      "visualSourceUrls": [
+        "https://comicon.com/wp-content/uploads/2026/05/ben102P-01.jpg",
+        "https://comicon.com/2026/05/08/dynamite-reveals-ben-10-1-second-printing-covers/",
+        "https://dynamite.com/BEN-10-1-SECOND-PRINTING-1-IN-10-ROBERT-CAREY-VIRGIN-COVER-INCLUDES-10-COPIES-OF-THE-OPEN-ORDER-COVER-AND-1-COPY-OF-THE-SECOND-PRINTING-BLANK-AUTHENTIX-COVER/"
+      ],
+      "artSourceLabel": "素材待补；本轮原生生成被拒绝",
+      "artProvenance": "No completed transparent runtime asset this round. Original complete comic cover retained privately as reference only. Native imagegen rejected the first body output; all further Four Arms image routes stopped, including head generation."
+    },
+    {
+      "id": "dynamite-heatblast",
+      "name": null,
+      "en": "Heatblast",
+      "group": "extra",
+      "appearance": "Ben 10 (Dynamite, 2026) #1: named transformation appearance reported by attributed issue1 reviews; visual design based on Robert Carey issue1 third-printing full-art cover/design. Primary transformation interior not independently viewed.",
+      "aliases": [
+        "Heatblast — Dynamite 2026",
+        "Dynamite Heatblast"
+      ],
+      "asset": "alien-dynamite-heatblast",
+      "sourceUrls": [
+        "https://2001.dynamite.com/htmlfiles/viewProduct.html?PRO=C72513036343501011",
+        "https://comicon.com/2026/05/07/review-ben-10-1-is-a-new-take-on-the-cartoon-classic/",
+        "https://worldcomicbookreview.com/2026/05/24/ben-10-1-review/",
+        "https://icv2.com/articles/news/view/62609/"
+      ],
+      "visualSourceUrls": [
+        "https://geekfetch.s3.ca-central-1.amazonaws.com/product_images/202606-0000533343.jpg",
+        "https://comicpreviews.com/products/3afec641-a30a-42bd-a79f-e70447d430fa"
+      ],
+      "artSourceLabel": "AI reference redraw; not official original",
+      "artProvenance": "AI reference-guided full-body redraw of Robert Carey published comic cover/design. Complete source body retains two hands and two feet; originally cropped outer flame plume is redrawn as a contained interpreted taper. Not official transparent original artwork or a pixel-exact cutout.",
+      "dialFit": {
+        "scale": 0.5835,
+        "method": "native-png-alpha-diamond-envelope",
+        "diamondExtent": 1.490885,
+        "visiblePixels": 335676
       }
     }
   ]
