@@ -44,7 +44,13 @@ test('every source portrait remains a content-addressed original with its source
         const evidence = JSON.parse(read('assets/extra-art.json')).assets.find(source =>
           source.sourceFile === asset.source.referenceFile &&
           source.sourceSha256 === asset.source.referenceSha256);
-        assert.equal(evidence?.officialSourceVerified, true, 'official reference must match retained, verified source evidence');
+        const gameEvidence = JSON.parse(read('assets/provenance.json')).assets.find(source =>
+          source.url === asset.source.referenceUrl && source.pageUrl === asset.source.referencePageUrl &&
+          source.renderMode === 'official-game-frame-alpha' &&
+          new URL(source.url).hostname === 'i.cartoonnetwork.com' &&
+          bindings.get(source.formId)?.id === asset.id);
+        assert.ok(evidence?.officialSourceVerified === true || gameEvidence,
+          'official reference must match a retained verified frame or the corresponding publisher-hosted game asset');
       }
     }
     assert.deepEqual(read(`assets/runtime/${asset.sha256}.${type}`), bytes);

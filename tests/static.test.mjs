@@ -326,7 +326,7 @@ function node(tag, namespaceURI = null) {
 
 // Execute the actual app, using controlled browser interfaces to test state and cancellation.
 // Explicit rectangle fixtures below test coordinate handling, not browser layout or painted pixels.
-function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {}, atlas = null, imageState = 'ready', modelFactory = null } = {}) {
+function boot({ mode = 'projection', reducedMotion = false, systemReduced = false, rects = {}, atlas = null, imageState = 'ready', modelFactory = null, meshManifests = {} } = {}) {
   let now = 1000, serial = 0;
   const timers = new Map(), frames = new Map(), animations = [], elements = new Map(), anonymous = [];
   const rectangles = new Map(Object.entries(rects)), observers = [];
@@ -363,6 +363,7 @@ function boot({ mode = 'projection', reducedMotion = false, systemReduced = fals
   const portraitData = JSON.parse(read('assets/portraits.json'));
   elements.get('portrait-data').textContent = JSON.stringify({ ...portraitData, bindings: portraitData.bindings.filter(binding => fixture.some(form => form.id === binding.formId)) });
   if (elements.has('watch-views')) elements.get('watch-views').textContent = JSON.stringify(atlas);
+  if (elements.has('watch-mesh-data')) elements.get('watch-mesh-data').textContent = JSON.stringify(meshManifests);
   for (const watch of WATCHES) {
     const image = elements.get(`watch-atlas-${watch.id}`);
     if (image) { image.complete = imageState !== 'loading'; image.naturalWidth = imageState === 'ready' ? 2400 : 0; }
@@ -436,6 +437,33 @@ test('model frames drive the shared face, ring centre and core state without atl
   h.click('motion-toggle'); assert.equal(modelState.reducedMotion, false);
 });
 
+test('an intact source body toggles projection without offering an invented mechanical core', () => {
+  let modelState;
+  const h = boot({ mode: 'projection', reducedMotion: true,
+    meshManifests: { original: { sourceMotion: { core: false, lids: false } }, omniverse: { sourceMotion: { core: true, lids: false } } },
+    modelFactory: () => ({ setState(value) { modelState = value; }, dispose() {} }),
+  });
+  const toggle = h.elements.get('toggle-watch-core');
+  assert.equal(toggle.hidden, false);
+  assert.equal(toggle.textContent, '收起投影');
+  h.click('toggle-watch-core');
+  assert.equal(toggle.textContent, '打开投影');
+  assert.equal(modelState.raised, false);
+  h.click('toggle-watch-core');
+  assert.equal(modelState.raised, true);
+  h.action('mode', 'carousel');
+  assert.equal(toggle.hidden, true, 'static ring mode has no source core to raise');
+  h.click('next');
+  assert.equal(h.preferences.selectedId, h.fixture[1].id, 'the original body does not restrict the alien catalog');
+  h.action('watch', 'omniverse');
+  assert.equal(toggle.hidden, false, 'a source with an actual separate core retains its control');
+  assert.equal(toggle.textContent, '弹出表芯');
+  h.action('watch', 'original');
+  h.action('mode', 'dial');
+  assert.equal(toggle.hidden, true);
+  h.window.emit('pagehide');
+});
+
 test('a lost model falls back to labelled art and leaves hero selection operational', () => {
   let hooks, disposals = 0;
   const h = boot({ atlas: viewFixture(), modelFactory: (_canvas, callbacks) => {
@@ -487,22 +515,22 @@ function viewFixture() {
   ], watches: Object.fromEntries(WATCHES.map(watch => [watch.id, { width: 2400, height: 1200, frames }])) };
 }
 
-test('watch atlas starts at the low view with the mode-specific core and preserves host preferences', () => {
+test('watch atlas starts at the left view with the mode-specific core and preserves explicit low view and host preferences', () => {
   for (const mode of ['projection', 'carousel', 'dial']) {
     const h = boot({ mode, atlas: viewFixture(), reducedMotion: true });
     const appNode = h.elements.get('omni-app'), image = h.elements.get('watch-atlas-original');
-    assert.equal(appNode.dataset.watchView, 'low');
+    assert.equal(appNode.dataset.watchView, 'left');
     assert.equal(appNode.dataset.coreState, mode === 'projection' ? 'raised' : 'closed');
     assert.equal(appNode.dataset.watchArt, mode === 'dial' ? 'dial' : 'atlas');
     assert.equal(h.elements.get('watch-view-toolbar').hidden, mode === 'dial');
     assert.equal(image.hidden, mode === 'dial');
-    assert.equal(image.style.left, '-200%');
+    assert.equal(image.style.left, '-100%');
     assert.equal(image.style.top, mode === 'projection' ? '-100%' : '0%');
     if (mode !== 'dial') {
       assert.equal(h.elements.get('watch-multiview').style.aspectRatio, '600 / 600');
       assert.equal(h.elements.get('watch-device').style.aspectRatio, '600 / 600');
       assertCoordinates(['left', 'top', 'width', 'height'].map(key => parseFloat(h.elements.get('watch-screen').style[key])),
-        [46, mode === 'projection' ? 30 : 60, 30, mode === 'projection' ? 18 : 20], `${mode} uses its current frame face`);
+        [43, mode === 'projection' ? 30 : 60, 30, mode === 'projection' ? 24 : 25], `${mode} uses its current left frame face`);
     } else assert.equal(h.elements.get('watch-screen').style.left, '', 'dial retains the old front-face positioning');
     const saved = h.preferences;
     h.action('watch-view', 'right');
@@ -512,7 +540,15 @@ test('watch atlas starts at the low view with the mode-specific core and preserv
       assert.equal(h.elements.get('watch-screen').style['--watch-face-angle'], '1deg');
       const selected = h.elements.get('watch-view-controls').children.find(control => control.dataset.value === 'right');
       assert.equal(selected.attributes['aria-pressed'], 'true');
-    } else assert.equal(appNode.dataset.watchView, 'low', 'dial ignores hidden view controls');
+      h.action('watch-view', 'low');
+      assert.equal(appNode.dataset.watchView, 'low', 'the explicit low view remains available');
+      assert.equal(image.style.left, '-200%');
+      assert.equal(h.elements.get('watch-screen').style['--watch-face-angle'], '0deg');
+      assertCoordinates(['left', 'top', 'width', 'height'].map(key => parseFloat(h.elements.get('watch-screen').style[key])),
+        [46, mode === 'projection' ? 30 : 60, 30, mode === 'projection' ? 18 : 20], `${mode} uses its explicitly selected low frame face`);
+      const lowControl = h.elements.get('watch-view-controls').children.find(control => control.dataset.value === 'low');
+      assert.equal(lowControl.attributes['aria-pressed'], 'true');
+    } else assert.equal(appNode.dataset.watchView, 'left', 'dial ignores hidden view controls');
     assert.deepEqual(h.preferences, saved, 'view controls do not write local or host preferences');
   }
 });
@@ -525,13 +561,13 @@ test('watch atlas core toggle updates row, beam visibility and ring centre from 
   } });
   const stage = h.elements.get('stage'), image = h.elements.get('watch-atlas-original');
   const saved = h.preferences;
-  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [170.4, 414], 'closed face centres the ring');
-  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.2 / .3], 'closed view determines the ring ellipse');
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [163.2, 414], 'closed left face centres the ring');
+  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.25 / .3], 'closed left view determines the ring ellipse');
   h.click('toggle-watch-core');
   assert.equal(image.style.top, '-100%');
   assert.equal(h.elements.get('toggle-watch-core').textContent, '收起表芯');
-  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [170.4, 342], 'raised face recentres the ring');
-  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.18 / .3], 'raised view determines the ring ellipse');
+  assertCoordinates(['--ring-center-x', '--ring-center-y'].map(key => parseFloat(stage.style[key])), [163.2, 342], 'raised left face recentres the ring');
+  assertCoordinates([Number(stage.style['--ring-ellipse'])], [.24 / .3], 'raised left view determines the ring ellipse');
   assert.deepEqual(h.preferences, saved, 'core row is session state');
   h.action('mode', 'projection');
   assert.equal(h.elements.get('hologram').hidden, false, 'projection starts with its raised core');
@@ -556,7 +592,7 @@ test('watch atlas loading and errors restore the front image and can recover wit
   assert.equal(h.elements.get('watch-multiview').hidden, true);
   assert.match(h.elements.get('watch-view-status').textContent, /加载中/);
   assert.ok(h.elements.get('watch-view-controls').children.every(control => control.disabled));
-  h.action('watch-view', 'top'); assert.equal(appNode.dataset.watchView, 'low');
+  h.action('watch-view', 'top'); assert.equal(appNode.dataset.watchView, 'left');
   original.naturalWidth = 2400; original.emit('load');
   assert.equal(appNode.dataset.watchArt, 'atlas'); assert.equal(original.hidden, false);
   assert.equal(h.elements.get('watch-view-status').hidden, false);
@@ -588,7 +624,7 @@ test('watch atlas face-centred body width follows views and core rows and resets
     assert.match(device.style['--watch-ring-body-width'], /cqw$/);
     assert.ok(width * Math.max(faceX, 1 - faceX) <= 48 + 1e-6, `${message}: neither side of the centred face crosses the stage`);
   };
-  assertBody(.46, 92 / (2 * .54), 'initial low-view frame');
+  assertBody(.43, 92 / (2 * .57), 'initial left-view frame');
   h.action('watch-view', 'top');
   assertBody(.4, 92 / (2 * .6), 'new view updates the body offset and safe width');
   h.click('toggle-watch-core');

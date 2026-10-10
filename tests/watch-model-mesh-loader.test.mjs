@@ -71,6 +71,28 @@ test('optional source camera is copied without changing manifest coordinates', a
   geometry.camera.target[0] = 2; assert.equal(f.manifest.camera.target[0], -.080657);
 });
 
+test('retained complete source bodies load without inventing a detachable core', async () => {
+  const f = meshFixture(); f.manifest.parts = f.manifest.parts.slice(0, 1);
+  f.manifest.sourceMotion = { core: false, lids: false }; f.manifest.lift = 0;
+  f.manifest.sourceFinish = 'source-preserved';
+  const geometry = await loaderFor(f)('original');
+  assert.equal(geometry.parts.length, 1); assert.equal(geometry.lift, 0);
+  assert.deepEqual(geometry.sourceMotion, { core: false, lids: false });
+  assert.equal(geometry.sourceFinish, 'source-preserved');
+  geometry.sourceMotion.core = true; assert.equal(f.manifest.sourceMotion.core, false);
+  for (const mutate of [
+    m => { delete m.sourceMotion; }, m => { m.sourceMotion.core = true; },
+    m => { m.lift = .1; }, m => { m.sourceMotion.lids = true; },
+    m => { m.sourceMotion.core = 'false'; }, m => { m.sourceMotion.extra = false; },
+    m => { m.sourceFinish = 'unknown'; },
+  ]) {
+    const changed = structuredClone(f.manifest); mutate(changed);
+    assert.throws(() => validateWatchMeshManifest(changed));
+  }
+  const moving = meshFixture(); moving.manifest.sourceMotion = { core: false, lids: false };
+  assert.throws(() => validateWatchMeshManifest(moving.manifest), /motion/);
+});
+
 test('bad binary size, bounds, finite values and non-unit normals cannot enter the cache', async () => {
   for (const mutate of [
     bytes => bytes.slice(4),

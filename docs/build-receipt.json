@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-10T14:53:20.190Z",
-  "sha256": "660f29faa8d952a3e24ec1b24a59557d20975d956e73f811ad7352fcdff0f6fe",
-  "bytes": 451212,
+  "builtAt": "2026-10-10T17:57:49.390Z",
+  "sha256": "0a7d9d3c12ceae5b2edc87e350c6523b5bc991432cadfc30f659d4d3609dcebe",
+  "bytes": 460369,
   "coverage": {
     "total": 237,
     "reviewed": 236,
@@ -81,29 +81,29 @@
   "watchModel": {
     "renderer": "local-webgl-source-mesh",
     "source": "watch-model.js",
-    "sha256": "6aa86bcfee56a3e168ae4361b5c41a6eb7cc4edbbd7db3551c68322be591b1d6",
-    "loaderSha256": "a95a3ecb74b7ec9bcc5866892594b86e16df20ae9e295e8d93ed750b6d2ec538",
-    "registrySha256": "70b2063614536e90411bdaf8c3610c6316ea612bb5ba1a4a456900376fbb4e38",
+    "sha256": "6516ab62ddb8c20fba4fa7b1cbf73a8190c052ebed12f5cae4fa08d7f7a817fa",
+    "loaderSha256": "1363df282a5a18c0827403bc168233e19ca4a59a0cedb673aafa9595542f25c5",
+    "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
     "generations": 4,
     "watches": [
       {
         "id": "original",
-        "triangles": 22040,
-        "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458"
+        "triangles": 120000,
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9"
       },
       {
         "id": "recalibrated",
-        "triangles": 32430,
+        "triangles": 18158,
         "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448"
       },
       {
         "id": "ultimatrix",
-        "triangles": 23548,
+        "triangles": 9274,
         "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52"
       },
       {
         "id": "omniverse",
-        "triangles": 19016,
+        "triangles": 18562,
         "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c"
       }
     ],
@@ -112,16 +112,16 @@
     "officialModel": false
   },
   "portraits": {
-    "assets": 76,
-    "bindings": 85,
-    "pending": 152,
-    "sourceSha256": "ecaecdba299f0e6201cb5d8335081552fe49d722a51cacd3bf4ba85b340b60cb",
+    "assets": 88,
+    "bindings": 99,
+    "pending": 138,
+    "sourceSha256": "0a45f747e9666f2f14987d964da88f0aae74c49b15d0132db0a108d0825d86b6",
     "sourceBytesPreserved": true,
     "changesSelectionPool": false
   },
   "delivery": "offline-directory",
   "selfContainedHtml": false,
-  "runtimeFiles": 354,
-  "runtimeBytes": 157667609,
-  "runtimeManifestSha256": "701cecf455f191a838fc955a8eee94b7d4531f4c8c0221aaf1d5a4d7912cddfa"
+  "runtimeFiles": 351,
+  "runtimeBytes": 175650967,
+  "runtimeManifestSha256": "f0f4311a9ccbc4713e2243c7bde31f157cb7465467a81da7d40b07173af18cc6"
 }

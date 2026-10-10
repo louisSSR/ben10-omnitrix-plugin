@@ -409,7 +409,7 @@ export function watchPose(state={},geometry=null) {
   const raised=dial?0:clamp(typeof state.raised==='number'?state.raised:state.raised?1:0);
   const lift=geometry?.watch===watch?geometry.lift:{original:.32,recalibrated:.33,ultimatrix:.30,omniverse:.35}[watch];
   const sourceCamera=geometry?.watch===watch&&geometry.modelKind==='source-mesh'?geometry.camera:null;
-  return {watch,azimuth:(dial?0:view[0])*Math.PI/180,elevation:(dial?90:view[1])*Math.PI/180,distance:sourceCamera?.distance??(watch==='ultimatrix'?6.10:watch==='omniverse'?5.00:4.30),target:sourceCamera?[...sourceCamera.target]:[watch==='ultimatrix'?.54:0,-.30,0],lift:raised*lift,lidSlide:watch==='omniverse'?(dial?.47:raised*.47):0,fov:38*Math.PI/180};
+  return {watch,azimuth:(dial?0:view[0])*Math.PI/180,elevation:(dial?90:view[1])*Math.PI/180,distance:sourceCamera?.distance??(watch==='ultimatrix'?6.10:watch==='omniverse'?5.00:4.30),target:sourceCamera?[...sourceCamera.target]:[watch==='ultimatrix'?.54:0,-.30,0],lift:raised*lift,lidSlide:watch==='omniverse'&&geometry?.sourceMotion?.lids!==false?(dial?.47:raised*.47):0,fov:38*Math.PI/180};
 }
 function camera(pose,aspect=1) {
   const {azimuth:a,elevation:e,distance:d,target}=pose;
@@ -441,27 +441,91 @@ export function projectWatchFace(geometry,pose,aspect=1) {
   return {x:p.x,y:p.y,w:major*2,h:minor*2,a:angle*180/Math.PI,ellipseRatio:major>0?minor/major:1,visible:p.depth>0&&p.x>0&&p.x<1&&p.y>0&&p.y<1};
 }
 
-const VERTEX=`attribute vec3 aPosition; attribute vec3 aNormal; attribute vec4 aColor;
+// Paint belongs to the repaired solid's local coordinates. It must not split the
+// mesh or interpolate discrete material classes across neighbouring triangles.
+const SOURCE_SURFACES = Object.freeze({
+  'source-classic-cuff': 10, 'source-classic-face': 11,
+  'source-af-case-and-strap': 12, 'source-ultimate-cuff': 14,
+  'source-ultimate-side-fittings': 15, 'source-ov-curved-cuff': 17,
+  'derived-ov-cover-lid-left': 18, 'derived-ov-cover-lid-right': 18,
+});
+export function watchSurfaceTag(partId) { return Object.hasOwn(SOURCE_SURFACES, partId) ? SOURCE_SURFACES[partId] : 0; }
+
+const VERTEX=`attribute vec3 aPosition; attribute vec3 aNormal; attribute vec4 aColor; attribute float aSurfaceTag;
 uniform mat4 uViewProjection; uniform vec3 uOffset;
-varying vec3 vWorld; varying vec3 vNormal; varying vec4 vColor;
-void main(){vWorld=aPosition+uOffset;vNormal=aNormal;vColor=aColor;gl_Position=uViewProjection*vec4(vWorld,1.0);}`;
-const FRAGMENT=`precision mediump float;
-varying vec3 vWorld;varying vec3 vNormal;varying vec4 vColor;uniform vec3 uEye;uniform vec3 uEnergyTint;
-// Fixed studio panels are an analytic lighting approximation, not a sampled environment map.
-// No textures, noise, frame time, extra draw passes or continuously running animation are needed.
+varying vec3 vWorld; varying vec3 vLocal; varying vec3 vNormal; varying vec4 vColor; varying float vSurfaceTag;
+void main(){vLocal=aPosition;vWorld=aPosition+uOffset;vNormal=aNormal;vColor=aColor;vSurfaceTag=aSurfaceTag;gl_Position=uViewProjection*vec4(vWorld,1.0);}`;
+const FRAGMENT=`
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+varying vec3 vWorld;varying vec3 vLocal;varying vec3 vNormal;varying vec4 vColor;varying float vSurfaceTag;uniform vec3 uEye;uniform vec3 uEnergyTint;
+bool inLamp(vec3 p,vec3 n,vec3 center,vec3 axis,float cut){
+  vec3 delta=p-center;float along=dot(delta,axis);
+  return dot(delta,delta)-along*along<0.001089 && dot(p,axis)>cut && dot(n,axis)>0.15;
+}
+vec4 sourceFinish(vec3 p,vec3 n,vec4 original){
+  vec4 black=vec4(0.022,0.029,0.034,1.0),rubber=vec4(0.015,0.019,0.024,0.0);
+  vec4 silver=vec4(0.43,0.49,0.52,2.0),green=vec4(0.046,0.36,0.009,1.0);
+  vec4 glass=vec4(0.004,0.011,0.008,3.0),lamp=vec4(0.30,0.86,0.016,4.0);
+  float s=vSurfaceTag;
+  if(s>9.5 && s<10.5){
+    vec4 c=p.y< -0.05?rubber:black;
+    bool rail=(p.x> -0.5691 && p.x< -0.3893)||(p.x>0.3246 && p.x<0.5044);
+    if(rail && p.y> -0.28 && abs(p.z)>0.12)c=silver;
+    if(length(vec2(p.y+0.209,p.z))<0.525)c=p.y< -0.05?rubber:black;
+    if(p.y>0.275 && length(p.xz)<0.455)c=length(p.xz)<0.405?black:silver;
+    if(inLamp(p,n,vec3(-0.478,0.326,0.0),vec3(0.0,1.0,0.0),0.315)
+      ||inLamp(p,n,vec3(0.475,0.315,0.0),vec3(0.0,1.0,0.0),0.307)
+      ||inLamp(p,n,vec3(0.0,0.293,0.491),normalize(vec3(0.0,0.72,0.694)),0.5396)
+      ||inLamp(p,n,vec3(0.0,0.293,-0.491),normalize(vec3(0.0,0.72,-0.694)),0.5396))c=lamp;
+    return c;
+  }
+  if(s>10.5 && s<11.5){
+    if(p.y>0.336 && n.y>0.85)return glass;
+    return p.y>0.337 && n.y> -0.2?silver:black;
+  }
+  if(s>11.5 && s<12.5)return p.y>0.02?black:(abs(p.x)<0.115?rubber:green);
+  if(s>13.5 && s<14.5){
+    // Continuous green shell, a dark end cap and separate side insets. Avoid
+    // slicing the whole irregular upper shell with one horizontal paint plane.
+    if(p.y< -0.75)return rubber;
+    bool side=abs(p.z)>0.48 && p.y< -0.06 && p.y> -0.67 && p.x> -0.84 && p.x<1.14;
+    return p.x< -0.9 || side?black:green;
+  }
+  if(s>14.5 && s<15.5)return p.y< -0.4?green:silver;
+  if(s>16.5 && s<17.5)return abs(p.z)>0.20?green:vec4(0.57,0.61,0.54,1.0);
+  if(s>17.5 && s<18.5)return p.y>0.392?green:black;
+  return original;
+}
+// Fixed studio panels and object-space grain use one pass and no frame-time uniform.
+// These are authored materials, not color data recovered from the supplied printer files.
+float grainHash(vec2 p){
+  vec3 q=fract(vec3(p.xyx)*0.1031);q+=dot(q,q.yzx+19.19);
+  return fract((q.x+q.y)*q.z);
+}
+float surfaceGrain(vec2 p){
+  vec2 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
+  return mix(mix(grainHash(i),grainHash(i+vec2(1.0,0.0)),f.x),
+             mix(grainHash(i+vec2(0.0,1.0)),grainHash(i+vec2(1.0)),f.x),f.y);
+}
 vec3 linearToDisplay(vec3 c){
   vec3 low=c*12.92,high=1.055*pow(max(c,vec3(0.0)),vec3(1.0/2.4))-0.055;
   return mix(low,high,step(vec3(0.0031308),c));
 }
 void main(){
-  vec3 n=normalize(vNormal),v=normalize(uEye-vWorld),base=vColor.rgb;
+  vec3 n=normalize(vNormal),v=normalize(uEye-vWorld);
+  vec4 finish=sourceFinish(vLocal,n,vColor);vec3 base=finish.rgb;
   // Recolor green signal/paint only. A zero tint preserves the original palette exactly.
   float tintEnabled=step(0.001,max(uEnergyTint.r,max(uEnergyTint.g,uEnergyTint.b)));
-  float greenSignal=smoothstep(0.035,0.18,base.g-max(base.r,base.b))*tintEnabled;
+  float greenPaint=smoothstep(0.035,0.18,base.g-max(base.r,base.b));
+  float greenSignal=greenPaint*tintEnabled;
   base=mix(base,uEnergyTint*max(base.r,max(base.g,base.b)),greenSignal);
-  float metal=step(1.5,vColor.a)*(1.0-step(2.5,vColor.a));
-  float glass=step(2.5,vColor.a)*(1.0-step(3.5,vColor.a));
-  float lamp=step(3.5,vColor.a),rubber=1.0-step(0.5,vColor.a);
+  float metal=step(1.5,finish.a)*(1.0-step(2.5,finish.a));
+  float glass=step(2.5,finish.a)*(1.0-step(3.5,finish.a));
+  float lamp=step(3.5,finish.a),rubber=1.0-step(0.5,finish.a);
   vec3 key=normalize(vec3(-0.65,1.0,0.85)),fill=normalize(vec3(0.8,0.28,-0.6));
   float ndv=max(dot(n,v),0.0),ndk=max(dot(n,key),0.0),ndf=max(dot(n,fill),0.0);
   float fresnel=pow(1.0-ndv,5.0);
@@ -472,14 +536,35 @@ void main(){
   vec3 reflected=reflect(-v,n);
   float broadPanel=smoothstep(0.35,0.97,dot(reflected,normalize(vec3(-0.55,0.85,0.35))));
   float edgePanel=smoothstep(0.80,0.98,dot(reflected,normalize(vec3(0.72,0.32,0.65))));
-  float exponent=mix(mix(32.0,72.0,metal),112.0,max(glass,lamp));
+  vec2 texturePlane=abs(n.y)>0.65?vLocal.xz:(abs(n.z)>0.65?vLocal.xy:vLocal.zy);
+  float grain=surfaceGrain(texturePlane*88.0)-0.5;
+  float brushing=sin(texturePlane.y*92.0+grain*2.0)*0.5+0.5;
+  float coated=1.0-max(max(metal,glass),max(lamp,rubber));
+  // Opaque green casing stays darker than the energized lenses and face marks.
+  base*=1.0-0.45*coated*greenPaint;
+  float roughness=clamp(0.60*coated+0.30*metal+0.12*glass+0.24*lamp+0.88*rubber
+    +grain*(0.055*coated+0.035*metal+0.10*rubber),0.1,0.95);
+  // Rough enamel, brushed metal and matte elastomer have distinct highlight widths.
+  float exponent=mix(140.0,12.0,roughness*roughness);
   float highlight=pow(max(dot(n,normalize(key+v)),0.0),exponent);
-  float specular=0.07+0.40*metal+0.40*glass+0.28*lamp-0.055*rubber;
-  float reflection=(0.04+0.68*metal+0.23*glass)*(1.0-rubber);
+  float specular=0.045*coated+0.44*metal+0.46*glass+0.30*lamp+0.007*rubber;
+  float reflection=(0.08*coated+0.72*metal+0.25*glass)*(1.0-rubber);
   vec3 tint=mix(vec3(0.84,0.92,1.0),base*0.45+vec3(0.55),metal);
-  vec3 rgb=base*diffuse*cavity*(1.0-0.17*metal);
-  rgb+=tint*(highlight*specular+(broadPanel*0.48+edgePanel*0.32)*reflection);
+  vec3 rgb=base*diffuse*cavity*(1.0-0.30*metal)
+    *(1.0+grain*(0.025*coated+0.015*metal+0.11*rubber));
+  rgb+=tint*(highlight*specular+(broadPanel*0.48+edgePanel*0.32)*reflection)
+    *(1.0-metal*0.085+metal*0.17*brushing);
   rgb+=vec3(0.55,0.68,0.75)*fresnel*(0.045+0.13*metal+0.24*glass)*(1.0-rubber);
+  // Metal reflects elongated studio panels; it does not inherit the broad white
+  // diffuse response of an opaque polymer. Panels are analytic, with no extra pass.
+  float metalPanel=smoothstep(0.12,0.42,reflected.y)
+    *(1.0-smoothstep(0.38,0.72,abs(reflected.x+0.12)));
+  float metalStrip=smoothstep(0.64,0.80,reflected.x)
+    *(1.0-smoothstep(0.38,0.75,abs(reflected.y-0.15)));
+  vec3 conductor=base*(0.06+0.15*ndk+0.025*ndf)*cavity
+    +tint*(0.025+0.67*metalPanel+0.36*metalStrip+highlight*0.36)
+      *(0.94+0.12*brushing)+vec3(0.42,0.52,0.61)*fresnel*0.22;
+  rgb=mix(rgb,conductor,metal);
   rgb=mix(rgb,base*(0.62+0.34*ndk)+vec3(0.72,0.95,0.47)*highlight*0.28,lamp);
   // A mild highlight shoulder keeps bright metal below clipped white; dark values keep contrast.
   rgb=rgb/(vec3(1.0)+rgb*0.45);
@@ -502,7 +587,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{},loa
   try{vertex=shader(gl.VERTEX_SHADER,VERTEX);fragment=shader(gl.FRAGMENT_SHADER,FRAGMENT);program=gl.createProgram();gl.attachShader(program,vertex);gl.attachShader(program,fragment);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error('Watch program link failed');}
   catch{if(program)gl.deleteProgram(program);if(vertex)gl.deleteShader(vertex);if(fragment)gl.deleteShader(fragment);return null;}
   gl.deleteShader(vertex);gl.deleteShader(fragment);
-  const locations={position:gl.getAttribLocation(program,'aPosition'),normal:gl.getAttribLocation(program,'aNormal'),color:gl.getAttribLocation(program,'aColor'),matrix:gl.getUniformLocation(program,'uViewProjection'),offset:gl.getUniformLocation(program,'uOffset'),eye:gl.getUniformLocation(program,'uEye'),tint:gl.getUniformLocation(program,'uEnergyTint')};
+  const locations={position:gl.getAttribLocation(program,'aPosition'),normal:gl.getAttribLocation(program,'aNormal'),color:gl.getAttribLocation(program,'aColor'),surface:gl.getAttribLocation(program,'aSurfaceTag'),matrix:gl.getUniformLocation(program,'uViewProjection'),offset:gl.getUniformLocation(program,'uOffset'),eye:gl.getUniformLocation(program,'uEye'),tint:gl.getUniformLocation(program,'uEnergyTint')};
   let state={watch:'original',view:'left',raised:false,reducedMotion:false,visible:true,mode:'projection'};
   let geometry=null,current=watchPose(state),transition=null;
   let meshStatus='fallback',meshError='',meshRequest=0,meshController=null,ownsLoader=false;
@@ -522,9 +607,10 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{},loa
     try{
       for(const group of ['body','core','lid-left','lid-right']){
         const pieces=nextGeometry.parts.filter(p=>p.group===group);if(!pieces.length)continue;
-        const count=pieces.reduce((n,p)=>n+p.positions.length/3,0),data=new Float32Array(count*10);let offset=0;
+        const count=pieces.reduce((n,p)=>n+p.positions.length/3,0),data=new Float32Array(count*11);let offset=0;
         for(const p of pieces)for(let i=0;i<p.positions.length/3;i++){
-          data.set(p.positions.subarray(i*3,i*3+3),offset);data.set(p.normals.subarray(i*3,i*3+3),offset+3);data.set(p.colors.subarray(i*4,i*4+4),offset+6);offset+=10;
+          data.set(p.positions.subarray(i*3,i*3+3),offset);data.set(p.normals.subarray(i*3,i*3+3),offset+3);data.set(p.colors.subarray(i*4,i*4+4),offset+6);
+          data[offset+10]=nextGeometry.modelKind==='source-mesh'&&nextGeometry.sourceFinish!=='source-preserved'?watchSurfaceTag(p.id):0;offset+=11;
         }
         const buffer=gl.createBuffer();if(!buffer)throw new Error('Watch mesh buffer allocation failed');
         replacement.push({group,buffer,count});gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);
@@ -575,6 +661,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{},loa
     if(canvas.dataset){
       const status=sourceState();canvas.dataset.sourceMesh=String(status.sourceMesh);canvas.dataset.meshStatus=status.meshStatus;
       canvas.dataset.modelKind=status.modelKind;canvas.dataset.sourceArchiveSha256=status.sourceArchiveSha256||'';
+      canvas.dataset.meshVertexCount=String(buffers.reduce((count,batch)=>count+batch.count,0));
     }
   }
   function sample(time){
@@ -600,7 +687,7 @@ export function createWatchModel(canvas,{onFrame=()=>{},onUnavailable=()=>{},loa
     gl.uniform3fv(locations.tint,state.palette==='amber'?[1,.38,.08]:state.palette==='rose'?[1,.16,.52]:[0,0,0]);
     for(const b of buffers){
       gl.bindBuffer(gl.ARRAY_BUFFER,b.buffer);
-      for(const [location,size,offset] of [[locations.position,3,0],[locations.normal,3,12],[locations.color,4,24]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,40,offset);}
+      for(const [location,size,offset] of [[locations.position,3,0],[locations.normal,3,12],[locations.color,4,24],[locations.surface,1,40]]){gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,44,offset);}
       const offset=b.group==='core'?[0,current.lift,0]:b.group==='lid-left'?[-current.lidSlide,0,0]:b.group==='lid-right'?[current.lidSlide,0,0]:[0,0,0];
       gl.uniform3fv(locations.offset,offset);gl.drawArrays(gl.TRIANGLES,0,b.count);
     }

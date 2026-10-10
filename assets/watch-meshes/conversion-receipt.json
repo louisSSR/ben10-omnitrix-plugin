@@ -1,1127 +1,3265 @@
 {
+  "schemaVersion": 3,
+  "recordedAt": "2026-10-10T17:51:08.259542+00:00",
+  "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
+  "status": "source-derived-and-preserved",
   "parts": [
-    {
-      "watch": "original",
-      "id": "source-classic-cuff",
-      "trianglesBefore": 20256,
-      "triangles": 20256,
-      "file": "assets/runtime/ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82.f32",
-      "sha256": "ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82",
-      "bounds": {
-        "min": [
-          -0.7113333315,
-          -0.7641983438762354,
-          -0.6078666651
-        ],
-        "max": [
-          0.646666665,
-          0.343307816802896,
-          0.6078666651
-        ]
-      },
-      "sourceObject": "model-3-object-2",
-      "transforms": "Declared source component transform; x=-(sy+2.5)*.0129333, y=sz*.0129333+shift, z=-sx*.0129333."
-    },
-    {
-      "watch": "original",
-      "id": "source-classic-face",
-      "trianglesBefore": 1508,
-      "triangles": 1508,
-      "file": "assets/runtime/f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04.f32",
-      "sha256": "f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04",
-      "bounds": {
-        "min": [
-          -0.4138666656,
-          0.3002133236759491,
-          -0.4138666656
-        ],
-        "max": [
-          0.4138666656,
-          0.36100000005329935,
-          0.4138666656
-        ]
-      },
-      "sourceObject": "model-2-object-1"
-    },
-    {
-      "watch": "original",
-      "id": "authored-hidden-lift-shaft",
-      "trianglesBefore": 256,
-      "triangles": 256,
-      "file": "assets/runtime/817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15.f32",
-      "sha256": "817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15",
-      "bounds": {
-        "min": [
-          -0.365,
-          -0.18,
-          -0.365
-        ],
-        "max": [
-          0.365,
-          0.327,
-          0.365
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Keep a physical shaft seated while the source face lifts; source does not provide rigging."
-    },
     {
       "watch": "recalibrated",
       "id": "source-af-case-and-strap",
-      "trianglesBefore": 18158,
+      "group": "body",
+      "file": "./assets/runtime/38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4.f32",
+      "sha256": "38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4",
+      "bytes": 2178960,
       "triangles": 18158,
-      "file": "assets/runtime/bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691.f32",
-      "sha256": "bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691",
       "bounds": {
         "min": [
-          -0.6767048864051765,
-          -1.0220244672,
-          -0.5464274754
+          -0.6767048835754395,
+          -1.0220245122909546,
+          -0.5464274883270264
         ],
         "max": [
-          0.6767048880948235,
-          0.341,
-          0.5464274754
+          0.6767048835754395,
+          0.3409999907016754,
+          0.5464274883270264
         ]
       },
-      "sourceObject": "1",
-      "sourceTrianglesRetained": true,
-      "transforms": "Declared non-print component positions; x=-sy*.0205,y=sz*.0205+shift,z=-sx*.0205."
-    },
-    {
-      "watch": "recalibrated",
-      "id": "source-af-face",
-      "trianglesBefore": 89632,
-      "triangles": 13996,
-      "file": "assets/runtime/73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014.f32",
-      "sha256": "73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014",
-      "bounds": {
-        "min": [
-          -0.38779903079414113,
-          0.1651062341916882,
-          -0.3879325323546377
+      "source": {
+        "archive": "Ben+10+Omnitrix+Watch.zip",
+        "archiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "archiveEntry": "Ben10Watch.3mf",
+        "nestedEntry": "3D/3dmodel.model",
+        "objectId": "1",
+        "sha256": "4891119f23ef517cebbd733d4f4066c7ff6378b1da9d73e8dfe937a7b9e2fd39",
+        "kind": "indexed-3mf-mesh"
+      },
+      "sourceTriangleCount": 18158,
+      "sourceCoordinateFingerprint": {
+        "sha256": "d12e13607b78ccd031ef4c2e4b8e839c6198a58c3ba5d74fa7a44b719388087e",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "da074dcfbb7deabcf6926711194758f9f12b8cb8ffea0dfc93145608cc130157",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.0,
+          -0.0205,
+          0.0,
+          -3.1280517654999996e-07
         ],
-        "max": [
-          0.3877781677246094,
-          0.3310002025821061,
-          0.3879306605645872
-        ]
-      },
-      "sourceObject": "part-4",
-      "sourceArchiveSha256": "ffb8e6072e234a5337af48dc1ac65749f9a6ec6b29c7bcdd5e906c9da0dd8622",
-      "sourceSha256": "62225d197cb209571ca83187bb05532200404f74a70836159144f3fbfa4f4428",
-      "simplification": "QEM target 14000; boundaries inspected after rendering."
-    },
-    {
-      "watch": "recalibrated",
-      "id": "authored-hidden-lift-shaft",
-      "trianglesBefore": 256,
-      "triangles": 256,
-      "file": "assets/runtime/77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871.f32",
-      "sha256": "77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871",
-      "bounds": {
-        "min": [
-          -0.362,
-          -0.22,
-          -0.362
+        [
+          0.0,
+          0.0,
+          0.0205,
+          -0.3405122336
         ],
-        "max": [
-          0.362,
-          0.289,
-          0.362
+        [
+          -0.0205,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
         ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.0205,
+      "placement": "declared-original-3mf-component-transform",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 9095,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 5,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 5,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
       },
-      "authoredSupplement": true
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 18158,
+      "retainedSourceTriangleCount": 18158,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "0e48d61c4106abbc08300e1f6941270ee65833cad04aa637b61ad641dc98f401",
+      "retainedSourceFaceIndicesSha256": "0e48d61c4106abbc08300e1f6941270ee65833cad04aa637b61ad641dc98f401",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "d12e13607b78ccd031ef4c2e4b8e839c6198a58c3ba5d74fa7a44b719388087e",
+      "materialAssignment": "Actual connected planar source emblem fields (153 faces) green; native upper rim (144 faces) dark metal; rubber body. No overlay, new core or modified coordinates."
     },
     {
       "watch": "ultimatrix",
       "id": "source-ultimate-cuff",
-      "trianglesBefore": 4928,
+      "group": "body",
+      "file": "./assets/runtime/8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557.f32",
+      "sha256": "8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557",
+      "bytes": 591360,
       "triangles": 4928,
-      "file": "assets/runtime/5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c.f32",
-      "sha256": "5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c",
       "bounds": {
         "min": [
-          -1.4617920019148558,
-          -1.213157236328125,
-          -0.740938080078125
+          -1.4617919921875,
+          -1.2131571769714355,
+          -0.7409380674362183
         ],
         "max": [
-          1.30047801953125,
-          0.330677236328125,
-          0.744902740234375
+          1.3004779815673828,
+          0.33067724108695984,
+          0.7449027299880981
         ]
       },
-      "sourceObject": "part-1",
-      "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
-      "transforms": "x=(sz-125.112)*.016+.54,y=-(sy-79.735)*.016+.331,z=(sx-128.316)*.016",
-      "rigging": "Entire supplied main body remains stationary, including original front relief; supplied separate face from another Ultimatrix archive supplies movable core."
+      "source": {
+        "archive": "omnitrix+ultimate_stls.zip",
+        "archiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "archiveEntry": "obj_1_omnitrix ultimate.stl",
+        "objectId": "part-1",
+        "sha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 9274,
+      "sourceCoordinateFingerprint": {
+        "sha256": "236b196c14e4afd9d506272a2b06f73249dfaa68728b185ae272c6af261934c7",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "1f6110d8af890623bafc55b55cdbf8396f5fd69ef7d151b83b5ae4b16dc3631c",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.0,
+          0.0,
+          0.016,
+          -1.461792
+        ],
+        [
+          0.0,
+          -0.016,
+          0.0,
+          1.60676
+        ],
+        [
+          0.016,
+          0.0,
+          0.0,
+          -2.053056
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.016,
+      "placement": "source-original-component-relative-positions",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 2464,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 4928,
+      "retainedSourceTriangleCount": 4928,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "3e4ffd85cf2c327c9db811ca8910143dbeff3536fa7a3dddb253d7b740282e6b",
+      "retainedSourceFaceIndicesSha256": "3e4ffd85cf2c327c9db811ca8910143dbeff3536fa7a3dddb253d7b740282e6b",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "75e968467a3d3ad8696207f69d8de1d0f8c7084e40e859041234a8422588d55f",
+      "materialAssignment": "Whole original main cuff in matte green coating; native separate fittings remain silver. No geometry or normals changed."
     },
     {
       "watch": "ultimatrix",
       "id": "source-ultimate-side-fittings",
-      "trianglesBefore": 4346,
+      "group": "body",
+      "file": "./assets/runtime/5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af.f32",
+      "sha256": "5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af",
+      "bytes": 521520,
       "triangles": 4346,
-      "file": "assets/runtime/c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36.f32",
-      "sha256": "c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36",
       "bounds": {
         "min": [
-          -1.0403305131835936,
-          -0.71465748046875,
-          -0.7550147402343751
+          -1.0403305292129517,
+          -0.7146574854850769,
+          -0.7550147175788879
         ],
         "max": [
-          -0.028909187499999933,
-          -0.02110108398437499,
-          0.74409683203125
+          -0.028909187763929367,
+          -0.021101083606481552,
+          0.7440968155860901
         ]
       },
-      "sourceObject": "part-1",
-      "sourceTriangleRange": [
-        4928,
-        9274
+      "source": {
+        "archive": "omnitrix+ultimate_stls.zip",
+        "archiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "archiveEntry": "obj_1_omnitrix ultimate.stl",
+        "objectId": "part-1",
+        "sha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 9274,
+      "sourceCoordinateFingerprint": {
+        "sha256": "236b196c14e4afd9d506272a2b06f73249dfaa68728b185ae272c6af261934c7",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "45fb576d1833ac376fea4d40b608670dbbb9aed00453545e14231f249d7ceb21",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.0,
+          0.0,
+          0.016,
+          -1.461792
+        ],
+        [
+          0.0,
+          -0.016,
+          0.0,
+          1.60676
+        ],
+        [
+          0.016,
+          0.0,
+          0.0,
+          -2.053056
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
       ],
-      "sourceComponents": "Three disconnected side fittings; topology retained."
-    },
-    {
-      "watch": "ultimatrix",
-      "id": "source-ultimate-independent-face",
-      "trianglesBefore": 89632,
-      "triangles": 13998,
-      "file": "assets/runtime/f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02.f32",
-      "sha256": "f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02",
-      "bounds": {
-        "min": [
-          0.06947049176086675,
-          0.12893432617460052,
-          -0.4704205322265625
-        ],
-        "max": [
-          1.0104875456600986,
-          0.33100023714820875,
-          0.4704205322265625
-        ]
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.016,
+      "placement": "source-original-component-relative-positions",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 2179,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
       },
-      "sourceObject": "obj_3_FACE",
-      "sourceArchiveSha256": "39fe4625e6c222b133b995639b99b42a1a6bb17762375764bd1bf0dc4c49d71a",
-      "sourceSha256": "c4b5585241166651fb2bb1b112921f21c6c9f7b52d8b8d84a991d168ce0c680d",
-      "simplification": "QEM target 14000; separate print face fitted to measured main source circle."
-    },
-    {
-      "watch": "ultimatrix",
-      "id": "authored-hidden-lift-shaft",
-      "trianglesBefore": 256,
-      "triangles": 256,
-      "file": "assets/runtime/fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48.f32",
-      "sha256": "fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48",
-      "bounds": {
-        "min": [
-          0.07200000000000001,
-          -0.26,
-          -0.468
-        ],
-        "max": [
-          1.008,
-          0.224,
-          0.468
-        ]
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
       },
-      "authoredSupplement": true
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 4346,
+      "retainedSourceTriangleCount": 4346,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "4e7fe8cfa4c4cb7d153c3a846414de7fe2e76f86eb1d843a52098dd1a71c1155",
+      "retainedSourceFaceIndicesSha256": "4e7fe8cfa4c4cb7d153c3a846414de7fe2e76f86eb1d843a52098dd1a71c1155",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "0ffd5d4be416941518542e7fe28ee4ab9e27d4490ce20792460effa490242128",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-silver-face-ring",
-      "trianglesBefore": 1390,
+      "group": "core",
+      "file": "./assets/runtime/f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f.f32",
+      "sha256": "f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f",
+      "bytes": 166560,
       "triangles": 1388,
-      "file": "assets/runtime/be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797.f32",
-      "sha256": "be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797",
       "bounds": {
         "min": [
-          -0.371925411767578,
-          0.29019246000902343,
-          -0.37196695273437513
+          -0.371925413608551,
+          0.29019245505332947,
+          -0.3719669580459595
         ],
         "max": [
-          0.3719254488281251,
-          0.32056919950195306,
-          0.371966915673828
+          0.3719254434108734,
+          0.3205691874027252,
+          0.3719669282436371
         ]
       },
-      "sourceObject": "part-1",
-      "sourceSha256": "06e9fdde133203e9668ef3c1b2007eef3e0b43c79ea32c8210ca83f813285ed5",
-      "sourceRole": "silver-face-ring",
-      "normalization": {
-        "sourceCenter": [
-          127.99998092651367,
-          127.99998092651367,
-          0.7594184877744141
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_1_gri.stl",
+        "objectId": "part-1",
+        "sha256": "06e9fdde133203e9668ef3c1b2007eef3e0b43c79ea32c8210ca83f813285ed5",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 1390,
+      "sourceCoordinateFingerprint": {
+        "sha256": "1f64ba261437776d83ffec74d7a6cc5c1d115b9eec1eae1f32e7088703a8fba4",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "53c53723ff53fc003ea91c959788a129cdd69ecc32d69aedbffc0a5192b15212",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.02,
+          0.0,
+          0.0,
+          -2.5599996
         ],
-        "rotationRowMajor3x3": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.29019246
         ],
-        "translationAfterCenterRotation": [
-          9.26513678223273e-07,
-          9.26513678223273e-07,
-          14.784018487774414
+        [
+          0.0,
+          -0.02,
+          0.0,
+          2.5599996
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
-      }
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "measured-circular-axis-stack",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 694,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 1390,
+      "retainedSourceTriangleCount": 1388,
+      "removedZeroAreaAfterFloat32Count": 2,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "ada5fda39b618d763648d1f018f17934deca2bd9020e178f30f60bd9320c09af",
+      "retainedSourceFaceIndicesSha256": "c742edaafe380bd8d373cfe1715b6dd4899f2d9f0fd0750daabecad82351b2a7",
+      "removedZeroAreaSourceFaceIndices": [
+        674,
+        1114
+      ],
+      "selectedCoordinateFingerprint": "1f64ba261437776d83ffec74d7a6cc5c1d115b9eec1eae1f32e7088703a8fba4",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-middle-case",
-      "trianglesBefore": 2492,
+      "group": "body",
+      "file": "./assets/runtime/80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816.f32",
+      "sha256": "80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816",
+      "bytes": 299040,
       "triangles": 2492,
-      "file": "assets/runtime/4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4.f32",
-      "sha256": "4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4",
       "bounds": {
         "min": [
-          -0.6499831152343746,
-          0.06970045993674312,
-          -0.5000000044726562
+          -0.6499831080436707,
+          0.0697004571557045,
+          -0.5
         ],
         "max": [
-          0.5937790917968755,
-          0.20970044092651363,
-          0.4999999955273438
+          0.5937790870666504,
+          0.20970043540000916,
+          0.5
         ]
       },
-      "sourceObject": "part-2",
-      "sourceSha256": "485860ae389f66d470f1f308a7157866a90fe35c1ad0575b6ebaef486f54c3af",
-      "sourceRole": "middle-case",
-      "normalization": {
-        "sourceCenter": [
-          774.4468994140625,
-          158.4999542236328,
-          3.4999995215814206
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_2_orta.stl",
+        "objectId": "part-2",
+        "sha256": "485860ae389f66d470f1f308a7157866a90fe35c1ad0575b6ebaef486f54c3af",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 2492,
+      "sourceCoordinateFingerprint": {
+        "sha256": "071da92a8aee6780a55731d580aa8351a7f7b56911bd5d5abcfdf783c49a28f2",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "49a9c7eea0a097aae564bcfc3db392bf5a973bbfffb205a99eeacb43d07f7e06",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.02,
+          0.0,
+          0.0,
+          -15.51704
         ],
-        "rotationRowMajor3x3": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.06970045999999996
         ],
-        "translationAfterCenterRotation": [
-          -1.4051005859374754,
-          2.2363281004800228e-07,
-          6.499999521581421
+        [
+          0.0,
+          -0.02,
+          0.0,
+          3.16999908
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
-      }
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "measured-circular-axis-stack",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1262,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 2492,
+      "retainedSourceTriangleCount": 2492,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "1f7c82339b4a9a7f81d9f9f3478394bde81a3b6d64329ece93819688f49cb956",
+      "retainedSourceFaceIndicesSha256": "1f7c82339b4a9a7f81d9f9f3478394bde81a3b6d64329ece93819688f49cb956",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "071da92a8aee6780a55731d580aa8351a7f7b56911bd5d5abcfdf783c49a28f2",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-cylindrical-face-core",
-      "trianglesBefore": 2498,
+      "group": "core",
+      "file": "./assets/runtime/681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9.f32",
+      "sha256": "681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9",
+      "bytes": 299520,
       "triangles": 2496,
-      "file": "assets/runtime/3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533.f32",
-      "sha256": "3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533",
       "bounds": {
         "min": [
-          -0.39312256480468705,
-          0.07070046002624507,
-          -0.39312240824218747
+          -0.3931225538253784,
+          0.07070045918226242,
+          -0.3931224048137665
         ],
         "max": [
-          0.39312255238281296,
-          0.3205999999475097,
-          0.3931224037695313
+          0.3931225538253784,
+          0.3206000030040741,
+          0.3931224048137665
         ]
       },
-      "sourceObject": "part-3",
-      "sourceSha256": "8ce637ba30b3f8957604c384c5642a46cb87551d4d2c98d17bfe744bd625a6c4",
-      "sourceRole": "cylindrical-face-core",
-      "normalization": {
-        "sourceCenter": [
-          435.1999816894531,
-          127.9999771118164,
-          6.247488499343872
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_3_ic-logo.stl",
+        "objectId": "part-3",
+        "sha256": "8ce637ba30b3f8957604c384c5642a46cb87551d4d2c98d17bfe744bd625a6c4",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 2498,
+      "sourceCoordinateFingerprint": {
+        "sha256": "005f3d2f2f96e1c131a7dbf7ee555937de01ca9a8e1a8f97fa739708a9c6272f",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "cdcb2a2e6c019c4d900fb1cb547bf49ca35141505bd8bc10f809611ce1eca2a9",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.02,
+          0.0,
+          0.0,
+          -8.70399964
         ],
-        "rotationRowMajor3x3": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.07070045999999994
         ],
-        "translationAfterCenterRotation": [
-          -3.105468522335286e-07,
-          1.1181640502400114e-07,
-          9.29748849934387
+        [
+          0.0,
+          -0.02,
+          0.0,
+          2.55999954
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
-      }
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "measured-circular-axis-stack",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1252,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 2498,
+      "retainedSourceTriangleCount": 2496,
+      "removedZeroAreaAfterFloat32Count": 2,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "93fbb94ce717e8de89079c22a18563c65528287603badc2f04c82e34749707c2",
+      "retainedSourceFaceIndicesSha256": "7f9dcb04640366660e1a81dda412a65d958c3b02ffc6d0a6f8efaf91bb7b1a7f",
+      "removedZeroAreaSourceFaceIndices": [
+        364,
+        686
+      ],
+      "selectedCoordinateFingerprint": "005f3d2f2f96e1c131a7dbf7ee555937de01ca9a8e1a8f97fa739708a9c6272f",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-bottom-case-with-post",
-      "trianglesBefore": 3422,
+      "group": "body",
+      "file": "./assets/runtime/178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7.f32",
+      "sha256": "178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7",
+      "bytes": 409800,
       "triangles": 3415,
-      "file": "assets/runtime/98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61.f32",
-      "sha256": "98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61",
       "bounds": {
         "min": [
-          -0.7171894335937509,
-          0.009700459959081996,
-          -0.4999999990527343
+          -0.7171894311904907,
+          0.009700460359454155,
+          -0.5
         ],
         "max": [
-          0.6565508007812492,
-          0.21087290720458982,
-          0.5000000009472657
+          0.6565508246421814,
+          0.21087290346622467,
+          0.5
         ]
       },
-      "sourceObject": "part-6",
-      "sourceSha256": "19d0f63ee5bb5c703a28d6d0972b34ed021b1f1b8c1989b22464d79b8d59d4f0",
-      "sourceRole": "bottom-case-with-post",
-      "normalization": {
-        "sourceCenter": [
-          797.0350341796875,
-          99.51836395263672,
-          5.029311179091797
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_6_alt.stl",
+        "objectId": "part-6",
+        "sha256": "19d0f63ee5bb5c703a28d6d0972b34ed021b1f1b8c1989b22464d79b8d59d4f0",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 3422,
+      "sourceCoordinateFingerprint": {
+        "sha256": "d6a2bdd5ecebc5fb41f492a53176d559d91ac261dc06c4e21f45efb4f99de8a1",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "384b5ad6270aaef14c0380404900285e27ea599b70c30be991da98a70e7acb0f",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.02,
+          0.0,
+          0.0,
+          -15.971020000000001
         ],
-        "rotationRowMajor3x3": [
-          [
-            1,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.009700459999999966
         ],
-        "translationAfterCenterRotation": [
-          -1.5159658203125446,
-          -4.736328662602318e-08,
-          5.029311179091797
+        [
+          0.0,
+          -0.02,
+          0.0,
+          1.99036728
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
-      }
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "measured-circular-axis-stack",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1717,
+        "boundaryEdges": 9,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 3422,
+      "retainedSourceTriangleCount": 3415,
+      "removedZeroAreaAfterFloat32Count": 7,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "07936932e220fc62c45326d3af1b542631d9aa001ba2347c10100c126a9b7234",
+      "retainedSourceFaceIndicesSha256": "952d51c496f804914e2f039aedae8d671a68f4220b96cc2ccd94cb56f1dfc864",
+      "removedZeroAreaSourceFaceIndices": [
+        328,
+        338,
+        412,
+        489,
+        656,
+        1111,
+        1183
+      ],
+      "selectedCoordinateFingerprint": "d6a2bdd5ecebc5fb41f492a53176d559d91ac261dc06c4e21f45efb4f99de8a1",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
-      "id": "derived-ov-cover-lid-left",
-      "trianglesBefore": 2413,
-      "triangles": 2413,
-      "file": "assets/runtime/ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f.f32",
-      "sha256": "ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f",
+      "id": "source-ov-single-cover",
+      "group": "body",
+      "file": "./assets/runtime/d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8.f32",
+      "sha256": "d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8",
+      "bytes": 342240,
+      "triangles": 2852,
       "bounds": {
         "min": [
-          -0.7574746801757811,
-          0.3357004599343255,
-          -0.4133944213867187
+          -0.7574746608734131,
+          0.33570045232772827,
+          -0.41339442133903503
         ],
         "max": [
-          0.0,
-          0.4227270560693359,
-          0.41384556884765633
+          0.4999951124191284,
+          0.4227270483970642,
+          0.41384556889533997
         ]
       },
-      "sourceObject": "part-7",
-      "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
-      "sourceRole": "single-cover",
-      "normalization": {
-        "sourceCenter": [
-          148.20127868652344,
-          -199.19998931884766,
-          2.1756649000915376
-        ],
-        "rotationRowMajor3x3": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "translationAfterCenterRotation": [
-          -6.436989318847651,
-          -0.011278686523439774,
-          18.475664900091537
-        ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_7_kapak-logo.stl",
+        "objectId": "part-7",
+        "sha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
+        "kind": "binary-stl"
       },
-      "derivedSplit": true,
-      "reason": "Single supplied cover split on production x=0 for authored two-panel interaction."
-    },
-    {
-      "watch": "omniverse",
-      "id": "derived-ov-cover-lid-right",
-      "trianglesBefore": 605,
-      "triangles": 605,
-      "file": "assets/runtime/073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c.f32",
-      "sha256": "073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c",
-      "bounds": {
-        "min": [
+      "sourceTriangleCount": 2852,
+      "sourceCoordinateFingerprint": {
+        "sha256": "07d604ea94e13b02ee707983f480d9b2e4f102a7ec0796911f0bbb863429ad17",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "32de5c89d1164af47e78410b6a54c6e955871958faaac8cd4a499008a1f78070",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
           0.0,
-          0.33625945135677565,
-          -0.41323217606710366
+          0.02,
+          0.0,
+          3.8552600000000004
         ],
-        "max": [
-          0.49999510742187514,
-          0.3987067275476074,
-          0.41372391522083524
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.33570046
+        ],
+        [
+          0.02,
+          0.0,
+          0.0,
+          -2.9638
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
         ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "approximate-art-assembly",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1428,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
       },
-      "sourceObject": "part-7",
-      "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
-      "sourceRole": "single-cover",
-      "normalization": {
-        "sourceCenter": [
-          148.20127868652344,
-          -199.19998931884766,
-          2.1756649000915376
-        ],
-        "rotationRowMajor3x3": [
-          [
-            0,
-            1,
-            0
-          ],
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
-        ],
-        "translationAfterCenterRotation": [
-          -6.436989318847651,
-          -0.011278686523439774,
-          18.475664900091537
-        ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
       },
-      "derivedSplit": true,
-      "reason": "Single supplied cover split on production x=0 for authored two-panel interaction."
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 2852,
+      "retainedSourceTriangleCount": 2852,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "3a73c025b0c677b2b86d88cf8de6dbd989bdb96c1feccde7642577ed1face96e",
+      "retainedSourceFaceIndicesSha256": "3a73c025b0c677b2b86d88cf8de6dbd989bdb96c1feccde7642577ed1face96e",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "07d604ea94e13b02ee707983f480d9b2e4f102a7ec0796911f0bbb863429ad17",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-upper-case",
-      "trianglesBefore": 2654,
+      "group": "body",
+      "file": "./assets/runtime/edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874.f32",
+      "sha256": "edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874",
+      "bytes": 317880,
       "triangles": 2649,
-      "file": "assets/runtime/89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936.f32",
-      "sha256": "89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936",
       "bounds": {
         "min": [
-          -0.6500004296874999,
-          0.20970046006325682,
-          -0.500000005996094
+          -0.6500004529953003,
+          0.20970046520233154,
+          -0.5
         ],
         "max": [
-          0.59376177734375,
-          0.3297004790734863,
-          0.4999999940039061
+          0.5937618017196655,
+          0.3297004699707031,
+          0.5
         ]
       },
-      "sourceObject": "part-8",
-      "sourceSha256": "03454670edc926c1d78a68c5e7e2fced8c3a4d5acfb02b3839fadd2e97018fcb",
-      "sourceRole": "upper-case",
-      "normalization": {
-        "sourceCenter": [
-          710.3529663085938,
-          131.5181427001953,
-          3.0000004784185794
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_8_üst.stl",
+        "objectId": "part-8",
+        "sha256": "03454670edc926c1d78a68c5e7e2fced8c3a4d5acfb02b3839fadd2e97018fcb",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 2654,
+      "sourceCoordinateFingerprint": {
+        "sha256": "bd194af7189f1f29fe9061843d2b81777de6bbdd45cd76aeb3134779732b261f",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "22215ed76472e6d215abe3b1079a681afbb000a3013ee74d66c8a297028a14ef",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          -0.02,
+          0.0,
+          0.0,
+          14.17894
         ],
-        "rotationRowMajor3x3": [
-          [
-            -1,
-            0,
-            0
-          ],
-          [
-            0,
-            -1,
-            0
-          ],
-          [
-            0,
-            0,
-            1
-          ]
+        [
+          0.0,
+          0.0,
+          0.02,
+          0.20970045999999998
         ],
-        "translationAfterCenterRotation": [
-          -1.4059663085937473,
-          2.9980469662405085e-07,
-          13.00000047841858
+        [
+          0.0,
+          0.02,
+          0.0,
+          -2.6303628600000004
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
-          ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
-        }
-      }
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "measured-circular-axis-stack",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1349,
+        "boundaryEdges": 3,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 2654,
+      "retainedSourceTriangleCount": 2649,
+      "removedZeroAreaAfterFloat32Count": 5,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "81def29aa3c2a0b01795136ae11577a806d4a15c2d0516c61a15914d0ac80949",
+      "retainedSourceFaceIndicesSha256": "1b7362a0c048d74ad1d2141003c65ea56802fc59f368ce0ddcf79c41deb9427e",
+      "removedZeroAreaSourceFaceIndices": [
+        183,
+        248,
+        643,
+        645,
+        807
+      ],
+      "selectedCoordinateFingerprint": "bd194af7189f1f29fe9061843d2b81777de6bbdd45cd76aeb3134779732b261f",
+      "materialAssignment": "Authored material per complete supplied source part."
     },
     {
       "watch": "omniverse",
       "id": "source-ov-curved-cuff",
-      "trianglesBefore": 3270,
+      "group": "body",
+      "file": "./assets/runtime/10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9.f32",
+      "sha256": "10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9",
+      "bytes": 392400,
       "triangles": 3270,
-      "file": "assets/runtime/093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f.f32",
-      "sha256": "093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f",
       "bounds": {
         "min": [
-          -0.6551400756835938,
-          -0.9120198305273437,
-          -0.24622051247303042
+          -0.6551401019096375,
+          -0.9120198488235474,
+          -0.24622051417827606
         ],
         "max": [
-          0.6551400756835938,
-          0.00970075052734373,
-          0.24622051247303042
+          0.6551401019096375,
+          0.009700750932097435,
+          0.24622051417827606
         ]
       },
-      "sourceObject": "part-9",
-      "sourceSha256": "a5d7f6d3de3e0dc008c5743efb2229ee9d19efae016ff87fd34bbf02551b64da",
-      "sourceRole": "curved-cuff",
-      "normalization": {
-        "sourceCenter": [
-          404.8477325439453,
-          -176.18064880371094,
-          12.311025615362151
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_9_kordon2.stl",
+        "objectId": "part-9",
+        "sha256": "a5d7f6d3de3e0dc008c5743efb2229ee9d19efae016ff87fd34bbf02551b64da",
+        "kind": "binary-stl"
+      },
+      "sourceTriangleCount": 3270,
+      "sourceCoordinateFingerprint": {
+        "sha256": "ce388292c4f28fa2b8d0bf2e5517abdbb64b34a177f1b42a2410c1ced77c473f",
+        "encoding": "ordered triangle positions, little-endian float64, source space; STL exact float32 promoted and original XML decimals parsed to float64"
+      },
+      "runtimeCoordinatesSha256": "2e303c19bf979d04f9b6103840464dfcd2aa997a16f52ef23dfe158ae7d3c5d1",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.0,
+          0.02,
+          0.0,
+          3.5236129760742188
         ],
-        "rotationRowMajor3x3": [
+        [
+          -0.02,
+          0.0,
+          0.0,
+          7.645795110878907
+        ],
+        [
+          0.0,
+          0.0,
+          0.02,
+          -0.24622051230724304
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xSource,ySource,zSource,1]; input source coordinates before source component transform.",
+      "uniformScale": 0.02,
+      "placement": "approximate-art-assembly",
+      "normalPolicy": "Coordinates and original winding kept; angle-weighted normals across exact shared-edge fans below 40 degrees.",
+      "windingReversed": false,
+      "geometryMethod": "source-preserved",
+      "knownSourceTopology": {
+        "exactUniquePositions": 1633,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": false,
+        "verticesMovedBeyondTransformAndFloat32": false,
+        "authoredGeometry": false,
+        "sourceFacesReordered": false
+      },
+      "materialsAuthored": true,
+      "selectedSourceTriangleCount": 3270,
+      "retainedSourceTriangleCount": 3270,
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedDuplicateCount": 0,
+      "selectedSourceFaceIndicesSha256": "c6c4f169b368b2ddb003858cbd546328ef97733954ae5efec7bf269c3254b4b2",
+      "retainedSourceFaceIndicesSha256": "c6c4f169b368b2ddb003858cbd546328ef97733954ae5efec7bf269c3254b4b2",
+      "removedZeroAreaSourceFaceIndices": [],
+      "selectedCoordinateFingerprint": "ce388292c4f28fa2b8d0bf2e5517abdbb64b34a177f1b42a2410c1ced77c473f",
+      "materialAssignment": "Authored material per complete supplied source part."
+    },
+    {
+      "watch": "original",
+      "id": "source-reboot-cuff",
+      "group": "body",
+      "file": "./assets/runtime/6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248.f32",
+      "sha256": "6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248",
+      "bytes": 4320000,
+      "triangles": 36000,
+      "bounds": {
+        "min": [
+          -0.6890043616294861,
+          -0.8779661059379578,
+          -0.6436405181884766
+        ],
+        "max": [
+          0.6890219449996948,
+          0.3390781879425049,
+          0.643624484539032
+        ]
+      },
+      "source": {
+        "archive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "archiveEntry": "omnitrix ben 10 reboot season 1.3mf",
+        "nestedEntry": "3D/3dmodel.model",
+        "objectId": "1",
+        "sha256": "b8ac6ea6e8c73c3f583ff9caab71e9f8f2d3d1be52f359fe8096ed3b357b4afa",
+        "kind": "indexed-3mf-mesh"
+      },
+      "sourceTriangleCount": 300894,
+      "sourceCoordinateFingerprint": {
+        "sha256": "96be9b3839ae06a2c06823a938112f11b7fffaca553c81e6b27dc2e7d9182e08",
+        "encoding": "ordered source triangle positions little-endian float64"
+      },
+      "runtimeCoordinatesSha256": "a11a22ca0470006cce203c124e08d21daf9565aeb7139e36f78af8b0dfd65128",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.0
+        ],
+        [
+          0.0,
+          0.013,
+          0.0,
+          -0.26949999999999996
+        ],
+        [
+          -0.013,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xOriginalMesh,yOriginalMesh,zOriginalMesh,1] after QEM in source object coordinates.",
+      "uniformScale": 0.013,
+      "placement": "measured-project-assembly",
+      "normalPolicy": "Angle-weighted exact shared-edge normal fans below 40 degrees; no coordinate smoothing after source-space QEM.",
+      "windingReversed": false,
+      "geometryMethod": "source-derived-display-lod",
+      "knownSourceTopology": {
+        "exactUniquePositions": 18000,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": true,
+        "verticesMovedBeyondTransformAndFloat32": true,
+        "authoredGeometry": false,
+        "sourceFacesReordered": true
+      },
+      "materialsAuthored": true,
+      "lod": {
+        "sourceObject": "1",
+        "label": "cuff",
+        "sourceVertices": 150447,
+        "sourceTriangles": 300894,
+        "sourceZeroAreaFaceIndices": [],
+        "sourcePositionSha256": "681ecb3330b28a0ee40005fccaf923e6a24b7d0b14ce8e7d25876025aa8b4af6",
+        "sourceIndicesSha256": "c4923e91271c3b679e9a320010bce091756d4a6fda6e76adcec21681ef76d598",
+        "sourceTriangleCoordinatesSha256": "96be9b3839ae06a2c06823a938112f11b7fffaca553c81e6b27dc2e7d9182e08",
+        "lodVertices": 18000,
+        "lodTriangles": 36000,
+        "targetTriangles": 36000,
+        "repeatedQemBytesIdentical": true,
+        "lodPositionSha256": "2ab10736efb155caed5bc3926764f861e41a459886cd1727164664c14861eddb",
+        "lodIndicesSha256": "e73250825773effc5e5719feb64d6b6b21d83caf8deaaa480047a6ab63881a1d",
+        "sourceBounds": [
           [
-            0,
-            1,
-            0
+            -49.4994049,
+            -46.8072433,
+            -53.0001221
           ],
           [
-            0,
-            0,
-            -1
-          ],
-          [
-            -1,
-            0,
-            0
+            49.4994049,
+            46.8072433,
+            53.0001221
           ]
         ],
-        "translationAfterCenterRotation": [
-          0.0,
-          0.0,
-          -23.043
+        "lodBounds": [
+          [
+            -49.509577704515216,
+            -46.805084011443796,
+            -53.000335397978525
+          ],
+          [
+            49.51081043186107,
+            46.81370605115383,
+            53.00168743232757
+          ]
         ],
-        "common": {
-          "order": "a = R_part * (pSource - sourceCenter) + translationAfterCenterRotation; pProduction = scale * [a.x, a.z, -a.y] + productionOffset",
-          "commonZupToYupRowMajor3x3": [
-            [
-              1,
-              0,
-              0
-            ],
-            [
-              0,
-              0,
-              1
-            ],
-            [
-              0,
-              -1,
-              0
-            ]
+        "boundsDelta": [
+          [
+            -0.010172804515214295,
+            0.002159288556207173,
+            -0.00021329797852587262
           ],
-          "scale": 0.02,
-          "productionOffset": [
-            0,
-            0.009700459999999966,
-            0
-          ],
-          "normals": "normalize(R_common * R_part * nSource); positive uniform scale only, no mirror",
-          "sourceUnits": "STL unspecified; preserve geometric proportions",
-          "originalGeometryUnchanged": true
+          [
+            0.011405531861065299,
+            0.006462751153826218,
+            0.0015653323275728326
+          ]
+        ],
+        "maximumAbsoluteBboxExtremeDelta": 0.011405531861065299,
+        "bboxClaim": "Exact bounds of all source and LOD vertices; does not bound internal surface distance.",
+        "areaRatio": 1.0004216665444439,
+        "volumeRatio": 0.9997996213764727,
+        "sourceToLod": {
+          "samples": 20000,
+          "seed": 210,
+          "mean": 0.0031562350542240275,
+          "rms": 0.004926616788016801,
+          "p95": 0.010859830352953277,
+          "p99": 0.017426169878827412,
+          "maximumObservedSample": 0.05728852936033395,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "lodToSource": {
+          "samples": 20000,
+          "seed": 1210,
+          "mean": 0.003222261371617627,
+          "rms": 0.005097080818536038,
+          "p95": 0.010930952592818078,
+          "p99": 0.017718804420945537,
+          "maximumObservedSample": 0.06154645529861667,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "fileSha256": "e6d5b55c3b2ec052182192c9e66179334f603563f223fd8ddc1b1de127dad607",
+        "sourceKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
+        },
+        "lodKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
         }
+      },
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedZeroAreaLodFaceIndices": [],
+      "derivedPlacement": {
+        "rotationRowMajor3x3": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sourceUnit": "millimeter",
+        "sourcePrinterAssemblyUsed": false
+      },
+      "materialPartition": {
+        "object": "1",
+        "normalAngleDegrees": 15,
+        "regionMethod": "Connected face patches bounded by actual LOD dihedral creases; each triangle has one constant material tag. Geometry untouched by material assignment.",
+        "selectedRegions": [
+          {
+            "faces": 6142,
+            "faceIndexSha256": "69da56c14cd24b1d4cc83d03459bfc4c2f0a9b850cdc29e2631012211a19246e",
+            "material": "metal",
+            "bounds": [
+              [
+                -49.509577704515216,
+                -46.805084011443796,
+                -41.48633438254234
+              ],
+              [
+                49.481555663407626,
+                41.435288215327375,
+                -18.832391521337463
+              ]
+            ],
+            "reason": "Whole smooth-connected original curved guard and wrap rail, separated by source crease edges."
+          },
+          {
+            "faces": 6205,
+            "faceIndexSha256": "3e49a7af1730707ea858b0a9bf8c201a43016b6cf2f205d170d182ad85969f6b",
+            "material": "metal",
+            "bounds": [
+              [
+                -49.48222393538322,
+                -46.79478188961092,
+                18.848023715494055
+              ],
+              [
+                49.51081043186107,
+                41.44171237294958,
+                41.47167968977829
+              ]
+            ],
+            "reason": "Whole smooth-connected original curved guard and wrap rail, separated by source crease edges."
+          }
+        ],
+        "sourceColorRecovered": false
       }
     },
     {
-      "watch": "omniverse",
-      "id": "authored-hidden-lift-shaft",
-      "trianglesBefore": 256,
-      "triangles": 256,
-      "file": "assets/runtime/d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5.f32",
-      "sha256": "d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5",
+      "watch": "original",
+      "id": "source-reboot-dial",
+      "group": "body",
+      "file": "./assets/runtime/b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89.f32",
+      "sha256": "b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89",
+      "bytes": 3600000,
+      "triangles": 30000,
       "bounds": {
         "min": [
-          -0.276,
-          -0.33,
-          -0.276
+          -0.4224357306957245,
+          0.2406168282032013,
+          -0.4224119782447815
         ],
         "max": [
-          0.276,
-          0.3,
-          0.276
+          0.42237257957458496,
+          0.37503817677497864,
+          0.42245081067085266
         ]
       },
-      "authoredSupplement": true
-    },
-    {
-      "watch": "omniverse",
-      "id": "authored-cover-signal-lid-left",
-      "trianglesBefore": 6,
-      "triangles": 6,
-      "file": "assets/runtime/8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25.f32",
-      "sha256": "8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25",
-      "bounds": {
-        "min": [
-          -0.195,
-          0.427,
-          -0.2
-        ],
-        "max": [
+      "source": {
+        "archive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "archiveEntry": "omnitrix ben 10 reboot season 1.3mf",
+        "nestedEntry": "3D/3dmodel.model",
+        "objectId": "3",
+        "sha256": "b8ac6ea6e8c73c3f583ff9caab71e9f8f2d3d1be52f359fe8096ed3b357b4afa",
+        "kind": "indexed-3mf-mesh"
+      },
+      "sourceTriangleCount": 389120,
+      "sourceCoordinateFingerprint": {
+        "sha256": "561393178855dc131cd18df37732bbfc564b30b8e2d441c190f9dc24e7aac9b4",
+        "encoding": "ordered source triangle positions little-endian float64"
+      },
+      "runtimeCoordinatesSha256": "f6308770637af64e0d10fb211f8ecdada3ae15947373cf6bf83fdd720006e6f4",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          -0.013,
           0.0,
-          0.427,
-          0.2
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Split recolorable hourglass placed on the supplied cover; follows authored cover motion."
-    },
-    {
-      "watch": "omniverse",
-      "id": "authored-cover-signal-lid-right",
-      "trianglesBefore": 6,
-      "triangles": 6,
-      "file": "assets/runtime/a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f.f32",
-      "sha256": "a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f",
-      "bounds": {
-        "min": [
           0.0,
-          0.427,
-          -0.2
+          0.0
         ],
-        "max": [
-          0.195,
-          0.427,
-          0.2
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.30782077702
+        ],
+        [
+          0.0,
+          0.013,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
         ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xOriginalMesh,yOriginalMesh,zOriginalMesh,1] after QEM in source object coordinates.",
+      "uniformScale": 0.013,
+      "placement": "measured-project-assembly",
+      "normalPolicy": "Angle-weighted exact shared-edge normal fans below 40 degrees; no coordinate smoothing after source-space QEM.",
+      "windingReversed": false,
+      "geometryMethod": "source-derived-display-lod",
+      "knownSourceTopology": {
+        "exactUniquePositions": 15008,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
       },
-      "authoredSupplement": true,
-      "reason": "Split recolorable hourglass placed on the supplied cover; follows authored cover motion."
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": true,
+        "verticesMovedBeyondTransformAndFloat32": true,
+        "authoredGeometry": false,
+        "sourceFacesReordered": true
+      },
+      "materialsAuthored": true,
+      "lod": {
+        "sourceObject": "3",
+        "label": "dial",
+        "sourceVertices": 194568,
+        "sourceTriangles": 389120,
+        "sourceZeroAreaFaceIndices": [],
+        "sourcePositionSha256": "96336a782ed43b969a8bb2bbd9000421c29cece5c830210a58af5af3ff8e4ab7",
+        "sourceIndicesSha256": "6cc378523e56617a94cd3b6dd4a92021597aa9d6117e864349bf981258efd144",
+        "sourceTriangleCoordinatesSha256": "561393178855dc131cd18df37732bbfc564b30b8e2d441c190f9dc24e7aac9b4",
+        "lodVertices": 15008,
+        "lodTriangles": 30000,
+        "targetTriangles": 30000,
+        "repeatedQemBytesIdentical": true,
+        "lodPositionSha256": "19d711f32a909e9f7004aa5722de91e79ec53bbf37efe776461a13cf81e80fa2",
+        "lodIndicesSha256": "e5b08f3a8ff5bc983ad6e5976d6b5d47a69fdbb27f55d75140caaa7b4a94d94a",
+        "sourceBounds": [
+          [
+            -32.4908295,
+            -32.4908295,
+            -5.16929054
+          ],
+          [
+            32.4908295,
+            32.4908295,
+            5.16929054
+          ]
+        ],
+        "lodBounds": [
+          [
+            -32.490198189284705,
+            -32.49322910234429,
+            -5.1695348339888945
+          ],
+          [
+            32.49505567831293,
+            32.496216932579735,
+            5.1705696173795
+          ]
+        ],
+        "boundsDelta": [
+          [
+            0.0006313107152919883,
+            -0.0023996023442904857,
+            -0.00024429398889402876
+          ],
+          [
+            0.004226178312933371,
+            0.005387432579738061,
+            0.0012790773794995047
+          ]
+        ],
+        "maximumAbsoluteBboxExtremeDelta": 0.005387432579738061,
+        "bboxClaim": "Exact bounds of all source and LOD vertices; does not bound internal surface distance.",
+        "areaRatio": 1.000099093346583,
+        "volumeRatio": 0.9998196927874647,
+        "sourceToLod": {
+          "samples": 20000,
+          "seed": 212,
+          "mean": 0.0008813673043835456,
+          "rms": 0.001699267974281368,
+          "p95": 0.004062882373468578,
+          "p99": 0.006426932862086766,
+          "maximumObservedSample": 0.011030567609927556,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "lodToSource": {
+          "samples": 20000,
+          "seed": 1212,
+          "mean": 0.0008873659232087595,
+          "rms": 0.0016920466972744615,
+          "p95": 0.004028766881273901,
+          "p99": 0.0064328263025517935,
+          "maximumObservedSample": 0.012185863453351594,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "fileSha256": "e4288b87a63ddfedbc52e6f5a5400cb3ecee162fc3857c35eef0e27b0cef3d58",
+        "sourceKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
+        },
+        "lodKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
+        }
+      },
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedZeroAreaLodFaceIndices": [],
+      "derivedPlacement": {
+        "rotationRowMajor3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "translation": [
+          0.0,
+          44.40929054,
+          0.0
+        ],
+        "sourceUnit": "millimeter",
+        "sourcePrinterAssemblyUsed": false
+      },
+      "materialPartition": {
+        "object": "3",
+        "normalAngleDegrees": 20,
+        "regionMethod": "Connected face patches bounded by actual LOD dihedral creases; each triangle has one constant material tag. Geometry untouched by material assignment.",
+        "selectedRegions": [
+          {
+            "faces": 545,
+            "faceIndexSha256": "16586654c7e71df0e339a2881d002c41e538e9ad926bfd33b6e8cfa38d458bc7",
+            "material": "green",
+            "bounds": [
+              [
+                27.81526538771367,
+                -2.7787329582241034,
+                0.6658024241138676
+              ],
+              [
+                32.249858311214446,
+                2.887803820541742,
+                4.993570742640065
+              ]
+            ],
+            "reason": "Whole smooth-connected original outward lamp dome; surrounding lamp housing remains metal."
+          },
+          {
+            "faces": 539,
+            "faceIndexSha256": "e2336d743ad1a8602c08c6ffccfb3298e85ace5691c7444f9266513a733b1aa8",
+            "material": "green",
+            "bounds": [
+              [
+                -2.888173237547458,
+                -32.244616272818014,
+                0.6602350835616948
+              ],
+              [
+                2.7764707046344297,
+                -27.810203181766138,
+                4.996715619270942
+              ]
+            ],
+            "reason": "Whole smooth-connected original outward lamp dome; surrounding lamp housing remains metal."
+          },
+          {
+            "faces": 518,
+            "faceIndexSha256": "d06081eb0dbeb59b6923328e1524981cdcb7bdeb0401ea2968cb1f4a730e67e4",
+            "material": "green",
+            "bounds": [
+              [
+                -2.7795197186625695,
+                27.807939863956594,
+                0.6607381680190254
+              ],
+              [
+                2.8897011975301803,
+                32.24461650933049,
+                4.99752528266497
+              ]
+            ],
+            "reason": "Whole smooth-connected original outward lamp dome; surrounding lamp housing remains metal."
+          },
+          {
+            "faces": 550,
+            "faceIndexSha256": "b7e08a24edd635590701ea0d43cb4ec6b462bb528ab4676d0b3c87f75820fb85",
+            "material": "green",
+            "bounds": [
+              [
+                -32.24260142957555,
+                -2.8883332257797014,
+                0.6713063432108811
+              ],
+              [
+                -27.814412626871135,
+                2.7765344663899816,
+                4.993570756265918
+              ]
+            ],
+            "reason": "Whole smooth-connected original outward lamp dome; surrounding lamp housing remains metal."
+          }
+        ],
+        "sourceColorRecovered": false
+      }
     },
     {
       "watch": "original",
-      "id": "authored-hourglass-signal",
-      "trianglesBefore": 4,
-      "triangles": 4,
-      "file": "assets/runtime/aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d.f32",
-      "sha256": "aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d",
+      "id": "source-reboot-core",
+      "group": "core",
+      "file": "./assets/runtime/22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5.f32",
+      "sha256": "22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5",
+      "bytes": 5760000,
+      "triangles": 48000,
       "bounds": {
         "min": [
-          -0.2716,
-          0.368,
-          -0.27936
+          -0.3536645770072937,
+          0.21147803962230682,
+          -0.35366761684417725
         ],
         "max": [
-          0.2716,
-          0.368,
-          0.27936
+          0.35366687178611755,
+          0.3610011637210846,
+          0.35365739464759827
         ]
       },
-      "authoredSupplement": true,
-      "reason": "Recolorable interface symbol placed on measured source face plane."
+      "source": {
+        "archive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "archiveEntry": "omnitrix ben 10 reboot season 1.3mf",
+        "nestedEntry": "3D/3dmodel.model",
+        "objectId": "5",
+        "sha256": "b8ac6ea6e8c73c3f583ff9caab71e9f8f2d3d1be52f359fe8096ed3b357b4afa",
+        "kind": "indexed-3mf-mesh"
+      },
+      "sourceTriangleCount": 578444,
+      "sourceCoordinateFingerprint": {
+        "sha256": "5a88fe2dd0c2a84b10d0bca48e73fb6cd5f70549194c63c360f8d1451b514b8f",
+        "encoding": "ordered source triangle positions little-endian float64"
+      },
+      "runtimeCoordinatesSha256": "a1b965efbe9eada799df3c216b4a802c94c09217722bff6af833605fd34df722",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          -0.013,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.013,
+          0.28623920155000004
+        ],
+        [
+          0.0,
+          0.013,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xOriginalMesh,yOriginalMesh,zOriginalMesh,1] after QEM in source object coordinates.",
+      "uniformScale": 0.013,
+      "placement": "measured-project-assembly",
+      "normalPolicy": "Angle-weighted exact shared-edge normal fans below 40 degrees; no coordinate smoothing after source-space QEM.",
+      "windingReversed": false,
+      "geometryMethod": "source-derived-display-lod",
+      "knownSourceTopology": {
+        "exactUniquePositions": 24075,
+        "boundaryEdges": 4,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
+      },
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": true,
+        "verticesMovedBeyondTransformAndFloat32": true,
+        "authoredGeometry": false,
+        "sourceFacesReordered": true
+      },
+      "materialsAuthored": true,
+      "lod": {
+        "sourceObject": "5",
+        "label": "core",
+        "sourceVertices": 289296,
+        "sourceTriangles": 578444,
+        "sourceZeroAreaFaceIndices": [
+          1492,
+          1496
+        ],
+        "sourcePositionSha256": "3e51068b705ff598d95082f0f8ad0aeca8b355e622814ae598b6d8d026a16b6c",
+        "sourceIndicesSha256": "3e9ff965d611b8c0ea5754c7b3a64cc783a2731fc835260b74225c95dbfaae71",
+        "sourceTriangleCoordinatesSha256": "5a88fe2dd0c2a84b10d0bca48e73fb6cd5f70549194c63c360f8d1451b514b8f",
+        "lodVertices": 24075,
+        "lodTriangles": 48000,
+        "targetTriangles": 48000,
+        "repeatedQemBytesIdentical": true,
+        "lodPositionSha256": "87b8e99ac022ba20f32ae9b0eabbd0fb4038c5b10c82baec648184a277b2a45d",
+        "lodIndicesSha256": "53a090673f74aebf194ebadce198aa5fe9895bb8e3c78587e2f413b9cdf16ab1",
+        "sourceBounds": [
+          [
+            -27.2036743,
+            -27.2036743,
+            -5.75083065
+          ],
+          [
+            27.2036743,
+            27.2036743,
+            5.75083065
+          ]
+        ],
+        "lodBounds": [
+          [
+            -27.205144318883058,
+            -27.205200374132577,
+            -5.7508585439646795
+          ],
+          [
+            27.20496811192182,
+            27.20441544733844,
+            5.750920618293528
+          ]
+        ],
+        "boundsDelta": [
+          [
+            -0.0014700188830580885,
+            -0.0015260741325775484,
+            -2.789396467939298e-05
+          ],
+          [
+            0.001293811921819099,
+            0.0007411473384415501,
+            8.996829352803104e-05
+          ]
+        ],
+        "maximumAbsoluteBboxExtremeDelta": 0.0015260741325775484,
+        "bboxClaim": "Exact bounds of all source and LOD vertices; does not bound internal surface distance.",
+        "areaRatio": 0.9998687926873554,
+        "volumeRatio": 0.9999687512347796,
+        "sourceToLod": {
+          "samples": 20000,
+          "seed": 214,
+          "mean": 0.0004123097276969061,
+          "rms": 0.0010983190689133723,
+          "p95": 0.002142330627493665,
+          "p99": 0.0046892804818398845,
+          "maximumObservedSample": 0.02902213814231764,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "lodToSource": {
+          "samples": 20000,
+          "seed": 1214,
+          "mean": 0.0004059623290544872,
+          "rms": 0.0010609217832350804,
+          "p95": 0.0020749340490003273,
+          "p99": 0.004832001078966625,
+          "maximumObservedSample": 0.017074001147280055,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "fileSha256": "3972d3a8777a1dbcfa7cc04d9cdcf7623018e8f80a6d9a1423c3ce403944f4c1",
+        "sourceKnownTopology": {
+          "watertight": false,
+          "windingConsistent": true
+        },
+        "lodKnownTopology": {
+          "watertight": false,
+          "windingConsistent": true
+        }
+      },
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedZeroAreaLodFaceIndices": [],
+      "derivedPlacement": {
+        "rotationRowMajor3x3": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "translation": [
+          0.0,
+          42.74916935,
+          0.0
+        ],
+        "sourceUnit": "millimeter",
+        "sourcePrinterAssemblyUsed": false
+      },
+      "materialPartition": {
+        "object": "5",
+        "normalAngleDegrees": 8,
+        "regionMethod": "Connected face patches bounded by actual LOD dihedral creases; each triangle has one constant material tag. Geometry untouched by material assignment.",
+        "selectedRegions": [
+          {
+            "faces": 975,
+            "faceIndexSha256": "25275dfc51ca1310f371a26b779e7222624d13d2e1bbd33f6c8369b9dd92d91e",
+            "material": "green",
+            "bounds": [
+              [
+                -17.85075745110511,
+                -16.984190543668614,
+                5.691412075242617
+              ],
+              [
+                17.788925868308386,
+                -3.820679707792201,
+                5.745947397866637
+              ]
+            ],
+            "reason": "Existing connected raised emblem face region; no new glyph geometry."
+          },
+          {
+            "faces": 997,
+            "faceIndexSha256": "369a1513d42b96f89d9ca5186312201b8544a70a10d2d38fd3861ef9ce22e81c",
+            "material": "green",
+            "bounds": [
+              [
+                -17.7688904,
+                3.801419814988573,
+                5.679117660275963
+              ],
+              [
+                17.816250705337545,
+                16.972519211801348,
+                5.7458868
+              ]
+            ],
+            "reason": "Existing connected raised emblem face region; no new glyph geometry."
+          },
+          {
+            "faces": 1044,
+            "faceIndexSha256": "0efc0cb36589a24801acbd6e4e8546669adf7c2b4658bab622852b234f0e8fc2",
+            "material": "green",
+            "bounds": [
+              [
+                -13.955303126988845,
+                9.245266324356109,
+                5.7047257942214795
+              ],
+              [
+                14.0139465,
+                22.467218021048282,
+                5.75089373581069
+              ]
+            ],
+            "reason": "Existing connected raised emblem face region; no new glyph geometry."
+          },
+          {
+            "faces": 1053,
+            "faceIndexSha256": "47c91411db104ffd3762d0b2d0659d58c697d126938cb45da587349f1d836de8",
+            "material": "green",
+            "bounds": [
+              [
+                -14.0139465,
+                -22.46951641635674,
+                5.71435833
+              ],
+              [
+                13.879141106070547,
+                -9.314990877388212,
+                5.750820933889629
+              ]
+            ],
+            "reason": "Existing connected raised emblem face region; no new glyph geometry."
+          }
+        ],
+        "sourceColorRecovered": false
+      }
     },
     {
       "watch": "original",
-      "id": "authored-lift-shaft-signal",
-      "trianglesBefore": 16,
-      "triangles": 16,
-      "file": "assets/runtime/8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46.f32",
-      "sha256": "8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46",
+      "id": "source-reboot-button",
+      "group": "body",
+      "file": "./assets/runtime/422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf.f32",
+      "sha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf",
+      "bytes": 720000,
+      "triangles": 6000,
       "bounds": {
         "min": [
-          -0.36544656453296104,
-          0.151,
-          -0.36544656453296104
+          -0.1311584711074829,
+          -0.07056982815265656,
+          -0.6144822239875793
         ],
         "max": [
-          0.36544656453296104,
-          0.301,
-          0.36544656453296104
+          0.13088807463645935,
+          0.17520931363105774,
+          -0.4146538972854614
         ]
       },
-      "authoredSupplement": true,
-      "reason": "Interface signal on authored shaft, not recovered animation markings."
-    },
-    {
-      "watch": "recalibrated",
-      "id": "authored-hourglass-signal",
-      "trianglesBefore": 4,
-      "triangles": 4,
-      "file": "assets/runtime/7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4.f32",
-      "sha256": "7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4",
-      "bounds": {
-        "min": [
-          -0.2716,
-          0.338,
-          -0.27936
+      "source": {
+        "archive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "archiveEntry": "omnitrix ben 10 reboot season 1.3mf",
+        "nestedEntry": "3D/3dmodel.model",
+        "objectId": "7",
+        "sha256": "b8ac6ea6e8c73c3f583ff9caab71e9f8f2d3d1be52f359fe8096ed3b357b4afa",
+        "kind": "indexed-3mf-mesh"
+      },
+      "sourceTriangleCount": 47104,
+      "sourceCoordinateFingerprint": {
+        "sha256": "2eef53f8e8c5b2e0b598e4d67eaeb6d34290ae71bf5366d9e67143e4c82ef5b3",
+        "encoding": "ordered source triangle positions little-endian float64"
+      },
+      "runtimeCoordinatesSha256": "eefc5ef516a5ec336ec7f42a173e3fd11a55f2e80edba4872b8c4a6008a4952f",
+      "coordinateFingerprintEncoding": "Delivered positions only, ordered little-endian float32 xyz.",
+      "matrixRowMajor4x4": [
+        [
+          0.012999999373722348,
+          0.0,
+          -4.035247019880415e-06,
+          -0.00015124460120655115
         ],
-        "max": [
-          0.2716,
-          0.338,
-          0.27936
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Recolorable interface symbol placed on measured source face plane."
-    },
-    {
-      "watch": "recalibrated",
-      "id": "authored-lift-shaft-signal",
-      "trianglesBefore": 16,
-      "triangles": 16,
-      "file": "assets/runtime/3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06.f32",
-      "sha256": "3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06",
-      "bounds": {
-        "min": [
-          -0.36245110088924826,
-          0.12100000000000002,
-          -0.36245110088924826
+        [
+          2.175896314806928e-06,
+          -0.010948122774953868,
+          0.007009893221013544,
+          0.0731708230569949
         ],
-        "max": [
-          0.36245110088924826,
-          0.271,
-          0.36245110088924826
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Interface signal on authored shaft, not recovered animation markings."
-    },
-    {
-      "watch": "ultimatrix",
-      "id": "authored-hourglass-signal",
-      "trianglesBefore": 4,
-      "triangles": 4,
-      "file": "assets/runtime/68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e.f32",
-      "sha256": "68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e",
-      "bounds": {
-        "min": [
-          0.2103000000000001,
-          0.338,
-          -0.33912
+        [
+          -3.398336907762884e-06,
+          -0.007009893558716597,
+          -0.010948122247525822,
+          -0.5374399428778253
         ],
-        "max": [
-          0.8696999999999999,
-          0.338,
-          0.33912
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
         ]
+      ],
+      "matrixConvention": "column homogeneous pRuntime = M * [xOriginalMesh,yOriginalMesh,zOriginalMesh,1] after QEM in source object coordinates.",
+      "uniformScale": 0.013,
+      "placement": "measured-project-assembly",
+      "normalPolicy": "Angle-weighted exact shared-edge normal fans below 40 degrees; no coordinate smoothing after source-space QEM.",
+      "windingReversed": false,
+      "geometryMethod": "source-derived-display-lod",
+      "knownSourceTopology": {
+        "exactUniquePositions": 3002,
+        "boundaryEdges": 0,
+        "nonmanifoldEdges": 0,
+        "windingConflictSharedEdges": 0,
+        "zeroAreaTriangles": 0,
+        "duplicateTriangleGroups": 0,
+        "nonfiniteValues": 0,
+        "nonUnitNormals": 0,
+        "normalsOpposingSourceFaces": 0
       },
-      "authoredSupplement": true,
-      "reason": "Recolorable interface symbol placed on measured source face plane."
-    },
-    {
-      "watch": "ultimatrix",
-      "id": "authored-lift-shaft-signal",
-      "trianglesBefore": 16,
-      "triangles": 16,
-      "file": "assets/runtime/9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5.f32",
-      "sha256": "9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5",
-      "bounds": {
-        "min": [
-          0.07170918369956636,
-          0.12100000000000002,
-          -0.4682908163004337
+      "topologyInterpretation": "Delivered float32 topology is measured here. Source-known defects are not declared repaired; no mechanical Boolean union claim.",
+      "sourcePreservation": {
+        "remeshed": false,
+        "simplified": true,
+        "verticesMovedBeyondTransformAndFloat32": true,
+        "authoredGeometry": false,
+        "sourceFacesReordered": true
+      },
+      "materialsAuthored": true,
+      "lod": {
+        "sourceObject": "7",
+        "label": "button",
+        "sourceVertices": 23554,
+        "sourceTriangles": 47104,
+        "sourceZeroAreaFaceIndices": [],
+        "sourcePositionSha256": "4525f61de19a1aacb7d69139b1def1c6cf9ff14f32d03180416037f4caa67d3f",
+        "sourceIndicesSha256": "5874567256316354317a46aaa56ac6319f0ea576fcb8066d39f41fe0ec104722",
+        "sourceTriangleCoordinatesSha256": "2eef53f8e8c5b2e0b598e4d67eaeb6d34290ae71bf5366d9e67143e4c82ef5b3",
+        "lodVertices": 3002,
+        "lodTriangles": 6000,
+        "targetTriangles": 6000,
+        "repeatedQemBytesIdentical": true,
+        "lodPositionSha256": "0bb909261e31faeb1228382144fcc85bc66dc015667c39c3296d6d18c36bd15f",
+        "lodIndicesSha256": "dd9a2c7c097cfd80b23c7965a8783b93bb177d7aeae45e1052dc6e1a70c0e64a",
+        "sourceBounds": [
+          [
+            -10.0803604,
+            -10.0803528,
+            -4.76150894
+          ],
+          [
+            10.0803604,
+            10.0803528,
+            4.76150894
+          ]
         ],
-        "max": [
-          1.0082908163004336,
-          0.271,
-          0.4682908163004337
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Interface signal on authored shaft, not recovered animation markings."
-    },
-    {
-      "watch": "omniverse",
-      "id": "authored-hourglass-signal",
-      "trianglesBefore": 4,
-      "triangles": 4,
-      "file": "assets/runtime/cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8.f32",
-      "sha256": "cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8",
-      "bounds": {
-        "min": [
-          -0.20439999999999997,
-          0.328,
-          -0.21023999999999998
+        "lodBounds": [
+          [
+            -10.07895788570997,
+            -10.080099710911535,
+            -4.7615059144438865
+          ],
+          [
+            10.078470599657749,
+            10.080552226529905,
+            4.761652964161276
+          ]
         ],
-        "max": [
-          0.20439999999999997,
-          0.328,
-          0.21023999999999998
-        ]
-      },
-      "authoredSupplement": true,
-      "reason": "Recolorable interface symbol placed on measured source face plane."
-    },
-    {
-      "watch": "omniverse",
-      "id": "authored-lift-shaft-signal",
-      "trianglesBefore": 16,
-      "triangles": 16,
-      "file": "assets/runtime/40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc.f32",
-      "sha256": "40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc",
-      "bounds": {
-        "min": [
-          -0.2765811431028148,
-          0.11100000000000002,
-          -0.2765811431028148
+        "boundsDelta": [
+          [
+            0.0014025142900297993,
+            0.0002530890884653303,
+            3.025556113200878e-06
+          ],
+          [
+            -0.001889800342251391,
+            0.0001994265299050113,
+            0.00014402416127623496
+          ]
         ],
-        "max": [
-          0.2765811431028148,
-          0.261,
-          0.2765811431028148
-        ]
+        "maximumAbsoluteBboxExtremeDelta": 0.001889800342251391,
+        "bboxClaim": "Exact bounds of all source and LOD vertices; does not bound internal surface distance.",
+        "areaRatio": 0.9999243680589591,
+        "volumeRatio": 0.9998715877732188,
+        "sourceToLod": {
+          "samples": 20000,
+          "seed": 216,
+          "mean": 0.0005750250539312618,
+          "rms": 0.0010700904738819533,
+          "p95": 0.0025596947008191045,
+          "p99": 0.004068358337982568,
+          "maximumObservedSample": 0.006968560481154046,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "lodToSource": {
+          "samples": 20000,
+          "seed": 1216,
+          "mean": 0.0005638374919796715,
+          "rms": 0.0010528687753151523,
+          "p95": 0.002538268242984623,
+          "p99": 0.003974261721685885,
+          "maximumObservedSample": 0.007942911452542627,
+          "units": "Source 3MF millimeter units",
+          "globalHausdorffBound": false,
+          "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+        },
+        "fileSha256": "91b49c9e7775d340135812352a368543ff17b998a97487e161c04e0e66163644",
+        "sourceKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
+        },
+        "lodKnownTopology": {
+          "watertight": true,
+          "windingConsistent": true
+        }
       },
-      "authoredSupplement": true,
-      "reason": "Interface signal on authored shaft, not recovered animation markings."
+      "removedZeroAreaAfterFloat32Count": 0,
+      "removedZeroAreaLodFaceIndices": [],
+      "derivedPlacement": {
+        "rotationRowMajor3x3": [
+          [
+            0.0002614105313663757,
+            0.5392225814397382,
+            0.8421632498096786
+          ],
+          [
+            0.00016737663960053291,
+            -0.8421632903810667,
+            0.5392225554625804
+          ],
+          [
+            0.9999999518247961,
+            0.0,
+            -0.0003104036169138781
+          ]
+        ],
+        "translation": [
+          41.34153406752502,
+          26.359294081307297,
+          -0.011634200092811627
+        ],
+        "sourceUnit": "millimeter",
+        "sourcePrinterAssemblyUsed": false
+      },
+      "materialPartition": {
+        "object": "7",
+        "normalAngleDegrees": 20,
+        "regionMethod": "Connected face patches bounded by actual LOD dihedral creases; each triangle has one constant material tag. Geometry untouched by material assignment.",
+        "selectedRegions": [
+          {
+            "faces": 2605,
+            "faceIndexSha256": "929855da7bca3ad68224a66da79e397069e27bc271cb2874596f934aaf5ceb2e",
+            "material": "green",
+            "bounds": [
+              [
+                -6.266635786443424,
+                -6.268782594924506,
+                0.6330815706207824
+              ],
+              [
+                6.26280173219875,
+                6.268786748129945,
+                4.761652964161276
+              ]
+            ],
+            "reason": "Existing smooth-connected source button dome."
+          }
+        ],
+        "sourceColorRecovered": false
+      }
     }
   ],
-  "normalPolicy": "Source geometry, unit normals with 40 degree crease preservation; no flat image geometry.",
-  "materials": "Authored neutral/metal/rubber/lamp regions, not recovered source materials."
+  "excludedSourceParts": [
+    {
+      "watch": "omniverse",
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_4_orta-pin.stl",
+        "objectId": "part-4",
+        "sha256": "972008fb209619736c6e17240ec0287a60ea439b503558cbe7b6de68cf7041dc",
+        "kind": "binary-stl"
+      },
+      "triangles": 84,
+      "sourceCoordinateFingerprint": "7782e4497cee2da7d70fc9123f19812f9b029c2b775c7b955b2c3602af5ab2c9",
+      "status": "retained-in-source-library-not-assembled",
+      "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+    },
+    {
+      "watch": "omniverse",
+      "source": {
+        "archive": "saat-yesil_stls.zip",
+        "archiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "archiveEntry": "obj_5_kapak-pin.stl",
+        "objectId": "part-5",
+        "sha256": "2d966088b46463be40b46fea2d721305fc26d8b6c448372d90261662605bad94",
+        "kind": "binary-stl"
+      },
+      "triangles": 32,
+      "sourceCoordinateFingerprint": "d8142bd3bd1b8659192bf1c3fc4ec879c02051fe7d3e5488d87e313d125d94fb",
+      "status": "retained-in-source-library-not-assembled",
+      "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+    }
+  ],
+  "geometryPolicy": "Reboot original slot: four supplied high-poly objects converted by deterministic source-space QEM for display, no voxelization/fill/new shapes; all parts share one uniform scale and measured rigid placement. AF, UA and OV: original source triangle coordinates, rigid transform and uniform scale only.",
+  "normalPolicy": {
+    "method": "Angle-weighted adjacency-connected corner fans below 40 degrees; no position smoothing after QEM/rigid transform.",
+    "creaseDegrees": 40
+  },
+  "materials": "Authored source-part / source-feature colors and material categories; original printing data does not establish source RGB. No geometry was added for color; every triangle carries one categorical material.",
+  "lodSimplification": {
+    "engine": "PyMeshLab / meshing_decimation_quadric_edge_collapse",
+    "algorithm": "Quadric error edge collapse",
+    "parameters": {
+      "qualitythr": 0.3,
+      "preserveboundary": true,
+      "boundaryweight": 2,
+      "preservenormal": true,
+      "preservetopology": true,
+      "optimalplacement": true,
+      "planarquadric": true,
+      "planarweight": 0.001,
+      "autoclean": false
+    },
+    "seed": "No random seed API used by the QEM engine; fixed vertex and face ordering. Output is repeated and byte-compared.",
+    "surfaceSampleSeed": 209,
+    "samplesPerDirectionPerPart": 20000,
+    "targetTriangles": 120000
+  },
+  "lodReportSha256": "39dd8c5af09111ea29a0055a6d6ce2e1411c61d2834a1955f855eb79375ad0b6",
+  "sourceEquivalence": {
+    "schemaVersion": 2,
+    "recordedAt": "2026-10-10T17:50:18.122433+00:00",
+    "status": "independent-source-derived-and-preserved-verification",
+    "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e",
+    "geometryContractPassed": true,
+    "inputsStable": true,
+    "driverAcceptance": "Not set by numerical verification.",
+    "counts": {
+      "displayedParts": 14,
+      "runtimeTriangles": 165994,
+      "sourceDerivedOriginalTriangles": 120000,
+      "exactSourcePreservedOtherWatchTriangles": 45994,
+      "excludedUnverifiedPinParts": 2,
+      "excludedPinTriangles": 116,
+      "sourceExactZeroAreaFacesRemovedFromOmniverse": 16
+    },
+    "watches": [
+      {
+        "watch": "original",
+        "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "geometryMethod": "source-derived-display-lod",
+        "displayedParts": 4,
+        "runtimeTriangles": 120000,
+        "sourceMotion": {
+          "core": true,
+          "lids": false
+        },
+        "lift": 0.1
+      },
+      {
+        "watch": "recalibrated",
+        "sourceArchive": "Ben+10+Omnitrix+Watch.zip",
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "geometryMethod": "source-preserved",
+        "displayedParts": 1,
+        "runtimeTriangles": 18158,
+        "sourceMotion": {
+          "core": false,
+          "lids": false
+        },
+        "lift": 0
+      },
+      {
+        "watch": "ultimatrix",
+        "sourceArchive": "omnitrix+ultimate_stls.zip",
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "geometryMethod": "source-preserved",
+        "displayedParts": 2,
+        "runtimeTriangles": 9274,
+        "sourceMotion": {
+          "core": false,
+          "lids": false
+        },
+        "lift": 0
+      },
+      {
+        "watch": "omniverse",
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "geometryMethod": "source-preserved",
+        "displayedParts": 7,
+        "runtimeTriangles": 18562,
+        "sourceMotion": {
+          "core": true,
+          "lids": false
+        },
+        "lift": 0.35
+      }
+    ],
+    "parts": [
+      {
+        "watch": "recalibrated",
+        "part": "source-af-case-and-strap",
+        "runtimeSha256": "38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4",
+        "runtimeTriangles": 18158,
+        "sourceArchive": "Ben+10+Omnitrix+Watch.zip",
+        "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+        "sourceObject": "1",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.0205,
+          0.0205,
+          0.0205
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 54474,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "ultimatrix",
+        "part": "source-ultimate-cuff",
+        "runtimeSha256": "8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557",
+        "runtimeTriangles": 4928,
+        "sourceArchive": "omnitrix+ultimate_stls.zip",
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "sourceObject": "part-1",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.016,
+          0.016,
+          0.016
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 14784,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "ultimatrix",
+        "part": "source-ultimate-side-fittings",
+        "runtimeSha256": "5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af",
+        "runtimeTriangles": 4346,
+        "sourceArchive": "omnitrix+ultimate_stls.zip",
+        "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+        "sourceObject": "part-1",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.016,
+          0.016,
+          0.016
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-silver-face-ring",
+        "runtimeSha256": "f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f",
+        "runtimeTriangles": 1388,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-1",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [
+          674,
+          1114
+        ],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-middle-case",
+        "runtimeSha256": "80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816",
+        "runtimeTriangles": 2492,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-2",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-cylindrical-face-core",
+        "runtimeSha256": "681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9",
+        "runtimeTriangles": 2496,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-3",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [
+          364,
+          686
+        ],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-bottom-case-with-post",
+        "runtimeSha256": "178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7",
+        "runtimeTriangles": 3415,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-6",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [
+          328,
+          338,
+          412,
+          489,
+          656,
+          1111,
+          1183
+        ],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-single-cover",
+        "runtimeSha256": "d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8",
+        "runtimeTriangles": 2852,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-7",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-upper-case",
+        "runtimeSha256": "edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874",
+        "runtimeTriangles": 2649,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-8",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [
+          183,
+          248,
+          643,
+          645,
+          807
+        ],
+        "passed": true
+      },
+      {
+        "watch": "omniverse",
+        "part": "source-ov-curved-cuff",
+        "runtimeSha256": "10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9",
+        "runtimeTriangles": 3270,
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceObject": "part-9",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.02,
+          0.02,
+          0.02
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-preserved",
+        "sourceCoordinateProofSha256": "aaaf05a51a0a8906f7a7c8b35bad86f10473fcd3314654e0941baedd3745560b",
+        "sourceAndFaceSelectionAndTransformExactlyMatchIndependentProof": true,
+        "orderedTransformedSourceTrianglesExactlyEqualDeliveredFloat32": true,
+        "normalsUnchangedFromVerifiedSourceVersion": true,
+        "changedMaterialColorCorners": 0,
+        "allRemovedFacesExactlyZeroAreaAfterFloat32": true,
+        "removedFaces": [],
+        "passed": true
+      },
+      {
+        "watch": "original",
+        "part": "source-reboot-cuff",
+        "runtimeSha256": "6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248",
+        "runtimeTriangles": 36000,
+        "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "sourceObject": "1",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.013,
+          0.013,
+          0.012999999999999998
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-derived-display-lod",
+        "sourceTriangles": 300894,
+        "orderedTransformedLodExactlyEqualsActualFloat32": true,
+        "maximumInverseFloat32VertexQuantizationMillimeters": 3.4755596454566336e-06,
+        "sourceToRuntimeRatio": 0.11964346248180423,
+        "sourceLodNpzSha256": "e6d5b55c3b2ec052182192c9e66179334f603563f223fd8ddc1b1de127dad607",
+        "allLodFacesRepresentedExactlyOnce": true,
+        "passed": true
+      },
+      {
+        "watch": "original",
+        "part": "source-reboot-dial",
+        "runtimeSha256": "b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89",
+        "runtimeTriangles": 30000,
+        "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "sourceObject": "3",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.013,
+          0.013,
+          0.012999999999999998
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-derived-display-lod",
+        "sourceTriangles": 389120,
+        "orderedTransformedLodExactlyEqualsActualFloat32": true,
+        "maximumInverseFloat32VertexQuantizationMillimeters": 1.8768397640126413e-06,
+        "sourceToRuntimeRatio": 0.07709703947368421,
+        "sourceLodNpzSha256": "e4288b87a63ddfedbc52e6f5a5400cb3ecee162fc3857c35eef0e27b0cef3d58",
+        "allLodFacesRepresentedExactlyOnce": true,
+        "passed": true
+      },
+      {
+        "watch": "original",
+        "part": "source-reboot-core",
+        "runtimeSha256": "22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5",
+        "runtimeTriangles": 48000,
+        "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "sourceObject": "5",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.013,
+          0.013,
+          0.012999999999999998
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-derived-display-lod",
+        "sourceTriangles": 578444,
+        "orderedTransformedLodExactlyEqualsActualFloat32": true,
+        "maximumInverseFloat32VertexQuantizationMillimeters": 1.6718042619421443e-06,
+        "sourceToRuntimeRatio": 0.08298123932480932,
+        "sourceLodNpzSha256": "3972d3a8777a1dbcfa7cc04d9cdcf7623018e8f80a6d9a1423c3ce403944f4c1",
+        "allLodFacesRepresentedExactlyOnce": true,
+        "passed": true
+      },
+      {
+        "watch": "original",
+        "part": "source-reboot-button",
+        "runtimeSha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf",
+        "runtimeTriangles": 6000,
+        "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+        "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+        "sourceObject": "7",
+        "uniformProperRigidTransform": true,
+        "singularValues": [
+          0.013000000000000001,
+          0.013,
+          0.012999999999999998
+        ],
+        "authoredGeometry": false,
+        "finite": true,
+        "zeroAreaRuntimeTriangles": 0,
+        "normalMaximumUnitLengthError": 5.960464477539063e-08,
+        "normalOppositeFaceCornerCount": 0,
+        "geometryMethod": "source-derived-display-lod",
+        "sourceTriangles": 47104,
+        "orderedTransformedLodExactlyEqualsActualFloat32": true,
+        "maximumInverseFloat32VertexQuantizationMillimeters": 2.3504770025652403e-06,
+        "sourceToRuntimeRatio": 0.12737771739130435,
+        "sourceLodNpzSha256": "91b49c9e7775d340135812352a368543ff17b998a97487e161c04e0e66163644",
+        "allLodFacesRepresentedExactlyOnce": true,
+        "passed": true
+      }
+    ],
+    "sameUniformScaleForEveryPartWithinWatch": true,
+    "originalSource": {
+      "sourceArchive": "Omnitrix+ben+10+reboot+season+1.zip",
+      "archiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+      "nested3mfSha256": "aa006345b745d6341c9dd4eb3b0994626ae361e12abd31832ce91594efea42d8",
+      "units": "millimeter",
+      "independentlyReparsedMeshObjects": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "vertices": 657865,
+      "triangles": 1315562,
+      "sourceArrayProofSha256": "c22a0a6310d7ca41efea5d50a567e8a921eb27b32abb483e5b631d92eb5528ea",
+      "sourceArraysMatchConverterInputs": true,
+      "originalArchiveRetainedUnmodified": true
+    },
+    "sourceDerivedLod": {
+      "scope": "Only renderer slot original uses the supplied Reboot-season-1 source-derived display LoD. The other three watches retain source triangle coordinates.",
+      "algorithm": {
+        "engine": "PyMeshLab / meshing_decimation_quadric_edge_collapse",
+        "algorithm": "Quadric error edge collapse",
+        "parameters": {
+          "qualitythr": 0.3,
+          "preserveboundary": true,
+          "boundaryweight": 2,
+          "preservenormal": true,
+          "preservetopology": true,
+          "optimalplacement": true,
+          "planarquadric": true,
+          "planarweight": 0.001,
+          "autoclean": false
+        },
+        "seed": "No random seed API used by the QEM engine; fixed vertex and face ordering. Output is repeated and byte-compared.",
+        "surfaceSampleSeed": 209,
+        "samplesPerDirectionPerPart": 20000,
+        "targetTriangles": 120000
+      },
+      "converterReportSha256": "39dd8c5af09111ea29a0055a6d6ce2e1411c61d2834a1955f855eb79375ad0b6",
+      "converterReportedSamples": [
+        {
+          "sourceObject": "1",
+          "label": "cuff",
+          "sourceTriangles": 300894,
+          "lodTriangles": 36000,
+          "sourceZeroAreaFaceIndices": [],
+          "sourcePositionSha256": "681ecb3330b28a0ee40005fccaf923e6a24b7d0b14ce8e7d25876025aa8b4af6",
+          "sourceIndicesSha256": "c4923e91271c3b679e9a320010bce091756d4a6fda6e76adcec21681ef76d598",
+          "lodPositionSha256": "2ab10736efb155caed5bc3926764f861e41a459886cd1727164664c14861eddb",
+          "lodIndicesSha256": "e73250825773effc5e5719feb64d6b6b21d83caf8deaaa480047a6ab63881a1d",
+          "maximumAbsoluteBboxExtremeDelta": 0.011405531861065299,
+          "sourceToLod": {
+            "samples": 20000,
+            "seed": 210,
+            "mean": 0.0031562350542240275,
+            "rms": 0.004926616788016801,
+            "p95": 0.010859830352953277,
+            "p99": 0.017426169878827412,
+            "maximumObservedSample": 0.05728852936033395,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "lodToSource": {
+            "samples": 20000,
+            "seed": 1210,
+            "mean": 0.003222261371617627,
+            "rms": 0.005097080818536038,
+            "p95": 0.010930952592818078,
+            "p99": 0.017718804420945537,
+            "maximumObservedSample": 0.06154645529861667,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "repeatedQemBytesIdentical": true,
+          "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+          "sourceArrayIdentityIndependentlyReparsed": true,
+          "globalHausdorffBound": false
+        },
+        {
+          "sourceObject": "3",
+          "label": "dial",
+          "sourceTriangles": 389120,
+          "lodTriangles": 30000,
+          "sourceZeroAreaFaceIndices": [],
+          "sourcePositionSha256": "96336a782ed43b969a8bb2bbd9000421c29cece5c830210a58af5af3ff8e4ab7",
+          "sourceIndicesSha256": "6cc378523e56617a94cd3b6dd4a92021597aa9d6117e864349bf981258efd144",
+          "lodPositionSha256": "19d711f32a909e9f7004aa5722de91e79ec53bbf37efe776461a13cf81e80fa2",
+          "lodIndicesSha256": "e5b08f3a8ff5bc983ad6e5976d6b5d47a69fdbb27f55d75140caaa7b4a94d94a",
+          "maximumAbsoluteBboxExtremeDelta": 0.005387432579738061,
+          "sourceToLod": {
+            "samples": 20000,
+            "seed": 212,
+            "mean": 0.0008813673043835456,
+            "rms": 0.001699267974281368,
+            "p95": 0.004062882373468578,
+            "p99": 0.006426932862086766,
+            "maximumObservedSample": 0.011030567609927556,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "lodToSource": {
+            "samples": 20000,
+            "seed": 1212,
+            "mean": 0.0008873659232087595,
+            "rms": 0.0016920466972744615,
+            "p95": 0.004028766881273901,
+            "p99": 0.0064328263025517935,
+            "maximumObservedSample": 0.012185863453351594,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "repeatedQemBytesIdentical": true,
+          "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+          "sourceArrayIdentityIndependentlyReparsed": true,
+          "globalHausdorffBound": false
+        },
+        {
+          "sourceObject": "5",
+          "label": "core",
+          "sourceTriangles": 578444,
+          "lodTriangles": 48000,
+          "sourceZeroAreaFaceIndices": [
+            1492,
+            1496
+          ],
+          "sourcePositionSha256": "3e51068b705ff598d95082f0f8ad0aeca8b355e622814ae598b6d8d026a16b6c",
+          "sourceIndicesSha256": "3e9ff965d611b8c0ea5754c7b3a64cc783a2731fc835260b74225c95dbfaae71",
+          "lodPositionSha256": "87b8e99ac022ba20f32ae9b0eabbd0fb4038c5b10c82baec648184a277b2a45d",
+          "lodIndicesSha256": "53a090673f74aebf194ebadce198aa5fe9895bb8e3c78587e2f413b9cdf16ab1",
+          "maximumAbsoluteBboxExtremeDelta": 0.0015260741325775484,
+          "sourceToLod": {
+            "samples": 20000,
+            "seed": 214,
+            "mean": 0.0004123097276969061,
+            "rms": 0.0010983190689133723,
+            "p95": 0.002142330627493665,
+            "p99": 0.0046892804818398845,
+            "maximumObservedSample": 0.02902213814231764,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "lodToSource": {
+            "samples": 20000,
+            "seed": 1214,
+            "mean": 0.0004059623290544872,
+            "rms": 0.0010609217832350804,
+            "p95": 0.0020749340490003273,
+            "p99": 0.004832001078966625,
+            "maximumObservedSample": 0.017074001147280055,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "repeatedQemBytesIdentical": true,
+          "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+          "sourceArrayIdentityIndependentlyReparsed": true,
+          "globalHausdorffBound": false
+        },
+        {
+          "sourceObject": "7",
+          "label": "button",
+          "sourceTriangles": 47104,
+          "lodTriangles": 6000,
+          "sourceZeroAreaFaceIndices": [],
+          "sourcePositionSha256": "4525f61de19a1aacb7d69139b1def1c6cf9ff14f32d03180416037f4caa67d3f",
+          "sourceIndicesSha256": "5874567256316354317a46aaa56ac6319f0ea576fcb8066d39f41fe0ec104722",
+          "lodPositionSha256": "0bb909261e31faeb1228382144fcc85bc66dc015667c39c3296d6d18c36bd15f",
+          "lodIndicesSha256": "dd9a2c7c097cfd80b23c7965a8783b93bb177d7aeae45e1052dc6e1a70c0e64a",
+          "maximumAbsoluteBboxExtremeDelta": 0.001889800342251391,
+          "sourceToLod": {
+            "samples": 20000,
+            "seed": 216,
+            "mean": 0.0005750250539312618,
+            "rms": 0.0010700904738819533,
+            "p95": 0.0025596947008191045,
+            "p99": 0.004068358337982568,
+            "maximumObservedSample": 0.006968560481154046,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "lodToSource": {
+            "samples": 20000,
+            "seed": 1216,
+            "mean": 0.0005638374919796715,
+            "rms": 0.0010528687753151523,
+            "p95": 0.002538268242984623,
+            "p99": 0.003974261721685885,
+            "maximumObservedSample": 0.007942911452542627,
+            "units": "Source 3MF millimeter units",
+            "globalHausdorffBound": false,
+            "method": "Deterministically sampled surface points; exact closest-point-on-target-triangle queries through R-tree acceleration. This is a sampled estimate, not a strict bound."
+          },
+          "repeatedQemBytesIdentical": true,
+          "statisticsProducer": "Converter agent A; independently read and hash-bound, not represented as verifier-generated surface samples.",
+          "sourceArrayIdentityIndependentlyReparsed": true,
+          "globalHausdorffBound": false
+        }
+      ],
+      "independentSourceCoordinateSamplesCompleted": [
+        {
+          "sourceObject": "1",
+          "label": "cuff",
+          "reportSha256": "144869e27c69b85afffd640332a456a8574bb435ccfe2c331af5c3d105911f35",
+          "coordinateStage": "Source-coordinate QEM LoD, before display assembly and float32 output",
+          "sourceToLod": {
+            "samples": 6000,
+            "seed": 209614,
+            "units": "source millimeters",
+            "mean": 0.0032143107804342595,
+            "rms": 0.0050277733330520704,
+            "p50": 0.0018564043726345533,
+            "p95": 0.010919552783234022,
+            "p99": 0.016695878329649333,
+            "maximumObservedSample": 0.06363206696964967,
+            "normalAngleDegrees": {
+              "p50": 0.5524742882445131,
+              "p95": 3.890435386560576,
+              "p99": 9.663546282347799,
+              "max": 37.236165475872205
+            },
+            "globalHausdorffBound": false,
+            "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+          },
+          "lodToSource": {
+            "samples": 6000,
+            "seed": 309614,
+            "units": "source millimeters",
+            "mean": 0.0031452644197562532,
+            "rms": 0.004835165550395109,
+            "p50": 0.0018708331091798062,
+            "p95": 0.010695622633881824,
+            "p99": 0.016651214207778972,
+            "maximumObservedSample": 0.03698295507599157,
+            "normalAngleDegrees": {
+              "p50": 0.5693102429878344,
+              "p95": 4.171993609222276,
+              "p99": 11.248994179174625,
+              "max": 60.39917240683734
+            },
+            "globalHausdorffBound": false,
+            "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+          },
+          "maximumAbsoluteBboxExtremeDeltaMillimeters": 0.011405531861065299
+        },
+        {
+          "sourceObject": "3",
+          "label": "dial",
+          "reportSha256": "849e10369db4b4d1ca0d7a627cddab548dbf5cd8634ed547b96830c8071848ed",
+          "coordinateStage": "Source-coordinate QEM LoD, before display assembly and float32 output",
+          "sourceToLod": {
+            "samples": 6000,
+            "seed": 209616,
+            "units": "source millimeters",
+            "mean": 0.0008984925432806683,
+            "rms": 0.0017213581509888944,
+            "p50": 0.0001288609219084059,
+            "p95": 0.004251958630236894,
+            "p99": 0.00639510168443072,
+            "maximumObservedSample": 0.012455267715556674,
+            "normalAngleDegrees": {
+              "p50": 0.04158611122450488,
+              "p95": 3.5519163884265663,
+              "p99": 7.142044889215529,
+              "max": 101.75355005278539
+            },
+            "globalHausdorffBound": false,
+            "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+          },
+          "lodToSource": {
+            "samples": 6000,
+            "seed": 309616,
+            "units": "source millimeters",
+            "mean": 0.0008849641313913648,
+            "rms": 0.0016871262520629826,
+            "p50": 0.0001377937698068395,
+            "p95": 0.004004016273329546,
+            "p99": 0.006410714710749612,
+            "maximumObservedSample": 0.009666242615207378,
+            "normalAngleDegrees": {
+              "p50": 0.04357643165691158,
+              "p95": 3.6914519841094062,
+              "p99": 7.413039811497516,
+              "max": 90.38882492181838
+            },
+            "globalHausdorffBound": false,
+            "method": "Independent RNG and barycentric area-weighted surface sampling, exact closest-point on target triangles via spatial index; finite samples do not certify all small features."
+          },
+          "maximumAbsoluteBboxExtremeDeltaMillimeters": 0.005387432579738061
+        }
+      ],
+      "independentActualFloat32SurfaceDistance": {
+        "complete": false,
+        "usedAsAcceptanceCondition": false,
+        "reason": "Extra dense-source proximity sampling was stopped after resource pressure; it is not needed for the independently completed exact LoD-to-F32 transform proof. No converter samples are relabeled as independent."
+      },
+      "actualFloat32CoordinatesMatchAllTransformedLodFacesExactly": true,
+      "actualFloat32InverseVertexQuantizationMaximumMillimeters": 3.4755596454566336e-06,
+      "globalHausdorffBound": false,
+      "noVoxelizationOrAuthoredReplacementGeometry": true,
+      "fullSourceFaceEqualityClaim": false
+    },
+    "assemblies": {
+      "original": "The four source meshes retain the same 0.013 scale and positive-determinant rigid rotations/translations. Source assemble_item transforms are print-bed placements, not a proven assembled watch. Current mating is measured project placement; no part-specific shrinking. Core-neck/ring internal contact remains disclosed, not certified collision-free.",
+      "af": "Complete source object retained; no extra borrowed face/core is stacked on it.",
+      "ua": "Two subsets use the same source transform and retain original relative positions; source-connected dial has no fabricated moving core.",
+      "ov": "Seven source parts retain their local geometry with measured project placements. Original single lid remains whole and fixed; two unverified locating pins are excluded from display and preserved in the original source archive.",
+      "buttonBasisCorrection": {
+        "issue": "An earlier candidate button frame had singular scales 0.01300201747 / 0.013 / 0.01299798222 rather than a pure rotation times 0.013.",
+        "correction": "Orthogonalized tangent against the measured outward normal and rebuilt its companion cross-product basis.",
+        "verifiedFinalUniformProperRigidTransform": true,
+        "finalRuntimeSha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf"
+      }
+    },
+    "excludedPins": [
+      {
+        "watch": "omniverse",
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceFilename": "obj_4_orta-pin.stl",
+        "sourceObject": "part-4",
+        "sourceSha256": "972008fb209619736c6e17240ec0287a60ea439b503558cbe7b6de68cf7041dc",
+        "triangles": 84,
+        "sourceCoordinateFingerprint": "7782e4497cee2da7d70fc9123f19812f9b029c2b775c7b955b2c3602af5ab2c9",
+        "sourceFileStillPresentAndUnchanged": true,
+        "displayed": false,
+        "status": "retained-in-source-library-not-assembled",
+        "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+      },
+      {
+        "watch": "omniverse",
+        "sourceArchive": "saat-yesil_stls.zip",
+        "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+        "sourceFilename": "obj_5_kapak-pin.stl",
+        "sourceObject": "part-5",
+        "sourceSha256": "2d966088b46463be40b46fea2d721305fc26d8b6c448372d90261662605bad94",
+        "triangles": 32,
+        "sourceCoordinateFingerprint": "d8142bd3bd1b8659192bf1c3fc4ec879c02051fe7d3e5488d87e313d125d94fb",
+        "sourceFileStillPresentAndUnchanged": true,
+        "displayed": false,
+        "status": "retained-in-source-library-not-assembled",
+        "reason": "Original pin geometry retained privately; mating position has not been established. Excluded from current display without modifying or deleting source file."
+      }
+    ],
+    "stageFit": {
+      "passed": true,
+      "reportSha256": "b95cfac03d450c585cf7597ae57991d4bdfdd1e4c3a0f08be5f493d62498a7b6",
+      "inputs": {
+        "stylesSha256": "f6ee14d72384a1049a7aab4d790c0ab28c73b29d7c1ddbedcd7db78d9c45c6fb",
+        "watchModelSha256": "6516ab62ddb8c20fba4fa7b1cbf73a8190c052ebed12f5cae4fa08d7f7a817fa",
+        "registrySha256": "72be7a2a3b7c124b16d1a96e9995c6611d65ef0f8f7038bf92008aefdd6d7c5e"
+      },
+      "cases": 2560,
+      "failed": 0,
+      "minimumStageMarginCssPixels": 2.013033655160825,
+      "perWatchMode": {
+        "original/projection": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 43.766322557258235
+        },
+        "original/carousel": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 35.563260971554456
+        },
+        "recalibrated/projection": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 60.972764176208216
+        },
+        "recalibrated/carousel": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 54.33392455586352
+        },
+        "ultimatrix/projection": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 17.79073573302776
+        },
+        "ultimatrix/carousel": {
+          "cases": 160,
+          "failed": 0,
+          "minMargin": 2.013033655160825
+        },
+        "omniverse/projection": {
+          "cases": 800,
+          "failed": 0,
+          "minMargin": 57.6871237493755
+        },
+        "omniverse/carousel": {
+          "cases": 800,
+          "failed": 0,
+          "minMargin": 52.13709638569371
+        }
+      },
+      "scope": {
+        "stageWidths": [
+          940,
+          600,
+          400,
+          338,
+          320,
+          305,
+          290,
+          268
+        ],
+        "stageHeights": {
+          "projection": 560,
+          "carousel": 540
+        },
+        "canvasRules": {
+          "projection": {
+            "capPx": 480,
+            "containerWidthRatio": 1.1,
+            "ultimatrixRatio": 0.96,
+            "topRatio": 0.65
+          },
+          "carousel": {
+            "capPx": 620,
+            "containerWidthRatio": 1.2,
+            "ultimatrixRatio": 0.98,
+            "topRatio": 0.57,
+            "omniverseRatio": 1.18
+          }
+        },
+        "views": [
+          "top",
+          "left",
+          "low",
+          "right"
+        ],
+        "coreFractions": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "lidFractions": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "ovLidCombination": "Each lid fraction checked independently of each core fraction; wider than actual coupled animation.",
+        "method": "Read every retained source-mesh vertex from actual f32 files after byte/hash checks. Use production pose metadata but independent camera-basis and perspective arithmetic, not projectWatchFace or renderer project(). Convert canvas coordinates to CSS stage coordinates. Require all entity vertices within both GPU canvas/clipping planes and clipped stage rectangle. Canvas CSS rectangle may exceed stage.",
+        "exclusions": [
+          "No browser layout execution: stage/container dimensions are explicit sampled inputs and exact CSS declarations are checked.",
+          "No camera interpolation paths between the four view endpoints.",
+          "No CSS drop shadows, glow, portrait slots, labels or hero projection; only actual mesh entities.",
+          "No user visual acceptance, physical phone or SillyTavern validation."
+        ],
+        "sourceMotionNote": "When sourceMotion disables a core or lid, the parameter samples intentionally repeat its fixed geometry; there is no fabricated motion or fabricated lid split.",
+        "continuousMotionReasoning": "For a fixed camera each core/lid vertex is translated along one fixed axis. Each projected coordinate is a ratio of affine functions of that single motion parameter; positive near-depth verified at endpoints makes the coordinate monotonic or constant. Therefore endpoints bound its continuous motion, with quarter-step checks retained. This argument does not cover camera interpolation."
+      },
+      "actualAllVertexProjection": true
+    },
+    "offlineVisualReview": {
+      "scope": "Independent inspection of source-versus-LoD four-angle offline orthographic render comparisons. This is not a browser/material/physical-phone acceptance.",
+      "parts": [
+        {
+          "part": "cuff",
+          "comparisonImageSha256": "8f332f2080d34f2543b034de424e118a6502bf5f397519567f63fcdadc9733e2",
+          "visuallyInspected": true,
+          "viewsPerSourceAndLod": 4,
+          "observation": "Wrist opening, side circular seat, raised paired tubes and wide shell bands remain in all four offline views."
+        },
+        {
+          "part": "dial",
+          "comparisonImageSha256": "94841890d95f1b6ec0a8c72c885dc170deb0e680ce2dd09f8d62d8f3e65f3a23",
+          "visuallyInspected": true,
+          "viewsPerSourceAndLod": 4,
+          "observation": "Four spherical protrusions, annular opening and stepped/sloped ring edges remain."
+        },
+        {
+          "part": "core",
+          "comparisonImageSha256": "d5d89175709cb298b8f442c3203553ddb670d1c8de78f58a13357669a7876546",
+          "visuallyInspected": true,
+          "viewsPerSourceAndLod": 4,
+          "observation": "Hourglass-shaped recessed lines, inner circular rim and lower cylindrical flange remain."
+        },
+        {
+          "part": "button",
+          "comparisonImageSha256": "99cc38a08422b05902e68657527f24e74cfbc150c9689e01a0696849e4d72105",
+          "visuallyInspected": true,
+          "viewsPerSourceAndLod": 4,
+          "observation": "Dome and flared bezel silhouette remain. The magnified offline LoD image has visible faceting; runtime smooth normals and small-screen appearance require separate browser review."
+        }
+      ]
+    },
+    "byteVerificationReportSha256": "ce0c865aff250344353ea0933145e99d22ef0328e98e60fcd4a3de70b7d71db2",
+    "sourceGeometryBoundary": {
+      "goal": "Preserve supplied shapes with the authorized Reboot display LoD, rather than make all source meshes watertight or collision-free.",
+      "inheritedOtherWatchSourceIntersectionEvidence": [
+        {
+          "watch": "recalibrated",
+          "part": "source-af-case-and-strap",
+          "sourceSha256": "4891119f23ef517cebbd733d4f4066c7ff6378b1da9d73e8dfe937a7b9e2fd39",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 4,
+          "nearParallelPairs": 0
+        },
+        {
+          "watch": "ultimatrix",
+          "part": "source-ultimate-cuff",
+          "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 0
+        },
+        {
+          "watch": "ultimatrix",
+          "part": "source-ultimate-side-fittings",
+          "sourceSha256": "d7941a42f3fde29caeda373416a6052ee66460f2d8ce135fc6a1c346691374c7",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 0
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-silver-face-ring",
+          "sourceSha256": "06e9fdde133203e9668ef3c1b2007eef3e0b43c79ea32c8210ca83f813285ed5",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 3,
+          "nearParallelPairs": 0
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-middle-case",
+          "sourceSha256": "485860ae389f66d470f1f308a7157866a90fe35c1ad0575b6ebaef486f54c3af",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 94
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-cylindrical-face-core",
+          "sourceSha256": "8ce637ba30b3f8957604c384c5642a46cb87551d4d2c98d17bfe744bd625a6c4",
+          "properInteriorCrossingPairs": 0,
+          "coplanarWithin1e8Pairs": 4,
+          "nearParallelPairs": 543
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-bottom-case-with-post",
+          "sourceSha256": "19d0f63ee5bb5c703a28d6d0972b34ed021b1f1b8c1989b22464d79b8d59d4f0",
+          "properInteriorCrossingPairs": 734,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 26
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-single-cover",
+          "sourceSha256": "88ac338ab53b2f3ed1180265dd1ab241722a646a2dc12b27bac69c7cf9aaf728",
+          "properInteriorCrossingPairs": 307,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 0
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-upper-case",
+          "sourceSha256": "03454670edc926c1d78a68c5e7e2fced8c3a4d5acfb02b3839fadd2e97018fcb",
+          "properInteriorCrossingPairs": 178,
+          "coplanarWithin1e8Pairs": 0,
+          "nearParallelPairs": 283
+        },
+        {
+          "watch": "omniverse",
+          "part": "source-ov-curved-cuff",
+          "sourceSha256": "a5d7f6d3de3e0dc008c5743efb2229ee9d19efae016ff87fd34bbf02551b64da",
+          "properInteriorCrossingPairs": 5,
+          "coplanarWithin1e8Pairs": 1,
+          "nearParallelPairs": 2
+        }
+      ],
+      "sourceIntersectionReportSha256": "d00d17bd60fd0759bc2c47527eead5362a7afc11c19f93754adfd1f788e72370",
+      "rebootGlobalSelfIntersectionScanCompleted": false,
+      "zeroIntersectionClaim": false,
+      "mechanicalFitCertification": false,
+      "detail": "Source parts may already include coincident or intersecting surfaces. Those are not automatically remeshed. The Reboot source Core has two zero-area source faces, explicitly listed in the converter evidence; no claim of a printable closed solid is made."
+    },
+    "limits": [
+      "QEM changes Reboot triangle tessellation and introduces measured finite surface differences; it is not exact original-face preservation.",
+      "Surface samples are finite estimates, not global Hausdorff bounds or guarantees of every tiny feature.",
+      "Uniform local shape preservation does not prove an original mechanical assembly; source archives contain print-layout metadata.",
+      "Material colors/finish and displayed motions are project choices, not recovered official source material or animation.",
+      "No claim of official production assets, printer-ready solid topology, mechanical collision clearance, browser/physical-phone/SillyTavern acceptance, exported bundle verification, Git or publication follows from this report.",
+      "Extra verifier memory pressure is not evidence of runtime renderer performance."
+    ]
+  },
+  "sourceEquivalenceSummarySha256": "90a416e5d653d254542217b0a99b462871c42354bc25e94f5670ae36c57768b7",
+  "assemblyEvidence": {
+    "discSeatY": 39.24,
+    "sourceDiscSeatBand": [
+      39.14,
+      39.35
+    ],
+    "coreFaceY": 48.5,
+    "buttonSeat": {
+      "faces": 130,
+      "area": 313.4080495461985,
+      "weightedCentroid": [
+        37.31472295962059,
+        23.780996611713324,
+        -0.010150002423529585
+      ],
+      "bounds": [
+        [
+          31.9391785,
+          15.4262924,
+          -10.0935364
+        ],
+        [
+          42.6647797,
+          32.1791916,
+          10.362793
+        ]
+      ],
+      "weightedNormal": [
+        0.8421632498096786,
+        0.5392225554625804,
+        -0.0003104036169138781
+      ],
+      "fittedPlaneNormal": [
+        0.8427112768857636,
+        0.5383440295239927,
+        -0.0048383556541645376
+      ],
+      "planeDotRange": [
+        44.201297411055286,
+        46.66777002099226
+      ]
+    },
+    "sameScaleAllFourParts": 0.013,
+    "limits": [
+      "3MF assemble_item places individual components on the print floor, not a proved watch rig.",
+      "Measured visual assembly is project-authored; Core neck approximately radius23 exceeds Dial narrowest inner radius20.624, so original four parts are not proved mechanically compatible. No per-part shrink used to hide mismatch.",
+      "Source flange/contact can overlap within the assembled housing; no Boolean mechanical fit claim.",
+      "Material colors are authored previews, not recovered source RGB."
+    ]
+  },
+  "boundaries": [
+    "Source-to-LOD distances are deterministic surface samples and are not a global Hausdorff bound. Exact vertex bounds are recorded separately.",
+    "Existing source topology may include nonmanifold edges, overlaps and narrow faces; no claim of repaired closed solids.",
+    "Only exact zero-area triangles are removed before QEM or after float32 quantization. Source and retained index hashes are recorded for unmodified models.",
+    "OV original pins remain in the source library but unproven mating positions are excluded from this display."
+  ]
 }

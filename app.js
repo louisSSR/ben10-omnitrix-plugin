@@ -8,6 +8,9 @@ const readyForms = forms.filter(form => !!form.asset);
 const byId = new Map(forms.map(form => [form.id, form]));
 const $ = id => document.getElementById(id);
 const app = $('omni-app');
+let sourceMeshes = {};
+try { sourceMeshes = JSON.parse($('watch-mesh-data')?.textContent || '{}'); } catch { /* Artwork fallback retains its own controls. */ }
+if (!sourceMeshes || typeof sourceMeshes !== 'object' || Array.isArray(sourceMeshes)) sourceMeshes = {};
 const portraits = createPortraitRenderer(JSON.parse($('portrait-data').textContent), forms.map(form => form.id));
 const lifetime = new AbortController();
 const listen = (node, event, fn, options = {}) => node.addEventListener(event, fn, { ...options, signal: lifetime.signal });
@@ -34,7 +37,8 @@ try { watchViews = JSON.parse($('watch-views')?.textContent || '{}'); } catch { 
 if (!watchViews || typeof watchViews !== 'object' || Array.isArray(watchViews)) watchViews = {};
 const viewOptions = ['top', 'left', 'low', 'right'].map((id, index) => ({ id,
   name: typeof watchViews.views?.[index]?.name === 'string' ? watchViews.views[index].name : ['俯视', '左前', '低角度', '右前'][index] }));
-let watchViewIndex = 2;
+// Three-quarter view exposes the supplied case, dial and wrist opening on first load.
+let watchViewIndex = 1;
 const raisedByMode = { projection: true, carousel: false };
 const watchAtlasStates = new Map();
 let watchModel = null, modelAnchor = null;
@@ -106,6 +110,12 @@ function placeModelFace(anchor) {
   const screen = $('watch-screen');
   for (const [property, key] of [['left', 'x'], ['top', 'y'], ['width', 'w'], ['height', 'h']]) screen.style[property] = `${anchor[key] * 100}%`;
   screen.style.setProperty('--watch-face-angle', `${anchor.a || 0}deg`);
+  // A long source bracer can have its dial off-centre. Position the complete
+  // canvas by that dial in ring mode, retaining room for the whole source body.
+  const device = $('watch-device');
+  device.style.setProperty('--watch-model-face-x', `${anchor.x * 100}%`);
+  device.style.setProperty('--watch-model-face-y', `${anchor.y * 100}%`);
+  device.style.setProperty('--watch-model-ring-width', `${96 / (2 * Math.max(anchor.x, 1 - anchor.x))}cqw`);
 }
 function renderWatchView(withMotion = false) {
   const viewport = $('watch-multiview'), screen = $('watch-screen');
@@ -149,7 +159,9 @@ function renderWatchView(withMotion = false) {
     if (focused) [...controls.children].find(control => control.dataset.value === focused)?.focus({ preventScroll: true });
   }
   if ($('toggle-watch-core')) {
-    $('toggle-watch-core').textContent = raisedByMode[preferences.mode] ? '收起表芯' : '弹出表芯';
+    const fixedSourceBody = modeled && sourceMeshes[preferences.watch]?.sourceMotion?.core === false;
+    $('toggle-watch-core').hidden = fixedSourceBody && preferences.mode !== 'projection';
+    $('toggle-watch-core').textContent = fixedSourceBody ? (raisedByMode.projection ? '收起投影' : '打开投影') : raisedByMode[preferences.mode] ? '收起表芯' : '弹出表芯';
     $('toggle-watch-core').setAttribute('aria-pressed', String(raisedByMode[preferences.mode] === true));
     $('toggle-watch-core').disabled = !interactive;
   }
@@ -588,6 +600,7 @@ resize.observe($('stage'));
 watchModel = createWatchModel($('watch-model'), {
   onFrame(anchor) {
     if (lifetime.signal.aborted || app.dataset.watchArt !== 'model') return;
+    app.dataset.watchAnimating = String(anchor.transitioning === true);
     if (anchor.meshStatus) {
       app.dataset.watchMesh = anchor.meshStatus;
       const status = $('watch-view-status');

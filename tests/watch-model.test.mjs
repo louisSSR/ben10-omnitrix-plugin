@@ -179,7 +179,7 @@ function rendererHarness(options = {}) {
     getShaderParameter: () => true,
     createProgram: () => ({ id: ++serial }),
     getProgramParameter: () => true,
-    getAttribLocation: (_program, name) => ['aPosition', 'aNormal', 'aColor'].indexOf(name),
+    getAttribLocation: (_program, name) => ['aPosition', 'aNormal', 'aColor', 'aSurfaceTag'].indexOf(name),
     getUniformLocation: (_program, name) => name,
     createBuffer: () => ({ id: ++serial }),
     bindBuffer(_type, buffer) { boundBuffer = buffer; },
@@ -330,6 +330,60 @@ function deferredMeshLoader() {
 }
 const finishMeshTasks = () => new Promise(resolve => setImmediate(resolve));
 const sourceGeometryFixture = watch => ({ ...buildWatchGeometry(watch), modelKind: 'source-mesh', sourceArchiveSha256: 'c'.repeat(64) });
+
+test('local source finishes preserve GPU geometry and motion batches without rebuilding paint seams', async () => {
+  const source = sourceGeometryFixture('original');
+  source.parts[0].id = 'source-classic-cuff';
+  const before = geometryDigest(source), cached = () => { throw new Error('cached fixture must not fetch'); };
+  cached.peek = () => source;
+  const h = rendererHarness({ loadGeometry: cached });
+  h.model.setState({ watch: 'original', raised: false, reducedMotion: true }); h.tick();
+  const groups = ['body','core','lid-left','lid-right'].filter(group => source.parts.some(p => p.group === group));
+  assert.equal(h.batches.at(-1).length, groups.length, 'paint does not multiply draw calls by part');
+  const packed = h.uploads.slice(-groups.length);
+  for (let g=0;g<groups.length;g++) {
+    let cursor=0;
+    for (const part of source.parts.filter(p=>p.group===groups[g])) for (let i=0;i<part.positions.length/3;i++) {
+      assert.deepEqual([...packed[g].values.subarray(cursor,cursor+3)],[...part.positions.subarray(i*3,i*3+3)]);
+      assert.deepEqual([...packed[g].values.subarray(cursor+3,cursor+6)],[...part.normals.subarray(i*3,i*3+3)]);
+      assert.deepEqual([...packed[g].values.subarray(cursor+6,cursor+10)],[...part.colors.subarray(i*4,i*4+4)]);
+      assert.equal(packed[g].values[cursor+10],part===source.parts[0]?10:0,'paint ID stays separate from material tag');
+      cursor+=11;
+    }
+    assert.equal(cursor,packed[g].values.length,'vertex stride consumes the complete batch');
+  }
+  const count=h.uploads.length;
+  h.model.setState({raised:true,palette:'rose'});h.tick();
+  assert.equal(h.uploads.length,count,'lift and color changes reuse the repaired geometry');
+  assert.equal(geometryDigest(source),before,'source coordinates and material classes remain unchanged');
+  h.model.dispose();
+});
+
+test('source-preserved paint keeps the supplied surface classes and a fixed body remains still during projection toggles', () => {
+  const source = sourceGeometryFixture('original');
+  source.parts = source.parts.filter(part => part.group === 'body');
+  source.parts[0].id = 'source-classic-cuff';
+  source.sourceFinish = 'source-preserved';
+  source.sourceMotion = { core: false, lids: false };
+  source.lift = 0;
+  const before = geometryDigest(source);
+  const cached = () => { throw new Error('cached source must not fetch'); }; cached.peek = () => source;
+  const h = rendererHarness({ loadGeometry: cached });
+  h.model.setState({ watch: 'original', raised: false, reducedMotion: true }); h.tick();
+  const packed = h.uploads.at(-1).values;
+  for (let offset = 10; offset < packed.length; offset += 11) assert.equal(packed[offset], 0, 'old watch-specific repaint is disabled');
+  assert.equal(h.canvas.dataset.meshVertexCount, String(source.parts.reduce((sum, part) => sum + part.positions.length / 3, 0)));
+  const uploaded = h.uploads.length;
+  h.model.setState({ raised: true, palette: 'amber', reducedMotion: false }); h.tick(450);
+  assert.equal(h.callbacks.at(-1).coreLift, 0);
+  assert.equal(h.batches.at(-1).length, 1);
+  assert.deepEqual(h.batches.at(-1)[0].offset, [0, 0, 0]);
+  assert.equal(h.uploads.length, uploaded, 'projection and theme changes do not rebuild geometry');
+  assert.equal(h.frames.size, 0, 'no idle rendering after a fixed source body settles');
+  assert.equal(geometryDigest(source), before);
+  assert.equal(watchPose({ watch: 'omniverse', mode: 'dial' }, { ...source, watch: 'omniverse' }).lidSlide, 0, 'a complete original cover is not split into sliding halves');
+  h.model.dispose();
+});
 
 test('source mesh swaps atomically during lift and reports provenance without resetting camera or animation', async () => {
   const deferred = deferredMeshLoader(), h = rendererHarness({ loadGeometry: deferred.load });

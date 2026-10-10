@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "referenceVersion": "DNA Altering 3.5.0",
+  "status": "static-reference-not-integrated",
+  "source": {
+    "providedBy": "user",
+    "xapkFileName": "DNA+Altering_3.5.0_APKPure.xapk",
+    "xapkSha256": "704a8536bccd6c3c9b74e6d9cd40ba2c1f3fd67afd9074e9958653b1b4b10da0",
+    "apkFileName": "eu.adi007.omnitrix.apk",
+    "apkSha256": "0b0b6ba36090432db710649f0e567518f22fdeb49f7909c52628207d3f1fe0fd",
+    "mdpiSplitSha256": "e4e7ef61cf60ee69f036f9f1d398376f773ec0f0d9e7ba229ec0031dad759e11",
+    "dex": [
+      {
+        "entry": "classes.dex",
+        "sha256": "f2148502767bbaf4392cd77db5dcd3868894751f3f1cadacee899c0e08176b84",
+        "bytes": 10338028
+      },
+      {
+        "entry": "classes2.dex",
+        "sha256": "71f2d6bdcc1ac48814c9dc16e65d1a9f66b133eb67a2b2d41c1079d035c86a70",
+        "bytes": 2906992
+      }
+    ],
+    "officialPublisherVerified": false,
+    "redistributionLicenseVerified": false
+  },
+  "evidenceBoundary": {
+    "apkInstalled": false,
+    "apkExecuted": false,
+    "audioPlayed": false,
+    "audioMetadataRead": true,
+    "pluginBehaviorChanged": false,
+    "runtimeAnimationAcceptance": false,
+    "rawDecompiledSourcePublished": false,
+    "physical3DAnimationClaimed": false,
+    "notes": [
+      "Resource/method names and timing constants came from static compiled data.",
+      "Calculated timeline totals exclude device scheduling and frame latency.",
+      "Media entries below identify source bytes; this document does not bundle those APK assets."
+    ]
+  },
+  "generationMapping": {
+    "classic": "v0==0 and y4==0",
+    "alienForceProjection": "v0==1, OMNITRIX_RECALIBRATED, recalibrated_ hero prefix",
+    "ultimatrix": "No independent Ultimatrix watch-opening branch established. Sharing the projection sequence is a project adaptation.",
+    "omniverse": "y4!=0; E==0 is circular selector"
+  },
+  "defaults": {
+    "constructor": {
+      "I": 6,
+      "J": 1,
+      "K": 5,
+      "L": 1,
+      "M": 2
+    },
+    "overriddenByPersistedUserSettings": true,
+    "projectionFactorFormula": "1 - 0.15 * (M - L)",
+    "projectionFactorDefault": 0.85,
+    "omniverseStepMs": {
+      "1": 1050,
+      "2": 950,
+      "3": 850,
+      "4": 750,
+      "5": 650,
+      "6": 550,
+      "7": 450,
+      "8": 350,
+      "9": 250,
+      "10": 150,
+      "unmatchedFallback": 350
+    },
+    "customInterpolatorSetByInspectedHelpers": false,
+    "coordinateUnits": "M0/W=screen width; N0/H=screen height; not 3D mesh units"
+  },
+  "stateNumbers": {
+    "common": {
+      "idle": 0,
+      "opening": 1,
+      "selecting": 2,
+      "transforming": 3,
+      "transformed": 4
+    },
+    "omniverse": {
+      "idle": 0,
+      "opening": 41,
+      "selecting": 20,
+      "switching": 21,
+      "armed": 22,
+      "transforming": 23,
+      "transformed": 24
+    }
+  },
+  "transitions": [
+    {
+      "id": "classic-open",
+      "from": "idle",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.e1(int,int,int,int,MainActivity)",
+        "MainActivity.r1(int,int,int,int,int)",
+        "tb.p.run() cases 0,1,2",
+        "tb.b1.onAnimationEnd(Animator)",
+        "MainActivity.x(int,int)",
+        "tb.v0.onAnimationEnd(Animator) case 0"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state=1; play herolist_open"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 1000,
+          "action": "underBorder1/2 translationX=-0.07W/+0.07W; border1/2=+0.48W/-0.48W"
+        },
+        {
+          "atMs": 70,
+          "durationMs": 1000,
+          "action": "omnitrixScreen scale and alpha to1"
+        },
+        {
+          "atMs": 90,
+          "durationMs": 1000,
+          "action": "omnitrixScreenGlow scale and alpha to1"
+        },
+        {
+          "atMs": 1090,
+          "durationMs": 150,
+          "action": "refresh current hero without rotation; hero alpha to1"
+        },
+        {
+          "atMs": 1240,
+          "durationMs": 0,
+          "action": "state=2"
+        }
+      ],
+      "assumptions": [
+        "Normal e1(1,0,0,28,activity) branch, f5<=0, no special flags.",
+        "Timeline sums static delays; no real-device frame timing measured."
+      ]
+    },
+    {
+      "id": "classic-switch",
+      "from": "selecting",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.t(int,int)",
+        "MainActivity.q(int,int)",
+        "MainActivity.n(int)",
+        "tb.r0.onAnimationEnd(Animator) case 3"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "Choose next/previous valid hero; set hero_<id>; play random rotary_1..6"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 500,
+          "action": "bezel rotation += direction*90 degrees; p4=1"
+        },
+        {
+          "atMs": 500,
+          "durationMs": 0,
+          "action": "normalize near +/-360 degrees; p4=0"
+        }
+      ],
+      "guard": "p4==0; direction 0=previous,1=next,2=refresh (no turn)",
+      "rotatingView": "bezel",
+      "doesNotRotateDiamond": true
+    },
+    {
+      "id": "recalibrated-open",
+      "from": "idle",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.e1(int,int,int,int,MainActivity)",
+        "tb.p.run() cases0,1,2",
+        "MainActivity.x(int,int)",
+        "tb.v.run() case0",
+        "MainActivity.q(int,int)",
+        "MainActivity.m(int)",
+        "tb.u0.onAnimationEnd(Animator)",
+        "tb.t0.run()",
+        "tb.r0.onAnimationEnd(Animator) case2"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state=1; play ultimate_herolist_open; skip classic shutters"
+        },
+        {
+          "atMs": 90,
+          "durationMs": 350,
+          "action": "ultimateSelectionBg alpha 0->1"
+        },
+        {
+          "atMs": 440,
+          "durationMs": 0,
+          "action": "x() sets state2 and bottom-center pivots"
+        },
+        {
+          "atMs": 440,
+          "durationMs": 400,
+          "action": "holoGrow/2 alpha0->0.7; prepare six af_glowprojector images"
+        },
+        {
+          "atMs": 590,
+          "durationMs": 0,
+          "action": "t(2,1) refreshes current hero; q4=1; m(2) zero-duration shrink/wait then swaps resource"
+        },
+        {
+          "atMs": 590,
+          "durationMs": 382,
+          "action": "hero scaleX/Y and alpha ->1"
+        },
+        {
+          "atMs": 972,
+          "durationMs": 0,
+          "action": "q4=0"
+        }
+      ],
+      "assumptions": [
+        "Default M2,L1 => f=.85; growth floor(450*f)=382ms.",
+        "APK state2 begins at440ms, q4 load lock is set at590ms. A web implementation can keep an opening lock until the visual load finishes, but that is an adaptation."
+      ]
+    },
+    {
+      "id": "recalibrated-switch",
+      "from": "selecting",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.t(int,int)",
+        "MainActivity.q(int,int)",
+        "MainActivity.n(int)",
+        "tb.s.run() cases0,1,5",
+        "MainActivity.m(int)",
+        "tb.u0.onAnimationEnd(Animator)",
+        "tb.t0.run()",
+        "tb.r0.onAnimationEnd(Animator) cases2,3"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "q4=1; cancel previous media/effects; alpha0; select ultimate_rotary_1_sN"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 500,
+          "action": "bezel rotation +/-90 degrees with p4 lock"
+        },
+        {
+          "atMs": 40,
+          "durationMs": 0,
+          "action": "hero alpha1"
+        },
+        {
+          "atMs": 110,
+          "durationMs": 0,
+          "action": "hero alpha0"
+        },
+        {
+          "atMs": 150,
+          "durationMs": 0,
+          "action": "hero alpha1"
+        },
+        {
+          "atMs": 150,
+          "durationMs": 467,
+          "action": "scaleX/Y to0; alpha to0 in approx65% of shrink duration"
+        },
+        {
+          "atMs": 617,
+          "durationMs": 85,
+          "action": "swap recalibrated_<id> or recalibrated_<id>_r, then wait"
+        },
+        {
+          "atMs": 702,
+          "durationMs": 382,
+          "action": "scaleX/Y and alpha to1"
+        },
+        {
+          "atMs": 1084,
+          "durationMs": 0,
+          "action": "q4=0; ordinary switching ready"
+        }
+      ],
+      "guard": "p4==0 && q4==0",
+      "durationFormula": "150 + floor(550*f) + floor(100*f) + floor(450*f); f=1-.15*(M-L)",
+      "defaultDurationMs": 1084
+    },
+    {
+      "id": "classic-recalibrated-confirm",
+      "from": "selecting",
+      "to": "transformed",
+      "methods": [
+        "MainActivity.F()",
+        "MainActivity.K(long,long)",
+        "tb.t.run() case13",
+        "MainActivity.K1(int,int)",
+        "tb.k1.onAnimationEnd(Animator)"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 400,
+          "action": "transformGlow alpha->1"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 500,
+          "action": "transformGlow scaleX/Y->10"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state3; transform forclassic, ultimate_transform forrecalibrated"
+        },
+        {
+          "atMs": 1600,
+          "durationMs": 0,
+          "action": "reset shutters and hide selector/hero/projection layers"
+        },
+        {
+          "atMs": 1600,
+          "durationMs": 600,
+          "action": "transformGlow alpha->0"
+        },
+        {
+          "atMs": 2200,
+          "durationMs": 0,
+          "action": "glow scale0; state4"
+        }
+      ],
+      "guard": "V0==2 && p4==0 && q4==0",
+      "excluded": [
+        "evolution",
+        "broken state",
+        "hero37 video/sequence",
+        "state44 special ending"
+      ]
+    },
+    {
+      "id": "omniverse-open",
+      "from": "idle",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.y(int)",
+        "MainActivity.W(int,boolean)",
+        "MainActivity.N(int)",
+        "tb.r0.onAnimationEnd(Animator) cases12,11"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state41; play omniverse_selection; initialize7 avatar slots"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 380,
+          "action": "both circle layers and7 avatars alpha0->1 and scale0.6->1"
+        },
+        {
+          "atMs": 380,
+          "durationMs": 150,
+          "action": "a1 focuses center avatar: scale1.13, translationY=H*0.044444 and color"
+        },
+        {
+          "atMs": 530,
+          "durationMs": 0,
+          "action": "state20; pendingrelease can trigger v(0)"
+        }
+      ],
+      "assumptions": [
+        "Normal ring E==0, W==false, F4==false.",
+        "Special selection branches use different listeners."
+      ]
+    },
+    {
+      "id": "omniverse-switch",
+      "from": "selecting",
+      "to": "selecting",
+      "methods": [
+        "MainActivity.L()",
+        "MainActivity.a1(long,boolean)",
+        "tb.y0.onAnimationEnd(Animator)",
+        "MainActivity.W(int,boolean)",
+        "tb.r0.onAnimationEnd(Animator) case8"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state21; play omniverse_rotary"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 165,
+          "action": "cancel previous focus, returnscale1/translationY0"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 550,
+          "action": "rotate seven slots +/-38degrees"
+        },
+        {
+          "atMs": 550,
+          "durationMs": 0,
+          "action": "wrap exit slot to +/-114degrees; rotate bindings and selected identity"
+        },
+        {
+          "atMs": 550,
+          "durationMs": 165,
+          "action": "focus new center: scale1.13, translationY=H*0.044444, colorchange"
+        },
+        {
+          "atMs": 715,
+          "durationMs": 0,
+          "action": "state20; sustained side input repeats; z4==-1 requests arm"
+        }
+      ],
+      "durationFormula": "d + floor(0.3*d), d from I setting",
+      "defaultDurationMs": 715
+    },
+    {
+      "id": "omniverse-arm",
+      "from": "selecting",
+      "to": "armed",
+      "methods": [
+        "MainActivity.v(int)",
+        "MainActivity.N(int)",
+        "tb.s.run() case3",
+        "tb.t.run() cases4,22,23",
+        "MainActivity.R(float)"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state22; hide name; set underclapetlight; play omniverse_clapet"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 300,
+          "action": "circle and avatars alpha->0, scale->0.6; avatartranslationY->0"
+        },
+        {
+          "atMs": 315,
+          "durationMs": 0,
+          "action": "hide circle and avatar views"
+        },
+        {
+          "atMs": 180,
+          "durationMs": 450,
+          "action": "leftscreen,rightscreen,blackunderborders translationY -> -M0"
+        },
+        {
+          "atMs": 480,
+          "durationMs": 200,
+          "action": "underclapet scale->1"
+        },
+        {
+          "atMs": 600,
+          "durationMs": 0,
+          "action": "loop omniverse_bippulse if still state22"
+        }
+      ],
+      "assumptions": [
+        "E4!=1 ordinary arm branch.",
+        "state22 is assigned immediately; visual arm completion around680ms is a timeline sum, not a separate APK readiness state."
+      ]
+    },
+    {
+      "id": "omniverse-confirm",
+      "from": "armed",
+      "to": "transformed",
+      "methods": [
+        "MainActivity.P(int)",
+        "MainActivity.R(float)",
+        "tb.t.run() case21",
+        "MainActivity.K(long,long)",
+        "tb.v.run() case13",
+        "MainActivity.o()",
+        "tb.r0.onAnimationEnd(Animator) case15"
+      ],
+      "events": [
+        {
+          "atMs": 0,
+          "durationMs": 0,
+          "action": "state23; glow scale0"
+        },
+        {
+          "atMs": 0,
+          "durationMs": 200,
+          "action": "underclapet scale->0.7 when E4==0"
+        },
+        {
+          "atMs": 50,
+          "durationMs": 350,
+          "action": "glow alpha->1"
+        },
+        {
+          "atMs": 50,
+          "durationMs": 400,
+          "action": "glow scale->10"
+        },
+        {
+          "atMs": 50,
+          "durationMs": 500,
+          "action": "transformationhero alpha->1; play omniverse_transform"
+        },
+        {
+          "atMs": 1050,
+          "durationMs": 350,
+          "action": "reset watchbase; glow alpha->0"
+        },
+        {
+          "atMs": 1050,
+          "durationMs": 300,
+          "action": "transformationhero alpha->0"
+        },
+        {
+          "atMs": 1400,
+          "durationMs": 0,
+          "action": "hide hero; glow scale0; state24"
+        }
+      ],
+      "assumptions": [
+        "Ordinary P(0) branch.",
+        "state24->y() sets E4=1, so repeated selection uses direct P(1), skipping the already-completed arm step."
+      ]
+    }
+  ],
+  "imageResources": [
+    {
+      "role": "classic-bezel",
+      "views": [
+        "bezel"
+      ],
+      "methodOrLayout": "MainActivity.n(int) and activity_main layout",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/rotateframee",
+          "apkEntry": "res/drawable-mdpi-v4/rotateframee.webp",
+          "sha256": "4f7a224a012eca986c72cb1500e6e2c838f0dd454757a88586b4055803d1fdfa",
+          "bytes": 16876,
+          "pixelsActuallyViewedThisAudit": true
+        }
+      ]
+    },
+    {
+      "role": "classic-diamond",
+      "views": [
+        "omnitrixScreen"
+      ],
+      "methodOrLayout": "MainActivity.e1 -> tb.p case0",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/element2",
+          "apkEntry": "res/drawable-mdpi-v4/element2.webp",
+          "sha256": "fd5e09185646bc92bdf0afc8fa28db50239179fcafd8ce5f8d8104ca0991be70",
+          "bytes": 6296,
+          "pixelsActuallyViewedThisAudit": true
+        }
+      ]
+    },
+    {
+      "role": "classic-shutters",
+      "views": [
+        "underBorder_1",
+        "underBorder_2",
+        "border_1",
+        "border_2"
+      ],
+      "methodOrLayout": "MainActivity.r1(int,int,int,int,int)",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/element1",
+          "apkEntry": "res/drawable-mdpi-v4/element1.webp",
+          "sha256": "9f9eefe4f735ecc2f321270c14dba8a5342d2731c0d3d428e8bf199842cc6a00",
+          "bytes": 2800,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/element1_2",
+          "apkEntry": "res/drawable-mdpi-v4/element1_2.webp",
+          "sha256": "7436d2c11afa7b77077bc3fb4ca55917d3a10f8e18214dea9cb1cd74ca815259",
+          "bytes": 2762,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/element3",
+          "apkEntry": "res/drawable-mdpi-v4/element3.webp",
+          "sha256": "b979c28578cf8e9868d92d7cbe251562ebdf528a9786be2bce41835171b6a1c9",
+          "bytes": 3060,
+          "pixelsActuallyViewedThisAudit": true
+        },
+        {
+          "key": "drawable/element3_2",
+          "apkEntry": "res/drawable-mdpi-v4/element3_2.webp",
+          "sha256": "1c39ca39e1ca60cd80de44ea13b85eb0d2a1998ca44808423b1e8c75d276de40",
+          "bytes": 3050,
+          "pixelsActuallyViewedThisAudit": true
+        }
+      ]
+    },
+    {
+      "role": "classic-diamond-glow",
+      "views": [
+        "omnitrixScreen_glow"
+      ],
+      "methodOrLayout": "tb.p case2",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/element2_glowover",
+          "apkEntry": "res/drawable-mdpi-v4/element2_glowover.webp",
+          "sha256": "62529839aef18c87dcc6410b5386556c2396b1e1f5a804b4f8e400b76b8b87b7",
+          "bytes": 25214,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    },
+    {
+      "role": "projection-base",
+      "views": [
+        "ultimateSelectionBg"
+      ],
+      "methodOrLayout": "tb.p case1",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/ultimate_selection_screen",
+          "apkEntry": "res/drawable-mdpi-v4/ultimate_selection_screen.webp",
+          "sha256": "a08ee1a7f69a9850562529647761fb0a6479b4793e85b5a2850bc875bebe6ad5",
+          "bytes": 25446,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    },
+    {
+      "role": "projection-growth",
+      "views": [
+        "holoGrow",
+        "holoGrow2"
+      ],
+      "methodOrLayout": "MainActivity.x(int,int)",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/ultimate_hologramgrow",
+          "apkEntry": "res/drawable-mdpi-v4/ultimate_hologramgrow.webp",
+          "sha256": "1a4a515e9fe75eea5dd9493fede5810efe2f9c57d12041abeb6a05e273a16cab",
+          "bytes": 18120,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    },
+    {
+      "role": "projection-beams",
+      "views": [
+        "afprojectors"
+      ],
+      "methodOrLayout": "MainActivity.x(int,int), k0.r0[]",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/af_glowprojector_1",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_1.webp",
+          "sha256": "cac10ac3cb44e5d2edfbf97e73cfce885920dfefe55e7d06a077244b322f4c6d",
+          "bytes": 6966,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/af_glowprojector_2",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_2.webp",
+          "sha256": "120cd8b7ad58789d087bfb92db59170385db65210f43a6dd6c083d777ce72991",
+          "bytes": 7250,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/af_glowprojector_3",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_3.webp",
+          "sha256": "db67e207d8d30300cf8323f31e59bd18cf9ecafacdaafa79fab263541701fa03",
+          "bytes": 7958,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/af_glowprojector_4",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_4.webp",
+          "sha256": "2c81da4d2367da69c44514a6b2a104b7df2b9182d823002a4420f4b7fb6ef7c6",
+          "bytes": 8764,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/af_glowprojector_5",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_5.webp",
+          "sha256": "b74ad8e6dbd4e1fb5686308fefda50d6f2139c720a5a2beb4df64df1533cfd96",
+          "bytes": 9478,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/af_glowprojector_6",
+          "apkEntry": "res/drawable-mdpi-v4/af_glowprojector_6.webp",
+          "sha256": "6f9904b0a5511bf48eb30b1183f93763fc23a920e4349e7994c0c96abcc66dbd",
+          "bytes": 9344,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    },
+    {
+      "role": "omniverse-ring",
+      "views": [
+        "omniverseSelection",
+        "omniverseSelectionJos"
+      ],
+      "methodOrLayout": "MainActivity.w1(int), activity_main layout and N(int)",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/omvselectorcircularsus",
+          "apkEntry": "res/drawable-mdpi-v4/omvselectorcircularsus.webp",
+          "sha256": "e3eb3425d01c7c8741e19fb67447b87608c3f26323d4b70f245b6a97474a65b4",
+          "bytes": 35318,
+          "pixelsActuallyViewedThisAudit": false
+        },
+        {
+          "key": "drawable/omvselectorcircularjos",
+          "apkEntry": "res/drawable-mdpi-v4/omvselectorcircularjos.webp",
+          "sha256": "2d1eb8dc8f3ea15fb52a472d3ca0090a069ed8a98d06c6406d6dabf030bac5e3",
+          "bytes": 9178,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    },
+    {
+      "role": "omniverse-open-light",
+      "views": [
+        "omniverseUnderClapet"
+      ],
+      "methodOrLayout": "MainActivity.v(int)",
+      "apk": "config.mdpi.apk",
+      "files": [
+        {
+          "key": "drawable/omniverse_underclapetlight",
+          "apkEntry": "res/drawable-mdpi-v4/omniverse_underclapetlight.webp",
+          "sha256": "cbf8c0b9e6287e6fcaf88211dced98708f176a8175e0c13bda0f68ffd9036b80",
+          "bytes": 188392,
+          "pixelsActuallyViewedThisAudit": false
+        }
+      ]
+    }
+  ],
+  "dynamicHeroResources": [
+    {
+      "method": "MainActivity.q(int,int)",
+      "keyPattern": "hero_<Q0> or fusion_hero_<Q0>",
+      "mode": "classic"
+    },
+    {
+      "method": "MainActivity.m(int)",
+      "keyPattern": "recalibrated_<Q0> or recalibrated_<Q0>_r",
+      "mode": "recalibrated"
+    },
+    {
+      "method": "MainActivity.W(int,boolean)",
+      "keyPattern": "omniverse__<id>_",
+      "mode": "omniverse",
+      "identityBoundary": "Do not derive character identity from numeric filename alone; use existing verified catalog."
+    }
+  ],
+  "soundBinding": {
+    "loader": "tb.k0.run()",
+    "player": "MainActivity.S(int,Integer), normal loop count0; -1 repeats",
+    "classic": {
+      "open": "x1=herolist_open",
+      "switch": "I1,H1,G1,F1,E1,D1=rotary_1..6",
+      "selectingLoop": "o1=selecting_hero",
+      "confirm": "u1=transform"
+    },
+    "recalibrated": {
+      "open": "y1=ultimate_herolist_open",
+      "switch": "K1[clamped M-1]=ultimate_rotary_1_s1..s5, fallback J1=ultimate_rotary_1",
+      "confirm": "v1=ultimate_transform, fault w1=ultimate_transform_broken"
+    },
+    "omniverse": {
+      "open": "f2=omniverse_selection",
+      "switch": "g2=omniverse_rotary",
+      "arm": "h2=omniverse_clapet",
+      "armedLoop": "i2=omniverse_bippulse",
+      "confirm": "j2=omniverse_transform"
+    }
+  },
+  "audioMetadata": [
+    {
+      "file": "res/raw/app_open.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "467044c5ae0e245687b97b831b700edd7a00561f821f13fca186f01fb93822de",
+      "bytes": 7763,
+      "durationSeconds": 0.6941496598639456,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/herolist_open.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "c9808778d9d5b5748bfdf82a2444cdcae1302301028cdf4bf956c8a72b097fea",
+      "bytes": 12290,
+      "durationSeconds": 1.2797732426303854,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/omniverse_bippulse.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "a144921691b0d38e289bef3dc2fb4919ef1c260e461c330363c061752e6bff39",
+      "bytes": 18492,
+      "durationSeconds": 2.5063945578231293,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/omniverse_clapet.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "ba23e58ea9ebfe39730cb07e93d9e6125ceafebce039d166c7ef24441702c6f6",
+      "bytes": 7603,
+      "durationSeconds": 0.5456689342403628,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/omniverse_rotary.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "8bdff49d2dd63cd8215f99140e664f14e35afa5fd029ffa3e0a66a6893a1c04b",
+      "bytes": 5367,
+      "durationSeconds": 0.15859410430839002,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/omniverse_selection.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "e87abb2a0621cb68d146a6cec73ad0a009ea22413c7e7688d4746325a273dec3",
+      "bytes": 8650,
+      "durationSeconds": 0.6211337868480725,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/omniverse_transform.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "5a474fc4f77d6452bb113f93d34be437d5d429da203a492519e49b76e779997d",
+      "bytes": 13321,
+      "durationSeconds": 1.4504761904761905,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_1.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "771ebad8a8b542d6a8d4d652bfc922234edda468361631e898e9861af1a05e66",
+      "bytes": 5703,
+      "durationSeconds": 0.20317460317460317,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_2.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "cad8f599564a9402218b44b8cd18ae4cb23298617e97d87f6a2c600edeb3a6d7",
+      "bytes": 6487,
+      "durationSeconds": 0.2728344671201814,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_3.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "80596a6246dc567e153398bc0bc4be236ea37c2243c107911bf77bb860aad9eb",
+      "bytes": 6374,
+      "durationSeconds": 0.2786394557823129,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_4.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "b5933e385f7f2d3199409fe283066a9e3f17104a464eae606a0f9022a3363277",
+      "bytes": 5915,
+      "durationSeconds": 0.2438095238095238,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_5.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "bfc8b6c2dd9b9c7362b0b3b94fc1dad151716476a0c0b303a945b4e06f4a1c7d",
+      "bytes": 5981,
+      "durationSeconds": 0.26702947845804986,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/rotary_6.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "194ef18971da5428cdbf8a46e900cf68ebeefa76319bb7d9ca0c510b6ca9c125",
+      "bytes": 6014,
+      "durationSeconds": 0.23219954648526078,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/transform.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "db19b0de2ad514c27c478cf1739bf79cedcc7e1b17e7aabe2d67bd12d5838bbf",
+      "bytes": 16247,
+      "durationSeconds": 1.863628117913832,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/transform_back.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "99b67c8734527f5f9bd27909bf15a71c1ae85674cc6f19707121b71b064bd2f6",
+      "bytes": 33436,
+      "durationSeconds": 5.0,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_app_open.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "cb0a50e7e9585aaaeb5ef59b9a798cd454275df8074479b61e284137ce9e23b1",
+      "bytes": 10187,
+      "durationSeconds": 0.7454421768707483,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_herolist_open.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "dbae7d9c81c8b1d9dbcbd5caed1b541c84c6b5ea42a74a82dcac71aa490b3984",
+      "bytes": 11693,
+      "durationSeconds": 1.2756009070294785,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "dce1d3af3b79690373832dca106b3e472704018910448e6d889a9131cdab78e2",
+      "bytes": 15693,
+      "durationSeconds": 1.7150566893424035,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1_s1.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "ad07bc336867510513317dcae223556557acb0d75f324a9079e27d8a294afa50",
+      "bytes": 16323,
+      "durationSeconds": 2.0114285714285716,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1_s2.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "92a1688f845d45f7da41c3720187af4912c8744aa7d03b9f775509660eda657f",
+      "bytes": 14739,
+      "durationSeconds": 1.7763265306122449,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1_s3.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "07e154b77780e346ba943a85dffec63dce67c4a69676f7088ce2aabf8f46e67d",
+      "bytes": 13865,
+      "durationSeconds": 1.5412244897959184,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1_s4.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "af5fa7fef0cf991496b19d7811c3f29f3bc939fbf46ba667a8becb385f4b2271",
+      "bytes": 12055,
+      "durationSeconds": 1.28,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_rotary_1_s5.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "20c634a996672771307cd04ed71f1a3fb8a81a1224c3432b1fa7d03399e3d392",
+      "bytes": 10452,
+      "durationSeconds": 0.9926530612244898,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_transform.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "26ac693710c4c7ba4aae41ae55aaf719ae9576f62ed01be19a6dd3527f62009c",
+      "bytes": 14638,
+      "durationSeconds": 1.8212698412698414,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    },
+    {
+      "file": "res/raw/ultimate_transform_back.ogg",
+      "apk": "eu.adi007.omnitrix.apk",
+      "sha256": "2dfb194e2b4a9f4493bff1a25ca04f712310219d66761f8d0383148bd42cd999",
+      "bytes": 14438,
+      "durationSeconds": 1.4413605442176871,
+      "sampleRate": 22050,
+      "channels": 1,
+      "notPlayed": true
+    }
+  ],
+  "adaptationRequirements": [
+    "Keep generated 3D geometry volumetric; map APK screen-layer semantics to mesh movement rather than flattening the watch.",
+    "Classic diamond cross-close during every hero switch is a requested project enhancement, not an observed ordinary APK behavior.",
+    "Hold web busy states through the visual phase; APK raw state flags can switch earlier than every layer finishes.",
+    "Dispose animations, timers, video and looping audio on UI teardown and mode change.",
+    "Use palette-based portrait tinting, as the APK also separates owner-style color filtering from hero resources."
+  ],
+  "excludedFromOrdinaryFlow": [
+    "MainActivity.l(): randomizer activation, not ordinary opening",
+    "rotate.xml infinite decorative turn; randomizer/scanner XMLs are special effects",
+    "special hero video/sequence, evolution, damage, scan, timeout branches"
+  ],
+  "pendingVerification": [
+    "Actual APK frame timing and screenshots",
+    "Audible transitions and mixing",
+    "Browser/mobile implementation and cancellation",
+    "Independent Ultimatrix-specific behavior",
+    "All special hero and failure branches"
+  ]
+}

@@ -60,6 +60,9 @@ if (existsSync(path.join(root, 'assets/portraits.json'))) {
 }
 if (existsSync(path.join(root, 'docs/catalog-scope.md'))) files.push('docs/catalog-scope.md');
 if (existsSync(path.join(root, 'docs/watch-model.md'))) files.push('docs/watch-model.md');
+for (const file of ['docs/dna-altering-motion-reference.md','docs/dna-altering-motion-reference.json']) {
+  if (existsSync(path.join(root, file))) files.push(file);
+}
 files.push('assets/watch-meshes/registry.json','assets/watch-meshes/provenance.json','assets/watch-meshes/conversion-receipt.json');
 const reviewKey = version.replaceAll('.', '');
 files.push('assets/extra-art.json', 'docs/build-receipt.json', `docs/review-v${reviewKey}.md`, `docs/browser-qa-v${reviewKey}.json`);

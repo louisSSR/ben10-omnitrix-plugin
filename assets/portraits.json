@@ -1431,6 +1431,174 @@
       }
     },
     {
+      "id": "reference-reboot-cannonbolt",
+      "file": "portraits/reference-reboot-cannonbolt.png",
+      "sha256": "bc93eac5f3a322b6d7759c2f74868a7ff31be333eb890d88bd832bf5fab48225",
+      "bytes": 792453,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.4761772549019608,
+      "light": 0.8282847058823529,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-cannonbolt-head-reference-original.png",
+        "referenceSha256": "21fabfc516145dedc8db0516c1aadb8814b192d388949afcf84cca5911c8de6e",
+        "referenceUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAlAww0JMrh2i46r1AnTruXtqawfgcbIuOvQ_-KwAH6Oa7W88sz_PLViokoiMMfGAErNzsbeX6bCwKuq15niSOcDycwlWDkBSRmWuedm0tUiF0IMeF4oajIV9XtUylOzujbPGbS1hhEEL9/s1600/Cannonbolt_re.png",
+        "referencePageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-cannonbolt-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only RGBA measurement: alpha>=200; Rec.709 luminance. Dark=P20; light=median of pixels luminance>0.7. Native bytes untouched."
+      }
+    },
+    {
+      "id": "reference-reboot-four-arms",
+      "file": "portraits/reference-reboot-four-arms.png",
+      "sha256": "31875ee2158919de6ad100238fbc64144344a5e826418da1bd4707697e314d37",
+      "bytes": 670148,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.49803921568627446,
+      "light": 0.832206274509804,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-four-arms-head-reference-original.png",
+        "referenceSha256": "68819f6a355461ca5de63d9ac046690d5cdae65349d23bf5674f5554dad5702e",
+        "referenceUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZOwzNpDmiqX0HV6LtWQpICjYuTE1Wa4zsRr9K0abmouYOCD0Sd4Pky_GJjXBTPO00kgMUcoADTBPn-lHqdUoO9aguH3OAeoxxpQtNql2zNHukbjTG7Ki-rwpexS3sjKPSkS4AACHNd6bu/s1600/Four_arms_re.png",
+        "referencePageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-four-arms-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only RGBA measurement alpha>=200; Rec.709 luminance. Dark=median main mid-gray face population (0.30<luminance<0.70), excluding dark outline/stripe; light=median population above0.7. Native pixels unchanged."
+      }
+    },
+    {
+      "id": "reference-reboot-gax",
+      "file": "portraits/reference-reboot-gax.png",
+      "sha256": "6fb05aa3982bf3f7e1b9c6f14c6bc2def8200f002ea688853bd45159c49b2c19",
+      "bytes": 813935,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.5420101960784313,
+      "light": 0.8980392156862745,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-alien-v-gax-anatomy-source-original.png",
+        "referenceSha256": "b022ba22d81775bea9894e1c9959536aaa08875c37cf28fe029af1d3106d56bd",
+        "referenceUrl": "https://www.pngaaa.com/api-download/3127648",
+        "referencePageUrl": "https://www.pngaaa.com/download/3127648",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-gax-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only RGBA measurement alpha>=200; Rec.709 luminance. Dark=median main mid-gray face population (0.30<luminance<0.70), excluding dark outline/stripe; light=median population above0.7. Native pixels unchanged."
+      }
+    },
+    {
+      "id": "reference-reboot-grey-matter",
+      "file": "portraits/reference-reboot-grey-matter.png",
+      "sha256": "80f1f0c60b0d5b9bdc71d1623551b7f97e021a3e7daff8798cba903f84fb1d31",
+      "bytes": 966107,
+      "width": 1370,
+      "height": 1148,
+      "dark": 0.20756,
+      "light": 0.7879521568627451,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-grey-matter-head-reference-original.png",
+        "referenceSha256": "cbb483c44528deba855cf56ab83bc59a38cc0f73987cdabc10fcaa6df35ad577",
+        "referenceUrl": "https://www.pngaaa.com/api-download/3127521",
+        "referencePageUrl": "https://www.pngaaa.com/detail/3127521",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-grey-matter-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-reboot-heatblast",
+      "file": "portraits/reference-reboot-heatblast.png",
+      "sha256": "6e83f225b0fccfe7c292cf12706da30faea4d302adf78f40e8c7935b8c7ffddf",
+      "bytes": 630476,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.43584470588235297,
+      "light": 0.8478925490196078,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-heatblast-head-reference-original.png",
+        "referenceSha256": "915ab744cf1ca9b9da3ba0062c3e30ccdd39119319bd852bd6a77269e8a476c6",
+        "referenceUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/heatblast-sheet0.png",
+        "referencePageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-heatblast-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": true,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-reboot-overflow",
+      "file": "portraits/reference-reboot-overflow.png",
+      "sha256": "14ea74fcbf8af931eb3765e0ed6dc174fb8db7c5e51d28cf2f77c208ff53616f",
+      "bytes": 839812,
+      "width": 1402,
+      "height": 1122,
+      "dark": 0.25098039215686274,
+      "light": 0.7254901960784312,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-overflow-head-reference-original.png",
+        "referenceSha256": "93e83570497328ab1b533637bd8482b2c6afec3f0b6a5753dc03988866f0e7bf",
+        "referenceUrl": "https://www.pngaaa.com/api-download/3127540",
+        "referencePageUrl": "https://www.pngaaa.com/detail/3127540",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-overflow-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-reboot-stinkfly",
+      "file": "portraits/reference-reboot-stinkfly.png",
+      "sha256": "da5b754ba49e5b66af86d46fbc366840efcf2a2d010276657eedd7cf3b57ab40",
+      "bytes": 503393,
+      "width": 1240,
+      "height": 1268,
+      "dark": 0.20447215686274509,
+      "light": 0.7890690196078431,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/reboot-stinkfly-head-reference-original.png",
+        "referenceSha256": "16cf03e62c0a438b26f6a724fd7480f9092501c4c5f556072b6aba27fc52e29d",
+        "referenceUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6yyEzI7DCfgfrBPVpvWRQm1pBnuC95x-CgFL0bqy-n5gKFyJi8C3_und8mK-dQ49faIdM5gwGG3N-QcUFivkNaZ8Ygldy3SWyShDCSvOFF6_3ngEU40Tr19peONaYwLkrgMfMvI7Kt1Oq/s1600/Stinkfly_Ben+10+Reboot+Art.png",
+        "referencePageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/reboot-stinkfly-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
       "id": "reference-ripjaws",
       "file": "portraits/reference-ripjaws.png",
       "sha256": "b02013f408ddc3acd4f485c160e134d0bab36f7558792b04240b78d91b2884cd",
@@ -1525,6 +1693,54 @@
       }
     },
     {
+      "id": "reference-ultimate-albedo",
+      "file": "portraits/reference-ultimate-albedo.png",
+      "sha256": "aa124304283c4cb3ea21cefe106ad6ea786f34062c9a6f46463137bdba3a52ae",
+      "bytes": 1164796,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.11736392156862745,
+      "light": 0.7383717647058823,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-albedo-head-reference-original.png",
+        "referenceSha256": "e3b8e97de14232963a9f0ccd0d51f4c09e2985e7a1d253051ffc3ec357002bda",
+        "referenceUrl": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-albedo-official_orig.png",
+        "referencePageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-albedo-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-ultimate-arctiguana",
+      "file": "portraits/reference-ultimate-arctiguana.png",
+      "sha256": "edaeb9473fff651a26da6f9f8fdf203619201efde3bfcdfc5b99416b0d96b5cb",
+      "bytes": 578311,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.24789254901960783,
+      "light": 0.8282847058823528,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-arctiguana-head-reference-original.png",
+        "referenceSha256": "584889928f0faac68085d769932057a3a62001819c40f8c69752cf98aa85e4e1",
+        "referenceUrl": "https://www.realclipart.com/png/full/342-3427488_ben-10-omniverse-ultimate-articguana-albedo-ben-10-omniverse-albedo-articguana.png",
+        "referencePageUrl": "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-arctiguana-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
       "id": "reference-ultimate-cannonbolt",
       "file": "portraits/reference-ultimate-cannonbolt.png",
       "sha256": "93f9e36ce4e48ac35e90923cfe6ccacaae87f27c323222a0ff98fa0f3c787c6e",
@@ -1573,6 +1789,30 @@
       }
     },
     {
+      "id": "reference-ultimate-gravattack",
+      "file": "portraits/reference-ultimate-gravattack.png",
+      "sha256": "dbfea3ca29df9763b2d24d4590b9f564e89ed37b6658bd0eb6589f07667ac28b",
+      "bytes": 865380,
+      "width": 1347,
+      "height": 1168,
+      "dark": 0.4439709803921569,
+      "light": 0.8196078431372549,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-gravattack-original.png",
+        "referenceSha256": "b6b133542488adf7032461106775174a68bd1e50e1c8cb27497093278f74899c",
+        "referenceUrl": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-gravattack-art-png_orig.png",
+        "referencePageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-gravattack-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Read-only Rec.709 luminance on alpha>=200: median mid-gray rock population (0.25<luminance<0.7), excluding black rock fissures, and median bright population above 0.7. No pixel edits."
+      }
+    },
+    {
       "id": "reference-ultimate-humungousaur",
       "file": "portraits/reference-ultimate-humungousaur.png",
       "sha256": "f40b94aaddf6c2650a78e641e241088b8bf2b8a0504f558052b28b1eb86e242a",
@@ -1589,6 +1829,30 @@
         "referencePageUrl": "https://ben10hero.com/ultimate-forms/ultimate-humungosaur/",
         "tool": "built-in-imagegen",
         "promptFile": "docs/prompts/ultimate-humungousaur-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-ultimate-rath",
+      "file": "portraits/reference-ultimate-rath.png",
+      "sha256": "b42671d7c2e662dfe60fbfe5e05b8b6069eb7b63b4bd34df966d074f5dd26b53",
+      "bytes": 1056140,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.3380886274509804,
+      "light": 0.8350109803921568,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-rath-head-reference-original.png",
+        "referenceSha256": "dea8442dc6c9cc803c6d3ba9cfad94032d7e1ab645096b53cf6a5d7a24f71aab",
+        "referenceUrl": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-rath-ov_orig.png",
+        "referencePageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-rath-head.txt",
         "generatedBytesPreserved": true,
         "officialPublisherVerified": false,
         "reuseLicenseVerified": false,
@@ -1666,6 +1930,30 @@
         "reuseLicenseVerified": false,
         "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
         "colorCalibration": "Readonly Rec.709 luminance on alpha>=200: median mid-gray face population (0.12<luminance<0.69), excluding black outlines, and median bright population above 0.7; no pixel edits."
+      }
+    },
+    {
+      "id": "reference-ultimate-wildmutt",
+      "file": "portraits/reference-ultimate-wildmutt.png",
+      "sha256": "a57be675546e7460d00502fbf33fc7e2ac4484b3242ccdf9a638c2ea2e097b5a",
+      "bytes": 818050,
+      "width": 1254,
+      "height": 1254,
+      "dark": 0.1607843137254902,
+      "light": 0.8627450980392157,
+      "source": {
+        "kind": "ai-reference-redraw",
+        "referenceFile": "assets/source-art/ultimate-wildmutt-head-reference-original.png",
+        "referenceSha256": "f47d32773c7529d488f7dd0dc8944b11a0766e5680f1377b14fa0bc2afada182",
+        "referenceUrl": "https://ami.animecharactersdatabase.com/images%20of/Ultimate%20Wildmutt/from/Ben%2010%20Ultimate%20Alien/uploads/chars/38889-1175029872.png",
+        "referencePageUrl": "https://www.animecharactersdatabase.com/characters.php?id=140133",
+        "tool": "built-in-imagegen",
+        "promptFile": "docs/prompts/ultimate-wildmutt-head.txt",
+        "generatedBytesPreserved": true,
+        "officialPublisherVerified": false,
+        "reuseLicenseVerified": false,
+        "alpha": "Native RGBA retained without pixel postprocessing; grayscale gradients and edge noise disclosed.",
+        "colorCalibration": "Readonly normalized Rec.709 luminance on alpha>=200: P20 dark and median of pixels above 0.7 light; no pixel edits."
       }
     },
     {
@@ -3196,6 +3484,270 @@
       ],
       "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
       "scope": "Only nega-gutrot; no automatic family or wearer propagation."
+    },
+    {
+      "formId": "ultimate-wildmutt",
+      "portraitId": "reference-ultimate-wildmutt",
+      "confirmed": true,
+      "reason": "原图、首稿及修订输出均已实际查看。首稿错误地把后背过渡的两段脊片纳入头像，已通过内置图像编辑删除左后两片；当前只有右前眉额两片。保留无眼楔头、四条侧鳃、两枚角牙、锯齿牙列和厚下颌，后缘止于鳃后，无肩背、胸徽或肢体。",
+      "reference": {
+        "url": "https://ami.animecharactersdatabase.com/images%20of/Ultimate%20Wildmutt/from/Ben%2010%20Ultimate%20Alien/uploads/chars/38889-1175029872.png",
+        "pageUrl": "https://www.animecharactersdatabase.com/characters.php?id=140133",
+        "sha256": "f47d32773c7529d488f7dd0dc8944b11a0766e5680f1377b14fa0bc2afada182"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "v1 的四段脊片被误认作全属头部；独立审查及 root 复核后，v2 删除后两段，只保留源图右前眉额上的两片。旧稿与原提示保存，不覆盖错误历史。",
+        "头部轮廓和头颈截断仍为独立头像的图标化重绘；鳃纹、牙列和下颌较原参考加粗，并非原图像素裁切。",
+        "原暗红色与象牙白转为灰阶；保留生成原生灰阶渐变、抗锯齿 alpha 和字节，不声称严格两色或官方透明头像。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-wildmutt; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-albedo",
+      "portraitId": "reference-ultimate-albedo",
+      "confirmed": true,
+      "reason": "已实际查看原图与输出：保留 OV 终极 Albedo 脑褶头盖、中央第三眼及两枚下位眼、横向细瞳、侧带、阔下巴和锯齿闭嘴；输出无下方机械机座、微小手臂或腿。",
+      "reference": {
+        "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-albedo-official_orig.png",
+        "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "sha256": "e3b8e97de14232963a9f0ccd0d51f4c09e2985e7a1d253051ffc3ec357002bda"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "采用略侧向脑头，脑褶与鬓须被放大简化，源图脑顶徽记仍保留；只去掉下方移动机座而未抹除头部原有标志。",
+        "原灰皮肤及红眼/侧带全部转为灰阶，嘴和瞳孔线条加粗。",
+        "生成仍带灰阶渐变及少量边缘抗锯齿，保留原生 alpha 和所有像素，不声称严格两色或官方透明原件。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-albedo; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-arctiguana",
+      "portraitId": "reference-ultimate-arctiguana",
+      "confirmed": true,
+      "reason": "已实际查看原图与输出：只取 OV 终极 Arctiguana 的小型前脸，保留窄双眼、额板纹、宽下垂吻部和下颌尖须；双肩炮、背鳍、肩甲和胸徽均未纳入。",
+      "reference": {
+        "url": "https://www.realclipart.com/png/full/342-3427488_ben-10-omniverse-ultimate-articguana-albedo-ben-10-omniverse-albedo-articguana.png",
+        "pageUrl": "https://www.realclipart.com/max/m2H7G6m2A0Z5d3G6/",
+        "sha256": "584889928f0faac68085d769932057a3a62001819c40f8c69752cf98aa85e4e1"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源图实际面部很小，输出调整为较正面的图标，须状口缘的曲率、长度和脸颊小分隔为 AI 概括，不能作为精确设定图。",
+        "原深蓝面部与红眼转为灰阶，眼睛和脸部细线为小图标可读性适度放大；外侧细须两根与中央尖须全部显示。",
+        "生成仍带灰阶渐变及少量边缘抗锯齿，保留原生 alpha 和所有像素，不声称严格两色或官方透明原件。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-arctiguana; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-rath",
+      "portraitId": "reference-ultimate-rath",
+      "confirmed": true,
+      "reason": "已实际查看原图与输出：保留 OV 终极 Rath 的三枚长短不同冠刺、两枚斜眼、上扬眉形、猫鼻、宽吻、下弯双颊须和外侧鬃毛；没有胸带、肩部服饰或爪手。",
+      "reference": {
+        "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-rath-ov_orig.png",
+        "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "sha256": "dea8442dc6c9cc803c6d3ba9cfad94032d7e1ab645096b53cf6a5d7a24f71aab"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "由源图明显侧向改为较正面的图标，鬃毛展开及冠刺长度比例为 AI 重绘；两侧鬃毛较源图更对称。",
+        "原红色冠刺/眉纹及黑白面部转为灰阶，眉纹、眼与双颊须被加粗以适配头像。",
+        "生成仍带灰阶渐变及少量边缘抗锯齿，保留原生 alpha 和所有像素，不声称严格两色或官方透明原件。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-rath; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-cannonbolt",
+      "portraitId": "reference-reboot-cannonbolt",
+      "confirmed": true,
+      "reason": "实看 Reboot 原始全身图与输出：保留低圆宽顶、低垂双眼、长弧下撇嘴和宽白脸；所有黄色肩甲及身体徽章均未包含。",
+      "reference": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAlAww0JMrh2i46r1AnTruXtqawfgcbIuOvQ_-KwAH6Oa7W88sz_PLViokoiMMfGAErNzsbeX6bCwKuq15niSOcDycwlWDkBSRmWuedm0tUiF0IMeF4oajIV9XtUylOzujbPGbS1hhEEL9/s1600/Cannonbolt_re.png",
+        "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "sha256": "21fabfc516145dedc8db0516c1aadb8814b192d388949afcf84cca5911c8de6e"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图头部与躯干无独立颈界，头像下缘为脸部区域的图标化切界，不是直接抠图。",
+        "遮住源图左侧头面的肩甲移除后，灰色头顶左下方做圆弧补全；此部分属于 AI 解释。",
+        "原配色变成灰阶，存在细微渐变和灰色描边；不是严格两个 RGB。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-cannonbolt; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-four-arms",
+      "portraitId": "reference-reboot-four-arms",
+      "confirmed": true,
+      "reason": "实看 Reboot 小头部和输出：四只眼、头面中央深色纵带、宽厚下颌及光头轮廓正确；未带入肩或衣领。",
+      "reference": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZOwzNpDmiqX0HV6LtWQpICjYuTE1Wa4zsRr9K0abmouYOCD0Sd4Pky_GJjXBTPO00kgMUcoADTBPn-lHqdUoO9aguH3OAeoxxpQtNql2zNHukbjTG7Ki-rwpexS3sjKPSkS4AACHNd6bu/s1600/Four_arms_re.png",
+        "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "sha256": "68819f6a355461ca5de63d9ac046690d5cdae65349d23bf5674f5554dad5702e"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图头部较小，生成头像放大并整理脸侧细线和下颌边界。",
+        "保留源图四眼及中央纵带，灰阶和较均匀的下颌体量属于 AI 图标化解释。",
+        "原生灰阶含轻微渐变，未程序重着色。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-four-arms; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-gax",
+      "portraitId": "reference-reboot-gax",
+      "confirmed": true,
+      "reason": "实看 Reboot Gax 来源、被拒用首稿及修正输出：最终保留圆顶、斜眼、双侧圆片、小嘴和六个完整下垂触须尖端；无身体肩甲。",
+      "reference": {
+        "url": "https://www.pngaaa.com/api-download/3127648",
+        "pageUrl": "https://www.pngaaa.com/download/3127648",
+        "sha256": "b022ba22d81775bea9894e1c9959536aaa08875c37cf28fe029af1d3106d56bd"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "首稿多出第七条短内侧触须；编辑第二稿去掉，六个末端已实看核数。",
+        "源图偏三分之四，头像接近正面；触须弯曲、重叠和末端分离被图标化整理。",
+        "去掉颜色及低分辨率表面杂纹，存在轻微灰阶渐变；不是原图抠图。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-gax; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-grey-matter",
+      "portraitId": "reference-reboot-grey-matter",
+      "confirmed": true,
+      "reason": "实看来源与生成头像：保留重启版双瓣宽额、中央深色额纹、双大眼横向短瞳、鼻孔和窄下脸；源图遮脸的手、肩身均去除。",
+      "reference": {
+        "url": "https://www.pngaaa.com/api-download/3127521",
+        "pageUrl": "https://www.pngaaa.com/detail/3127521",
+        "sha256": "cbb483c44528deba855cf56ab83bc59a38cc0f73987cdabc10fcaa6df35ad577"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源图中手遮住的部分脸颊和口部由 AI 补全为简短闭合口线，并非原图可见细节。",
+        "双大眼、额部轮廓接近原参考；眉形及下颌比例作图标化概括。",
+        "保留生成原生灰阶渐变和抗锯齿 alpha；不是严格两色、官方透明原图或动画帧像素提取。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-grey-matter; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-heatblast",
+      "portraitId": "reference-reboot-heatblast",
+      "confirmed": true,
+      "reason": "实看官方游戏精灵表与输出：只取重启版火焰头，保留尖火冠、内外火焰层次、双眼周面纹及短口；未带入肩甲、胸标或火球特效。",
+      "reference": {
+        "url": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/images/heatblast-sheet0.png",
+        "pageUrl": "https://i.cartoonnetwork.com/games/ben-10/alien-rivals/index.html",
+        "sha256": "915ab744cf1ca9b9da3ba0062c3e30ccdd39119319bd852bd6a77269e8a476c6"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "来源为官方游戏改编精灵表，非动画设定稿；头像依据其可见脸部概括。",
+        "源图头部像素较少，面纹、口部与火焰锯齿经过 AI 放大和对称化，不是官方原生头像。",
+        "保留生成原生灰阶渐变和抗锯齿 alpha；不是严格两色、官方透明原图或动画帧像素提取。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-heatblast; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-overflow",
+      "portraitId": "reference-reboot-overflow",
+      "confirmed": true,
+      "reason": "实看来源、生成头像并补查解剖说明：保留 V 形额脊、深色双眼罩、中央三孔呼吸器及短脸侧管口。头部两侧的储水罐属于头部结构，采用它们是有意保留；下方胸部、肩身与长管没有混入头像。",
+      "reference": {
+        "url": "https://www.pngaaa.com/api-download/3127540",
+        "pageUrl": "https://www.pngaaa.com/detail/3127540",
+        "sha256": "93e83570497328ab1b533637bd8482b2c6afec3f0b6a5753dc03988866f0e7bf"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "初次提示误将头侧储水罐归为肩背部件；实际生成仍保留双罐。复查来源图和社区形态说明后更正判断，保留实际发送的提示原文，未伪造正确提示或再生图。",
+        "储水罐内液体和气泡省略为浅灰盖面，圆罐与眉脊轮廓保留；管线按头像边界缩短为端口，不表现原全身连接。",
+        "保留生成原生灰阶渐变和抗锯齿 alpha；不是严格两色、官方透明原图或动画帧像素提取。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-overflow; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "reboot-stinkfly",
+      "portraitId": "reference-reboot-stinkfly",
+      "confirmed": true,
+      "reason": "实看重启版参考及头像：恰为两只直接附着的复眼、两根长触角、窄长脸与下巴暗块，无初代四眼柄，无翅膀、长脖或胸部。",
+      "reference": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6yyEzI7DCfgfrBPVpvWRQm1pBnuC95x-CgFL0bqy-n5gKFyJi8C3_und8mK-dQ49faIdM5gwGG3N-QcUFivkNaZ8Ygldy3SWyShDCSvOFF6_3ngEU40Tr19peONaYwLkrgMfMvI7Kt1Oq/s1600/Stinkfly_Ben+10+Reboot+Art.png",
+        "pageUrl": "https://ben10omniverse2013.blogspot.com/2016/09/ben-10-reboot-alien-offical-artwork-bios.html",
+        "sha256": "16cf03e62c0a438b26f6a724fd7480f9092501c4c5f556072b6aba27fc52e29d"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "源图偏侧脸仍保留，但图标中的复眼、触角略粗大，便于小尺寸识别。",
+        "复眼内部网格、脸侧线条和微笑由 AI 概括重绘，不是源图裁切。",
+        "保留生成原生灰阶渐变和抗锯齿 alpha；不是严格两色、官方透明原图或动画帧像素提取。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only reboot-stinkfly; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "ultimate-gravattack",
+      "portraitId": "reference-ultimate-gravattack",
+      "confirmed": true,
+      "reason": "实际查看终极 Gravattack 原图和生成输出：仅中央主体的双高角、岩石眉骨、窄双眼、旋涡熔岩口及岩质面颊进入头像；三枚卫星、巨大手臂及徽章未纳入。源形态的头躯融合，图标的下沿取口部下方。",
+      "reference": {
+        "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/ultimate-gravattack-art-png_orig.png",
+        "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "sha256": "b6b133542488adf7032461106775174a68bd1e50e1c8cb27497093278f74899c"
+      },
+      "bindingKind": "ai-reference-redraw",
+      "visualDifferences": [
+        "原图为侧向且头躯融合；图标转为近正面对称，面部下沿和颊部截面含重绘解释。",
+        "双角的层纹和岩石裂纹被整理，嘴内保留旋涡而未增加牙齿。原品红岩石与橙色熔岩改为灰阶；仍含渐变和黑描线。",
+        "透明留白小于提示期望的14%，但两角完整且所有边缘像素低于alpha128；原生字节保留。"
+      ],
+      "publicDisclosure": "依据已保留的角色参考图制作的 AI 头像，比例与细节含图标化重绘，不是官方透明原图。",
+      "scope": "Only ultimate-gravattack; no automatic edition, wearer or mixed-form propagation."
+    },
+    {
+      "formId": "heatblast-ua",
+      "portraitId": "dna-omv-004",
+      "confirmed": true,
+      "reason": "已实际并列查看 UA 彩色源与 APK 004：外部尖焰、头顶两尖岩石额骨、浅色双眼、颊部裂口与分段下颌对应；只为此 UA 条目显式复用抽象头像。",
+      "reference": {
+        "url": "https://ben10hero.com/wp-content/uploads/2016/07/heatblast_ua.png",
+        "pageUrl": "https://ben10hero.com/omnitrix-alien-heroes-1/heatblast/",
+        "sha256": "140c462ecf1fdda9c7144349f047a4d96750f7c6c2dd5515a4e2510fd3e0c627"
+      },
+      "bindingKind": "reviewed-existing-icon-reuse",
+      "visualDifferences": [
+        "头像统一为正面尖焰，未保留参考中非对称飘焰和斜向姿态；面部线条为第三方图标简化，不是该版本逐帧提取。",
+        "只表达可识别的头部；UA 与 OV 的身体比例、配色与装束由各自全身素材和名称保留。"
+      ],
+      "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
+      "scope": "Only heatblast-ua; no automatic family or wearer propagation."
+    },
+    {
+      "formId": "heatblast-ov",
+      "portraitId": "dna-omv-004",
+      "confirmed": true,
+      "reason": "已实际并列查看 OV 彩色源与 APK 004：头顶两尖与凹口、外覆长焰、分隔眼眶、颊部缺口和独立下巴对应；只为此 OV 条目显式复用抽象头像。",
+      "reference": {
+        "url": "https://ben10db.weebly.com/uploads/5/2/4/6/52465489/heatblast-omniverse-official_orig.png",
+        "pageUrl": "https://ben10db.weebly.com/omniverse.html",
+        "sha256": "2350c535f36bfc1ad6c71aaa2c643de28f524f1c269d219742561a38e936eed2"
+      },
+      "bindingKind": "reviewed-existing-icon-reuse",
+      "visualDifferences": [
+        "头像统一为正面尖焰，未保留参考中非对称飘焰和斜向姿态；面部线条为第三方图标简化，不是该版本逐帧提取。",
+        "只表达可识别的头部；UA 与 OV 的身体比例、配色与装束由各自全身素材和名称保留。"
+      ],
+      "publicDisclosure": "逐项对照对应形态后复用既有图标；图标为简化表达，不是该形态专属的官方头像。",
+      "scope": "Only heatblast-ov; no automatic family or wearer propagation."
     }
   ]
 }

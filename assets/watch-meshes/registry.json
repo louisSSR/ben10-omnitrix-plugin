@@ -4,313 +4,169 @@
     "original": {
       "schemaVersion": 1,
       "watch": "original",
-      "parts": [
-        {
-          "id": "source-classic-cuff",
-          "group": "body",
-          "file": "./assets/runtime/ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82.f32",
-          "vertices": 60768,
-          "bytes": 2430720,
-          "sha256": "ce168b53b99817fad718f92fdf3c704dc983dc725daac02b44943d81263cef82",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "source-classic-face",
-          "group": "core",
-          "file": "./assets/runtime/f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04.f32",
-          "vertices": 4524,
-          "bytes": 180960,
-          "sha256": "f08f472c4c6a8611bc9baf839cdd878274241100bd0dbe0d63592dddfb4a8a04",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.004,
-            0.011,
-            0.008,
-            3
-          ]
-        },
-        {
-          "id": "authored-hidden-lift-shaft",
-          "group": "core",
-          "file": "./assets/runtime/817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15.f32",
-          "vertices": 768,
-          "bytes": 30720,
-          "sha256": "817f3f2062423f06a8bad1096b24d757c2f463b7cab47503255b23f99868df15",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "authored-hourglass-signal",
-          "group": "core",
-          "file": "./assets/runtime/aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d.f32",
-          "vertices": 12,
-          "bytes": 480,
-          "sha256": "aea7fd835bfaef5e9863075ebc76abd1e7289ab8103ae6483aa137757693131d",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-lift-shaft-signal",
-          "group": "core",
-          "file": "./assets/runtime/8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46.f32",
-          "vertices": 48,
-          "bytes": 1920,
-          "sha256": "8a6c1f09c264374426163b49814d5ed2d84690e41eaab22226e2db51e7be7b46",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        }
-      ],
+      "modelKind": "source-mesh",
+      "sourceArchiveName": "Omnitrix+ben+10+reboot+season+1.zip",
+      "sourceArchiveSha256": "5d42650c2ebe6c2e7c33f35fb2daa4791790c028697863e044305e67812cdfa9",
+      "officialModel": false,
+      "materialsAuthored": true,
+      "sourceFinish": "source-preserved",
+      "sourceRig": false,
+      "sourceMotion": {
+        "core": true,
+        "lids": false
+      },
+      "geometryMethod": "source-derived-display-lod",
+      "lift": 0.1,
       "face": {
         "center": [
           0,
           0.361,
           0
         ],
-        "radius": 0.388
+        "radius": 0.285
       },
-      "lift": 0.32,
-      "sourceArchiveSha256": "086cfaec1434ff39242da8eceb77a9d7cd2e07eeedd6952a18535c3034a9d458",
-      "sourceArchiveName": "Ben+10+omnitrix+watch+No+support!.+.zip",
-      "modelKind": "source-mesh",
-      "materialsAuthored": true,
-      "officialModel": false,
-      "assembly": "Source topology with documented normalization and authored rigging; no original animation or materials claimed.",
+      "parts": [
+        {
+          "id": "source-reboot-cuff",
+          "group": "body",
+          "file": "./assets/runtime/6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248.f32",
+          "sha256": "6321550eca690d33b190f427e69ebf79d3f835ae940aec9521eaea97785f6248",
+          "vertices": 108000,
+          "bytes": 4320000,
+          "vertexLayout": "pn-c10-f32le",
+          "materialRegions": true
+        },
+        {
+          "id": "source-reboot-dial",
+          "group": "body",
+          "file": "./assets/runtime/b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89.f32",
+          "sha256": "b918d4f926ceb333e11a3df9cc108d1dad9bc4404bcd5b6dd37433c4414eea89",
+          "vertices": 90000,
+          "bytes": 3600000,
+          "vertexLayout": "pn-c10-f32le",
+          "materialRegions": true
+        },
+        {
+          "id": "source-reboot-core",
+          "group": "core",
+          "file": "./assets/runtime/22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5.f32",
+          "sha256": "22c6a1ebe47b70cae11ea4391dd9598827ffb47d7c0d08711c8a621268e896a5",
+          "vertices": 144000,
+          "bytes": 5760000,
+          "vertexLayout": "pn-c10-f32le",
+          "materialRegions": true
+        },
+        {
+          "id": "source-reboot-button",
+          "group": "body",
+          "file": "./assets/runtime/422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf.f32",
+          "sha256": "422f1000f96f217bdef36cd74babd7774346512da9f9c61b48cebe4332147ccf",
+          "vertices": 18000,
+          "bytes": 720000,
+          "vertexLayout": "pn-c10-f32le",
+          "materialRegions": true
+        }
+      ],
+      "assembly": "Four actual Reboot Season 1 source components with common uniform scale; measured project placement of dial, core and side button. Original printer assemble_item placements are not a mechanical rig.",
+      "motionDescription": "Only original thick Core component moves; native dial, cuff and button stay assembled. No extra caps, shafts, symbols or plate geometry.",
+      "triangles": 120000,
       "bounds": {
         "min": [
-          -0.7113333315,
-          -0.7641983438762354,
-          -0.6078666651
+          -0.6890043616294861,
+          -0.8779661059379578,
+          -0.6436405181884766
         ],
         "max": [
-          0.646666665,
-          0.368,
-          0.6078666651
+          0.6890219449996948,
+          0.37503817677497864,
+          0.643624484539032
         ]
-      },
-      "triangles": 22040
+      }
     },
     "recalibrated": {
       "schemaVersion": 1,
       "watch": "recalibrated",
+      "modelKind": "source-mesh",
+      "sourceArchiveName": "Ben+10+Omnitrix+Watch.zip",
+      "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
+      "officialModel": false,
+      "materialsAuthored": true,
+      "sourceFinish": "source-preserved",
       "parts": [
         {
           "id": "source-af-case-and-strap",
           "group": "body",
-          "file": "./assets/runtime/bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691.f32",
+          "file": "./assets/runtime/38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4.f32",
+          "sha256": "38eec9471335056936007fd4a116227342dadcef716a901cbc79a6d20cf654e4",
           "vertices": 54474,
           "bytes": 2178960,
-          "sha256": "bf2f8de909280e09eb1215d7f9c42127723bf2683614dee7802a9be5f6bfd691",
           "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "source-af-face",
-          "group": "core",
-          "file": "./assets/runtime/73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014.f32",
-          "vertices": 41988,
-          "bytes": 1679520,
-          "sha256": "73e73ab7f81bec6d7c847c027ce02eb81c039815ffb87d8fd7a6700bbc22d014",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.004,
-            0.011,
-            0.008,
-            3
-          ]
-        },
-        {
-          "id": "authored-hidden-lift-shaft",
-          "group": "core",
-          "file": "./assets/runtime/77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871.f32",
-          "vertices": 768,
-          "bytes": 30720,
-          "sha256": "77b26be0ad99be29d519bcb0d22edab93fe211f5e2762c95dd42c29bf81cc871",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "authored-hourglass-signal",
-          "group": "core",
-          "file": "./assets/runtime/7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4.f32",
-          "vertices": 12,
-          "bytes": 480,
-          "sha256": "7bda6a5cbed3a688d40019c5e75ea822036a0fc06e6253a7c2d2f0332aca31a4",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-lift-shaft-signal",
-          "group": "core",
-          "file": "./assets/runtime/3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06.f32",
-          "vertices": 48,
-          "bytes": 1920,
-          "sha256": "3e978daa1637fc78b44cbc30401d2bc74acf1680ad095c5ea32ca16912a04e06",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
+          "materialRegions": true
         }
       ],
       "face": {
         "center": [
           0,
-          0.331,
+          0.341,
           0
         ],
         "radius": 0.388
       },
-      "lift": 0.33,
-      "sourceArchiveSha256": "7d5bf33ed408cc7cf3b706b3f33445925fa9043f78c6593107fca3feb6fff448",
-      "sourceArchiveName": "Ben+10+Omnitrix+Watch.zip",
-      "modelKind": "source-mesh",
-      "materialsAuthored": true,
-      "officialModel": false,
-      "assembly": "Source topology with documented normalization and authored rigging; no original animation or materials claimed.",
+      "lift": 0,
+      "sourceMotion": {
+        "core": false,
+        "lids": false
+      },
+      "sourceRig": false,
+      "motionDescription": "Only separate supplied source parts can move; fixed source bodies are not split to fabricate a core.",
+      "assembly": "Unchanged source triangle coordinates under recorded rigid transform and common uniform scale. No new watch geometry.",
       "bounds": {
         "min": [
-          -0.6767048864051765,
-          -1.0220244672,
-          -0.5464274754
+          -0.6767048835754395,
+          -1.0220245122909546,
+          -0.5464274883270264
         ],
         "max": [
-          0.6767048880948235,
-          0.341,
-          0.5464274754
+          0.6767048835754395,
+          0.3409999907016754,
+          0.5464274883270264
         ]
       },
-      "triangles": 32430
+      "triangles": 18158
     },
     "ultimatrix": {
       "schemaVersion": 1,
       "watch": "ultimatrix",
+      "modelKind": "source-mesh",
+      "sourceArchiveName": "omnitrix+ultimate_stls.zip",
+      "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
+      "officialModel": false,
+      "materialsAuthored": true,
+      "sourceFinish": "source-preserved",
       "parts": [
         {
           "id": "source-ultimate-cuff",
           "group": "body",
-          "file": "./assets/runtime/5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c.f32",
+          "file": "./assets/runtime/8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557.f32",
+          "sha256": "8edfcbf81cd507946a18f6248b670deebd5f9aef803b26b3f1711233e9e5c557",
           "vertices": 14784,
           "bytes": 591360,
-          "sha256": "5ae0138ea6131b19d1f770b280e46e408307b7829402cd45d8c9820fd7be5c2c",
           "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
+          "materialRegions": true
         },
         {
           "id": "source-ultimate-side-fittings",
           "group": "body",
-          "file": "./assets/runtime/c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36.f32",
+          "file": "./assets/runtime/5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af.f32",
+          "sha256": "5a9744af37a54c5da871b9c31fdd08eabe516617789a1cf638f1c34e05d8d3af",
           "vertices": 13038,
           "bytes": 521520,
-          "sha256": "c066efb53d8f391dec2c939929b6671a030883799fabf81d6cc9524b46c22b36",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.43,
             0.49,
             0.52,
             2
-          ]
-        },
-        {
-          "id": "source-ultimate-independent-face",
-          "group": "core",
-          "file": "./assets/runtime/f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02.f32",
-          "vertices": 41994,
-          "bytes": 1679760,
-          "sha256": "f20b1ced84d4945d6492a56c564ee614de88e43ab01e466a4e298bbafd849d02",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.004,
-            0.011,
-            0.008,
-            3
-          ]
-        },
-        {
-          "id": "authored-hidden-lift-shaft",
-          "group": "core",
-          "file": "./assets/runtime/fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48.f32",
-          "vertices": 768,
-          "bytes": 30720,
-          "sha256": "fd0299e80f01bfbc38e1f9357e31f3f5210f04be71b70ab67b681082f14f4e48",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "authored-hourglass-signal",
-          "group": "core",
-          "file": "./assets/runtime/68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e.f32",
-          "vertices": 12,
-          "bytes": 480,
-          "sha256": "68f9bc52afe33c15caba592020559af43070171c871e8f889b8ea81afe587b1e",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-lift-shaft-signal",
-          "group": "core",
-          "file": "./assets/runtime/9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5.f32",
-          "vertices": 48,
-          "bytes": 1920,
-          "sha256": "9a70115e70403f7559147970382438342d40196e336788f59b939bbef3826bd5",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
           ]
         }
       ],
@@ -322,13 +178,14 @@
         ],
         "radius": 0.471
       },
-      "lift": 0.3,
-      "sourceArchiveSha256": "51566fbd798b5b015829618e7cbde5bf087b45fc56badb8c1b9f96ebded07d52",
-      "sourceArchiveName": "omnitrix+ultimate_stls.zip",
-      "modelKind": "source-mesh",
-      "materialsAuthored": true,
-      "officialModel": false,
-      "assembly": "Source topology with documented normalization and authored rigging; no original animation or materials claimed.",
+      "lift": 0,
+      "sourceMotion": {
+        "core": false,
+        "lids": false
+      },
+      "sourceRig": false,
+      "motionDescription": "Only separate supplied source parts can move; fixed source bodies are not split to fabricate a core.",
+      "assembly": "Unchanged source triangle coordinates under recorded rigid transform and common uniform scale. No new watch geometry.",
       "camera": {
         "distance": 5.6,
         "target": [
@@ -339,29 +196,35 @@
       },
       "bounds": {
         "min": [
-          -1.4617920019148558,
-          -1.213157236328125,
-          -0.7550147402343751
+          -1.4617919921875,
+          -1.2131571769714355,
+          -0.7550147175788879
         ],
         "max": [
-          1.30047801953125,
-          0.338,
-          0.744902740234375
+          1.3004779815673828,
+          0.33067724108695984,
+          0.7449027299880981
         ]
       },
-      "triangles": 23548
+      "triangles": 9274
     },
     "omniverse": {
       "schemaVersion": 1,
       "watch": "omniverse",
+      "modelKind": "source-mesh",
+      "sourceArchiveName": "saat-yesil_stls.zip",
+      "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
+      "officialModel": false,
+      "materialsAuthored": true,
+      "sourceFinish": "source-preserved",
       "parts": [
         {
           "id": "source-ov-silver-face-ring",
           "group": "core",
-          "file": "./assets/runtime/be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797.f32",
+          "file": "./assets/runtime/f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f.f32",
+          "sha256": "f39273af621f65add856ff52430690eea2d50b560b6c35ae67054ffade6cb43f",
           "vertices": 4164,
           "bytes": 166560,
-          "sha256": "be532159e769f3461bc199aa141448608d1b4983168825f68665a230f86ae797",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.43,
@@ -373,10 +236,10 @@
         {
           "id": "source-ov-middle-case",
           "group": "body",
-          "file": "./assets/runtime/4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4.f32",
+          "file": "./assets/runtime/80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816.f32",
+          "sha256": "80e50dda18c97f14d25d5b449c031a8b9115f6acf99d89b5eb952a6fe48da816",
           "vertices": 7476,
           "bytes": 299040,
-          "sha256": "4c0fd03a0e0df3f2f4a33ebed5712d16a4d416735c79eb110337efecfa1bcab4",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.046,
@@ -388,10 +251,10 @@
         {
           "id": "source-ov-cylindrical-face-core",
           "group": "core",
-          "file": "./assets/runtime/3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533.f32",
+          "file": "./assets/runtime/681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9.f32",
+          "sha256": "681293d8505c79f5cebb738d332684595321f9f348d0fb020d133910127b54a9",
           "vertices": 7488,
           "bytes": 299520,
-          "sha256": "3ce0a37904616a0bb27cdf77a1fbbec7f816bc8910e5d35f3c47110f21abe533",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.022,
@@ -403,10 +266,10 @@
         {
           "id": "source-ov-bottom-case-with-post",
           "group": "body",
-          "file": "./assets/runtime/98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61.f32",
+          "file": "./assets/runtime/178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7.f32",
+          "sha256": "178054f9ef4bd466530d9247e0c095de196bf9ef9af703e3a9f78cdbab8730b7",
           "vertices": 10245,
           "bytes": 409800,
-          "sha256": "98bbfe16fb0331bc171160614b92d52dfcfcfdd97c5649b07345cb8fe675de61",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.022,
@@ -416,42 +279,27 @@
           ]
         },
         {
-          "id": "derived-ov-cover-lid-left",
-          "group": "lid-left",
-          "file": "./assets/runtime/ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f.f32",
-          "vertices": 7239,
-          "bytes": 289560,
-          "sha256": "ceb31ad270be570b9563480fab7b5e4479695798fad0dfbdd8c03962d10afa1f",
+          "id": "source-ov-single-cover",
+          "group": "body",
+          "file": "./assets/runtime/d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8.f32",
+          "sha256": "d01d385b7489aa865e6d2100c0be0be0fdb55612bffbf29476abb09d216e6ca8",
+          "vertices": 8556,
+          "bytes": 342240,
           "vertexLayout": "pn-c10-f32le",
           "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "derived-ov-cover-lid-right",
-          "group": "lid-right",
-          "file": "./assets/runtime/073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c.f32",
-          "vertices": 1815,
-          "bytes": 72600,
-          "sha256": "073fe58353ef5bdd3ba0241279e1d9f893bae4a43462f6467fbf762d6b8fdd9c",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
+            0.046,
+            0.36,
+            0.009,
             1
           ]
         },
         {
           "id": "source-ov-upper-case",
           "group": "body",
-          "file": "./assets/runtime/89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936.f32",
+          "file": "./assets/runtime/edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874.f32",
+          "sha256": "edb2acecb42e53fd5f9986c5859206ee5faf8ea3194ccbe5df968343f95fb874",
           "vertices": 7947,
           "bytes": 317880,
-          "sha256": "89e0c75f3a21f6123a22a97a83f3aaff66cde46ccb4cff8f96531caa3d2a4936",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.022,
@@ -463,91 +311,16 @@
         {
           "id": "source-ov-curved-cuff",
           "group": "body",
-          "file": "./assets/runtime/093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f.f32",
+          "file": "./assets/runtime/10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9.f32",
+          "sha256": "10bd20fd8b679ddae68dc3be2343c81638f5c40edcba0ec1385c9c2e4a2877e9",
           "vertices": 9810,
           "bytes": 392400,
-          "sha256": "093aebba8b3aa9857660e85a797b41328da21eca3d33f2b9c03c43d31600923f",
           "vertexLayout": "pn-c10-f32le",
           "material": [
             0.57,
             0.61,
             0.54,
             1
-          ]
-        },
-        {
-          "id": "authored-hidden-lift-shaft",
-          "group": "core",
-          "file": "./assets/runtime/d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5.f32",
-          "vertices": 768,
-          "bytes": 30720,
-          "sha256": "d222dee8a08edf9fb2c18ad8b0d922f96fbd6370b7e6418c9eec287034263ac5",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.022,
-            0.029,
-            0.034,
-            1
-          ]
-        },
-        {
-          "id": "authored-cover-signal-lid-left",
-          "group": "lid-left",
-          "file": "./assets/runtime/8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25.f32",
-          "vertices": 18,
-          "bytes": 720,
-          "sha256": "8977a7ca5f52f975644a5748d8d7a3a032da17fbcff554d5466b6c27199f0f25",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-cover-signal-lid-right",
-          "group": "lid-right",
-          "file": "./assets/runtime/a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f.f32",
-          "vertices": 18,
-          "bytes": 720,
-          "sha256": "a23a44ca0e78692a51b3ba0dbbea0cffbd4891ce42fc78a8e610fbb77c6d532f",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-hourglass-signal",
-          "group": "core",
-          "file": "./assets/runtime/cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8.f32",
-          "vertices": 12,
-          "bytes": 480,
-          "sha256": "cbf7c75413568ccc3b513034af54127e33ccd566206a515c9b6ebe28a3695eb8",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
-          ]
-        },
-        {
-          "id": "authored-lift-shaft-signal",
-          "group": "core",
-          "file": "./assets/runtime/40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc.f32",
-          "vertices": 48,
-          "bytes": 1920,
-          "sha256": "40fb8146fe1a60dd0639bb30fbe1e59344ffec501a2ee90179cf5f18175ff1bc",
-          "vertexLayout": "pn-c10-f32le",
-          "material": [
-            0.3,
-            0.86,
-            0.016,
-            4
           ]
         }
       ],
@@ -560,25 +333,27 @@
         "radius": 0.292
       },
       "lift": 0.35,
-      "sourceArchiveSha256": "949a6435ebed2d15b81b3675ba28c5bec1f701af8dd03b4d9b84c76194423d2c",
-      "sourceArchiveName": "saat-yesil_stls.zip",
-      "modelKind": "source-mesh",
-      "materialsAuthored": true,
-      "officialModel": false,
-      "assembly": "Source topology with documented normalization and authored rigging; no original animation or materials claimed.",
+      "sourceMotion": {
+        "core": true,
+        "lids": false
+      },
+      "sourceRig": false,
+      "motionDescription": "Only separate supplied source parts can move; fixed source bodies are not split to fabricate a core.",
+      "assembly": "Unchanged source triangle coordinates under recorded rigid transform and common uniform scale. No new watch geometry.",
+      "coverDescription": "Original single cover kept whole and stationary in this first original-geometry preview.",
       "bounds": {
         "min": [
-          -0.7574746801757811,
-          -0.9120198305273437,
-          -0.500000005996094
+          -0.7574746608734131,
+          -0.9120198488235474,
+          -0.5
         ],
         "max": [
-          0.6565508007812492,
-          0.427,
-          0.5000000009472657
+          0.6565508246421814,
+          0.4227270483970642,
+          0.5
         ]
       },
-      "triangles": 19016
+      "triangles": 18562
     }
   }
 }

@@ -1,8 +1,8 @@
 export const WATCHES = Object.freeze([
-  { id: 'original', name: '初代 Omnitrix', era: 'ORIGINAL SERIES', number: '01', detail: '粗黑表带 · 灰白弯爪 · 四灯与独立按钮' },
+  { id: 'original', name: '重启版 Omnitrix', era: 'REBOOT SEASON 1', number: '01', detail: '用户提供的第一季表款 · 原表体、表盘、表芯与按钮' },
   { id: 'recalibrated', name: '重校准 Omnitrix', era: 'ALIEN FORCE', number: '02', detail: '紧凑黑绿表壳 · 立体全息投影' },
   { id: 'ultimatrix', name: 'Ultimatrix', era: 'ULTIMATE ALIEN', number: '03', detail: '绿色长护臂 · 侧面弯管 · 上端圆盘' },
-  { id: 'omniverse', name: '完成版 Omnitrix', era: 'OMNIVERSE', number: '04', detail: '黑绿滑盖 · 浅色表带 · 打开的圆形核心' },
+  { id: 'omniverse', name: '完成版 Omnitrix', era: 'OMNIVERSE', number: '04', detail: '用户提供的完整表盖、表带与独立表芯' },
 ]);
 export const MODES = Object.freeze([
   { id: 'projection', name: '全息投影', code: '01', hint: '滑动切换 · 点击表盘锁定', description: '从表盘升起你的下一种形态。' },

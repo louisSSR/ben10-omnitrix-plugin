@@ -1,8 +1,16 @@
 # 素材与署名
 
+0.6.7 候选新增 12 张内置 imagegen 参考头像，包含 7 个 Reboot 形态及 5 个终极形态；保留原生 RGBA 字节，没有程序像素后处理。Reboot Heatblast 参考来自 Cartoon Network 的 Alien Rivals 游戏精灵表，其他新增头像采用已注明网址的社区转载参考。官方游戏参考不使生成头像成为官方透明素材，也不代表动画设定稿。源图低清细节、被手遮挡的脸部、头躯边界、鬃毛和须状结构含 AI 图标化解释，逐项差异见 `assets/portraits.json` 和 `docs/review-v067.md`。
+
+Ultimate Wildmutt 首稿将两块后背过渡脊片误带入头像，已编辑移除；当前保留两块前部眉额脊片。Reboot Gax 的触须边界经过修订。Reboot Overflow 保留原图真实的头侧水罐，液体气泡和管线按图标用途简化。UA 与 OV Heatblast 各自核对后新增两条既有 DNA Altering 图标复用绑定，没有新增 APK 图标资源，也没有把普通、重启或其他佩戴者版本自动混用。
+
+0.6.7 手表采用四个用户提供的来源包：`Omnitrix+ben+10+reboot+season+1.zip`、`Ben+10+Omnitrix+Watch.zip`、`omnitrix+ultimate_stls.zip`、`saat-yesil_stls.zip`。第一槽使用用户指定的 Reboot 第一季表款，四原件经 QEM 减面为 120,000 面显示版本；AF、UA、OV 保留源几何，仅 OV 省略转为 float32 后面积恰为零的 16 面。共 14 个运行网格、165,994 个三角，未附加人工盘盖、符号薄片或升降轴。源包保持原字节，源作者、许可及官方发布链尚未确定。
+
+Reboot 与 OV 仅移动实际独立的原表芯部件；AF、UA 使用原整表，OV 原单片盖保持完整且固定。配色、材质分类、装配变换和运动距离由本项目编制，不是原文件自带 RGB 或动画骨架。程序粗糙度、细纹和棚灯反射用于预览，不是实测 PBR 材质。源自带的交叠与未确认机械配合仍披露，不声称全部源模型已修复或可以直接制造。来源哈希及转换边界见 `assets/watch-meshes/provenance.json`、`assets/watch-meshes/conversion-receipt.json` 和 `docs/watch-model.md`。APK 动作分析仅为静态参考，未将反编译代码、完整 APK 或动作候选纳入正式交互。
+
 0.6.6 新增 10 张内置 imagegen 参考头像，原生 RGBA 字节保留。Ultimate Way Big 的参考来自已核对的 Cartoon Network Korea 动画画面，其余来自注明链接的第三方转载；来源为官方不意味着生成头像是官方素材。头鳍、面部线条、头部边界和姿态含图标化重绘，具体差异及完整提示词见 `assets/portraits.json` 与 `docs/review-v066.md`。三条复用绑定逐项核对头部结构，没有新增 APK 原始图；水生大钢牙复用的是既有 AI 头像。
 
-0.6.5 四代手表使用用户提供的 3MF / STL 打印模型网格，由六个来源包组合装配；AF 与 Ultimatrix 独立表盘减面至约 14,000 三角。源作者、许可及官方发布链未确定。模型网格不是由本仓库重新授权的官方资源。材质、信号图形、归一化与零件运动含本插件编制，详情与逐部件哈希见 `assets/watch-meshes/provenance.json`。
+0.6.5 历史版本使用用户提供的 3MF / STL 打印模型网格，由六个来源包组合装配；当时 AF 与 Ultimatrix 附加的独立表盘减面至约 14,000 三角。该跨包附加方案已由上面的 0.6.7 原件方案替换。源作者、许可及官方发布链未确定，模型网格不是由本仓库重新授权的官方资源。历史验证见 `docs/review-v065.md`，当前来源与逐部件哈希见 `assets/watch-meshes/provenance.json`。
 
 0.6.4 增加 12 张 imagegen 参考头像及 Ultimate Aggregor 混合形态全身剪影，保留原生输出字节。完整身体依据 SasakiToon 社区绘稿，头胸经动画画面核对；不是官方独立透明素材。来源及差异见 `assets/extra-art.json`、`assets/portraits.json` 和 `docs/review-v064.md`。
 

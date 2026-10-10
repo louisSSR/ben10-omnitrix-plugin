@@ -11,6 +11,10 @@ export function validateWatchMeshManifest(manifest, watch = manifest?.watch) {
   if (!meshVector(manifest.face?.center) || !Number.isFinite(manifest.face.radius) || manifest.face.radius <= 0 || !Number.isFinite(manifest.lift) || manifest.lift < 0 || manifest.lift > 4) throw new TypeError('Invalid watch mesh face or lift');
   if (!meshVector(manifest.bounds?.min) || !meshVector(manifest.bounds?.max) || manifest.bounds.min.some((v, i) => v > manifest.bounds.max[i] || Math.abs(v) > 32 || Math.abs(manifest.bounds.max[i]) > 32)) throw new TypeError('Invalid watch mesh bounds');
   if (manifest.camera !== undefined && (!Number.isFinite(manifest.camera?.distance) || manifest.camera.distance < 1 || manifest.camera.distance > 20 || !meshVector(manifest.camera.target) || manifest.camera.target.some(v => Math.abs(v) > 32))) throw new TypeError('Invalid watch mesh camera');
+  if (manifest.sourceFinish !== undefined && !['interpreted', 'source-preserved'].includes(manifest.sourceFinish)) throw new TypeError('Invalid source mesh finish');
+  if (manifest.sourceMotion !== undefined && (!manifest.sourceMotion || typeof manifest.sourceMotion !== 'object' || Array.isArray(manifest.sourceMotion) ||
+    Object.keys(manifest.sourceMotion).some(key => !['core', 'lids'].includes(key)) ||
+    typeof manifest.sourceMotion.core !== 'boolean' || typeof manifest.sourceMotion.lids !== 'boolean')) throw new TypeError('Invalid source motion capabilities');
   if (!Array.isArray(manifest.parts) || !manifest.parts.length || manifest.parts.length > 64) throw new TypeError('Invalid watch mesh parts');
   const ids = new Set(); let vertices = 0;
   for (const part of manifest.parts) {
@@ -24,7 +28,9 @@ export function validateWatchMeshManifest(manifest, watch = manifest?.watch) {
     if (part.sha256 !== undefined && !/^[a-f0-9]{64}$/.test(part.sha256)) throw new TypeError('Invalid watch mesh hash');
     vertices += part.vertices;
   }
-  if (vertices > MESH_MAX_TRIANGLES * 3 || !manifest.parts.some(p => p.group === 'body') || !manifest.parts.some(p => p.group === 'core')) throw new RangeError('Watch mesh exceeds triangle budget or lacks motion groups');
+  const hasCore = manifest.parts.some(p => p.group === 'core'), hasLids = manifest.parts.some(p => p.group.startsWith('lid-'));
+  if (manifest.sourceMotion && (manifest.sourceMotion.core !== hasCore || manifest.sourceMotion.lids !== hasLids || (!hasCore && manifest.lift !== 0))) throw new RangeError('Source motion does not match retained parts');
+  if (vertices > MESH_MAX_TRIANGLES * 3 || !manifest.parts.some(p => p.group === 'body') || (!hasCore && manifest.sourceMotion?.core !== false)) throw new RangeError('Watch mesh exceeds triangle budget or lacks motion groups');
   return manifest;
 }
 
@@ -82,6 +88,8 @@ export function createWatchMeshLoader({ manifests = {}, baseUrl = globalThis.doc
     }
     meshAbort(signal); if (disposed) throw new Error('Watch mesh loader disposed');
     const geometry = { watch, parts, face: { center: [...manifest.face.center], radius: manifest.face.radius }, lift: manifest.lift, bounds: { min: [...manifest.bounds.min], max: [...manifest.bounds.max] }, sourceArchiveSha256: manifest.sourceArchiveSha256, modelKind: 'source-mesh' };
+    if (manifest.sourceMotion) geometry.sourceMotion = { ...manifest.sourceMotion };
+    if (manifest.sourceFinish) geometry.sourceFinish = manifest.sourceFinish;
     if (manifest.camera) geometry.camera = { distance: manifest.camera.distance, target: [...manifest.camera.target] };
     if (memoryBytes <= maxCachedBytes) {
       while (cache.size && cachedBytes + memoryBytes > maxCachedBytes) { const oldest = cache.keys().next().value; cachedBytes -= cache.get(oldest).bytes; cache.delete(oldest); }
